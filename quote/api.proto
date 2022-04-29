@@ -1,7 +1,6 @@
 syntax = "proto3";
 
-package lb.quote.openapi;
-import "google/protobuf/empty.proto";
+package longbridgeapp.quote.v1;
 
 // 协议指令定义
 enum Command {
@@ -468,10 +467,5 @@ message MarketTradeDayRequest {
 message MarketTradeDayResponse {
   repeated string trade_day = 1;
   repeated string half_trade_day = 2;
-}
-
-message AuthResponse {
-  string session_id = 1;
-  int64 expires = 2;
 }
 
