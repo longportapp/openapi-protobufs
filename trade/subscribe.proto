@@ -2,6 +2,15 @@ syntax = "proto3";
 
 package longbridgeapp.trade.v1;
 
+
+// trade gateway command, see: https://open.longbridgeapp.com/docs/trade/trade-push
+enum Command {
+  CMD_UNKNOWN = 0;
+  CMD_SUB = 16;
+  CMD_UNSUB = 17;
+  CMD_NOTIFY = 18;
+}
+
 // Sub is Sub command content, command is 16
 message Sub {
   repeated string topics = 1;
