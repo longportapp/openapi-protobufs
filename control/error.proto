@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package longbridgeapp.control.v1;
+
+message Error {
+ 	uint64 code = 1;
+  string msg = 2;
+}
