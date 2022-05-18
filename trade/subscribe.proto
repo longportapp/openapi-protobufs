@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package longbridgeapp.trade.v1;
 
-
 // trade gateway command, see: https://open.longbridgeapp.com/docs/trade/trade-push
 enum Command {
   CMD_UNKNOWN = 0;
