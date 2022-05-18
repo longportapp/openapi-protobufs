@@ -184,17 +184,17 @@ const char descriptor_table_protodef_control_2fcontrol_2eproto[] PROTOBUF_SECTIO
   "\001 \001(\tR\tsessionId\022\030\n\007expires\030\002 \001(\003R\007expir"
   "es*L\n\007Command\022\r\n\tCMD_CLOSE\020\000\022\021\n\rCMD_HEAR"
   "TBEAT\020\001\022\014\n\010CMD_AUTH\020\002\022\021\n\rCMD_RECONNECT\020\003"
-  "B\354\001\n\034com.longbridgeapp.control.v1B\014Contr"
-  "olProtoP\001Z<github.com/longbridgeapp/open"
-  "api-protobufs/control;controlv1\242\002\003LCX\252\002\030"
-  "Longbridgeapp.Control.V1\312\002\030Longbridgeapp"
-  "\\Control\\V1\342\002$Longbridgeapp\\Control\\V1\\G"
-  "PBMetadata\352\002\032Longbridgeapp::Control::V1b"
-  "\006proto3"
+  "B\363\001\n\034com.longbridgeapp.control.v1B\014Contr"
+  "olProtoP\001ZCgithub.com/longbridgeapp/open"
+  "api-protobufs/gen/go/control;controlv1\242\002"
+  "\003LCX\252\002\030Longbridgeapp.Control.V1\312\002\030Longbr"
+  "idgeapp\\Control\\V1\342\002$Longbridgeapp\\Contr"
+  "ol\\V1\\GPBMetadata\352\002\032Longbridgeapp::Contr"
+  "ol::V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_control_2fcontrol_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_control_2fcontrol_2eproto = {
-  false, false, 887, descriptor_table_protodef_control_2fcontrol_2eproto, "control/control.proto", 
+  false, false, 894, descriptor_table_protodef_control_2fcontrol_2eproto, "control/control.proto", 
   &descriptor_table_control_2fcontrol_2eproto_once, nullptr, 0, 6,
   schemas, file_default_instances, TableStruct_control_2fcontrol_2eproto::offsets,
   file_level_metadata_control_2fcontrol_2eproto, file_level_enum_descriptors_control_2fcontrol_2eproto, file_level_service_descriptors_control_2fcontrol_2eproto,

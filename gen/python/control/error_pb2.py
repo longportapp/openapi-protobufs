@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13\x63ontrol/error.proto\x12\x18longbridgeapp.control.v1\"-\n\x05\x45rror\x12\x12\n\x04\x63ode\x18\x01 \x01(\x04R\x04\x63ode\x12\x10\n\x03msg\x18\x02 \x01(\tR\x03msgB\xea\x01\n\x1c\x63om.longbridgeapp.control.v1B\nErrorProtoP\x01Z<github.com/longbridgeapp/openapi-protobufs/control;controlv1\xa2\x02\x03LCX\xaa\x02\x18Longbridgeapp.Control.V1\xca\x02\x18Longbridgeapp\\Control\\V1\xe2\x02$Longbridgeapp\\Control\\V1\\GPBMetadata\xea\x02\x1aLongbridgeapp::Control::V1b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13\x63ontrol/error.proto\x12\x18longbridgeapp.control.v1\"-\n\x05\x45rror\x12\x12\n\x04\x63ode\x18\x01 \x01(\x04R\x04\x63ode\x12\x10\n\x03msg\x18\x02 \x01(\tR\x03msgB\xf1\x01\n\x1c\x63om.longbridgeapp.control.v1B\nErrorProtoP\x01ZCgithub.com/longbridgeapp/openapi-protobufs/gen/go/control;controlv1\xa2\x02\x03LCX\xaa\x02\x18Longbridgeapp.Control.V1\xca\x02\x18Longbridgeapp\\Control\\V1\xe2\x02$Longbridgeapp\\Control\\V1\\GPBMetadata\xea\x02\x1aLongbridgeapp::Control::V1b\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(Error)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\034com.longbridgeapp.control.v1B\nErrorProtoP\001Z<github.com/longbridgeapp/openapi-protobufs/control;controlv1\242\002\003LCX\252\002\030Longbridgeapp.Control.V1\312\002\030Longbridgeapp\\Control\\V1\342\002$Longbridgeapp\\Control\\V1\\GPBMetadata\352\002\032Longbridgeapp::Control::V1'
+  DESCRIPTOR._serialized_options = b'\n\034com.longbridgeapp.control.v1B\nErrorProtoP\001ZCgithub.com/longbridgeapp/openapi-protobufs/gen/go/control;controlv1\242\002\003LCX\252\002\030Longbridgeapp.Control.V1\312\002\030Longbridgeapp\\Control\\V1\342\002$Longbridgeapp\\Control\\V1\\GPBMetadata\352\002\032Longbridgeapp::Control::V1'
   _ERROR._serialized_start=49
   _ERROR._serialized_end=94
 # @@protoc_insertion_point(module_scope)

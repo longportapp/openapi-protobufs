@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package longbridgeapp.trade.v1;
 
-option go_package="github.com/longbridgeapp/openapi-protobufs/gen/go/trade";
-
 // trade gateway command, see: https://open.longbridgeapp.com/docs/trade/trade-push
 enum Command {
   CMD_UNKNOWN = 0;

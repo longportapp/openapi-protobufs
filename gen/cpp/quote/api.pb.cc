@@ -1776,17 +1776,17 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
   "\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014SIXTY_MINUTE\020<\022\010"
   "\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MONTH\020\270\027\022\t\n\004YEAR\020"
   "\240\037*I\n\007SubType\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOTE"
-  "\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004B\332\001"
+  "\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004B\341\001"
   "\n\032com.longbridgeapp.quote.v1B\010ApiProtoP\001"
-  "Z8github.com/longbridgeapp/openapi-proto"
-  "bufs/quote;quotev1\242\002\003LQX\252\002\026Longbridgeapp"
-  ".Quote.V1\312\002\026Longbridgeapp\\Quote\\V1\342\002\"Lon"
-  "gbridgeapp\\Quote\\V1\\GPBMetadata\352\002\030Longbr"
-  "idgeapp::Quote::V1b\006proto3"
+  "Z\?github.com/longbridgeapp/openapi-proto"
+  "bufs/gen/go/quote;quotev1\242\002\003LQX\252\002\026Longbr"
+  "idgeapp.Quote.V1\312\002\026Longbridgeapp\\Quote\\V"
+  "1\342\002\"Longbridgeapp\\Quote\\V1\\GPBMetadata\352\002"
+  "\030Longbridgeapp::Quote::V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_quote_2fapi_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_quote_2fapi_2eproto = {
-  false, false, 10746, descriptor_table_protodef_quote_2fapi_2eproto, "quote/api.proto", 
+  false, false, 10753, descriptor_table_protodef_quote_2fapi_2eproto, "quote/api.proto", 
   &descriptor_table_quote_2fapi_2eproto_once, nullptr, 0, 53,
   schemas, file_default_instances, TableStruct_quote_2fapi_2eproto::offsets,
   file_level_metadata_quote_2fapi_2eproto, file_level_enum_descriptors_quote_2fapi_2eproto, file_level_service_descriptors_quote_2fapi_2eproto,

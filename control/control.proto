@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package longbridgeapp.control.v1;
 
-option go_package="github.com/longbridgeapp/openapi-protobufs/gen/go/control";
-
 // control command, see document: https://open.longbridgeapp.com/docs/socket/control-command
 enum Command {
     CMD_CLOSE = 0;

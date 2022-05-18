@@ -60,17 +60,17 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_control_2ferror_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\023control/error.proto\022\030longbridgeapp.con"
   "trol.v1\"-\n\005Error\022\022\n\004code\030\001 \001(\004R\004code\022\020\n\003"
-  "msg\030\002 \001(\tR\003msgB\352\001\n\034com.longbridgeapp.con"
-  "trol.v1B\nErrorProtoP\001Z<github.com/longbr"
-  "idgeapp/openapi-protobufs/control;contro"
-  "lv1\242\002\003LCX\252\002\030Longbridgeapp.Control.V1\312\002\030L"
-  "ongbridgeapp\\Control\\V1\342\002$Longbridgeapp\\"
-  "Control\\V1\\GPBMetadata\352\002\032Longbridgeapp::"
-  "Control::V1b\006proto3"
+  "msg\030\002 \001(\tR\003msgB\361\001\n\034com.longbridgeapp.con"
+  "trol.v1B\nErrorProtoP\001ZCgithub.com/longbr"
+  "idgeapp/openapi-protobufs/gen/go/control"
+  ";controlv1\242\002\003LCX\252\002\030Longbridgeapp.Control"
+  ".V1\312\002\030Longbridgeapp\\Control\\V1\342\002$Longbri"
+  "dgeapp\\Control\\V1\\GPBMetadata\352\002\032Longbrid"
+  "geapp::Control::V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_control_2ferror_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_control_2ferror_2eproto = {
-  false, false, 339, descriptor_table_protodef_control_2ferror_2eproto, "control/error.proto", 
+  false, false, 346, descriptor_table_protodef_control_2ferror_2eproto, "control/error.proto", 
   &descriptor_table_control_2ferror_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_control_2ferror_2eproto::offsets,
   file_level_metadata_control_2ferror_2eproto, file_level_enum_descriptors_control_2ferror_2eproto, file_level_service_descriptors_control_2ferror_2eproto,

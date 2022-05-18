@@ -194,17 +194,17 @@ const char descriptor_table_protodef_trade_2fsubscribe_2eproto[] PROTOBUF_SECTIO
   "ATCH_UNDEFINED\020\000\022\023\n\017DISPATCH_DIRECT\020\001\022\026\n"
   "\022DISPATCH_BROADCAST\020\002*I\n\013ContentType\022\025\n\021"
   "CONTENT_UNDEFINED\020\000\022\020\n\014CONTENT_JSON\020\001\022\021\n"
-  "\rCONTENT_PROTO\020\002B\340\001\n\032com.longbridgeapp.t"
-  "rade.v1B\016SubscribeProtoP\001Z8github.com/lo"
-  "ngbridgeapp/openapi-protobufs/trade;trad"
-  "ev1\242\002\003LTX\252\002\026Longbridgeapp.Trade.V1\312\002\026Lon"
-  "gbridgeapp\\Trade\\V1\342\002\"Longbridgeapp\\Trad"
-  "e\\V1\\GPBMetadata\352\002\030Longbridgeapp::Trade:"
-  ":V1b\006proto3"
+  "\rCONTENT_PROTO\020\002B\347\001\n\032com.longbridgeapp.t"
+  "rade.v1B\016SubscribeProtoP\001Z\?github.com/lo"
+  "ngbridgeapp/openapi-protobufs/gen/go/tra"
+  "de;tradev1\242\002\003LTX\252\002\026Longbridgeapp.Trade.V"
+  "1\312\002\026Longbridgeapp\\Trade\\V1\342\002\"Longbridgea"
+  "pp\\Trade\\V1\\GPBMetadata\352\002\030Longbridgeapp:"
+  ":Trade::V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_trade_2fsubscribe_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_trade_2fsubscribe_2eproto = {
-  false, false, 1011, descriptor_table_protodef_trade_2fsubscribe_2eproto, "trade/subscribe.proto", 
+  false, false, 1018, descriptor_table_protodef_trade_2fsubscribe_2eproto, "trade/subscribe.proto", 
   &descriptor_table_trade_2fsubscribe_2eproto_once, nullptr, 0, 6,
   schemas, file_default_instances, TableStruct_trade_2fsubscribe_2eproto::offsets,
   file_level_metadata_trade_2fsubscribe_2eproto, file_level_enum_descriptors_trade_2fsubscribe_2eproto, file_level_service_descriptors_trade_2fsubscribe_2eproto,
