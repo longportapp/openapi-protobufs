@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package longbridgeapp.quote.v1;
 
+option go_package="github.com/longbridgeapp/openapi-protobufs/gen/go/quote";
+
 // 协议指令定义
 enum Command {
     UNKNOWN_COMMAND = 0;

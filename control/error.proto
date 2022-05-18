@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package longbridgeapp.control.v1;
 
+option go_package="github.com/longbridgeapp/openapi-protobufs/gen/go/control";
+
 message Error {
  	uint64 code = 1;
   string msg = 2;
