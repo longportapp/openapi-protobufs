@@ -474,6 +474,7 @@ class Heartbeat final :
 
   enum : int {
     kTimestampFieldNumber = 1,
+    kHeartbeatIdFieldNumber = 2,
   };
   // int64 timestamp = 1 [json_name = "timestamp"];
   void clear_timestamp();
@@ -484,6 +485,19 @@ class Heartbeat final :
   void _internal_set_timestamp(int64_t value);
   public:
 
+  // optional int32 heartbeat_id = 2 [json_name = "heartbeatId"];
+  bool has_heartbeat_id() const;
+  private:
+  bool _internal_has_heartbeat_id() const;
+  public:
+  void clear_heartbeat_id();
+  int32_t heartbeat_id() const;
+  void set_heartbeat_id(int32_t value);
+  private:
+  int32_t _internal_heartbeat_id() const;
+  void _internal_set_heartbeat_id(int32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:longbridgeapp.control.v1.Heartbeat)
  private:
   class _Internal;
@@ -491,8 +505,10 @@ class Heartbeat final :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  int64_t timestamp_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int64_t timestamp_;
+  int32_t heartbeat_id_;
   friend struct ::TableStruct_control_2fcontrol_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1225,6 +1241,34 @@ inline void Heartbeat::_internal_set_timestamp(int64_t value) {
 inline void Heartbeat::set_timestamp(int64_t value) {
   _internal_set_timestamp(value);
   // @@protoc_insertion_point(field_set:longbridgeapp.control.v1.Heartbeat.timestamp)
+}
+
+// optional int32 heartbeat_id = 2 [json_name = "heartbeatId"];
+inline bool Heartbeat::_internal_has_heartbeat_id() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool Heartbeat::has_heartbeat_id() const {
+  return _internal_has_heartbeat_id();
+}
+inline void Heartbeat::clear_heartbeat_id() {
+  heartbeat_id_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t Heartbeat::_internal_heartbeat_id() const {
+  return heartbeat_id_;
+}
+inline int32_t Heartbeat::heartbeat_id() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.control.v1.Heartbeat.heartbeat_id)
+  return _internal_heartbeat_id();
+}
+inline void Heartbeat::_internal_set_heartbeat_id(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  heartbeat_id_ = value;
+}
+inline void Heartbeat::set_heartbeat_id(int32_t value) {
+  _internal_set_heartbeat_id(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.control.v1.Heartbeat.heartbeat_id)
 }
 
 // -------------------------------------------------------------------

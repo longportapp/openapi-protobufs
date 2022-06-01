@@ -35,7 +35,8 @@ struct CloseDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CloseDefaultTypeInternal _Close_default_instance_;
 constexpr Heartbeat::Heartbeat(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : timestamp_(int64_t{0}){}
+  : timestamp_(int64_t{0})
+  , heartbeat_id_(0){}
 struct HeartbeatDefaultTypeInternal {
   constexpr HeartbeatDefaultTypeInternal()
     : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
@@ -111,13 +112,16 @@ const uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTION
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Close, code_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Close, reason_),
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Heartbeat, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Heartbeat, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Heartbeat, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Heartbeat, heartbeat_id_),
+  ~0u,
+  0,
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::AuthRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -151,11 +155,11 @@ const uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTION
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, -1, sizeof(::longbridgeapp::control::v1::Close)},
-  { 8, -1, -1, sizeof(::longbridgeapp::control::v1::Heartbeat)},
-  { 15, -1, -1, sizeof(::longbridgeapp::control::v1::AuthRequest)},
-  { 22, -1, -1, sizeof(::longbridgeapp::control::v1::AuthResponse)},
-  { 30, -1, -1, sizeof(::longbridgeapp::control::v1::ReconnectRequest)},
-  { 37, -1, -1, sizeof(::longbridgeapp::control::v1::ReconnectResponse)},
+  { 8, 16, -1, sizeof(::longbridgeapp::control::v1::Heartbeat)},
+  { 18, -1, -1, sizeof(::longbridgeapp::control::v1::AuthRequest)},
+  { 25, -1, -1, sizeof(::longbridgeapp::control::v1::AuthResponse)},
+  { 33, -1, -1, sizeof(::longbridgeapp::control::v1::ReconnectRequest)},
+  { 40, -1, -1, sizeof(::longbridgeapp::control::v1::ReconnectResponse)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -175,26 +179,27 @@ const char descriptor_table_protodef_control_2fcontrol_2eproto[] PROTOBUF_SECTIO
   "eatTimeout\020\000\022\017\n\013ServerError\020\001\022\022\n\016ServerS"
   "hutdown\020\002\022\017\n\013UnpackError\020\003\022\r\n\tAuthError\020"
   "\004\022\017\n\013SessExpired\020\005\022\024\n\020ConnectDuplicate\020\006"
-  "\")\n\tHeartbeat\022\034\n\ttimestamp\030\001 \001(\003R\ttimest"
-  "amp\"#\n\013AuthRequest\022\024\n\005token\030\001 \001(\tR\005token"
-  "\"G\n\014AuthResponse\022\035\n\nsession_id\030\001 \001(\tR\tse"
-  "ssionId\022\030\n\007expires\030\002 \001(\003R\007expires\"1\n\020Rec"
-  "onnectRequest\022\035\n\nsession_id\030\001 \001(\tR\tsessi"
-  "onId\"L\n\021ReconnectResponse\022\035\n\nsession_id\030"
-  "\001 \001(\tR\tsessionId\022\030\n\007expires\030\002 \001(\003R\007expir"
-  "es*L\n\007Command\022\r\n\tCMD_CLOSE\020\000\022\021\n\rCMD_HEAR"
-  "TBEAT\020\001\022\014\n\010CMD_AUTH\020\002\022\021\n\rCMD_RECONNECT\020\003"
-  "B\363\001\n\034com.longbridgeapp.control.v1B\014Contr"
-  "olProtoP\001ZCgithub.com/longbridgeapp/open"
-  "api-protobufs/gen/go/control;controlv1\242\002"
-  "\003LCX\252\002\030Longbridgeapp.Control.V1\312\002\030Longbr"
-  "idgeapp\\Control\\V1\342\002$Longbridgeapp\\Contr"
-  "ol\\V1\\GPBMetadata\352\002\032Longbridgeapp::Contr"
-  "ol::V1b\006proto3"
+  "\"b\n\tHeartbeat\022\034\n\ttimestamp\030\001 \001(\003R\ttimest"
+  "amp\022&\n\014heartbeat_id\030\002 \001(\005H\000R\013heartbeatId"
+  "\210\001\001B\017\n\r_heartbeat_id\"#\n\013AuthRequest\022\024\n\005t"
+  "oken\030\001 \001(\tR\005token\"G\n\014AuthResponse\022\035\n\nses"
+  "sion_id\030\001 \001(\tR\tsessionId\022\030\n\007expires\030\002 \001("
+  "\003R\007expires\"1\n\020ReconnectRequest\022\035\n\nsessio"
+  "n_id\030\001 \001(\tR\tsessionId\"L\n\021ReconnectRespon"
+  "se\022\035\n\nsession_id\030\001 \001(\tR\tsessionId\022\030\n\007exp"
+  "ires\030\002 \001(\003R\007expires*L\n\007Command\022\r\n\tCMD_CL"
+  "OSE\020\000\022\021\n\rCMD_HEARTBEAT\020\001\022\014\n\010CMD_AUTH\020\002\022\021"
+  "\n\rCMD_RECONNECT\020\003B\363\001\n\034com.longbridgeapp."
+  "control.v1B\014ControlProtoP\001ZCgithub.com/l"
+  "ongbridgeapp/openapi-protobufs/gen/go/co"
+  "ntrol;controlv1\242\002\003LCX\252\002\030Longbridgeapp.Co"
+  "ntrol.V1\312\002\030Longbridgeapp\\Control\\V1\342\002$Lo"
+  "ngbridgeapp\\Control\\V1\\GPBMetadata\352\002\032Lon"
+  "gbridgeapp::Control::V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_control_2fcontrol_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_control_2fcontrol_2eproto = {
-  false, false, 894, descriptor_table_protodef_control_2fcontrol_2eproto, "control/control.proto", 
+  false, false, 951, descriptor_table_protodef_control_2fcontrol_2eproto, "control/control.proto", 
   &descriptor_table_control_2fcontrol_2eproto_once, nullptr, 0, 6,
   schemas, file_default_instances, TableStruct_control_2fcontrol_2eproto::offsets,
   file_level_metadata_control_2fcontrol_2eproto, file_level_enum_descriptors_control_2fcontrol_2eproto, file_level_service_descriptors_control_2fcontrol_2eproto,
@@ -492,6 +497,10 @@ void Close::InternalSwap(Close* other) {
 
 class Heartbeat::_Internal {
  public:
+  using HasBits = decltype(std::declval<Heartbeat>()._has_bits_);
+  static void set_has_heartbeat_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
 };
 
 Heartbeat::Heartbeat(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -504,14 +513,20 @@ Heartbeat::Heartbeat(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.control.v1.Heartbeat)
 }
 Heartbeat::Heartbeat(const Heartbeat& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  timestamp_ = from.timestamp_;
+  ::memcpy(&timestamp_, &from.timestamp_,
+    static_cast<size_t>(reinterpret_cast<char*>(&heartbeat_id_) -
+    reinterpret_cast<char*>(&timestamp_)) + sizeof(heartbeat_id_));
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.control.v1.Heartbeat)
 }
 
 inline void Heartbeat::SharedCtor() {
-timestamp_ = int64_t{0};
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&timestamp_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&heartbeat_id_) -
+    reinterpret_cast<char*>(&timestamp_)) + sizeof(heartbeat_id_));
 }
 
 Heartbeat::~Heartbeat() {
@@ -542,11 +557,14 @@ void Heartbeat::Clear() {
   (void) cached_has_bits;
 
   timestamp_ = int64_t{0};
+  heartbeat_id_ = 0;
+  _has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 const char* Heartbeat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -555,6 +573,15 @@ const char* Heartbeat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional int32 heartbeat_id = 2 [json_name = "heartbeatId"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_heartbeat_id(&has_bits);
+          heartbeat_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -575,6 +602,7 @@ const char* Heartbeat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
     CHK_(ptr != nullptr);
   }  // while
 message_done:
+  _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -592,6 +620,12 @@ uint8_t* Heartbeat::_InternalSerialize(
   if (this->_internal_timestamp() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_timestamp(), target);
+  }
+
+  // optional int32 heartbeat_id = 2 [json_name = "heartbeatId"];
+  if (_internal_has_heartbeat_id()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_heartbeat_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -613,6 +647,12 @@ size_t Heartbeat::ByteSizeLong() const {
   // int64 timestamp = 1 [json_name = "timestamp"];
   if (this->_internal_timestamp() != 0) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
+  }
+
+  // optional int32 heartbeat_id = 2 [json_name = "heartbeatId"];
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_heartbeat_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
@@ -640,6 +680,9 @@ void Heartbeat::MergeFrom(const Heartbeat& from) {
   if (from._internal_timestamp() != 0) {
     _internal_set_timestamp(from._internal_timestamp());
   }
+  if (from._internal_has_heartbeat_id()) {
+    _internal_set_heartbeat_id(from._internal_heartbeat_id());
+  }
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -657,7 +700,13 @@ bool Heartbeat::IsInitialized() const {
 void Heartbeat::InternalSwap(Heartbeat* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(timestamp_, other->timestamp_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Heartbeat, heartbeat_id_)
+      + sizeof(Heartbeat::heartbeat_id_)
+      - PROTOBUF_FIELD_OFFSET(Heartbeat, timestamp_)>(
+          reinterpret_cast<char*>(&timestamp_),
+          reinterpret_cast<char*>(&other->timestamp_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Heartbeat::GetMetadata() const {
