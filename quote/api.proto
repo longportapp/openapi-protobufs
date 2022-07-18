@@ -65,6 +65,7 @@ message StaticInfo {
   string bps = 14;
   string dividend_yield = 15;
   repeated int32 stock_derivatives = 16;
+  string board = 17;
 }
 
 message  SecurityQuoteResponse {
