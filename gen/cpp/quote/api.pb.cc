@@ -70,6 +70,7 @@ constexpr StaticInfo::StaticInfo(
   , eps_ttm_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , bps_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , dividend_yield_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , board_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , total_shares_(int64_t{0})
   , circulating_shares_(int64_t{0})
   , hk_shares_(int64_t{0})
@@ -761,13 +762,15 @@ constexpr PushQuote::PushQuote(
   , high_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , low_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , turnover_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , current_turnover_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , sequence_(int64_t{0})
   , timestamp_(int64_t{0})
   , volume_(int64_t{0})
   , trade_status_(0)
 
   , trade_session_(0)
-{}
+
+  , current_volume_(int64_t{0}){}
 struct PushQuoteDefaultTypeInternal {
   constexpr PushQuoteDefaultTypeInternal()
     : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
@@ -848,11 +851,156 @@ struct MarketTradeDayResponseDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT MarketTradeDayResponseDefaultTypeInternal _MarketTradeDayResponse_default_instance_;
+constexpr CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : symbol_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct CapitalFlowIntradayRequestDefaultTypeInternal {
+  constexpr CapitalFlowIntradayRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CapitalFlowIntradayRequestDefaultTypeInternal() {}
+  union {
+    CapitalFlowIntradayRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CapitalFlowIntradayRequestDefaultTypeInternal _CapitalFlowIntradayRequest_default_instance_;
+constexpr CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : inflow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , timestamp_(int64_t{0}){}
+struct CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal {
+  constexpr CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal() {}
+  union {
+    CapitalFlowIntradayResponse_CapitalFlowLine _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal _CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_;
+constexpr CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : capital_flow_lines_()
+  , symbol_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct CapitalFlowIntradayResponseDefaultTypeInternal {
+  constexpr CapitalFlowIntradayResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CapitalFlowIntradayResponseDefaultTypeInternal() {}
+  union {
+    CapitalFlowIntradayResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CapitalFlowIntradayResponseDefaultTypeInternal _CapitalFlowIntradayResponse_default_instance_;
+constexpr CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : large_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , medium_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , small_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal {
+  constexpr CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal() {}
+  union {
+    CapitalDistributionResponse_CapitalDistribution _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal _CapitalDistributionResponse_CapitalDistribution_default_instance_;
+constexpr CapitalDistributionResponse::CapitalDistributionResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : symbol_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , capital_in_(nullptr)
+  , capital_out_(nullptr)
+  , timestamp_(int64_t{0}){}
+struct CapitalDistributionResponseDefaultTypeInternal {
+  constexpr CapitalDistributionResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CapitalDistributionResponseDefaultTypeInternal() {}
+  union {
+    CapitalDistributionResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CapitalDistributionResponseDefaultTypeInternal _CapitalDistributionResponse_default_instance_;
+constexpr SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : symbols_()
+  , calc_index_()
+  , _calc_index_cached_byte_size_(0){}
+struct SecurityCalcQuoteRequestDefaultTypeInternal {
+  constexpr SecurityCalcQuoteRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SecurityCalcQuoteRequestDefaultTypeInternal() {}
+  union {
+    SecurityCalcQuoteRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SecurityCalcQuoteRequestDefaultTypeInternal _SecurityCalcQuoteRequest_default_instance_;
+constexpr SecurityCalcIndex::SecurityCalcIndex(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : symbol_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , last_done_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , change_val_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , turnover_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , ytd_change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , turnover_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , total_market_value_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , capital_flow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , amplitude_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , volume_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , pe_ttm_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , pb_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , dividend_ratio_ttm_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , five_day_change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , ten_day_change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , half_year_change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , five_minutes_change_rate_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , expiry_date_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , strike_price_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , upper_strike_price_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , lower_strike_price_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , outstanding_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , premium_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , itm_otm_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , implied_volatility_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , warrant_delta_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , call_price_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , to_call_price_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , effective_leverage_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , leverage_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , conversion_ratio_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , balance_point_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , delta_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , gamma_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , theta_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , vega_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , rho_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , volume_(int64_t{0})
+  , outstanding_qty_(int64_t{0})
+  , open_interest_(int64_t{0}){}
+struct SecurityCalcIndexDefaultTypeInternal {
+  constexpr SecurityCalcIndexDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SecurityCalcIndexDefaultTypeInternal() {}
+  union {
+    SecurityCalcIndex _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SecurityCalcIndexDefaultTypeInternal _SecurityCalcIndex_default_instance_;
+constexpr SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : security_calc_index_(){}
+struct SecurityCalcQuoteResponseDefaultTypeInternal {
+  constexpr SecurityCalcQuoteResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SecurityCalcQuoteResponseDefaultTypeInternal() {}
+  union {
+    SecurityCalcQuoteResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SecurityCalcQuoteResponseDefaultTypeInternal _SecurityCalcQuoteResponse_default_instance_;
 }  // namespace v1
 }  // namespace quote
 }  // namespace longbridgeapp
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_quote_2fapi_2eproto[53];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_quote_2fapi_2eproto[6];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_quote_2fapi_2eproto[61];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_quote_2fapi_2eproto[7];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_quote_2fapi_2eproto = nullptr;
 
 const uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -899,6 +1047,7 @@ const uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VARIA
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::StaticInfo, bps_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::StaticInfo, dividend_yield_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::StaticInfo, stock_derivatives_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::StaticInfo, board_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityQuoteResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1354,6 +1503,8 @@ const uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VARIA
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushQuote, turnover_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushQuote, trade_status_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushQuote, trade_session_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushQuote, current_volume_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushQuote, current_turnover_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::PushDepth, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1400,61 +1551,173 @@ const uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VARIA
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::MarketTradeDayResponse, trade_day_),
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::MarketTradeDayResponse, half_trade_day_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayRequest, symbol_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine, inflow_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine, timestamp_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse, symbol_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse, capital_flow_lines_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution, large_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution, medium_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution, small_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse, symbol_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse, capital_in_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::CapitalDistributionResponse, capital_out_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcQuoteRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcQuoteRequest, symbols_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcQuoteRequest, calc_index_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, symbol_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, last_done_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, change_val_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, volume_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, turnover_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, ytd_change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, turnover_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, total_market_value_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, capital_flow_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, amplitude_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, volume_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, pe_ttm_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, pb_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, dividend_ratio_ttm_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, five_day_change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, ten_day_change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, half_year_change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, five_minutes_change_rate_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, expiry_date_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, strike_price_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, upper_strike_price_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, lower_strike_price_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, outstanding_qty_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, outstanding_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, premium_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, itm_otm_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, implied_volatility_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, warrant_delta_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, call_price_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, to_call_price_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, effective_leverage_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, leverage_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, conversion_ratio_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, balance_point_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, open_interest_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, delta_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, gamma_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, theta_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, vega_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcIndex, rho_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcQuoteResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::quote::v1::SecurityCalcQuoteResponse, security_calc_index_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityRequest)},
   { 7, -1, -1, sizeof(::longbridgeapp::quote::v1::MultiSecurityRequest)},
   { 14, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityStaticInfoResponse)},
   { 21, -1, -1, sizeof(::longbridgeapp::quote::v1::StaticInfo)},
-  { 43, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityQuoteResponse)},
-  { 50, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityQuote)},
-  { 68, -1, -1, sizeof(::longbridgeapp::quote::v1::PrePostQuote)},
-  { 81, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionQuoteResponse)},
-  { 88, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionQuote)},
-  { 105, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionExtend)},
-  { 121, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantQuoteResponse)},
-  { 128, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantQuote)},
-  { 145, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantExtend)},
-  { 163, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityDepthResponse)},
-  { 172, -1, -1, sizeof(::longbridgeapp::quote::v1::Depth)},
-  { 182, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityBrokersResponse)},
-  { 191, -1, -1, sizeof(::longbridgeapp::quote::v1::Brokers)},
-  { 199, -1, -1, sizeof(::longbridgeapp::quote::v1::ParticipantBrokerIdsResponse)},
-  { 206, -1, -1, sizeof(::longbridgeapp::quote::v1::ParticipantInfo)},
-  { 216, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityTradeRequest)},
-  { 224, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityTradeResponse)},
-  { 232, -1, -1, sizeof(::longbridgeapp::quote::v1::Trade)},
-  { 244, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityIntradayRequest)},
-  { 251, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityIntradayResponse)},
-  { 259, -1, -1, sizeof(::longbridgeapp::quote::v1::Line)},
-  { 270, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCandlestickRequest)},
-  { 280, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCandlestickResponse)},
-  { 288, -1, -1, sizeof(::longbridgeapp::quote::v1::Candlestick)},
-  { 301, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateListResponse)},
-  { 308, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateStrikeInfoRequest)},
-  { 316, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateStrikeInfoResponse)},
-  { 323, -1, -1, sizeof(::longbridgeapp::quote::v1::StrikePriceInfo)},
-  { 333, -1, -1, sizeof(::longbridgeapp::quote::v1::IssuerInfoResponse)},
-  { 340, -1, -1, sizeof(::longbridgeapp::quote::v1::IssuerInfo)},
-  { 350, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantFilterListRequest)},
-  { 359, -1, -1, sizeof(::longbridgeapp::quote::v1::FilterConfig)},
-  { 374, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantFilterListResponse)},
-  { 382, -1, -1, sizeof(::longbridgeapp::quote::v1::FilterWarrant)},
-  { 412, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradePeriodResponse)},
-  { 419, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradePeriod)},
-  { 427, -1, -1, sizeof(::longbridgeapp::quote::v1::TradePeriod)},
-  { 436, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscriptionRequest)},
-  { 442, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscriptionResponse)},
-  { 449, -1, -1, sizeof(::longbridgeapp::quote::v1::SubTypeList)},
-  { 457, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscribeRequest)},
-  { 466, -1, -1, sizeof(::longbridgeapp::quote::v1::UnsubscribeRequest)},
-  { 475, -1, -1, sizeof(::longbridgeapp::quote::v1::UnsubscribeResponse)},
-  { 481, -1, -1, sizeof(::longbridgeapp::quote::v1::PushQuote)},
-  { 498, -1, -1, sizeof(::longbridgeapp::quote::v1::PushDepth)},
-  { 508, -1, -1, sizeof(::longbridgeapp::quote::v1::PushBrokers)},
-  { 518, -1, -1, sizeof(::longbridgeapp::quote::v1::PushTrade)},
-  { 527, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradeDayRequest)},
-  { 536, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradeDayResponse)},
+  { 44, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityQuoteResponse)},
+  { 51, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityQuote)},
+  { 69, -1, -1, sizeof(::longbridgeapp::quote::v1::PrePostQuote)},
+  { 82, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionQuoteResponse)},
+  { 89, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionQuote)},
+  { 106, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionExtend)},
+  { 122, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantQuoteResponse)},
+  { 129, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantQuote)},
+  { 146, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantExtend)},
+  { 164, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityDepthResponse)},
+  { 173, -1, -1, sizeof(::longbridgeapp::quote::v1::Depth)},
+  { 183, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityBrokersResponse)},
+  { 192, -1, -1, sizeof(::longbridgeapp::quote::v1::Brokers)},
+  { 200, -1, -1, sizeof(::longbridgeapp::quote::v1::ParticipantBrokerIdsResponse)},
+  { 207, -1, -1, sizeof(::longbridgeapp::quote::v1::ParticipantInfo)},
+  { 217, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityTradeRequest)},
+  { 225, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityTradeResponse)},
+  { 233, -1, -1, sizeof(::longbridgeapp::quote::v1::Trade)},
+  { 245, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityIntradayRequest)},
+  { 252, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityIntradayResponse)},
+  { 260, -1, -1, sizeof(::longbridgeapp::quote::v1::Line)},
+  { 271, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCandlestickRequest)},
+  { 281, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCandlestickResponse)},
+  { 289, -1, -1, sizeof(::longbridgeapp::quote::v1::Candlestick)},
+  { 302, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateListResponse)},
+  { 309, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateStrikeInfoRequest)},
+  { 317, -1, -1, sizeof(::longbridgeapp::quote::v1::OptionChainDateStrikeInfoResponse)},
+  { 324, -1, -1, sizeof(::longbridgeapp::quote::v1::StrikePriceInfo)},
+  { 334, -1, -1, sizeof(::longbridgeapp::quote::v1::IssuerInfoResponse)},
+  { 341, -1, -1, sizeof(::longbridgeapp::quote::v1::IssuerInfo)},
+  { 351, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantFilterListRequest)},
+  { 360, -1, -1, sizeof(::longbridgeapp::quote::v1::FilterConfig)},
+  { 375, -1, -1, sizeof(::longbridgeapp::quote::v1::WarrantFilterListResponse)},
+  { 383, -1, -1, sizeof(::longbridgeapp::quote::v1::FilterWarrant)},
+  { 413, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradePeriodResponse)},
+  { 420, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradePeriod)},
+  { 428, -1, -1, sizeof(::longbridgeapp::quote::v1::TradePeriod)},
+  { 437, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscriptionRequest)},
+  { 443, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscriptionResponse)},
+  { 450, -1, -1, sizeof(::longbridgeapp::quote::v1::SubTypeList)},
+  { 458, -1, -1, sizeof(::longbridgeapp::quote::v1::SubscribeRequest)},
+  { 467, -1, -1, sizeof(::longbridgeapp::quote::v1::UnsubscribeRequest)},
+  { 476, -1, -1, sizeof(::longbridgeapp::quote::v1::UnsubscribeResponse)},
+  { 482, -1, -1, sizeof(::longbridgeapp::quote::v1::PushQuote)},
+  { 501, -1, -1, sizeof(::longbridgeapp::quote::v1::PushDepth)},
+  { 511, -1, -1, sizeof(::longbridgeapp::quote::v1::PushBrokers)},
+  { 521, -1, -1, sizeof(::longbridgeapp::quote::v1::PushTrade)},
+  { 530, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradeDayRequest)},
+  { 539, -1, -1, sizeof(::longbridgeapp::quote::v1::MarketTradeDayResponse)},
+  { 547, -1, -1, sizeof(::longbridgeapp::quote::v1::CapitalFlowIntradayRequest)},
+  { 554, -1, -1, sizeof(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine)},
+  { 562, -1, -1, sizeof(::longbridgeapp::quote::v1::CapitalFlowIntradayResponse)},
+  { 570, -1, -1, sizeof(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution)},
+  { 579, -1, -1, sizeof(::longbridgeapp::quote::v1::CapitalDistributionResponse)},
+  { 589, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCalcQuoteRequest)},
+  { 597, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCalcIndex)},
+  { 644, -1, -1, sizeof(::longbridgeapp::quote::v1::SecurityCalcQuoteResponse)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1511,6 +1774,14 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_PushTrade_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_MarketTradeDayRequest_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_MarketTradeDayResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_CapitalFlowIntradayRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_CapitalFlowIntradayResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_CapitalDistributionResponse_CapitalDistribution_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_CapitalDistributionResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_SecurityCalcQuoteRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_SecurityCalcIndex_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::quote::v1::_SecurityCalcQuoteResponse_default_instance_),
 };
 
 const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1520,7 +1791,7 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
   " \003(\tR\006symbol\"j\n\032SecurityStaticInfoRespon"
   "se\022L\n\020secu_static_info\030\001 \003(\0132\".longbridg"
   "eapp.quote.v1.StaticInfoR\016secuStaticInfo"
-  "\"\345\003\n\nStaticInfo\022\026\n\006symbol\030\001 \001(\tR\006symbol\022"
+  "\"\373\003\n\nStaticInfo\022\026\n\006symbol\030\001 \001(\tR\006symbol\022"
   "\027\n\007name_cn\030\002 \001(\tR\006nameCn\022\027\n\007name_en\030\003 \001("
   "\tR\006nameEn\022\027\n\007name_hk\030\004 \001(\tR\006nameHk\022!\n\014li"
   "sting_date\030\005 \001(\tR\013listingDate\022\032\n\010exchang"
@@ -1532,262 +1803,357 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
   "s\022\027\n\007eps_ttm\030\r \001(\tR\006epsTtm\022\020\n\003bps\030\016 \001(\tR"
   "\003bps\022%\n\016dividend_yield\030\017 \001(\tR\rdividendYi"
   "eld\022+\n\021stock_derivatives\030\020 \003(\005R\020stockDer"
-  "ivatives\"]\n\025SecurityQuoteResponse\022D\n\nsec"
-  "u_quote\030\001 \003(\0132%.longbridgeapp.quote.v1.S"
-  "ecurityQuoteR\tsecuQuote\"\331\003\n\rSecurityQuot"
-  "e\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033\n\tlast_done\030\002"
-  " \001(\tR\010lastDone\022\035\n\nprev_close\030\003 \001(\tR\tprev"
-  "Close\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004high\030\005 \001(\tR"
-  "\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimestamp\030\007 \001"
-  "(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006volume\022\032\n"
-  "\010turnover\030\t \001(\tR\010turnover\022F\n\014trade_statu"
-  "s\030\n \001(\0162#.longbridgeapp.quote.v1.TradeSt"
-  "atusR\013tradeStatus\022N\n\020pre_market_quote\030\013 "
-  "\001(\0132$.longbridgeapp.quote.v1.PrePostQuot"
-  "eR\016preMarketQuote\022P\n\021post_market_quote\030\014"
-  " \001(\0132$.longbridgeapp.quote.v1.PrePostQuo"
-  "teR\017postMarketQuote\"\302\001\n\014PrePostQuote\022\033\n\t"
-  "last_done\030\001 \001(\tR\010lastDone\022\034\n\ttimestamp\030\002"
+  "ivatives\022\024\n\005board\030\021 \001(\tR\005board\"]\n\025Securi"
+  "tyQuoteResponse\022D\n\nsecu_quote\030\001 \003(\0132%.lo"
+  "ngbridgeapp.quote.v1.SecurityQuoteR\tsecu"
+  "Quote\"\331\003\n\rSecurityQuote\022\026\n\006symbol\030\001 \001(\tR"
+  "\006symbol\022\033\n\tlast_done\030\002 \001(\tR\010lastDone\022\035\n\n"
+  "prev_close\030\003 \001(\tR\tprevClose\022\022\n\004open\030\004 \001("
+  "\tR\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001(\t"
+  "R\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022\026\n\006v"
+  "olume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t \001(\tR\010t"
+  "urnover\022F\n\014trade_status\030\n \001(\0162#.longbrid"
+  "geapp.quote.v1.TradeStatusR\013tradeStatus\022"
+  "N\n\020pre_market_quote\030\013 \001(\0132$.longbridgeap"
+  "p.quote.v1.PrePostQuoteR\016preMarketQuote\022"
+  "P\n\021post_market_quote\030\014 \001(\0132$.longbridgea"
+  "pp.quote.v1.PrePostQuoteR\017postMarketQuot"
+  "e\"\302\001\n\014PrePostQuote\022\033\n\tlast_done\030\001 \001(\tR\010l"
+  "astDone\022\034\n\ttimestamp\030\002 \001(\003R\ttimestamp\022\026\n"
+  "\006volume\030\003 \001(\003R\006volume\022\032\n\010turnover\030\004 \001(\tR"
+  "\010turnover\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001"
+  "(\tR\003low\022\035\n\nprev_close\030\007 \001(\tR\tprevClose\"Y"
+  "\n\023OptionQuoteResponse\022B\n\nsecu_quote\030\001 \003("
+  "\0132#.longbridgeapp.quote.v1.OptionQuoteR\t"
+  "secuQuote\"\200\003\n\013OptionQuote\022\026\n\006symbol\030\001 \001("
+  "\tR\006symbol\022\033\n\tlast_done\030\002 \001(\tR\010lastDone\022\035"
+  "\n\nprev_close\030\003 \001(\tR\tprevClose\022\022\n\004open\030\004 "
+  "\001(\tR\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001"
+  "(\tR\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022\026\n"
+  "\006volume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t \001(\tR"
+  "\010turnover\022F\n\014trade_status\030\n \001(\0162#.longbr"
+  "idgeapp.quote.v1.TradeStatusR\013tradeStatu"
+  "s\022I\n\roption_extend\030\013 \001(\0132$.longbridgeapp"
+  ".quote.v1.OptionExtendR\014optionExtend\"\241\003\n"
+  "\014OptionExtend\022-\n\022implied_volatility\030\001 \001("
+  "\tR\021impliedVolatility\022#\n\ropen_interest\030\002 "
+  "\001(\003R\014openInterest\022\037\n\013expiry_date\030\003 \001(\tR\n"
+  "expiryDate\022!\n\014strike_price\030\004 \001(\tR\013strike"
+  "Price\022/\n\023contract_multiplier\030\005 \001(\tR\022cont"
+  "ractMultiplier\022#\n\rcontract_type\030\006 \001(\tR\014c"
+  "ontractType\022#\n\rcontract_size\030\007 \001(\tR\014cont"
+  "ractSize\022\034\n\tdirection\030\010 \001(\tR\tdirection\0223"
+  "\n\025historical_volatility\030\t \001(\tR\024historica"
+  "lVolatility\022+\n\021underlying_symbol\030\n \001(\tR\020"
+  "underlyingSymbol\"[\n\024WarrantQuoteResponse"
+  "\022C\n\nsecu_quote\030\002 \003(\0132$.longbridgeapp.quo"
+  "te.v1.WarrantQuoteR\tsecuQuote\"\204\003\n\014Warran"
+  "tQuote\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033\n\tlast_d"
+  "one\030\002 \001(\tR\010lastDone\022\035\n\nprev_close\030\003 \001(\tR"
+  "\tprevClose\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004high\030\005"
+  " \001(\tR\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimestam"
+  "p\030\007 \001(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006volu"
+  "me\022\032\n\010turnover\030\t \001(\tR\010turnover\022F\n\014trade_"
+  "status\030\n \001(\0162#.longbridgeapp.quote.v1.Tr"
+  "adeStatusR\013tradeStatus\022L\n\016warrant_extend"
+  "\030\013 \001(\0132%.longbridgeapp.quote.v1.WarrantE"
+  "xtendR\rwarrantExtend\"\357\003\n\rWarrantExtend\022-"
+  "\n\022implied_volatility\030\001 \001(\tR\021impliedVolat"
+  "ility\022\037\n\013expiry_date\030\002 \001(\tR\nexpiryDate\022&"
+  "\n\017last_trade_date\030\003 \001(\tR\rlastTradeDate\022+"
+  "\n\021outstanding_ratio\030\004 \001(\tR\020outstandingRa"
+  "tio\022\'\n\017outstanding_qty\030\005 \001(\003R\016outstandin"
+  "gQty\022)\n\020conversion_ratio\030\006 \001(\tR\017conversi"
+  "onRatio\022\032\n\010category\030\007 \001(\tR\010category\022!\n\014s"
+  "trike_price\030\010 \001(\tR\013strikePrice\022,\n\022upper_"
+  "strike_price\030\t \001(\tR\020upperStrikePrice\022,\n\022"
+  "lower_strike_price\030\n \001(\tR\020lowerStrikePri"
+  "ce\022\035\n\ncall_price\030\013 \001(\tR\tcallPrice\022+\n\021und"
+  "erlying_symbol\030\014 \001(\tR\020underlyingSymbol\"\221"
+  "\001\n\025SecurityDepthResponse\022\026\n\006symbol\030\001 \001(\t"
+  "R\006symbol\022/\n\003ask\030\002 \003(\0132\035.longbridgeapp.qu"
+  "ote.v1.DepthR\003ask\022/\n\003bid\030\003 \003(\0132\035.longbri"
+  "dgeapp.quote.v1.DepthR\003bid\"n\n\005Depth\022\032\n\010p"
+  "osition\030\001 \001(\005R\010position\022\024\n\005price\030\002 \001(\tR\005"
+  "price\022\026\n\006volume\030\003 \001(\003R\006volume\022\033\n\torder_n"
+  "um\030\004 \001(\003R\010orderNum\"\265\001\n\027SecurityBrokersRe"
+  "sponse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022@\n\013ask_br"
+  "okers\030\002 \003(\0132\037.longbridgeapp.quote.v1.Bro"
+  "kersR\naskBrokers\022@\n\013bid_brokers\030\003 \003(\0132\037."
+  "longbridgeapp.quote.v1.BrokersR\nbidBroke"
+  "rs\"D\n\007Brokers\022\032\n\010position\030\001 \001(\005R\010positio"
+  "n\022\035\n\nbroker_ids\030\002 \003(\005R\tbrokerIds\"\205\001\n\034Par"
+  "ticipantBrokerIdsResponse\022e\n\032participant"
+  "_broker_numbers\030\001 \003(\0132\'.longbridgeapp.qu"
+  "ote.v1.ParticipantInfoR\030participantBroke"
+  "rNumbers\"\300\001\n\017ParticipantInfo\022\035\n\nbroker_i"
+  "ds\030\001 \003(\005R\tbrokerIds\022.\n\023participant_name_"
+  "cn\030\002 \001(\tR\021participantNameCn\022.\n\023participa"
+  "nt_name_en\030\003 \001(\tR\021participantNameEn\022.\n\023p"
+  "articipant_name_hk\030\004 \001(\tR\021participantNam"
+  "eHk\"D\n\024SecurityTradeRequest\022\026\n\006symbol\030\001 "
+  "\001(\tR\006symbol\022\024\n\005count\030\002 \001(\005R\005count\"f\n\025Sec"
+  "urityTradeResponse\022\026\n\006symbol\030\001 \001(\tR\006symb"
+  "ol\0225\n\006trades\030\002 \003(\0132\035.longbridgeapp.quote"
+  ".v1.TradeR\006trades\"\333\001\n\005Trade\022\024\n\005price\030\001 \001"
+  "(\tR\005price\022\026\n\006volume\030\002 \001(\003R\006volume\022\034\n\ttim"
+  "estamp\030\003 \001(\003R\ttimestamp\022\035\n\ntrade_type\030\004 "
+  "\001(\tR\ttradeType\022\034\n\tdirection\030\005 \001(\005R\tdirec"
+  "tion\022I\n\rtrade_session\030\006 \001(\0162$.longbridge"
+  "app.quote.v1.TradeSessionR\014tradeSession\""
+  "1\n\027SecurityIntradayRequest\022\026\n\006symbol\030\001 \001"
+  "(\tR\006symbol\"f\n\030SecurityIntradayResponse\022\026"
+  "\n\006symbol\030\001 \001(\tR\006symbol\0222\n\005lines\030\002 \003(\0132\034."
+  "longbridgeapp.quote.v1.LineR\005lines\"\213\001\n\004L"
+  "ine\022\024\n\005price\030\001 \001(\tR\005price\022\034\n\ttimestamp\030\002"
   " \001(\003R\ttimestamp\022\026\n\006volume\030\003 \001(\003R\006volume\022"
-  "\032\n\010turnover\030\004 \001(\tR\010turnover\022\022\n\004high\030\005 \001("
-  "\tR\004high\022\020\n\003low\030\006 \001(\tR\003low\022\035\n\nprev_close\030"
-  "\007 \001(\tR\tprevClose\"Y\n\023OptionQuoteResponse\022"
-  "B\n\nsecu_quote\030\001 \003(\0132#.longbridgeapp.quot"
-  "e.v1.OptionQuoteR\tsecuQuote\"\200\003\n\013OptionQu"
-  "ote\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033\n\tlast_done"
-  "\030\002 \001(\tR\010lastDone\022\035\n\nprev_close\030\003 \001(\tR\tpr"
-  "evClose\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004high\030\005 \001("
-  "\tR\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimestamp\030\007"
-  " \001(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006volume\022"
-  "\032\n\010turnover\030\t \001(\tR\010turnover\022F\n\014trade_sta"
-  "tus\030\n \001(\0162#.longbridgeapp.quote.v1.Trade"
-  "StatusR\013tradeStatus\022I\n\roption_extend\030\013 \001"
-  "(\0132$.longbridgeapp.quote.v1.OptionExtend"
-  "R\014optionExtend\"\241\003\n\014OptionExtend\022-\n\022impli"
-  "ed_volatility\030\001 \001(\tR\021impliedVolatility\022#"
-  "\n\ropen_interest\030\002 \001(\003R\014openInterest\022\037\n\013e"
-  "xpiry_date\030\003 \001(\tR\nexpiryDate\022!\n\014strike_p"
-  "rice\030\004 \001(\tR\013strikePrice\022/\n\023contract_mult"
-  "iplier\030\005 \001(\tR\022contractMultiplier\022#\n\rcont"
-  "ract_type\030\006 \001(\tR\014contractType\022#\n\rcontrac"
-  "t_size\030\007 \001(\tR\014contractSize\022\034\n\tdirection\030"
-  "\010 \001(\tR\tdirection\0223\n\025historical_volatilit"
-  "y\030\t \001(\tR\024historicalVolatility\022+\n\021underly"
-  "ing_symbol\030\n \001(\tR\020underlyingSymbol\"[\n\024Wa"
-  "rrantQuoteResponse\022C\n\nsecu_quote\030\002 \003(\0132$"
-  ".longbridgeapp.quote.v1.WarrantQuoteR\tse"
-  "cuQuote\"\204\003\n\014WarrantQuote\022\026\n\006symbol\030\001 \001(\t"
-  "R\006symbol\022\033\n\tlast_done\030\002 \001(\tR\010lastDone\022\035\n"
-  "\nprev_close\030\003 \001(\tR\tprevClose\022\022\n\004open\030\004 \001"
-  "(\tR\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001("
-  "\tR\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022\026\n\006"
-  "volume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t \001(\tR\010"
-  "turnover\022F\n\014trade_status\030\n \001(\0162#.longbri"
-  "dgeapp.quote.v1.TradeStatusR\013tradeStatus"
-  "\022L\n\016warrant_extend\030\013 \001(\0132%.longbridgeapp"
-  ".quote.v1.WarrantExtendR\rwarrantExtend\"\357"
-  "\003\n\rWarrantExtend\022-\n\022implied_volatility\030\001"
-  " \001(\tR\021impliedVolatility\022\037\n\013expiry_date\030\002"
-  " \001(\tR\nexpiryDate\022&\n\017last_trade_date\030\003 \001("
-  "\tR\rlastTradeDate\022+\n\021outstanding_ratio\030\004 "
-  "\001(\tR\020outstandingRatio\022\'\n\017outstanding_qty"
-  "\030\005 \001(\003R\016outstandingQty\022)\n\020conversion_rat"
-  "io\030\006 \001(\tR\017conversionRatio\022\032\n\010category\030\007 "
-  "\001(\tR\010category\022!\n\014strike_price\030\010 \001(\tR\013str"
-  "ikePrice\022,\n\022upper_strike_price\030\t \001(\tR\020up"
-  "perStrikePrice\022,\n\022lower_strike_price\030\n \001"
-  "(\tR\020lowerStrikePrice\022\035\n\ncall_price\030\013 \001(\t"
-  "R\tcallPrice\022+\n\021underlying_symbol\030\014 \001(\tR\020"
-  "underlyingSymbol\"\221\001\n\025SecurityDepthRespon"
-  "se\022\026\n\006symbol\030\001 \001(\tR\006symbol\022/\n\003ask\030\002 \003(\0132"
-  "\035.longbridgeapp.quote.v1.DepthR\003ask\022/\n\003b"
-  "id\030\003 \003(\0132\035.longbridgeapp.quote.v1.DepthR"
-  "\003bid\"n\n\005Depth\022\032\n\010position\030\001 \001(\005R\010positio"
-  "n\022\024\n\005price\030\002 \001(\tR\005price\022\026\n\006volume\030\003 \001(\003R"
-  "\006volume\022\033\n\torder_num\030\004 \001(\003R\010orderNum\"\265\001\n"
-  "\027SecurityBrokersResponse\022\026\n\006symbol\030\001 \001(\t"
-  "R\006symbol\022@\n\013ask_brokers\030\002 \003(\0132\037.longbrid"
-  "geapp.quote.v1.BrokersR\naskBrokers\022@\n\013bi"
-  "d_brokers\030\003 \003(\0132\037.longbridgeapp.quote.v1"
-  ".BrokersR\nbidBrokers\"D\n\007Brokers\022\032\n\010posit"
-  "ion\030\001 \001(\005R\010position\022\035\n\nbroker_ids\030\002 \003(\005R"
-  "\tbrokerIds\"\205\001\n\034ParticipantBrokerIdsRespo"
-  "nse\022e\n\032participant_broker_numbers\030\001 \003(\0132"
-  "\'.longbridgeapp.quote.v1.ParticipantInfo"
-  "R\030participantBrokerNumbers\"\300\001\n\017Participa"
-  "ntInfo\022\035\n\nbroker_ids\030\001 \003(\005R\tbrokerIds\022.\n"
-  "\023participant_name_cn\030\002 \001(\tR\021participantN"
-  "ameCn\022.\n\023participant_name_en\030\003 \001(\tR\021part"
-  "icipantNameEn\022.\n\023participant_name_hk\030\004 \001"
-  "(\tR\021participantNameHk\"D\n\024SecurityTradeRe"
-  "quest\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\024\n\005count\030\002"
-  " \001(\005R\005count\"f\n\025SecurityTradeResponse\022\026\n\006"
-  "symbol\030\001 \001(\tR\006symbol\0225\n\006trades\030\002 \003(\0132\035.l"
-  "ongbridgeapp.quote.v1.TradeR\006trades\"\333\001\n\005"
-  "Trade\022\024\n\005price\030\001 \001(\tR\005price\022\026\n\006volume\030\002 "
-  "\001(\003R\006volume\022\034\n\ttimestamp\030\003 \001(\003R\ttimestam"
-  "p\022\035\n\ntrade_type\030\004 \001(\tR\ttradeType\022\034\n\tdire"
-  "ction\030\005 \001(\005R\tdirection\022I\n\rtrade_session\030"
-  "\006 \001(\0162$.longbridgeapp.quote.v1.TradeSess"
-  "ionR\014tradeSession\"1\n\027SecurityIntradayReq"
-  "uest\022\026\n\006symbol\030\001 \001(\tR\006symbol\"f\n\030Security"
-  "IntradayResponse\022\026\n\006symbol\030\001 \001(\tR\006symbol"
-  "\0222\n\005lines\030\002 \003(\0132\034.longbridgeapp.quote.v1"
-  ".LineR\005lines\"\213\001\n\004Line\022\024\n\005price\030\001 \001(\tR\005pr"
-  "ice\022\034\n\ttimestamp\030\002 \001(\003R\ttimestamp\022\026\n\006vol"
-  "ume\030\003 \001(\003R\006volume\022\032\n\010turnover\030\004 \001(\tR\010tur"
-  "nover\022\033\n\tavg_price\030\005 \001(\tR\010avgPrice\"\307\001\n\032S"
-  "ecurityCandlestickRequest\022\026\n\006symbol\030\001 \001("
-  "\tR\006symbol\0226\n\006period\030\002 \001(\0162\036.longbridgeap"
-  "p.quote.v1.PeriodR\006period\022\024\n\005count\030\003 \001(\005"
-  "R\005count\022C\n\013adjust_type\030\004 \001(\0162\".longbridg"
-  "eapp.quote.v1.AdjustTypeR\nadjustType\"~\n\033"
-  "SecurityCandlestickResponse\022\026\n\006symbol\030\001 "
-  "\001(\tR\006symbol\022G\n\014candlesticks\030\002 \003(\0132#.long"
-  "bridgeapp.quote.v1.CandlestickR\014candlest"
-  "icks\"\257\001\n\013Candlestick\022\024\n\005close\030\001 \001(\tR\005clo"
-  "se\022\022\n\004open\030\002 \001(\tR\004open\022\020\n\003low\030\003 \001(\tR\003low"
-  "\022\022\n\004high\030\004 \001(\tR\004high\022\026\n\006volume\030\005 \001(\003R\006vo"
-  "lume\022\032\n\010turnover\030\006 \001(\tR\010turnover\022\034\n\ttime"
-  "stamp\030\007 \001(\003R\ttimestamp\">\n\033OptionChainDat"
-  "eListResponse\022\037\n\013expiry_date\030\001 \003(\tR\nexpi"
-  "ryDate\"[\n OptionChainDateStrikeInfoReque"
-  "st\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\037\n\013expiry_dat"
-  "e\030\002 \001(\tR\nexpiryDate\"x\n!OptionChainDateSt"
-  "rikeInfoResponse\022S\n\021strike_price_info\030\001 "
-  "\003(\0132\'.longbridgeapp.quote.v1.StrikePrice"
-  "InfoR\017strikePriceInfo\"\203\001\n\017StrikePriceInf"
-  "o\022\024\n\005price\030\001 \001(\tR\005price\022\037\n\013call_symbol\030\002"
-  " \001(\tR\ncallSymbol\022\035\n\nput_symbol\030\003 \001(\tR\tpu"
-  "tSymbol\022\032\n\010standard\030\004 \001(\010R\010standard\"Y\n\022I"
-  "ssuerInfoResponse\022C\n\013issuer_info\030\001 \003(\0132\""
-  ".longbridgeapp.quote.v1.IssuerInfoR\nissu"
-  "erInfo\"g\n\nIssuerInfo\022\016\n\002id\030\001 \001(\005R\002id\022\027\n\007"
-  "name_cn\030\002 \001(\tR\006nameCn\022\027\n\007name_en\030\003 \001(\tR\006"
-  "nameEn\022\027\n\007name_hk\030\004 \001(\tR\006nameHk\"\231\001\n\030Warr"
-  "antFilterListRequest\022\026\n\006symbol\030\001 \001(\tR\006sy"
-  "mbol\022I\n\rfilter_config\030\002 \001(\0132$.longbridge"
-  "app.quote.v1.FilterConfigR\014filterConfig\022"
-  "\032\n\010language\030\003 \001(\005R\010language\"\212\002\n\014FilterCo"
-  "nfig\022\027\n\007sort_by\030\001 \001(\005R\006sortBy\022\035\n\nsort_or"
-  "der\030\002 \001(\005R\tsortOrder\022\037\n\013sort_offset\030\003 \001("
-  "\005R\nsortOffset\022\035\n\nsort_count\030\004 \001(\005R\tsortC"
-  "ount\022\022\n\004type\030\005 \003(\005R\004type\022\026\n\006issuer\030\006 \003(\005"
-  "R\006issuer\022\037\n\013expiry_date\030\007 \003(\005R\nexpiryDat"
-  "e\022\035\n\nprice_type\030\010 \003(\005R\tpriceType\022\026\n\006stat"
-  "us\030\t \003(\005R\006status\"\206\001\n\031WarrantFilterListRe"
-  "sponse\022H\n\014warrant_list\030\001 \003(\0132%.longbridg"
-  "eapp.quote.v1.FilterWarrantR\013warrantList"
-  "\022\037\n\013total_count\030\002 \001(\005R\ntotalCount\"\271\006\n\rFi"
-  "lterWarrant\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\022\n\004n"
-  "ame\030\002 \001(\tR\004name\022\033\n\tlast_done\030\003 \001(\tR\010last"
-  "Done\022\037\n\013change_rate\030\004 \001(\tR\nchangeRate\022\035\n"
-  "\nchange_val\030\005 \001(\tR\tchangeVal\022\026\n\006volume\030\006"
-  " \001(\003R\006volume\022\032\n\010turnover\030\007 \001(\tR\010turnover"
-  "\022\037\n\013expiry_date\030\010 \001(\tR\nexpiryDate\022!\n\014str"
-  "ike_price\030\t \001(\tR\013strikePrice\022,\n\022upper_st"
-  "rike_price\030\n \001(\tR\020upperStrikePrice\022,\n\022lo"
-  "wer_strike_price\030\013 \001(\tR\020lowerStrikePrice"
-  "\022\'\n\017outstanding_qty\030\014 \001(\tR\016outstandingQt"
-  "y\022+\n\021outstanding_ratio\030\r \001(\tR\020outstandin"
-  "gRatio\022\030\n\007premium\030\016 \001(\tR\007premium\022\027\n\007itm_"
-  "otm\030\017 \001(\tR\006itmOtm\022-\n\022implied_volatility\030"
-  "\020 \001(\tR\021impliedVolatility\022\024\n\005delta\030\021 \001(\tR"
-  "\005delta\022\035\n\ncall_price\030\022 \001(\tR\tcallPrice\022\"\n"
-  "\rto_call_price\030\023 \001(\tR\013toCallPrice\022-\n\022eff"
-  "ective_leverage\030\024 \001(\tR\021effectiveLeverage"
-  "\022%\n\016leverage_ratio\030\025 \001(\tR\rleverageRatio\022"
-  ")\n\020conversion_ratio\030\026 \001(\tR\017conversionRat"
-  "io\022#\n\rbalance_point\030\027 \001(\tR\014balancePoint\022"
-  "\024\n\005state\030\030 \001(\tR\005state\"x\n\031MarketTradePeri"
-  "odResponse\022[\n\024market_trade_session\030\001 \003(\013"
-  "2).longbridgeapp.quote.v1.MarketTradePer"
-  "iodR\022marketTradeSession\"u\n\021MarketTradePe"
-  "riod\022\026\n\006market\030\001 \001(\tR\006market\022H\n\rtrade_se"
-  "ssion\030\002 \003(\0132#.longbridgeapp.quote.v1.Tra"
-  "dePeriodR\014tradeSession\"\216\001\n\013TradePeriod\022\031"
-  "\n\010beg_time\030\001 \001(\005R\007begTime\022\031\n\010end_time\030\002 "
-  "\001(\005R\007endTime\022I\n\rtrade_session\030\003 \001(\0162$.lo"
-  "ngbridgeapp.quote.v1.TradeSessionR\014trade"
-  "Session\"\025\n\023SubscriptionRequest\"V\n\024Subscr"
-  "iptionResponse\022>\n\010sub_list\030\001 \003(\0132#.longb"
-  "ridgeapp.quote.v1.SubTypeListR\007subList\"a"
-  "\n\013SubTypeList\022\026\n\006symbol\030\001 \001(\tR\006symbol\022:\n"
-  "\010sub_type\030\002 \003(\0162\037.longbridgeapp.quote.v1"
-  ".SubTypeR\007subType\"\212\001\n\020SubscribeRequest\022\026"
-  "\n\006symbol\030\001 \003(\tR\006symbol\022:\n\010sub_type\030\002 \003(\016"
-  "2\037.longbridgeapp.quote.v1.SubTypeR\007subTy"
-  "pe\022\"\n\ris_first_push\030\003 \001(\010R\013isFirstPush\"\205"
-  "\001\n\022UnsubscribeRequest\022\026\n\006symbol\030\001 \003(\tR\006s"
-  "ymbol\022:\n\010sub_type\030\002 \003(\0162\037.longbridgeapp."
-  "quote.v1.SubTypeR\007subType\022\033\n\tunsub_all\030\003"
-  " \001(\010R\010unsubAll\"\025\n\023UnsubscribeResponse\"\373\002"
-  "\n\tPushQuote\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010s"
-  "equence\030\002 \001(\003R\010sequence\022\033\n\tlast_done\030\003 \001"
-  "(\tR\010lastDone\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004high"
-  "\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimest"
-  "amp\030\007 \001(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006vo"
-  "lume\022\032\n\010turnover\030\t \001(\tR\010turnover\022F\n\014trad"
-  "e_status\030\n \001(\0162#.longbridgeapp.quote.v1."
-  "TradeStatusR\013tradeStatus\022I\n\rtrade_sessio"
-  "n\030\013 \001(\0162$.longbridgeapp.quote.v1.TradeSe"
-  "ssionR\014tradeSession\"\241\001\n\tPushDepth\022\026\n\006sym"
+  "\032\n\010turnover\030\004 \001(\tR\010turnover\022\033\n\tavg_price"
+  "\030\005 \001(\tR\010avgPrice\"\307\001\n\032SecurityCandlestick"
+  "Request\022\026\n\006symbol\030\001 \001(\tR\006symbol\0226\n\006perio"
+  "d\030\002 \001(\0162\036.longbridgeapp.quote.v1.PeriodR"
+  "\006period\022\024\n\005count\030\003 \001(\005R\005count\022C\n\013adjust_"
+  "type\030\004 \001(\0162\".longbridgeapp.quote.v1.Adju"
+  "stTypeR\nadjustType\"~\n\033SecurityCandlestic"
+  "kResponse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022G\n\014can"
+  "dlesticks\030\002 \003(\0132#.longbridgeapp.quote.v1"
+  ".CandlestickR\014candlesticks\"\257\001\n\013Candlesti"
+  "ck\022\024\n\005close\030\001 \001(\tR\005close\022\022\n\004open\030\002 \001(\tR\004"
+  "open\022\020\n\003low\030\003 \001(\tR\003low\022\022\n\004high\030\004 \001(\tR\004hi"
+  "gh\022\026\n\006volume\030\005 \001(\003R\006volume\022\032\n\010turnover\030\006"
+  " \001(\tR\010turnover\022\034\n\ttimestamp\030\007 \001(\003R\ttimes"
+  "tamp\">\n\033OptionChainDateListResponse\022\037\n\013e"
+  "xpiry_date\030\001 \003(\tR\nexpiryDate\"[\n OptionCh"
+  "ainDateStrikeInfoRequest\022\026\n\006symbol\030\001 \001(\t"
+  "R\006symbol\022\037\n\013expiry_date\030\002 \001(\tR\nexpiryDat"
+  "e\"x\n!OptionChainDateStrikeInfoResponse\022S"
+  "\n\021strike_price_info\030\001 \003(\0132\'.longbridgeap"
+  "p.quote.v1.StrikePriceInfoR\017strikePriceI"
+  "nfo\"\203\001\n\017StrikePriceInfo\022\024\n\005price\030\001 \001(\tR\005"
+  "price\022\037\n\013call_symbol\030\002 \001(\tR\ncallSymbol\022\035"
+  "\n\nput_symbol\030\003 \001(\tR\tputSymbol\022\032\n\010standar"
+  "d\030\004 \001(\010R\010standard\"Y\n\022IssuerInfoResponse\022"
+  "C\n\013issuer_info\030\001 \003(\0132\".longbridgeapp.quo"
+  "te.v1.IssuerInfoR\nissuerInfo\"g\n\nIssuerIn"
+  "fo\022\016\n\002id\030\001 \001(\005R\002id\022\027\n\007name_cn\030\002 \001(\tR\006nam"
+  "eCn\022\027\n\007name_en\030\003 \001(\tR\006nameEn\022\027\n\007name_hk\030"
+  "\004 \001(\tR\006nameHk\"\231\001\n\030WarrantFilterListReque"
+  "st\022\026\n\006symbol\030\001 \001(\tR\006symbol\022I\n\rfilter_con"
+  "fig\030\002 \001(\0132$.longbridgeapp.quote.v1.Filte"
+  "rConfigR\014filterConfig\022\032\n\010language\030\003 \001(\005R"
+  "\010language\"\212\002\n\014FilterConfig\022\027\n\007sort_by\030\001 "
+  "\001(\005R\006sortBy\022\035\n\nsort_order\030\002 \001(\005R\tsortOrd"
+  "er\022\037\n\013sort_offset\030\003 \001(\005R\nsortOffset\022\035\n\ns"
+  "ort_count\030\004 \001(\005R\tsortCount\022\022\n\004type\030\005 \003(\005"
+  "R\004type\022\026\n\006issuer\030\006 \003(\005R\006issuer\022\037\n\013expiry"
+  "_date\030\007 \003(\005R\nexpiryDate\022\035\n\nprice_type\030\010 "
+  "\003(\005R\tpriceType\022\026\n\006status\030\t \003(\005R\006status\"\206"
+  "\001\n\031WarrantFilterListResponse\022H\n\014warrant_"
+  "list\030\001 \003(\0132%.longbridgeapp.quote.v1.Filt"
+  "erWarrantR\013warrantList\022\037\n\013total_count\030\002 "
+  "\001(\005R\ntotalCount\"\271\006\n\rFilterWarrant\022\026\n\006sym"
+  "bol\030\001 \001(\tR\006symbol\022\022\n\004name\030\002 \001(\tR\004name\022\033\n"
+  "\tlast_done\030\003 \001(\tR\010lastDone\022\037\n\013change_rat"
+  "e\030\004 \001(\tR\nchangeRate\022\035\n\nchange_val\030\005 \001(\tR"
+  "\tchangeVal\022\026\n\006volume\030\006 \001(\003R\006volume\022\032\n\010tu"
+  "rnover\030\007 \001(\tR\010turnover\022\037\n\013expiry_date\030\010 "
+  "\001(\tR\nexpiryDate\022!\n\014strike_price\030\t \001(\tR\013s"
+  "trikePrice\022,\n\022upper_strike_price\030\n \001(\tR\020"
+  "upperStrikePrice\022,\n\022lower_strike_price\030\013"
+  " \001(\tR\020lowerStrikePrice\022\'\n\017outstanding_qt"
+  "y\030\014 \001(\tR\016outstandingQty\022+\n\021outstanding_r"
+  "atio\030\r \001(\tR\020outstandingRatio\022\030\n\007premium\030"
+  "\016 \001(\tR\007premium\022\027\n\007itm_otm\030\017 \001(\tR\006itmOtm\022"
+  "-\n\022implied_volatility\030\020 \001(\tR\021impliedVola"
+  "tility\022\024\n\005delta\030\021 \001(\tR\005delta\022\035\n\ncall_pri"
+  "ce\030\022 \001(\tR\tcallPrice\022\"\n\rto_call_price\030\023 \001"
+  "(\tR\013toCallPrice\022-\n\022effective_leverage\030\024 "
+  "\001(\tR\021effectiveLeverage\022%\n\016leverage_ratio"
+  "\030\025 \001(\tR\rleverageRatio\022)\n\020conversion_rati"
+  "o\030\026 \001(\tR\017conversionRatio\022#\n\rbalance_poin"
+  "t\030\027 \001(\tR\014balancePoint\022\024\n\005state\030\030 \001(\tR\005st"
+  "ate\"x\n\031MarketTradePeriodResponse\022[\n\024mark"
+  "et_trade_session\030\001 \003(\0132).longbridgeapp.q"
+  "uote.v1.MarketTradePeriodR\022marketTradeSe"
+  "ssion\"u\n\021MarketTradePeriod\022\026\n\006market\030\001 \001"
+  "(\tR\006market\022H\n\rtrade_session\030\002 \003(\0132#.long"
+  "bridgeapp.quote.v1.TradePeriodR\014tradeSes"
+  "sion\"\216\001\n\013TradePeriod\022\031\n\010beg_time\030\001 \001(\005R\007"
+  "begTime\022\031\n\010end_time\030\002 \001(\005R\007endTime\022I\n\rtr"
+  "ade_session\030\003 \001(\0162$.longbridgeapp.quote."
+  "v1.TradeSessionR\014tradeSession\"\025\n\023Subscri"
+  "ptionRequest\"V\n\024SubscriptionResponse\022>\n\010"
+  "sub_list\030\001 \003(\0132#.longbridgeapp.quote.v1."
+  "SubTypeListR\007subList\"a\n\013SubTypeList\022\026\n\006s"
+  "ymbol\030\001 \001(\tR\006symbol\022:\n\010sub_type\030\002 \003(\0162\037."
+  "longbridgeapp.quote.v1.SubTypeR\007subType\""
+  "\212\001\n\020SubscribeRequest\022\026\n\006symbol\030\001 \003(\tR\006sy"
+  "mbol\022:\n\010sub_type\030\002 \003(\0162\037.longbridgeapp.q"
+  "uote.v1.SubTypeR\007subType\022\"\n\ris_first_pus"
+  "h\030\003 \001(\010R\013isFirstPush\"\205\001\n\022UnsubscribeRequ"
+  "est\022\026\n\006symbol\030\001 \003(\tR\006symbol\022:\n\010sub_type\030"
+  "\002 \003(\0162\037.longbridgeapp.quote.v1.SubTypeR\007"
+  "subType\022\033\n\tunsub_all\030\003 \001(\010R\010unsubAll\"\025\n\023"
+  "UnsubscribeResponse\"\315\003\n\tPushQuote\022\026\n\006sym"
   "bol\030\001 \001(\tR\006symbol\022\032\n\010sequence\030\002 \001(\003R\010seq"
-  "uence\022/\n\003ask\030\003 \003(\0132\035.longbridgeapp.quote"
-  ".v1.DepthR\003ask\022/\n\003bid\030\004 \003(\0132\035.longbridge"
-  "app.quote.v1.DepthR\003bid\"\305\001\n\013PushBrokers\022"
-  "\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010sequence\030\002 \001("
-  "\003R\010sequence\022@\n\013ask_brokers\030\003 \003(\0132\037.longb"
-  "ridgeapp.quote.v1.BrokersR\naskBrokers\022@\n"
-  "\013bid_brokers\030\004 \003(\0132\037.longbridgeapp.quote"
-  ".v1.BrokersR\nbidBrokers\"t\n\tPushTrade\022\026\n\006"
-  "symbol\030\001 \001(\tR\006symbol\022\032\n\010sequence\030\002 \001(\003R\010"
-  "sequence\0223\n\005trade\030\003 \003(\0132\035.longbridgeapp."
-  "quote.v1.TradeR\005trade\"a\n\025MarketTradeDayR"
-  "equest\022\026\n\006market\030\001 \001(\tR\006market\022\027\n\007beg_da"
-  "y\030\002 \001(\tR\006begDay\022\027\n\007end_day\030\003 \001(\tR\006endDay"
-  "\"[\n\026MarketTradeDayResponse\022\033\n\ttrade_day\030"
-  "\001 \003(\tR\010tradeDay\022$\n\016half_trade_day\030\002 \003(\tR"
-  "\014halfTradeDay*\316\004\n\007Command\022\023\n\017UNKNOWN_COM"
-  "MAND\020\000\022\016\n\nHEART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r\n\tRECO"
-  "NNECT\020\003\022\020\n\014Subscription\020\005\022\r\n\tSubscribe\020\006"
-  "\022\017\n\013Unsubscribe\020\007\022\032\n\026QueryMarketTradePer"
-  "iod\020\010\022\027\n\023QueryMarketTradeDay\020\t\022\033\n\027QueryS"
-  "ecurityStaticInfo\020\n\022\026\n\022QuerySecurityQuot"
-  "e\020\013\022\024\n\020QueryOptionQuote\020\014\022\025\n\021QueryWarran"
-  "tQuote\020\r\022\016\n\nQueryDepth\020\016\022\020\n\014QueryBrokers"
-  "\020\017\022\035\n\031QueryParticipantBrokerIds\020\020\022\016\n\nQue"
-  "ryTrade\020\021\022\021\n\rQueryIntraday\020\022\022\024\n\020QueryCan"
-  "dlestick\020\023\022\030\n\024QueryOptionChainDate\020\024\022\"\n\036"
-  "QueryOptionChainDateStrikeInfo\020\025\022\032\n\026Quer"
-  "yWarrantIssuerInfo\020\026\022\032\n\026QueryWarrantFilt"
-  "erList\020\027\022\021\n\rPushQuoteData\020e\022\021\n\rPushDepth"
-  "Data\020f\022\023\n\017PushBrokersData\020g\022\021\n\rPushTrade"
-  "Data\020h*\302\001\n\013TradeStatus\022\n\n\006NORMAL\020\000\022\n\n\006HA"
-  "LTED\020\001\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n\014PREPAR"
-  "E_LIST\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_BE_OPENED"
-  "\020\006\022\025\n\021SPLIT_STOCK_HALTS\020\007\022\013\n\007EXPIRED\020\010\022\030"
-  "\n\024WARRANT_PREPARE_LIST\020\t\022\021\n\rSUSPEND_TRAD"
-  "E\020\n*\?\n\014TradeSession\022\020\n\014NORMAL_TRADE\020\000\022\r\n"
-  "\tPRE_TRADE\020\001\022\016\n\nPOST_TRADE\020\002*/\n\nAdjustTy"
-  "pe\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORWARD_ADJUST\020\001*\242\001"
-  "\n\006Period\022\022\n\016UNKNOWN_PERIOD\020\000\022\016\n\nONE_MINU"
-  "TE\020\001\022\017\n\013FIVE_MINUTE\020\005\022\022\n\016FIFTEEN_MINUTE\020"
-  "\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014SIXTY_MINUTE\020<\022\010"
-  "\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MONTH\020\270\027\022\t\n\004YEAR\020"
-  "\240\037*I\n\007SubType\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOTE"
-  "\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004B\341\001"
-  "\n\032com.longbridgeapp.quote.v1B\010ApiProtoP\001"
-  "Z\?github.com/longbridgeapp/openapi-proto"
-  "bufs/gen/go/quote;quotev1\242\002\003LQX\252\002\026Longbr"
-  "idgeapp.Quote.V1\312\002\026Longbridgeapp\\Quote\\V"
-  "1\342\002\"Longbridgeapp\\Quote\\V1\\GPBMetadata\352\002"
-  "\030Longbridgeapp::Quote::V1b\006proto3"
+  "uence\022\033\n\tlast_done\030\003 \001(\tR\010lastDone\022\022\n\004op"
+  "en\030\004 \001(\tR\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003lo"
+  "w\030\006 \001(\tR\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimesta"
+  "mp\022\026\n\006volume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t"
+  " \001(\tR\010turnover\022F\n\014trade_status\030\n \001(\0162#.l"
+  "ongbridgeapp.quote.v1.TradeStatusR\013trade"
+  "Status\022I\n\rtrade_session\030\013 \001(\0162$.longbrid"
+  "geapp.quote.v1.TradeSessionR\014tradeSessio"
+  "n\022%\n\016current_volume\030\014 \001(\003R\rcurrentVolume"
+  "\022)\n\020current_turnover\030\r \001(\tR\017currentTurno"
+  "ver\"\241\001\n\tPushDepth\022\026\n\006symbol\030\001 \001(\tR\006symbo"
+  "l\022\032\n\010sequence\030\002 \001(\003R\010sequence\022/\n\003ask\030\003 \003"
+  "(\0132\035.longbridgeapp.quote.v1.DepthR\003ask\022/"
+  "\n\003bid\030\004 \003(\0132\035.longbridgeapp.quote.v1.Dep"
+  "thR\003bid\"\305\001\n\013PushBrokers\022\026\n\006symbol\030\001 \001(\tR"
+  "\006symbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022@\n\013a"
+  "sk_brokers\030\003 \003(\0132\037.longbridgeapp.quote.v"
+  "1.BrokersR\naskBrokers\022@\n\013bid_brokers\030\004 \003"
+  "(\0132\037.longbridgeapp.quote.v1.BrokersR\nbid"
+  "Brokers\"t\n\tPushTrade\022\026\n\006symbol\030\001 \001(\tR\006sy"
+  "mbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\0223\n\005trad"
+  "e\030\003 \003(\0132\035.longbridgeapp.quote.v1.TradeR\005"
+  "trade\"a\n\025MarketTradeDayRequest\022\026\n\006market"
+  "\030\001 \001(\tR\006market\022\027\n\007beg_day\030\002 \001(\tR\006begDay\022"
+  "\027\n\007end_day\030\003 \001(\tR\006endDay\"[\n\026MarketTradeD"
+  "ayResponse\022\033\n\ttrade_day\030\001 \003(\tR\010tradeDay\022"
+  "$\n\016half_trade_day\030\002 \003(\tR\014halfTradeDay\"4\n"
+  "\032CapitalFlowIntradayRequest\022\026\n\006symbol\030\001 "
+  "\001(\tR\006symbol\"\361\001\n\033CapitalFlowIntradayRespo"
+  "nse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022q\n\022capital_f"
+  "low_lines\030\002 \003(\0132C.longbridgeapp.quote.v1"
+  ".CapitalFlowIntradayResponse.CapitalFlow"
+  "LineR\020capitalFlowLines\032G\n\017CapitalFlowLin"
+  "e\022\026\n\006inflow\030\001 \001(\tR\006inflow\022\034\n\ttimestamp\030\002"
+  " \001(\003R\ttimestamp\"\200\003\n\033CapitalDistributionR"
+  "esponse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\034\n\ttimes"
+  "tamp\030\002 \001(\003R\ttimestamp\022f\n\ncapital_in\030\003 \001("
+  "\0132G.longbridgeapp.quote.v1.CapitalDistri"
+  "butionResponse.CapitalDistributionR\tcapi"
+  "talIn\022h\n\013capital_out\030\004 \001(\0132G.longbridgea"
+  "pp.quote.v1.CapitalDistributionResponse."
+  "CapitalDistributionR\ncapitalOut\032Y\n\023Capit"
+  "alDistribution\022\024\n\005large\030\001 \001(\tR\005large\022\026\n\006"
+  "medium\030\002 \001(\tR\006medium\022\024\n\005small\030\003 \001(\tR\005sma"
+  "ll\"v\n\030SecurityCalcQuoteRequest\022\030\n\007symbol"
+  "s\030\001 \003(\tR\007symbols\022@\n\ncalc_index\030\002 \003(\0162!.l"
+  "ongbridgeapp.quote.v1.CalcIndexR\tcalcInd"
+  "ex\"\305\013\n\021SecurityCalcIndex\022\026\n\006symbol\030\001 \001(\t"
+  "R\006symbol\022\033\n\tlast_done\030\002 \001(\tR\010lastDone\022\035\n"
+  "\nchange_val\030\003 \001(\tR\tchangeVal\022\037\n\013change_r"
+  "ate\030\004 \001(\tR\nchangeRate\022\026\n\006volume\030\005 \001(\003R\006v"
+  "olume\022\032\n\010turnover\030\006 \001(\tR\010turnover\022&\n\017ytd"
+  "_change_rate\030\007 \001(\tR\rytdChangeRate\022#\n\rtur"
+  "nover_rate\030\010 \001(\tR\014turnoverRate\022,\n\022total_"
+  "market_value\030\t \001(\tR\020totalMarketValue\022!\n\014"
+  "capital_flow\030\n \001(\tR\013capitalFlow\022\034\n\tampli"
+  "tude\030\013 \001(\tR\tamplitude\022!\n\014volume_ratio\030\014 "
+  "\001(\tR\013volumeRatio\022 \n\014pe_ttm_ratio\030\r \001(\tR\n"
+  "peTtmRatio\022\031\n\010pb_ratio\030\016 \001(\tR\007pbRatio\022,\n"
+  "\022dividend_ratio_ttm\030\017 \001(\tR\020dividendRatio"
+  "Ttm\022/\n\024five_day_change_rate\030\020 \001(\tR\021fiveD"
+  "ayChangeRate\022-\n\023ten_day_change_rate\030\021 \001("
+  "\tR\020tenDayChangeRate\0221\n\025half_year_change_"
+  "rate\030\022 \001(\tR\022halfYearChangeRate\0227\n\030five_m"
+  "inutes_change_rate\030\023 \001(\tR\025fiveMinutesCha"
+  "ngeRate\022\037\n\013expiry_date\030\024 \001(\tR\nexpiryDate"
+  "\022!\n\014strike_price\030\025 \001(\tR\013strikePrice\022,\n\022u"
+  "pper_strike_price\030\026 \001(\tR\020upperStrikePric"
+  "e\022,\n\022lower_strike_price\030\027 \001(\tR\020lowerStri"
+  "kePrice\022\'\n\017outstanding_qty\030\030 \001(\003R\016outsta"
+  "ndingQty\022+\n\021outstanding_ratio\030\031 \001(\tR\020out"
+  "standingRatio\022\030\n\007premium\030\032 \001(\tR\007premium\022"
+  "\027\n\007itm_otm\030\033 \001(\tR\006itmOtm\022-\n\022implied_vola"
+  "tility\030\034 \001(\tR\021impliedVolatility\022#\n\rwarra"
+  "nt_delta\030\035 \001(\tR\014warrantDelta\022\035\n\ncall_pri"
+  "ce\030\036 \001(\tR\tcallPrice\022\"\n\rto_call_price\030\037 \001"
+  "(\tR\013toCallPrice\022-\n\022effective_leverage\030  "
+  "\001(\tR\021effectiveLeverage\022%\n\016leverage_ratio"
+  "\030! \001(\tR\rleverageRatio\022)\n\020conversion_rati"
+  "o\030\" \001(\tR\017conversionRatio\022#\n\rbalance_poin"
+  "t\030# \001(\tR\014balancePoint\022#\n\ropen_interest\030$"
+  " \001(\003R\014openInterest\022\024\n\005delta\030% \001(\tR\005delta"
+  "\022\024\n\005gamma\030& \001(\tR\005gamma\022\024\n\005theta\030\' \001(\tR\005t"
+  "heta\022\022\n\004vega\030( \001(\tR\004vega\022\020\n\003rho\030) \001(\tR\003r"
+  "ho\"v\n\031SecurityCalcQuoteResponse\022Y\n\023secur"
+  "ity_calc_index\030\001 \003(\0132).longbridgeapp.quo"
+  "te.v1.SecurityCalcIndexR\021securityCalcInd"
+  "ex*\252\005\n\007Command\022\023\n\017UNKNOWN_COMMAND\020\000\022\016\n\nH"
+  "EART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r\n\tRECONNECT\020\003\022\020\n\014"
+  "Subscription\020\005\022\r\n\tSubscribe\020\006\022\017\n\013Unsubsc"
+  "ribe\020\007\022\032\n\026QueryMarketTradePeriod\020\010\022\027\n\023Qu"
+  "eryMarketTradeDay\020\t\022\033\n\027QuerySecurityStat"
+  "icInfo\020\n\022\026\n\022QuerySecurityQuote\020\013\022\024\n\020Quer"
+  "yOptionQuote\020\014\022\025\n\021QueryWarrantQuote\020\r\022\016\n"
+  "\nQueryDepth\020\016\022\020\n\014QueryBrokers\020\017\022\035\n\031Query"
+  "ParticipantBrokerIds\020\020\022\016\n\nQueryTrade\020\021\022\021"
+  "\n\rQueryIntraday\020\022\022\024\n\020QueryCandlestick\020\023\022"
+  "\030\n\024QueryOptionChainDate\020\024\022\"\n\036QueryOption"
+  "ChainDateStrikeInfo\020\025\022\032\n\026QueryWarrantIss"
+  "uerInfo\020\026\022\032\n\026QueryWarrantFilterList\020\027\022\034\n"
+  "\030QueryCapitalFlowIntraday\020\030\022 \n\034QueryCapi"
+  "talFlowDistribution\020\031\022\032\n\026QuerySecurityCa"
+  "lcIndex\020\032\022\021\n\rPushQuoteData\020e\022\021\n\rPushDept"
+  "hData\020f\022\023\n\017PushBrokersData\020g\022\021\n\rPushTrad"
+  "eData\020h*\302\001\n\013TradeStatus\022\n\n\006NORMAL\020\000\022\n\n\006H"
+  "ALTED\020\001\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n\014PREPA"
+  "RE_LIST\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_BE_OPENE"
+  "D\020\006\022\025\n\021SPLIT_STOCK_HALTS\020\007\022\013\n\007EXPIRED\020\010\022"
+  "\030\n\024WARRANT_PREPARE_LIST\020\t\022\021\n\rSUSPEND_TRA"
+  "DE\020\n*\?\n\014TradeSession\022\020\n\014NORMAL_TRADE\020\000\022\r"
+  "\n\tPRE_TRADE\020\001\022\016\n\nPOST_TRADE\020\002*/\n\nAdjustT"
+  "ype\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORWARD_ADJUST\020\001*\242"
+  "\001\n\006Period\022\022\n\016UNKNOWN_PERIOD\020\000\022\016\n\nONE_MIN"
+  "UTE\020\001\022\017\n\013FIVE_MINUTE\020\005\022\022\n\016FIFTEEN_MINUTE"
+  "\020\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014SIXTY_MINUTE\020<\022"
+  "\010\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MONTH\020\270\027\022\t\n\004YEAR"
+  "\020\240\037*I\n\007SubType\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOT"
+  "E\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004*\226"
+  "\t\n\tCalcIndex\022\025\n\021CALCINDEX_UNKNOWN\020\000\022\027\n\023C"
+  "ALCINDEX_LAST_DONE\020\001\022\030\n\024CALCINDEX_CHANGE"
+  "_VAL\020\002\022\031\n\025CALCINDEX_CHANGE_RATE\020\003\022\024\n\020CAL"
+  "CINDEX_VOLUME\020\004\022\026\n\022CALCINDEX_TURNOVER\020\005\022"
+  "\035\n\031CALCINDEX_YTD_CHANGE_RATE\020\006\022\033\n\027CALCIN"
+  "DEX_TURNOVER_RATE\020\007\022 \n\034CALCINDEX_TOTAL_M"
+  "ARKET_VALUE\020\010\022\032\n\026CALCINDEX_CAPITAL_FLOW\020"
+  "\t\022\027\n\023CALCINDEX_AMPLITUDE\020\n\022\032\n\026CALCINDEX_"
+  "VOLUME_RATIO\020\013\022\032\n\026CALCINDEX_PE_TTM_RATIO"
+  "\020\014\022\026\n\022CALCINDEX_PB_RATIO\020\r\022 \n\034CALCINDEX_"
+  "DIVIDEND_RATIO_TTM\020\016\022\"\n\036CALCINDEX_FIVE_D"
+  "AY_CHANGE_RATE\020\017\022!\n\035CALCINDEX_TEN_DAY_CH"
+  "ANGE_RATE\020\020\022#\n\037CALCINDEX_HALF_YEAR_CHANG"
+  "E_RATE\020\021\022&\n\"CALCINDEX_FIVE_MINUTES_CHANG"
+  "E_RATE\020\022\022\031\n\025CALCINDEX_EXPIRY_DATE\020\023\022\032\n\026C"
+  "ALCINDEX_STRIKE_PRICE\020\024\022 \n\034CALCINDEX_UPP"
+  "ER_STRIKE_PRICE\020\025\022 \n\034CALCINDEX_LOWER_STR"
+  "IKE_PRICE\020\026\022\035\n\031CALCINDEX_OUTSTANDING_QTY"
+  "\020\027\022\037\n\033CALCINDEX_OUTSTANDING_RATIO\020\030\022\025\n\021C"
+  "ALCINDEX_PREMIUM\020\031\022\025\n\021CALCINDEX_ITM_OTM\020"
+  "\032\022 \n\034CALCINDEX_IMPLIED_VOLATILITY\020\033\022\033\n\027C"
+  "ALCINDEX_WARRANT_DELTA\020\034\022\030\n\024CALCINDEX_CA"
+  "LL_PRICE\020\035\022\033\n\027CALCINDEX_TO_CALL_PRICE\020\036\022"
+  " \n\034CALCINDEX_EFFECTIVE_LEVERAGE\020\037\022\034\n\030CAL"
+  "CINDEX_LEVERAGE_RATIO\020 \022\036\n\032CALCINDEX_CON"
+  "VERSION_RATIO\020!\022\033\n\027CALCINDEX_BALANCE_POI"
+  "NT\020\"\022\033\n\027CALCINDEX_OPEN_INTEREST\020#\022\023\n\017CAL"
+  "CINDEX_DELTA\020$\022\023\n\017CALCINDEX_GAMMA\020%\022\023\n\017C"
+  "ALCINDEX_THETA\020&\022\022\n\016CALCINDEX_VEGA\020\'\022\021\n\r"
+  "CALCINDEX_RHO\020(B\341\001\n\032com.longbridgeapp.qu"
+  "ote.v1B\010ApiProtoP\001Z\?github.com/longbridg"
+  "eapp/openapi-protobufs/gen/go/quote;quot"
+  "ev1\242\002\003LQX\252\002\026Longbridgeapp.Quote.V1\312\002\026Lon"
+  "gbridgeapp\\Quote\\V1\342\002\"Longbridgeapp\\Quot"
+  "e\\V1\\GPBMetadata\352\002\030Longbridgeapp::Quote:"
+  ":V1b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_quote_2fapi_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_quote_2fapi_2eproto = {
-  false, false, 10753, descriptor_table_protodef_quote_2fapi_2eproto, "quote/api.proto", 
-  &descriptor_table_quote_2fapi_2eproto_once, nullptr, 0, 53,
+  false, false, 14531, descriptor_table_protodef_quote_2fapi_2eproto, "quote/api.proto", 
+  &descriptor_table_quote_2fapi_2eproto_once, nullptr, 0, 61,
   schemas, file_default_instances, TableStruct_quote_2fapi_2eproto::offsets,
   file_level_metadata_quote_2fapi_2eproto, file_level_enum_descriptors_quote_2fapi_2eproto, file_level_service_descriptors_quote_2fapi_2eproto,
 };
@@ -1829,6 +2195,9 @@ bool Command_IsValid(int value) {
     case 21:
     case 22:
     case 23:
+    case 24:
+    case 25:
+    case 26:
     case 101:
     case 102:
     case 103:
@@ -1924,6 +2293,59 @@ bool SubType_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CalcIndex_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
+  return file_level_enum_descriptors_quote_2fapi_2eproto[6];
+}
+bool CalcIndex_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 28:
+    case 29:
+    case 30:
+    case 31:
+    case 32:
+    case 33:
+    case 34:
+    case 35:
+    case 36:
+    case 37:
+    case 38:
+    case 39:
+    case 40:
       return true;
     default:
       return false;
@@ -2617,6 +3039,14 @@ StaticInfo::StaticInfo(const StaticInfo& from)
     dividend_yield_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_dividend_yield(), 
       GetArenaForAllocation());
   }
+  board_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    board_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_board().empty()) {
+    board_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_board(), 
+      GetArenaForAllocation());
+  }
   ::memcpy(&total_shares_, &from.total_shares_,
     static_cast<size_t>(reinterpret_cast<char*>(&lot_size_) -
     reinterpret_cast<char*>(&total_shares_)) + sizeof(lot_size_));
@@ -2668,6 +3098,10 @@ dividend_yield_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStr
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
   dividend_yield_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+board_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  board_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&total_shares_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&lot_size_) -
@@ -2694,6 +3128,7 @@ inline void StaticInfo::SharedDtor() {
   eps_ttm_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   bps_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   dividend_yield_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  board_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void StaticInfo::ArenaDtor(void* object) {
@@ -2724,6 +3159,7 @@ void StaticInfo::Clear() {
   eps_ttm_.ClearToEmpty();
   bps_.ClearToEmpty();
   dividend_yield_.ClearToEmpty();
+  board_.ClearToEmpty();
   ::memset(&total_shares_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&lot_size_) -
       reinterpret_cast<char*>(&total_shares_)) + sizeof(lot_size_));
@@ -2885,6 +3321,16 @@ const char* StaticInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else if (static_cast<uint8_t>(tag) == 128) {
           _internal_add_stock_derivatives(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string board = 17 [json_name = "board"];
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          auto str = _internal_mutable_board();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.StaticInfo.board"));
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -3061,6 +3507,16 @@ uint8_t* StaticInfo::_InternalSerialize(
     }
   }
 
+  // string board = 17 [json_name = "board"];
+  if (!this->_internal_board().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_board().data(), static_cast<int>(this->_internal_board().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.StaticInfo.board");
+    target = stream->WriteStringMaybeAliased(
+        17, this->_internal_board(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -3169,6 +3625,13 @@ size_t StaticInfo::ByteSizeLong() const {
         this->_internal_dividend_yield());
   }
 
+  // string board = 17 [json_name = "board"];
+  if (!this->_internal_board().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_board());
+  }
+
   // int64 total_shares = 9 [json_name = "totalShares"];
   if (this->_internal_total_shares() != 0) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_total_shares());
@@ -3244,6 +3707,9 @@ void StaticInfo::MergeFrom(const StaticInfo& from) {
   }
   if (!from._internal_dividend_yield().empty()) {
     _internal_set_dividend_yield(from._internal_dividend_yield());
+  }
+  if (!from._internal_board().empty()) {
+    _internal_set_board(from._internal_board());
   }
   if (from._internal_total_shares() != 0) {
     _internal_set_total_shares(from._internal_total_shares());
@@ -3331,6 +3797,11 @@ void StaticInfo::InternalSwap(StaticInfo* other) {
       &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       &dividend_yield_, lhs_arena,
       &other->dividend_yield_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &board_, lhs_arena,
+      &other->board_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(StaticInfo, lot_size_)
@@ -17259,9 +17730,17 @@ PushQuote::PushQuote(const PushQuote& from)
     turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_turnover(), 
       GetArenaForAllocation());
   }
+  current_turnover_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    current_turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_current_turnover().empty()) {
+    current_turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_current_turnover(), 
+      GetArenaForAllocation());
+  }
   ::memcpy(&sequence_, &from.sequence_,
-    static_cast<size_t>(reinterpret_cast<char*>(&trade_session_) -
-    reinterpret_cast<char*>(&sequence_)) + sizeof(trade_session_));
+    static_cast<size_t>(reinterpret_cast<char*>(&current_volume_) -
+    reinterpret_cast<char*>(&sequence_)) + sizeof(current_volume_));
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.PushQuote)
 }
 
@@ -17290,10 +17769,14 @@ turnover_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
   turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+current_turnover_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  current_turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&sequence_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&trade_session_) -
-    reinterpret_cast<char*>(&sequence_)) + sizeof(trade_session_));
+    0, static_cast<size_t>(reinterpret_cast<char*>(&current_volume_) -
+    reinterpret_cast<char*>(&sequence_)) + sizeof(current_volume_));
 }
 
 PushQuote::~PushQuote() {
@@ -17311,6 +17794,7 @@ inline void PushQuote::SharedDtor() {
   high_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   low_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   turnover_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  current_turnover_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void PushQuote::ArenaDtor(void* object) {
@@ -17335,9 +17819,10 @@ void PushQuote::Clear() {
   high_.ClearToEmpty();
   low_.ClearToEmpty();
   turnover_.ClearToEmpty();
+  current_turnover_.ClearToEmpty();
   ::memset(&sequence_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&trade_session_) -
-      reinterpret_cast<char*>(&sequence_)) + sizeof(trade_session_));
+      reinterpret_cast<char*>(&current_volume_) -
+      reinterpret_cast<char*>(&sequence_)) + sizeof(current_volume_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -17446,6 +17931,24 @@ const char* PushQuote::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_trade_session(static_cast<::longbridgeapp::quote::v1::TradeSession>(val));
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 current_volume = 12 [json_name = "currentVolume"];
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          current_volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string current_turnover = 13 [json_name = "currentTurnover"];
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          auto str = _internal_mutable_current_turnover();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.PushQuote.current_turnover"));
+          CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
@@ -17570,6 +18073,22 @@ uint8_t* PushQuote::_InternalSerialize(
       11, this->_internal_trade_session(), target);
   }
 
+  // int64 current_volume = 12 [json_name = "currentVolume"];
+  if (this->_internal_current_volume() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(12, this->_internal_current_volume(), target);
+  }
+
+  // string current_turnover = 13 [json_name = "currentTurnover"];
+  if (!this->_internal_current_turnover().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_current_turnover().data(), static_cast<int>(this->_internal_current_turnover().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.PushQuote.current_turnover");
+    target = stream->WriteStringMaybeAliased(
+        13, this->_internal_current_turnover(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -17628,6 +18147,13 @@ size_t PushQuote::ByteSizeLong() const {
         this->_internal_turnover());
   }
 
+  // string current_turnover = 13 [json_name = "currentTurnover"];
+  if (!this->_internal_current_turnover().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_current_turnover());
+  }
+
   // int64 sequence = 2 [json_name = "sequence"];
   if (this->_internal_sequence() != 0) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_sequence());
@@ -17653,6 +18179,11 @@ size_t PushQuote::ByteSizeLong() const {
   if (this->_internal_trade_session() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_trade_session());
+  }
+
+  // int64 current_volume = 12 [json_name = "currentVolume"];
+  if (this->_internal_current_volume() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_current_volume());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
@@ -17695,6 +18226,9 @@ void PushQuote::MergeFrom(const PushQuote& from) {
   if (!from._internal_turnover().empty()) {
     _internal_set_turnover(from._internal_turnover());
   }
+  if (!from._internal_current_turnover().empty()) {
+    _internal_set_current_turnover(from._internal_current_turnover());
+  }
   if (from._internal_sequence() != 0) {
     _internal_set_sequence(from._internal_sequence());
   }
@@ -17709,6 +18243,9 @@ void PushQuote::MergeFrom(const PushQuote& from) {
   }
   if (from._internal_trade_session() != 0) {
     _internal_set_trade_session(from._internal_trade_session());
+  }
+  if (from._internal_current_volume() != 0) {
+    _internal_set_current_volume(from._internal_current_volume());
   }
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -17759,9 +18296,14 @@ void PushQuote::InternalSwap(PushQuote* other) {
       &turnover_, lhs_arena,
       &other->turnover_, rhs_arena
   );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &current_turnover_, lhs_arena,
+      &other->current_turnover_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PushQuote, trade_session_)
-      + sizeof(PushQuote::trade_session_)
+      PROTOBUF_FIELD_OFFSET(PushQuote, current_volume_)
+      + sizeof(PushQuote::current_volume_)
       - PROTOBUF_FIELD_OFFSET(PushQuote, sequence_)>(
           reinterpret_cast<char*>(&sequence_),
           reinterpret_cast<char*>(&other->sequence_));
@@ -19154,6 +19696,3815 @@ void MarketTradeDayResponse::InternalSwap(MarketTradeDayResponse* other) {
       file_level_metadata_quote_2fapi_2eproto[52]);
 }
 
+// ===================================================================
+
+class CapitalFlowIntradayRequest::_Internal {
+ public:
+};
+
+CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+}
+CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(const CapitalFlowIntradayRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_symbol(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+}
+
+inline void CapitalFlowIntradayRequest::SharedCtor() {
+symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+CapitalFlowIntradayRequest::~CapitalFlowIntradayRequest() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CapitalFlowIntradayRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  symbol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void CapitalFlowIntradayRequest::ArenaDtor(void* object) {
+  CapitalFlowIntradayRequest* _this = reinterpret_cast< CapitalFlowIntradayRequest* >(object);
+  (void)_this;
+}
+void CapitalFlowIntradayRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CapitalFlowIntradayRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CapitalFlowIntradayRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  symbol_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CapitalFlowIntradayRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string symbol = 1 [json_name = "symbol"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_symbol();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CapitalFlowIntradayRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_symbol().data(), static_cast<int>(this->_internal_symbol().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_symbol(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  return target;
+}
+
+size_t CapitalFlowIntradayRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_symbol());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CapitalFlowIntradayRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CapitalFlowIntradayRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CapitalFlowIntradayRequest::GetClassData() const { return &_class_data_; }
+
+void CapitalFlowIntradayRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CapitalFlowIntradayRequest *>(to)->MergeFrom(
+      static_cast<const CapitalFlowIntradayRequest &>(from));
+}
+
+
+void CapitalFlowIntradayRequest::MergeFrom(const CapitalFlowIntradayRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_symbol().empty()) {
+    _internal_set_symbol(from._internal_symbol());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CapitalFlowIntradayRequest::CopyFrom(const CapitalFlowIntradayRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CapitalFlowIntradayRequest::IsInitialized() const {
+  return true;
+}
+
+void CapitalFlowIntradayRequest::InternalSwap(CapitalFlowIntradayRequest* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &symbol_, lhs_arena,
+      &other->symbol_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CapitalFlowIntradayRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[53]);
+}
+
+// ===================================================================
+
+class CapitalFlowIntradayResponse_CapitalFlowLine::_Internal {
+ public:
+};
+
+CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+}
+CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(const CapitalFlowIntradayResponse_CapitalFlowLine& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  inflow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    inflow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_inflow().empty()) {
+    inflow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_inflow(), 
+      GetArenaForAllocation());
+  }
+  timestamp_ = from.timestamp_;
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+}
+
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::SharedCtor() {
+inflow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  inflow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+timestamp_ = int64_t{0};
+}
+
+CapitalFlowIntradayResponse_CapitalFlowLine::~CapitalFlowIntradayResponse_CapitalFlowLine() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  inflow_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::ArenaDtor(void* object) {
+  CapitalFlowIntradayResponse_CapitalFlowLine* _this = reinterpret_cast< CapitalFlowIntradayResponse_CapitalFlowLine* >(object);
+  (void)_this;
+}
+void CapitalFlowIntradayResponse_CapitalFlowLine::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CapitalFlowIntradayResponse_CapitalFlowLine::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  inflow_.ClearToEmpty();
+  timestamp_ = int64_t{0};
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CapitalFlowIntradayResponse_CapitalFlowLine::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string inflow = 1 [json_name = "inflow"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_inflow();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 timestamp = 2 [json_name = "timestamp"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CapitalFlowIntradayResponse_CapitalFlowLine::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string inflow = 1 [json_name = "inflow"];
+  if (!this->_internal_inflow().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_inflow().data(), static_cast<int>(this->_internal_inflow().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_inflow(), target);
+  }
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  if (this->_internal_timestamp() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_timestamp(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  return target;
+}
+
+size_t CapitalFlowIntradayResponse_CapitalFlowLine::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string inflow = 1 [json_name = "inflow"];
+  if (!this->_internal_inflow().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_inflow());
+  }
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  if (this->_internal_timestamp() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CapitalFlowIntradayResponse_CapitalFlowLine::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CapitalFlowIntradayResponse_CapitalFlowLine::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CapitalFlowIntradayResponse_CapitalFlowLine::GetClassData() const { return &_class_data_; }
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CapitalFlowIntradayResponse_CapitalFlowLine *>(to)->MergeFrom(
+      static_cast<const CapitalFlowIntradayResponse_CapitalFlowLine &>(from));
+}
+
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::MergeFrom(const CapitalFlowIntradayResponse_CapitalFlowLine& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_inflow().empty()) {
+    _internal_set_inflow(from._internal_inflow());
+  }
+  if (from._internal_timestamp() != 0) {
+    _internal_set_timestamp(from._internal_timestamp());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::CopyFrom(const CapitalFlowIntradayResponse_CapitalFlowLine& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CapitalFlowIntradayResponse_CapitalFlowLine::IsInitialized() const {
+  return true;
+}
+
+void CapitalFlowIntradayResponse_CapitalFlowLine::InternalSwap(CapitalFlowIntradayResponse_CapitalFlowLine* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &inflow_, lhs_arena,
+      &other->inflow_, rhs_arena
+  );
+  swap(timestamp_, other->timestamp_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CapitalFlowIntradayResponse_CapitalFlowLine::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[54]);
+}
+
+// ===================================================================
+
+class CapitalFlowIntradayResponse::_Internal {
+ public:
+};
+
+CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
+  capital_flow_lines_(arena) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+}
+CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(const CapitalFlowIntradayResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      capital_flow_lines_(from.capital_flow_lines_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_symbol(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+}
+
+inline void CapitalFlowIntradayResponse::SharedCtor() {
+symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+CapitalFlowIntradayResponse::~CapitalFlowIntradayResponse() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CapitalFlowIntradayResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  symbol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void CapitalFlowIntradayResponse::ArenaDtor(void* object) {
+  CapitalFlowIntradayResponse* _this = reinterpret_cast< CapitalFlowIntradayResponse* >(object);
+  (void)_this;
+}
+void CapitalFlowIntradayResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CapitalFlowIntradayResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CapitalFlowIntradayResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  capital_flow_lines_.Clear();
+  symbol_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CapitalFlowIntradayResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string symbol = 1 [json_name = "symbol"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_symbol();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine capital_flow_lines = 2 [json_name = "capitalFlowLines"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_capital_flow_lines(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CapitalFlowIntradayResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_symbol().data(), static_cast<int>(this->_internal_symbol().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_symbol(), target);
+  }
+
+  // repeated .longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine capital_flow_lines = 2 [json_name = "capitalFlowLines"];
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_capital_flow_lines_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_capital_flow_lines(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  return target;
+}
+
+size_t CapitalFlowIntradayResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine capital_flow_lines = 2 [json_name = "capitalFlowLines"];
+  total_size += 1UL * this->_internal_capital_flow_lines_size();
+  for (const auto& msg : this->capital_flow_lines_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_symbol());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CapitalFlowIntradayResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CapitalFlowIntradayResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CapitalFlowIntradayResponse::GetClassData() const { return &_class_data_; }
+
+void CapitalFlowIntradayResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CapitalFlowIntradayResponse *>(to)->MergeFrom(
+      static_cast<const CapitalFlowIntradayResponse &>(from));
+}
+
+
+void CapitalFlowIntradayResponse::MergeFrom(const CapitalFlowIntradayResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  capital_flow_lines_.MergeFrom(from.capital_flow_lines_);
+  if (!from._internal_symbol().empty()) {
+    _internal_set_symbol(from._internal_symbol());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CapitalFlowIntradayResponse::CopyFrom(const CapitalFlowIntradayResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CapitalFlowIntradayResponse::IsInitialized() const {
+  return true;
+}
+
+void CapitalFlowIntradayResponse::InternalSwap(CapitalFlowIntradayResponse* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  capital_flow_lines_.InternalSwap(&other->capital_flow_lines_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &symbol_, lhs_arena,
+      &other->symbol_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CapitalFlowIntradayResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[55]);
+}
+
+// ===================================================================
+
+class CapitalDistributionResponse_CapitalDistribution::_Internal {
+ public:
+};
+
+CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+}
+CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(const CapitalDistributionResponse_CapitalDistribution& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  large_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    large_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_large().empty()) {
+    large_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_large(), 
+      GetArenaForAllocation());
+  }
+  medium_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    medium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_medium().empty()) {
+    medium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_medium(), 
+      GetArenaForAllocation());
+  }
+  small_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    small_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_small().empty()) {
+    small_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_small(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+}
+
+inline void CapitalDistributionResponse_CapitalDistribution::SharedCtor() {
+large_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  large_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+medium_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  medium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+small_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  small_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+CapitalDistributionResponse_CapitalDistribution::~CapitalDistributionResponse_CapitalDistribution() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CapitalDistributionResponse_CapitalDistribution::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  large_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  medium_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  small_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void CapitalDistributionResponse_CapitalDistribution::ArenaDtor(void* object) {
+  CapitalDistributionResponse_CapitalDistribution* _this = reinterpret_cast< CapitalDistributionResponse_CapitalDistribution* >(object);
+  (void)_this;
+}
+void CapitalDistributionResponse_CapitalDistribution::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CapitalDistributionResponse_CapitalDistribution::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CapitalDistributionResponse_CapitalDistribution::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  large_.ClearToEmpty();
+  medium_.ClearToEmpty();
+  small_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CapitalDistributionResponse_CapitalDistribution::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string large = 1 [json_name = "large"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_large();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string medium = 2 [json_name = "medium"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_medium();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string small = 3 [json_name = "small"];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          auto str = _internal_mutable_small();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CapitalDistributionResponse_CapitalDistribution::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string large = 1 [json_name = "large"];
+  if (!this->_internal_large().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_large().data(), static_cast<int>(this->_internal_large().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_large(), target);
+  }
+
+  // string medium = 2 [json_name = "medium"];
+  if (!this->_internal_medium().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_medium().data(), static_cast<int>(this->_internal_medium().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_medium(), target);
+  }
+
+  // string small = 3 [json_name = "small"];
+  if (!this->_internal_small().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_small().data(), static_cast<int>(this->_internal_small().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small");
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_small(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  return target;
+}
+
+size_t CapitalDistributionResponse_CapitalDistribution::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string large = 1 [json_name = "large"];
+  if (!this->_internal_large().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_large());
+  }
+
+  // string medium = 2 [json_name = "medium"];
+  if (!this->_internal_medium().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_medium());
+  }
+
+  // string small = 3 [json_name = "small"];
+  if (!this->_internal_small().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_small());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CapitalDistributionResponse_CapitalDistribution::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CapitalDistributionResponse_CapitalDistribution::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CapitalDistributionResponse_CapitalDistribution::GetClassData() const { return &_class_data_; }
+
+void CapitalDistributionResponse_CapitalDistribution::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CapitalDistributionResponse_CapitalDistribution *>(to)->MergeFrom(
+      static_cast<const CapitalDistributionResponse_CapitalDistribution &>(from));
+}
+
+
+void CapitalDistributionResponse_CapitalDistribution::MergeFrom(const CapitalDistributionResponse_CapitalDistribution& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_large().empty()) {
+    _internal_set_large(from._internal_large());
+  }
+  if (!from._internal_medium().empty()) {
+    _internal_set_medium(from._internal_medium());
+  }
+  if (!from._internal_small().empty()) {
+    _internal_set_small(from._internal_small());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CapitalDistributionResponse_CapitalDistribution::CopyFrom(const CapitalDistributionResponse_CapitalDistribution& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CapitalDistributionResponse_CapitalDistribution::IsInitialized() const {
+  return true;
+}
+
+void CapitalDistributionResponse_CapitalDistribution::InternalSwap(CapitalDistributionResponse_CapitalDistribution* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &large_, lhs_arena,
+      &other->large_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &medium_, lhs_arena,
+      &other->medium_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &small_, lhs_arena,
+      &other->small_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CapitalDistributionResponse_CapitalDistribution::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[56]);
+}
+
+// ===================================================================
+
+class CapitalDistributionResponse::_Internal {
+ public:
+  static const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& capital_in(const CapitalDistributionResponse* msg);
+  static const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& capital_out(const CapitalDistributionResponse* msg);
+};
+
+const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution&
+CapitalDistributionResponse::_Internal::capital_in(const CapitalDistributionResponse* msg) {
+  return *msg->capital_in_;
+}
+const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution&
+CapitalDistributionResponse::_Internal::capital_out(const CapitalDistributionResponse* msg) {
+  return *msg->capital_out_;
+}
+CapitalDistributionResponse::CapitalDistributionResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.CapitalDistributionResponse)
+}
+CapitalDistributionResponse::CapitalDistributionResponse(const CapitalDistributionResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_symbol(), 
+      GetArenaForAllocation());
+  }
+  if (from._internal_has_capital_in()) {
+    capital_in_ = new ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution(*from.capital_in_);
+  } else {
+    capital_in_ = nullptr;
+  }
+  if (from._internal_has_capital_out()) {
+    capital_out_ = new ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution(*from.capital_out_);
+  } else {
+    capital_out_ = nullptr;
+  }
+  timestamp_ = from.timestamp_;
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.CapitalDistributionResponse)
+}
+
+inline void CapitalDistributionResponse::SharedCtor() {
+symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&capital_in_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
+    reinterpret_cast<char*>(&capital_in_)) + sizeof(timestamp_));
+}
+
+CapitalDistributionResponse::~CapitalDistributionResponse() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CapitalDistributionResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  symbol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete capital_in_;
+  if (this != internal_default_instance()) delete capital_out_;
+}
+
+void CapitalDistributionResponse::ArenaDtor(void* object) {
+  CapitalDistributionResponse* _this = reinterpret_cast< CapitalDistributionResponse* >(object);
+  (void)_this;
+}
+void CapitalDistributionResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CapitalDistributionResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CapitalDistributionResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  symbol_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && capital_in_ != nullptr) {
+    delete capital_in_;
+  }
+  capital_in_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && capital_out_ != nullptr) {
+    delete capital_out_;
+  }
+  capital_out_ = nullptr;
+  timestamp_ = int64_t{0};
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CapitalDistributionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string symbol = 1 [json_name = "symbol"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_symbol();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.CapitalDistributionResponse.symbol"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 timestamp = 2 [json_name = "timestamp"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_capital_in(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+          ptr = ctx->ParseMessage(_internal_mutable_capital_out(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CapitalDistributionResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_symbol().data(), static_cast<int>(this->_internal_symbol().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.CapitalDistributionResponse.symbol");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_symbol(), target);
+  }
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  if (this->_internal_timestamp() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_timestamp(), target);
+  }
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
+  if (this->_internal_has_capital_in()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        3, _Internal::capital_in(this), target, stream);
+  }
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
+  if (this->_internal_has_capital_out()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        4, _Internal::capital_out(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  return target;
+}
+
+size_t CapitalDistributionResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_symbol());
+  }
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
+  if (this->_internal_has_capital_in()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *capital_in_);
+  }
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
+  if (this->_internal_has_capital_out()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *capital_out_);
+  }
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  if (this->_internal_timestamp() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CapitalDistributionResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CapitalDistributionResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CapitalDistributionResponse::GetClassData() const { return &_class_data_; }
+
+void CapitalDistributionResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CapitalDistributionResponse *>(to)->MergeFrom(
+      static_cast<const CapitalDistributionResponse &>(from));
+}
+
+
+void CapitalDistributionResponse::MergeFrom(const CapitalDistributionResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_symbol().empty()) {
+    _internal_set_symbol(from._internal_symbol());
+  }
+  if (from._internal_has_capital_in()) {
+    _internal_mutable_capital_in()->::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution::MergeFrom(from._internal_capital_in());
+  }
+  if (from._internal_has_capital_out()) {
+    _internal_mutable_capital_out()->::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution::MergeFrom(from._internal_capital_out());
+  }
+  if (from._internal_timestamp() != 0) {
+    _internal_set_timestamp(from._internal_timestamp());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CapitalDistributionResponse::CopyFrom(const CapitalDistributionResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CapitalDistributionResponse::IsInitialized() const {
+  return true;
+}
+
+void CapitalDistributionResponse::InternalSwap(CapitalDistributionResponse* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &symbol_, lhs_arena,
+      &other->symbol_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CapitalDistributionResponse, timestamp_)
+      + sizeof(CapitalDistributionResponse::timestamp_)
+      - PROTOBUF_FIELD_OFFSET(CapitalDistributionResponse, capital_in_)>(
+          reinterpret_cast<char*>(&capital_in_),
+          reinterpret_cast<char*>(&other->capital_in_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CapitalDistributionResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[57]);
+}
+
+// ===================================================================
+
+class SecurityCalcQuoteRequest::_Internal {
+ public:
+};
+
+SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
+  symbols_(arena),
+  calc_index_(arena) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+}
+SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(const SecurityCalcQuoteRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      symbols_(from.symbols_),
+      calc_index_(from.calc_index_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+}
+
+inline void SecurityCalcQuoteRequest::SharedCtor() {
+}
+
+SecurityCalcQuoteRequest::~SecurityCalcQuoteRequest() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void SecurityCalcQuoteRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void SecurityCalcQuoteRequest::ArenaDtor(void* object) {
+  SecurityCalcQuoteRequest* _this = reinterpret_cast< SecurityCalcQuoteRequest* >(object);
+  (void)_this;
+}
+void SecurityCalcQuoteRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SecurityCalcQuoteRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void SecurityCalcQuoteRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  symbols_.Clear();
+  calc_index_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SecurityCalcQuoteRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated string symbols = 1 [json_name = "symbols"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            auto str = _internal_add_symbols();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols"));
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .longbridgeapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedEnumParser(_internal_mutable_calc_index(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<uint8_t>(tag) == 16) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          _internal_add_calc_index(static_cast<::longbridgeapp::quote::v1::CalcIndex>(val));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* SecurityCalcQuoteRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string symbols = 1 [json_name = "symbols"];
+  for (int i = 0, n = this->_internal_symbols_size(); i < n; i++) {
+    const auto& s = this->_internal_symbols(i);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      s.data(), static_cast<int>(s.length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols");
+    target = stream->WriteString(1, s, target);
+  }
+
+  // repeated .longbridgeapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
+  {
+    int byte_size = _calc_index_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteEnumPacked(
+          2, calc_index_, byte_size, target);
+    }
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  return target;
+}
+
+size_t SecurityCalcQuoteRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated string symbols = 1 [json_name = "symbols"];
+  total_size += 1 *
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(symbols_.size());
+  for (int i = 0, n = symbols_.size(); i < n; i++) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      symbols_.Get(i));
+  }
+
+  // repeated .longbridgeapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
+  {
+    size_t data_size = 0;
+    unsigned int count = static_cast<unsigned int>(this->_internal_calc_index_size());for (unsigned int i = 0; i < count; i++) {
+      data_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(
+        this->_internal_calc_index(static_cast<int>(i)));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<int32_t>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _calc_index_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SecurityCalcQuoteRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SecurityCalcQuoteRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SecurityCalcQuoteRequest::GetClassData() const { return &_class_data_; }
+
+void SecurityCalcQuoteRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SecurityCalcQuoteRequest *>(to)->MergeFrom(
+      static_cast<const SecurityCalcQuoteRequest &>(from));
+}
+
+
+void SecurityCalcQuoteRequest::MergeFrom(const SecurityCalcQuoteRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  symbols_.MergeFrom(from.symbols_);
+  calc_index_.MergeFrom(from.calc_index_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SecurityCalcQuoteRequest::CopyFrom(const SecurityCalcQuoteRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SecurityCalcQuoteRequest::IsInitialized() const {
+  return true;
+}
+
+void SecurityCalcQuoteRequest::InternalSwap(SecurityCalcQuoteRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  symbols_.InternalSwap(&other->symbols_);
+  calc_index_.InternalSwap(&other->calc_index_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SecurityCalcQuoteRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[58]);
+}
+
+// ===================================================================
+
+class SecurityCalcIndex::_Internal {
+ public:
+};
+
+SecurityCalcIndex::SecurityCalcIndex(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.SecurityCalcIndex)
+}
+SecurityCalcIndex::SecurityCalcIndex(const SecurityCalcIndex& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_symbol(), 
+      GetArenaForAllocation());
+  }
+  last_done_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    last_done_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    last_done_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_last_done(), 
+      GetArenaForAllocation());
+  }
+  change_val_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    change_val_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_val().empty()) {
+    change_val_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_change_val(), 
+      GetArenaForAllocation());
+  }
+  change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_rate().empty()) {
+    change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_change_rate(), 
+      GetArenaForAllocation());
+  }
+  turnover_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_turnover(), 
+      GetArenaForAllocation());
+  }
+  ytd_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    ytd_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_ytd_change_rate().empty()) {
+    ytd_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_ytd_change_rate(), 
+      GetArenaForAllocation());
+  }
+  turnover_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    turnover_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover_rate().empty()) {
+    turnover_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_turnover_rate(), 
+      GetArenaForAllocation());
+  }
+  total_market_value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    total_market_value_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_total_market_value().empty()) {
+    total_market_value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_total_market_value(), 
+      GetArenaForAllocation());
+  }
+  capital_flow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    capital_flow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_capital_flow().empty()) {
+    capital_flow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_capital_flow(), 
+      GetArenaForAllocation());
+  }
+  amplitude_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    amplitude_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_amplitude().empty()) {
+    amplitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_amplitude(), 
+      GetArenaForAllocation());
+  }
+  volume_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    volume_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_volume_ratio().empty()) {
+    volume_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_volume_ratio(), 
+      GetArenaForAllocation());
+  }
+  pe_ttm_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    pe_ttm_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_pe_ttm_ratio().empty()) {
+    pe_ttm_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_pe_ttm_ratio(), 
+      GetArenaForAllocation());
+  }
+  pb_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    pb_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_pb_ratio().empty()) {
+    pb_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_pb_ratio(), 
+      GetArenaForAllocation());
+  }
+  dividend_ratio_ttm_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    dividend_ratio_ttm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_dividend_ratio_ttm().empty()) {
+    dividend_ratio_ttm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_dividend_ratio_ttm(), 
+      GetArenaForAllocation());
+  }
+  five_day_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    five_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_five_day_change_rate().empty()) {
+    five_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_five_day_change_rate(), 
+      GetArenaForAllocation());
+  }
+  ten_day_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    ten_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_ten_day_change_rate().empty()) {
+    ten_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_ten_day_change_rate(), 
+      GetArenaForAllocation());
+  }
+  half_year_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    half_year_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_half_year_change_rate().empty()) {
+    half_year_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_half_year_change_rate(), 
+      GetArenaForAllocation());
+  }
+  five_minutes_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    five_minutes_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_five_minutes_change_rate().empty()) {
+    five_minutes_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_five_minutes_change_rate(), 
+      GetArenaForAllocation());
+  }
+  expiry_date_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    expiry_date_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    expiry_date_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_expiry_date(), 
+      GetArenaForAllocation());
+  }
+  strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_strike_price().empty()) {
+    strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_strike_price(), 
+      GetArenaForAllocation());
+  }
+  upper_strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    upper_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_upper_strike_price().empty()) {
+    upper_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_upper_strike_price(), 
+      GetArenaForAllocation());
+  }
+  lower_strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    lower_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_lower_strike_price().empty()) {
+    lower_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_lower_strike_price(), 
+      GetArenaForAllocation());
+  }
+  outstanding_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    outstanding_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_outstanding_ratio().empty()) {
+    outstanding_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_outstanding_ratio(), 
+      GetArenaForAllocation());
+  }
+  premium_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    premium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_premium().empty()) {
+    premium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_premium(), 
+      GetArenaForAllocation());
+  }
+  itm_otm_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    itm_otm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_itm_otm().empty()) {
+    itm_otm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_itm_otm(), 
+      GetArenaForAllocation());
+  }
+  implied_volatility_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    implied_volatility_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_implied_volatility().empty()) {
+    implied_volatility_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_implied_volatility(), 
+      GetArenaForAllocation());
+  }
+  warrant_delta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    warrant_delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_warrant_delta().empty()) {
+    warrant_delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_warrant_delta(), 
+      GetArenaForAllocation());
+  }
+  call_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_call_price().empty()) {
+    call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_call_price(), 
+      GetArenaForAllocation());
+  }
+  to_call_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    to_call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_to_call_price().empty()) {
+    to_call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_to_call_price(), 
+      GetArenaForAllocation());
+  }
+  effective_leverage_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    effective_leverage_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_effective_leverage().empty()) {
+    effective_leverage_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_effective_leverage(), 
+      GetArenaForAllocation());
+  }
+  leverage_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    leverage_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_leverage_ratio().empty()) {
+    leverage_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_leverage_ratio(), 
+      GetArenaForAllocation());
+  }
+  conversion_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    conversion_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_conversion_ratio().empty()) {
+    conversion_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_conversion_ratio(), 
+      GetArenaForAllocation());
+  }
+  balance_point_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    balance_point_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_balance_point().empty()) {
+    balance_point_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_balance_point(), 
+      GetArenaForAllocation());
+  }
+  delta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_delta().empty()) {
+    delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_delta(), 
+      GetArenaForAllocation());
+  }
+  gamma_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    gamma_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_gamma().empty()) {
+    gamma_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_gamma(), 
+      GetArenaForAllocation());
+  }
+  theta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    theta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_theta().empty()) {
+    theta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_theta(), 
+      GetArenaForAllocation());
+  }
+  vega_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    vega_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_vega().empty()) {
+    vega_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_vega(), 
+      GetArenaForAllocation());
+  }
+  rho_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    rho_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_rho().empty()) {
+    rho_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_rho(), 
+      GetArenaForAllocation());
+  }
+  ::memcpy(&volume_, &from.volume_,
+    static_cast<size_t>(reinterpret_cast<char*>(&open_interest_) -
+    reinterpret_cast<char*>(&volume_)) + sizeof(open_interest_));
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.SecurityCalcIndex)
+}
+
+inline void SecurityCalcIndex::SharedCtor() {
+symbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+last_done_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  last_done_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+change_val_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  change_val_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+turnover_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+ytd_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  ytd_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+turnover_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  turnover_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+total_market_value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  total_market_value_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+capital_flow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  capital_flow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+amplitude_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  amplitude_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+volume_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  volume_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+pe_ttm_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  pe_ttm_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+pb_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  pb_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+dividend_ratio_ttm_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  dividend_ratio_ttm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+five_day_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  five_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+ten_day_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  ten_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+half_year_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  half_year_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+five_minutes_change_rate_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  five_minutes_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+expiry_date_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  expiry_date_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+upper_strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  upper_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+lower_strike_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  lower_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+outstanding_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  outstanding_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+premium_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  premium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+itm_otm_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  itm_otm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+implied_volatility_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  implied_volatility_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+warrant_delta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  warrant_delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+call_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+to_call_price_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  to_call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+effective_leverage_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  effective_leverage_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+leverage_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  leverage_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+conversion_ratio_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  conversion_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+balance_point_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  balance_point_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+delta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+gamma_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  gamma_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+theta_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  theta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+vega_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  vega_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+rho_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  rho_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&volume_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&open_interest_) -
+    reinterpret_cast<char*>(&volume_)) + sizeof(open_interest_));
+}
+
+SecurityCalcIndex::~SecurityCalcIndex() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.SecurityCalcIndex)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void SecurityCalcIndex::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  symbol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  last_done_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  change_val_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  turnover_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ytd_change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  turnover_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  total_market_value_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  capital_flow_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  amplitude_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  volume_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  pe_ttm_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  pb_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  dividend_ratio_ttm_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  five_day_change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ten_day_change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  half_year_change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  five_minutes_change_rate_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  expiry_date_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  strike_price_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  upper_strike_price_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  lower_strike_price_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  outstanding_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  premium_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  itm_otm_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  implied_volatility_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  warrant_delta_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  call_price_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  to_call_price_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  effective_leverage_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  leverage_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  conversion_ratio_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  balance_point_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  delta_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  gamma_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  theta_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  vega_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  rho_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void SecurityCalcIndex::ArenaDtor(void* object) {
+  SecurityCalcIndex* _this = reinterpret_cast< SecurityCalcIndex* >(object);
+  (void)_this;
+}
+void SecurityCalcIndex::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SecurityCalcIndex::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void SecurityCalcIndex::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.SecurityCalcIndex)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  symbol_.ClearToEmpty();
+  last_done_.ClearToEmpty();
+  change_val_.ClearToEmpty();
+  change_rate_.ClearToEmpty();
+  turnover_.ClearToEmpty();
+  ytd_change_rate_.ClearToEmpty();
+  turnover_rate_.ClearToEmpty();
+  total_market_value_.ClearToEmpty();
+  capital_flow_.ClearToEmpty();
+  amplitude_.ClearToEmpty();
+  volume_ratio_.ClearToEmpty();
+  pe_ttm_ratio_.ClearToEmpty();
+  pb_ratio_.ClearToEmpty();
+  dividend_ratio_ttm_.ClearToEmpty();
+  five_day_change_rate_.ClearToEmpty();
+  ten_day_change_rate_.ClearToEmpty();
+  half_year_change_rate_.ClearToEmpty();
+  five_minutes_change_rate_.ClearToEmpty();
+  expiry_date_.ClearToEmpty();
+  strike_price_.ClearToEmpty();
+  upper_strike_price_.ClearToEmpty();
+  lower_strike_price_.ClearToEmpty();
+  outstanding_ratio_.ClearToEmpty();
+  premium_.ClearToEmpty();
+  itm_otm_.ClearToEmpty();
+  implied_volatility_.ClearToEmpty();
+  warrant_delta_.ClearToEmpty();
+  call_price_.ClearToEmpty();
+  to_call_price_.ClearToEmpty();
+  effective_leverage_.ClearToEmpty();
+  leverage_ratio_.ClearToEmpty();
+  conversion_ratio_.ClearToEmpty();
+  balance_point_.ClearToEmpty();
+  delta_.ClearToEmpty();
+  gamma_.ClearToEmpty();
+  theta_.ClearToEmpty();
+  vega_.ClearToEmpty();
+  rho_.ClearToEmpty();
+  ::memset(&volume_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&open_interest_) -
+      reinterpret_cast<char*>(&volume_)) + sizeof(open_interest_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SecurityCalcIndex::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string symbol = 1 [json_name = "symbol"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_symbol();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.symbol"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string last_done = 2 [json_name = "lastDone"];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_last_done();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.last_done"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string change_val = 3 [json_name = "changeVal"];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          auto str = _internal_mutable_change_val();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.change_val"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string change_rate = 4 [json_name = "changeRate"];
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+          auto str = _internal_mutable_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 volume = 5 [json_name = "volume"];
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string turnover = 6 [json_name = "turnover"];
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+          auto str = _internal_mutable_turnover();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.turnover"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string ytd_change_rate = 7 [json_name = "ytdChangeRate"];
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          auto str = _internal_mutable_ytd_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string turnover_rate = 8 [json_name = "turnoverRate"];
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
+          auto str = _internal_mutable_turnover_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string total_market_value = 9 [json_name = "totalMarketValue"];
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          auto str = _internal_mutable_total_market_value();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string capital_flow = 10 [json_name = "capitalFlow"];
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
+          auto str = _internal_mutable_capital_flow();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string amplitude = 11 [json_name = "amplitude"];
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          auto str = _internal_mutable_amplitude();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.amplitude"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string volume_ratio = 12 [json_name = "volumeRatio"];
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
+          auto str = _internal_mutable_volume_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string pe_ttm_ratio = 13 [json_name = "peTtmRatio"];
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          auto str = _internal_mutable_pe_ttm_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string pb_ratio = 14 [json_name = "pbRatio"];
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
+          auto str = _internal_mutable_pb_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string dividend_ratio_ttm = 15 [json_name = "dividendRatioTtm"];
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          auto str = _internal_mutable_dividend_ratio_ttm();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string five_day_change_rate = 16 [json_name = "fiveDayChangeRate"];
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 130)) {
+          auto str = _internal_mutable_five_day_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string ten_day_change_rate = 17 [json_name = "tenDayChangeRate"];
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          auto str = _internal_mutable_ten_day_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string half_year_change_rate = 18 [json_name = "halfYearChangeRate"];
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 146)) {
+          auto str = _internal_mutable_half_year_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string five_minutes_change_rate = 19 [json_name = "fiveMinutesChangeRate"];
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          auto str = _internal_mutable_five_minutes_change_rate();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string expiry_date = 20 [json_name = "expiryDate"];
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
+          auto str = _internal_mutable_expiry_date();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string strike_price = 21 [json_name = "strikePrice"];
+      case 21:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          auto str = _internal_mutable_strike_price();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.strike_price"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string upper_strike_price = 22 [json_name = "upperStrikePrice"];
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 178)) {
+          auto str = _internal_mutable_upper_strike_price();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string lower_strike_price = 23 [json_name = "lowerStrikePrice"];
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          auto str = _internal_mutable_lower_strike_price();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 outstanding_qty = 24 [json_name = "outstandingQty"];
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          outstanding_qty_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string outstanding_ratio = 25 [json_name = "outstandingRatio"];
+      case 25:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          auto str = _internal_mutable_outstanding_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string premium = 26 [json_name = "premium"];
+      case 26:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 210)) {
+          auto str = _internal_mutable_premium();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.premium"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string itm_otm = 27 [json_name = "itmOtm"];
+      case 27:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          auto str = _internal_mutable_itm_otm();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string implied_volatility = 28 [json_name = "impliedVolatility"];
+      case 28:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 226)) {
+          auto str = _internal_mutable_implied_volatility();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string warrant_delta = 29 [json_name = "warrantDelta"];
+      case 29:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          auto str = _internal_mutable_warrant_delta();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string call_price = 30 [json_name = "callPrice"];
+      case 30:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 242)) {
+          auto str = _internal_mutable_call_price();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.call_price"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string to_call_price = 31 [json_name = "toCallPrice"];
+      case 31:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          auto str = _internal_mutable_to_call_price();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string effective_leverage = 32 [json_name = "effectiveLeverage"];
+      case 32:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 2)) {
+          auto str = _internal_mutable_effective_leverage();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string leverage_ratio = 33 [json_name = "leverageRatio"];
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_leverage_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string conversion_ratio = 34 [json_name = "conversionRatio"];
+      case 34:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_conversion_ratio();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string balance_point = 35 [json_name = "balancePoint"];
+      case 35:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          auto str = _internal_mutable_balance_point();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.balance_point"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // int64 open_interest = 36 [json_name = "openInterest"];
+      case 36:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          open_interest_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string delta = 37 [json_name = "delta"];
+      case 37:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          auto str = _internal_mutable_delta();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.delta"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string gamma = 38 [json_name = "gamma"];
+      case 38:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+          auto str = _internal_mutable_gamma();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.gamma"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string theta = 39 [json_name = "theta"];
+      case 39:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          auto str = _internal_mutable_theta();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.theta"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string vega = 40 [json_name = "vega"];
+      case 40:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
+          auto str = _internal_mutable_vega();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.vega"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // string rho = 41 [json_name = "rho"];
+      case 41:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          auto str = _internal_mutable_rho();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.quote.v1.SecurityCalcIndex.rho"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* SecurityCalcIndex::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.SecurityCalcIndex)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_symbol().data(), static_cast<int>(this->_internal_symbol().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.symbol");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_symbol(), target);
+  }
+
+  // string last_done = 2 [json_name = "lastDone"];
+  if (!this->_internal_last_done().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_last_done().data(), static_cast<int>(this->_internal_last_done().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.last_done");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_last_done(), target);
+  }
+
+  // string change_val = 3 [json_name = "changeVal"];
+  if (!this->_internal_change_val().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_change_val().data(), static_cast<int>(this->_internal_change_val().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.change_val");
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_change_val(), target);
+  }
+
+  // string change_rate = 4 [json_name = "changeRate"];
+  if (!this->_internal_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_change_rate().data(), static_cast<int>(this->_internal_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.change_rate");
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_change_rate(), target);
+  }
+
+  // int64 volume = 5 [json_name = "volume"];
+  if (this->_internal_volume() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_volume(), target);
+  }
+
+  // string turnover = 6 [json_name = "turnover"];
+  if (!this->_internal_turnover().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_turnover().data(), static_cast<int>(this->_internal_turnover().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.turnover");
+    target = stream->WriteStringMaybeAliased(
+        6, this->_internal_turnover(), target);
+  }
+
+  // string ytd_change_rate = 7 [json_name = "ytdChangeRate"];
+  if (!this->_internal_ytd_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_ytd_change_rate().data(), static_cast<int>(this->_internal_ytd_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate");
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_ytd_change_rate(), target);
+  }
+
+  // string turnover_rate = 8 [json_name = "turnoverRate"];
+  if (!this->_internal_turnover_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_turnover_rate().data(), static_cast<int>(this->_internal_turnover_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate");
+    target = stream->WriteStringMaybeAliased(
+        8, this->_internal_turnover_rate(), target);
+  }
+
+  // string total_market_value = 9 [json_name = "totalMarketValue"];
+  if (!this->_internal_total_market_value().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_total_market_value().data(), static_cast<int>(this->_internal_total_market_value().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value");
+    target = stream->WriteStringMaybeAliased(
+        9, this->_internal_total_market_value(), target);
+  }
+
+  // string capital_flow = 10 [json_name = "capitalFlow"];
+  if (!this->_internal_capital_flow().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_capital_flow().data(), static_cast<int>(this->_internal_capital_flow().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow");
+    target = stream->WriteStringMaybeAliased(
+        10, this->_internal_capital_flow(), target);
+  }
+
+  // string amplitude = 11 [json_name = "amplitude"];
+  if (!this->_internal_amplitude().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_amplitude().data(), static_cast<int>(this->_internal_amplitude().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.amplitude");
+    target = stream->WriteStringMaybeAliased(
+        11, this->_internal_amplitude(), target);
+  }
+
+  // string volume_ratio = 12 [json_name = "volumeRatio"];
+  if (!this->_internal_volume_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_volume_ratio().data(), static_cast<int>(this->_internal_volume_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio");
+    target = stream->WriteStringMaybeAliased(
+        12, this->_internal_volume_ratio(), target);
+  }
+
+  // string pe_ttm_ratio = 13 [json_name = "peTtmRatio"];
+  if (!this->_internal_pe_ttm_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_pe_ttm_ratio().data(), static_cast<int>(this->_internal_pe_ttm_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio");
+    target = stream->WriteStringMaybeAliased(
+        13, this->_internal_pe_ttm_ratio(), target);
+  }
+
+  // string pb_ratio = 14 [json_name = "pbRatio"];
+  if (!this->_internal_pb_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_pb_ratio().data(), static_cast<int>(this->_internal_pb_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio");
+    target = stream->WriteStringMaybeAliased(
+        14, this->_internal_pb_ratio(), target);
+  }
+
+  // string dividend_ratio_ttm = 15 [json_name = "dividendRatioTtm"];
+  if (!this->_internal_dividend_ratio_ttm().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_dividend_ratio_ttm().data(), static_cast<int>(this->_internal_dividend_ratio_ttm().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm");
+    target = stream->WriteStringMaybeAliased(
+        15, this->_internal_dividend_ratio_ttm(), target);
+  }
+
+  // string five_day_change_rate = 16 [json_name = "fiveDayChangeRate"];
+  if (!this->_internal_five_day_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_five_day_change_rate().data(), static_cast<int>(this->_internal_five_day_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate");
+    target = stream->WriteStringMaybeAliased(
+        16, this->_internal_five_day_change_rate(), target);
+  }
+
+  // string ten_day_change_rate = 17 [json_name = "tenDayChangeRate"];
+  if (!this->_internal_ten_day_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_ten_day_change_rate().data(), static_cast<int>(this->_internal_ten_day_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate");
+    target = stream->WriteStringMaybeAliased(
+        17, this->_internal_ten_day_change_rate(), target);
+  }
+
+  // string half_year_change_rate = 18 [json_name = "halfYearChangeRate"];
+  if (!this->_internal_half_year_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_half_year_change_rate().data(), static_cast<int>(this->_internal_half_year_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate");
+    target = stream->WriteStringMaybeAliased(
+        18, this->_internal_half_year_change_rate(), target);
+  }
+
+  // string five_minutes_change_rate = 19 [json_name = "fiveMinutesChangeRate"];
+  if (!this->_internal_five_minutes_change_rate().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_five_minutes_change_rate().data(), static_cast<int>(this->_internal_five_minutes_change_rate().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate");
+    target = stream->WriteStringMaybeAliased(
+        19, this->_internal_five_minutes_change_rate(), target);
+  }
+
+  // string expiry_date = 20 [json_name = "expiryDate"];
+  if (!this->_internal_expiry_date().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_expiry_date().data(), static_cast<int>(this->_internal_expiry_date().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date");
+    target = stream->WriteStringMaybeAliased(
+        20, this->_internal_expiry_date(), target);
+  }
+
+  // string strike_price = 21 [json_name = "strikePrice"];
+  if (!this->_internal_strike_price().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_strike_price().data(), static_cast<int>(this->_internal_strike_price().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.strike_price");
+    target = stream->WriteStringMaybeAliased(
+        21, this->_internal_strike_price(), target);
+  }
+
+  // string upper_strike_price = 22 [json_name = "upperStrikePrice"];
+  if (!this->_internal_upper_strike_price().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_upper_strike_price().data(), static_cast<int>(this->_internal_upper_strike_price().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price");
+    target = stream->WriteStringMaybeAliased(
+        22, this->_internal_upper_strike_price(), target);
+  }
+
+  // string lower_strike_price = 23 [json_name = "lowerStrikePrice"];
+  if (!this->_internal_lower_strike_price().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_lower_strike_price().data(), static_cast<int>(this->_internal_lower_strike_price().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price");
+    target = stream->WriteStringMaybeAliased(
+        23, this->_internal_lower_strike_price(), target);
+  }
+
+  // int64 outstanding_qty = 24 [json_name = "outstandingQty"];
+  if (this->_internal_outstanding_qty() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(24, this->_internal_outstanding_qty(), target);
+  }
+
+  // string outstanding_ratio = 25 [json_name = "outstandingRatio"];
+  if (!this->_internal_outstanding_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_outstanding_ratio().data(), static_cast<int>(this->_internal_outstanding_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio");
+    target = stream->WriteStringMaybeAliased(
+        25, this->_internal_outstanding_ratio(), target);
+  }
+
+  // string premium = 26 [json_name = "premium"];
+  if (!this->_internal_premium().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_premium().data(), static_cast<int>(this->_internal_premium().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.premium");
+    target = stream->WriteStringMaybeAliased(
+        26, this->_internal_premium(), target);
+  }
+
+  // string itm_otm = 27 [json_name = "itmOtm"];
+  if (!this->_internal_itm_otm().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_itm_otm().data(), static_cast<int>(this->_internal_itm_otm().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm");
+    target = stream->WriteStringMaybeAliased(
+        27, this->_internal_itm_otm(), target);
+  }
+
+  // string implied_volatility = 28 [json_name = "impliedVolatility"];
+  if (!this->_internal_implied_volatility().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_implied_volatility().data(), static_cast<int>(this->_internal_implied_volatility().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility");
+    target = stream->WriteStringMaybeAliased(
+        28, this->_internal_implied_volatility(), target);
+  }
+
+  // string warrant_delta = 29 [json_name = "warrantDelta"];
+  if (!this->_internal_warrant_delta().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_warrant_delta().data(), static_cast<int>(this->_internal_warrant_delta().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta");
+    target = stream->WriteStringMaybeAliased(
+        29, this->_internal_warrant_delta(), target);
+  }
+
+  // string call_price = 30 [json_name = "callPrice"];
+  if (!this->_internal_call_price().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_call_price().data(), static_cast<int>(this->_internal_call_price().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.call_price");
+    target = stream->WriteStringMaybeAliased(
+        30, this->_internal_call_price(), target);
+  }
+
+  // string to_call_price = 31 [json_name = "toCallPrice"];
+  if (!this->_internal_to_call_price().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_to_call_price().data(), static_cast<int>(this->_internal_to_call_price().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price");
+    target = stream->WriteStringMaybeAliased(
+        31, this->_internal_to_call_price(), target);
+  }
+
+  // string effective_leverage = 32 [json_name = "effectiveLeverage"];
+  if (!this->_internal_effective_leverage().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_effective_leverage().data(), static_cast<int>(this->_internal_effective_leverage().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage");
+    target = stream->WriteStringMaybeAliased(
+        32, this->_internal_effective_leverage(), target);
+  }
+
+  // string leverage_ratio = 33 [json_name = "leverageRatio"];
+  if (!this->_internal_leverage_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_leverage_ratio().data(), static_cast<int>(this->_internal_leverage_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio");
+    target = stream->WriteStringMaybeAliased(
+        33, this->_internal_leverage_ratio(), target);
+  }
+
+  // string conversion_ratio = 34 [json_name = "conversionRatio"];
+  if (!this->_internal_conversion_ratio().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_conversion_ratio().data(), static_cast<int>(this->_internal_conversion_ratio().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio");
+    target = stream->WriteStringMaybeAliased(
+        34, this->_internal_conversion_ratio(), target);
+  }
+
+  // string balance_point = 35 [json_name = "balancePoint"];
+  if (!this->_internal_balance_point().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_balance_point().data(), static_cast<int>(this->_internal_balance_point().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.balance_point");
+    target = stream->WriteStringMaybeAliased(
+        35, this->_internal_balance_point(), target);
+  }
+
+  // int64 open_interest = 36 [json_name = "openInterest"];
+  if (this->_internal_open_interest() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(36, this->_internal_open_interest(), target);
+  }
+
+  // string delta = 37 [json_name = "delta"];
+  if (!this->_internal_delta().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_delta().data(), static_cast<int>(this->_internal_delta().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.delta");
+    target = stream->WriteStringMaybeAliased(
+        37, this->_internal_delta(), target);
+  }
+
+  // string gamma = 38 [json_name = "gamma"];
+  if (!this->_internal_gamma().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_gamma().data(), static_cast<int>(this->_internal_gamma().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.gamma");
+    target = stream->WriteStringMaybeAliased(
+        38, this->_internal_gamma(), target);
+  }
+
+  // string theta = 39 [json_name = "theta"];
+  if (!this->_internal_theta().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_theta().data(), static_cast<int>(this->_internal_theta().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.theta");
+    target = stream->WriteStringMaybeAliased(
+        39, this->_internal_theta(), target);
+  }
+
+  // string vega = 40 [json_name = "vega"];
+  if (!this->_internal_vega().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_vega().data(), static_cast<int>(this->_internal_vega().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.vega");
+    target = stream->WriteStringMaybeAliased(
+        40, this->_internal_vega(), target);
+  }
+
+  // string rho = 41 [json_name = "rho"];
+  if (!this->_internal_rho().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_rho().data(), static_cast<int>(this->_internal_rho().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "longbridgeapp.quote.v1.SecurityCalcIndex.rho");
+    target = stream->WriteStringMaybeAliased(
+        41, this->_internal_rho(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.SecurityCalcIndex)
+  return target;
+}
+
+size_t SecurityCalcIndex::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.SecurityCalcIndex)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string symbol = 1 [json_name = "symbol"];
+  if (!this->_internal_symbol().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_symbol());
+  }
+
+  // string last_done = 2 [json_name = "lastDone"];
+  if (!this->_internal_last_done().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_last_done());
+  }
+
+  // string change_val = 3 [json_name = "changeVal"];
+  if (!this->_internal_change_val().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_change_val());
+  }
+
+  // string change_rate = 4 [json_name = "changeRate"];
+  if (!this->_internal_change_rate().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_change_rate());
+  }
+
+  // string turnover = 6 [json_name = "turnover"];
+  if (!this->_internal_turnover().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_turnover());
+  }
+
+  // string ytd_change_rate = 7 [json_name = "ytdChangeRate"];
+  if (!this->_internal_ytd_change_rate().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_ytd_change_rate());
+  }
+
+  // string turnover_rate = 8 [json_name = "turnoverRate"];
+  if (!this->_internal_turnover_rate().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_turnover_rate());
+  }
+
+  // string total_market_value = 9 [json_name = "totalMarketValue"];
+  if (!this->_internal_total_market_value().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_total_market_value());
+  }
+
+  // string capital_flow = 10 [json_name = "capitalFlow"];
+  if (!this->_internal_capital_flow().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_capital_flow());
+  }
+
+  // string amplitude = 11 [json_name = "amplitude"];
+  if (!this->_internal_amplitude().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_amplitude());
+  }
+
+  // string volume_ratio = 12 [json_name = "volumeRatio"];
+  if (!this->_internal_volume_ratio().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_volume_ratio());
+  }
+
+  // string pe_ttm_ratio = 13 [json_name = "peTtmRatio"];
+  if (!this->_internal_pe_ttm_ratio().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_pe_ttm_ratio());
+  }
+
+  // string pb_ratio = 14 [json_name = "pbRatio"];
+  if (!this->_internal_pb_ratio().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_pb_ratio());
+  }
+
+  // string dividend_ratio_ttm = 15 [json_name = "dividendRatioTtm"];
+  if (!this->_internal_dividend_ratio_ttm().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_dividend_ratio_ttm());
+  }
+
+  // string five_day_change_rate = 16 [json_name = "fiveDayChangeRate"];
+  if (!this->_internal_five_day_change_rate().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_five_day_change_rate());
+  }
+
+  // string ten_day_change_rate = 17 [json_name = "tenDayChangeRate"];
+  if (!this->_internal_ten_day_change_rate().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_ten_day_change_rate());
+  }
+
+  // string half_year_change_rate = 18 [json_name = "halfYearChangeRate"];
+  if (!this->_internal_half_year_change_rate().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_half_year_change_rate());
+  }
+
+  // string five_minutes_change_rate = 19 [json_name = "fiveMinutesChangeRate"];
+  if (!this->_internal_five_minutes_change_rate().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_five_minutes_change_rate());
+  }
+
+  // string expiry_date = 20 [json_name = "expiryDate"];
+  if (!this->_internal_expiry_date().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_expiry_date());
+  }
+
+  // string strike_price = 21 [json_name = "strikePrice"];
+  if (!this->_internal_strike_price().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_strike_price());
+  }
+
+  // string upper_strike_price = 22 [json_name = "upperStrikePrice"];
+  if (!this->_internal_upper_strike_price().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_upper_strike_price());
+  }
+
+  // string lower_strike_price = 23 [json_name = "lowerStrikePrice"];
+  if (!this->_internal_lower_strike_price().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_lower_strike_price());
+  }
+
+  // string outstanding_ratio = 25 [json_name = "outstandingRatio"];
+  if (!this->_internal_outstanding_ratio().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_outstanding_ratio());
+  }
+
+  // string premium = 26 [json_name = "premium"];
+  if (!this->_internal_premium().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_premium());
+  }
+
+  // string itm_otm = 27 [json_name = "itmOtm"];
+  if (!this->_internal_itm_otm().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_itm_otm());
+  }
+
+  // string implied_volatility = 28 [json_name = "impliedVolatility"];
+  if (!this->_internal_implied_volatility().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_implied_volatility());
+  }
+
+  // string warrant_delta = 29 [json_name = "warrantDelta"];
+  if (!this->_internal_warrant_delta().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_warrant_delta());
+  }
+
+  // string call_price = 30 [json_name = "callPrice"];
+  if (!this->_internal_call_price().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_call_price());
+  }
+
+  // string to_call_price = 31 [json_name = "toCallPrice"];
+  if (!this->_internal_to_call_price().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_to_call_price());
+  }
+
+  // string effective_leverage = 32 [json_name = "effectiveLeverage"];
+  if (!this->_internal_effective_leverage().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_effective_leverage());
+  }
+
+  // string leverage_ratio = 33 [json_name = "leverageRatio"];
+  if (!this->_internal_leverage_ratio().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_leverage_ratio());
+  }
+
+  // string conversion_ratio = 34 [json_name = "conversionRatio"];
+  if (!this->_internal_conversion_ratio().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_conversion_ratio());
+  }
+
+  // string balance_point = 35 [json_name = "balancePoint"];
+  if (!this->_internal_balance_point().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_balance_point());
+  }
+
+  // string delta = 37 [json_name = "delta"];
+  if (!this->_internal_delta().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_delta());
+  }
+
+  // string gamma = 38 [json_name = "gamma"];
+  if (!this->_internal_gamma().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_gamma());
+  }
+
+  // string theta = 39 [json_name = "theta"];
+  if (!this->_internal_theta().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_theta());
+  }
+
+  // string vega = 40 [json_name = "vega"];
+  if (!this->_internal_vega().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_vega());
+  }
+
+  // string rho = 41 [json_name = "rho"];
+  if (!this->_internal_rho().empty()) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_rho());
+  }
+
+  // int64 volume = 5 [json_name = "volume"];
+  if (this->_internal_volume() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_volume());
+  }
+
+  // int64 outstanding_qty = 24 [json_name = "outstandingQty"];
+  if (this->_internal_outstanding_qty() != 0) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_outstanding_qty());
+  }
+
+  // int64 open_interest = 36 [json_name = "openInterest"];
+  if (this->_internal_open_interest() != 0) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_open_interest());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SecurityCalcIndex::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SecurityCalcIndex::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SecurityCalcIndex::GetClassData() const { return &_class_data_; }
+
+void SecurityCalcIndex::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SecurityCalcIndex *>(to)->MergeFrom(
+      static_cast<const SecurityCalcIndex &>(from));
+}
+
+
+void SecurityCalcIndex::MergeFrom(const SecurityCalcIndex& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.SecurityCalcIndex)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_symbol().empty()) {
+    _internal_set_symbol(from._internal_symbol());
+  }
+  if (!from._internal_last_done().empty()) {
+    _internal_set_last_done(from._internal_last_done());
+  }
+  if (!from._internal_change_val().empty()) {
+    _internal_set_change_val(from._internal_change_val());
+  }
+  if (!from._internal_change_rate().empty()) {
+    _internal_set_change_rate(from._internal_change_rate());
+  }
+  if (!from._internal_turnover().empty()) {
+    _internal_set_turnover(from._internal_turnover());
+  }
+  if (!from._internal_ytd_change_rate().empty()) {
+    _internal_set_ytd_change_rate(from._internal_ytd_change_rate());
+  }
+  if (!from._internal_turnover_rate().empty()) {
+    _internal_set_turnover_rate(from._internal_turnover_rate());
+  }
+  if (!from._internal_total_market_value().empty()) {
+    _internal_set_total_market_value(from._internal_total_market_value());
+  }
+  if (!from._internal_capital_flow().empty()) {
+    _internal_set_capital_flow(from._internal_capital_flow());
+  }
+  if (!from._internal_amplitude().empty()) {
+    _internal_set_amplitude(from._internal_amplitude());
+  }
+  if (!from._internal_volume_ratio().empty()) {
+    _internal_set_volume_ratio(from._internal_volume_ratio());
+  }
+  if (!from._internal_pe_ttm_ratio().empty()) {
+    _internal_set_pe_ttm_ratio(from._internal_pe_ttm_ratio());
+  }
+  if (!from._internal_pb_ratio().empty()) {
+    _internal_set_pb_ratio(from._internal_pb_ratio());
+  }
+  if (!from._internal_dividend_ratio_ttm().empty()) {
+    _internal_set_dividend_ratio_ttm(from._internal_dividend_ratio_ttm());
+  }
+  if (!from._internal_five_day_change_rate().empty()) {
+    _internal_set_five_day_change_rate(from._internal_five_day_change_rate());
+  }
+  if (!from._internal_ten_day_change_rate().empty()) {
+    _internal_set_ten_day_change_rate(from._internal_ten_day_change_rate());
+  }
+  if (!from._internal_half_year_change_rate().empty()) {
+    _internal_set_half_year_change_rate(from._internal_half_year_change_rate());
+  }
+  if (!from._internal_five_minutes_change_rate().empty()) {
+    _internal_set_five_minutes_change_rate(from._internal_five_minutes_change_rate());
+  }
+  if (!from._internal_expiry_date().empty()) {
+    _internal_set_expiry_date(from._internal_expiry_date());
+  }
+  if (!from._internal_strike_price().empty()) {
+    _internal_set_strike_price(from._internal_strike_price());
+  }
+  if (!from._internal_upper_strike_price().empty()) {
+    _internal_set_upper_strike_price(from._internal_upper_strike_price());
+  }
+  if (!from._internal_lower_strike_price().empty()) {
+    _internal_set_lower_strike_price(from._internal_lower_strike_price());
+  }
+  if (!from._internal_outstanding_ratio().empty()) {
+    _internal_set_outstanding_ratio(from._internal_outstanding_ratio());
+  }
+  if (!from._internal_premium().empty()) {
+    _internal_set_premium(from._internal_premium());
+  }
+  if (!from._internal_itm_otm().empty()) {
+    _internal_set_itm_otm(from._internal_itm_otm());
+  }
+  if (!from._internal_implied_volatility().empty()) {
+    _internal_set_implied_volatility(from._internal_implied_volatility());
+  }
+  if (!from._internal_warrant_delta().empty()) {
+    _internal_set_warrant_delta(from._internal_warrant_delta());
+  }
+  if (!from._internal_call_price().empty()) {
+    _internal_set_call_price(from._internal_call_price());
+  }
+  if (!from._internal_to_call_price().empty()) {
+    _internal_set_to_call_price(from._internal_to_call_price());
+  }
+  if (!from._internal_effective_leverage().empty()) {
+    _internal_set_effective_leverage(from._internal_effective_leverage());
+  }
+  if (!from._internal_leverage_ratio().empty()) {
+    _internal_set_leverage_ratio(from._internal_leverage_ratio());
+  }
+  if (!from._internal_conversion_ratio().empty()) {
+    _internal_set_conversion_ratio(from._internal_conversion_ratio());
+  }
+  if (!from._internal_balance_point().empty()) {
+    _internal_set_balance_point(from._internal_balance_point());
+  }
+  if (!from._internal_delta().empty()) {
+    _internal_set_delta(from._internal_delta());
+  }
+  if (!from._internal_gamma().empty()) {
+    _internal_set_gamma(from._internal_gamma());
+  }
+  if (!from._internal_theta().empty()) {
+    _internal_set_theta(from._internal_theta());
+  }
+  if (!from._internal_vega().empty()) {
+    _internal_set_vega(from._internal_vega());
+  }
+  if (!from._internal_rho().empty()) {
+    _internal_set_rho(from._internal_rho());
+  }
+  if (from._internal_volume() != 0) {
+    _internal_set_volume(from._internal_volume());
+  }
+  if (from._internal_outstanding_qty() != 0) {
+    _internal_set_outstanding_qty(from._internal_outstanding_qty());
+  }
+  if (from._internal_open_interest() != 0) {
+    _internal_set_open_interest(from._internal_open_interest());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SecurityCalcIndex::CopyFrom(const SecurityCalcIndex& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.SecurityCalcIndex)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SecurityCalcIndex::IsInitialized() const {
+  return true;
+}
+
+void SecurityCalcIndex::InternalSwap(SecurityCalcIndex* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &symbol_, lhs_arena,
+      &other->symbol_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &last_done_, lhs_arena,
+      &other->last_done_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &change_val_, lhs_arena,
+      &other->change_val_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &change_rate_, lhs_arena,
+      &other->change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &turnover_, lhs_arena,
+      &other->turnover_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &ytd_change_rate_, lhs_arena,
+      &other->ytd_change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &turnover_rate_, lhs_arena,
+      &other->turnover_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &total_market_value_, lhs_arena,
+      &other->total_market_value_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &capital_flow_, lhs_arena,
+      &other->capital_flow_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &amplitude_, lhs_arena,
+      &other->amplitude_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &volume_ratio_, lhs_arena,
+      &other->volume_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &pe_ttm_ratio_, lhs_arena,
+      &other->pe_ttm_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &pb_ratio_, lhs_arena,
+      &other->pb_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &dividend_ratio_ttm_, lhs_arena,
+      &other->dividend_ratio_ttm_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &five_day_change_rate_, lhs_arena,
+      &other->five_day_change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &ten_day_change_rate_, lhs_arena,
+      &other->ten_day_change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &half_year_change_rate_, lhs_arena,
+      &other->half_year_change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &five_minutes_change_rate_, lhs_arena,
+      &other->five_minutes_change_rate_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &expiry_date_, lhs_arena,
+      &other->expiry_date_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &strike_price_, lhs_arena,
+      &other->strike_price_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &upper_strike_price_, lhs_arena,
+      &other->upper_strike_price_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &lower_strike_price_, lhs_arena,
+      &other->lower_strike_price_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &outstanding_ratio_, lhs_arena,
+      &other->outstanding_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &premium_, lhs_arena,
+      &other->premium_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &itm_otm_, lhs_arena,
+      &other->itm_otm_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &implied_volatility_, lhs_arena,
+      &other->implied_volatility_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &warrant_delta_, lhs_arena,
+      &other->warrant_delta_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &call_price_, lhs_arena,
+      &other->call_price_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &to_call_price_, lhs_arena,
+      &other->to_call_price_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &effective_leverage_, lhs_arena,
+      &other->effective_leverage_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &leverage_ratio_, lhs_arena,
+      &other->leverage_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &conversion_ratio_, lhs_arena,
+      &other->conversion_ratio_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &balance_point_, lhs_arena,
+      &other->balance_point_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &delta_, lhs_arena,
+      &other->delta_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &gamma_, lhs_arena,
+      &other->gamma_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &theta_, lhs_arena,
+      &other->theta_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &vega_, lhs_arena,
+      &other->vega_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &rho_, lhs_arena,
+      &other->rho_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SecurityCalcIndex, open_interest_)
+      + sizeof(SecurityCalcIndex::open_interest_)
+      - PROTOBUF_FIELD_OFFSET(SecurityCalcIndex, volume_)>(
+          reinterpret_cast<char*>(&volume_),
+          reinterpret_cast<char*>(&other->volume_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SecurityCalcIndex::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[59]);
+}
+
+// ===================================================================
+
+class SecurityCalcQuoteResponse::_Internal {
+ public:
+};
+
+SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
+  security_calc_index_(arena) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+}
+SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(const SecurityCalcQuoteResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      security_calc_index_(from.security_calc_index_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+}
+
+inline void SecurityCalcQuoteResponse::SharedCtor() {
+}
+
+SecurityCalcQuoteResponse::~SecurityCalcQuoteResponse() {
+  // @@protoc_insertion_point(destructor:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void SecurityCalcQuoteResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void SecurityCalcQuoteResponse::ArenaDtor(void* object) {
+  SecurityCalcQuoteResponse* _this = reinterpret_cast< SecurityCalcQuoteResponse* >(object);
+  (void)_this;
+}
+void SecurityCalcQuoteResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SecurityCalcQuoteResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void SecurityCalcQuoteResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  security_calc_index_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SecurityCalcQuoteResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated .longbridgeapp.quote.v1.SecurityCalcIndex security_calc_index = 1 [json_name = "securityCalcIndex"];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_security_calc_index(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* SecurityCalcQuoteResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .longbridgeapp.quote.v1.SecurityCalcIndex security_calc_index = 1 [json_name = "securityCalcIndex"];
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_security_calc_index_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_security_calc_index(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  return target;
+}
+
+size_t SecurityCalcQuoteResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .longbridgeapp.quote.v1.SecurityCalcIndex security_calc_index = 1 [json_name = "securityCalcIndex"];
+  total_size += 1UL * this->_internal_security_calc_index_size();
+  for (const auto& msg : this->security_calc_index_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SecurityCalcQuoteResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SecurityCalcQuoteResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SecurityCalcQuoteResponse::GetClassData() const { return &_class_data_; }
+
+void SecurityCalcQuoteResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SecurityCalcQuoteResponse *>(to)->MergeFrom(
+      static_cast<const SecurityCalcQuoteResponse &>(from));
+}
+
+
+void SecurityCalcQuoteResponse::MergeFrom(const SecurityCalcQuoteResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  security_calc_index_.MergeFrom(from.security_calc_index_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SecurityCalcQuoteResponse::CopyFrom(const SecurityCalcQuoteResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SecurityCalcQuoteResponse::IsInitialized() const {
+  return true;
+}
+
+void SecurityCalcQuoteResponse::InternalSwap(SecurityCalcQuoteResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  security_calc_index_.InternalSwap(&other->security_calc_index_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SecurityCalcQuoteResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[60]);
+}
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
 }  // namespace quote
@@ -19317,6 +23668,30 @@ template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::MarketTradeDayRequest* 
 }
 template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::MarketTradeDayResponse* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::MarketTradeDayResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::MarketTradeDayResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::CapitalFlowIntradayRequest* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::CapitalFlowIntradayRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::CapitalFlowIntradayRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::CapitalDistributionResponse* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::CapitalDistributionResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::CapitalDistributionResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::SecurityCalcQuoteRequest* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::SecurityCalcQuoteRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::SecurityCalcQuoteRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::SecurityCalcIndex* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::SecurityCalcIndex >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::SecurityCalcIndex >(arena);
+}
+template<> PROTOBUF_NOINLINE ::longbridgeapp::quote::v1::SecurityCalcQuoteResponse* Arena::CreateMaybeMessage< ::longbridgeapp::quote::v1::SecurityCalcQuoteResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::longbridgeapp::quote::v1::SecurityCalcQuoteResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

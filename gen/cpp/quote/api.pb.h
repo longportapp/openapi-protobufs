@@ -48,7 +48,7 @@ struct TableStruct_quote_2fapi_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[53]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[61]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -64,6 +64,21 @@ extern BrokersDefaultTypeInternal _Brokers_default_instance_;
 class Candlestick;
 struct CandlestickDefaultTypeInternal;
 extern CandlestickDefaultTypeInternal _Candlestick_default_instance_;
+class CapitalDistributionResponse;
+struct CapitalDistributionResponseDefaultTypeInternal;
+extern CapitalDistributionResponseDefaultTypeInternal _CapitalDistributionResponse_default_instance_;
+class CapitalDistributionResponse_CapitalDistribution;
+struct CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal;
+extern CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal _CapitalDistributionResponse_CapitalDistribution_default_instance_;
+class CapitalFlowIntradayRequest;
+struct CapitalFlowIntradayRequestDefaultTypeInternal;
+extern CapitalFlowIntradayRequestDefaultTypeInternal _CapitalFlowIntradayRequest_default_instance_;
+class CapitalFlowIntradayResponse;
+struct CapitalFlowIntradayResponseDefaultTypeInternal;
+extern CapitalFlowIntradayResponseDefaultTypeInternal _CapitalFlowIntradayResponse_default_instance_;
+class CapitalFlowIntradayResponse_CapitalFlowLine;
+struct CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal;
+extern CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal _CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_;
 class Depth;
 struct DepthDefaultTypeInternal;
 extern DepthDefaultTypeInternal _Depth_default_instance_;
@@ -139,6 +154,15 @@ extern PushTradeDefaultTypeInternal _PushTrade_default_instance_;
 class SecurityBrokersResponse;
 struct SecurityBrokersResponseDefaultTypeInternal;
 extern SecurityBrokersResponseDefaultTypeInternal _SecurityBrokersResponse_default_instance_;
+class SecurityCalcIndex;
+struct SecurityCalcIndexDefaultTypeInternal;
+extern SecurityCalcIndexDefaultTypeInternal _SecurityCalcIndex_default_instance_;
+class SecurityCalcQuoteRequest;
+struct SecurityCalcQuoteRequestDefaultTypeInternal;
+extern SecurityCalcQuoteRequestDefaultTypeInternal _SecurityCalcQuoteRequest_default_instance_;
+class SecurityCalcQuoteResponse;
+struct SecurityCalcQuoteResponseDefaultTypeInternal;
+extern SecurityCalcQuoteResponseDefaultTypeInternal _SecurityCalcQuoteResponse_default_instance_;
 class SecurityCandlestickRequest;
 struct SecurityCandlestickRequestDefaultTypeInternal;
 extern SecurityCandlestickRequestDefaultTypeInternal _SecurityCandlestickRequest_default_instance_;
@@ -223,6 +247,11 @@ extern WarrantQuoteResponseDefaultTypeInternal _WarrantQuoteResponse_default_ins
 PROTOBUF_NAMESPACE_OPEN
 template<> ::longbridgeapp::quote::v1::Brokers* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::Brokers>(Arena*);
 template<> ::longbridgeapp::quote::v1::Candlestick* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::Candlestick>(Arena*);
+template<> ::longbridgeapp::quote::v1::CapitalDistributionResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalDistributionResponse>(Arena*);
+template<> ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>(Arena*);
+template<> ::longbridgeapp::quote::v1::CapitalFlowIntradayRequest* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalFlowIntradayRequest>(Arena*);
+template<> ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalFlowIntradayResponse>(Arena*);
+template<> ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine>(Arena*);
 template<> ::longbridgeapp::quote::v1::Depth* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::Depth>(Arena*);
 template<> ::longbridgeapp::quote::v1::FilterConfig* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::FilterConfig>(Arena*);
 template<> ::longbridgeapp::quote::v1::FilterWarrant* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::FilterWarrant>(Arena*);
@@ -248,6 +277,9 @@ template<> ::longbridgeapp::quote::v1::PushDepth* Arena::CreateMaybeMessage<::lo
 template<> ::longbridgeapp::quote::v1::PushQuote* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::PushQuote>(Arena*);
 template<> ::longbridgeapp::quote::v1::PushTrade* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::PushTrade>(Arena*);
 template<> ::longbridgeapp::quote::v1::SecurityBrokersResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityBrokersResponse>(Arena*);
+template<> ::longbridgeapp::quote::v1::SecurityCalcIndex* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityCalcIndex>(Arena*);
+template<> ::longbridgeapp::quote::v1::SecurityCalcQuoteRequest* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityCalcQuoteRequest>(Arena*);
+template<> ::longbridgeapp::quote::v1::SecurityCalcQuoteResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityCalcQuoteResponse>(Arena*);
 template<> ::longbridgeapp::quote::v1::SecurityCandlestickRequest* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityCandlestickRequest>(Arena*);
 template<> ::longbridgeapp::quote::v1::SecurityCandlestickResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityCandlestickResponse>(Arena*);
 template<> ::longbridgeapp::quote::v1::SecurityDepthResponse* Arena::CreateMaybeMessage<::longbridgeapp::quote::v1::SecurityDepthResponse>(Arena*);
@@ -303,6 +335,9 @@ enum Command : int {
   QueryOptionChainDateStrikeInfo = 21,
   QueryWarrantIssuerInfo = 22,
   QueryWarrantFilterList = 23,
+  QueryCapitalFlowIntraday = 24,
+  QueryCapitalFlowDistribution = 25,
+  QuerySecurityCalcIndex = 26,
   PushQuoteData = 101,
   PushDepthData = 102,
   PushBrokersData = 103,
@@ -474,6 +509,70 @@ inline bool SubType_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, SubType* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<SubType>(
     SubType_descriptor(), name, value);
+}
+enum CalcIndex : int {
+  CALCINDEX_UNKNOWN = 0,
+  CALCINDEX_LAST_DONE = 1,
+  CALCINDEX_CHANGE_VAL = 2,
+  CALCINDEX_CHANGE_RATE = 3,
+  CALCINDEX_VOLUME = 4,
+  CALCINDEX_TURNOVER = 5,
+  CALCINDEX_YTD_CHANGE_RATE = 6,
+  CALCINDEX_TURNOVER_RATE = 7,
+  CALCINDEX_TOTAL_MARKET_VALUE = 8,
+  CALCINDEX_CAPITAL_FLOW = 9,
+  CALCINDEX_AMPLITUDE = 10,
+  CALCINDEX_VOLUME_RATIO = 11,
+  CALCINDEX_PE_TTM_RATIO = 12,
+  CALCINDEX_PB_RATIO = 13,
+  CALCINDEX_DIVIDEND_RATIO_TTM = 14,
+  CALCINDEX_FIVE_DAY_CHANGE_RATE = 15,
+  CALCINDEX_TEN_DAY_CHANGE_RATE = 16,
+  CALCINDEX_HALF_YEAR_CHANGE_RATE = 17,
+  CALCINDEX_FIVE_MINUTES_CHANGE_RATE = 18,
+  CALCINDEX_EXPIRY_DATE = 19,
+  CALCINDEX_STRIKE_PRICE = 20,
+  CALCINDEX_UPPER_STRIKE_PRICE = 21,
+  CALCINDEX_LOWER_STRIKE_PRICE = 22,
+  CALCINDEX_OUTSTANDING_QTY = 23,
+  CALCINDEX_OUTSTANDING_RATIO = 24,
+  CALCINDEX_PREMIUM = 25,
+  CALCINDEX_ITM_OTM = 26,
+  CALCINDEX_IMPLIED_VOLATILITY = 27,
+  CALCINDEX_WARRANT_DELTA = 28,
+  CALCINDEX_CALL_PRICE = 29,
+  CALCINDEX_TO_CALL_PRICE = 30,
+  CALCINDEX_EFFECTIVE_LEVERAGE = 31,
+  CALCINDEX_LEVERAGE_RATIO = 32,
+  CALCINDEX_CONVERSION_RATIO = 33,
+  CALCINDEX_BALANCE_POINT = 34,
+  CALCINDEX_OPEN_INTEREST = 35,
+  CALCINDEX_DELTA = 36,
+  CALCINDEX_GAMMA = 37,
+  CALCINDEX_THETA = 38,
+  CALCINDEX_VEGA = 39,
+  CALCINDEX_RHO = 40,
+  CalcIndex_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
+  CalcIndex_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
+};
+bool CalcIndex_IsValid(int value);
+constexpr CalcIndex CalcIndex_MIN = CALCINDEX_UNKNOWN;
+constexpr CalcIndex CalcIndex_MAX = CALCINDEX_RHO;
+constexpr int CalcIndex_ARRAYSIZE = CalcIndex_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CalcIndex_descriptor();
+template<typename T>
+inline const std::string& CalcIndex_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CalcIndex>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CalcIndex_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CalcIndex_descriptor(), enum_t_value);
+}
+inline bool CalcIndex_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CalcIndex* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CalcIndex>(
+    CalcIndex_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -1078,6 +1177,7 @@ class StaticInfo final :
     kEpsTtmFieldNumber = 13,
     kBpsFieldNumber = 14,
     kDividendYieldFieldNumber = 15,
+    kBoardFieldNumber = 17,
     kTotalSharesFieldNumber = 9,
     kCirculatingSharesFieldNumber = 10,
     kHkSharesFieldNumber = 11,
@@ -1259,6 +1359,20 @@ class StaticInfo final :
   std::string* _internal_mutable_dividend_yield();
   public:
 
+  // string board = 17 [json_name = "board"];
+  void clear_board();
+  const std::string& board() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_board(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_board();
+  PROTOBUF_NODISCARD std::string* release_board();
+  void set_allocated_board(std::string* board);
+  private:
+  const std::string& _internal_board() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_board(const std::string& value);
+  std::string* _internal_mutable_board();
+  public:
+
   // int64 total_shares = 9 [json_name = "totalShares"];
   void clear_total_shares();
   int64_t total_shares() const;
@@ -1315,6 +1429,7 @@ class StaticInfo final :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr eps_ttm_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr bps_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr dividend_yield_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr board_;
   int64_t total_shares_;
   int64_t circulating_shares_;
   int64_t hk_shares_;
@@ -10081,11 +10196,13 @@ class PushQuote final :
     kHighFieldNumber = 5,
     kLowFieldNumber = 6,
     kTurnoverFieldNumber = 9,
+    kCurrentTurnoverFieldNumber = 13,
     kSequenceFieldNumber = 2,
     kTimestampFieldNumber = 7,
     kVolumeFieldNumber = 8,
     kTradeStatusFieldNumber = 10,
     kTradeSessionFieldNumber = 11,
+    kCurrentVolumeFieldNumber = 12,
   };
   // string symbol = 1 [json_name = "symbol"];
   void clear_symbol();
@@ -10171,6 +10288,20 @@ class PushQuote final :
   std::string* _internal_mutable_turnover();
   public:
 
+  // string current_turnover = 13 [json_name = "currentTurnover"];
+  void clear_current_turnover();
+  const std::string& current_turnover() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_current_turnover(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_current_turnover();
+  PROTOBUF_NODISCARD std::string* release_current_turnover();
+  void set_allocated_current_turnover(std::string* current_turnover);
+  private:
+  const std::string& _internal_current_turnover() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_current_turnover(const std::string& value);
+  std::string* _internal_mutable_current_turnover();
+  public:
+
   // int64 sequence = 2 [json_name = "sequence"];
   void clear_sequence();
   int64_t sequence() const;
@@ -10216,6 +10347,15 @@ class PushQuote final :
   void _internal_set_trade_session(::longbridgeapp::quote::v1::TradeSession value);
   public:
 
+  // int64 current_volume = 12 [json_name = "currentVolume"];
+  void clear_current_volume();
+  int64_t current_volume() const;
+  void set_current_volume(int64_t value);
+  private:
+  int64_t _internal_current_volume() const;
+  void _internal_set_current_volume(int64_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.PushQuote)
  private:
   class _Internal;
@@ -10229,11 +10369,13 @@ class PushQuote final :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr high_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr low_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr turnover_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr current_turnover_;
   int64_t sequence_;
   int64_t timestamp_;
   int64_t volume_;
   int trade_status_;
   int trade_session_;
+  int64_t current_volume_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };
@@ -11193,6 +11335,1991 @@ class MarketTradeDayResponse final :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };
+// -------------------------------------------------------------------
+
+class CapitalFlowIntradayRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.CapitalFlowIntradayRequest) */ {
+ public:
+  inline CapitalFlowIntradayRequest() : CapitalFlowIntradayRequest(nullptr) {}
+  ~CapitalFlowIntradayRequest() override;
+  explicit constexpr CapitalFlowIntradayRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CapitalFlowIntradayRequest(const CapitalFlowIntradayRequest& from);
+  CapitalFlowIntradayRequest(CapitalFlowIntradayRequest&& from) noexcept
+    : CapitalFlowIntradayRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline CapitalFlowIntradayRequest& operator=(const CapitalFlowIntradayRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CapitalFlowIntradayRequest& operator=(CapitalFlowIntradayRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CapitalFlowIntradayRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CapitalFlowIntradayRequest* internal_default_instance() {
+    return reinterpret_cast<const CapitalFlowIntradayRequest*>(
+               &_CapitalFlowIntradayRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    53;
+
+  friend void swap(CapitalFlowIntradayRequest& a, CapitalFlowIntradayRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CapitalFlowIntradayRequest* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CapitalFlowIntradayRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CapitalFlowIntradayRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CapitalFlowIntradayRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CapitalFlowIntradayRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CapitalFlowIntradayRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CapitalFlowIntradayRequest* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.CapitalFlowIntradayRequest";
+  }
+  protected:
+  explicit CapitalFlowIntradayRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSymbolFieldNumber = 1,
+  };
+  // string symbol = 1 [json_name = "symbol"];
+  void clear_symbol();
+  const std::string& symbol() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_symbol(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_symbol();
+  PROTOBUF_NODISCARD std::string* release_symbol();
+  void set_allocated_symbol(std::string* symbol);
+  private:
+  const std::string& _internal_symbol() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_symbol(const std::string& value);
+  std::string* _internal_mutable_symbol();
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr symbol_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CapitalFlowIntradayResponse_CapitalFlowLine final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine) */ {
+ public:
+  inline CapitalFlowIntradayResponse_CapitalFlowLine() : CapitalFlowIntradayResponse_CapitalFlowLine(nullptr) {}
+  ~CapitalFlowIntradayResponse_CapitalFlowLine() override;
+  explicit constexpr CapitalFlowIntradayResponse_CapitalFlowLine(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CapitalFlowIntradayResponse_CapitalFlowLine(const CapitalFlowIntradayResponse_CapitalFlowLine& from);
+  CapitalFlowIntradayResponse_CapitalFlowLine(CapitalFlowIntradayResponse_CapitalFlowLine&& from) noexcept
+    : CapitalFlowIntradayResponse_CapitalFlowLine() {
+    *this = ::std::move(from);
+  }
+
+  inline CapitalFlowIntradayResponse_CapitalFlowLine& operator=(const CapitalFlowIntradayResponse_CapitalFlowLine& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CapitalFlowIntradayResponse_CapitalFlowLine& operator=(CapitalFlowIntradayResponse_CapitalFlowLine&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CapitalFlowIntradayResponse_CapitalFlowLine& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CapitalFlowIntradayResponse_CapitalFlowLine* internal_default_instance() {
+    return reinterpret_cast<const CapitalFlowIntradayResponse_CapitalFlowLine*>(
+               &_CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    54;
+
+  friend void swap(CapitalFlowIntradayResponse_CapitalFlowLine& a, CapitalFlowIntradayResponse_CapitalFlowLine& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CapitalFlowIntradayResponse_CapitalFlowLine* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CapitalFlowIntradayResponse_CapitalFlowLine* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CapitalFlowIntradayResponse_CapitalFlowLine* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CapitalFlowIntradayResponse_CapitalFlowLine>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CapitalFlowIntradayResponse_CapitalFlowLine& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CapitalFlowIntradayResponse_CapitalFlowLine& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CapitalFlowIntradayResponse_CapitalFlowLine* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine";
+  }
+  protected:
+  explicit CapitalFlowIntradayResponse_CapitalFlowLine(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kInflowFieldNumber = 1,
+    kTimestampFieldNumber = 2,
+  };
+  // string inflow = 1 [json_name = "inflow"];
+  void clear_inflow();
+  const std::string& inflow() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_inflow(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_inflow();
+  PROTOBUF_NODISCARD std::string* release_inflow();
+  void set_allocated_inflow(std::string* inflow);
+  private:
+  const std::string& _internal_inflow() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_inflow(const std::string& value);
+  std::string* _internal_mutable_inflow();
+  public:
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  void clear_timestamp();
+  int64_t timestamp() const;
+  void set_timestamp(int64_t value);
+  private:
+  int64_t _internal_timestamp() const;
+  void _internal_set_timestamp(int64_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr inflow_;
+  int64_t timestamp_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CapitalFlowIntradayResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.CapitalFlowIntradayResponse) */ {
+ public:
+  inline CapitalFlowIntradayResponse() : CapitalFlowIntradayResponse(nullptr) {}
+  ~CapitalFlowIntradayResponse() override;
+  explicit constexpr CapitalFlowIntradayResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CapitalFlowIntradayResponse(const CapitalFlowIntradayResponse& from);
+  CapitalFlowIntradayResponse(CapitalFlowIntradayResponse&& from) noexcept
+    : CapitalFlowIntradayResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CapitalFlowIntradayResponse& operator=(const CapitalFlowIntradayResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CapitalFlowIntradayResponse& operator=(CapitalFlowIntradayResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CapitalFlowIntradayResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CapitalFlowIntradayResponse* internal_default_instance() {
+    return reinterpret_cast<const CapitalFlowIntradayResponse*>(
+               &_CapitalFlowIntradayResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    55;
+
+  friend void swap(CapitalFlowIntradayResponse& a, CapitalFlowIntradayResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CapitalFlowIntradayResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CapitalFlowIntradayResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CapitalFlowIntradayResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CapitalFlowIntradayResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CapitalFlowIntradayResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CapitalFlowIntradayResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CapitalFlowIntradayResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.CapitalFlowIntradayResponse";
+  }
+  protected:
+  explicit CapitalFlowIntradayResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CapitalFlowIntradayResponse_CapitalFlowLine CapitalFlowLine;
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCapitalFlowLinesFieldNumber = 2,
+    kSymbolFieldNumber = 1,
+  };
+  // repeated .longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine capital_flow_lines = 2 [json_name = "capitalFlowLines"];
+  int capital_flow_lines_size() const;
+  private:
+  int _internal_capital_flow_lines_size() const;
+  public:
+  void clear_capital_flow_lines();
+  ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* mutable_capital_flow_lines(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >*
+      mutable_capital_flow_lines();
+  private:
+  const ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine& _internal_capital_flow_lines(int index) const;
+  ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* _internal_add_capital_flow_lines();
+  public:
+  const ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine& capital_flow_lines(int index) const;
+  ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* add_capital_flow_lines();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >&
+      capital_flow_lines() const;
+
+  // string symbol = 1 [json_name = "symbol"];
+  void clear_symbol();
+  const std::string& symbol() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_symbol(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_symbol();
+  PROTOBUF_NODISCARD std::string* release_symbol();
+  void set_allocated_symbol(std::string* symbol);
+  private:
+  const std::string& _internal_symbol() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_symbol(const std::string& value);
+  std::string* _internal_mutable_symbol();
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine > capital_flow_lines_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr symbol_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CapitalDistributionResponse_CapitalDistribution final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution) */ {
+ public:
+  inline CapitalDistributionResponse_CapitalDistribution() : CapitalDistributionResponse_CapitalDistribution(nullptr) {}
+  ~CapitalDistributionResponse_CapitalDistribution() override;
+  explicit constexpr CapitalDistributionResponse_CapitalDistribution(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CapitalDistributionResponse_CapitalDistribution(const CapitalDistributionResponse_CapitalDistribution& from);
+  CapitalDistributionResponse_CapitalDistribution(CapitalDistributionResponse_CapitalDistribution&& from) noexcept
+    : CapitalDistributionResponse_CapitalDistribution() {
+    *this = ::std::move(from);
+  }
+
+  inline CapitalDistributionResponse_CapitalDistribution& operator=(const CapitalDistributionResponse_CapitalDistribution& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CapitalDistributionResponse_CapitalDistribution& operator=(CapitalDistributionResponse_CapitalDistribution&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CapitalDistributionResponse_CapitalDistribution& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CapitalDistributionResponse_CapitalDistribution* internal_default_instance() {
+    return reinterpret_cast<const CapitalDistributionResponse_CapitalDistribution*>(
+               &_CapitalDistributionResponse_CapitalDistribution_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    56;
+
+  friend void swap(CapitalDistributionResponse_CapitalDistribution& a, CapitalDistributionResponse_CapitalDistribution& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CapitalDistributionResponse_CapitalDistribution* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CapitalDistributionResponse_CapitalDistribution* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CapitalDistributionResponse_CapitalDistribution* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CapitalDistributionResponse_CapitalDistribution>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CapitalDistributionResponse_CapitalDistribution& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CapitalDistributionResponse_CapitalDistribution& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CapitalDistributionResponse_CapitalDistribution* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution";
+  }
+  protected:
+  explicit CapitalDistributionResponse_CapitalDistribution(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLargeFieldNumber = 1,
+    kMediumFieldNumber = 2,
+    kSmallFieldNumber = 3,
+  };
+  // string large = 1 [json_name = "large"];
+  void clear_large();
+  const std::string& large() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_large(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_large();
+  PROTOBUF_NODISCARD std::string* release_large();
+  void set_allocated_large(std::string* large);
+  private:
+  const std::string& _internal_large() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_large(const std::string& value);
+  std::string* _internal_mutable_large();
+  public:
+
+  // string medium = 2 [json_name = "medium"];
+  void clear_medium();
+  const std::string& medium() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_medium(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_medium();
+  PROTOBUF_NODISCARD std::string* release_medium();
+  void set_allocated_medium(std::string* medium);
+  private:
+  const std::string& _internal_medium() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_medium(const std::string& value);
+  std::string* _internal_mutable_medium();
+  public:
+
+  // string small = 3 [json_name = "small"];
+  void clear_small();
+  const std::string& small() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_small(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_small();
+  PROTOBUF_NODISCARD std::string* release_small();
+  void set_allocated_small(std::string* small);
+  private:
+  const std::string& _internal_small() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_small(const std::string& value);
+  std::string* _internal_mutable_small();
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr large_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr medium_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr small_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CapitalDistributionResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.CapitalDistributionResponse) */ {
+ public:
+  inline CapitalDistributionResponse() : CapitalDistributionResponse(nullptr) {}
+  ~CapitalDistributionResponse() override;
+  explicit constexpr CapitalDistributionResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CapitalDistributionResponse(const CapitalDistributionResponse& from);
+  CapitalDistributionResponse(CapitalDistributionResponse&& from) noexcept
+    : CapitalDistributionResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline CapitalDistributionResponse& operator=(const CapitalDistributionResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CapitalDistributionResponse& operator=(CapitalDistributionResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CapitalDistributionResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CapitalDistributionResponse* internal_default_instance() {
+    return reinterpret_cast<const CapitalDistributionResponse*>(
+               &_CapitalDistributionResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    57;
+
+  friend void swap(CapitalDistributionResponse& a, CapitalDistributionResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CapitalDistributionResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CapitalDistributionResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CapitalDistributionResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CapitalDistributionResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CapitalDistributionResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CapitalDistributionResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CapitalDistributionResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.CapitalDistributionResponse";
+  }
+  protected:
+  explicit CapitalDistributionResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef CapitalDistributionResponse_CapitalDistribution CapitalDistribution;
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSymbolFieldNumber = 1,
+    kCapitalInFieldNumber = 3,
+    kCapitalOutFieldNumber = 4,
+    kTimestampFieldNumber = 2,
+  };
+  // string symbol = 1 [json_name = "symbol"];
+  void clear_symbol();
+  const std::string& symbol() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_symbol(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_symbol();
+  PROTOBUF_NODISCARD std::string* release_symbol();
+  void set_allocated_symbol(std::string* symbol);
+  private:
+  const std::string& _internal_symbol() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_symbol(const std::string& value);
+  std::string* _internal_mutable_symbol();
+  public:
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
+  bool has_capital_in() const;
+  private:
+  bool _internal_has_capital_in() const;
+  public:
+  void clear_capital_in();
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& capital_in() const;
+  PROTOBUF_NODISCARD ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* release_capital_in();
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* mutable_capital_in();
+  void set_allocated_capital_in(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_in);
+  private:
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& _internal_capital_in() const;
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* _internal_mutable_capital_in();
+  public:
+  void unsafe_arena_set_allocated_capital_in(
+      ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_in);
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* unsafe_arena_release_capital_in();
+
+  // .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
+  bool has_capital_out() const;
+  private:
+  bool _internal_has_capital_out() const;
+  public:
+  void clear_capital_out();
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& capital_out() const;
+  PROTOBUF_NODISCARD ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* release_capital_out();
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* mutable_capital_out();
+  void set_allocated_capital_out(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_out);
+  private:
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& _internal_capital_out() const;
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* _internal_mutable_capital_out();
+  public:
+  void unsafe_arena_set_allocated_capital_out(
+      ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_out);
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* unsafe_arena_release_capital_out();
+
+  // int64 timestamp = 2 [json_name = "timestamp"];
+  void clear_timestamp();
+  int64_t timestamp() const;
+  void set_timestamp(int64_t value);
+  private:
+  int64_t _internal_timestamp() const;
+  void _internal_set_timestamp(int64_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalDistributionResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr symbol_;
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_in_;
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_out_;
+  int64_t timestamp_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SecurityCalcQuoteRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.SecurityCalcQuoteRequest) */ {
+ public:
+  inline SecurityCalcQuoteRequest() : SecurityCalcQuoteRequest(nullptr) {}
+  ~SecurityCalcQuoteRequest() override;
+  explicit constexpr SecurityCalcQuoteRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  SecurityCalcQuoteRequest(const SecurityCalcQuoteRequest& from);
+  SecurityCalcQuoteRequest(SecurityCalcQuoteRequest&& from) noexcept
+    : SecurityCalcQuoteRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline SecurityCalcQuoteRequest& operator=(const SecurityCalcQuoteRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SecurityCalcQuoteRequest& operator=(SecurityCalcQuoteRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SecurityCalcQuoteRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SecurityCalcQuoteRequest* internal_default_instance() {
+    return reinterpret_cast<const SecurityCalcQuoteRequest*>(
+               &_SecurityCalcQuoteRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    58;
+
+  friend void swap(SecurityCalcQuoteRequest& a, SecurityCalcQuoteRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SecurityCalcQuoteRequest* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SecurityCalcQuoteRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SecurityCalcQuoteRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<SecurityCalcQuoteRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const SecurityCalcQuoteRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const SecurityCalcQuoteRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SecurityCalcQuoteRequest* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.SecurityCalcQuoteRequest";
+  }
+  protected:
+  explicit SecurityCalcQuoteRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSymbolsFieldNumber = 1,
+    kCalcIndexFieldNumber = 2,
+  };
+  // repeated string symbols = 1 [json_name = "symbols"];
+  int symbols_size() const;
+  private:
+  int _internal_symbols_size() const;
+  public:
+  void clear_symbols();
+  const std::string& symbols(int index) const;
+  std::string* mutable_symbols(int index);
+  void set_symbols(int index, const std::string& value);
+  void set_symbols(int index, std::string&& value);
+  void set_symbols(int index, const char* value);
+  void set_symbols(int index, const char* value, size_t size);
+  std::string* add_symbols();
+  void add_symbols(const std::string& value);
+  void add_symbols(std::string&& value);
+  void add_symbols(const char* value);
+  void add_symbols(const char* value, size_t size);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>& symbols() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>* mutable_symbols();
+  private:
+  const std::string& _internal_symbols(int index) const;
+  std::string* _internal_add_symbols();
+  public:
+
+  // repeated .longbridgeapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
+  int calc_index_size() const;
+  private:
+  int _internal_calc_index_size() const;
+  public:
+  void clear_calc_index();
+  private:
+  ::longbridgeapp::quote::v1::CalcIndex _internal_calc_index(int index) const;
+  void _internal_add_calc_index(::longbridgeapp::quote::v1::CalcIndex value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>* _internal_mutable_calc_index();
+  public:
+  ::longbridgeapp::quote::v1::CalcIndex calc_index(int index) const;
+  void set_calc_index(int index, ::longbridgeapp::quote::v1::CalcIndex value);
+  void add_calc_index(::longbridgeapp::quote::v1::CalcIndex value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>& calc_index() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>* mutable_calc_index();
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> symbols_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int> calc_index_;
+  mutable std::atomic<int> _calc_index_cached_byte_size_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SecurityCalcIndex final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.SecurityCalcIndex) */ {
+ public:
+  inline SecurityCalcIndex() : SecurityCalcIndex(nullptr) {}
+  ~SecurityCalcIndex() override;
+  explicit constexpr SecurityCalcIndex(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  SecurityCalcIndex(const SecurityCalcIndex& from);
+  SecurityCalcIndex(SecurityCalcIndex&& from) noexcept
+    : SecurityCalcIndex() {
+    *this = ::std::move(from);
+  }
+
+  inline SecurityCalcIndex& operator=(const SecurityCalcIndex& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SecurityCalcIndex& operator=(SecurityCalcIndex&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SecurityCalcIndex& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SecurityCalcIndex* internal_default_instance() {
+    return reinterpret_cast<const SecurityCalcIndex*>(
+               &_SecurityCalcIndex_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    59;
+
+  friend void swap(SecurityCalcIndex& a, SecurityCalcIndex& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SecurityCalcIndex* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SecurityCalcIndex* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SecurityCalcIndex* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<SecurityCalcIndex>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const SecurityCalcIndex& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const SecurityCalcIndex& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SecurityCalcIndex* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.SecurityCalcIndex";
+  }
+  protected:
+  explicit SecurityCalcIndex(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSymbolFieldNumber = 1,
+    kLastDoneFieldNumber = 2,
+    kChangeValFieldNumber = 3,
+    kChangeRateFieldNumber = 4,
+    kTurnoverFieldNumber = 6,
+    kYtdChangeRateFieldNumber = 7,
+    kTurnoverRateFieldNumber = 8,
+    kTotalMarketValueFieldNumber = 9,
+    kCapitalFlowFieldNumber = 10,
+    kAmplitudeFieldNumber = 11,
+    kVolumeRatioFieldNumber = 12,
+    kPeTtmRatioFieldNumber = 13,
+    kPbRatioFieldNumber = 14,
+    kDividendRatioTtmFieldNumber = 15,
+    kFiveDayChangeRateFieldNumber = 16,
+    kTenDayChangeRateFieldNumber = 17,
+    kHalfYearChangeRateFieldNumber = 18,
+    kFiveMinutesChangeRateFieldNumber = 19,
+    kExpiryDateFieldNumber = 20,
+    kStrikePriceFieldNumber = 21,
+    kUpperStrikePriceFieldNumber = 22,
+    kLowerStrikePriceFieldNumber = 23,
+    kOutstandingRatioFieldNumber = 25,
+    kPremiumFieldNumber = 26,
+    kItmOtmFieldNumber = 27,
+    kImpliedVolatilityFieldNumber = 28,
+    kWarrantDeltaFieldNumber = 29,
+    kCallPriceFieldNumber = 30,
+    kToCallPriceFieldNumber = 31,
+    kEffectiveLeverageFieldNumber = 32,
+    kLeverageRatioFieldNumber = 33,
+    kConversionRatioFieldNumber = 34,
+    kBalancePointFieldNumber = 35,
+    kDeltaFieldNumber = 37,
+    kGammaFieldNumber = 38,
+    kThetaFieldNumber = 39,
+    kVegaFieldNumber = 40,
+    kRhoFieldNumber = 41,
+    kVolumeFieldNumber = 5,
+    kOutstandingQtyFieldNumber = 24,
+    kOpenInterestFieldNumber = 36,
+  };
+  // string symbol = 1 [json_name = "symbol"];
+  void clear_symbol();
+  const std::string& symbol() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_symbol(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_symbol();
+  PROTOBUF_NODISCARD std::string* release_symbol();
+  void set_allocated_symbol(std::string* symbol);
+  private:
+  const std::string& _internal_symbol() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_symbol(const std::string& value);
+  std::string* _internal_mutable_symbol();
+  public:
+
+  // string last_done = 2 [json_name = "lastDone"];
+  void clear_last_done();
+  const std::string& last_done() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_last_done(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_last_done();
+  PROTOBUF_NODISCARD std::string* release_last_done();
+  void set_allocated_last_done(std::string* last_done);
+  private:
+  const std::string& _internal_last_done() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_last_done(const std::string& value);
+  std::string* _internal_mutable_last_done();
+  public:
+
+  // string change_val = 3 [json_name = "changeVal"];
+  void clear_change_val();
+  const std::string& change_val() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_change_val(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_change_val();
+  PROTOBUF_NODISCARD std::string* release_change_val();
+  void set_allocated_change_val(std::string* change_val);
+  private:
+  const std::string& _internal_change_val() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_change_val(const std::string& value);
+  std::string* _internal_mutable_change_val();
+  public:
+
+  // string change_rate = 4 [json_name = "changeRate"];
+  void clear_change_rate();
+  const std::string& change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_change_rate();
+  PROTOBUF_NODISCARD std::string* release_change_rate();
+  void set_allocated_change_rate(std::string* change_rate);
+  private:
+  const std::string& _internal_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_change_rate(const std::string& value);
+  std::string* _internal_mutable_change_rate();
+  public:
+
+  // string turnover = 6 [json_name = "turnover"];
+  void clear_turnover();
+  const std::string& turnover() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_turnover(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_turnover();
+  PROTOBUF_NODISCARD std::string* release_turnover();
+  void set_allocated_turnover(std::string* turnover);
+  private:
+  const std::string& _internal_turnover() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_turnover(const std::string& value);
+  std::string* _internal_mutable_turnover();
+  public:
+
+  // string ytd_change_rate = 7 [json_name = "ytdChangeRate"];
+  void clear_ytd_change_rate();
+  const std::string& ytd_change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_ytd_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_ytd_change_rate();
+  PROTOBUF_NODISCARD std::string* release_ytd_change_rate();
+  void set_allocated_ytd_change_rate(std::string* ytd_change_rate);
+  private:
+  const std::string& _internal_ytd_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_ytd_change_rate(const std::string& value);
+  std::string* _internal_mutable_ytd_change_rate();
+  public:
+
+  // string turnover_rate = 8 [json_name = "turnoverRate"];
+  void clear_turnover_rate();
+  const std::string& turnover_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_turnover_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_turnover_rate();
+  PROTOBUF_NODISCARD std::string* release_turnover_rate();
+  void set_allocated_turnover_rate(std::string* turnover_rate);
+  private:
+  const std::string& _internal_turnover_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_turnover_rate(const std::string& value);
+  std::string* _internal_mutable_turnover_rate();
+  public:
+
+  // string total_market_value = 9 [json_name = "totalMarketValue"];
+  void clear_total_market_value();
+  const std::string& total_market_value() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_total_market_value(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_total_market_value();
+  PROTOBUF_NODISCARD std::string* release_total_market_value();
+  void set_allocated_total_market_value(std::string* total_market_value);
+  private:
+  const std::string& _internal_total_market_value() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_total_market_value(const std::string& value);
+  std::string* _internal_mutable_total_market_value();
+  public:
+
+  // string capital_flow = 10 [json_name = "capitalFlow"];
+  void clear_capital_flow();
+  const std::string& capital_flow() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_capital_flow(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_capital_flow();
+  PROTOBUF_NODISCARD std::string* release_capital_flow();
+  void set_allocated_capital_flow(std::string* capital_flow);
+  private:
+  const std::string& _internal_capital_flow() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_capital_flow(const std::string& value);
+  std::string* _internal_mutable_capital_flow();
+  public:
+
+  // string amplitude = 11 [json_name = "amplitude"];
+  void clear_amplitude();
+  const std::string& amplitude() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_amplitude(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_amplitude();
+  PROTOBUF_NODISCARD std::string* release_amplitude();
+  void set_allocated_amplitude(std::string* amplitude);
+  private:
+  const std::string& _internal_amplitude() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_amplitude(const std::string& value);
+  std::string* _internal_mutable_amplitude();
+  public:
+
+  // string volume_ratio = 12 [json_name = "volumeRatio"];
+  void clear_volume_ratio();
+  const std::string& volume_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_volume_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_volume_ratio();
+  PROTOBUF_NODISCARD std::string* release_volume_ratio();
+  void set_allocated_volume_ratio(std::string* volume_ratio);
+  private:
+  const std::string& _internal_volume_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_volume_ratio(const std::string& value);
+  std::string* _internal_mutable_volume_ratio();
+  public:
+
+  // string pe_ttm_ratio = 13 [json_name = "peTtmRatio"];
+  void clear_pe_ttm_ratio();
+  const std::string& pe_ttm_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_pe_ttm_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_pe_ttm_ratio();
+  PROTOBUF_NODISCARD std::string* release_pe_ttm_ratio();
+  void set_allocated_pe_ttm_ratio(std::string* pe_ttm_ratio);
+  private:
+  const std::string& _internal_pe_ttm_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_pe_ttm_ratio(const std::string& value);
+  std::string* _internal_mutable_pe_ttm_ratio();
+  public:
+
+  // string pb_ratio = 14 [json_name = "pbRatio"];
+  void clear_pb_ratio();
+  const std::string& pb_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_pb_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_pb_ratio();
+  PROTOBUF_NODISCARD std::string* release_pb_ratio();
+  void set_allocated_pb_ratio(std::string* pb_ratio);
+  private:
+  const std::string& _internal_pb_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_pb_ratio(const std::string& value);
+  std::string* _internal_mutable_pb_ratio();
+  public:
+
+  // string dividend_ratio_ttm = 15 [json_name = "dividendRatioTtm"];
+  void clear_dividend_ratio_ttm();
+  const std::string& dividend_ratio_ttm() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_dividend_ratio_ttm(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_dividend_ratio_ttm();
+  PROTOBUF_NODISCARD std::string* release_dividend_ratio_ttm();
+  void set_allocated_dividend_ratio_ttm(std::string* dividend_ratio_ttm);
+  private:
+  const std::string& _internal_dividend_ratio_ttm() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_dividend_ratio_ttm(const std::string& value);
+  std::string* _internal_mutable_dividend_ratio_ttm();
+  public:
+
+  // string five_day_change_rate = 16 [json_name = "fiveDayChangeRate"];
+  void clear_five_day_change_rate();
+  const std::string& five_day_change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_five_day_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_five_day_change_rate();
+  PROTOBUF_NODISCARD std::string* release_five_day_change_rate();
+  void set_allocated_five_day_change_rate(std::string* five_day_change_rate);
+  private:
+  const std::string& _internal_five_day_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_five_day_change_rate(const std::string& value);
+  std::string* _internal_mutable_five_day_change_rate();
+  public:
+
+  // string ten_day_change_rate = 17 [json_name = "tenDayChangeRate"];
+  void clear_ten_day_change_rate();
+  const std::string& ten_day_change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_ten_day_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_ten_day_change_rate();
+  PROTOBUF_NODISCARD std::string* release_ten_day_change_rate();
+  void set_allocated_ten_day_change_rate(std::string* ten_day_change_rate);
+  private:
+  const std::string& _internal_ten_day_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_ten_day_change_rate(const std::string& value);
+  std::string* _internal_mutable_ten_day_change_rate();
+  public:
+
+  // string half_year_change_rate = 18 [json_name = "halfYearChangeRate"];
+  void clear_half_year_change_rate();
+  const std::string& half_year_change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_half_year_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_half_year_change_rate();
+  PROTOBUF_NODISCARD std::string* release_half_year_change_rate();
+  void set_allocated_half_year_change_rate(std::string* half_year_change_rate);
+  private:
+  const std::string& _internal_half_year_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_half_year_change_rate(const std::string& value);
+  std::string* _internal_mutable_half_year_change_rate();
+  public:
+
+  // string five_minutes_change_rate = 19 [json_name = "fiveMinutesChangeRate"];
+  void clear_five_minutes_change_rate();
+  const std::string& five_minutes_change_rate() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_five_minutes_change_rate(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_five_minutes_change_rate();
+  PROTOBUF_NODISCARD std::string* release_five_minutes_change_rate();
+  void set_allocated_five_minutes_change_rate(std::string* five_minutes_change_rate);
+  private:
+  const std::string& _internal_five_minutes_change_rate() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_five_minutes_change_rate(const std::string& value);
+  std::string* _internal_mutable_five_minutes_change_rate();
+  public:
+
+  // string expiry_date = 20 [json_name = "expiryDate"];
+  void clear_expiry_date();
+  const std::string& expiry_date() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_expiry_date(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_expiry_date();
+  PROTOBUF_NODISCARD std::string* release_expiry_date();
+  void set_allocated_expiry_date(std::string* expiry_date);
+  private:
+  const std::string& _internal_expiry_date() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_expiry_date(const std::string& value);
+  std::string* _internal_mutable_expiry_date();
+  public:
+
+  // string strike_price = 21 [json_name = "strikePrice"];
+  void clear_strike_price();
+  const std::string& strike_price() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_strike_price(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_strike_price();
+  PROTOBUF_NODISCARD std::string* release_strike_price();
+  void set_allocated_strike_price(std::string* strike_price);
+  private:
+  const std::string& _internal_strike_price() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_strike_price(const std::string& value);
+  std::string* _internal_mutable_strike_price();
+  public:
+
+  // string upper_strike_price = 22 [json_name = "upperStrikePrice"];
+  void clear_upper_strike_price();
+  const std::string& upper_strike_price() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_upper_strike_price(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_upper_strike_price();
+  PROTOBUF_NODISCARD std::string* release_upper_strike_price();
+  void set_allocated_upper_strike_price(std::string* upper_strike_price);
+  private:
+  const std::string& _internal_upper_strike_price() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_upper_strike_price(const std::string& value);
+  std::string* _internal_mutable_upper_strike_price();
+  public:
+
+  // string lower_strike_price = 23 [json_name = "lowerStrikePrice"];
+  void clear_lower_strike_price();
+  const std::string& lower_strike_price() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_lower_strike_price(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_lower_strike_price();
+  PROTOBUF_NODISCARD std::string* release_lower_strike_price();
+  void set_allocated_lower_strike_price(std::string* lower_strike_price);
+  private:
+  const std::string& _internal_lower_strike_price() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_lower_strike_price(const std::string& value);
+  std::string* _internal_mutable_lower_strike_price();
+  public:
+
+  // string outstanding_ratio = 25 [json_name = "outstandingRatio"];
+  void clear_outstanding_ratio();
+  const std::string& outstanding_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_outstanding_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_outstanding_ratio();
+  PROTOBUF_NODISCARD std::string* release_outstanding_ratio();
+  void set_allocated_outstanding_ratio(std::string* outstanding_ratio);
+  private:
+  const std::string& _internal_outstanding_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_outstanding_ratio(const std::string& value);
+  std::string* _internal_mutable_outstanding_ratio();
+  public:
+
+  // string premium = 26 [json_name = "premium"];
+  void clear_premium();
+  const std::string& premium() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_premium(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_premium();
+  PROTOBUF_NODISCARD std::string* release_premium();
+  void set_allocated_premium(std::string* premium);
+  private:
+  const std::string& _internal_premium() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_premium(const std::string& value);
+  std::string* _internal_mutable_premium();
+  public:
+
+  // string itm_otm = 27 [json_name = "itmOtm"];
+  void clear_itm_otm();
+  const std::string& itm_otm() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_itm_otm(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_itm_otm();
+  PROTOBUF_NODISCARD std::string* release_itm_otm();
+  void set_allocated_itm_otm(std::string* itm_otm);
+  private:
+  const std::string& _internal_itm_otm() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_itm_otm(const std::string& value);
+  std::string* _internal_mutable_itm_otm();
+  public:
+
+  // string implied_volatility = 28 [json_name = "impliedVolatility"];
+  void clear_implied_volatility();
+  const std::string& implied_volatility() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_implied_volatility(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_implied_volatility();
+  PROTOBUF_NODISCARD std::string* release_implied_volatility();
+  void set_allocated_implied_volatility(std::string* implied_volatility);
+  private:
+  const std::string& _internal_implied_volatility() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_implied_volatility(const std::string& value);
+  std::string* _internal_mutable_implied_volatility();
+  public:
+
+  // string warrant_delta = 29 [json_name = "warrantDelta"];
+  void clear_warrant_delta();
+  const std::string& warrant_delta() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_warrant_delta(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_warrant_delta();
+  PROTOBUF_NODISCARD std::string* release_warrant_delta();
+  void set_allocated_warrant_delta(std::string* warrant_delta);
+  private:
+  const std::string& _internal_warrant_delta() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_warrant_delta(const std::string& value);
+  std::string* _internal_mutable_warrant_delta();
+  public:
+
+  // string call_price = 30 [json_name = "callPrice"];
+  void clear_call_price();
+  const std::string& call_price() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_call_price(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_call_price();
+  PROTOBUF_NODISCARD std::string* release_call_price();
+  void set_allocated_call_price(std::string* call_price);
+  private:
+  const std::string& _internal_call_price() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_call_price(const std::string& value);
+  std::string* _internal_mutable_call_price();
+  public:
+
+  // string to_call_price = 31 [json_name = "toCallPrice"];
+  void clear_to_call_price();
+  const std::string& to_call_price() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_to_call_price(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_to_call_price();
+  PROTOBUF_NODISCARD std::string* release_to_call_price();
+  void set_allocated_to_call_price(std::string* to_call_price);
+  private:
+  const std::string& _internal_to_call_price() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_to_call_price(const std::string& value);
+  std::string* _internal_mutable_to_call_price();
+  public:
+
+  // string effective_leverage = 32 [json_name = "effectiveLeverage"];
+  void clear_effective_leverage();
+  const std::string& effective_leverage() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_effective_leverage(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_effective_leverage();
+  PROTOBUF_NODISCARD std::string* release_effective_leverage();
+  void set_allocated_effective_leverage(std::string* effective_leverage);
+  private:
+  const std::string& _internal_effective_leverage() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_effective_leverage(const std::string& value);
+  std::string* _internal_mutable_effective_leverage();
+  public:
+
+  // string leverage_ratio = 33 [json_name = "leverageRatio"];
+  void clear_leverage_ratio();
+  const std::string& leverage_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_leverage_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_leverage_ratio();
+  PROTOBUF_NODISCARD std::string* release_leverage_ratio();
+  void set_allocated_leverage_ratio(std::string* leverage_ratio);
+  private:
+  const std::string& _internal_leverage_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_leverage_ratio(const std::string& value);
+  std::string* _internal_mutable_leverage_ratio();
+  public:
+
+  // string conversion_ratio = 34 [json_name = "conversionRatio"];
+  void clear_conversion_ratio();
+  const std::string& conversion_ratio() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_conversion_ratio(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_conversion_ratio();
+  PROTOBUF_NODISCARD std::string* release_conversion_ratio();
+  void set_allocated_conversion_ratio(std::string* conversion_ratio);
+  private:
+  const std::string& _internal_conversion_ratio() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_conversion_ratio(const std::string& value);
+  std::string* _internal_mutable_conversion_ratio();
+  public:
+
+  // string balance_point = 35 [json_name = "balancePoint"];
+  void clear_balance_point();
+  const std::string& balance_point() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_balance_point(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_balance_point();
+  PROTOBUF_NODISCARD std::string* release_balance_point();
+  void set_allocated_balance_point(std::string* balance_point);
+  private:
+  const std::string& _internal_balance_point() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_balance_point(const std::string& value);
+  std::string* _internal_mutable_balance_point();
+  public:
+
+  // string delta = 37 [json_name = "delta"];
+  void clear_delta();
+  const std::string& delta() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_delta(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_delta();
+  PROTOBUF_NODISCARD std::string* release_delta();
+  void set_allocated_delta(std::string* delta);
+  private:
+  const std::string& _internal_delta() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_delta(const std::string& value);
+  std::string* _internal_mutable_delta();
+  public:
+
+  // string gamma = 38 [json_name = "gamma"];
+  void clear_gamma();
+  const std::string& gamma() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_gamma(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_gamma();
+  PROTOBUF_NODISCARD std::string* release_gamma();
+  void set_allocated_gamma(std::string* gamma);
+  private:
+  const std::string& _internal_gamma() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_gamma(const std::string& value);
+  std::string* _internal_mutable_gamma();
+  public:
+
+  // string theta = 39 [json_name = "theta"];
+  void clear_theta();
+  const std::string& theta() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_theta(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_theta();
+  PROTOBUF_NODISCARD std::string* release_theta();
+  void set_allocated_theta(std::string* theta);
+  private:
+  const std::string& _internal_theta() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_theta(const std::string& value);
+  std::string* _internal_mutable_theta();
+  public:
+
+  // string vega = 40 [json_name = "vega"];
+  void clear_vega();
+  const std::string& vega() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_vega(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_vega();
+  PROTOBUF_NODISCARD std::string* release_vega();
+  void set_allocated_vega(std::string* vega);
+  private:
+  const std::string& _internal_vega() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_vega(const std::string& value);
+  std::string* _internal_mutable_vega();
+  public:
+
+  // string rho = 41 [json_name = "rho"];
+  void clear_rho();
+  const std::string& rho() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_rho(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_rho();
+  PROTOBUF_NODISCARD std::string* release_rho();
+  void set_allocated_rho(std::string* rho);
+  private:
+  const std::string& _internal_rho() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_rho(const std::string& value);
+  std::string* _internal_mutable_rho();
+  public:
+
+  // int64 volume = 5 [json_name = "volume"];
+  void clear_volume();
+  int64_t volume() const;
+  void set_volume(int64_t value);
+  private:
+  int64_t _internal_volume() const;
+  void _internal_set_volume(int64_t value);
+  public:
+
+  // int64 outstanding_qty = 24 [json_name = "outstandingQty"];
+  void clear_outstanding_qty();
+  int64_t outstanding_qty() const;
+  void set_outstanding_qty(int64_t value);
+  private:
+  int64_t _internal_outstanding_qty() const;
+  void _internal_set_outstanding_qty(int64_t value);
+  public:
+
+  // int64 open_interest = 36 [json_name = "openInterest"];
+  void clear_open_interest();
+  int64_t open_interest() const;
+  void set_open_interest(int64_t value);
+  private:
+  int64_t _internal_open_interest() const;
+  void _internal_set_open_interest(int64_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcIndex)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr symbol_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr last_done_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr change_val_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr turnover_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ytd_change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr turnover_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr total_market_value_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr capital_flow_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr amplitude_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr volume_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr pe_ttm_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr pb_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr dividend_ratio_ttm_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr five_day_change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ten_day_change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr half_year_change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr five_minutes_change_rate_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr expiry_date_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr strike_price_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr upper_strike_price_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr lower_strike_price_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr outstanding_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr premium_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr itm_otm_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr implied_volatility_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr warrant_delta_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr call_price_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr to_call_price_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr effective_leverage_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr leverage_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr conversion_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr balance_point_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr delta_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr gamma_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr theta_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr vega_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr rho_;
+  int64_t volume_;
+  int64_t outstanding_qty_;
+  int64_t open_interest_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SecurityCalcQuoteResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:longbridgeapp.quote.v1.SecurityCalcQuoteResponse) */ {
+ public:
+  inline SecurityCalcQuoteResponse() : SecurityCalcQuoteResponse(nullptr) {}
+  ~SecurityCalcQuoteResponse() override;
+  explicit constexpr SecurityCalcQuoteResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  SecurityCalcQuoteResponse(const SecurityCalcQuoteResponse& from);
+  SecurityCalcQuoteResponse(SecurityCalcQuoteResponse&& from) noexcept
+    : SecurityCalcQuoteResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline SecurityCalcQuoteResponse& operator=(const SecurityCalcQuoteResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SecurityCalcQuoteResponse& operator=(SecurityCalcQuoteResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SecurityCalcQuoteResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SecurityCalcQuoteResponse* internal_default_instance() {
+    return reinterpret_cast<const SecurityCalcQuoteResponse*>(
+               &_SecurityCalcQuoteResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    60;
+
+  friend void swap(SecurityCalcQuoteResponse& a, SecurityCalcQuoteResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SecurityCalcQuoteResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SecurityCalcQuoteResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SecurityCalcQuoteResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<SecurityCalcQuoteResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const SecurityCalcQuoteResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const SecurityCalcQuoteResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SecurityCalcQuoteResponse* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "longbridgeapp.quote.v1.SecurityCalcQuoteResponse";
+  }
+  protected:
+  explicit SecurityCalcQuoteResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSecurityCalcIndexFieldNumber = 1,
+  };
+  // repeated .longbridgeapp.quote.v1.SecurityCalcIndex security_calc_index = 1 [json_name = "securityCalcIndex"];
+  int security_calc_index_size() const;
+  private:
+  int _internal_security_calc_index_size() const;
+  public:
+  void clear_security_calc_index();
+  ::longbridgeapp::quote::v1::SecurityCalcIndex* mutable_security_calc_index(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::SecurityCalcIndex >*
+      mutable_security_calc_index();
+  private:
+  const ::longbridgeapp::quote::v1::SecurityCalcIndex& _internal_security_calc_index(int index) const;
+  ::longbridgeapp::quote::v1::SecurityCalcIndex* _internal_add_security_calc_index();
+  public:
+  const ::longbridgeapp::quote::v1::SecurityCalcIndex& security_calc_index(int index) const;
+  ::longbridgeapp::quote::v1::SecurityCalcIndex* add_security_calc_index();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::SecurityCalcIndex >&
+      security_calc_index() const;
+
+  // @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::SecurityCalcIndex > security_calc_index_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
 // ===================================================================
 
 
@@ -12068,6 +14195,57 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
 StaticInfo::mutable_stock_derivatives() {
   // @@protoc_insertion_point(field_mutable_list:longbridgeapp.quote.v1.StaticInfo.stock_derivatives)
   return _internal_mutable_stock_derivatives();
+}
+
+// string board = 17 [json_name = "board"];
+inline void StaticInfo::clear_board() {
+  board_.ClearToEmpty();
+}
+inline const std::string& StaticInfo::board() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.StaticInfo.board)
+  return _internal_board();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void StaticInfo::set_board(ArgT0&& arg0, ArgT... args) {
+ 
+ board_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.StaticInfo.board)
+}
+inline std::string* StaticInfo::mutable_board() {
+  std::string* _s = _internal_mutable_board();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.StaticInfo.board)
+  return _s;
+}
+inline const std::string& StaticInfo::_internal_board() const {
+  return board_.Get();
+}
+inline void StaticInfo::_internal_set_board(const std::string& value) {
+  
+  board_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* StaticInfo::_internal_mutable_board() {
+  
+  return board_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* StaticInfo::release_board() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.StaticInfo.board)
+  return board_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void StaticInfo::set_allocated_board(std::string* board) {
+  if (board != nullptr) {
+    
+  } else {
+    
+  }
+  board_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), board,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (board_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    board_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.StaticInfo.board)
 }
 
 // -------------------------------------------------------------------
@@ -20527,6 +22705,77 @@ inline void PushQuote::set_trade_session(::longbridgeapp::quote::v1::TradeSessio
   // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.PushQuote.trade_session)
 }
 
+// int64 current_volume = 12 [json_name = "currentVolume"];
+inline void PushQuote::clear_current_volume() {
+  current_volume_ = int64_t{0};
+}
+inline int64_t PushQuote::_internal_current_volume() const {
+  return current_volume_;
+}
+inline int64_t PushQuote::current_volume() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.PushQuote.current_volume)
+  return _internal_current_volume();
+}
+inline void PushQuote::_internal_set_current_volume(int64_t value) {
+  
+  current_volume_ = value;
+}
+inline void PushQuote::set_current_volume(int64_t value) {
+  _internal_set_current_volume(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.PushQuote.current_volume)
+}
+
+// string current_turnover = 13 [json_name = "currentTurnover"];
+inline void PushQuote::clear_current_turnover() {
+  current_turnover_.ClearToEmpty();
+}
+inline const std::string& PushQuote::current_turnover() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.PushQuote.current_turnover)
+  return _internal_current_turnover();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void PushQuote::set_current_turnover(ArgT0&& arg0, ArgT... args) {
+ 
+ current_turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.PushQuote.current_turnover)
+}
+inline std::string* PushQuote::mutable_current_turnover() {
+  std::string* _s = _internal_mutable_current_turnover();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.PushQuote.current_turnover)
+  return _s;
+}
+inline const std::string& PushQuote::_internal_current_turnover() const {
+  return current_turnover_.Get();
+}
+inline void PushQuote::_internal_set_current_turnover(const std::string& value) {
+  
+  current_turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* PushQuote::_internal_mutable_current_turnover() {
+  
+  return current_turnover_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* PushQuote::release_current_turnover() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.PushQuote.current_turnover)
+  return current_turnover_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void PushQuote::set_allocated_current_turnover(std::string* current_turnover) {
+  if (current_turnover != nullptr) {
+    
+  } else {
+    
+  }
+  current_turnover_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), current_turnover,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (current_turnover_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    current_turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.PushQuote.current_turnover)
+}
+
 // -------------------------------------------------------------------
 
 // PushDepth
@@ -21263,9 +23512,2830 @@ MarketTradeDayResponse::mutable_half_trade_day() {
   return &half_trade_day_;
 }
 
+// -------------------------------------------------------------------
+
+// CapitalFlowIntradayRequest
+
+// string symbol = 1 [json_name = "symbol"];
+inline void CapitalFlowIntradayRequest::clear_symbol() {
+  symbol_.ClearToEmpty();
+}
+inline const std::string& CapitalFlowIntradayRequest::symbol() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol)
+  return _internal_symbol();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalFlowIntradayRequest::set_symbol(ArgT0&& arg0, ArgT... args) {
+ 
+ symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol)
+}
+inline std::string* CapitalFlowIntradayRequest::mutable_symbol() {
+  std::string* _s = _internal_mutable_symbol();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol)
+  return _s;
+}
+inline const std::string& CapitalFlowIntradayRequest::_internal_symbol() const {
+  return symbol_.Get();
+}
+inline void CapitalFlowIntradayRequest::_internal_set_symbol(const std::string& value) {
+  
+  symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayRequest::_internal_mutable_symbol() {
+  
+  return symbol_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayRequest::release_symbol() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol)
+  return symbol_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalFlowIntradayRequest::set_allocated_symbol(std::string* symbol) {
+  if (symbol != nullptr) {
+    
+  } else {
+    
+  }
+  symbol_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), symbol,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (symbol_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalFlowIntradayRequest.symbol)
+}
+
+// -------------------------------------------------------------------
+
+// CapitalFlowIntradayResponse_CapitalFlowLine
+
+// string inflow = 1 [json_name = "inflow"];
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::clear_inflow() {
+  inflow_.ClearToEmpty();
+}
+inline const std::string& CapitalFlowIntradayResponse_CapitalFlowLine::inflow() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow)
+  return _internal_inflow();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalFlowIntradayResponse_CapitalFlowLine::set_inflow(ArgT0&& arg0, ArgT... args) {
+ 
+ inflow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow)
+}
+inline std::string* CapitalFlowIntradayResponse_CapitalFlowLine::mutable_inflow() {
+  std::string* _s = _internal_mutable_inflow();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow)
+  return _s;
+}
+inline const std::string& CapitalFlowIntradayResponse_CapitalFlowLine::_internal_inflow() const {
+  return inflow_.Get();
+}
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::_internal_set_inflow(const std::string& value) {
+  
+  inflow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayResponse_CapitalFlowLine::_internal_mutable_inflow() {
+  
+  return inflow_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayResponse_CapitalFlowLine::release_inflow() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow)
+  return inflow_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::set_allocated_inflow(std::string* inflow) {
+  if (inflow != nullptr) {
+    
+  } else {
+    
+  }
+  inflow_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), inflow,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (inflow_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    inflow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.inflow)
+}
+
+// int64 timestamp = 2 [json_name = "timestamp"];
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::clear_timestamp() {
+  timestamp_ = int64_t{0};
+}
+inline int64_t CapitalFlowIntradayResponse_CapitalFlowLine::_internal_timestamp() const {
+  return timestamp_;
+}
+inline int64_t CapitalFlowIntradayResponse_CapitalFlowLine::timestamp() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.timestamp)
+  return _internal_timestamp();
+}
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::_internal_set_timestamp(int64_t value) {
+  
+  timestamp_ = value;
+}
+inline void CapitalFlowIntradayResponse_CapitalFlowLine::set_timestamp(int64_t value) {
+  _internal_set_timestamp(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine.timestamp)
+}
+
+// -------------------------------------------------------------------
+
+// CapitalFlowIntradayResponse
+
+// string symbol = 1 [json_name = "symbol"];
+inline void CapitalFlowIntradayResponse::clear_symbol() {
+  symbol_.ClearToEmpty();
+}
+inline const std::string& CapitalFlowIntradayResponse::symbol() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol)
+  return _internal_symbol();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalFlowIntradayResponse::set_symbol(ArgT0&& arg0, ArgT... args) {
+ 
+ symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol)
+}
+inline std::string* CapitalFlowIntradayResponse::mutable_symbol() {
+  std::string* _s = _internal_mutable_symbol();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol)
+  return _s;
+}
+inline const std::string& CapitalFlowIntradayResponse::_internal_symbol() const {
+  return symbol_.Get();
+}
+inline void CapitalFlowIntradayResponse::_internal_set_symbol(const std::string& value) {
+  
+  symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayResponse::_internal_mutable_symbol() {
+  
+  return symbol_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalFlowIntradayResponse::release_symbol() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol)
+  return symbol_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalFlowIntradayResponse::set_allocated_symbol(std::string* symbol) {
+  if (symbol != nullptr) {
+    
+  } else {
+    
+  }
+  symbol_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), symbol,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (symbol_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.symbol)
+}
+
+// repeated .longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine capital_flow_lines = 2 [json_name = "capitalFlowLines"];
+inline int CapitalFlowIntradayResponse::_internal_capital_flow_lines_size() const {
+  return capital_flow_lines_.size();
+}
+inline int CapitalFlowIntradayResponse::capital_flow_lines_size() const {
+  return _internal_capital_flow_lines_size();
+}
+inline void CapitalFlowIntradayResponse::clear_capital_flow_lines() {
+  capital_flow_lines_.Clear();
+}
+inline ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* CapitalFlowIntradayResponse::mutable_capital_flow_lines(int index) {
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.capital_flow_lines)
+  return capital_flow_lines_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >*
+CapitalFlowIntradayResponse::mutable_capital_flow_lines() {
+  // @@protoc_insertion_point(field_mutable_list:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.capital_flow_lines)
+  return &capital_flow_lines_;
+}
+inline const ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine& CapitalFlowIntradayResponse::_internal_capital_flow_lines(int index) const {
+  return capital_flow_lines_.Get(index);
+}
+inline const ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine& CapitalFlowIntradayResponse::capital_flow_lines(int index) const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.capital_flow_lines)
+  return _internal_capital_flow_lines(index);
+}
+inline ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* CapitalFlowIntradayResponse::_internal_add_capital_flow_lines() {
+  return capital_flow_lines_.Add();
+}
+inline ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* CapitalFlowIntradayResponse::add_capital_flow_lines() {
+  ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine* _add = _internal_add_capital_flow_lines();
+  // @@protoc_insertion_point(field_add:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.capital_flow_lines)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine >&
+CapitalFlowIntradayResponse::capital_flow_lines() const {
+  // @@protoc_insertion_point(field_list:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.capital_flow_lines)
+  return capital_flow_lines_;
+}
+
+// -------------------------------------------------------------------
+
+// CapitalDistributionResponse_CapitalDistribution
+
+// string large = 1 [json_name = "large"];
+inline void CapitalDistributionResponse_CapitalDistribution::clear_large() {
+  large_.ClearToEmpty();
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::large() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large)
+  return _internal_large();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalDistributionResponse_CapitalDistribution::set_large(ArgT0&& arg0, ArgT... args) {
+ 
+ large_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large)
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::mutable_large() {
+  std::string* _s = _internal_mutable_large();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large)
+  return _s;
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::_internal_large() const {
+  return large_.Get();
+}
+inline void CapitalDistributionResponse_CapitalDistribution::_internal_set_large(const std::string& value) {
+  
+  large_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::_internal_mutable_large() {
+  
+  return large_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::release_large() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large)
+  return large_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalDistributionResponse_CapitalDistribution::set_allocated_large(std::string* large) {
+  if (large != nullptr) {
+    
+  } else {
+    
+  }
+  large_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), large,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (large_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    large_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.large)
+}
+
+// string medium = 2 [json_name = "medium"];
+inline void CapitalDistributionResponse_CapitalDistribution::clear_medium() {
+  medium_.ClearToEmpty();
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::medium() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium)
+  return _internal_medium();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalDistributionResponse_CapitalDistribution::set_medium(ArgT0&& arg0, ArgT... args) {
+ 
+ medium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium)
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::mutable_medium() {
+  std::string* _s = _internal_mutable_medium();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium)
+  return _s;
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::_internal_medium() const {
+  return medium_.Get();
+}
+inline void CapitalDistributionResponse_CapitalDistribution::_internal_set_medium(const std::string& value) {
+  
+  medium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::_internal_mutable_medium() {
+  
+  return medium_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::release_medium() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium)
+  return medium_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalDistributionResponse_CapitalDistribution::set_allocated_medium(std::string* medium) {
+  if (medium != nullptr) {
+    
+  } else {
+    
+  }
+  medium_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), medium,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (medium_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    medium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.medium)
+}
+
+// string small = 3 [json_name = "small"];
+inline void CapitalDistributionResponse_CapitalDistribution::clear_small() {
+  small_.ClearToEmpty();
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::small() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small)
+  return _internal_small();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalDistributionResponse_CapitalDistribution::set_small(ArgT0&& arg0, ArgT... args) {
+ 
+ small_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small)
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::mutable_small() {
+  std::string* _s = _internal_mutable_small();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small)
+  return _s;
+}
+inline const std::string& CapitalDistributionResponse_CapitalDistribution::_internal_small() const {
+  return small_.Get();
+}
+inline void CapitalDistributionResponse_CapitalDistribution::_internal_set_small(const std::string& value) {
+  
+  small_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::_internal_mutable_small() {
+  
+  return small_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse_CapitalDistribution::release_small() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small)
+  return small_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalDistributionResponse_CapitalDistribution::set_allocated_small(std::string* small) {
+  if (small != nullptr) {
+    
+  } else {
+    
+  }
+  small_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), small,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (small_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    small_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution.small)
+}
+
+// -------------------------------------------------------------------
+
+// CapitalDistributionResponse
+
+// string symbol = 1 [json_name = "symbol"];
+inline void CapitalDistributionResponse::clear_symbol() {
+  symbol_.ClearToEmpty();
+}
+inline const std::string& CapitalDistributionResponse::symbol() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.symbol)
+  return _internal_symbol();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CapitalDistributionResponse::set_symbol(ArgT0&& arg0, ArgT... args) {
+ 
+ symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalDistributionResponse.symbol)
+}
+inline std::string* CapitalDistributionResponse::mutable_symbol() {
+  std::string* _s = _internal_mutable_symbol();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.symbol)
+  return _s;
+}
+inline const std::string& CapitalDistributionResponse::_internal_symbol() const {
+  return symbol_.Get();
+}
+inline void CapitalDistributionResponse::_internal_set_symbol(const std::string& value) {
+  
+  symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse::_internal_mutable_symbol() {
+  
+  return symbol_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CapitalDistributionResponse::release_symbol() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.symbol)
+  return symbol_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CapitalDistributionResponse::set_allocated_symbol(std::string* symbol) {
+  if (symbol != nullptr) {
+    
+  } else {
+    
+  }
+  symbol_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), symbol,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (symbol_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.symbol)
+}
+
+// int64 timestamp = 2 [json_name = "timestamp"];
+inline void CapitalDistributionResponse::clear_timestamp() {
+  timestamp_ = int64_t{0};
+}
+inline int64_t CapitalDistributionResponse::_internal_timestamp() const {
+  return timestamp_;
+}
+inline int64_t CapitalDistributionResponse::timestamp() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.timestamp)
+  return _internal_timestamp();
+}
+inline void CapitalDistributionResponse::_internal_set_timestamp(int64_t value) {
+  
+  timestamp_ = value;
+}
+inline void CapitalDistributionResponse::set_timestamp(int64_t value) {
+  _internal_set_timestamp(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.CapitalDistributionResponse.timestamp)
+}
+
+// .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
+inline bool CapitalDistributionResponse::_internal_has_capital_in() const {
+  return this != internal_default_instance() && capital_in_ != nullptr;
+}
+inline bool CapitalDistributionResponse::has_capital_in() const {
+  return _internal_has_capital_in();
+}
+inline void CapitalDistributionResponse::clear_capital_in() {
+  if (GetArenaForAllocation() == nullptr && capital_in_ != nullptr) {
+    delete capital_in_;
+  }
+  capital_in_ = nullptr;
+}
+inline const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& CapitalDistributionResponse::_internal_capital_in() const {
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* p = capital_in_;
+  return p != nullptr ? *p : reinterpret_cast<const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution&>(
+      ::longbridgeapp::quote::v1::_CapitalDistributionResponse_CapitalDistribution_default_instance_);
+}
+inline const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& CapitalDistributionResponse::capital_in() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_in)
+  return _internal_capital_in();
+}
+inline void CapitalDistributionResponse::unsafe_arena_set_allocated_capital_in(
+    ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_in) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(capital_in_);
+  }
+  capital_in_ = capital_in;
+  if (capital_in) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_in)
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::release_capital_in() {
+  
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* temp = capital_in_;
+  capital_in_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::unsafe_arena_release_capital_in() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_in)
+  
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* temp = capital_in_;
+  capital_in_ = nullptr;
+  return temp;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::_internal_mutable_capital_in() {
+  
+  if (capital_in_ == nullptr) {
+    auto* p = CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>(GetArenaForAllocation());
+    capital_in_ = p;
+  }
+  return capital_in_;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::mutable_capital_in() {
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* _msg = _internal_mutable_capital_in();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_in)
+  return _msg;
+}
+inline void CapitalDistributionResponse::set_allocated_capital_in(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_in) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete capital_in_;
+  }
+  if (capital_in) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>::GetOwningArena(capital_in);
+    if (message_arena != submessage_arena) {
+      capital_in = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, capital_in, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  capital_in_ = capital_in;
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_in)
+}
+
+// .longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
+inline bool CapitalDistributionResponse::_internal_has_capital_out() const {
+  return this != internal_default_instance() && capital_out_ != nullptr;
+}
+inline bool CapitalDistributionResponse::has_capital_out() const {
+  return _internal_has_capital_out();
+}
+inline void CapitalDistributionResponse::clear_capital_out() {
+  if (GetArenaForAllocation() == nullptr && capital_out_ != nullptr) {
+    delete capital_out_;
+  }
+  capital_out_ = nullptr;
+}
+inline const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& CapitalDistributionResponse::_internal_capital_out() const {
+  const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* p = capital_out_;
+  return p != nullptr ? *p : reinterpret_cast<const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution&>(
+      ::longbridgeapp::quote::v1::_CapitalDistributionResponse_CapitalDistribution_default_instance_);
+}
+inline const ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution& CapitalDistributionResponse::capital_out() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_out)
+  return _internal_capital_out();
+}
+inline void CapitalDistributionResponse::unsafe_arena_set_allocated_capital_out(
+    ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_out) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(capital_out_);
+  }
+  capital_out_ = capital_out;
+  if (capital_out) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_out)
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::release_capital_out() {
+  
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* temp = capital_out_;
+  capital_out_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::unsafe_arena_release_capital_out() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_out)
+  
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* temp = capital_out_;
+  capital_out_ = nullptr;
+  return temp;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::_internal_mutable_capital_out() {
+  
+  if (capital_out_ == nullptr) {
+    auto* p = CreateMaybeMessage<::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>(GetArenaForAllocation());
+    capital_out_ = p;
+  }
+  return capital_out_;
+}
+inline ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* CapitalDistributionResponse::mutable_capital_out() {
+  ::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* _msg = _internal_mutable_capital_out();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_out)
+  return _msg;
+}
+inline void CapitalDistributionResponse::set_allocated_capital_out(::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution* capital_out) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete capital_out_;
+  }
+  if (capital_out) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::longbridgeapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>::GetOwningArena(capital_out);
+    if (message_arena != submessage_arena) {
+      capital_out = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, capital_out, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  capital_out_ = capital_out;
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.CapitalDistributionResponse.capital_out)
+}
+
+// -------------------------------------------------------------------
+
+// SecurityCalcQuoteRequest
+
+// repeated string symbols = 1 [json_name = "symbols"];
+inline int SecurityCalcQuoteRequest::_internal_symbols_size() const {
+  return symbols_.size();
+}
+inline int SecurityCalcQuoteRequest::symbols_size() const {
+  return _internal_symbols_size();
+}
+inline void SecurityCalcQuoteRequest::clear_symbols() {
+  symbols_.Clear();
+}
+inline std::string* SecurityCalcQuoteRequest::add_symbols() {
+  std::string* _s = _internal_add_symbols();
+  // @@protoc_insertion_point(field_add_mutable:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+  return _s;
+}
+inline const std::string& SecurityCalcQuoteRequest::_internal_symbols(int index) const {
+  return symbols_.Get(index);
+}
+inline const std::string& SecurityCalcQuoteRequest::symbols(int index) const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+  return _internal_symbols(index);
+}
+inline std::string* SecurityCalcQuoteRequest::mutable_symbols(int index) {
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+  return symbols_.Mutable(index);
+}
+inline void SecurityCalcQuoteRequest::set_symbols(int index, const std::string& value) {
+  symbols_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::set_symbols(int index, std::string&& value) {
+  symbols_.Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::set_symbols(int index, const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  symbols_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::set_symbols(int index, const char* value, size_t size) {
+  symbols_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline std::string* SecurityCalcQuoteRequest::_internal_add_symbols() {
+  return symbols_.Add();
+}
+inline void SecurityCalcQuoteRequest::add_symbols(const std::string& value) {
+  symbols_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::add_symbols(std::string&& value) {
+  symbols_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::add_symbols(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  symbols_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline void SecurityCalcQuoteRequest::add_symbols(const char* value, size_t size) {
+  symbols_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
+SecurityCalcQuoteRequest::symbols() const {
+  // @@protoc_insertion_point(field_list:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+  return symbols_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
+SecurityCalcQuoteRequest::mutable_symbols() {
+  // @@protoc_insertion_point(field_mutable_list:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.symbols)
+  return &symbols_;
+}
+
+// repeated .longbridgeapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
+inline int SecurityCalcQuoteRequest::_internal_calc_index_size() const {
+  return calc_index_.size();
+}
+inline int SecurityCalcQuoteRequest::calc_index_size() const {
+  return _internal_calc_index_size();
+}
+inline void SecurityCalcQuoteRequest::clear_calc_index() {
+  calc_index_.Clear();
+}
+inline ::longbridgeapp::quote::v1::CalcIndex SecurityCalcQuoteRequest::_internal_calc_index(int index) const {
+  return static_cast< ::longbridgeapp::quote::v1::CalcIndex >(calc_index_.Get(index));
+}
+inline ::longbridgeapp::quote::v1::CalcIndex SecurityCalcQuoteRequest::calc_index(int index) const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.calc_index)
+  return _internal_calc_index(index);
+}
+inline void SecurityCalcQuoteRequest::set_calc_index(int index, ::longbridgeapp::quote::v1::CalcIndex value) {
+  calc_index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.calc_index)
+}
+inline void SecurityCalcQuoteRequest::_internal_add_calc_index(::longbridgeapp::quote::v1::CalcIndex value) {
+  calc_index_.Add(value);
+}
+inline void SecurityCalcQuoteRequest::add_calc_index(::longbridgeapp::quote::v1::CalcIndex value) {
+  _internal_add_calc_index(value);
+  // @@protoc_insertion_point(field_add:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.calc_index)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>&
+SecurityCalcQuoteRequest::calc_index() const {
+  // @@protoc_insertion_point(field_list:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.calc_index)
+  return calc_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>*
+SecurityCalcQuoteRequest::_internal_mutable_calc_index() {
+  return &calc_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>*
+SecurityCalcQuoteRequest::mutable_calc_index() {
+  // @@protoc_insertion_point(field_mutable_list:longbridgeapp.quote.v1.SecurityCalcQuoteRequest.calc_index)
+  return _internal_mutable_calc_index();
+}
+
+// -------------------------------------------------------------------
+
+// SecurityCalcIndex
+
+// string symbol = 1 [json_name = "symbol"];
+inline void SecurityCalcIndex::clear_symbol() {
+  symbol_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::symbol() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.symbol)
+  return _internal_symbol();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_symbol(ArgT0&& arg0, ArgT... args) {
+ 
+ symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.symbol)
+}
+inline std::string* SecurityCalcIndex::mutable_symbol() {
+  std::string* _s = _internal_mutable_symbol();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.symbol)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_symbol() const {
+  return symbol_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_symbol(const std::string& value) {
+  
+  symbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_symbol() {
+  
+  return symbol_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_symbol() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.symbol)
+  return symbol_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_symbol(std::string* symbol) {
+  if (symbol != nullptr) {
+    
+  } else {
+    
+  }
+  symbol_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), symbol,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (symbol_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    symbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.symbol)
+}
+
+// string last_done = 2 [json_name = "lastDone"];
+inline void SecurityCalcIndex::clear_last_done() {
+  last_done_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::last_done() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.last_done)
+  return _internal_last_done();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_last_done(ArgT0&& arg0, ArgT... args) {
+ 
+ last_done_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.last_done)
+}
+inline std::string* SecurityCalcIndex::mutable_last_done() {
+  std::string* _s = _internal_mutable_last_done();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.last_done)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_last_done() const {
+  return last_done_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_last_done(const std::string& value) {
+  
+  last_done_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_last_done() {
+  
+  return last_done_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_last_done() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.last_done)
+  return last_done_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_last_done(std::string* last_done) {
+  if (last_done != nullptr) {
+    
+  } else {
+    
+  }
+  last_done_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), last_done,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (last_done_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    last_done_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.last_done)
+}
+
+// string change_val = 3 [json_name = "changeVal"];
+inline void SecurityCalcIndex::clear_change_val() {
+  change_val_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::change_val() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.change_val)
+  return _internal_change_val();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_change_val(ArgT0&& arg0, ArgT... args) {
+ 
+ change_val_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.change_val)
+}
+inline std::string* SecurityCalcIndex::mutable_change_val() {
+  std::string* _s = _internal_mutable_change_val();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.change_val)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_change_val() const {
+  return change_val_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_change_val(const std::string& value) {
+  
+  change_val_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_change_val() {
+  
+  return change_val_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_change_val() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.change_val)
+  return change_val_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_change_val(std::string* change_val) {
+  if (change_val != nullptr) {
+    
+  } else {
+    
+  }
+  change_val_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), change_val,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (change_val_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    change_val_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.change_val)
+}
+
+// string change_rate = 4 [json_name = "changeRate"];
+inline void SecurityCalcIndex::clear_change_rate() {
+  change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.change_rate)
+  return _internal_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_change_rate() {
+  std::string* _s = _internal_mutable_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_change_rate() const {
+  return change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_change_rate(const std::string& value) {
+  
+  change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_change_rate() {
+  
+  return change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.change_rate)
+  return change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_change_rate(std::string* change_rate) {
+  if (change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.change_rate)
+}
+
+// int64 volume = 5 [json_name = "volume"];
+inline void SecurityCalcIndex::clear_volume() {
+  volume_ = int64_t{0};
+}
+inline int64_t SecurityCalcIndex::_internal_volume() const {
+  return volume_;
+}
+inline int64_t SecurityCalcIndex::volume() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.volume)
+  return _internal_volume();
+}
+inline void SecurityCalcIndex::_internal_set_volume(int64_t value) {
+  
+  volume_ = value;
+}
+inline void SecurityCalcIndex::set_volume(int64_t value) {
+  _internal_set_volume(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.volume)
+}
+
+// string turnover = 6 [json_name = "turnover"];
+inline void SecurityCalcIndex::clear_turnover() {
+  turnover_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::turnover() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.turnover)
+  return _internal_turnover();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_turnover(ArgT0&& arg0, ArgT... args) {
+ 
+ turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.turnover)
+}
+inline std::string* SecurityCalcIndex::mutable_turnover() {
+  std::string* _s = _internal_mutable_turnover();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.turnover)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_turnover() const {
+  return turnover_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_turnover(const std::string& value) {
+  
+  turnover_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_turnover() {
+  
+  return turnover_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_turnover() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.turnover)
+  return turnover_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_turnover(std::string* turnover) {
+  if (turnover != nullptr) {
+    
+  } else {
+    
+  }
+  turnover_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), turnover,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (turnover_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    turnover_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.turnover)
+}
+
+// string ytd_change_rate = 7 [json_name = "ytdChangeRate"];
+inline void SecurityCalcIndex::clear_ytd_change_rate() {
+  ytd_change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::ytd_change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate)
+  return _internal_ytd_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_ytd_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ ytd_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_ytd_change_rate() {
+  std::string* _s = _internal_mutable_ytd_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_ytd_change_rate() const {
+  return ytd_change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_ytd_change_rate(const std::string& value) {
+  
+  ytd_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_ytd_change_rate() {
+  
+  return ytd_change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_ytd_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate)
+  return ytd_change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_ytd_change_rate(std::string* ytd_change_rate) {
+  if (ytd_change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  ytd_change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ytd_change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (ytd_change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    ytd_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.ytd_change_rate)
+}
+
+// string turnover_rate = 8 [json_name = "turnoverRate"];
+inline void SecurityCalcIndex::clear_turnover_rate() {
+  turnover_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::turnover_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate)
+  return _internal_turnover_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_turnover_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ turnover_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_turnover_rate() {
+  std::string* _s = _internal_mutable_turnover_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_turnover_rate() const {
+  return turnover_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_turnover_rate(const std::string& value) {
+  
+  turnover_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_turnover_rate() {
+  
+  return turnover_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_turnover_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate)
+  return turnover_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_turnover_rate(std::string* turnover_rate) {
+  if (turnover_rate != nullptr) {
+    
+  } else {
+    
+  }
+  turnover_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), turnover_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (turnover_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    turnover_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.turnover_rate)
+}
+
+// string total_market_value = 9 [json_name = "totalMarketValue"];
+inline void SecurityCalcIndex::clear_total_market_value() {
+  total_market_value_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::total_market_value() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value)
+  return _internal_total_market_value();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_total_market_value(ArgT0&& arg0, ArgT... args) {
+ 
+ total_market_value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value)
+}
+inline std::string* SecurityCalcIndex::mutable_total_market_value() {
+  std::string* _s = _internal_mutable_total_market_value();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_total_market_value() const {
+  return total_market_value_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_total_market_value(const std::string& value) {
+  
+  total_market_value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_total_market_value() {
+  
+  return total_market_value_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_total_market_value() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value)
+  return total_market_value_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_total_market_value(std::string* total_market_value) {
+  if (total_market_value != nullptr) {
+    
+  } else {
+    
+  }
+  total_market_value_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), total_market_value,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (total_market_value_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    total_market_value_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.total_market_value)
+}
+
+// string capital_flow = 10 [json_name = "capitalFlow"];
+inline void SecurityCalcIndex::clear_capital_flow() {
+  capital_flow_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::capital_flow() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow)
+  return _internal_capital_flow();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_capital_flow(ArgT0&& arg0, ArgT... args) {
+ 
+ capital_flow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow)
+}
+inline std::string* SecurityCalcIndex::mutable_capital_flow() {
+  std::string* _s = _internal_mutable_capital_flow();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_capital_flow() const {
+  return capital_flow_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_capital_flow(const std::string& value) {
+  
+  capital_flow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_capital_flow() {
+  
+  return capital_flow_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_capital_flow() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow)
+  return capital_flow_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_capital_flow(std::string* capital_flow) {
+  if (capital_flow != nullptr) {
+    
+  } else {
+    
+  }
+  capital_flow_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), capital_flow,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (capital_flow_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    capital_flow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.capital_flow)
+}
+
+// string amplitude = 11 [json_name = "amplitude"];
+inline void SecurityCalcIndex::clear_amplitude() {
+  amplitude_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::amplitude() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.amplitude)
+  return _internal_amplitude();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_amplitude(ArgT0&& arg0, ArgT... args) {
+ 
+ amplitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.amplitude)
+}
+inline std::string* SecurityCalcIndex::mutable_amplitude() {
+  std::string* _s = _internal_mutable_amplitude();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.amplitude)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_amplitude() const {
+  return amplitude_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_amplitude(const std::string& value) {
+  
+  amplitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_amplitude() {
+  
+  return amplitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_amplitude() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.amplitude)
+  return amplitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_amplitude(std::string* amplitude) {
+  if (amplitude != nullptr) {
+    
+  } else {
+    
+  }
+  amplitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), amplitude,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (amplitude_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    amplitude_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.amplitude)
+}
+
+// string volume_ratio = 12 [json_name = "volumeRatio"];
+inline void SecurityCalcIndex::clear_volume_ratio() {
+  volume_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::volume_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio)
+  return _internal_volume_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_volume_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ volume_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_volume_ratio() {
+  std::string* _s = _internal_mutable_volume_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_volume_ratio() const {
+  return volume_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_volume_ratio(const std::string& value) {
+  
+  volume_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_volume_ratio() {
+  
+  return volume_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_volume_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio)
+  return volume_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_volume_ratio(std::string* volume_ratio) {
+  if (volume_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  volume_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), volume_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (volume_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    volume_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.volume_ratio)
+}
+
+// string pe_ttm_ratio = 13 [json_name = "peTtmRatio"];
+inline void SecurityCalcIndex::clear_pe_ttm_ratio() {
+  pe_ttm_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::pe_ttm_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio)
+  return _internal_pe_ttm_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_pe_ttm_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ pe_ttm_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_pe_ttm_ratio() {
+  std::string* _s = _internal_mutable_pe_ttm_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_pe_ttm_ratio() const {
+  return pe_ttm_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_pe_ttm_ratio(const std::string& value) {
+  
+  pe_ttm_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_pe_ttm_ratio() {
+  
+  return pe_ttm_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_pe_ttm_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio)
+  return pe_ttm_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_pe_ttm_ratio(std::string* pe_ttm_ratio) {
+  if (pe_ttm_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  pe_ttm_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), pe_ttm_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (pe_ttm_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    pe_ttm_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.pe_ttm_ratio)
+}
+
+// string pb_ratio = 14 [json_name = "pbRatio"];
+inline void SecurityCalcIndex::clear_pb_ratio() {
+  pb_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::pb_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio)
+  return _internal_pb_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_pb_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ pb_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_pb_ratio() {
+  std::string* _s = _internal_mutable_pb_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_pb_ratio() const {
+  return pb_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_pb_ratio(const std::string& value) {
+  
+  pb_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_pb_ratio() {
+  
+  return pb_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_pb_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio)
+  return pb_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_pb_ratio(std::string* pb_ratio) {
+  if (pb_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  pb_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), pb_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (pb_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    pb_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.pb_ratio)
+}
+
+// string dividend_ratio_ttm = 15 [json_name = "dividendRatioTtm"];
+inline void SecurityCalcIndex::clear_dividend_ratio_ttm() {
+  dividend_ratio_ttm_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::dividend_ratio_ttm() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm)
+  return _internal_dividend_ratio_ttm();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_dividend_ratio_ttm(ArgT0&& arg0, ArgT... args) {
+ 
+ dividend_ratio_ttm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm)
+}
+inline std::string* SecurityCalcIndex::mutable_dividend_ratio_ttm() {
+  std::string* _s = _internal_mutable_dividend_ratio_ttm();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_dividend_ratio_ttm() const {
+  return dividend_ratio_ttm_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_dividend_ratio_ttm(const std::string& value) {
+  
+  dividend_ratio_ttm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_dividend_ratio_ttm() {
+  
+  return dividend_ratio_ttm_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_dividend_ratio_ttm() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm)
+  return dividend_ratio_ttm_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_dividend_ratio_ttm(std::string* dividend_ratio_ttm) {
+  if (dividend_ratio_ttm != nullptr) {
+    
+  } else {
+    
+  }
+  dividend_ratio_ttm_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), dividend_ratio_ttm,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (dividend_ratio_ttm_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    dividend_ratio_ttm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.dividend_ratio_ttm)
+}
+
+// string five_day_change_rate = 16 [json_name = "fiveDayChangeRate"];
+inline void SecurityCalcIndex::clear_five_day_change_rate() {
+  five_day_change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::five_day_change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate)
+  return _internal_five_day_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_five_day_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ five_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_five_day_change_rate() {
+  std::string* _s = _internal_mutable_five_day_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_five_day_change_rate() const {
+  return five_day_change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_five_day_change_rate(const std::string& value) {
+  
+  five_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_five_day_change_rate() {
+  
+  return five_day_change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_five_day_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate)
+  return five_day_change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_five_day_change_rate(std::string* five_day_change_rate) {
+  if (five_day_change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  five_day_change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), five_day_change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (five_day_change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    five_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.five_day_change_rate)
+}
+
+// string ten_day_change_rate = 17 [json_name = "tenDayChangeRate"];
+inline void SecurityCalcIndex::clear_ten_day_change_rate() {
+  ten_day_change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::ten_day_change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate)
+  return _internal_ten_day_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_ten_day_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ ten_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_ten_day_change_rate() {
+  std::string* _s = _internal_mutable_ten_day_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_ten_day_change_rate() const {
+  return ten_day_change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_ten_day_change_rate(const std::string& value) {
+  
+  ten_day_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_ten_day_change_rate() {
+  
+  return ten_day_change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_ten_day_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate)
+  return ten_day_change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_ten_day_change_rate(std::string* ten_day_change_rate) {
+  if (ten_day_change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  ten_day_change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ten_day_change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (ten_day_change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    ten_day_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.ten_day_change_rate)
+}
+
+// string half_year_change_rate = 18 [json_name = "halfYearChangeRate"];
+inline void SecurityCalcIndex::clear_half_year_change_rate() {
+  half_year_change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::half_year_change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate)
+  return _internal_half_year_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_half_year_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ half_year_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_half_year_change_rate() {
+  std::string* _s = _internal_mutable_half_year_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_half_year_change_rate() const {
+  return half_year_change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_half_year_change_rate(const std::string& value) {
+  
+  half_year_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_half_year_change_rate() {
+  
+  return half_year_change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_half_year_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate)
+  return half_year_change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_half_year_change_rate(std::string* half_year_change_rate) {
+  if (half_year_change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  half_year_change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), half_year_change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (half_year_change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    half_year_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.half_year_change_rate)
+}
+
+// string five_minutes_change_rate = 19 [json_name = "fiveMinutesChangeRate"];
+inline void SecurityCalcIndex::clear_five_minutes_change_rate() {
+  five_minutes_change_rate_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::five_minutes_change_rate() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate)
+  return _internal_five_minutes_change_rate();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_five_minutes_change_rate(ArgT0&& arg0, ArgT... args) {
+ 
+ five_minutes_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate)
+}
+inline std::string* SecurityCalcIndex::mutable_five_minutes_change_rate() {
+  std::string* _s = _internal_mutable_five_minutes_change_rate();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_five_minutes_change_rate() const {
+  return five_minutes_change_rate_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_five_minutes_change_rate(const std::string& value) {
+  
+  five_minutes_change_rate_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_five_minutes_change_rate() {
+  
+  return five_minutes_change_rate_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_five_minutes_change_rate() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate)
+  return five_minutes_change_rate_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_five_minutes_change_rate(std::string* five_minutes_change_rate) {
+  if (five_minutes_change_rate != nullptr) {
+    
+  } else {
+    
+  }
+  five_minutes_change_rate_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), five_minutes_change_rate,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (five_minutes_change_rate_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    five_minutes_change_rate_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.five_minutes_change_rate)
+}
+
+// string expiry_date = 20 [json_name = "expiryDate"];
+inline void SecurityCalcIndex::clear_expiry_date() {
+  expiry_date_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::expiry_date() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date)
+  return _internal_expiry_date();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_expiry_date(ArgT0&& arg0, ArgT... args) {
+ 
+ expiry_date_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date)
+}
+inline std::string* SecurityCalcIndex::mutable_expiry_date() {
+  std::string* _s = _internal_mutable_expiry_date();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_expiry_date() const {
+  return expiry_date_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_expiry_date(const std::string& value) {
+  
+  expiry_date_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_expiry_date() {
+  
+  return expiry_date_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_expiry_date() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date)
+  return expiry_date_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_expiry_date(std::string* expiry_date) {
+  if (expiry_date != nullptr) {
+    
+  } else {
+    
+  }
+  expiry_date_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), expiry_date,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (expiry_date_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    expiry_date_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.expiry_date)
+}
+
+// string strike_price = 21 [json_name = "strikePrice"];
+inline void SecurityCalcIndex::clear_strike_price() {
+  strike_price_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::strike_price() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.strike_price)
+  return _internal_strike_price();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_strike_price(ArgT0&& arg0, ArgT... args) {
+ 
+ strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.strike_price)
+}
+inline std::string* SecurityCalcIndex::mutable_strike_price() {
+  std::string* _s = _internal_mutable_strike_price();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.strike_price)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_strike_price() const {
+  return strike_price_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_strike_price(const std::string& value) {
+  
+  strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_strike_price() {
+  
+  return strike_price_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_strike_price() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.strike_price)
+  return strike_price_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_strike_price(std::string* strike_price) {
+  if (strike_price != nullptr) {
+    
+  } else {
+    
+  }
+  strike_price_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), strike_price,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (strike_price_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.strike_price)
+}
+
+// string upper_strike_price = 22 [json_name = "upperStrikePrice"];
+inline void SecurityCalcIndex::clear_upper_strike_price() {
+  upper_strike_price_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::upper_strike_price() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price)
+  return _internal_upper_strike_price();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_upper_strike_price(ArgT0&& arg0, ArgT... args) {
+ 
+ upper_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price)
+}
+inline std::string* SecurityCalcIndex::mutable_upper_strike_price() {
+  std::string* _s = _internal_mutable_upper_strike_price();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_upper_strike_price() const {
+  return upper_strike_price_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_upper_strike_price(const std::string& value) {
+  
+  upper_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_upper_strike_price() {
+  
+  return upper_strike_price_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_upper_strike_price() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price)
+  return upper_strike_price_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_upper_strike_price(std::string* upper_strike_price) {
+  if (upper_strike_price != nullptr) {
+    
+  } else {
+    
+  }
+  upper_strike_price_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), upper_strike_price,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (upper_strike_price_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    upper_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.upper_strike_price)
+}
+
+// string lower_strike_price = 23 [json_name = "lowerStrikePrice"];
+inline void SecurityCalcIndex::clear_lower_strike_price() {
+  lower_strike_price_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::lower_strike_price() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price)
+  return _internal_lower_strike_price();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_lower_strike_price(ArgT0&& arg0, ArgT... args) {
+ 
+ lower_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price)
+}
+inline std::string* SecurityCalcIndex::mutable_lower_strike_price() {
+  std::string* _s = _internal_mutable_lower_strike_price();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_lower_strike_price() const {
+  return lower_strike_price_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_lower_strike_price(const std::string& value) {
+  
+  lower_strike_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_lower_strike_price() {
+  
+  return lower_strike_price_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_lower_strike_price() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price)
+  return lower_strike_price_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_lower_strike_price(std::string* lower_strike_price) {
+  if (lower_strike_price != nullptr) {
+    
+  } else {
+    
+  }
+  lower_strike_price_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), lower_strike_price,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (lower_strike_price_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    lower_strike_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.lower_strike_price)
+}
+
+// int64 outstanding_qty = 24 [json_name = "outstandingQty"];
+inline void SecurityCalcIndex::clear_outstanding_qty() {
+  outstanding_qty_ = int64_t{0};
+}
+inline int64_t SecurityCalcIndex::_internal_outstanding_qty() const {
+  return outstanding_qty_;
+}
+inline int64_t SecurityCalcIndex::outstanding_qty() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_qty)
+  return _internal_outstanding_qty();
+}
+inline void SecurityCalcIndex::_internal_set_outstanding_qty(int64_t value) {
+  
+  outstanding_qty_ = value;
+}
+inline void SecurityCalcIndex::set_outstanding_qty(int64_t value) {
+  _internal_set_outstanding_qty(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_qty)
+}
+
+// string outstanding_ratio = 25 [json_name = "outstandingRatio"];
+inline void SecurityCalcIndex::clear_outstanding_ratio() {
+  outstanding_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::outstanding_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio)
+  return _internal_outstanding_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_outstanding_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ outstanding_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_outstanding_ratio() {
+  std::string* _s = _internal_mutable_outstanding_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_outstanding_ratio() const {
+  return outstanding_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_outstanding_ratio(const std::string& value) {
+  
+  outstanding_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_outstanding_ratio() {
+  
+  return outstanding_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_outstanding_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio)
+  return outstanding_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_outstanding_ratio(std::string* outstanding_ratio) {
+  if (outstanding_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  outstanding_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), outstanding_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (outstanding_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    outstanding_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.outstanding_ratio)
+}
+
+// string premium = 26 [json_name = "premium"];
+inline void SecurityCalcIndex::clear_premium() {
+  premium_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::premium() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.premium)
+  return _internal_premium();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_premium(ArgT0&& arg0, ArgT... args) {
+ 
+ premium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.premium)
+}
+inline std::string* SecurityCalcIndex::mutable_premium() {
+  std::string* _s = _internal_mutable_premium();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.premium)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_premium() const {
+  return premium_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_premium(const std::string& value) {
+  
+  premium_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_premium() {
+  
+  return premium_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_premium() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.premium)
+  return premium_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_premium(std::string* premium) {
+  if (premium != nullptr) {
+    
+  } else {
+    
+  }
+  premium_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), premium,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (premium_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    premium_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.premium)
+}
+
+// string itm_otm = 27 [json_name = "itmOtm"];
+inline void SecurityCalcIndex::clear_itm_otm() {
+  itm_otm_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::itm_otm() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm)
+  return _internal_itm_otm();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_itm_otm(ArgT0&& arg0, ArgT... args) {
+ 
+ itm_otm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm)
+}
+inline std::string* SecurityCalcIndex::mutable_itm_otm() {
+  std::string* _s = _internal_mutable_itm_otm();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_itm_otm() const {
+  return itm_otm_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_itm_otm(const std::string& value) {
+  
+  itm_otm_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_itm_otm() {
+  
+  return itm_otm_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_itm_otm() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm)
+  return itm_otm_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_itm_otm(std::string* itm_otm) {
+  if (itm_otm != nullptr) {
+    
+  } else {
+    
+  }
+  itm_otm_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), itm_otm,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (itm_otm_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    itm_otm_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.itm_otm)
+}
+
+// string implied_volatility = 28 [json_name = "impliedVolatility"];
+inline void SecurityCalcIndex::clear_implied_volatility() {
+  implied_volatility_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::implied_volatility() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility)
+  return _internal_implied_volatility();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_implied_volatility(ArgT0&& arg0, ArgT... args) {
+ 
+ implied_volatility_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility)
+}
+inline std::string* SecurityCalcIndex::mutable_implied_volatility() {
+  std::string* _s = _internal_mutable_implied_volatility();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_implied_volatility() const {
+  return implied_volatility_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_implied_volatility(const std::string& value) {
+  
+  implied_volatility_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_implied_volatility() {
+  
+  return implied_volatility_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_implied_volatility() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility)
+  return implied_volatility_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_implied_volatility(std::string* implied_volatility) {
+  if (implied_volatility != nullptr) {
+    
+  } else {
+    
+  }
+  implied_volatility_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), implied_volatility,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (implied_volatility_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    implied_volatility_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.implied_volatility)
+}
+
+// string warrant_delta = 29 [json_name = "warrantDelta"];
+inline void SecurityCalcIndex::clear_warrant_delta() {
+  warrant_delta_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::warrant_delta() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta)
+  return _internal_warrant_delta();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_warrant_delta(ArgT0&& arg0, ArgT... args) {
+ 
+ warrant_delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta)
+}
+inline std::string* SecurityCalcIndex::mutable_warrant_delta() {
+  std::string* _s = _internal_mutable_warrant_delta();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_warrant_delta() const {
+  return warrant_delta_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_warrant_delta(const std::string& value) {
+  
+  warrant_delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_warrant_delta() {
+  
+  return warrant_delta_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_warrant_delta() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta)
+  return warrant_delta_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_warrant_delta(std::string* warrant_delta) {
+  if (warrant_delta != nullptr) {
+    
+  } else {
+    
+  }
+  warrant_delta_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), warrant_delta,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (warrant_delta_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    warrant_delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.warrant_delta)
+}
+
+// string call_price = 30 [json_name = "callPrice"];
+inline void SecurityCalcIndex::clear_call_price() {
+  call_price_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::call_price() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.call_price)
+  return _internal_call_price();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_call_price(ArgT0&& arg0, ArgT... args) {
+ 
+ call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.call_price)
+}
+inline std::string* SecurityCalcIndex::mutable_call_price() {
+  std::string* _s = _internal_mutable_call_price();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.call_price)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_call_price() const {
+  return call_price_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_call_price(const std::string& value) {
+  
+  call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_call_price() {
+  
+  return call_price_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_call_price() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.call_price)
+  return call_price_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_call_price(std::string* call_price) {
+  if (call_price != nullptr) {
+    
+  } else {
+    
+  }
+  call_price_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), call_price,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (call_price_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.call_price)
+}
+
+// string to_call_price = 31 [json_name = "toCallPrice"];
+inline void SecurityCalcIndex::clear_to_call_price() {
+  to_call_price_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::to_call_price() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price)
+  return _internal_to_call_price();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_to_call_price(ArgT0&& arg0, ArgT... args) {
+ 
+ to_call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price)
+}
+inline std::string* SecurityCalcIndex::mutable_to_call_price() {
+  std::string* _s = _internal_mutable_to_call_price();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_to_call_price() const {
+  return to_call_price_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_to_call_price(const std::string& value) {
+  
+  to_call_price_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_to_call_price() {
+  
+  return to_call_price_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_to_call_price() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price)
+  return to_call_price_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_to_call_price(std::string* to_call_price) {
+  if (to_call_price != nullptr) {
+    
+  } else {
+    
+  }
+  to_call_price_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), to_call_price,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (to_call_price_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    to_call_price_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.to_call_price)
+}
+
+// string effective_leverage = 32 [json_name = "effectiveLeverage"];
+inline void SecurityCalcIndex::clear_effective_leverage() {
+  effective_leverage_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::effective_leverage() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage)
+  return _internal_effective_leverage();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_effective_leverage(ArgT0&& arg0, ArgT... args) {
+ 
+ effective_leverage_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage)
+}
+inline std::string* SecurityCalcIndex::mutable_effective_leverage() {
+  std::string* _s = _internal_mutable_effective_leverage();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_effective_leverage() const {
+  return effective_leverage_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_effective_leverage(const std::string& value) {
+  
+  effective_leverage_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_effective_leverage() {
+  
+  return effective_leverage_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_effective_leverage() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage)
+  return effective_leverage_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_effective_leverage(std::string* effective_leverage) {
+  if (effective_leverage != nullptr) {
+    
+  } else {
+    
+  }
+  effective_leverage_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), effective_leverage,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (effective_leverage_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    effective_leverage_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.effective_leverage)
+}
+
+// string leverage_ratio = 33 [json_name = "leverageRatio"];
+inline void SecurityCalcIndex::clear_leverage_ratio() {
+  leverage_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::leverage_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio)
+  return _internal_leverage_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_leverage_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ leverage_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_leverage_ratio() {
+  std::string* _s = _internal_mutable_leverage_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_leverage_ratio() const {
+  return leverage_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_leverage_ratio(const std::string& value) {
+  
+  leverage_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_leverage_ratio() {
+  
+  return leverage_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_leverage_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio)
+  return leverage_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_leverage_ratio(std::string* leverage_ratio) {
+  if (leverage_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  leverage_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), leverage_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (leverage_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    leverage_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.leverage_ratio)
+}
+
+// string conversion_ratio = 34 [json_name = "conversionRatio"];
+inline void SecurityCalcIndex::clear_conversion_ratio() {
+  conversion_ratio_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::conversion_ratio() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio)
+  return _internal_conversion_ratio();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_conversion_ratio(ArgT0&& arg0, ArgT... args) {
+ 
+ conversion_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio)
+}
+inline std::string* SecurityCalcIndex::mutable_conversion_ratio() {
+  std::string* _s = _internal_mutable_conversion_ratio();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_conversion_ratio() const {
+  return conversion_ratio_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_conversion_ratio(const std::string& value) {
+  
+  conversion_ratio_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_conversion_ratio() {
+  
+  return conversion_ratio_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_conversion_ratio() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio)
+  return conversion_ratio_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_conversion_ratio(std::string* conversion_ratio) {
+  if (conversion_ratio != nullptr) {
+    
+  } else {
+    
+  }
+  conversion_ratio_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), conversion_ratio,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (conversion_ratio_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    conversion_ratio_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.conversion_ratio)
+}
+
+// string balance_point = 35 [json_name = "balancePoint"];
+inline void SecurityCalcIndex::clear_balance_point() {
+  balance_point_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::balance_point() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.balance_point)
+  return _internal_balance_point();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_balance_point(ArgT0&& arg0, ArgT... args) {
+ 
+ balance_point_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.balance_point)
+}
+inline std::string* SecurityCalcIndex::mutable_balance_point() {
+  std::string* _s = _internal_mutable_balance_point();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.balance_point)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_balance_point() const {
+  return balance_point_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_balance_point(const std::string& value) {
+  
+  balance_point_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_balance_point() {
+  
+  return balance_point_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_balance_point() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.balance_point)
+  return balance_point_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_balance_point(std::string* balance_point) {
+  if (balance_point != nullptr) {
+    
+  } else {
+    
+  }
+  balance_point_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), balance_point,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (balance_point_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    balance_point_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.balance_point)
+}
+
+// int64 open_interest = 36 [json_name = "openInterest"];
+inline void SecurityCalcIndex::clear_open_interest() {
+  open_interest_ = int64_t{0};
+}
+inline int64_t SecurityCalcIndex::_internal_open_interest() const {
+  return open_interest_;
+}
+inline int64_t SecurityCalcIndex::open_interest() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.open_interest)
+  return _internal_open_interest();
+}
+inline void SecurityCalcIndex::_internal_set_open_interest(int64_t value) {
+  
+  open_interest_ = value;
+}
+inline void SecurityCalcIndex::set_open_interest(int64_t value) {
+  _internal_set_open_interest(value);
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.open_interest)
+}
+
+// string delta = 37 [json_name = "delta"];
+inline void SecurityCalcIndex::clear_delta() {
+  delta_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::delta() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.delta)
+  return _internal_delta();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_delta(ArgT0&& arg0, ArgT... args) {
+ 
+ delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.delta)
+}
+inline std::string* SecurityCalcIndex::mutable_delta() {
+  std::string* _s = _internal_mutable_delta();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.delta)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_delta() const {
+  return delta_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_delta(const std::string& value) {
+  
+  delta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_delta() {
+  
+  return delta_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_delta() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.delta)
+  return delta_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_delta(std::string* delta) {
+  if (delta != nullptr) {
+    
+  } else {
+    
+  }
+  delta_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), delta,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (delta_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    delta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.delta)
+}
+
+// string gamma = 38 [json_name = "gamma"];
+inline void SecurityCalcIndex::clear_gamma() {
+  gamma_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::gamma() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.gamma)
+  return _internal_gamma();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_gamma(ArgT0&& arg0, ArgT... args) {
+ 
+ gamma_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.gamma)
+}
+inline std::string* SecurityCalcIndex::mutable_gamma() {
+  std::string* _s = _internal_mutable_gamma();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.gamma)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_gamma() const {
+  return gamma_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_gamma(const std::string& value) {
+  
+  gamma_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_gamma() {
+  
+  return gamma_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_gamma() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.gamma)
+  return gamma_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_gamma(std::string* gamma) {
+  if (gamma != nullptr) {
+    
+  } else {
+    
+  }
+  gamma_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), gamma,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (gamma_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    gamma_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.gamma)
+}
+
+// string theta = 39 [json_name = "theta"];
+inline void SecurityCalcIndex::clear_theta() {
+  theta_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::theta() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.theta)
+  return _internal_theta();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_theta(ArgT0&& arg0, ArgT... args) {
+ 
+ theta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.theta)
+}
+inline std::string* SecurityCalcIndex::mutable_theta() {
+  std::string* _s = _internal_mutable_theta();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.theta)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_theta() const {
+  return theta_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_theta(const std::string& value) {
+  
+  theta_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_theta() {
+  
+  return theta_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_theta() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.theta)
+  return theta_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_theta(std::string* theta) {
+  if (theta != nullptr) {
+    
+  } else {
+    
+  }
+  theta_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), theta,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (theta_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    theta_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.theta)
+}
+
+// string vega = 40 [json_name = "vega"];
+inline void SecurityCalcIndex::clear_vega() {
+  vega_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::vega() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.vega)
+  return _internal_vega();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_vega(ArgT0&& arg0, ArgT... args) {
+ 
+ vega_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.vega)
+}
+inline std::string* SecurityCalcIndex::mutable_vega() {
+  std::string* _s = _internal_mutable_vega();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.vega)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_vega() const {
+  return vega_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_vega(const std::string& value) {
+  
+  vega_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_vega() {
+  
+  return vega_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_vega() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.vega)
+  return vega_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_vega(std::string* vega) {
+  if (vega != nullptr) {
+    
+  } else {
+    
+  }
+  vega_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), vega,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (vega_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    vega_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.vega)
+}
+
+// string rho = 41 [json_name = "rho"];
+inline void SecurityCalcIndex::clear_rho() {
+  rho_.ClearToEmpty();
+}
+inline const std::string& SecurityCalcIndex::rho() const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcIndex.rho)
+  return _internal_rho();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void SecurityCalcIndex::set_rho(ArgT0&& arg0, ArgT... args) {
+ 
+ rho_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:longbridgeapp.quote.v1.SecurityCalcIndex.rho)
+}
+inline std::string* SecurityCalcIndex::mutable_rho() {
+  std::string* _s = _internal_mutable_rho();
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcIndex.rho)
+  return _s;
+}
+inline const std::string& SecurityCalcIndex::_internal_rho() const {
+  return rho_.Get();
+}
+inline void SecurityCalcIndex::_internal_set_rho(const std::string& value) {
+  
+  rho_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::_internal_mutable_rho() {
+  
+  return rho_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* SecurityCalcIndex::release_rho() {
+  // @@protoc_insertion_point(field_release:longbridgeapp.quote.v1.SecurityCalcIndex.rho)
+  return rho_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void SecurityCalcIndex::set_allocated_rho(std::string* rho) {
+  if (rho != nullptr) {
+    
+  } else {
+    
+  }
+  rho_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), rho,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (rho_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    rho_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longbridgeapp.quote.v1.SecurityCalcIndex.rho)
+}
+
+// -------------------------------------------------------------------
+
+// SecurityCalcQuoteResponse
+
+// repeated .longbridgeapp.quote.v1.SecurityCalcIndex security_calc_index = 1 [json_name = "securityCalcIndex"];
+inline int SecurityCalcQuoteResponse::_internal_security_calc_index_size() const {
+  return security_calc_index_.size();
+}
+inline int SecurityCalcQuoteResponse::security_calc_index_size() const {
+  return _internal_security_calc_index_size();
+}
+inline void SecurityCalcQuoteResponse::clear_security_calc_index() {
+  security_calc_index_.Clear();
+}
+inline ::longbridgeapp::quote::v1::SecurityCalcIndex* SecurityCalcQuoteResponse::mutable_security_calc_index(int index) {
+  // @@protoc_insertion_point(field_mutable:longbridgeapp.quote.v1.SecurityCalcQuoteResponse.security_calc_index)
+  return security_calc_index_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::SecurityCalcIndex >*
+SecurityCalcQuoteResponse::mutable_security_calc_index() {
+  // @@protoc_insertion_point(field_mutable_list:longbridgeapp.quote.v1.SecurityCalcQuoteResponse.security_calc_index)
+  return &security_calc_index_;
+}
+inline const ::longbridgeapp::quote::v1::SecurityCalcIndex& SecurityCalcQuoteResponse::_internal_security_calc_index(int index) const {
+  return security_calc_index_.Get(index);
+}
+inline const ::longbridgeapp::quote::v1::SecurityCalcIndex& SecurityCalcQuoteResponse::security_calc_index(int index) const {
+  // @@protoc_insertion_point(field_get:longbridgeapp.quote.v1.SecurityCalcQuoteResponse.security_calc_index)
+  return _internal_security_calc_index(index);
+}
+inline ::longbridgeapp::quote::v1::SecurityCalcIndex* SecurityCalcQuoteResponse::_internal_add_security_calc_index() {
+  return security_calc_index_.Add();
+}
+inline ::longbridgeapp::quote::v1::SecurityCalcIndex* SecurityCalcQuoteResponse::add_security_calc_index() {
+  ::longbridgeapp::quote::v1::SecurityCalcIndex* _add = _internal_add_security_calc_index();
+  // @@protoc_insertion_point(field_add:longbridgeapp.quote.v1.SecurityCalcQuoteResponse.security_calc_index)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::longbridgeapp::quote::v1::SecurityCalcIndex >&
+SecurityCalcQuoteResponse::security_calc_index() const {
+  // @@protoc_insertion_point(field_list:longbridgeapp.quote.v1.SecurityCalcQuoteResponse.security_calc_index)
+  return security_calc_index_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -21408,6 +26478,11 @@ template <> struct is_proto_enum< ::longbridgeapp::quote::v1::SubType> : ::std::
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::longbridgeapp::quote::v1::SubType>() {
   return ::longbridgeapp::quote::v1::SubType_descriptor();
+}
+template <> struct is_proto_enum< ::longbridgeapp::quote::v1::CalcIndex> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::longbridgeapp::quote::v1::CalcIndex>() {
+  return ::longbridgeapp::quote::v1::CalcIndex_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

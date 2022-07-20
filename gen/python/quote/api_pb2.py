@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fquote/api.proto\x12\x16longbridgeapp.quote.v1\")\n\x0fSecurityRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\".\n\x14MultiSecurityRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\"j\n\x1aSecurityStaticInfoResponse\x12L\n\x10secu_static_info\x18\x01 \x03(\x0b\x32\".longbridgeapp.quote.v1.StaticInfoR\x0esecuStaticInfo\"\xe5\x03\n\nStaticInfo\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x17\n\x07name_cn\x18\x02 \x01(\tR\x06nameCn\x12\x17\n\x07name_en\x18\x03 \x01(\tR\x06nameEn\x12\x17\n\x07name_hk\x18\x04 \x01(\tR\x06nameHk\x12!\n\x0clisting_date\x18\x05 \x01(\tR\x0blistingDate\x12\x1a\n\x08\x65xchange\x18\x06 \x01(\tR\x08\x65xchange\x12\x1a\n\x08\x63urrency\x18\x07 \x01(\tR\x08\x63urrency\x12\x19\n\x08lot_size\x18\x08 \x01(\x05R\x07lotSize\x12!\n\x0ctotal_shares\x18\t \x01(\x03R\x0btotalShares\x12-\n\x12\x63irculating_shares\x18\n \x01(\x03R\x11\x63irculatingShares\x12\x1b\n\thk_shares\x18\x0b \x01(\x03R\x08hkShares\x12\x10\n\x03\x65ps\x18\x0c \x01(\tR\x03\x65ps\x12\x17\n\x07\x65ps_ttm\x18\r \x01(\tR\x06\x65psTtm\x12\x10\n\x03\x62ps\x18\x0e \x01(\tR\x03\x62ps\x12%\n\x0e\x64ividend_yield\x18\x0f \x01(\tR\rdividendYield\x12+\n\x11stock_derivatives\x18\x10 \x03(\x05R\x10stockDerivatives\"]\n\x15SecurityQuoteResponse\x12\x44\n\nsecu_quote\x18\x01 \x03(\x0b\x32%.longbridgeapp.quote.v1.SecurityQuoteR\tsecuQuote\"\xd9\x03\n\rSecurityQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12N\n\x10pre_market_quote\x18\x0b \x01(\x0b\x32$.longbridgeapp.quote.v1.PrePostQuoteR\x0epreMarketQuote\x12P\n\x11post_market_quote\x18\x0c \x01(\x0b\x32$.longbridgeapp.quote.v1.PrePostQuoteR\x0fpostMarketQuote\"\xc2\x01\n\x0cPrePostQuote\x12\x1b\n\tlast_done\x18\x01 \x01(\tR\x08lastDone\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x04 \x01(\tR\x08turnover\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1d\n\nprev_close\x18\x07 \x01(\tR\tprevClose\"Y\n\x13OptionQuoteResponse\x12\x42\n\nsecu_quote\x18\x01 \x03(\x0b\x32#.longbridgeapp.quote.v1.OptionQuoteR\tsecuQuote\"\x80\x03\n\x0bOptionQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12I\n\roption_extend\x18\x0b \x01(\x0b\x32$.longbridgeapp.quote.v1.OptionExtendR\x0coptionExtend\"\xa1\x03\n\x0cOptionExtend\x12-\n\x12implied_volatility\x18\x01 \x01(\tR\x11impliedVolatility\x12#\n\ropen_interest\x18\x02 \x01(\x03R\x0copenInterest\x12\x1f\n\x0b\x65xpiry_date\x18\x03 \x01(\tR\nexpiryDate\x12!\n\x0cstrike_price\x18\x04 \x01(\tR\x0bstrikePrice\x12/\n\x13\x63ontract_multiplier\x18\x05 \x01(\tR\x12\x63ontractMultiplier\x12#\n\rcontract_type\x18\x06 \x01(\tR\x0c\x63ontractType\x12#\n\rcontract_size\x18\x07 \x01(\tR\x0c\x63ontractSize\x12\x1c\n\tdirection\x18\x08 \x01(\tR\tdirection\x12\x33\n\x15historical_volatility\x18\t \x01(\tR\x14historicalVolatility\x12+\n\x11underlying_symbol\x18\n \x01(\tR\x10underlyingSymbol\"[\n\x14WarrantQuoteResponse\x12\x43\n\nsecu_quote\x18\x02 \x03(\x0b\x32$.longbridgeapp.quote.v1.WarrantQuoteR\tsecuQuote\"\x84\x03\n\x0cWarrantQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12L\n\x0ewarrant_extend\x18\x0b \x01(\x0b\x32%.longbridgeapp.quote.v1.WarrantExtendR\rwarrantExtend\"\xef\x03\n\rWarrantExtend\x12-\n\x12implied_volatility\x18\x01 \x01(\tR\x11impliedVolatility\x12\x1f\n\x0b\x65xpiry_date\x18\x02 \x01(\tR\nexpiryDate\x12&\n\x0flast_trade_date\x18\x03 \x01(\tR\rlastTradeDate\x12+\n\x11outstanding_ratio\x18\x04 \x01(\tR\x10outstandingRatio\x12\'\n\x0foutstanding_qty\x18\x05 \x01(\x03R\x0eoutstandingQty\x12)\n\x10\x63onversion_ratio\x18\x06 \x01(\tR\x0f\x63onversionRatio\x12\x1a\n\x08\x63\x61tegory\x18\x07 \x01(\tR\x08\x63\x61tegory\x12!\n\x0cstrike_price\x18\x08 \x01(\tR\x0bstrikePrice\x12,\n\x12upper_strike_price\x18\t \x01(\tR\x10upperStrikePrice\x12,\n\x12lower_strike_price\x18\n \x01(\tR\x10lowerStrikePrice\x12\x1d\n\ncall_price\x18\x0b \x01(\tR\tcallPrice\x12+\n\x11underlying_symbol\x18\x0c \x01(\tR\x10underlyingSymbol\"\x91\x01\n\x15SecurityDepthResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12/\n\x03\x61sk\x18\x02 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x61sk\x12/\n\x03\x62id\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x62id\"n\n\x05\x44\x65pth\x12\x1a\n\x08position\x18\x01 \x01(\x05R\x08position\x12\x14\n\x05price\x18\x02 \x01(\tR\x05price\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1b\n\torder_num\x18\x04 \x01(\x03R\x08orderNum\"\xb5\x01\n\x17SecurityBrokersResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12@\n\x0b\x61sk_brokers\x18\x02 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\naskBrokers\x12@\n\x0b\x62id_brokers\x18\x03 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\nbidBrokers\"D\n\x07\x42rokers\x12\x1a\n\x08position\x18\x01 \x01(\x05R\x08position\x12\x1d\n\nbroker_ids\x18\x02 \x03(\x05R\tbrokerIds\"\x85\x01\n\x1cParticipantBrokerIdsResponse\x12\x65\n\x1aparticipant_broker_numbers\x18\x01 \x03(\x0b\x32\'.longbridgeapp.quote.v1.ParticipantInfoR\x18participantBrokerNumbers\"\xc0\x01\n\x0fParticipantInfo\x12\x1d\n\nbroker_ids\x18\x01 \x03(\x05R\tbrokerIds\x12.\n\x13participant_name_cn\x18\x02 \x01(\tR\x11participantNameCn\x12.\n\x13participant_name_en\x18\x03 \x01(\tR\x11participantNameEn\x12.\n\x13participant_name_hk\x18\x04 \x01(\tR\x11participantNameHk\"D\n\x14SecurityTradeRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x14\n\x05\x63ount\x18\x02 \x01(\x05R\x05\x63ount\"f\n\x15SecurityTradeResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x35\n\x06trades\x18\x02 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.TradeR\x06trades\"\xdb\x01\n\x05Trade\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x16\n\x06volume\x18\x02 \x01(\x03R\x06volume\x12\x1c\n\ttimestamp\x18\x03 \x01(\x03R\ttimestamp\x12\x1d\n\ntrade_type\x18\x04 \x01(\tR\ttradeType\x12\x1c\n\tdirection\x18\x05 \x01(\x05R\tdirection\x12I\n\rtrade_session\x18\x06 \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\"1\n\x17SecurityIntradayRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\"f\n\x18SecurityIntradayResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x32\n\x05lines\x18\x02 \x03(\x0b\x32\x1c.longbridgeapp.quote.v1.LineR\x05lines\"\x8b\x01\n\x04Line\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x04 \x01(\tR\x08turnover\x12\x1b\n\tavg_price\x18\x05 \x01(\tR\x08\x61vgPrice\"\xc7\x01\n\x1aSecurityCandlestickRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x36\n\x06period\x18\x02 \x01(\x0e\x32\x1e.longbridgeapp.quote.v1.PeriodR\x06period\x12\x14\n\x05\x63ount\x18\x03 \x01(\x05R\x05\x63ount\x12\x43\n\x0b\x61\x64just_type\x18\x04 \x01(\x0e\x32\".longbridgeapp.quote.v1.AdjustTypeR\nadjustType\"~\n\x1bSecurityCandlestickResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12G\n\x0c\x63\x61ndlesticks\x18\x02 \x03(\x0b\x32#.longbridgeapp.quote.v1.CandlestickR\x0c\x63\x61ndlesticks\"\xaf\x01\n\x0b\x43\x61ndlestick\x12\x14\n\x05\x63lose\x18\x01 \x01(\tR\x05\x63lose\x12\x12\n\x04open\x18\x02 \x01(\tR\x04open\x12\x10\n\x03low\x18\x03 \x01(\tR\x03low\x12\x12\n\x04high\x18\x04 \x01(\tR\x04high\x12\x16\n\x06volume\x18\x05 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x06 \x01(\tR\x08turnover\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\">\n\x1bOptionChainDateListResponse\x12\x1f\n\x0b\x65xpiry_date\x18\x01 \x03(\tR\nexpiryDate\"[\n OptionChainDateStrikeInfoRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1f\n\x0b\x65xpiry_date\x18\x02 \x01(\tR\nexpiryDate\"x\n!OptionChainDateStrikeInfoResponse\x12S\n\x11strike_price_info\x18\x01 \x03(\x0b\x32\'.longbridgeapp.quote.v1.StrikePriceInfoR\x0fstrikePriceInfo\"\x83\x01\n\x0fStrikePriceInfo\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x1f\n\x0b\x63\x61ll_symbol\x18\x02 \x01(\tR\ncallSymbol\x12\x1d\n\nput_symbol\x18\x03 \x01(\tR\tputSymbol\x12\x1a\n\x08standard\x18\x04 \x01(\x08R\x08standard\"Y\n\x12IssuerInfoResponse\x12\x43\n\x0bissuer_info\x18\x01 \x03(\x0b\x32\".longbridgeapp.quote.v1.IssuerInfoR\nissuerInfo\"g\n\nIssuerInfo\x12\x0e\n\x02id\x18\x01 \x01(\x05R\x02id\x12\x17\n\x07name_cn\x18\x02 \x01(\tR\x06nameCn\x12\x17\n\x07name_en\x18\x03 \x01(\tR\x06nameEn\x12\x17\n\x07name_hk\x18\x04 \x01(\tR\x06nameHk\"\x99\x01\n\x18WarrantFilterListRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12I\n\rfilter_config\x18\x02 \x01(\x0b\x32$.longbridgeapp.quote.v1.FilterConfigR\x0c\x66ilterConfig\x12\x1a\n\x08language\x18\x03 \x01(\x05R\x08language\"\x8a\x02\n\x0c\x46ilterConfig\x12\x17\n\x07sort_by\x18\x01 \x01(\x05R\x06sortBy\x12\x1d\n\nsort_order\x18\x02 \x01(\x05R\tsortOrder\x12\x1f\n\x0bsort_offset\x18\x03 \x01(\x05R\nsortOffset\x12\x1d\n\nsort_count\x18\x04 \x01(\x05R\tsortCount\x12\x12\n\x04type\x18\x05 \x03(\x05R\x04type\x12\x16\n\x06issuer\x18\x06 \x03(\x05R\x06issuer\x12\x1f\n\x0b\x65xpiry_date\x18\x07 \x03(\x05R\nexpiryDate\x12\x1d\n\nprice_type\x18\x08 \x03(\x05R\tpriceType\x12\x16\n\x06status\x18\t \x03(\x05R\x06status\"\x86\x01\n\x19WarrantFilterListResponse\x12H\n\x0cwarrant_list\x18\x01 \x03(\x0b\x32%.longbridgeapp.quote.v1.FilterWarrantR\x0bwarrantList\x12\x1f\n\x0btotal_count\x18\x02 \x01(\x05R\ntotalCount\"\xb9\x06\n\rFilterWarrant\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x1b\n\tlast_done\x18\x03 \x01(\tR\x08lastDone\x12\x1f\n\x0b\x63hange_rate\x18\x04 \x01(\tR\nchangeRate\x12\x1d\n\nchange_val\x18\x05 \x01(\tR\tchangeVal\x12\x16\n\x06volume\x18\x06 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x07 \x01(\tR\x08turnover\x12\x1f\n\x0b\x65xpiry_date\x18\x08 \x01(\tR\nexpiryDate\x12!\n\x0cstrike_price\x18\t \x01(\tR\x0bstrikePrice\x12,\n\x12upper_strike_price\x18\n \x01(\tR\x10upperStrikePrice\x12,\n\x12lower_strike_price\x18\x0b \x01(\tR\x10lowerStrikePrice\x12\'\n\x0foutstanding_qty\x18\x0c \x01(\tR\x0eoutstandingQty\x12+\n\x11outstanding_ratio\x18\r \x01(\tR\x10outstandingRatio\x12\x18\n\x07premium\x18\x0e \x01(\tR\x07premium\x12\x17\n\x07itm_otm\x18\x0f \x01(\tR\x06itmOtm\x12-\n\x12implied_volatility\x18\x10 \x01(\tR\x11impliedVolatility\x12\x14\n\x05\x64\x65lta\x18\x11 \x01(\tR\x05\x64\x65lta\x12\x1d\n\ncall_price\x18\x12 \x01(\tR\tcallPrice\x12\"\n\rto_call_price\x18\x13 \x01(\tR\x0btoCallPrice\x12-\n\x12\x65\x66\x66\x65\x63tive_leverage\x18\x14 \x01(\tR\x11\x65\x66\x66\x65\x63tiveLeverage\x12%\n\x0eleverage_ratio\x18\x15 \x01(\tR\rleverageRatio\x12)\n\x10\x63onversion_ratio\x18\x16 \x01(\tR\x0f\x63onversionRatio\x12#\n\rbalance_point\x18\x17 \x01(\tR\x0c\x62\x61lancePoint\x12\x14\n\x05state\x18\x18 \x01(\tR\x05state\"x\n\x19MarketTradePeriodResponse\x12[\n\x14market_trade_session\x18\x01 \x03(\x0b\x32).longbridgeapp.quote.v1.MarketTradePeriodR\x12marketTradeSession\"u\n\x11MarketTradePeriod\x12\x16\n\x06market\x18\x01 \x01(\tR\x06market\x12H\n\rtrade_session\x18\x02 \x03(\x0b\x32#.longbridgeapp.quote.v1.TradePeriodR\x0ctradeSession\"\x8e\x01\n\x0bTradePeriod\x12\x19\n\x08\x62\x65g_time\x18\x01 \x01(\x05R\x07\x62\x65gTime\x12\x19\n\x08\x65nd_time\x18\x02 \x01(\x05R\x07\x65ndTime\x12I\n\rtrade_session\x18\x03 \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\"\x15\n\x13SubscriptionRequest\"V\n\x14SubscriptionResponse\x12>\n\x08sub_list\x18\x01 \x03(\x0b\x32#.longbridgeapp.quote.v1.SubTypeListR\x07subList\"a\n\x0bSubTypeList\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\"\x8a\x01\n\x10SubscribeRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\x12\"\n\ris_first_push\x18\x03 \x01(\x08R\x0bisFirstPush\"\x85\x01\n\x12UnsubscribeRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\x12\x1b\n\tunsub_all\x18\x03 \x01(\x08R\x08unsubAll\"\x15\n\x13UnsubscribeResponse\"\xfb\x02\n\tPushQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12\x1b\n\tlast_done\x18\x03 \x01(\tR\x08lastDone\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12I\n\rtrade_session\x18\x0b \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\"\xa1\x01\n\tPushDepth\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12/\n\x03\x61sk\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x61sk\x12/\n\x03\x62id\x18\x04 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x62id\"\xc5\x01\n\x0bPushBrokers\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12@\n\x0b\x61sk_brokers\x18\x03 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\naskBrokers\x12@\n\x0b\x62id_brokers\x18\x04 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\nbidBrokers\"t\n\tPushTrade\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12\x33\n\x05trade\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.TradeR\x05trade\"a\n\x15MarketTradeDayRequest\x12\x16\n\x06market\x18\x01 \x01(\tR\x06market\x12\x17\n\x07\x62\x65g_day\x18\x02 \x01(\tR\x06\x62\x65gDay\x12\x17\n\x07\x65nd_day\x18\x03 \x01(\tR\x06\x65ndDay\"[\n\x16MarketTradeDayResponse\x12\x1b\n\ttrade_day\x18\x01 \x03(\tR\x08tradeDay\x12$\n\x0ehalf_trade_day\x18\x02 \x03(\tR\x0chalfTradeDay*\xce\x04\n\x07\x43ommand\x12\x13\n\x0fUNKNOWN_COMMAND\x10\x00\x12\x0e\n\nHEART_BEAT\x10\x01\x12\x08\n\x04\x41UTH\x10\x02\x12\r\n\tRECONNECT\x10\x03\x12\x10\n\x0cSubscription\x10\x05\x12\r\n\tSubscribe\x10\x06\x12\x0f\n\x0bUnsubscribe\x10\x07\x12\x1a\n\x16QueryMarketTradePeriod\x10\x08\x12\x17\n\x13QueryMarketTradeDay\x10\t\x12\x1b\n\x17QuerySecurityStaticInfo\x10\n\x12\x16\n\x12QuerySecurityQuote\x10\x0b\x12\x14\n\x10QueryOptionQuote\x10\x0c\x12\x15\n\x11QueryWarrantQuote\x10\r\x12\x0e\n\nQueryDepth\x10\x0e\x12\x10\n\x0cQueryBrokers\x10\x0f\x12\x1d\n\x19QueryParticipantBrokerIds\x10\x10\x12\x0e\n\nQueryTrade\x10\x11\x12\x11\n\rQueryIntraday\x10\x12\x12\x14\n\x10QueryCandlestick\x10\x13\x12\x18\n\x14QueryOptionChainDate\x10\x14\x12\"\n\x1eQueryOptionChainDateStrikeInfo\x10\x15\x12\x1a\n\x16QueryWarrantIssuerInfo\x10\x16\x12\x1a\n\x16QueryWarrantFilterList\x10\x17\x12\x11\n\rPushQuoteData\x10\x65\x12\x11\n\rPushDepthData\x10\x66\x12\x13\n\x0fPushBrokersData\x10g\x12\x11\n\rPushTradeData\x10h*\xc2\x01\n\x0bTradeStatus\x12\n\n\x06NORMAL\x10\x00\x12\n\n\x06HALTED\x10\x01\x12\x0c\n\x08\x44\x45LISTED\x10\x02\x12\x08\n\x04\x46USE\x10\x03\x12\x10\n\x0cPREPARE_LIST\x10\x04\x12\x0e\n\nCODE_MOVED\x10\x05\x12\x10\n\x0cTO_BE_OPENED\x10\x06\x12\x15\n\x11SPLIT_STOCK_HALTS\x10\x07\x12\x0b\n\x07\x45XPIRED\x10\x08\x12\x18\n\x14WARRANT_PREPARE_LIST\x10\t\x12\x11\n\rSUSPEND_TRADE\x10\n*?\n\x0cTradeSession\x12\x10\n\x0cNORMAL_TRADE\x10\x00\x12\r\n\tPRE_TRADE\x10\x01\x12\x0e\n\nPOST_TRADE\x10\x02*/\n\nAdjustType\x12\r\n\tNO_ADJUST\x10\x00\x12\x12\n\x0e\x46ORWARD_ADJUST\x10\x01*\xa2\x01\n\x06Period\x12\x12\n\x0eUNKNOWN_PERIOD\x10\x00\x12\x0e\n\nONE_MINUTE\x10\x01\x12\x0f\n\x0b\x46IVE_MINUTE\x10\x05\x12\x12\n\x0e\x46IFTEEN_MINUTE\x10\x0f\x12\x11\n\rTHIRTY_MINUTE\x10\x1e\x12\x10\n\x0cSIXTY_MINUTE\x10<\x12\x08\n\x03\x44\x41Y\x10\xe8\x07\x12\t\n\x04WEEK\x10\xd0\x0f\x12\n\n\x05MONTH\x10\xb8\x17\x12\t\n\x04YEAR\x10\xa0\x1f*I\n\x07SubType\x12\x10\n\x0cUNKNOWN_TYPE\x10\x00\x12\t\n\x05QUOTE\x10\x01\x12\t\n\x05\x44\x45PTH\x10\x02\x12\x0b\n\x07\x42ROKERS\x10\x03\x12\t\n\x05TRADE\x10\x04\x42\xe1\x01\n\x1a\x63om.longbridgeapp.quote.v1B\x08\x41piProtoP\x01Z?github.com/longbridgeapp/openapi-protobufs/gen/go/quote;quotev1\xa2\x02\x03LQX\xaa\x02\x16Longbridgeapp.Quote.V1\xca\x02\x16Longbridgeapp\\Quote\\V1\xe2\x02\"Longbridgeapp\\Quote\\V1\\GPBMetadata\xea\x02\x18Longbridgeapp::Quote::V1b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fquote/api.proto\x12\x16longbridgeapp.quote.v1\")\n\x0fSecurityRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\".\n\x14MultiSecurityRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\"j\n\x1aSecurityStaticInfoResponse\x12L\n\x10secu_static_info\x18\x01 \x03(\x0b\x32\".longbridgeapp.quote.v1.StaticInfoR\x0esecuStaticInfo\"\xfb\x03\n\nStaticInfo\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x17\n\x07name_cn\x18\x02 \x01(\tR\x06nameCn\x12\x17\n\x07name_en\x18\x03 \x01(\tR\x06nameEn\x12\x17\n\x07name_hk\x18\x04 \x01(\tR\x06nameHk\x12!\n\x0clisting_date\x18\x05 \x01(\tR\x0blistingDate\x12\x1a\n\x08\x65xchange\x18\x06 \x01(\tR\x08\x65xchange\x12\x1a\n\x08\x63urrency\x18\x07 \x01(\tR\x08\x63urrency\x12\x19\n\x08lot_size\x18\x08 \x01(\x05R\x07lotSize\x12!\n\x0ctotal_shares\x18\t \x01(\x03R\x0btotalShares\x12-\n\x12\x63irculating_shares\x18\n \x01(\x03R\x11\x63irculatingShares\x12\x1b\n\thk_shares\x18\x0b \x01(\x03R\x08hkShares\x12\x10\n\x03\x65ps\x18\x0c \x01(\tR\x03\x65ps\x12\x17\n\x07\x65ps_ttm\x18\r \x01(\tR\x06\x65psTtm\x12\x10\n\x03\x62ps\x18\x0e \x01(\tR\x03\x62ps\x12%\n\x0e\x64ividend_yield\x18\x0f \x01(\tR\rdividendYield\x12+\n\x11stock_derivatives\x18\x10 \x03(\x05R\x10stockDerivatives\x12\x14\n\x05\x62oard\x18\x11 \x01(\tR\x05\x62oard\"]\n\x15SecurityQuoteResponse\x12\x44\n\nsecu_quote\x18\x01 \x03(\x0b\x32%.longbridgeapp.quote.v1.SecurityQuoteR\tsecuQuote\"\xd9\x03\n\rSecurityQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12N\n\x10pre_market_quote\x18\x0b \x01(\x0b\x32$.longbridgeapp.quote.v1.PrePostQuoteR\x0epreMarketQuote\x12P\n\x11post_market_quote\x18\x0c \x01(\x0b\x32$.longbridgeapp.quote.v1.PrePostQuoteR\x0fpostMarketQuote\"\xc2\x01\n\x0cPrePostQuote\x12\x1b\n\tlast_done\x18\x01 \x01(\tR\x08lastDone\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x04 \x01(\tR\x08turnover\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1d\n\nprev_close\x18\x07 \x01(\tR\tprevClose\"Y\n\x13OptionQuoteResponse\x12\x42\n\nsecu_quote\x18\x01 \x03(\x0b\x32#.longbridgeapp.quote.v1.OptionQuoteR\tsecuQuote\"\x80\x03\n\x0bOptionQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12I\n\roption_extend\x18\x0b \x01(\x0b\x32$.longbridgeapp.quote.v1.OptionExtendR\x0coptionExtend\"\xa1\x03\n\x0cOptionExtend\x12-\n\x12implied_volatility\x18\x01 \x01(\tR\x11impliedVolatility\x12#\n\ropen_interest\x18\x02 \x01(\x03R\x0copenInterest\x12\x1f\n\x0b\x65xpiry_date\x18\x03 \x01(\tR\nexpiryDate\x12!\n\x0cstrike_price\x18\x04 \x01(\tR\x0bstrikePrice\x12/\n\x13\x63ontract_multiplier\x18\x05 \x01(\tR\x12\x63ontractMultiplier\x12#\n\rcontract_type\x18\x06 \x01(\tR\x0c\x63ontractType\x12#\n\rcontract_size\x18\x07 \x01(\tR\x0c\x63ontractSize\x12\x1c\n\tdirection\x18\x08 \x01(\tR\tdirection\x12\x33\n\x15historical_volatility\x18\t \x01(\tR\x14historicalVolatility\x12+\n\x11underlying_symbol\x18\n \x01(\tR\x10underlyingSymbol\"[\n\x14WarrantQuoteResponse\x12\x43\n\nsecu_quote\x18\x02 \x03(\x0b\x32$.longbridgeapp.quote.v1.WarrantQuoteR\tsecuQuote\"\x84\x03\n\x0cWarrantQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nprev_close\x18\x03 \x01(\tR\tprevClose\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12L\n\x0ewarrant_extend\x18\x0b \x01(\x0b\x32%.longbridgeapp.quote.v1.WarrantExtendR\rwarrantExtend\"\xef\x03\n\rWarrantExtend\x12-\n\x12implied_volatility\x18\x01 \x01(\tR\x11impliedVolatility\x12\x1f\n\x0b\x65xpiry_date\x18\x02 \x01(\tR\nexpiryDate\x12&\n\x0flast_trade_date\x18\x03 \x01(\tR\rlastTradeDate\x12+\n\x11outstanding_ratio\x18\x04 \x01(\tR\x10outstandingRatio\x12\'\n\x0foutstanding_qty\x18\x05 \x01(\x03R\x0eoutstandingQty\x12)\n\x10\x63onversion_ratio\x18\x06 \x01(\tR\x0f\x63onversionRatio\x12\x1a\n\x08\x63\x61tegory\x18\x07 \x01(\tR\x08\x63\x61tegory\x12!\n\x0cstrike_price\x18\x08 \x01(\tR\x0bstrikePrice\x12,\n\x12upper_strike_price\x18\t \x01(\tR\x10upperStrikePrice\x12,\n\x12lower_strike_price\x18\n \x01(\tR\x10lowerStrikePrice\x12\x1d\n\ncall_price\x18\x0b \x01(\tR\tcallPrice\x12+\n\x11underlying_symbol\x18\x0c \x01(\tR\x10underlyingSymbol\"\x91\x01\n\x15SecurityDepthResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12/\n\x03\x61sk\x18\x02 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x61sk\x12/\n\x03\x62id\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x62id\"n\n\x05\x44\x65pth\x12\x1a\n\x08position\x18\x01 \x01(\x05R\x08position\x12\x14\n\x05price\x18\x02 \x01(\tR\x05price\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1b\n\torder_num\x18\x04 \x01(\x03R\x08orderNum\"\xb5\x01\n\x17SecurityBrokersResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12@\n\x0b\x61sk_brokers\x18\x02 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\naskBrokers\x12@\n\x0b\x62id_brokers\x18\x03 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\nbidBrokers\"D\n\x07\x42rokers\x12\x1a\n\x08position\x18\x01 \x01(\x05R\x08position\x12\x1d\n\nbroker_ids\x18\x02 \x03(\x05R\tbrokerIds\"\x85\x01\n\x1cParticipantBrokerIdsResponse\x12\x65\n\x1aparticipant_broker_numbers\x18\x01 \x03(\x0b\x32\'.longbridgeapp.quote.v1.ParticipantInfoR\x18participantBrokerNumbers\"\xc0\x01\n\x0fParticipantInfo\x12\x1d\n\nbroker_ids\x18\x01 \x03(\x05R\tbrokerIds\x12.\n\x13participant_name_cn\x18\x02 \x01(\tR\x11participantNameCn\x12.\n\x13participant_name_en\x18\x03 \x01(\tR\x11participantNameEn\x12.\n\x13participant_name_hk\x18\x04 \x01(\tR\x11participantNameHk\"D\n\x14SecurityTradeRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x14\n\x05\x63ount\x18\x02 \x01(\x05R\x05\x63ount\"f\n\x15SecurityTradeResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x35\n\x06trades\x18\x02 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.TradeR\x06trades\"\xdb\x01\n\x05Trade\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x16\n\x06volume\x18\x02 \x01(\x03R\x06volume\x12\x1c\n\ttimestamp\x18\x03 \x01(\x03R\ttimestamp\x12\x1d\n\ntrade_type\x18\x04 \x01(\tR\ttradeType\x12\x1c\n\tdirection\x18\x05 \x01(\x05R\tdirection\x12I\n\rtrade_session\x18\x06 \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\"1\n\x17SecurityIntradayRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\"f\n\x18SecurityIntradayResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x32\n\x05lines\x18\x02 \x03(\x0b\x32\x1c.longbridgeapp.quote.v1.LineR\x05lines\"\x8b\x01\n\x04Line\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x03 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x04 \x01(\tR\x08turnover\x12\x1b\n\tavg_price\x18\x05 \x01(\tR\x08\x61vgPrice\"\xc7\x01\n\x1aSecurityCandlestickRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x36\n\x06period\x18\x02 \x01(\x0e\x32\x1e.longbridgeapp.quote.v1.PeriodR\x06period\x12\x14\n\x05\x63ount\x18\x03 \x01(\x05R\x05\x63ount\x12\x43\n\x0b\x61\x64just_type\x18\x04 \x01(\x0e\x32\".longbridgeapp.quote.v1.AdjustTypeR\nadjustType\"~\n\x1bSecurityCandlestickResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12G\n\x0c\x63\x61ndlesticks\x18\x02 \x03(\x0b\x32#.longbridgeapp.quote.v1.CandlestickR\x0c\x63\x61ndlesticks\"\xaf\x01\n\x0b\x43\x61ndlestick\x12\x14\n\x05\x63lose\x18\x01 \x01(\tR\x05\x63lose\x12\x12\n\x04open\x18\x02 \x01(\tR\x04open\x12\x10\n\x03low\x18\x03 \x01(\tR\x03low\x12\x12\n\x04high\x18\x04 \x01(\tR\x04high\x12\x16\n\x06volume\x18\x05 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x06 \x01(\tR\x08turnover\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\">\n\x1bOptionChainDateListResponse\x12\x1f\n\x0b\x65xpiry_date\x18\x01 \x03(\tR\nexpiryDate\"[\n OptionChainDateStrikeInfoRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1f\n\x0b\x65xpiry_date\x18\x02 \x01(\tR\nexpiryDate\"x\n!OptionChainDateStrikeInfoResponse\x12S\n\x11strike_price_info\x18\x01 \x03(\x0b\x32\'.longbridgeapp.quote.v1.StrikePriceInfoR\x0fstrikePriceInfo\"\x83\x01\n\x0fStrikePriceInfo\x12\x14\n\x05price\x18\x01 \x01(\tR\x05price\x12\x1f\n\x0b\x63\x61ll_symbol\x18\x02 \x01(\tR\ncallSymbol\x12\x1d\n\nput_symbol\x18\x03 \x01(\tR\tputSymbol\x12\x1a\n\x08standard\x18\x04 \x01(\x08R\x08standard\"Y\n\x12IssuerInfoResponse\x12\x43\n\x0bissuer_info\x18\x01 \x03(\x0b\x32\".longbridgeapp.quote.v1.IssuerInfoR\nissuerInfo\"g\n\nIssuerInfo\x12\x0e\n\x02id\x18\x01 \x01(\x05R\x02id\x12\x17\n\x07name_cn\x18\x02 \x01(\tR\x06nameCn\x12\x17\n\x07name_en\x18\x03 \x01(\tR\x06nameEn\x12\x17\n\x07name_hk\x18\x04 \x01(\tR\x06nameHk\"\x99\x01\n\x18WarrantFilterListRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12I\n\rfilter_config\x18\x02 \x01(\x0b\x32$.longbridgeapp.quote.v1.FilterConfigR\x0c\x66ilterConfig\x12\x1a\n\x08language\x18\x03 \x01(\x05R\x08language\"\x8a\x02\n\x0c\x46ilterConfig\x12\x17\n\x07sort_by\x18\x01 \x01(\x05R\x06sortBy\x12\x1d\n\nsort_order\x18\x02 \x01(\x05R\tsortOrder\x12\x1f\n\x0bsort_offset\x18\x03 \x01(\x05R\nsortOffset\x12\x1d\n\nsort_count\x18\x04 \x01(\x05R\tsortCount\x12\x12\n\x04type\x18\x05 \x03(\x05R\x04type\x12\x16\n\x06issuer\x18\x06 \x03(\x05R\x06issuer\x12\x1f\n\x0b\x65xpiry_date\x18\x07 \x03(\x05R\nexpiryDate\x12\x1d\n\nprice_type\x18\x08 \x03(\x05R\tpriceType\x12\x16\n\x06status\x18\t \x03(\x05R\x06status\"\x86\x01\n\x19WarrantFilterListResponse\x12H\n\x0cwarrant_list\x18\x01 \x03(\x0b\x32%.longbridgeapp.quote.v1.FilterWarrantR\x0bwarrantList\x12\x1f\n\x0btotal_count\x18\x02 \x01(\x05R\ntotalCount\"\xb9\x06\n\rFilterWarrant\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x1b\n\tlast_done\x18\x03 \x01(\tR\x08lastDone\x12\x1f\n\x0b\x63hange_rate\x18\x04 \x01(\tR\nchangeRate\x12\x1d\n\nchange_val\x18\x05 \x01(\tR\tchangeVal\x12\x16\n\x06volume\x18\x06 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x07 \x01(\tR\x08turnover\x12\x1f\n\x0b\x65xpiry_date\x18\x08 \x01(\tR\nexpiryDate\x12!\n\x0cstrike_price\x18\t \x01(\tR\x0bstrikePrice\x12,\n\x12upper_strike_price\x18\n \x01(\tR\x10upperStrikePrice\x12,\n\x12lower_strike_price\x18\x0b \x01(\tR\x10lowerStrikePrice\x12\'\n\x0foutstanding_qty\x18\x0c \x01(\tR\x0eoutstandingQty\x12+\n\x11outstanding_ratio\x18\r \x01(\tR\x10outstandingRatio\x12\x18\n\x07premium\x18\x0e \x01(\tR\x07premium\x12\x17\n\x07itm_otm\x18\x0f \x01(\tR\x06itmOtm\x12-\n\x12implied_volatility\x18\x10 \x01(\tR\x11impliedVolatility\x12\x14\n\x05\x64\x65lta\x18\x11 \x01(\tR\x05\x64\x65lta\x12\x1d\n\ncall_price\x18\x12 \x01(\tR\tcallPrice\x12\"\n\rto_call_price\x18\x13 \x01(\tR\x0btoCallPrice\x12-\n\x12\x65\x66\x66\x65\x63tive_leverage\x18\x14 \x01(\tR\x11\x65\x66\x66\x65\x63tiveLeverage\x12%\n\x0eleverage_ratio\x18\x15 \x01(\tR\rleverageRatio\x12)\n\x10\x63onversion_ratio\x18\x16 \x01(\tR\x0f\x63onversionRatio\x12#\n\rbalance_point\x18\x17 \x01(\tR\x0c\x62\x61lancePoint\x12\x14\n\x05state\x18\x18 \x01(\tR\x05state\"x\n\x19MarketTradePeriodResponse\x12[\n\x14market_trade_session\x18\x01 \x03(\x0b\x32).longbridgeapp.quote.v1.MarketTradePeriodR\x12marketTradeSession\"u\n\x11MarketTradePeriod\x12\x16\n\x06market\x18\x01 \x01(\tR\x06market\x12H\n\rtrade_session\x18\x02 \x03(\x0b\x32#.longbridgeapp.quote.v1.TradePeriodR\x0ctradeSession\"\x8e\x01\n\x0bTradePeriod\x12\x19\n\x08\x62\x65g_time\x18\x01 \x01(\x05R\x07\x62\x65gTime\x12\x19\n\x08\x65nd_time\x18\x02 \x01(\x05R\x07\x65ndTime\x12I\n\rtrade_session\x18\x03 \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\"\x15\n\x13SubscriptionRequest\"V\n\x14SubscriptionResponse\x12>\n\x08sub_list\x18\x01 \x03(\x0b\x32#.longbridgeapp.quote.v1.SubTypeListR\x07subList\"a\n\x0bSubTypeList\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\"\x8a\x01\n\x10SubscribeRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\x12\"\n\ris_first_push\x18\x03 \x01(\x08R\x0bisFirstPush\"\x85\x01\n\x12UnsubscribeRequest\x12\x16\n\x06symbol\x18\x01 \x03(\tR\x06symbol\x12:\n\x08sub_type\x18\x02 \x03(\x0e\x32\x1f.longbridgeapp.quote.v1.SubTypeR\x07subType\x12\x1b\n\tunsub_all\x18\x03 \x01(\x08R\x08unsubAll\"\x15\n\x13UnsubscribeResponse\"\xcd\x03\n\tPushQuote\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12\x1b\n\tlast_done\x18\x03 \x01(\tR\x08lastDone\x12\x12\n\x04open\x18\x04 \x01(\tR\x04open\x12\x12\n\x04high\x18\x05 \x01(\tR\x04high\x12\x10\n\x03low\x18\x06 \x01(\tR\x03low\x12\x1c\n\ttimestamp\x18\x07 \x01(\x03R\ttimestamp\x12\x16\n\x06volume\x18\x08 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\t \x01(\tR\x08turnover\x12\x46\n\x0ctrade_status\x18\n \x01(\x0e\x32#.longbridgeapp.quote.v1.TradeStatusR\x0btradeStatus\x12I\n\rtrade_session\x18\x0b \x01(\x0e\x32$.longbridgeapp.quote.v1.TradeSessionR\x0ctradeSession\x12%\n\x0e\x63urrent_volume\x18\x0c \x01(\x03R\rcurrentVolume\x12)\n\x10\x63urrent_turnover\x18\r \x01(\tR\x0f\x63urrentTurnover\"\xa1\x01\n\tPushDepth\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12/\n\x03\x61sk\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x61sk\x12/\n\x03\x62id\x18\x04 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.DepthR\x03\x62id\"\xc5\x01\n\x0bPushBrokers\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12@\n\x0b\x61sk_brokers\x18\x03 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\naskBrokers\x12@\n\x0b\x62id_brokers\x18\x04 \x03(\x0b\x32\x1f.longbridgeapp.quote.v1.BrokersR\nbidBrokers\"t\n\tPushTrade\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1a\n\x08sequence\x18\x02 \x01(\x03R\x08sequence\x12\x33\n\x05trade\x18\x03 \x03(\x0b\x32\x1d.longbridgeapp.quote.v1.TradeR\x05trade\"a\n\x15MarketTradeDayRequest\x12\x16\n\x06market\x18\x01 \x01(\tR\x06market\x12\x17\n\x07\x62\x65g_day\x18\x02 \x01(\tR\x06\x62\x65gDay\x12\x17\n\x07\x65nd_day\x18\x03 \x01(\tR\x06\x65ndDay\"[\n\x16MarketTradeDayResponse\x12\x1b\n\ttrade_day\x18\x01 \x03(\tR\x08tradeDay\x12$\n\x0ehalf_trade_day\x18\x02 \x03(\tR\x0chalfTradeDay\"4\n\x1a\x43\x61pitalFlowIntradayRequest\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\"\xf1\x01\n\x1b\x43\x61pitalFlowIntradayResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12q\n\x12\x63\x61pital_flow_lines\x18\x02 \x03(\x0b\x32\x43.longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLineR\x10\x63\x61pitalFlowLines\x1aG\n\x0f\x43\x61pitalFlowLine\x12\x16\n\x06inflow\x18\x01 \x01(\tR\x06inflow\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\"\x80\x03\n\x1b\x43\x61pitalDistributionResponse\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1c\n\ttimestamp\x18\x02 \x01(\x03R\ttimestamp\x12\x66\n\ncapital_in\x18\x03 \x01(\x0b\x32G.longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistributionR\tcapitalIn\x12h\n\x0b\x63\x61pital_out\x18\x04 \x01(\x0b\x32G.longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistributionR\ncapitalOut\x1aY\n\x13\x43\x61pitalDistribution\x12\x14\n\x05large\x18\x01 \x01(\tR\x05large\x12\x16\n\x06medium\x18\x02 \x01(\tR\x06medium\x12\x14\n\x05small\x18\x03 \x01(\tR\x05small\"v\n\x18SecurityCalcQuoteRequest\x12\x18\n\x07symbols\x18\x01 \x03(\tR\x07symbols\x12@\n\ncalc_index\x18\x02 \x03(\x0e\x32!.longbridgeapp.quote.v1.CalcIndexR\tcalcIndex\"\xc5\x0b\n\x11SecurityCalcIndex\x12\x16\n\x06symbol\x18\x01 \x01(\tR\x06symbol\x12\x1b\n\tlast_done\x18\x02 \x01(\tR\x08lastDone\x12\x1d\n\nchange_val\x18\x03 \x01(\tR\tchangeVal\x12\x1f\n\x0b\x63hange_rate\x18\x04 \x01(\tR\nchangeRate\x12\x16\n\x06volume\x18\x05 \x01(\x03R\x06volume\x12\x1a\n\x08turnover\x18\x06 \x01(\tR\x08turnover\x12&\n\x0fytd_change_rate\x18\x07 \x01(\tR\rytdChangeRate\x12#\n\rturnover_rate\x18\x08 \x01(\tR\x0cturnoverRate\x12,\n\x12total_market_value\x18\t \x01(\tR\x10totalMarketValue\x12!\n\x0c\x63\x61pital_flow\x18\n \x01(\tR\x0b\x63\x61pitalFlow\x12\x1c\n\tamplitude\x18\x0b \x01(\tR\tamplitude\x12!\n\x0cvolume_ratio\x18\x0c \x01(\tR\x0bvolumeRatio\x12 \n\x0cpe_ttm_ratio\x18\r \x01(\tR\npeTtmRatio\x12\x19\n\x08pb_ratio\x18\x0e \x01(\tR\x07pbRatio\x12,\n\x12\x64ividend_ratio_ttm\x18\x0f \x01(\tR\x10\x64ividendRatioTtm\x12/\n\x14\x66ive_day_change_rate\x18\x10 \x01(\tR\x11\x66iveDayChangeRate\x12-\n\x13ten_day_change_rate\x18\x11 \x01(\tR\x10tenDayChangeRate\x12\x31\n\x15half_year_change_rate\x18\x12 \x01(\tR\x12halfYearChangeRate\x12\x37\n\x18\x66ive_minutes_change_rate\x18\x13 \x01(\tR\x15\x66iveMinutesChangeRate\x12\x1f\n\x0b\x65xpiry_date\x18\x14 \x01(\tR\nexpiryDate\x12!\n\x0cstrike_price\x18\x15 \x01(\tR\x0bstrikePrice\x12,\n\x12upper_strike_price\x18\x16 \x01(\tR\x10upperStrikePrice\x12,\n\x12lower_strike_price\x18\x17 \x01(\tR\x10lowerStrikePrice\x12\'\n\x0foutstanding_qty\x18\x18 \x01(\x03R\x0eoutstandingQty\x12+\n\x11outstanding_ratio\x18\x19 \x01(\tR\x10outstandingRatio\x12\x18\n\x07premium\x18\x1a \x01(\tR\x07premium\x12\x17\n\x07itm_otm\x18\x1b \x01(\tR\x06itmOtm\x12-\n\x12implied_volatility\x18\x1c \x01(\tR\x11impliedVolatility\x12#\n\rwarrant_delta\x18\x1d \x01(\tR\x0cwarrantDelta\x12\x1d\n\ncall_price\x18\x1e \x01(\tR\tcallPrice\x12\"\n\rto_call_price\x18\x1f \x01(\tR\x0btoCallPrice\x12-\n\x12\x65\x66\x66\x65\x63tive_leverage\x18  \x01(\tR\x11\x65\x66\x66\x65\x63tiveLeverage\x12%\n\x0eleverage_ratio\x18! \x01(\tR\rleverageRatio\x12)\n\x10\x63onversion_ratio\x18\" \x01(\tR\x0f\x63onversionRatio\x12#\n\rbalance_point\x18# \x01(\tR\x0c\x62\x61lancePoint\x12#\n\ropen_interest\x18$ \x01(\x03R\x0copenInterest\x12\x14\n\x05\x64\x65lta\x18% \x01(\tR\x05\x64\x65lta\x12\x14\n\x05gamma\x18& \x01(\tR\x05gamma\x12\x14\n\x05theta\x18\' \x01(\tR\x05theta\x12\x12\n\x04vega\x18( \x01(\tR\x04vega\x12\x10\n\x03rho\x18) \x01(\tR\x03rho\"v\n\x19SecurityCalcQuoteResponse\x12Y\n\x13security_calc_index\x18\x01 \x03(\x0b\x32).longbridgeapp.quote.v1.SecurityCalcIndexR\x11securityCalcIndex*\xaa\x05\n\x07\x43ommand\x12\x13\n\x0fUNKNOWN_COMMAND\x10\x00\x12\x0e\n\nHEART_BEAT\x10\x01\x12\x08\n\x04\x41UTH\x10\x02\x12\r\n\tRECONNECT\x10\x03\x12\x10\n\x0cSubscription\x10\x05\x12\r\n\tSubscribe\x10\x06\x12\x0f\n\x0bUnsubscribe\x10\x07\x12\x1a\n\x16QueryMarketTradePeriod\x10\x08\x12\x17\n\x13QueryMarketTradeDay\x10\t\x12\x1b\n\x17QuerySecurityStaticInfo\x10\n\x12\x16\n\x12QuerySecurityQuote\x10\x0b\x12\x14\n\x10QueryOptionQuote\x10\x0c\x12\x15\n\x11QueryWarrantQuote\x10\r\x12\x0e\n\nQueryDepth\x10\x0e\x12\x10\n\x0cQueryBrokers\x10\x0f\x12\x1d\n\x19QueryParticipantBrokerIds\x10\x10\x12\x0e\n\nQueryTrade\x10\x11\x12\x11\n\rQueryIntraday\x10\x12\x12\x14\n\x10QueryCandlestick\x10\x13\x12\x18\n\x14QueryOptionChainDate\x10\x14\x12\"\n\x1eQueryOptionChainDateStrikeInfo\x10\x15\x12\x1a\n\x16QueryWarrantIssuerInfo\x10\x16\x12\x1a\n\x16QueryWarrantFilterList\x10\x17\x12\x1c\n\x18QueryCapitalFlowIntraday\x10\x18\x12 \n\x1cQueryCapitalFlowDistribution\x10\x19\x12\x1a\n\x16QuerySecurityCalcIndex\x10\x1a\x12\x11\n\rPushQuoteData\x10\x65\x12\x11\n\rPushDepthData\x10\x66\x12\x13\n\x0fPushBrokersData\x10g\x12\x11\n\rPushTradeData\x10h*\xc2\x01\n\x0bTradeStatus\x12\n\n\x06NORMAL\x10\x00\x12\n\n\x06HALTED\x10\x01\x12\x0c\n\x08\x44\x45LISTED\x10\x02\x12\x08\n\x04\x46USE\x10\x03\x12\x10\n\x0cPREPARE_LIST\x10\x04\x12\x0e\n\nCODE_MOVED\x10\x05\x12\x10\n\x0cTO_BE_OPENED\x10\x06\x12\x15\n\x11SPLIT_STOCK_HALTS\x10\x07\x12\x0b\n\x07\x45XPIRED\x10\x08\x12\x18\n\x14WARRANT_PREPARE_LIST\x10\t\x12\x11\n\rSUSPEND_TRADE\x10\n*?\n\x0cTradeSession\x12\x10\n\x0cNORMAL_TRADE\x10\x00\x12\r\n\tPRE_TRADE\x10\x01\x12\x0e\n\nPOST_TRADE\x10\x02*/\n\nAdjustType\x12\r\n\tNO_ADJUST\x10\x00\x12\x12\n\x0e\x46ORWARD_ADJUST\x10\x01*\xa2\x01\n\x06Period\x12\x12\n\x0eUNKNOWN_PERIOD\x10\x00\x12\x0e\n\nONE_MINUTE\x10\x01\x12\x0f\n\x0b\x46IVE_MINUTE\x10\x05\x12\x12\n\x0e\x46IFTEEN_MINUTE\x10\x0f\x12\x11\n\rTHIRTY_MINUTE\x10\x1e\x12\x10\n\x0cSIXTY_MINUTE\x10<\x12\x08\n\x03\x44\x41Y\x10\xe8\x07\x12\t\n\x04WEEK\x10\xd0\x0f\x12\n\n\x05MONTH\x10\xb8\x17\x12\t\n\x04YEAR\x10\xa0\x1f*I\n\x07SubType\x12\x10\n\x0cUNKNOWN_TYPE\x10\x00\x12\t\n\x05QUOTE\x10\x01\x12\t\n\x05\x44\x45PTH\x10\x02\x12\x0b\n\x07\x42ROKERS\x10\x03\x12\t\n\x05TRADE\x10\x04*\x96\t\n\tCalcIndex\x12\x15\n\x11\x43\x41LCINDEX_UNKNOWN\x10\x00\x12\x17\n\x13\x43\x41LCINDEX_LAST_DONE\x10\x01\x12\x18\n\x14\x43\x41LCINDEX_CHANGE_VAL\x10\x02\x12\x19\n\x15\x43\x41LCINDEX_CHANGE_RATE\x10\x03\x12\x14\n\x10\x43\x41LCINDEX_VOLUME\x10\x04\x12\x16\n\x12\x43\x41LCINDEX_TURNOVER\x10\x05\x12\x1d\n\x19\x43\x41LCINDEX_YTD_CHANGE_RATE\x10\x06\x12\x1b\n\x17\x43\x41LCINDEX_TURNOVER_RATE\x10\x07\x12 \n\x1c\x43\x41LCINDEX_TOTAL_MARKET_VALUE\x10\x08\x12\x1a\n\x16\x43\x41LCINDEX_CAPITAL_FLOW\x10\t\x12\x17\n\x13\x43\x41LCINDEX_AMPLITUDE\x10\n\x12\x1a\n\x16\x43\x41LCINDEX_VOLUME_RATIO\x10\x0b\x12\x1a\n\x16\x43\x41LCINDEX_PE_TTM_RATIO\x10\x0c\x12\x16\n\x12\x43\x41LCINDEX_PB_RATIO\x10\r\x12 \n\x1c\x43\x41LCINDEX_DIVIDEND_RATIO_TTM\x10\x0e\x12\"\n\x1e\x43\x41LCINDEX_FIVE_DAY_CHANGE_RATE\x10\x0f\x12!\n\x1d\x43\x41LCINDEX_TEN_DAY_CHANGE_RATE\x10\x10\x12#\n\x1f\x43\x41LCINDEX_HALF_YEAR_CHANGE_RATE\x10\x11\x12&\n\"CALCINDEX_FIVE_MINUTES_CHANGE_RATE\x10\x12\x12\x19\n\x15\x43\x41LCINDEX_EXPIRY_DATE\x10\x13\x12\x1a\n\x16\x43\x41LCINDEX_STRIKE_PRICE\x10\x14\x12 \n\x1c\x43\x41LCINDEX_UPPER_STRIKE_PRICE\x10\x15\x12 \n\x1c\x43\x41LCINDEX_LOWER_STRIKE_PRICE\x10\x16\x12\x1d\n\x19\x43\x41LCINDEX_OUTSTANDING_QTY\x10\x17\x12\x1f\n\x1b\x43\x41LCINDEX_OUTSTANDING_RATIO\x10\x18\x12\x15\n\x11\x43\x41LCINDEX_PREMIUM\x10\x19\x12\x15\n\x11\x43\x41LCINDEX_ITM_OTM\x10\x1a\x12 \n\x1c\x43\x41LCINDEX_IMPLIED_VOLATILITY\x10\x1b\x12\x1b\n\x17\x43\x41LCINDEX_WARRANT_DELTA\x10\x1c\x12\x18\n\x14\x43\x41LCINDEX_CALL_PRICE\x10\x1d\x12\x1b\n\x17\x43\x41LCINDEX_TO_CALL_PRICE\x10\x1e\x12 \n\x1c\x43\x41LCINDEX_EFFECTIVE_LEVERAGE\x10\x1f\x12\x1c\n\x18\x43\x41LCINDEX_LEVERAGE_RATIO\x10 \x12\x1e\n\x1a\x43\x41LCINDEX_CONVERSION_RATIO\x10!\x12\x1b\n\x17\x43\x41LCINDEX_BALANCE_POINT\x10\"\x12\x1b\n\x17\x43\x41LCINDEX_OPEN_INTEREST\x10#\x12\x13\n\x0f\x43\x41LCINDEX_DELTA\x10$\x12\x13\n\x0f\x43\x41LCINDEX_GAMMA\x10%\x12\x13\n\x0f\x43\x41LCINDEX_THETA\x10&\x12\x12\n\x0e\x43\x41LCINDEX_VEGA\x10\'\x12\x11\n\rCALCINDEX_RHO\x10(B\xe1\x01\n\x1a\x63om.longbridgeapp.quote.v1B\x08\x41piProtoP\x01Z?github.com/longbridgeapp/openapi-protobufs/gen/go/quote;quotev1\xa2\x02\x03LQX\xaa\x02\x16Longbridgeapp.Quote.V1\xca\x02\x16Longbridgeapp\\Quote\\V1\xe2\x02\"Longbridgeapp\\Quote\\V1\\GPBMetadata\xea\x02\x18Longbridgeapp::Quote::V1b\x06proto3')
 
 _COMMAND = DESCRIPTOR.enum_types_by_name['Command']
 Command = enum_type_wrapper.EnumTypeWrapper(_COMMAND)
@@ -29,6 +29,8 @@ _PERIOD = DESCRIPTOR.enum_types_by_name['Period']
 Period = enum_type_wrapper.EnumTypeWrapper(_PERIOD)
 _SUBTYPE = DESCRIPTOR.enum_types_by_name['SubType']
 SubType = enum_type_wrapper.EnumTypeWrapper(_SUBTYPE)
+_CALCINDEX = DESCRIPTOR.enum_types_by_name['CalcIndex']
+CalcIndex = enum_type_wrapper.EnumTypeWrapper(_CALCINDEX)
 UNKNOWN_COMMAND = 0
 HEART_BEAT = 1
 AUTH = 2
@@ -52,6 +54,9 @@ QueryOptionChainDate = 20
 QueryOptionChainDateStrikeInfo = 21
 QueryWarrantIssuerInfo = 22
 QueryWarrantFilterList = 23
+QueryCapitalFlowIntraday = 24
+QueryCapitalFlowDistribution = 25
+QuerySecurityCalcIndex = 26
 PushQuoteData = 101
 PushDepthData = 102
 PushBrokersData = 103
@@ -87,6 +92,47 @@ QUOTE = 1
 DEPTH = 2
 BROKERS = 3
 TRADE = 4
+CALCINDEX_UNKNOWN = 0
+CALCINDEX_LAST_DONE = 1
+CALCINDEX_CHANGE_VAL = 2
+CALCINDEX_CHANGE_RATE = 3
+CALCINDEX_VOLUME = 4
+CALCINDEX_TURNOVER = 5
+CALCINDEX_YTD_CHANGE_RATE = 6
+CALCINDEX_TURNOVER_RATE = 7
+CALCINDEX_TOTAL_MARKET_VALUE = 8
+CALCINDEX_CAPITAL_FLOW = 9
+CALCINDEX_AMPLITUDE = 10
+CALCINDEX_VOLUME_RATIO = 11
+CALCINDEX_PE_TTM_RATIO = 12
+CALCINDEX_PB_RATIO = 13
+CALCINDEX_DIVIDEND_RATIO_TTM = 14
+CALCINDEX_FIVE_DAY_CHANGE_RATE = 15
+CALCINDEX_TEN_DAY_CHANGE_RATE = 16
+CALCINDEX_HALF_YEAR_CHANGE_RATE = 17
+CALCINDEX_FIVE_MINUTES_CHANGE_RATE = 18
+CALCINDEX_EXPIRY_DATE = 19
+CALCINDEX_STRIKE_PRICE = 20
+CALCINDEX_UPPER_STRIKE_PRICE = 21
+CALCINDEX_LOWER_STRIKE_PRICE = 22
+CALCINDEX_OUTSTANDING_QTY = 23
+CALCINDEX_OUTSTANDING_RATIO = 24
+CALCINDEX_PREMIUM = 25
+CALCINDEX_ITM_OTM = 26
+CALCINDEX_IMPLIED_VOLATILITY = 27
+CALCINDEX_WARRANT_DELTA = 28
+CALCINDEX_CALL_PRICE = 29
+CALCINDEX_TO_CALL_PRICE = 30
+CALCINDEX_EFFECTIVE_LEVERAGE = 31
+CALCINDEX_LEVERAGE_RATIO = 32
+CALCINDEX_CONVERSION_RATIO = 33
+CALCINDEX_BALANCE_POINT = 34
+CALCINDEX_OPEN_INTEREST = 35
+CALCINDEX_DELTA = 36
+CALCINDEX_GAMMA = 37
+CALCINDEX_THETA = 38
+CALCINDEX_VEGA = 39
+CALCINDEX_RHO = 40
 
 
 _SECURITYREQUEST = DESCRIPTOR.message_types_by_name['SecurityRequest']
@@ -142,6 +188,14 @@ _PUSHBROKERS = DESCRIPTOR.message_types_by_name['PushBrokers']
 _PUSHTRADE = DESCRIPTOR.message_types_by_name['PushTrade']
 _MARKETTRADEDAYREQUEST = DESCRIPTOR.message_types_by_name['MarketTradeDayRequest']
 _MARKETTRADEDAYRESPONSE = DESCRIPTOR.message_types_by_name['MarketTradeDayResponse']
+_CAPITALFLOWINTRADAYREQUEST = DESCRIPTOR.message_types_by_name['CapitalFlowIntradayRequest']
+_CAPITALFLOWINTRADAYRESPONSE = DESCRIPTOR.message_types_by_name['CapitalFlowIntradayResponse']
+_CAPITALFLOWINTRADAYRESPONSE_CAPITALFLOWLINE = _CAPITALFLOWINTRADAYRESPONSE.nested_types_by_name['CapitalFlowLine']
+_CAPITALDISTRIBUTIONRESPONSE = DESCRIPTOR.message_types_by_name['CapitalDistributionResponse']
+_CAPITALDISTRIBUTIONRESPONSE_CAPITALDISTRIBUTION = _CAPITALDISTRIBUTIONRESPONSE.nested_types_by_name['CapitalDistribution']
+_SECURITYCALCQUOTEREQUEST = DESCRIPTOR.message_types_by_name['SecurityCalcQuoteRequest']
+_SECURITYCALCINDEX = DESCRIPTOR.message_types_by_name['SecurityCalcIndex']
+_SECURITYCALCQUOTERESPONSE = DESCRIPTOR.message_types_by_name['SecurityCalcQuoteResponse']
 SecurityRequest = _reflection.GeneratedProtocolMessageType('SecurityRequest', (_message.Message,), {
   'DESCRIPTOR' : _SECURITYREQUEST,
   '__module__' : 'quote.api_pb2'
@@ -513,22 +567,82 @@ MarketTradeDayResponse = _reflection.GeneratedProtocolMessageType('MarketTradeDa
   })
 _sym_db.RegisterMessage(MarketTradeDayResponse)
 
+CapitalFlowIntradayRequest = _reflection.GeneratedProtocolMessageType('CapitalFlowIntradayRequest', (_message.Message,), {
+  'DESCRIPTOR' : _CAPITALFLOWINTRADAYREQUEST,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayRequest)
+  })
+_sym_db.RegisterMessage(CapitalFlowIntradayRequest)
+
+CapitalFlowIntradayResponse = _reflection.GeneratedProtocolMessageType('CapitalFlowIntradayResponse', (_message.Message,), {
+
+  'CapitalFlowLine' : _reflection.GeneratedProtocolMessageType('CapitalFlowLine', (_message.Message,), {
+    'DESCRIPTOR' : _CAPITALFLOWINTRADAYRESPONSE_CAPITALFLOWLINE,
+    '__module__' : 'quote.api_pb2'
+    # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
+    })
+  ,
+  'DESCRIPTOR' : _CAPITALFLOWINTRADAYRESPONSE,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalFlowIntradayResponse)
+  })
+_sym_db.RegisterMessage(CapitalFlowIntradayResponse)
+_sym_db.RegisterMessage(CapitalFlowIntradayResponse.CapitalFlowLine)
+
+CapitalDistributionResponse = _reflection.GeneratedProtocolMessageType('CapitalDistributionResponse', (_message.Message,), {
+
+  'CapitalDistribution' : _reflection.GeneratedProtocolMessageType('CapitalDistribution', (_message.Message,), {
+    'DESCRIPTOR' : _CAPITALDISTRIBUTIONRESPONSE_CAPITALDISTRIBUTION,
+    '__module__' : 'quote.api_pb2'
+    # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
+    })
+  ,
+  'DESCRIPTOR' : _CAPITALDISTRIBUTIONRESPONSE,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.CapitalDistributionResponse)
+  })
+_sym_db.RegisterMessage(CapitalDistributionResponse)
+_sym_db.RegisterMessage(CapitalDistributionResponse.CapitalDistribution)
+
+SecurityCalcQuoteRequest = _reflection.GeneratedProtocolMessageType('SecurityCalcQuoteRequest', (_message.Message,), {
+  'DESCRIPTOR' : _SECURITYCALCQUOTEREQUEST,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcQuoteRequest)
+  })
+_sym_db.RegisterMessage(SecurityCalcQuoteRequest)
+
+SecurityCalcIndex = _reflection.GeneratedProtocolMessageType('SecurityCalcIndex', (_message.Message,), {
+  'DESCRIPTOR' : _SECURITYCALCINDEX,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcIndex)
+  })
+_sym_db.RegisterMessage(SecurityCalcIndex)
+
+SecurityCalcQuoteResponse = _reflection.GeneratedProtocolMessageType('SecurityCalcQuoteResponse', (_message.Message,), {
+  'DESCRIPTOR' : _SECURITYCALCQUOTERESPONSE,
+  '__module__' : 'quote.api_pb2'
+  # @@protoc_insertion_point(class_scope:longbridgeapp.quote.v1.SecurityCalcQuoteResponse)
+  })
+_sym_db.RegisterMessage(SecurityCalcQuoteResponse)
+
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\032com.longbridgeapp.quote.v1B\010ApiProtoP\001Z?github.com/longbridgeapp/openapi-protobufs/gen/go/quote;quotev1\242\002\003LQX\252\002\026Longbridgeapp.Quote.V1\312\002\026Longbridgeapp\\Quote\\V1\342\002\"Longbridgeapp\\Quote\\V1\\GPBMetadata\352\002\030Longbridgeapp::Quote::V1'
-  _COMMAND._serialized_start=9376
-  _COMMAND._serialized_end=9966
-  _TRADESTATUS._serialized_start=9969
-  _TRADESTATUS._serialized_end=10163
-  _TRADESESSION._serialized_start=10165
-  _TRADESESSION._serialized_end=10228
-  _ADJUSTTYPE._serialized_start=10230
-  _ADJUSTTYPE._serialized_end=10277
-  _PERIOD._serialized_start=10280
-  _PERIOD._serialized_end=10442
-  _SUBTYPE._serialized_start=10444
-  _SUBTYPE._serialized_end=10517
+  _COMMAND._serialized_start=11885
+  _COMMAND._serialized_end=12567
+  _TRADESTATUS._serialized_start=12570
+  _TRADESTATUS._serialized_end=12764
+  _TRADESESSION._serialized_start=12766
+  _TRADESESSION._serialized_end=12829
+  _ADJUSTTYPE._serialized_start=12831
+  _ADJUSTTYPE._serialized_end=12878
+  _PERIOD._serialized_start=12881
+  _PERIOD._serialized_end=13043
+  _SUBTYPE._serialized_start=13045
+  _SUBTYPE._serialized_end=13118
+  _CALCINDEX._serialized_start=13121
+  _CALCINDEX._serialized_end=14295
   _SECURITYREQUEST._serialized_start=43
   _SECURITYREQUEST._serialized_end=84
   _MULTISECURITYREQUEST._serialized_start=86
@@ -536,103 +650,119 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _SECURITYSTATICINFORESPONSE._serialized_start=134
   _SECURITYSTATICINFORESPONSE._serialized_end=240
   _STATICINFO._serialized_start=243
-  _STATICINFO._serialized_end=728
-  _SECURITYQUOTERESPONSE._serialized_start=730
-  _SECURITYQUOTERESPONSE._serialized_end=823
-  _SECURITYQUOTE._serialized_start=826
-  _SECURITYQUOTE._serialized_end=1299
-  _PREPOSTQUOTE._serialized_start=1302
-  _PREPOSTQUOTE._serialized_end=1496
-  _OPTIONQUOTERESPONSE._serialized_start=1498
-  _OPTIONQUOTERESPONSE._serialized_end=1587
-  _OPTIONQUOTE._serialized_start=1590
-  _OPTIONQUOTE._serialized_end=1974
-  _OPTIONEXTEND._serialized_start=1977
-  _OPTIONEXTEND._serialized_end=2394
-  _WARRANTQUOTERESPONSE._serialized_start=2396
-  _WARRANTQUOTERESPONSE._serialized_end=2487
-  _WARRANTQUOTE._serialized_start=2490
-  _WARRANTQUOTE._serialized_end=2878
-  _WARRANTEXTEND._serialized_start=2881
-  _WARRANTEXTEND._serialized_end=3376
-  _SECURITYDEPTHRESPONSE._serialized_start=3379
-  _SECURITYDEPTHRESPONSE._serialized_end=3524
-  _DEPTH._serialized_start=3526
-  _DEPTH._serialized_end=3636
-  _SECURITYBROKERSRESPONSE._serialized_start=3639
-  _SECURITYBROKERSRESPONSE._serialized_end=3820
-  _BROKERS._serialized_start=3822
-  _BROKERS._serialized_end=3890
-  _PARTICIPANTBROKERIDSRESPONSE._serialized_start=3893
-  _PARTICIPANTBROKERIDSRESPONSE._serialized_end=4026
-  _PARTICIPANTINFO._serialized_start=4029
-  _PARTICIPANTINFO._serialized_end=4221
-  _SECURITYTRADEREQUEST._serialized_start=4223
-  _SECURITYTRADEREQUEST._serialized_end=4291
-  _SECURITYTRADERESPONSE._serialized_start=4293
-  _SECURITYTRADERESPONSE._serialized_end=4395
-  _TRADE._serialized_start=4398
-  _TRADE._serialized_end=4617
-  _SECURITYINTRADAYREQUEST._serialized_start=4619
-  _SECURITYINTRADAYREQUEST._serialized_end=4668
-  _SECURITYINTRADAYRESPONSE._serialized_start=4670
-  _SECURITYINTRADAYRESPONSE._serialized_end=4772
-  _LINE._serialized_start=4775
-  _LINE._serialized_end=4914
-  _SECURITYCANDLESTICKREQUEST._serialized_start=4917
-  _SECURITYCANDLESTICKREQUEST._serialized_end=5116
-  _SECURITYCANDLESTICKRESPONSE._serialized_start=5118
-  _SECURITYCANDLESTICKRESPONSE._serialized_end=5244
-  _CANDLESTICK._serialized_start=5247
-  _CANDLESTICK._serialized_end=5422
-  _OPTIONCHAINDATELISTRESPONSE._serialized_start=5424
-  _OPTIONCHAINDATELISTRESPONSE._serialized_end=5486
-  _OPTIONCHAINDATESTRIKEINFOREQUEST._serialized_start=5488
-  _OPTIONCHAINDATESTRIKEINFOREQUEST._serialized_end=5579
-  _OPTIONCHAINDATESTRIKEINFORESPONSE._serialized_start=5581
-  _OPTIONCHAINDATESTRIKEINFORESPONSE._serialized_end=5701
-  _STRIKEPRICEINFO._serialized_start=5704
-  _STRIKEPRICEINFO._serialized_end=5835
-  _ISSUERINFORESPONSE._serialized_start=5837
-  _ISSUERINFORESPONSE._serialized_end=5926
-  _ISSUERINFO._serialized_start=5928
-  _ISSUERINFO._serialized_end=6031
-  _WARRANTFILTERLISTREQUEST._serialized_start=6034
-  _WARRANTFILTERLISTREQUEST._serialized_end=6187
-  _FILTERCONFIG._serialized_start=6190
-  _FILTERCONFIG._serialized_end=6456
-  _WARRANTFILTERLISTRESPONSE._serialized_start=6459
-  _WARRANTFILTERLISTRESPONSE._serialized_end=6593
-  _FILTERWARRANT._serialized_start=6596
-  _FILTERWARRANT._serialized_end=7421
-  _MARKETTRADEPERIODRESPONSE._serialized_start=7423
-  _MARKETTRADEPERIODRESPONSE._serialized_end=7543
-  _MARKETTRADEPERIOD._serialized_start=7545
-  _MARKETTRADEPERIOD._serialized_end=7662
-  _TRADEPERIOD._serialized_start=7665
-  _TRADEPERIOD._serialized_end=7807
-  _SUBSCRIPTIONREQUEST._serialized_start=7809
-  _SUBSCRIPTIONREQUEST._serialized_end=7830
-  _SUBSCRIPTIONRESPONSE._serialized_start=7832
-  _SUBSCRIPTIONRESPONSE._serialized_end=7918
-  _SUBTYPELIST._serialized_start=7920
-  _SUBTYPELIST._serialized_end=8017
-  _SUBSCRIBEREQUEST._serialized_start=8020
-  _SUBSCRIBEREQUEST._serialized_end=8158
-  _UNSUBSCRIBEREQUEST._serialized_start=8161
-  _UNSUBSCRIBEREQUEST._serialized_end=8294
-  _UNSUBSCRIBERESPONSE._serialized_start=8296
-  _UNSUBSCRIBERESPONSE._serialized_end=8317
-  _PUSHQUOTE._serialized_start=8320
-  _PUSHQUOTE._serialized_end=8699
-  _PUSHDEPTH._serialized_start=8702
-  _PUSHDEPTH._serialized_end=8863
-  _PUSHBROKERS._serialized_start=8866
-  _PUSHBROKERS._serialized_end=9063
-  _PUSHTRADE._serialized_start=9065
-  _PUSHTRADE._serialized_end=9181
-  _MARKETTRADEDAYREQUEST._serialized_start=9183
-  _MARKETTRADEDAYREQUEST._serialized_end=9280
-  _MARKETTRADEDAYRESPONSE._serialized_start=9282
-  _MARKETTRADEDAYRESPONSE._serialized_end=9373
+  _STATICINFO._serialized_end=750
+  _SECURITYQUOTERESPONSE._serialized_start=752
+  _SECURITYQUOTERESPONSE._serialized_end=845
+  _SECURITYQUOTE._serialized_start=848
+  _SECURITYQUOTE._serialized_end=1321
+  _PREPOSTQUOTE._serialized_start=1324
+  _PREPOSTQUOTE._serialized_end=1518
+  _OPTIONQUOTERESPONSE._serialized_start=1520
+  _OPTIONQUOTERESPONSE._serialized_end=1609
+  _OPTIONQUOTE._serialized_start=1612
+  _OPTIONQUOTE._serialized_end=1996
+  _OPTIONEXTEND._serialized_start=1999
+  _OPTIONEXTEND._serialized_end=2416
+  _WARRANTQUOTERESPONSE._serialized_start=2418
+  _WARRANTQUOTERESPONSE._serialized_end=2509
+  _WARRANTQUOTE._serialized_start=2512
+  _WARRANTQUOTE._serialized_end=2900
+  _WARRANTEXTEND._serialized_start=2903
+  _WARRANTEXTEND._serialized_end=3398
+  _SECURITYDEPTHRESPONSE._serialized_start=3401
+  _SECURITYDEPTHRESPONSE._serialized_end=3546
+  _DEPTH._serialized_start=3548
+  _DEPTH._serialized_end=3658
+  _SECURITYBROKERSRESPONSE._serialized_start=3661
+  _SECURITYBROKERSRESPONSE._serialized_end=3842
+  _BROKERS._serialized_start=3844
+  _BROKERS._serialized_end=3912
+  _PARTICIPANTBROKERIDSRESPONSE._serialized_start=3915
+  _PARTICIPANTBROKERIDSRESPONSE._serialized_end=4048
+  _PARTICIPANTINFO._serialized_start=4051
+  _PARTICIPANTINFO._serialized_end=4243
+  _SECURITYTRADEREQUEST._serialized_start=4245
+  _SECURITYTRADEREQUEST._serialized_end=4313
+  _SECURITYTRADERESPONSE._serialized_start=4315
+  _SECURITYTRADERESPONSE._serialized_end=4417
+  _TRADE._serialized_start=4420
+  _TRADE._serialized_end=4639
+  _SECURITYINTRADAYREQUEST._serialized_start=4641
+  _SECURITYINTRADAYREQUEST._serialized_end=4690
+  _SECURITYINTRADAYRESPONSE._serialized_start=4692
+  _SECURITYINTRADAYRESPONSE._serialized_end=4794
+  _LINE._serialized_start=4797
+  _LINE._serialized_end=4936
+  _SECURITYCANDLESTICKREQUEST._serialized_start=4939
+  _SECURITYCANDLESTICKREQUEST._serialized_end=5138
+  _SECURITYCANDLESTICKRESPONSE._serialized_start=5140
+  _SECURITYCANDLESTICKRESPONSE._serialized_end=5266
+  _CANDLESTICK._serialized_start=5269
+  _CANDLESTICK._serialized_end=5444
+  _OPTIONCHAINDATELISTRESPONSE._serialized_start=5446
+  _OPTIONCHAINDATELISTRESPONSE._serialized_end=5508
+  _OPTIONCHAINDATESTRIKEINFOREQUEST._serialized_start=5510
+  _OPTIONCHAINDATESTRIKEINFOREQUEST._serialized_end=5601
+  _OPTIONCHAINDATESTRIKEINFORESPONSE._serialized_start=5603
+  _OPTIONCHAINDATESTRIKEINFORESPONSE._serialized_end=5723
+  _STRIKEPRICEINFO._serialized_start=5726
+  _STRIKEPRICEINFO._serialized_end=5857
+  _ISSUERINFORESPONSE._serialized_start=5859
+  _ISSUERINFORESPONSE._serialized_end=5948
+  _ISSUERINFO._serialized_start=5950
+  _ISSUERINFO._serialized_end=6053
+  _WARRANTFILTERLISTREQUEST._serialized_start=6056
+  _WARRANTFILTERLISTREQUEST._serialized_end=6209
+  _FILTERCONFIG._serialized_start=6212
+  _FILTERCONFIG._serialized_end=6478
+  _WARRANTFILTERLISTRESPONSE._serialized_start=6481
+  _WARRANTFILTERLISTRESPONSE._serialized_end=6615
+  _FILTERWARRANT._serialized_start=6618
+  _FILTERWARRANT._serialized_end=7443
+  _MARKETTRADEPERIODRESPONSE._serialized_start=7445
+  _MARKETTRADEPERIODRESPONSE._serialized_end=7565
+  _MARKETTRADEPERIOD._serialized_start=7567
+  _MARKETTRADEPERIOD._serialized_end=7684
+  _TRADEPERIOD._serialized_start=7687
+  _TRADEPERIOD._serialized_end=7829
+  _SUBSCRIPTIONREQUEST._serialized_start=7831
+  _SUBSCRIPTIONREQUEST._serialized_end=7852
+  _SUBSCRIPTIONRESPONSE._serialized_start=7854
+  _SUBSCRIPTIONRESPONSE._serialized_end=7940
+  _SUBTYPELIST._serialized_start=7942
+  _SUBTYPELIST._serialized_end=8039
+  _SUBSCRIBEREQUEST._serialized_start=8042
+  _SUBSCRIBEREQUEST._serialized_end=8180
+  _UNSUBSCRIBEREQUEST._serialized_start=8183
+  _UNSUBSCRIBEREQUEST._serialized_end=8316
+  _UNSUBSCRIBERESPONSE._serialized_start=8318
+  _UNSUBSCRIBERESPONSE._serialized_end=8339
+  _PUSHQUOTE._serialized_start=8342
+  _PUSHQUOTE._serialized_end=8803
+  _PUSHDEPTH._serialized_start=8806
+  _PUSHDEPTH._serialized_end=8967
+  _PUSHBROKERS._serialized_start=8970
+  _PUSHBROKERS._serialized_end=9167
+  _PUSHTRADE._serialized_start=9169
+  _PUSHTRADE._serialized_end=9285
+  _MARKETTRADEDAYREQUEST._serialized_start=9287
+  _MARKETTRADEDAYREQUEST._serialized_end=9384
+  _MARKETTRADEDAYRESPONSE._serialized_start=9386
+  _MARKETTRADEDAYRESPONSE._serialized_end=9477
+  _CAPITALFLOWINTRADAYREQUEST._serialized_start=9479
+  _CAPITALFLOWINTRADAYREQUEST._serialized_end=9531
+  _CAPITALFLOWINTRADAYRESPONSE._serialized_start=9534
+  _CAPITALFLOWINTRADAYRESPONSE._serialized_end=9775
+  _CAPITALFLOWINTRADAYRESPONSE_CAPITALFLOWLINE._serialized_start=9704
+  _CAPITALFLOWINTRADAYRESPONSE_CAPITALFLOWLINE._serialized_end=9775
+  _CAPITALDISTRIBUTIONRESPONSE._serialized_start=9778
+  _CAPITALDISTRIBUTIONRESPONSE._serialized_end=10162
+  _CAPITALDISTRIBUTIONRESPONSE_CAPITALDISTRIBUTION._serialized_start=10073
+  _CAPITALDISTRIBUTIONRESPONSE_CAPITALDISTRIBUTION._serialized_end=10162
+  _SECURITYCALCQUOTEREQUEST._serialized_start=10164
+  _SECURITYCALCQUOTEREQUEST._serialized_end=10282
+  _SECURITYCALCINDEX._serialized_start=10285
+  _SECURITYCALCINDEX._serialized_end=11762
+  _SECURITYCALCQUOTERESPONSE._serialized_start=11764
+  _SECURITYCALCQUOTERESPONSE._serialized_end=11882
 # @@protoc_insertion_point(module_scope)
