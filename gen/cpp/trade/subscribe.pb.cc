@@ -16,95 +16,103 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace longbridgeapp {
 namespace trade {
 namespace v1 {
-constexpr Sub::Sub(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : topics_(){}
+PROTOBUF_CONSTEXPR Sub::Sub(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.topics_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct SubDefaultTypeInternal {
-  constexpr SubDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubDefaultTypeInternal() {}
   union {
     Sub _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SubDefaultTypeInternal _Sub_default_instance_;
-constexpr SubResponse_Fail::SubResponse_Fail(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : topic_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , reason_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubDefaultTypeInternal _Sub_default_instance_;
+PROTOBUF_CONSTEXPR SubResponse_Fail::SubResponse_Fail(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.topic_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.reason_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct SubResponse_FailDefaultTypeInternal {
-  constexpr SubResponse_FailDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubResponse_FailDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubResponse_FailDefaultTypeInternal() {}
   union {
     SubResponse_Fail _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
-constexpr SubResponse::SubResponse(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : success_()
-  , fail_()
-  , current_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
+PROTOBUF_CONSTEXPR SubResponse::SubResponse(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.success_)*/{}
+  , /*decltype(_impl_.fail_)*/{}
+  , /*decltype(_impl_.current_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct SubResponseDefaultTypeInternal {
-  constexpr SubResponseDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubResponseDefaultTypeInternal() {}
   union {
     SubResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SubResponseDefaultTypeInternal _SubResponse_default_instance_;
-constexpr Unsub::Unsub(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : topics_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponseDefaultTypeInternal _SubResponse_default_instance_;
+PROTOBUF_CONSTEXPR Unsub::Unsub(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.topics_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct UnsubDefaultTypeInternal {
-  constexpr UnsubDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UnsubDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~UnsubDefaultTypeInternal() {}
   union {
     Unsub _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UnsubDefaultTypeInternal _Unsub_default_instance_;
-constexpr UnsubResponse::UnsubResponse(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : current_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubDefaultTypeInternal _Unsub_default_instance_;
+PROTOBUF_CONSTEXPR UnsubResponse::UnsubResponse(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.current_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct UnsubResponseDefaultTypeInternal {
-  constexpr UnsubResponseDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UnsubResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~UnsubResponseDefaultTypeInternal() {}
   union {
     UnsubResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
-constexpr Notification::Notification(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : topic_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , content_type_(0)
-
-  , dispatch_type_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
+PROTOBUF_CONSTEXPR Notification::Notification(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.topic_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.content_type_)*/0
+  , /*decltype(_impl_.dispatch_type_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct NotificationDefaultTypeInternal {
-  constexpr NotificationDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR NotificationDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~NotificationDefaultTypeInternal() {}
   union {
     Notification _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT NotificationDefaultTypeInternal _Notification_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NotificationDefaultTypeInternal _Notification_default_instance_;
 }  // namespace v1
 }  // namespace trade
 }  // namespace longbridgeapp
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_trade_2fsubscribe_2eproto[6];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_trade_2fsubscribe_2eproto[3];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_trade_2fsubscribe_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_trade_2fsubscribe_2eproto[6];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_trade_2fsubscribe_2eproto[3];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_trade_2fsubscribe_2eproto = nullptr;
 
 const uint32_t TableStruct_trade_2fsubscribe_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -113,50 +121,50 @@ const uint32_t TableStruct_trade_2fsubscribe_2eproto::offsets[] PROTOBUF_SECTION
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Sub, topics_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Sub, _impl_.topics_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, topic_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, reason_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _impl_.topic_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _impl_.reason_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, success_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, fail_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, current_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.success_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.fail_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.current_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Unsub, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Unsub, topics_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Unsub, _impl_.topics_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::UnsubResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::UnsubResponse, current_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::UnsubResponse, _impl_.current_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, topic_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, content_type_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, dispatch_type_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, data_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.topic_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.content_type_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.dispatch_type_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.data_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, -1, sizeof(::longbridgeapp::trade::v1::Sub)},
   { 7, -1, -1, sizeof(::longbridgeapp::trade::v1::SubResponse_Fail)},
   { 15, -1, -1, sizeof(::longbridgeapp::trade::v1::SubResponse)},
@@ -165,13 +173,13 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 38, -1, -1, sizeof(::longbridgeapp::trade::v1::Notification)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_Sub_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_SubResponse_Fail_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_SubResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_Unsub_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_UnsubResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::trade::v1::_Notification_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::longbridgeapp::trade::v1::_Sub_default_instance_._instance,
+  &::longbridgeapp::trade::v1::_SubResponse_Fail_default_instance_._instance,
+  &::longbridgeapp::trade::v1::_SubResponse_default_instance_._instance,
+  &::longbridgeapp::trade::v1::_Unsub_default_instance_._instance,
+  &::longbridgeapp::trade::v1::_UnsubResponse_default_instance_._instance,
+  &::longbridgeapp::trade::v1::_Notification_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_trade_2fsubscribe_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -202,19 +210,21 @@ const char descriptor_table_protodef_trade_2fsubscribe_2eproto[] PROTOBUF_SECTIO
   "pp\\Trade\\V1\\GPBMetadata\352\002\030Longbridgeapp:"
   ":Trade::V1b\006proto3"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_trade_2fsubscribe_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_trade_2fsubscribe_2eproto = {
-  false, false, 1018, descriptor_table_protodef_trade_2fsubscribe_2eproto, "trade/subscribe.proto", 
-  &descriptor_table_trade_2fsubscribe_2eproto_once, nullptr, 0, 6,
-  schemas, file_default_instances, TableStruct_trade_2fsubscribe_2eproto::offsets,
-  file_level_metadata_trade_2fsubscribe_2eproto, file_level_enum_descriptors_trade_2fsubscribe_2eproto, file_level_service_descriptors_trade_2fsubscribe_2eproto,
+static ::_pbi::once_flag descriptor_table_trade_2fsubscribe_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_trade_2fsubscribe_2eproto = {
+    false, false, 1018, descriptor_table_protodef_trade_2fsubscribe_2eproto,
+    "trade/subscribe.proto",
+    &descriptor_table_trade_2fsubscribe_2eproto_once, nullptr, 0, 6,
+    schemas, file_default_instances, TableStruct_trade_2fsubscribe_2eproto::offsets,
+    file_level_metadata_trade_2fsubscribe_2eproto, file_level_enum_descriptors_trade_2fsubscribe_2eproto,
+    file_level_service_descriptors_trade_2fsubscribe_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_trade_2fsubscribe_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_trade_2fsubscribe_2eproto_getter() {
   return &descriptor_table_trade_2fsubscribe_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_trade_2fsubscribe_2eproto(&descriptor_table_trade_2fsubscribe_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_trade_2fsubscribe_2eproto(&descriptor_table_trade_2fsubscribe_2eproto);
 namespace longbridgeapp {
 namespace trade {
 namespace v1 {
@@ -273,43 +283,47 @@ class Sub::_Internal {
 
 Sub::Sub(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  topics_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Sub)
 }
 Sub::Sub(const Sub& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      topics_(from.topics_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Sub* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){from._impl_.topics_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Sub)
 }
 
-inline void Sub::SharedCtor() {
+inline void Sub::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 Sub::~Sub() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Sub)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Sub::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.topics_.~RepeatedPtrField();
 }
 
-void Sub::ArenaDtor(void* object) {
-  Sub* _this = reinterpret_cast< Sub* >(object);
-  (void)_this;
-}
-void Sub::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Sub::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Sub::Clear() {
@@ -318,15 +332,15 @@ void Sub::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  topics_.Clear();
+  _impl_.topics_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Sub::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Sub::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated string topics = 1 [json_name = "topics"];
       case 1:
@@ -335,9 +349,9 @@ const char* Sub::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           do {
             ptr += 1;
             auto str = _internal_add_topics();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.Sub.topics"));
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Sub.topics"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else
@@ -383,7 +397,7 @@ uint8_t* Sub::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Sub)
@@ -400,36 +414,32 @@ size_t Sub::ByteSizeLong() const {
 
   // repeated string topics = 1 [json_name = "topics"];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(topics_.size());
-  for (int i = 0, n = topics_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.topics_.size());
+  for (int i = 0, n = _impl_.topics_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      topics_.Get(i));
+      _impl_.topics_.Get(i));
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Sub::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Sub::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Sub::GetClassData() const { return &_class_data_; }
 
-void Sub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<Sub *>(to)->MergeFrom(
-      static_cast<const Sub &>(from));
-}
 
-
-void Sub::MergeFrom(const Sub& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Sub)
-  GOOGLE_DCHECK_NE(&from, this);
+void Sub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Sub*>(&to_msg);
+  auto& from = static_cast<const Sub&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Sub)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  topics_.MergeFrom(from.topics_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.topics_.MergeFrom(from._impl_.topics_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Sub::CopyFrom(const Sub& from) {
@@ -446,11 +456,11 @@ bool Sub::IsInitialized() const {
 void Sub::InternalSwap(Sub* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  topics_.InternalSwap(&other->topics_);
+  _impl_.topics_.InternalSwap(&other->_impl_.topics_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Sub::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[0]);
 }
@@ -464,66 +474,73 @@ class SubResponse_Fail::_Internal {
 SubResponse_Fail::SubResponse_Fail(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.SubResponse.Fail)
 }
 SubResponse_Fail::SubResponse_Fail(const SubResponse_Fail& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SubResponse_Fail* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){}
+    , decltype(_impl_.reason_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  topic_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    topic_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+    _impl_.topic_.Set("", GetArenaForAllocation());
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_topic().empty()) {
-    topic_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_topic(), 
-      GetArenaForAllocation());
+    _this->_impl_.topic_.Set(from._internal_topic(), 
+      _this->GetArenaForAllocation());
   }
-  reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.reason_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    reason_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+    _impl_.reason_.Set("", GetArenaForAllocation());
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_reason().empty()) {
-    reason_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_reason(), 
-      GetArenaForAllocation());
+    _this->_impl_.reason_.Set(from._internal_reason(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.SubResponse.Fail)
 }
 
-inline void SubResponse_Fail::SharedCtor() {
-topic_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  topic_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  reason_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+inline void SubResponse_Fail::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){}
+    , decltype(_impl_.reason_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.reason_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.reason_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SubResponse_Fail::~SubResponse_Fail() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.SubResponse.Fail)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SubResponse_Fail::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  topic_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  reason_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.topic_.Destroy();
+  _impl_.reason_.Destroy();
 }
 
-void SubResponse_Fail::ArenaDtor(void* object) {
-  SubResponse_Fail* _this = reinterpret_cast< SubResponse_Fail* >(object);
-  (void)_this;
-}
-void SubResponse_Fail::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SubResponse_Fail::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SubResponse_Fail::Clear() {
@@ -532,24 +549,24 @@ void SubResponse_Fail::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  topic_.ClearToEmpty();
-  reason_.ClearToEmpty();
+  _impl_.topic_.ClearToEmpty();
+  _impl_.reason_.ClearToEmpty();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SubResponse_Fail::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SubResponse_Fail::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string topic = 1 [json_name = "topic"];
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_topic();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.topic"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.topic"));
         } else
           goto handle_unusual;
         continue;
@@ -557,9 +574,9 @@ const char* SubResponse_Fail::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_reason();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.reason"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.reason"));
         } else
           goto handle_unusual;
         continue;
@@ -613,7 +630,7 @@ uint8_t* SubResponse_Fail::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.SubResponse.Fail)
@@ -642,35 +659,31 @@ size_t SubResponse_Fail::ByteSizeLong() const {
         this->_internal_reason());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubResponse_Fail::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SubResponse_Fail::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubResponse_Fail::GetClassData() const { return &_class_data_; }
 
-void SubResponse_Fail::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<SubResponse_Fail *>(to)->MergeFrom(
-      static_cast<const SubResponse_Fail &>(from));
-}
 
-
-void SubResponse_Fail::MergeFrom(const SubResponse_Fail& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse.Fail)
-  GOOGLE_DCHECK_NE(&from, this);
+void SubResponse_Fail::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SubResponse_Fail*>(&to_msg);
+  auto& from = static_cast<const SubResponse_Fail&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse.Fail)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_topic().empty()) {
-    _internal_set_topic(from._internal_topic());
+    _this->_internal_set_topic(from._internal_topic());
   }
   if (!from._internal_reason().empty()) {
-    _internal_set_reason(from._internal_reason());
+    _this->_internal_set_reason(from._internal_reason());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SubResponse_Fail::CopyFrom(const SubResponse_Fail& from) {
@@ -690,19 +703,17 @@ void SubResponse_Fail::InternalSwap(SubResponse_Fail* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &topic_, lhs_arena,
-      &other->topic_, rhs_arena
+      &_impl_.topic_, lhs_arena,
+      &other->_impl_.topic_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &reason_, lhs_arena,
-      &other->reason_, rhs_arena
+      &_impl_.reason_, lhs_arena,
+      &other->_impl_.reason_, rhs_arena
   );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SubResponse_Fail::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[1]);
 }
@@ -715,47 +726,53 @@ class SubResponse::_Internal {
 
 SubResponse::SubResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  success_(arena),
-  fail_(arena),
-  current_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.SubResponse)
 }
 SubResponse::SubResponse(const SubResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      success_(from.success_),
-      fail_(from.fail_),
-      current_(from.current_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SubResponse* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.success_){from._impl_.success_}
+    , decltype(_impl_.fail_){from._impl_.fail_}
+    , decltype(_impl_.current_){from._impl_.current_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.SubResponse)
 }
 
-inline void SubResponse::SharedCtor() {
+inline void SubResponse::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.success_){arena}
+    , decltype(_impl_.fail_){arena}
+    , decltype(_impl_.current_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 SubResponse::~SubResponse() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.SubResponse)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SubResponse::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.success_.~RepeatedPtrField();
+  _impl_.fail_.~RepeatedPtrField();
+  _impl_.current_.~RepeatedPtrField();
 }
 
-void SubResponse::ArenaDtor(void* object) {
-  SubResponse* _this = reinterpret_cast< SubResponse* >(object);
-  (void)_this;
-}
-void SubResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SubResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SubResponse::Clear() {
@@ -764,17 +781,17 @@ void SubResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  success_.Clear();
-  fail_.Clear();
-  current_.Clear();
+  _impl_.success_.Clear();
+  _impl_.fail_.Clear();
+  _impl_.current_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SubResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SubResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated string success = 1 [json_name = "success"];
       case 1:
@@ -783,9 +800,9 @@ const char* SubResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           do {
             ptr += 1;
             auto str = _internal_add_success();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.success"));
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.success"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else
@@ -811,9 +828,9 @@ const char* SubResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           do {
             ptr += 1;
             auto str = _internal_add_current();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.current"));
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.current"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else
@@ -859,11 +876,11 @@ uint8_t* SubResponse::_InternalSerialize(
   }
 
   // repeated .longbridgeapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_fail_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_fail_size()); i < n; i++) {
+    const auto& repfield = this->_internal_fail(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_fail(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated string current = 3 [json_name = "current"];
@@ -877,7 +894,7 @@ uint8_t* SubResponse::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.SubResponse)
@@ -894,53 +911,49 @@ size_t SubResponse::ByteSizeLong() const {
 
   // repeated string success = 1 [json_name = "success"];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(success_.size());
-  for (int i = 0, n = success_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.success_.size());
+  for (int i = 0, n = _impl_.success_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      success_.Get(i));
+      _impl_.success_.Get(i));
   }
 
   // repeated .longbridgeapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
   total_size += 1UL * this->_internal_fail_size();
-  for (const auto& msg : this->fail_) {
+  for (const auto& msg : this->_impl_.fail_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated string current = 3 [json_name = "current"];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(current_.size());
-  for (int i = 0, n = current_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.current_.size());
+  for (int i = 0, n = _impl_.current_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      current_.Get(i));
+      _impl_.current_.Get(i));
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubResponse::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SubResponse::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubResponse::GetClassData() const { return &_class_data_; }
 
-void SubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<SubResponse *>(to)->MergeFrom(
-      static_cast<const SubResponse &>(from));
-}
 
-
-void SubResponse::MergeFrom(const SubResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+void SubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SubResponse*>(&to_msg);
+  auto& from = static_cast<const SubResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  success_.MergeFrom(from.success_);
-  fail_.MergeFrom(from.fail_);
-  current_.MergeFrom(from.current_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.success_.MergeFrom(from._impl_.success_);
+  _this->_impl_.fail_.MergeFrom(from._impl_.fail_);
+  _this->_impl_.current_.MergeFrom(from._impl_.current_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SubResponse::CopyFrom(const SubResponse& from) {
@@ -957,13 +970,13 @@ bool SubResponse::IsInitialized() const {
 void SubResponse::InternalSwap(SubResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  success_.InternalSwap(&other->success_);
-  fail_.InternalSwap(&other->fail_);
-  current_.InternalSwap(&other->current_);
+  _impl_.success_.InternalSwap(&other->_impl_.success_);
+  _impl_.fail_.InternalSwap(&other->_impl_.fail_);
+  _impl_.current_.InternalSwap(&other->_impl_.current_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SubResponse::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[2]);
 }
@@ -976,43 +989,47 @@ class Unsub::_Internal {
 
 Unsub::Unsub(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  topics_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Unsub)
 }
 Unsub::Unsub(const Unsub& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      topics_(from.topics_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Unsub* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){from._impl_.topics_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Unsub)
 }
 
-inline void Unsub::SharedCtor() {
+inline void Unsub::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 Unsub::~Unsub() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Unsub)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Unsub::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.topics_.~RepeatedPtrField();
 }
 
-void Unsub::ArenaDtor(void* object) {
-  Unsub* _this = reinterpret_cast< Unsub* >(object);
-  (void)_this;
-}
-void Unsub::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Unsub::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Unsub::Clear() {
@@ -1021,15 +1038,15 @@ void Unsub::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  topics_.Clear();
+  _impl_.topics_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Unsub::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Unsub::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated string topics = 1 [json_name = "topics"];
       case 1:
@@ -1038,9 +1055,9 @@ const char* Unsub::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           do {
             ptr += 1;
             auto str = _internal_add_topics();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.Unsub.topics"));
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Unsub.topics"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else
@@ -1086,7 +1103,7 @@ uint8_t* Unsub::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Unsub)
@@ -1103,36 +1120,32 @@ size_t Unsub::ByteSizeLong() const {
 
   // repeated string topics = 1 [json_name = "topics"];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(topics_.size());
-  for (int i = 0, n = topics_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.topics_.size());
+  for (int i = 0, n = _impl_.topics_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      topics_.Get(i));
+      _impl_.topics_.Get(i));
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Unsub::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Unsub::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Unsub::GetClassData() const { return &_class_data_; }
 
-void Unsub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<Unsub *>(to)->MergeFrom(
-      static_cast<const Unsub &>(from));
-}
 
-
-void Unsub::MergeFrom(const Unsub& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Unsub)
-  GOOGLE_DCHECK_NE(&from, this);
+void Unsub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Unsub*>(&to_msg);
+  auto& from = static_cast<const Unsub&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Unsub)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  topics_.MergeFrom(from.topics_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.topics_.MergeFrom(from._impl_.topics_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Unsub::CopyFrom(const Unsub& from) {
@@ -1149,11 +1162,11 @@ bool Unsub::IsInitialized() const {
 void Unsub::InternalSwap(Unsub* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  topics_.InternalSwap(&other->topics_);
+  _impl_.topics_.InternalSwap(&other->_impl_.topics_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Unsub::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[3]);
 }
@@ -1166,43 +1179,47 @@ class UnsubResponse::_Internal {
 
 UnsubResponse::UnsubResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  current_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.UnsubResponse)
 }
 UnsubResponse::UnsubResponse(const UnsubResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      current_(from.current_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  UnsubResponse* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.current_){from._impl_.current_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.UnsubResponse)
 }
 
-inline void UnsubResponse::SharedCtor() {
+inline void UnsubResponse::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.current_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 UnsubResponse::~UnsubResponse() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.UnsubResponse)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void UnsubResponse::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.current_.~RepeatedPtrField();
 }
 
-void UnsubResponse::ArenaDtor(void* object) {
-  UnsubResponse* _this = reinterpret_cast< UnsubResponse* >(object);
-  (void)_this;
-}
-void UnsubResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void UnsubResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void UnsubResponse::Clear() {
@@ -1211,15 +1228,15 @@ void UnsubResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  current_.Clear();
+  _impl_.current_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* UnsubResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* UnsubResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated string current = 3 [json_name = "current"];
       case 3:
@@ -1228,9 +1245,9 @@ const char* UnsubResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           do {
             ptr += 1;
             auto str = _internal_add_current();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.UnsubResponse.current"));
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.UnsubResponse.current"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else
@@ -1276,7 +1293,7 @@ uint8_t* UnsubResponse::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.UnsubResponse)
@@ -1293,36 +1310,32 @@ size_t UnsubResponse::ByteSizeLong() const {
 
   // repeated string current = 3 [json_name = "current"];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(current_.size());
-  for (int i = 0, n = current_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.current_.size());
+  for (int i = 0, n = _impl_.current_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      current_.Get(i));
+      _impl_.current_.Get(i));
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UnsubResponse::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     UnsubResponse::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UnsubResponse::GetClassData() const { return &_class_data_; }
 
-void UnsubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<UnsubResponse *>(to)->MergeFrom(
-      static_cast<const UnsubResponse &>(from));
-}
 
-
-void UnsubResponse::MergeFrom(const UnsubResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.UnsubResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+void UnsubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<UnsubResponse*>(&to_msg);
+  auto& from = static_cast<const UnsubResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.UnsubResponse)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  current_.MergeFrom(from.current_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.current_.MergeFrom(from._impl_.current_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UnsubResponse::CopyFrom(const UnsubResponse& from) {
@@ -1339,11 +1352,11 @@ bool UnsubResponse::IsInitialized() const {
 void UnsubResponse::InternalSwap(UnsubResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  current_.InternalSwap(&other->current_);
+  _impl_.current_.InternalSwap(&other->_impl_.current_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata UnsubResponse::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[4]);
 }
@@ -1357,73 +1370,80 @@ class Notification::_Internal {
 Notification::Notification(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Notification)
 }
 Notification::Notification(const Notification& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Notification* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){}
+    , decltype(_impl_.data_){}
+    , decltype(_impl_.content_type_){}
+    , decltype(_impl_.dispatch_type_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  topic_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    topic_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+    _impl_.topic_.Set("", GetArenaForAllocation());
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_topic().empty()) {
-    topic_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_topic(), 
-      GetArenaForAllocation());
+    _this->_impl_.topic_.Set(from._internal_topic(), 
+      _this->GetArenaForAllocation());
   }
-  data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.data_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    data_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+    _impl_.data_.Set("", GetArenaForAllocation());
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_data().empty()) {
-    data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.data_.Set(from._internal_data(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&content_type_, &from.content_type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dispatch_type_) -
-    reinterpret_cast<char*>(&content_type_)) + sizeof(dispatch_type_));
+  ::memcpy(&_impl_.content_type_, &from._impl_.content_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.dispatch_type_) -
+    reinterpret_cast<char*>(&_impl_.content_type_)) + sizeof(_impl_.dispatch_type_));
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Notification)
 }
 
-inline void Notification::SharedCtor() {
-topic_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  topic_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  data_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&content_type_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&dispatch_type_) -
-    reinterpret_cast<char*>(&content_type_)) + sizeof(dispatch_type_));
+inline void Notification::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){}
+    , decltype(_impl_.data_){}
+    , decltype(_impl_.content_type_){0}
+    , decltype(_impl_.dispatch_type_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Notification::~Notification() {
   // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Notification)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Notification::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  topic_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.topic_.Destroy();
+  _impl_.data_.Destroy();
 }
 
-void Notification::ArenaDtor(void* object) {
-  Notification* _this = reinterpret_cast< Notification* >(object);
-  (void)_this;
-}
-void Notification::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Notification::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Notification::Clear() {
@@ -1432,27 +1452,27 @@ void Notification::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  topic_.ClearToEmpty();
-  data_.ClearToEmpty();
-  ::memset(&content_type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&dispatch_type_) -
-      reinterpret_cast<char*>(&content_type_)) + sizeof(dispatch_type_));
+  _impl_.topic_.ClearToEmpty();
+  _impl_.data_.ClearToEmpty();
+  ::memset(&_impl_.content_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.dispatch_type_) -
+      reinterpret_cast<char*>(&_impl_.content_type_)) + sizeof(_impl_.dispatch_type_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Notification::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Notification::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string topic = 1 [json_name = "topic"];
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_topic();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.trade.v1.Notification.topic"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Notification.topic"));
         } else
           goto handle_unusual;
         continue;
@@ -1478,7 +1498,7 @@ const char* Notification::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1525,14 +1545,14 @@ uint8_t* Notification::_InternalSerialize(
   // .longbridgeapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
   if (this->_internal_content_type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       2, this->_internal_content_type(), target);
   }
 
   // .longbridgeapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
   if (this->_internal_dispatch_type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_dispatch_type(), target);
   }
 
@@ -1543,7 +1563,7 @@ uint8_t* Notification::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Notification)
@@ -1575,50 +1595,46 @@ size_t Notification::ByteSizeLong() const {
   // .longbridgeapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
   if (this->_internal_content_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_content_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_content_type());
   }
 
   // .longbridgeapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
   if (this->_internal_dispatch_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dispatch_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_dispatch_type());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Notification::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Notification::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Notification::GetClassData() const { return &_class_data_; }
 
-void Notification::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<Notification *>(to)->MergeFrom(
-      static_cast<const Notification &>(from));
-}
 
-
-void Notification::MergeFrom(const Notification& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Notification)
-  GOOGLE_DCHECK_NE(&from, this);
+void Notification::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Notification*>(&to_msg);
+  auto& from = static_cast<const Notification&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Notification)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_topic().empty()) {
-    _internal_set_topic(from._internal_topic());
+    _this->_internal_set_topic(from._internal_topic());
   }
   if (!from._internal_data().empty()) {
-    _internal_set_data(from._internal_data());
+    _this->_internal_set_data(from._internal_data());
   }
   if (from._internal_content_type() != 0) {
-    _internal_set_content_type(from._internal_content_type());
+    _this->_internal_set_content_type(from._internal_content_type());
   }
   if (from._internal_dispatch_type() != 0) {
-    _internal_set_dispatch_type(from._internal_dispatch_type());
+    _this->_internal_set_dispatch_type(from._internal_dispatch_type());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Notification::CopyFrom(const Notification& from) {
@@ -1638,25 +1654,23 @@ void Notification::InternalSwap(Notification* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &topic_, lhs_arena,
-      &other->topic_, rhs_arena
+      &_impl_.topic_, lhs_arena,
+      &other->_impl_.topic_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &data_, lhs_arena,
-      &other->data_, rhs_arena
+      &_impl_.data_, lhs_arena,
+      &other->_impl_.data_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Notification, dispatch_type_)
-      + sizeof(Notification::dispatch_type_)
-      - PROTOBUF_FIELD_OFFSET(Notification, content_type_)>(
-          reinterpret_cast<char*>(&content_type_),
-          reinterpret_cast<char*>(&other->content_type_));
+      PROTOBUF_FIELD_OFFSET(Notification, _impl_.dispatch_type_)
+      + sizeof(Notification::_impl_.dispatch_type_)
+      - PROTOBUF_FIELD_OFFSET(Notification, _impl_.content_type_)>(
+          reinterpret_cast<char*>(&_impl_.content_type_),
+          reinterpret_cast<char*>(&other->_impl_.content_type_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Notification::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[5]);
 }
@@ -1666,22 +1680,28 @@ void Notification::InternalSwap(Notification* other) {
 }  // namespace trade
 }  // namespace longbridgeapp
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Sub* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Sub >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Sub*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Sub >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Sub >(arena);
 }
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse_Fail* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse_Fail >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse_Fail*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse_Fail >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::SubResponse_Fail >(arena);
 }
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::SubResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Unsub* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Unsub >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Unsub*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Unsub >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Unsub >(arena);
 }
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::UnsubResponse* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::UnsubResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::UnsubResponse*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::UnsubResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::UnsubResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Notification* Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Notification >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Notification*
+Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Notification >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Notification >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

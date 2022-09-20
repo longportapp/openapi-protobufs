@@ -37,6 +37,8 @@ message AuthRequest {
 message AuthResponse {
   string session_id = 1;
   int64 expires = 2;
+  uint32 limit = 3;
+  uint32 online = 4;
 }
 
 message ReconnectRequest {
@@ -46,4 +48,6 @@ message ReconnectRequest {
 message ReconnectResponse {
   string session_id = 1;
   int64 expires = 2;
+  uint32 limit = 3;
+  uint32 online = 4;
 }

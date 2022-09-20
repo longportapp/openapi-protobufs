@@ -16,28 +16,33 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace longbridgeapp {
 namespace control {
 namespace v1 {
-constexpr Error::Error(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : msg_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , code_(uint64_t{0u}){}
+PROTOBUF_CONSTEXPR Error::Error(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.msg_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.code_)*/uint64_t{0u}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ErrorDefaultTypeInternal {
-  constexpr ErrorDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ErrorDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ErrorDefaultTypeInternal() {}
   union {
     Error _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ErrorDefaultTypeInternal _Error_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ErrorDefaultTypeInternal _Error_default_instance_;
 }  // namespace v1
 }  // namespace control
 }  // namespace longbridgeapp
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_control_2ferror_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_control_2ferror_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_control_2ferror_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_control_2ferror_2eproto[1];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_control_2ferror_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_control_2ferror_2eproto = nullptr;
 
 const uint32_t TableStruct_control_2ferror_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
@@ -46,15 +51,15 @@ const uint32_t TableStruct_control_2ferror_2eproto::offsets[] PROTOBUF_SECTION_V
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Error, code_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Error, msg_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Error, _impl_.code_),
+  PROTOBUF_FIELD_OFFSET(::longbridgeapp::control::v1::Error, _impl_.msg_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, -1, sizeof(::longbridgeapp::control::v1::Error)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::longbridgeapp::control::v1::_Error_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::longbridgeapp::control::v1::_Error_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_control_2ferror_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -68,19 +73,21 @@ const char descriptor_table_protodef_control_2ferror_2eproto[] PROTOBUF_SECTION_
   "dgeapp\\Control\\V1\\GPBMetadata\352\002\032Longbrid"
   "geapp::Control::V1b\006proto3"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_control_2ferror_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_control_2ferror_2eproto = {
-  false, false, 346, descriptor_table_protodef_control_2ferror_2eproto, "control/error.proto", 
-  &descriptor_table_control_2ferror_2eproto_once, nullptr, 0, 1,
-  schemas, file_default_instances, TableStruct_control_2ferror_2eproto::offsets,
-  file_level_metadata_control_2ferror_2eproto, file_level_enum_descriptors_control_2ferror_2eproto, file_level_service_descriptors_control_2ferror_2eproto,
+static ::_pbi::once_flag descriptor_table_control_2ferror_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_control_2ferror_2eproto = {
+    false, false, 346, descriptor_table_protodef_control_2ferror_2eproto,
+    "control/error.proto",
+    &descriptor_table_control_2ferror_2eproto_once, nullptr, 0, 1,
+    schemas, file_default_instances, TableStruct_control_2ferror_2eproto::offsets,
+    file_level_metadata_control_2ferror_2eproto, file_level_enum_descriptors_control_2ferror_2eproto,
+    file_level_service_descriptors_control_2ferror_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_control_2ferror_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_control_2ferror_2eproto_getter() {
   return &descriptor_table_control_2ferror_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_control_2ferror_2eproto(&descriptor_table_control_2ferror_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_control_2ferror_2eproto(&descriptor_table_control_2ferror_2eproto);
 namespace longbridgeapp {
 namespace control {
 namespace v1 {
@@ -94,55 +101,61 @@ class Error::_Internal {
 Error::Error(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:longbridgeapp.control.v1.Error)
 }
 Error::Error(const Error& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Error* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.msg_){}
+    , decltype(_impl_.code_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.msg_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    msg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+    _impl_.msg_.Set("", GetArenaForAllocation());
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_msg().empty()) {
-    msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_msg(), 
-      GetArenaForAllocation());
+    _this->_impl_.msg_.Set(from._internal_msg(), 
+      _this->GetArenaForAllocation());
   }
-  code_ = from.code_;
+  _this->_impl_.code_ = from._impl_.code_;
   // @@protoc_insertion_point(copy_constructor:longbridgeapp.control.v1.Error)
 }
 
-inline void Error::SharedCtor() {
-msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  msg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-code_ = uint64_t{0u};
+inline void Error::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.msg_){}
+    , decltype(_impl_.code_){uint64_t{0u}}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.msg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.msg_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Error::~Error() {
   // @@protoc_insertion_point(destructor:longbridgeapp.control.v1.Error)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Error::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  msg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.msg_.Destroy();
 }
 
-void Error::ArenaDtor(void* object) {
-  Error* _this = reinterpret_cast< Error* >(object);
-  (void)_this;
-}
-void Error::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Error::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Error::Clear() {
@@ -151,21 +164,21 @@ void Error::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  msg_.ClearToEmpty();
-  code_ = uint64_t{0u};
+  _impl_.msg_.ClearToEmpty();
+  _impl_.code_ = uint64_t{0u};
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Error::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Error::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint64 code = 1 [json_name = "code"];
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -174,9 +187,9 @@ const char* Error::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "longbridgeapp.control.v1.Error.msg"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.control.v1.Error.msg"));
         } else
           goto handle_unusual;
         continue;
@@ -212,7 +225,7 @@ uint8_t* Error::_InternalSerialize(
   // uint64 code = 1 [json_name = "code"];
   if (this->_internal_code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_code(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(1, this->_internal_code(), target);
   }
 
   // string msg = 2 [json_name = "msg"];
@@ -226,7 +239,7 @@ uint8_t* Error::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.control.v1.Error)
@@ -250,38 +263,34 @@ size_t Error::ByteSizeLong() const {
 
   // uint64 code = 1 [json_name = "code"];
   if (this->_internal_code() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64SizePlusOne(this->_internal_code());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_code());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Error::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Error::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Error::GetClassData() const { return &_class_data_; }
 
-void Error::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-  static_cast<Error *>(to)->MergeFrom(
-      static_cast<const Error &>(from));
-}
 
-
-void Error::MergeFrom(const Error& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.control.v1.Error)
-  GOOGLE_DCHECK_NE(&from, this);
+void Error::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Error*>(&to_msg);
+  auto& from = static_cast<const Error&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.control.v1.Error)
+  GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_msg().empty()) {
-    _internal_set_msg(from._internal_msg());
+    _this->_internal_set_msg(from._internal_msg());
   }
   if (from._internal_code() != 0) {
-    _internal_set_code(from._internal_code());
+    _this->_internal_set_code(from._internal_code());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Error::CopyFrom(const Error& from) {
@@ -301,15 +310,14 @@ void Error::InternalSwap(Error* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &msg_, lhs_arena,
-      &other->msg_, rhs_arena
+      &_impl_.msg_, lhs_arena,
+      &other->_impl_.msg_, rhs_arena
   );
-  swap(code_, other->code_);
+  swap(_impl_.code_, other->_impl_.code_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Error::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_control_2ferror_2eproto_getter, &descriptor_table_control_2ferror_2eproto_once,
       file_level_metadata_control_2ferror_2eproto[0]);
 }
@@ -319,7 +327,8 @@ void Error::InternalSwap(Error* other) {
 }  // namespace control
 }  // namespace longbridgeapp
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::longbridgeapp::control::v1::Error* Arena::CreateMaybeMessage< ::longbridgeapp::control::v1::Error >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::longbridgeapp::control::v1::Error*
+Arena::CreateMaybeMessage< ::longbridgeapp::control::v1::Error >(Arena* arena) {
   return Arena::CreateMessageInternal< ::longbridgeapp::control::v1::Error >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
