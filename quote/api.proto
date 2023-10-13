@@ -4,39 +4,40 @@ package longbridgeapp.quote.v1;
 
 // 协议指令定义
 enum Command {
-    UNKNOWN_COMMAND = 0;
-    HEART_BEAT = 1;                                 //心跳
-    AUTH = 2;                                       //鉴权
-    RECONNECT = 3;                                  //重新连接
+  UNKNOWN_COMMAND = 0;
+  HEART_BEAT = 1;                                 //心跳
+  AUTH = 2;                                       //鉴权
+  RECONNECT = 3;                                  //重新连接
 
-    Subscription = 5;                               //查询连接的已订阅数据
-    Subscribe = 6;                                  //订阅行情数据
-    Unsubscribe = 7;                                //取消订阅行情数据
+  Subscription = 5;                               //查询连接的已订阅数据
+  Subscribe = 6;                                  //订阅行情数据
+  Unsubscribe = 7;                                //取消订阅行情数据
 
-    QueryMarketTradePeriod = 8;                     //查询各市场的当日交易时段
-    QueryMarketTradeDay = 9;                        //查询交易日
-    QuerySecurityStaticInfo = 10;                   //查询标的基础信息
-    QuerySecurityQuote = 11;                        //查询标的行情(所有标的通用行情)
-    QueryOptionQuote = 12;                          //查询期权行情(仅支持期权)
-    QueryWarrantQuote = 13;                         //查询轮证行情(仅支持轮证)
-    QueryDepth = 14;                                //查询盘口
-    QueryBrokers = 15;                              //查询经纪队列
-    QueryParticipantBrokerIds = 16;                 //查询券商经纪席位
-    QueryTrade = 17;                                //查询成交明细
-    QueryIntraday = 18;                             //查询当日分时
-    QueryCandlestick = 19;                          //查询k线
-    QueryOptionChainDate = 20;                      //查询标的期权链日期列表
-    QueryOptionChainDateStrikeInfo = 21;            //查询标的期权链某日的行权价信息
-    QueryWarrantIssuerInfo = 22;                    //查询轮证发行商对应Id
-    QueryWarrantFilterList = 23;                    //查询轮证筛选列表
-    QueryCapitalFlowIntraday = 24;                  //查询标的的资金流分时
-    QueryCapitalFlowDistribution = 25;              //查询标的资金流大小单
-    QuerySecurityCalcIndex = 26;                    //查询标的指标数据
+  QueryMarketTradePeriod = 8;                     //查询各市场的当日交易时段
+  QueryMarketTradeDay = 9;                        //查询交易日
+  QuerySecurityStaticInfo = 10;                   //查询标的基础信息
+  QuerySecurityQuote = 11;                        //查询标的行情(所有标的通用行情)
+  QueryOptionQuote = 12;                          //查询期权行情(仅支持期权)
+  QueryWarrantQuote = 13;                         //查询轮证行情(仅支持轮证)
+  QueryDepth = 14;                                //查询盘口
+  QueryBrokers = 15;                              //查询经纪队列
+  QueryParticipantBrokerIds = 16;                 //查询券商经纪席位
+  QueryTrade = 17;                                //查询成交明细
+  QueryIntraday = 18;                             //查询当日分时
+  QueryCandlestick = 19;                          //查询k线
+  QueryOptionChainDate = 20;                      //查询标的期权链日期列表
+  QueryOptionChainDateStrikeInfo = 21;            //查询标的期权链某日的行权价信息
+  QueryWarrantIssuerInfo = 22;                    //查询轮证发行商对应Id
+  QueryWarrantFilterList = 23;                    //查询轮证筛选列表
+  QueryCapitalFlowIntraday = 24;                  //查询标的的资金流分时
+  QueryCapitalFlowDistribution = 25;              //查询标的资金流大小单
+  QuerySecurityCalcIndex = 26;                    //查询标的指标数据
+  QueryHistoryCandlestick = 27;                   //查询标的历史 k 线
 
-    PushQuoteData = 101;                                //推送行情
-    PushDepthData = 102;                                //推送盘口
-    PushBrokersData = 103;                              //推送经纪队列
-    PushTradeData = 104;                                //推送成交明细
+  PushQuoteData = 101;                                //推送行情
+  PushDepthData = 102;                                //推送盘口
+  PushBrokersData = 103;                              //推送经纪队列
+  PushTradeData = 104;                                //推送成交明细
 }
 
 message SecurityRequest {
@@ -595,4 +596,39 @@ message SecurityCalcIndex {
 
 message SecurityCalcQuoteResponse {
   repeated SecurityCalcIndex security_calc_index = 1;
+}
+
+enum HistoryCandlestickQueryType {
+  UNKNOWN_QUERY_TYPE = 0;
+  QUERY_BY_OFFSET = 1;
+  QUERY_BY_DATE = 2;
+}
+
+enum Direction {
+  // 老数据, 从最新的数据往历史数据翻页
+  BACKWARD = 0;
+  // 新数据, 从当前数据往最新数据翻页
+  FORWARD = 1;
+}
+
+message SecurityHistoryCandlestickRequest {
+
+  message OffsetQuery {
+    Direction direction = 1;
+    string date = 2;
+    string minute = 3;
+    int32 count = 4;
+  }
+
+  message DateQuery {
+    string start_date = 1;
+    string end_date = 2;
+  }
+
+  string symbol = 1;
+  Period period = 2;
+  AdjustType adjust_type = 3;
+  HistoryCandlestickQueryType query_type = 4;
+  OffsetQuery offset_request = 5;
+  DateQuery date_request = 6;
 }
