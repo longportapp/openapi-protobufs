@@ -4,232 +4,296 @@
 #include "trade/subscribe.pb.h"
 
 #include <algorithm>
-
-#include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/extension_set.h>
-#include <google/protobuf/wire_format_lite.h>
-#include <google/protobuf/descriptor.h>
-#include <google/protobuf/generated_message_reflection.h>
-#include <google/protobuf/reflection_ops.h>
-#include <google/protobuf/wire_format.h>
+#include "google/protobuf/io/coded_stream.h"
+#include "google/protobuf/extension_set.h"
+#include "google/protobuf/wire_format_lite.h"
+#include "google/protobuf/descriptor.h"
+#include "google/protobuf/generated_message_reflection.h"
+#include "google/protobuf/reflection_ops.h"
+#include "google/protobuf/wire_format.h"
+#include "google/protobuf/generated_message_tctable_impl.h"
 // @@protoc_insertion_point(includes)
-#include <google/protobuf/port_def.inc>
 
+// Must be included last.
+#include "google/protobuf/port_def.inc"
 PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
-namespace longbridgeapp {
+namespace _pb = ::google::protobuf;
+namespace _pbi = ::google::protobuf::internal;
+namespace _fl = ::google::protobuf::internal::field_layout;
+namespace longportapp {
 namespace trade {
 namespace v1 {
-PROTOBUF_CONSTEXPR Sub::Sub(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.topics_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR Sub::Sub(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topics_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubDefaultTypeInternal() {}
   union {
     Sub _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubDefaultTypeInternal _Sub_default_instance_;
-PROTOBUF_CONSTEXPR SubResponse_Fail::SubResponse_Fail(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.topic_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.reason_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubDefaultTypeInternal _Sub_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SubResponse_Fail::SubResponse_Fail(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topic_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.reason_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubResponse_FailDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubResponse_FailDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubResponse_FailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubResponse_FailDefaultTypeInternal() {}
   union {
     SubResponse_Fail _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
-PROTOBUF_CONSTEXPR SubResponse::SubResponse(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.success_)*/{}
-  , /*decltype(_impl_.fail_)*/{}
-  , /*decltype(_impl_.current_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SubResponse::SubResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.success_)*/ {},
+      /*decltype(_impl_.fail_)*/ {},
+      /*decltype(_impl_.current_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SubResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubResponseDefaultTypeInternal() {}
   union {
     SubResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponseDefaultTypeInternal _SubResponse_default_instance_;
-PROTOBUF_CONSTEXPR Unsub::Unsub(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.topics_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponseDefaultTypeInternal _SubResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Unsub::Unsub(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topics_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct UnsubDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UnsubDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UnsubDefaultTypeInternal() {}
   union {
     Unsub _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubDefaultTypeInternal _Unsub_default_instance_;
-PROTOBUF_CONSTEXPR UnsubResponse::UnsubResponse(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.current_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubDefaultTypeInternal _Unsub_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UnsubResponse::UnsubResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.current_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct UnsubResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UnsubResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UnsubResponseDefaultTypeInternal() {}
   union {
     UnsubResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
-PROTOBUF_CONSTEXPR Notification::Notification(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.topic_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.content_type_)*/0
-  , /*decltype(_impl_.dispatch_type_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Notification::Notification(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topic_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.data_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.content_type_)*/ 0,
+      /*decltype(_impl_.dispatch_type_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct NotificationDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR NotificationDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR NotificationDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~NotificationDefaultTypeInternal() {}
   union {
     Notification _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NotificationDefaultTypeInternal _Notification_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NotificationDefaultTypeInternal _Notification_default_instance_;
 }  // namespace v1
 }  // namespace trade
-}  // namespace longbridgeapp
+}  // namespace longportapp
 static ::_pb::Metadata file_level_metadata_trade_2fsubscribe_2eproto[6];
 static const ::_pb::EnumDescriptor* file_level_enum_descriptors_trade_2fsubscribe_2eproto[3];
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_trade_2fsubscribe_2eproto = nullptr;
-
-const uint32_t TableStruct_trade_2fsubscribe_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Sub, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Sub, _impl_.topics_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _impl_.topic_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse_Fail, _impl_.reason_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.success_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.fail_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::SubResponse, _impl_.current_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Unsub, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Unsub, _impl_.topics_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::UnsubResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::UnsubResponse, _impl_.current_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.topic_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.content_type_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.dispatch_type_),
-  PROTOBUF_FIELD_OFFSET(::longbridgeapp::trade::v1::Notification, _impl_.data_),
+static constexpr const ::_pb::ServiceDescriptor**
+    file_level_service_descriptors_trade_2fsubscribe_2eproto = nullptr;
+const ::uint32_t TableStruct_trade_2fsubscribe_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
+    protodesc_cold) = {
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Sub, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Sub, _impl_.topics_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse_Fail, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse_Fail, _impl_.topic_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse_Fail, _impl_.reason_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse, _impl_.success_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse, _impl_.fail_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::SubResponse, _impl_.current_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Unsub, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Unsub, _impl_.topics_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::UnsubResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::UnsubResponse, _impl_.current_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Notification, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Notification, _impl_.topic_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Notification, _impl_.content_type_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Notification, _impl_.dispatch_type_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::trade::v1::Notification, _impl_.data_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::longbridgeapp::trade::v1::Sub)},
-  { 7, -1, -1, sizeof(::longbridgeapp::trade::v1::SubResponse_Fail)},
-  { 15, -1, -1, sizeof(::longbridgeapp::trade::v1::SubResponse)},
-  { 24, -1, -1, sizeof(::longbridgeapp::trade::v1::Unsub)},
-  { 31, -1, -1, sizeof(::longbridgeapp::trade::v1::UnsubResponse)},
-  { 38, -1, -1, sizeof(::longbridgeapp::trade::v1::Notification)},
+
+static const ::_pbi::MigrationSchema
+    schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+        {0, -1, -1, sizeof(::longportapp::trade::v1::Sub)},
+        {9, -1, -1, sizeof(::longportapp::trade::v1::SubResponse_Fail)},
+        {19, -1, -1, sizeof(::longportapp::trade::v1::SubResponse)},
+        {30, -1, -1, sizeof(::longportapp::trade::v1::Unsub)},
+        {39, -1, -1, sizeof(::longportapp::trade::v1::UnsubResponse)},
+        {48, -1, -1, sizeof(::longportapp::trade::v1::Notification)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::longbridgeapp::trade::v1::_Sub_default_instance_._instance,
-  &::longbridgeapp::trade::v1::_SubResponse_Fail_default_instance_._instance,
-  &::longbridgeapp::trade::v1::_SubResponse_default_instance_._instance,
-  &::longbridgeapp::trade::v1::_Unsub_default_instance_._instance,
-  &::longbridgeapp::trade::v1::_UnsubResponse_default_instance_._instance,
-  &::longbridgeapp::trade::v1::_Notification_default_instance_._instance,
+    &::longportapp::trade::v1::_Sub_default_instance_._instance,
+    &::longportapp::trade::v1::_SubResponse_Fail_default_instance_._instance,
+    &::longportapp::trade::v1::_SubResponse_default_instance_._instance,
+    &::longportapp::trade::v1::_Unsub_default_instance_._instance,
+    &::longportapp::trade::v1::_UnsubResponse_default_instance_._instance,
+    &::longportapp::trade::v1::_Notification_default_instance_._instance,
 };
-
-const char descriptor_table_protodef_trade_2fsubscribe_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\025trade/subscribe.proto\022\026longbridgeapp.t"
-  "rade.v1\"\035\n\003Sub\022\026\n\006topics\030\001 \003(\tR\006topics\"\265"
-  "\001\n\013SubResponse\022\030\n\007success\030\001 \003(\tR\007success"
-  "\022<\n\004fail\030\002 \003(\0132(.longbridgeapp.trade.v1."
-  "SubResponse.FailR\004fail\022\030\n\007current\030\003 \003(\tR"
-  "\007current\0324\n\004Fail\022\024\n\005topic\030\001 \001(\tR\005topic\022\026"
-  "\n\006reason\030\002 \001(\tR\006reason\"\037\n\005Unsub\022\026\n\006topic"
-  "s\030\001 \003(\tR\006topics\")\n\rUnsubResponse\022\030\n\007curr"
-  "ent\030\003 \003(\tR\007current\"\313\001\n\014Notification\022\024\n\005t"
-  "opic\030\001 \001(\tR\005topic\022F\n\014content_type\030\002 \001(\0162"
-  "#.longbridgeapp.trade.v1.ContentTypeR\013co"
-  "ntentType\022I\n\rdispatch_type\030\003 \001(\0162$.longb"
-  "ridgeapp.trade.v1.DispatchTypeR\014dispatch"
-  "Type\022\022\n\004data\030\004 \001(\014R\004data*F\n\007Command\022\017\n\013C"
-  "MD_UNKNOWN\020\000\022\013\n\007CMD_SUB\020\020\022\r\n\tCMD_UNSUB\020\021"
-  "\022\016\n\nCMD_NOTIFY\020\022*S\n\014DispatchType\022\026\n\022DISP"
-  "ATCH_UNDEFINED\020\000\022\023\n\017DISPATCH_DIRECT\020\001\022\026\n"
-  "\022DISPATCH_BROADCAST\020\002*I\n\013ContentType\022\025\n\021"
-  "CONTENT_UNDEFINED\020\000\022\020\n\014CONTENT_JSON\020\001\022\021\n"
-  "\rCONTENT_PROTO\020\002B\347\001\n\032com.longbridgeapp.t"
-  "rade.v1B\016SubscribeProtoP\001Z\?github.com/lo"
-  "ngbridgeapp/openapi-protobufs/gen/go/tra"
-  "de;tradev1\242\002\003LTX\252\002\026Longbridgeapp.Trade.V"
-  "1\312\002\026Longbridgeapp\\Trade\\V1\342\002\"Longbridgea"
-  "pp\\Trade\\V1\\GPBMetadata\352\002\030Longbridgeapp:"
-  ":Trade::V1b\006proto3"
-  ;
-static ::_pbi::once_flag descriptor_table_trade_2fsubscribe_2eproto_once;
+const char descriptor_table_protodef_trade_2fsubscribe_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+    "\n\025trade/subscribe.proto\022\024longportapp.tra"
+    "de.v1\"\035\n\003Sub\022\026\n\006topics\030\001 \003(\tR\006topics\"\263\001\n"
+    "\013SubResponse\022\030\n\007success\030\001 \003(\tR\007success\022:"
+    "\n\004fail\030\002 \003(\0132&.longportapp.trade.v1.SubR"
+    "esponse.FailR\004fail\022\030\n\007current\030\003 \003(\tR\007cur"
+    "rent\0324\n\004Fail\022\024\n\005topic\030\001 \001(\tR\005topic\022\026\n\006re"
+    "ason\030\002 \001(\tR\006reason\"\037\n\005Unsub\022\026\n\006topics\030\001 "
+    "\003(\tR\006topics\")\n\rUnsubResponse\022\030\n\007current\030"
+    "\003 \003(\tR\007current\"\307\001\n\014Notification\022\024\n\005topic"
+    "\030\001 \001(\tR\005topic\022D\n\014content_type\030\002 \001(\0162!.lo"
+    "ngportapp.trade.v1.ContentTypeR\013contentT"
+    "ype\022G\n\rdispatch_type\030\003 \001(\0162\".longportapp"
+    ".trade.v1.DispatchTypeR\014dispatchType\022\022\n\004"
+    "data\030\004 \001(\014R\004data*F\n\007Command\022\017\n\013CMD_UNKNO"
+    "WN\020\000\022\013\n\007CMD_SUB\020\020\022\r\n\tCMD_UNSUB\020\021\022\016\n\nCMD_"
+    "NOTIFY\020\022*S\n\014DispatchType\022\026\n\022DISPATCH_UND"
+    "EFINED\020\000\022\023\n\017DISPATCH_DIRECT\020\001\022\026\n\022DISPATC"
+    "H_BROADCAST\020\002*I\n\013ContentType\022\025\n\021CONTENT_"
+    "UNDEFINED\020\000\022\020\n\014CONTENT_JSON\020\001\022\021\n\rCONTENT"
+    "_PROTO\020\002B\333\001\n\030com.longportapp.trade.v1B\016S"
+    "ubscribeProtoP\001Z=github.com/longportapp/"
+    "openapi-protobufs/gen/go/trade;tradev1\242\002"
+    "\003LTX\252\002\024Longportapp.Trade.V1\312\002\024Longportap"
+    "p\\Trade\\V1\342\002 Longportapp\\Trade\\V1\\GPBMet"
+    "adata\352\002\026Longportapp::Trade::V1b\006proto3"
+};
+static ::absl::once_flag descriptor_table_trade_2fsubscribe_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_trade_2fsubscribe_2eproto = {
-    false, false, 1018, descriptor_table_protodef_trade_2fsubscribe_2eproto,
+    false,
+    false,
+    998,
+    descriptor_table_protodef_trade_2fsubscribe_2eproto,
     "trade/subscribe.proto",
-    &descriptor_table_trade_2fsubscribe_2eproto_once, nullptr, 0, 6,
-    schemas, file_default_instances, TableStruct_trade_2fsubscribe_2eproto::offsets,
-    file_level_metadata_trade_2fsubscribe_2eproto, file_level_enum_descriptors_trade_2fsubscribe_2eproto,
+    &descriptor_table_trade_2fsubscribe_2eproto_once,
+    nullptr,
+    0,
+    6,
+    schemas,
+    file_default_instances,
+    TableStruct_trade_2fsubscribe_2eproto::offsets,
+    file_level_metadata_trade_2fsubscribe_2eproto,
+    file_level_enum_descriptors_trade_2fsubscribe_2eproto,
     file_level_service_descriptors_trade_2fsubscribe_2eproto,
 };
+
+// This function exists to be marked as weak.
+// It can significantly speed up compilation by breaking up LLVM's SCC
+// in the .pb.cc translation units. Large translation units see a
+// reduction of more than 35% of walltime for optimized builds. Without
+// the weak attribute all the messages in the file, including all the
+// vtables and everything they use become part of the same SCC through
+// a cycle like:
+// GetMetadata -> descriptor table -> default instances ->
+//   vtables -> GetMetadata
+// By adding a weak function here we break the connection from the
+// individual vtables back into the descriptor table.
 PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_trade_2fsubscribe_2eproto_getter() {
   return &descriptor_table_trade_2fsubscribe_2eproto;
 }
-
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_trade_2fsubscribe_2eproto(&descriptor_table_trade_2fsubscribe_2eproto);
-namespace longbridgeapp {
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2
+static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_trade_2fsubscribe_2eproto(&descriptor_table_trade_2fsubscribe_2eproto);
+namespace longportapp {
 namespace trade {
 namespace v1 {
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Command_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
+const ::google::protobuf::EnumDescriptor* Command_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[0];
 }
 bool Command_IsValid(int value) {
@@ -243,9 +307,8 @@ bool Command_IsValid(int value) {
       return false;
   }
 }
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* DispatchType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
+const ::google::protobuf::EnumDescriptor* DispatchType_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[1];
 }
 bool DispatchType_IsValid(int value) {
@@ -258,9 +321,8 @@ bool DispatchType_IsValid(int value) {
       return false;
   }
 }
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ContentType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
+const ::google::protobuf::EnumDescriptor* ContentType_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[2];
 }
 bool ContentType_IsValid(int value) {
@@ -273,183 +335,167 @@ bool ContentType_IsValid(int value) {
       return false;
   }
 }
-
-
 // ===================================================================
 
 class Sub::_Internal {
  public:
 };
 
-Sub::Sub(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Sub)
+Sub::Sub(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Sub)
 }
-Sub::Sub(const Sub& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Sub* const _this = this; (void)_this;
+Sub::Sub(const Sub& from) : ::google::protobuf::Message() {
+  Sub* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.topics_){from._impl_.topics_}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.topics_){from._impl_.topics_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
 
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Sub)
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Sub)
 }
-
-inline void Sub::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void Sub::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.topics_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.topics_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 Sub::~Sub() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Sub)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.Sub)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void Sub::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.topics_.~RepeatedPtrField();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_topics()->~RepeatedPtrField();
 }
-
 void Sub::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Sub::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.Sub)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void Sub::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Sub)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.topics_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_mutable_topics()->Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* Sub::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated string topics = 1 [json_name = "topics"];
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_topics();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Sub.topics"));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* Sub::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* Sub::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.Sub)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 39, 2> Sub::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_Sub_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // repeated string topics = 1 [json_name = "topics"];
+    {::_pbi::TcParser::FastUR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(Sub, _impl_.topics_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated string topics = 1 [json_name = "topics"];
+    {PROTOBUF_FIELD_OFFSET(Sub, _impl_.topics_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+  }},
+  // no aux_entries
+  {{
+    "\30\6\0\0\0\0\0\0"
+    "longportapp.trade.v1.Sub"
+    "topics"
+  }},
+};
+
+::uint8_t* Sub::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.Sub)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // repeated string topics = 1 [json_name = "topics"];
-  for (int i = 0, n = this->_internal_topics_size(); i < n; i++) {
-    const auto& s = this->_internal_topics(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.Sub.topics");
+  for (int i = 0, n = this->_internal_topics_size(); i < n; ++i) {
+    const auto& s = this->_internal_topics().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.Sub.topics");
     target = stream->WriteString(1, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Sub)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.Sub)
   return target;
 }
 
-size_t Sub::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.Sub)
-  size_t total_size = 0;
+::size_t Sub::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.Sub)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string topics = 1 [json_name = "topics"];
-  total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.topics_.size());
-  for (int i = 0, n = _impl_.topics_.size(); i < n; i++) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      _impl_.topics_.Get(i));
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_topics().size());
+  for (int i = 0, n = _internal_topics().size(); i < n; ++i) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+        _internal_topics().Get(i));
   }
-
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Sub::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData Sub::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     Sub::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Sub::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*Sub::GetClassData() const { return &_class_data_; }
 
 
-void Sub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void Sub::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Sub*>(&to_msg);
   auto& from = static_cast<const Sub&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Sub)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.Sub)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.topics_.MergeFrom(from._impl_.topics_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_mutable_topics()->MergeFrom(from._internal_topics());
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Sub::CopyFrom(const Sub& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.Sub)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.Sub)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Sub::IsInitialized() const {
+PROTOBUF_NOINLINE bool Sub::IsInitialized() const {
   return true;
 }
 
@@ -459,222 +505,205 @@ void Sub::InternalSwap(Sub* other) {
   _impl_.topics_.InternalSwap(&other->_impl_.topics_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Sub::GetMetadata() const {
+::google::protobuf::Metadata Sub::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[0]);
 }
-
 // ===================================================================
 
 class SubResponse_Fail::_Internal {
  public:
 };
 
-SubResponse_Fail::SubResponse_Fail(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.SubResponse.Fail)
+SubResponse_Fail::SubResponse_Fail(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.SubResponse.Fail)
 }
-SubResponse_Fail::SubResponse_Fail(const SubResponse_Fail& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SubResponse_Fail* const _this = this; (void)_this;
+SubResponse_Fail::SubResponse_Fail(const SubResponse_Fail& from) : ::google::protobuf::Message() {
+  SubResponse_Fail* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.topic_){}
-    , decltype(_impl_.reason_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+      decltype(_impl_.topic_){},
+      decltype(_impl_.reason_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
   _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.topic_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_topic().empty()) {
-    _this->_impl_.topic_.Set(from._internal_topic(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.topic_.Set(from._internal_topic(), _this->GetArenaForAllocation());
   }
   _impl_.reason_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.reason_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.reason_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_reason().empty()) {
-    _this->_impl_.reason_.Set(from._internal_reason(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.reason_.Set(from._internal_reason(), _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.SubResponse.Fail)
-}
 
-inline void SubResponse_Fail::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.SubResponse.Fail)
+}
+inline void SubResponse_Fail::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.topic_){}
-    , decltype(_impl_.reason_){}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.topic_){},
+      decltype(_impl_.reason_){},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.topic_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   _impl_.reason_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.reason_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.reason_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 SubResponse_Fail::~SubResponse_Fail() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.SubResponse.Fail)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.SubResponse.Fail)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void SubResponse_Fail::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.topic_.Destroy();
   _impl_.reason_.Destroy();
 }
-
 void SubResponse_Fail::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void SubResponse_Fail::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.SubResponse.Fail)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void SubResponse_Fail::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.SubResponse.Fail)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.topic_.ClearToEmpty();
   _impl_.reason_.ClearToEmpty();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* SubResponse_Fail::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string topic = 1 [json_name = "topic"];
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_topic();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.topic"));
-        } else
-          goto handle_unusual;
-        continue;
-      // string reason = 2 [json_name = "reason"];
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
-          auto str = _internal_mutable_reason();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.Fail.reason"));
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* SubResponse_Fail::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* SubResponse_Fail::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.SubResponse.Fail)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 0, 57, 2> SubResponse_Fail::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_SubResponse_Fail_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // string reason = 2 [json_name = "reason"];
+    {::_pbi::TcParser::FastUS1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(SubResponse_Fail, _impl_.reason_)}},
+    // string topic = 1 [json_name = "topic"];
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(SubResponse_Fail, _impl_.topic_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string topic = 1 [json_name = "topic"];
+    {PROTOBUF_FIELD_OFFSET(SubResponse_Fail, _impl_.topic_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string reason = 2 [json_name = "reason"];
+    {PROTOBUF_FIELD_OFFSET(SubResponse_Fail, _impl_.reason_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\45\5\6\0\0\0\0\0"
+    "longportapp.trade.v1.SubResponse.Fail"
+    "topic"
+    "reason"
+  }},
+};
+
+::uint8_t* SubResponse_Fail::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.SubResponse.Fail)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // string topic = 1 [json_name = "topic"];
   if (!this->_internal_topic().empty()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_topic().data(), static_cast<int>(this->_internal_topic().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.SubResponse.Fail.topic");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_topic(), target);
+    const std::string& _s = this->_internal_topic();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.SubResponse.Fail.topic");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
   // string reason = 2 [json_name = "reason"];
   if (!this->_internal_reason().empty()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_reason().data(), static_cast<int>(this->_internal_reason().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.SubResponse.Fail.reason");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_reason(), target);
+    const std::string& _s = this->_internal_reason();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.SubResponse.Fail.reason");
+    target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.SubResponse.Fail)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.SubResponse.Fail)
   return target;
 }
 
-size_t SubResponse_Fail::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.SubResponse.Fail)
-  size_t total_size = 0;
+::size_t SubResponse_Fail::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.SubResponse.Fail)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string topic = 1 [json_name = "topic"];
   if (!this->_internal_topic().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_topic());
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_topic());
   }
 
   // string reason = 2 [json_name = "reason"];
   if (!this->_internal_reason().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_reason());
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_reason());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubResponse_Fail::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData SubResponse_Fail::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     SubResponse_Fail::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubResponse_Fail::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*SubResponse_Fail::GetClassData() const { return &_class_data_; }
 
 
-void SubResponse_Fail::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void SubResponse_Fail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubResponse_Fail*>(&to_msg);
   auto& from = static_cast<const SubResponse_Fail&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse.Fail)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.SubResponse.Fail)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_topic().empty()) {
@@ -683,17 +712,17 @@ void SubResponse_Fail::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const
   if (!from._internal_reason().empty()) {
     _this->_internal_set_reason(from._internal_reason());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SubResponse_Fail::CopyFrom(const SubResponse_Fail& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.SubResponse.Fail)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.SubResponse.Fail)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SubResponse_Fail::IsInitialized() const {
+PROTOBUF_NOINLINE bool SubResponse_Fail::IsInitialized() const {
   return true;
 }
 
@@ -702,268 +731,230 @@ void SubResponse_Fail::InternalSwap(SubResponse_Fail* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.topic_, lhs_arena,
-      &other->_impl_.topic_, rhs_arena
-  );
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.reason_, lhs_arena,
-      &other->_impl_.reason_, rhs_arena
-  );
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, lhs_arena,
+                                       &other->_impl_.topic_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.reason_, lhs_arena,
+                                       &other->_impl_.reason_, rhs_arena);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata SubResponse_Fail::GetMetadata() const {
+::google::protobuf::Metadata SubResponse_Fail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[1]);
 }
-
 // ===================================================================
 
 class SubResponse::_Internal {
  public:
 };
 
-SubResponse::SubResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.SubResponse)
+SubResponse::SubResponse(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.SubResponse)
 }
-SubResponse::SubResponse(const SubResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SubResponse* const _this = this; (void)_this;
+SubResponse::SubResponse(const SubResponse& from) : ::google::protobuf::Message() {
+  SubResponse* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.success_){from._impl_.success_}
-    , decltype(_impl_.fail_){from._impl_.fail_}
-    , decltype(_impl_.current_){from._impl_.current_}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.success_){from._impl_.success_},
+      decltype(_impl_.fail_){from._impl_.fail_},
+      decltype(_impl_.current_){from._impl_.current_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
 
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.SubResponse)
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.SubResponse)
 }
-
-inline void SubResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void SubResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.success_){arena}
-    , decltype(_impl_.fail_){arena}
-    , decltype(_impl_.current_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.success_){arena},
+      decltype(_impl_.fail_){arena},
+      decltype(_impl_.current_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 SubResponse::~SubResponse() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.SubResponse)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.SubResponse)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void SubResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.success_.~RepeatedPtrField();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_success()->~RepeatedPtrField();
   _impl_.fail_.~RepeatedPtrField();
-  _impl_.current_.~RepeatedPtrField();
+  _internal_mutable_current()->~RepeatedPtrField();
 }
-
 void SubResponse::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void SubResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.SubResponse)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void SubResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.SubResponse)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.success_.Clear();
-  _impl_.fail_.Clear();
-  _impl_.current_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_mutable_success()->Clear();
+  _internal_mutable_fail()->Clear();
+  _internal_mutable_current()->Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* SubResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated string success = 1 [json_name = "success"];
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_success();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.success"));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      // repeated .longbridgeapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_fail(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      // repeated string current = 3 [json_name = "current"];
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_current();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.SubResponse.current"));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* SubResponse::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* SubResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.SubResponse)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 1, 55, 2> SubResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_SubResponse_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // repeated string success = 1 [json_name = "success"];
+    {::_pbi::TcParser::FastUR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.success_)}},
+    // repeated .longportapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
+    {::_pbi::TcParser::FastMtR1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.fail_)}},
+    // repeated string current = 3 [json_name = "current"];
+    {::_pbi::TcParser::FastUR1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.current_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated string success = 1 [json_name = "success"];
+    {PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+    // repeated .longportapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
+    {PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.fail_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // repeated string current = 3 [json_name = "current"];
+    {PROTOBUF_FIELD_OFFSET(SubResponse, _impl_.current_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::longportapp::trade::v1::SubResponse_Fail>()},
+  }}, {{
+    "\40\7\0\7\0\0\0\0"
+    "longportapp.trade.v1.SubResponse"
+    "success"
+    "current"
+  }},
+};
+
+::uint8_t* SubResponse::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.SubResponse)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // repeated string success = 1 [json_name = "success"];
-  for (int i = 0, n = this->_internal_success_size(); i < n; i++) {
-    const auto& s = this->_internal_success(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.SubResponse.success");
+  for (int i = 0, n = this->_internal_success_size(); i < n; ++i) {
+    const auto& s = this->_internal_success().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.SubResponse.success");
     target = stream->WriteString(1, s, target);
   }
 
-  // repeated .longbridgeapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
+  // repeated .longportapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_fail_size()); i < n; i++) {
-    const auto& repfield = this->_internal_fail(i);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    const auto& repfield = this->_internal_fail().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
         InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated string current = 3 [json_name = "current"];
-  for (int i = 0, n = this->_internal_current_size(); i < n; i++) {
-    const auto& s = this->_internal_current(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.SubResponse.current");
+  for (int i = 0, n = this->_internal_current_size(); i < n; ++i) {
+    const auto& s = this->_internal_current().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.SubResponse.current");
     target = stream->WriteString(3, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.SubResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.SubResponse)
   return target;
 }
 
-size_t SubResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.SubResponse)
-  size_t total_size = 0;
+::size_t SubResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.SubResponse)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string success = 1 [json_name = "success"];
-  total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.success_.size());
-  for (int i = 0, n = _impl_.success_.size(); i < n; i++) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      _impl_.success_.Get(i));
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_success().size());
+  for (int i = 0, n = _internal_success().size(); i < n; ++i) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+        _internal_success().Get(i));
   }
-
-  // repeated .longbridgeapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
+  // repeated .longportapp.trade.v1.SubResponse.Fail fail = 2 [json_name = "fail"];
   total_size += 1UL * this->_internal_fail_size();
-  for (const auto& msg : this->_impl_.fail_) {
+  for (const auto& msg : this->_internal_fail()) {
     total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
   }
-
   // repeated string current = 3 [json_name = "current"];
-  total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.current_.size());
-  for (int i = 0, n = _impl_.current_.size(); i < n; i++) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      _impl_.current_.Get(i));
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_current().size());
+  for (int i = 0, n = _internal_current().size(); i < n; ++i) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+        _internal_current().Get(i));
   }
-
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubResponse::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData SubResponse::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     SubResponse::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubResponse::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*SubResponse::GetClassData() const { return &_class_data_; }
 
 
-void SubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void SubResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubResponse*>(&to_msg);
   auto& from = static_cast<const SubResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.SubResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.SubResponse)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.success_.MergeFrom(from._impl_.success_);
-  _this->_impl_.fail_.MergeFrom(from._impl_.fail_);
-  _this->_impl_.current_.MergeFrom(from._impl_.current_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_mutable_success()->MergeFrom(from._internal_success());
+  _this->_internal_mutable_fail()->MergeFrom(from._internal_fail());
+  _this->_internal_mutable_current()->MergeFrom(from._internal_current());
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SubResponse::CopyFrom(const SubResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.SubResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.SubResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SubResponse::IsInitialized() const {
+PROTOBUF_NOINLINE bool SubResponse::IsInitialized() const {
   return true;
 }
 
@@ -975,187 +966,172 @@ void SubResponse::InternalSwap(SubResponse* other) {
   _impl_.current_.InternalSwap(&other->_impl_.current_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata SubResponse::GetMetadata() const {
+::google::protobuf::Metadata SubResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[2]);
 }
-
 // ===================================================================
 
 class Unsub::_Internal {
  public:
 };
 
-Unsub::Unsub(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Unsub)
+Unsub::Unsub(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Unsub)
 }
-Unsub::Unsub(const Unsub& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Unsub* const _this = this; (void)_this;
+Unsub::Unsub(const Unsub& from) : ::google::protobuf::Message() {
+  Unsub* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.topics_){from._impl_.topics_}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.topics_){from._impl_.topics_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
 
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Unsub)
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Unsub)
 }
-
-inline void Unsub::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void Unsub::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.topics_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.topics_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 Unsub::~Unsub() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Unsub)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.Unsub)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void Unsub::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.topics_.~RepeatedPtrField();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_topics()->~RepeatedPtrField();
 }
-
 void Unsub::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Unsub::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.Unsub)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void Unsub::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Unsub)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.topics_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_mutable_topics()->Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* Unsub::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated string topics = 1 [json_name = "topics"];
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_topics();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Unsub.topics"));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* Unsub::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* Unsub::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.Unsub)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 41, 2> Unsub::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_Unsub_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // repeated string topics = 1 [json_name = "topics"];
+    {::_pbi::TcParser::FastUR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(Unsub, _impl_.topics_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated string topics = 1 [json_name = "topics"];
+    {PROTOBUF_FIELD_OFFSET(Unsub, _impl_.topics_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+  }},
+  // no aux_entries
+  {{
+    "\32\6\0\0\0\0\0\0"
+    "longportapp.trade.v1.Unsub"
+    "topics"
+  }},
+};
+
+::uint8_t* Unsub::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.Unsub)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // repeated string topics = 1 [json_name = "topics"];
-  for (int i = 0, n = this->_internal_topics_size(); i < n; i++) {
-    const auto& s = this->_internal_topics(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.Unsub.topics");
+  for (int i = 0, n = this->_internal_topics_size(); i < n; ++i) {
+    const auto& s = this->_internal_topics().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.Unsub.topics");
     target = stream->WriteString(1, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Unsub)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.Unsub)
   return target;
 }
 
-size_t Unsub::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.Unsub)
-  size_t total_size = 0;
+::size_t Unsub::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.Unsub)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string topics = 1 [json_name = "topics"];
-  total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.topics_.size());
-  for (int i = 0, n = _impl_.topics_.size(); i < n; i++) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      _impl_.topics_.Get(i));
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_topics().size());
+  for (int i = 0, n = _internal_topics().size(); i < n; ++i) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+        _internal_topics().Get(i));
   }
-
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Unsub::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData Unsub::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     Unsub::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Unsub::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*Unsub::GetClassData() const { return &_class_data_; }
 
 
-void Unsub::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void Unsub::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Unsub*>(&to_msg);
   auto& from = static_cast<const Unsub&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Unsub)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.Unsub)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.topics_.MergeFrom(from._impl_.topics_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_mutable_topics()->MergeFrom(from._internal_topics());
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Unsub::CopyFrom(const Unsub& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.Unsub)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.Unsub)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Unsub::IsInitialized() const {
+PROTOBUF_NOINLINE bool Unsub::IsInitialized() const {
   return true;
 }
 
@@ -1165,187 +1141,172 @@ void Unsub::InternalSwap(Unsub* other) {
   _impl_.topics_.InternalSwap(&other->_impl_.topics_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Unsub::GetMetadata() const {
+::google::protobuf::Metadata Unsub::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[3]);
 }
-
 // ===================================================================
 
 class UnsubResponse::_Internal {
  public:
 };
 
-UnsubResponse::UnsubResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.UnsubResponse)
+UnsubResponse::UnsubResponse(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.UnsubResponse)
 }
-UnsubResponse::UnsubResponse(const UnsubResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  UnsubResponse* const _this = this; (void)_this;
+UnsubResponse::UnsubResponse(const UnsubResponse& from) : ::google::protobuf::Message() {
+  UnsubResponse* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.current_){from._impl_.current_}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.current_){from._impl_.current_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
 
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.UnsubResponse)
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.UnsubResponse)
 }
-
-inline void UnsubResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void UnsubResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.current_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.current_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 UnsubResponse::~UnsubResponse() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.UnsubResponse)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.UnsubResponse)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void UnsubResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.current_.~RepeatedPtrField();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_current()->~RepeatedPtrField();
 }
-
 void UnsubResponse::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void UnsubResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.UnsubResponse)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void UnsubResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.UnsubResponse)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.current_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_mutable_current()->Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* UnsubResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated string current = 3 [json_name = "current"];
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_current();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.UnsubResponse.current"));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* UnsubResponse::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* UnsubResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.UnsubResponse)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 50, 2> UnsubResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967291,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_UnsubResponse_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // repeated string current = 3 [json_name = "current"];
+    {::_pbi::TcParser::FastUR1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(UnsubResponse, _impl_.current_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated string current = 3 [json_name = "current"];
+    {PROTOBUF_FIELD_OFFSET(UnsubResponse, _impl_.current_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+  }},
+  // no aux_entries
+  {{
+    "\42\7\0\0\0\0\0\0"
+    "longportapp.trade.v1.UnsubResponse"
+    "current"
+  }},
+};
+
+::uint8_t* UnsubResponse::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.UnsubResponse)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // repeated string current = 3 [json_name = "current"];
-  for (int i = 0, n = this->_internal_current_size(); i < n; i++) {
-    const auto& s = this->_internal_current(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.UnsubResponse.current");
+  for (int i = 0, n = this->_internal_current_size(); i < n; ++i) {
+    const auto& s = this->_internal_current().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.UnsubResponse.current");
     target = stream->WriteString(3, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.UnsubResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.UnsubResponse)
   return target;
 }
 
-size_t UnsubResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.UnsubResponse)
-  size_t total_size = 0;
+::size_t UnsubResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.UnsubResponse)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string current = 3 [json_name = "current"];
-  total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.current_.size());
-  for (int i = 0, n = _impl_.current_.size(); i < n; i++) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      _impl_.current_.Get(i));
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_current().size());
+  for (int i = 0, n = _internal_current().size(); i < n; ++i) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+        _internal_current().Get(i));
   }
-
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UnsubResponse::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData UnsubResponse::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     UnsubResponse::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UnsubResponse::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*UnsubResponse::GetClassData() const { return &_class_data_; }
 
 
-void UnsubResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void UnsubResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UnsubResponse*>(&to_msg);
   auto& from = static_cast<const UnsubResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.UnsubResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.UnsubResponse)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.current_.MergeFrom(from._impl_.current_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_mutable_current()->MergeFrom(from._internal_current());
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UnsubResponse::CopyFrom(const UnsubResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.UnsubResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.UnsubResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool UnsubResponse::IsInitialized() const {
+PROTOBUF_NOINLINE bool UnsubResponse::IsInitialized() const {
   return true;
 }
 
@@ -1355,271 +1316,250 @@ void UnsubResponse::InternalSwap(UnsubResponse* other) {
   _impl_.current_.InternalSwap(&other->_impl_.current_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata UnsubResponse::GetMetadata() const {
+::google::protobuf::Metadata UnsubResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[4]);
 }
-
 // ===================================================================
 
 class Notification::_Internal {
  public:
 };
 
-Notification::Notification(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:longbridgeapp.trade.v1.Notification)
+Notification::Notification(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Notification)
 }
-Notification::Notification(const Notification& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Notification* const _this = this; (void)_this;
+Notification::Notification(const Notification& from) : ::google::protobuf::Message() {
+  Notification* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.topic_){}
-    , decltype(_impl_.data_){}
-    , decltype(_impl_.content_type_){}
-    , decltype(_impl_.dispatch_type_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+      decltype(_impl_.topic_){},
+      decltype(_impl_.data_){},
+      decltype(_impl_.content_type_){},
+      decltype(_impl_.dispatch_type_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
   _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.topic_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_topic().empty()) {
-    _this->_impl_.topic_.Set(from._internal_topic(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.topic_.Set(from._internal_topic(), _this->GetArenaForAllocation());
   }
   _impl_.data_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.data_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.data_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_data().empty()) {
-    _this->_impl_.data_.Set(from._internal_data(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.data_.Set(from._internal_data(), _this->GetArenaForAllocation());
   }
   ::memcpy(&_impl_.content_type_, &from._impl_.content_type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.dispatch_type_) -
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.dispatch_type_) -
     reinterpret_cast<char*>(&_impl_.content_type_)) + sizeof(_impl_.dispatch_type_));
-  // @@protoc_insertion_point(copy_constructor:longbridgeapp.trade.v1.Notification)
-}
 
-inline void Notification::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+  // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Notification)
+}
+inline void Notification::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.topic_){}
-    , decltype(_impl_.data_){}
-    , decltype(_impl_.content_type_){0}
-    , decltype(_impl_.dispatch_type_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.topic_){},
+      decltype(_impl_.data_){},
+      decltype(_impl_.content_type_){0},
+      decltype(_impl_.dispatch_type_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.topic_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.topic_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   _impl_.data_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.data_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.data_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 Notification::~Notification() {
-  // @@protoc_insertion_point(destructor:longbridgeapp.trade.v1.Notification)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
+  // @@protoc_insertion_point(destructor:longportapp.trade.v1.Notification)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   SharedDtor();
 }
-
 inline void Notification::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.topic_.Destroy();
   _impl_.data_.Destroy();
 }
-
 void Notification::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Notification::Clear() {
-// @@protoc_insertion_point(message_clear_start:longbridgeapp.trade.v1.Notification)
-  uint32_t cached_has_bits = 0;
+PROTOBUF_NOINLINE void Notification::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Notification)
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.topic_.ClearToEmpty();
   _impl_.data_.ClearToEmpty();
-  ::memset(&_impl_.content_type_, 0, static_cast<size_t>(
+  ::memset(&_impl_.content_type_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.dispatch_type_) -
       reinterpret_cast<char*>(&_impl_.content_type_)) + sizeof(_impl_.dispatch_type_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
-const char* Notification::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string topic = 1 [json_name = "topic"];
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_topic();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "longbridgeapp.trade.v1.Notification.topic"));
-        } else
-          goto handle_unusual;
-        continue;
-      // .longbridgeapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-          _internal_set_content_type(static_cast<::longbridgeapp::trade::v1::ContentType>(val));
-        } else
-          goto handle_unusual;
-        continue;
-      // .longbridgeapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-          _internal_set_dispatch_type(static_cast<::longbridgeapp::trade::v1::DispatchType>(val));
-        } else
-          goto handle_unusual;
-        continue;
-      // bytes data = 4 [json_name = "data"];
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
-          auto str = _internal_mutable_data();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-        } else
-          goto handle_unusual;
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* Notification::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
-uint8_t* Notification::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:longbridgeapp.trade.v1.Notification)
-  uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 4, 0, 47, 2> Notification::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    4, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967280,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    4,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_Notification_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // bytes data = 4 [json_name = "data"];
+    {::_pbi::TcParser::FastBS1,
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(Notification, _impl_.data_)}},
+    // string topic = 1 [json_name = "topic"];
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(Notification, _impl_.topic_)}},
+    // .longportapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(Notification, _impl_.content_type_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(Notification, _impl_.content_type_)}},
+    // .longportapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(Notification, _impl_.dispatch_type_), 63>(),
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(Notification, _impl_.dispatch_type_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string topic = 1 [json_name = "topic"];
+    {PROTOBUF_FIELD_OFFSET(Notification, _impl_.topic_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // .longportapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
+    {PROTOBUF_FIELD_OFFSET(Notification, _impl_.content_type_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // .longportapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
+    {PROTOBUF_FIELD_OFFSET(Notification, _impl_.dispatch_type_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // bytes data = 4 [json_name = "data"];
+    {PROTOBUF_FIELD_OFFSET(Notification, _impl_.data_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBytes | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\41\5\0\0\0\0\0\0"
+    "longportapp.trade.v1.Notification"
+    "topic"
+  }},
+};
+
+::uint8_t* Notification::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.trade.v1.Notification)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
   // string topic = 1 [json_name = "topic"];
   if (!this->_internal_topic().empty()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_topic().data(), static_cast<int>(this->_internal_topic().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "longbridgeapp.trade.v1.Notification.topic");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_topic(), target);
+    const std::string& _s = this->_internal_topic();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.trade.v1.Notification.topic");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // .longbridgeapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
+  // .longportapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
   if (this->_internal_content_type() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
-      2, this->_internal_content_type(), target);
+        2, this->_internal_content_type(), target);
   }
 
-  // .longbridgeapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
+  // .longportapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
   if (this->_internal_dispatch_type() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
-      3, this->_internal_dispatch_type(), target);
+        3, this->_internal_dispatch_type(), target);
   }
 
   // bytes data = 4 [json_name = "data"];
   if (!this->_internal_data().empty()) {
-    target = stream->WriteBytesMaybeAliased(
-        4, this->_internal_data(), target);
+    const std::string& _s = this->_internal_data();
+    target = stream->WriteBytesMaybeAliased(4, _s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:longbridgeapp.trade.v1.Notification)
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.trade.v1.Notification)
   return target;
 }
 
-size_t Notification::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:longbridgeapp.trade.v1.Notification)
-  size_t total_size = 0;
+::size_t Notification::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.trade.v1.Notification)
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string topic = 1 [json_name = "topic"];
   if (!this->_internal_topic().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_topic());
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_topic());
   }
 
   // bytes data = 4 [json_name = "data"];
   if (!this->_internal_data().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-        this->_internal_data());
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::BytesSize(
+                                    this->_internal_data());
   }
 
-  // .longbridgeapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
+  // .longportapp.trade.v1.ContentType content_type = 2 [json_name = "contentType"];
   if (this->_internal_content_type() != 0) {
     total_size += 1 +
-      ::_pbi::WireFormatLite::EnumSize(this->_internal_content_type());
+                  ::_pbi::WireFormatLite::EnumSize(this->_internal_content_type());
   }
 
-  // .longbridgeapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
+  // .longportapp.trade.v1.DispatchType dispatch_type = 3 [json_name = "dispatchType"];
   if (this->_internal_dispatch_type() != 0) {
     total_size += 1 +
-      ::_pbi::WireFormatLite::EnumSize(this->_internal_dispatch_type());
+                  ::_pbi::WireFormatLite::EnumSize(this->_internal_dispatch_type());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Notification::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+const ::google::protobuf::Message::ClassData Notification::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
     Notification::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Notification::GetClassData() const { return &_class_data_; }
+const ::google::protobuf::Message::ClassData*Notification::GetClassData() const { return &_class_data_; }
 
 
-void Notification::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+void Notification::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Notification*>(&to_msg);
   auto& from = static_cast<const Notification&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:longbridgeapp.trade.v1.Notification)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.trade.v1.Notification)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_topic().empty()) {
@@ -1634,17 +1574,17 @@ void Notification::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   if (from._internal_dispatch_type() != 0) {
     _this->_internal_set_dispatch_type(from._internal_dispatch_type());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Notification::CopyFrom(const Notification& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:longbridgeapp.trade.v1.Notification)
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.trade.v1.Notification)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Notification::IsInitialized() const {
+PROTOBUF_NOINLINE bool Notification::IsInitialized() const {
   return true;
 }
 
@@ -1653,15 +1593,11 @@ void Notification::InternalSwap(Notification* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.topic_, lhs_arena,
-      &other->_impl_.topic_, rhs_arena
-  );
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.data_, lhs_arena,
-      &other->_impl_.data_, rhs_arena
-  );
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, lhs_arena,
+                                       &other->_impl_.topic_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.data_, lhs_arena,
+                                       &other->_impl_.data_, rhs_arena);
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Notification, _impl_.dispatch_type_)
       + sizeof(Notification::_impl_.dispatch_type_)
       - PROTOBUF_FIELD_OFFSET(Notification, _impl_.content_type_)>(
@@ -1669,42 +1605,18 @@ void Notification::InternalSwap(Notification* other) {
           reinterpret_cast<char*>(&other->_impl_.content_type_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Notification::GetMetadata() const {
+::google::protobuf::Metadata Notification::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_trade_2fsubscribe_2eproto_getter, &descriptor_table_trade_2fsubscribe_2eproto_once,
       file_level_metadata_trade_2fsubscribe_2eproto[5]);
 }
-
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
 }  // namespace trade
-}  // namespace longbridgeapp
-PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Sub*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Sub >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Sub >(arena);
-}
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse_Fail*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse_Fail >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::SubResponse_Fail >(arena);
-}
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::SubResponse*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::SubResponse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::SubResponse >(arena);
-}
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Unsub*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Unsub >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Unsub >(arena);
-}
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::UnsubResponse*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::UnsubResponse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::UnsubResponse >(arena);
-}
-template<> PROTOBUF_NOINLINE ::longbridgeapp::trade::v1::Notification*
-Arena::CreateMaybeMessage< ::longbridgeapp::trade::v1::Notification >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::longbridgeapp::trade::v1::Notification >(arena);
-}
-PROTOBUF_NAMESPACE_CLOSE
-
+}  // namespace longportapp
+namespace google {
+namespace protobuf {
+}  // namespace protobuf
+}  // namespace google
 // @@protoc_insertion_point(global_scope)
-#include <google/protobuf/port_undef.inc>
+#include "google/protobuf/port_undef.inc"

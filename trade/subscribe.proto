@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package longbridgeapp.trade.v1;
+package longportapp.trade.v1;
 
 // trade gateway command, see: https://open.longbridgeapp.com/docs/trade/trade-push
 enum Command {
@@ -23,7 +23,7 @@ message SubResponse {
   }
   repeated string success = 1; // 订阅成功
   repeated Fail fail = 2; // 订阅失败
-  repeated string current = 3;  // 当前订阅
+  repeated string current = 3; // 当前订阅
 }
 
 // Unsub is Unsub command content, command is 17
