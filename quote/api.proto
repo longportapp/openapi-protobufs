@@ -1,43 +1,42 @@
 syntax = "proto3";
 
-package longbridgeapp.quote.v1;
+package longportapp.quote.v1;
 
 // 协议指令定义
 enum Command {
   UNKNOWN_COMMAND = 0;
-  HEART_BEAT = 1;                                 //心跳
-  AUTH = 2;                                       //鉴权
-  RECONNECT = 3;                                  //重新连接
+  HEART_BEAT = 1; //心跳
+  AUTH = 2; //鉴权
+  RECONNECT = 3; //重新连接
 
-  Subscription = 5;                               //查询连接的已订阅数据
-  Subscribe = 6;                                  //订阅行情数据
-  Unsubscribe = 7;                                //取消订阅行情数据
+  Subscription = 5; //查询连接的已订阅数据
+  Subscribe = 6; //订阅行情数据
+  Unsubscribe = 7; //取消订阅行情数据
+  QueryMarketTradePeriod = 8; //查询各市场的当日交易时段
+  QueryMarketTradeDay = 9; //查询交易日
+  QuerySecurityStaticInfo = 10; //查询标的基础信息
+  QuerySecurityQuote = 11; //查询标的行情(所有标的通用行情)
+  QueryOptionQuote = 12; //查询期权行情(仅支持期权)
+  QueryWarrantQuote = 13; //查询轮证行情(仅支持轮证)
+  QueryDepth = 14; //查询盘口
+  QueryBrokers = 15; //查询经纪队列
+  QueryParticipantBrokerIds = 16; //查询券商经纪席位
+  QueryTrade = 17; //查询成交明细
+  QueryIntraday = 18; //查询当日分时
+  QueryCandlestick = 19; //查询k线
+  QueryOptionChainDate = 20; //查询标的期权链日期列表
+  QueryOptionChainDateStrikeInfo = 21; //查询标的期权链某日的行权价信息
+  QueryWarrantIssuerInfo = 22; //查询轮证发行商对应Id
+  QueryWarrantFilterList = 23; //查询轮证筛选列表
+  QueryCapitalFlowIntraday = 24; //查询标的的资金流分时
+  QueryCapitalFlowDistribution = 25; //查询标的资金流大小单
+  QuerySecurityCalcIndex = 26; //查询标的指标数据
+  QueryHistoryCandlestick = 27; //查询标的历史 k 线
 
-  QueryMarketTradePeriod = 8;                     //查询各市场的当日交易时段
-  QueryMarketTradeDay = 9;                        //查询交易日
-  QuerySecurityStaticInfo = 10;                   //查询标的基础信息
-  QuerySecurityQuote = 11;                        //查询标的行情(所有标的通用行情)
-  QueryOptionQuote = 12;                          //查询期权行情(仅支持期权)
-  QueryWarrantQuote = 13;                         //查询轮证行情(仅支持轮证)
-  QueryDepth = 14;                                //查询盘口
-  QueryBrokers = 15;                              //查询经纪队列
-  QueryParticipantBrokerIds = 16;                 //查询券商经纪席位
-  QueryTrade = 17;                                //查询成交明细
-  QueryIntraday = 18;                             //查询当日分时
-  QueryCandlestick = 19;                          //查询k线
-  QueryOptionChainDate = 20;                      //查询标的期权链日期列表
-  QueryOptionChainDateStrikeInfo = 21;            //查询标的期权链某日的行权价信息
-  QueryWarrantIssuerInfo = 22;                    //查询轮证发行商对应Id
-  QueryWarrantFilterList = 23;                    //查询轮证筛选列表
-  QueryCapitalFlowIntraday = 24;                  //查询标的的资金流分时
-  QueryCapitalFlowDistribution = 25;              //查询标的资金流大小单
-  QuerySecurityCalcIndex = 26;                    //查询标的指标数据
-  QueryHistoryCandlestick = 27;                   //查询标的历史 k 线
-
-  PushQuoteData = 101;                                //推送行情
-  PushDepthData = 102;                                //推送盘口
-  PushBrokersData = 103;                              //推送经纪队列
-  PushTradeData = 104;                                //推送成交明细
+  PushQuoteData = 101; //推送行情
+  PushDepthData = 102; //推送盘口
+  PushBrokersData = 103; //推送经纪队列
+  PushTradeData = 104; //推送成交明细
 }
 
 message SecurityRequest {
@@ -72,7 +71,7 @@ message StaticInfo {
   string board = 17;
 }
 
-message  SecurityQuoteResponse {
+message SecurityQuoteResponse {
   repeated SecurityQuote secu_quote = 1;
 }
 
@@ -104,7 +103,6 @@ enum TradeStatus {
   WARRANT_PREPARE_LIST = 9;
   SUSPEND_TRADE = 10;
 }
-
 
 enum TradeSession {
   NORMAL_TRADE = 0;
@@ -151,7 +149,6 @@ message OptionExtend {
   string direction = 8;
   string historical_volatility = 9;
   string underlying_symbol = 10;
-
 }
 
 message WarrantQuoteResponse {
@@ -177,7 +174,7 @@ message WarrantExtend {
   string expiry_date = 2;
   string last_trade_date = 3;
   string outstanding_ratio = 4;
-  int64  outstanding_qty = 5;
+  int64 outstanding_qty = 5;
   string conversion_ratio = 6;
   string category = 7;
   string strike_price = 8;
@@ -245,7 +242,7 @@ message SecurityIntradayRequest {
   string symbol = 1;
 }
 
-message SecurityIntradayResponse{
+message SecurityIntradayResponse {
   string symbol = 1;
   repeated Line lines = 2;
 }
@@ -315,7 +312,7 @@ message StrikePriceInfo {
   string price = 1;
   string call_symbol = 2;
   string put_symbol = 3;
-  bool  standard = 4;
+  bool standard = 4;
 }
 
 message IssuerInfoResponse {
@@ -394,8 +391,7 @@ message TradePeriod {
   TradeSession trade_session = 3;
 }
 
-message SubscriptionRequest {
-}
+message SubscriptionRequest {}
 
 message SubscriptionResponse {
   repeated SubTypeList sub_list = 1;
@@ -426,8 +422,7 @@ message UnsubscribeRequest {
   bool unsub_all = 3;
 }
 
-message UnsubscribeResponse{
-}
+message UnsubscribeResponse {}
 
 message PushQuote {
   string symbol = 1;
@@ -574,7 +569,7 @@ message SecurityCalcIndex {
   string strike_price = 21;
   string upper_strike_price = 22;
   string lower_strike_price = 23;
-  int64  outstanding_qty = 24;
+  int64 outstanding_qty = 24;
   string outstanding_ratio = 25;
   string premium = 26;
   string itm_otm = 27;
@@ -612,7 +607,6 @@ enum Direction {
 }
 
 message SecurityHistoryCandlestickRequest {
-
   message OffsetQuery {
     Direction direction = 1;
     string date = 2;
