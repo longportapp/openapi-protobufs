@@ -9,6 +9,7 @@ enum Command {
   AUTH = 2; //鉴权
   RECONNECT = 3; //重新连接
 
+  QueryUserQuoteProfile = 4; //查询用户行情信息
   Subscription = 5; //查询连接的已订阅数据
   Subscribe = 6; //订阅行情数据
   Unsubscribe = 7; //取消订阅行情数据
@@ -625,4 +626,25 @@ message SecurityHistoryCandlestickRequest {
   HistoryCandlestickQueryType query_type = 4;
   OffsetQuery offset_request = 5;
   DateQuery date_request = 6;
+}
+
+message UserQuoteProfileRequest {
+}
+
+message RateLimit {
+  Command command = 1;
+  int32 limit = 2;
+  int32 burst = 3;
+}
+
+message UserQuoteProfileResponse {
+  int64 member_id = 1;
+  // 行情权限信息
+  string quote_level = 2;
+  // 订阅数量限制
+  int32 subscribe_limit = 3;
+  // 历史 k 线限制
+  int32 history_candlestick_limit = 4;
+  // command rate limit
+  repeated RateLimit rate_limit = 5;
 }
