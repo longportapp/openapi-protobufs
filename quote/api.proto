@@ -374,7 +374,7 @@ message FilterWarrant {
   string leverage_ratio = 21;
   string conversion_ratio = 22;
   string balance_point = 23;
-  string state = 24;
+  int32 status = 24;
 }
 
 message MarketTradePeriodResponse {
