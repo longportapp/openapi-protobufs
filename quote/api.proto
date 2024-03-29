@@ -375,6 +375,7 @@ message FilterWarrant {
   string conversion_ratio = 22;
   string balance_point = 23;
   int32 status = 24;
+  int32 type = 25;
 }
 
 message MarketTradePeriodResponse {
