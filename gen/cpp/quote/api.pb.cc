@@ -1112,11 +1112,9 @@ PROTOBUF_CONSTEXPR FilterWarrant::FilterWarrant(::_pbi::ConstantInitialized)
           &::_pbi::fixed_address_empty_string,
           ::_pbi::ConstantInitialized{},
       },
-      /*decltype(_impl_.state_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
       /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.status_)*/ 0,
+      /*decltype(_impl_.type_)*/ 0,
       /*decltype(_impl_._cached_size_)*/ {},
     } {}
 struct FilterWarrantDefaultTypeInternal {
@@ -1319,6 +1317,7 @@ PROTOBUF_CONSTEXPR PushQuote::PushQuote(::_pbi::ConstantInitialized)
       /*decltype(_impl_.trade_status_)*/ 0,
       /*decltype(_impl_.trade_session_)*/ 0,
       /*decltype(_impl_.current_volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.tag_)*/ 0,
       /*decltype(_impl_._cached_size_)*/ {},
     } {}
 struct PushQuoteDefaultTypeInternal {
@@ -1826,11 +1825,64 @@ struct SecurityHistoryCandlestickRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequestDefaultTypeInternal _SecurityHistoryCandlestickRequest_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR UserQuoteProfileRequest::UserQuoteProfileRequest(::_pbi::ConstantInitialized) {}
+struct UserQuoteProfileRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteProfileRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteProfileRequestDefaultTypeInternal() {}
+  union {
+    UserQuoteProfileRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileRequestDefaultTypeInternal _UserQuoteProfileRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR RateLimit::RateLimit(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.command_)*/ 0,
+      /*decltype(_impl_.limit_)*/ 0,
+      /*decltype(_impl_.burst_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct RateLimitDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RateLimitDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RateLimitDefaultTypeInternal() {}
+  union {
+    RateLimit _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RateLimitDefaultTypeInternal _RateLimit_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UserQuoteProfileResponse::UserQuoteProfileResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.rate_limit_)*/ {},
+      /*decltype(_impl_.quote_level_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.member_id_)*/ ::int64_t{0},
+      /*decltype(_impl_.subscribe_limit_)*/ 0,
+      /*decltype(_impl_.history_candlestick_limit_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UserQuoteProfileResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteProfileResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteProfileResponseDefaultTypeInternal() {}
+  union {
+    UserQuoteProfileResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileResponseDefaultTypeInternal _UserQuoteProfileResponse_default_instance_;
 }  // namespace v1
 }  // namespace quote
 }  // namespace longportapp
-static ::_pb::Metadata file_level_metadata_quote_2fapi_2eproto[64];
-static const ::_pb::EnumDescriptor* file_level_enum_descriptors_quote_2fapi_2eproto[9];
+static ::_pb::Metadata file_level_metadata_quote_2fapi_2eproto[67];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_quote_2fapi_2eproto[10];
 static constexpr const ::_pb::ServiceDescriptor**
     file_level_service_descriptors_quote_2fapi_2eproto = nullptr;
 const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
@@ -2360,7 +2412,8 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.leverage_ratio_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.conversion_ratio_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.balance_point_),
-    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.state_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.status_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::FilterWarrant, _impl_.type_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::MarketTradePeriodResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2469,6 +2522,7 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::PushQuote, _impl_.trade_session_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::PushQuote, _impl_.current_volume_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::PushQuote, _impl_.current_turnover_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::PushQuote, _impl_.tag_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::PushDepth, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2691,6 +2745,38 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     ~0u,
     0,
     1,
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _impl_.command_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _impl_.limit_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _impl_.burst_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.member_id_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.quote_level_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.subscribe_limit_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.history_candlestick_limit_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.rate_limit_),
 };
 
 static const ::_pbi::MigrationSchema
@@ -2733,32 +2819,35 @@ static const ::_pbi::MigrationSchema
         {467, -1, -1, sizeof(::longportapp::quote::v1::FilterConfig)},
         {484, -1, -1, sizeof(::longportapp::quote::v1::WarrantFilterListResponse)},
         {494, -1, -1, sizeof(::longportapp::quote::v1::FilterWarrant)},
-        {526, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriodResponse)},
-        {535, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriod)},
-        {545, -1, -1, sizeof(::longportapp::quote::v1::TradePeriod)},
-        {556, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionRequest)},
-        {564, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionResponse)},
-        {573, -1, -1, sizeof(::longportapp::quote::v1::SubTypeList)},
-        {583, -1, -1, sizeof(::longportapp::quote::v1::SubscribeRequest)},
-        {594, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeRequest)},
-        {605, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeResponse)},
-        {613, -1, -1, sizeof(::longportapp::quote::v1::PushQuote)},
-        {634, -1, -1, sizeof(::longportapp::quote::v1::PushDepth)},
-        {646, -1, -1, sizeof(::longportapp::quote::v1::PushBrokers)},
-        {658, -1, -1, sizeof(::longportapp::quote::v1::PushTrade)},
-        {669, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayRequest)},
-        {680, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayResponse)},
-        {690, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayRequest)},
-        {699, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine)},
-        {709, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse)},
-        {719, -1, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution)},
-        {730, 742, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse)},
-        {746, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteRequest)},
-        {756, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcIndex)},
-        {805, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteResponse)},
-        {814, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery)},
-        {826, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery)},
-        {836, 850, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest)},
+        {527, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriodResponse)},
+        {536, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriod)},
+        {546, -1, -1, sizeof(::longportapp::quote::v1::TradePeriod)},
+        {557, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionRequest)},
+        {565, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionResponse)},
+        {574, -1, -1, sizeof(::longportapp::quote::v1::SubTypeList)},
+        {584, -1, -1, sizeof(::longportapp::quote::v1::SubscribeRequest)},
+        {595, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeRequest)},
+        {606, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeResponse)},
+        {614, -1, -1, sizeof(::longportapp::quote::v1::PushQuote)},
+        {636, -1, -1, sizeof(::longportapp::quote::v1::PushDepth)},
+        {648, -1, -1, sizeof(::longportapp::quote::v1::PushBrokers)},
+        {660, -1, -1, sizeof(::longportapp::quote::v1::PushTrade)},
+        {671, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayRequest)},
+        {682, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayResponse)},
+        {692, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayRequest)},
+        {701, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine)},
+        {711, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse)},
+        {721, -1, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution)},
+        {732, 744, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse)},
+        {748, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteRequest)},
+        {758, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcIndex)},
+        {807, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteResponse)},
+        {816, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery)},
+        {828, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery)},
+        {838, 852, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest)},
+        {858, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileRequest)},
+        {866, -1, -1, sizeof(::longportapp::quote::v1::RateLimit)},
+        {877, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -2826,6 +2915,9 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::longportapp::quote::v1::_SecurityHistoryCandlestickRequest_OffsetQuery_default_instance_._instance,
     &::longportapp::quote::v1::_SecurityHistoryCandlestickRequest_DateQuery_default_instance_._instance,
     &::longportapp::quote::v1::_SecurityHistoryCandlestickRequest_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteProfileRequest_default_instance_._instance,
+    &::longportapp::quote::v1::_RateLimit_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteProfileResponse_default_instance_._instance,
 };
 const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
     "\n\017quote/api.proto\022\024longportapp.quote.v1\""
@@ -2992,7 +3084,7 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
     "lterListResponse\022F\n\014warrant_list\030\001 \003(\0132#"
     ".longportapp.quote.v1.FilterWarrantR\013war"
     "rantList\022\037\n\013total_count\030\002 \001(\005R\ntotalCoun"
-    "t\"\271\006\n\rFilterWarrant\022\026\n\006symbol\030\001 \001(\tR\006sym"
+    "t\"\317\006\n\rFilterWarrant\022\026\n\006symbol\030\001 \001(\tR\006sym"
     "bol\022\022\n\004name\030\002 \001(\tR\004name\022\033\n\tlast_done\030\003 \001"
     "(\tR\010lastDone\022\037\n\013change_rate\030\004 \001(\tR\nchang"
     "eRate\022\035\n\nchange_val\030\005 \001(\tR\tchangeVal\022\026\n\006"
@@ -3012,217 +3104,230 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
     "Leverage\022%\n\016leverage_ratio\030\025 \001(\tR\rlevera"
     "geRatio\022)\n\020conversion_ratio\030\026 \001(\tR\017conve"
     "rsionRatio\022#\n\rbalance_point\030\027 \001(\tR\014balan"
-    "cePoint\022\024\n\005state\030\030 \001(\tR\005state\"v\n\031MarketT"
-    "radePeriodResponse\022Y\n\024market_trade_sessi"
-    "on\030\001 \003(\0132\'.longportapp.quote.v1.MarketTr"
-    "adePeriodR\022marketTradeSession\"s\n\021MarketT"
-    "radePeriod\022\026\n\006market\030\001 \001(\tR\006market\022F\n\rtr"
-    "ade_session\030\002 \003(\0132!.longportapp.quote.v1"
-    ".TradePeriodR\014tradeSession\"\214\001\n\013TradePeri"
-    "od\022\031\n\010beg_time\030\001 \001(\005R\007begTime\022\031\n\010end_tim"
-    "e\030\002 \001(\005R\007endTime\022G\n\rtrade_session\030\003 \001(\0162"
-    "\".longportapp.quote.v1.TradeSessionR\014tra"
-    "deSession\"\025\n\023SubscriptionRequest\"T\n\024Subs"
-    "criptionResponse\022<\n\010sub_list\030\001 \003(\0132!.lon"
-    "gportapp.quote.v1.SubTypeListR\007subList\"_"
-    "\n\013SubTypeList\022\026\n\006symbol\030\001 \001(\tR\006symbol\0228\n"
-    "\010sub_type\030\002 \003(\0162\035.longportapp.quote.v1.S"
-    "ubTypeR\007subType\"\210\001\n\020SubscribeRequest\022\026\n\006"
-    "symbol\030\001 \003(\tR\006symbol\0228\n\010sub_type\030\002 \003(\0162\035"
-    ".longportapp.quote.v1.SubTypeR\007subType\022\""
-    "\n\ris_first_push\030\003 \001(\010R\013isFirstPush\"\203\001\n\022U"
-    "nsubscribeRequest\022\026\n\006symbol\030\001 \003(\tR\006symbo"
-    "l\0228\n\010sub_type\030\002 \003(\0162\035.longportapp.quote."
-    "v1.SubTypeR\007subType\022\033\n\tunsub_all\030\003 \001(\010R\010"
-    "unsubAll\"\025\n\023UnsubscribeResponse\"\311\003\n\tPush"
-    "Quote\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010sequenc"
-    "e\030\002 \001(\003R\010sequence\022\033\n\tlast_done\030\003 \001(\tR\010la"
-    "stDone\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004high\030\005 \001(\t"
-    "R\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimestamp\030\007 "
-    "\001(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006volume\022\032"
-    "\n\010turnover\030\t \001(\tR\010turnover\022D\n\014trade_stat"
-    "us\030\n \001(\0162!.longportapp.quote.v1.TradeSta"
-    "tusR\013tradeStatus\022G\n\rtrade_session\030\013 \001(\0162"
-    "\".longportapp.quote.v1.TradeSessionR\014tra"
-    "deSession\022%\n\016current_volume\030\014 \001(\003R\rcurre"
-    "ntVolume\022)\n\020current_turnover\030\r \001(\tR\017curr"
-    "entTurnover\"\235\001\n\tPushDepth\022\026\n\006symbol\030\001 \001("
-    "\tR\006symbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022-\n"
-    "\003ask\030\003 \003(\0132\033.longportapp.quote.v1.DepthR"
-    "\003ask\022-\n\003bid\030\004 \003(\0132\033.longportapp.quote.v1"
-    ".DepthR\003bid\"\301\001\n\013PushBrokers\022\026\n\006symbol\030\001 "
+    "cePoint\022\026\n\006status\030\030 \001(\005R\006status\022\022\n\004type\030"
+    "\031 \001(\005R\004type\"v\n\031MarketTradePeriodResponse"
+    "\022Y\n\024market_trade_session\030\001 \003(\0132\'.longpor"
+    "tapp.quote.v1.MarketTradePeriodR\022marketT"
+    "radeSession\"s\n\021MarketTradePeriod\022\026\n\006mark"
+    "et\030\001 \001(\tR\006market\022F\n\rtrade_session\030\002 \003(\0132"
+    "!.longportapp.quote.v1.TradePeriodR\014trad"
+    "eSession\"\214\001\n\013TradePeriod\022\031\n\010beg_time\030\001 \001"
+    "(\005R\007begTime\022\031\n\010end_time\030\002 \001(\005R\007endTime\022G"
+    "\n\rtrade_session\030\003 \001(\0162\".longportapp.quot"
+    "e.v1.TradeSessionR\014tradeSession\"\025\n\023Subsc"
+    "riptionRequest\"T\n\024SubscriptionResponse\022<"
+    "\n\010sub_list\030\001 \003(\0132!.longportapp.quote.v1."
+    "SubTypeListR\007subList\"_\n\013SubTypeList\022\026\n\006s"
+    "ymbol\030\001 \001(\tR\006symbol\0228\n\010sub_type\030\002 \003(\0162\035."
+    "longportapp.quote.v1.SubTypeR\007subType\"\210\001"
+    "\n\020SubscribeRequest\022\026\n\006symbol\030\001 \003(\tR\006symb"
+    "ol\0228\n\010sub_type\030\002 \003(\0162\035.longportapp.quote"
+    ".v1.SubTypeR\007subType\022\"\n\ris_first_push\030\003 "
+    "\001(\010R\013isFirstPush\"\203\001\n\022UnsubscribeRequest\022"
+    "\026\n\006symbol\030\001 \003(\tR\006symbol\0228\n\010sub_type\030\002 \003("
+    "\0162\035.longportapp.quote.v1.SubTypeR\007subTyp"
+    "e\022\033\n\tunsub_all\030\003 \001(\010R\010unsubAll\"\025\n\023Unsubs"
+    "cribeResponse\"\377\003\n\tPushQuote\022\026\n\006symbol\030\001 "
     "\001(\tR\006symbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022"
-    ">\n\013ask_brokers\030\003 \003(\0132\035.longportapp.quote"
-    ".v1.BrokersR\naskBrokers\022>\n\013bid_brokers\030\004"
-    " \003(\0132\035.longportapp.quote.v1.BrokersR\nbid"
-    "Brokers\"r\n\tPushTrade\022\026\n\006symbol\030\001 \001(\tR\006sy"
-    "mbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\0221\n\005trad"
-    "e\030\003 \003(\0132\033.longportapp.quote.v1.TradeR\005tr"
-    "ade\"a\n\025MarketTradeDayRequest\022\026\n\006market\030\001"
-    " \001(\tR\006market\022\027\n\007beg_day\030\002 \001(\tR\006begDay\022\027\n"
-    "\007end_day\030\003 \001(\tR\006endDay\"[\n\026MarketTradeDay"
-    "Response\022\033\n\ttrade_day\030\001 \003(\tR\010tradeDay\022$\n"
-    "\016half_trade_day\030\002 \003(\tR\014halfTradeDay\"4\n\032C"
-    "apitalFlowIntradayRequest\022\026\n\006symbol\030\001 \001("
-    "\tR\006symbol\"\357\001\n\033CapitalFlowIntradayRespons"
-    "e\022\026\n\006symbol\030\001 \001(\tR\006symbol\022o\n\022capital_flo"
-    "w_lines\030\002 \003(\0132A.longportapp.quote.v1.Cap"
-    "italFlowIntradayResponse.CapitalFlowLine"
-    "R\020capitalFlowLines\032G\n\017CapitalFlowLine\022\026\n"
-    "\006inflow\030\001 \001(\tR\006inflow\022\034\n\ttimestamp\030\002 \001(\003"
-    "R\ttimestamp\"\374\002\n\033CapitalDistributionRespo"
-    "nse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\034\n\ttimestamp"
-    "\030\002 \001(\003R\ttimestamp\022d\n\ncapital_in\030\003 \001(\0132E."
-    "longportapp.quote.v1.CapitalDistribution"
-    "Response.CapitalDistributionR\tcapitalIn\022"
-    "f\n\013capital_out\030\004 \001(\0132E.longportapp.quote"
-    ".v1.CapitalDistributionResponse.CapitalD"
-    "istributionR\ncapitalOut\032Y\n\023CapitalDistri"
-    "bution\022\024\n\005large\030\001 \001(\tR\005large\022\026\n\006medium\030\002"
-    " \001(\tR\006medium\022\024\n\005small\030\003 \001(\tR\005small\"t\n\030Se"
-    "curityCalcQuoteRequest\022\030\n\007symbols\030\001 \003(\tR"
-    "\007symbols\022>\n\ncalc_index\030\002 \003(\0162\037.longporta"
-    "pp.quote.v1.CalcIndexR\tcalcIndex\"\305\013\n\021Sec"
-    "urityCalcIndex\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033"
-    "\n\tlast_done\030\002 \001(\tR\010lastDone\022\035\n\nchange_va"
-    "l\030\003 \001(\tR\tchangeVal\022\037\n\013change_rate\030\004 \001(\tR"
-    "\nchangeRate\022\026\n\006volume\030\005 \001(\003R\006volume\022\032\n\010t"
-    "urnover\030\006 \001(\tR\010turnover\022&\n\017ytd_change_ra"
-    "te\030\007 \001(\tR\rytdChangeRate\022#\n\rturnover_rate"
-    "\030\010 \001(\tR\014turnoverRate\022,\n\022total_market_val"
-    "ue\030\t \001(\tR\020totalMarketValue\022!\n\014capital_fl"
-    "ow\030\n \001(\tR\013capitalFlow\022\034\n\tamplitude\030\013 \001(\t"
-    "R\tamplitude\022!\n\014volume_ratio\030\014 \001(\tR\013volum"
-    "eRatio\022 \n\014pe_ttm_ratio\030\r \001(\tR\npeTtmRatio"
-    "\022\031\n\010pb_ratio\030\016 \001(\tR\007pbRatio\022,\n\022dividend_"
-    "ratio_ttm\030\017 \001(\tR\020dividendRatioTtm\022/\n\024fiv"
-    "e_day_change_rate\030\020 \001(\tR\021fiveDayChangeRa"
-    "te\022-\n\023ten_day_change_rate\030\021 \001(\tR\020tenDayC"
-    "hangeRate\0221\n\025half_year_change_rate\030\022 \001(\t"
-    "R\022halfYearChangeRate\0227\n\030five_minutes_cha"
-    "nge_rate\030\023 \001(\tR\025fiveMinutesChangeRate\022\037\n"
-    "\013expiry_date\030\024 \001(\tR\nexpiryDate\022!\n\014strike"
-    "_price\030\025 \001(\tR\013strikePrice\022,\n\022upper_strik"
-    "e_price\030\026 \001(\tR\020upperStrikePrice\022,\n\022lower"
-    "_strike_price\030\027 \001(\tR\020lowerStrikePrice\022\'\n"
-    "\017outstanding_qty\030\030 \001(\003R\016outstandingQty\022+"
-    "\n\021outstanding_ratio\030\031 \001(\tR\020outstandingRa"
-    "tio\022\030\n\007premium\030\032 \001(\tR\007premium\022\027\n\007itm_otm"
-    "\030\033 \001(\tR\006itmOtm\022-\n\022implied_volatility\030\034 \001"
-    "(\tR\021impliedVolatility\022#\n\rwarrant_delta\030\035"
-    " \001(\tR\014warrantDelta\022\035\n\ncall_price\030\036 \001(\tR\t"
-    "callPrice\022\"\n\rto_call_price\030\037 \001(\tR\013toCall"
-    "Price\022-\n\022effective_leverage\030  \001(\tR\021effec"
-    "tiveLeverage\022%\n\016leverage_ratio\030! \001(\tR\rle"
-    "verageRatio\022)\n\020conversion_ratio\030\" \001(\tR\017c"
-    "onversionRatio\022#\n\rbalance_point\030# \001(\tR\014b"
-    "alancePoint\022#\n\ropen_interest\030$ \001(\003R\014open"
-    "Interest\022\024\n\005delta\030% \001(\tR\005delta\022\024\n\005gamma\030"
-    "& \001(\tR\005gamma\022\024\n\005theta\030\' \001(\tR\005theta\022\022\n\004ve"
-    "ga\030( \001(\tR\004vega\022\020\n\003rho\030) \001(\tR\003rho\"t\n\031Secu"
-    "rityCalcQuoteResponse\022W\n\023security_calc_i"
-    "ndex\030\001 \003(\0132\'.longportapp.quote.v1.Securi"
-    "tyCalcIndexR\021securityCalcIndex\"\260\005\n!Secur"
-    "ityHistoryCandlestickRequest\022\026\n\006symbol\030\001"
-    " \001(\tR\006symbol\0224\n\006period\030\002 \001(\0162\034.longporta"
-    "pp.quote.v1.PeriodR\006period\022A\n\013adjust_typ"
-    "e\030\003 \001(\0162 .longportapp.quote.v1.AdjustTyp"
-    "eR\nadjustType\022P\n\nquery_type\030\004 \001(\01621.long"
-    "portapp.quote.v1.HistoryCandlestickQuery"
-    "TypeR\tqueryType\022j\n\016offset_request\030\005 \001(\0132"
-    "C.longportapp.quote.v1.SecurityHistoryCa"
-    "ndlestickRequest.OffsetQueryR\roffsetRequ"
-    "est\022d\n\014date_request\030\006 \001(\0132A.longportapp."
-    "quote.v1.SecurityHistoryCandlestickReque"
-    "st.DateQueryR\013dateRequest\032\216\001\n\013OffsetQuer"
-    "y\022=\n\tdirection\030\001 \001(\0162\037.longportapp.quote"
-    ".v1.DirectionR\tdirection\022\022\n\004date\030\002 \001(\tR\004"
-    "date\022\026\n\006minute\030\003 \001(\tR\006minute\022\024\n\005count\030\004 "
-    "\001(\005R\005count\032E\n\tDateQuery\022\035\n\nstart_date\030\001 "
-    "\001(\tR\tstartDate\022\031\n\010end_date\030\002 \001(\tR\007endDat"
-    "e*\307\005\n\007Command\022\023\n\017UNKNOWN_COMMAND\020\000\022\016\n\nHE"
-    "ART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r\n\tRECONNECT\020\003\022\020\n\014S"
-    "ubscription\020\005\022\r\n\tSubscribe\020\006\022\017\n\013Unsubscr"
-    "ibe\020\007\022\032\n\026QueryMarketTradePeriod\020\010\022\027\n\023Que"
-    "ryMarketTradeDay\020\t\022\033\n\027QuerySecurityStati"
-    "cInfo\020\n\022\026\n\022QuerySecurityQuote\020\013\022\024\n\020Query"
-    "OptionQuote\020\014\022\025\n\021QueryWarrantQuote\020\r\022\016\n\n"
-    "QueryDepth\020\016\022\020\n\014QueryBrokers\020\017\022\035\n\031QueryP"
-    "articipantBrokerIds\020\020\022\016\n\nQueryTrade\020\021\022\021\n"
-    "\rQueryIntraday\020\022\022\024\n\020QueryCandlestick\020\023\022\030"
-    "\n\024QueryOptionChainDate\020\024\022\"\n\036QueryOptionC"
-    "hainDateStrikeInfo\020\025\022\032\n\026QueryWarrantIssu"
-    "erInfo\020\026\022\032\n\026QueryWarrantFilterList\020\027\022\034\n\030"
-    "QueryCapitalFlowIntraday\020\030\022 \n\034QueryCapit"
-    "alFlowDistribution\020\031\022\032\n\026QuerySecurityCal"
-    "cIndex\020\032\022\033\n\027QueryHistoryCandlestick\020\033\022\021\n"
-    "\rPushQuoteData\020e\022\021\n\rPushDepthData\020f\022\023\n\017P"
-    "ushBrokersData\020g\022\021\n\rPushTradeData\020h*\302\001\n\013"
-    "TradeStatus\022\n\n\006NORMAL\020\000\022\n\n\006HALTED\020\001\022\014\n\010D"
-    "ELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n\014PREPARE_LIST\020\004\022\016\n"
-    "\nCODE_MOVED\020\005\022\020\n\014TO_BE_OPENED\020\006\022\025\n\021SPLIT"
-    "_STOCK_HALTS\020\007\022\013\n\007EXPIRED\020\010\022\030\n\024WARRANT_P"
-    "REPARE_LIST\020\t\022\021\n\rSUSPEND_TRADE\020\n*\?\n\014Trad"
-    "eSession\022\020\n\014NORMAL_TRADE\020\000\022\r\n\tPRE_TRADE\020"
-    "\001\022\016\n\nPOST_TRADE\020\002*/\n\nAdjustType\022\r\n\tNO_AD"
-    "JUST\020\000\022\022\n\016FORWARD_ADJUST\020\001*\242\001\n\006Period\022\022\n"
-    "\016UNKNOWN_PERIOD\020\000\022\016\n\nONE_MINUTE\020\001\022\017\n\013FIV"
-    "E_MINUTE\020\005\022\022\n\016FIFTEEN_MINUTE\020\017\022\021\n\rTHIRTY"
-    "_MINUTE\020\036\022\020\n\014SIXTY_MINUTE\020<\022\010\n\003DAY\020\350\007\022\t\n"
-    "\004WEEK\020\320\017\022\n\n\005MONTH\020\270\027\022\t\n\004YEAR\020\240\037*I\n\007SubTy"
-    "pe\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOTE\020\001\022\t\n\005DEPTH"
-    "\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004*\226\t\n\tCalcIndex"
-    "\022\025\n\021CALCINDEX_UNKNOWN\020\000\022\027\n\023CALCINDEX_LAS"
-    "T_DONE\020\001\022\030\n\024CALCINDEX_CHANGE_VAL\020\002\022\031\n\025CA"
-    "LCINDEX_CHANGE_RATE\020\003\022\024\n\020CALCINDEX_VOLUM"
-    "E\020\004\022\026\n\022CALCINDEX_TURNOVER\020\005\022\035\n\031CALCINDEX"
-    "_YTD_CHANGE_RATE\020\006\022\033\n\027CALCINDEX_TURNOVER"
-    "_RATE\020\007\022 \n\034CALCINDEX_TOTAL_MARKET_VALUE\020"
-    "\010\022\032\n\026CALCINDEX_CAPITAL_FLOW\020\t\022\027\n\023CALCIND"
-    "EX_AMPLITUDE\020\n\022\032\n\026CALCINDEX_VOLUME_RATIO"
-    "\020\013\022\032\n\026CALCINDEX_PE_TTM_RATIO\020\014\022\026\n\022CALCIN"
-    "DEX_PB_RATIO\020\r\022 \n\034CALCINDEX_DIVIDEND_RAT"
-    "IO_TTM\020\016\022\"\n\036CALCINDEX_FIVE_DAY_CHANGE_RA"
-    "TE\020\017\022!\n\035CALCINDEX_TEN_DAY_CHANGE_RATE\020\020\022"
-    "#\n\037CALCINDEX_HALF_YEAR_CHANGE_RATE\020\021\022&\n\""
-    "CALCINDEX_FIVE_MINUTES_CHANGE_RATE\020\022\022\031\n\025"
-    "CALCINDEX_EXPIRY_DATE\020\023\022\032\n\026CALCINDEX_STR"
-    "IKE_PRICE\020\024\022 \n\034CALCINDEX_UPPER_STRIKE_PR"
-    "ICE\020\025\022 \n\034CALCINDEX_LOWER_STRIKE_PRICE\020\026\022"
-    "\035\n\031CALCINDEX_OUTSTANDING_QTY\020\027\022\037\n\033CALCIN"
-    "DEX_OUTSTANDING_RATIO\020\030\022\025\n\021CALCINDEX_PRE"
-    "MIUM\020\031\022\025\n\021CALCINDEX_ITM_OTM\020\032\022 \n\034CALCIND"
-    "EX_IMPLIED_VOLATILITY\020\033\022\033\n\027CALCINDEX_WAR"
-    "RANT_DELTA\020\034\022\030\n\024CALCINDEX_CALL_PRICE\020\035\022\033"
-    "\n\027CALCINDEX_TO_CALL_PRICE\020\036\022 \n\034CALCINDEX"
-    "_EFFECTIVE_LEVERAGE\020\037\022\034\n\030CALCINDEX_LEVER"
-    "AGE_RATIO\020 \022\036\n\032CALCINDEX_CONVERSION_RATI"
-    "O\020!\022\033\n\027CALCINDEX_BALANCE_POINT\020\"\022\033\n\027CALC"
-    "INDEX_OPEN_INTEREST\020#\022\023\n\017CALCINDEX_DELTA"
-    "\020$\022\023\n\017CALCINDEX_GAMMA\020%\022\023\n\017CALCINDEX_THE"
-    "TA\020&\022\022\n\016CALCINDEX_VEGA\020\'\022\021\n\rCALCINDEX_RH"
-    "O\020(*]\n\033HistoryCandlestickQueryType\022\026\n\022UN"
-    "KNOWN_QUERY_TYPE\020\000\022\023\n\017QUERY_BY_OFFSET\020\001\022"
-    "\021\n\rQUERY_BY_DATE\020\002*&\n\tDirection\022\014\n\010BACKW"
-    "ARD\020\000\022\013\n\007FORWARD\020\001B\325\001\n\030com.longportapp.q"
-    "uote.v1B\010ApiProtoP\001Z=github.com/longport"
-    "app/openapi-protobufs/gen/go/quote;quote"
-    "v1\242\002\003LQX\252\002\024Longportapp.Quote.V1\312\002\024Longpo"
-    "rtapp\\Quote\\V1\342\002 Longportapp\\Quote\\V1\\GP"
-    "BMetadata\352\002\026Longportapp::Quote::V1b\006prot"
-    "o3"
+    "\033\n\tlast_done\030\003 \001(\tR\010lastDone\022\022\n\004open\030\004 \001"
+    "(\tR\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001("
+    "\tR\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022\026\n\006"
+    "volume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t \001(\tR\010"
+    "turnover\022D\n\014trade_status\030\n \001(\0162!.longpor"
+    "tapp.quote.v1.TradeStatusR\013tradeStatus\022G"
+    "\n\rtrade_session\030\013 \001(\0162\".longportapp.quot"
+    "e.v1.TradeSessionR\014tradeSession\022%\n\016curre"
+    "nt_volume\030\014 \001(\003R\rcurrentVolume\022)\n\020curren"
+    "t_turnover\030\r \001(\tR\017currentTurnover\0224\n\003tag"
+    "\030\016 \001(\0162\".longportapp.quote.v1.PushQuoteT"
+    "agR\003tag\"\235\001\n\tPushDepth\022\026\n\006symbol\030\001 \001(\tR\006s"
+    "ymbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022-\n\003ask"
+    "\030\003 \003(\0132\033.longportapp.quote.v1.DepthR\003ask"
+    "\022-\n\003bid\030\004 \003(\0132\033.longportapp.quote.v1.Dep"
+    "thR\003bid\"\301\001\n\013PushBrokers\022\026\n\006symbol\030\001 \001(\tR"
+    "\006symbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022>\n\013a"
+    "sk_brokers\030\003 \003(\0132\035.longportapp.quote.v1."
+    "BrokersR\naskBrokers\022>\n\013bid_brokers\030\004 \003(\013"
+    "2\035.longportapp.quote.v1.BrokersR\nbidBrok"
+    "ers\"r\n\tPushTrade\022\026\n\006symbol\030\001 \001(\tR\006symbol"
+    "\022\032\n\010sequence\030\002 \001(\003R\010sequence\0221\n\005trade\030\003 "
+    "\003(\0132\033.longportapp.quote.v1.TradeR\005trade\""
+    "a\n\025MarketTradeDayRequest\022\026\n\006market\030\001 \001(\t"
+    "R\006market\022\027\n\007beg_day\030\002 \001(\tR\006begDay\022\027\n\007end"
+    "_day\030\003 \001(\tR\006endDay\"[\n\026MarketTradeDayResp"
+    "onse\022\033\n\ttrade_day\030\001 \003(\tR\010tradeDay\022$\n\016hal"
+    "f_trade_day\030\002 \003(\tR\014halfTradeDay\"4\n\032Capit"
+    "alFlowIntradayRequest\022\026\n\006symbol\030\001 \001(\tR\006s"
+    "ymbol\"\357\001\n\033CapitalFlowIntradayResponse\022\026\n"
+    "\006symbol\030\001 \001(\tR\006symbol\022o\n\022capital_flow_li"
+    "nes\030\002 \003(\0132A.longportapp.quote.v1.Capital"
+    "FlowIntradayResponse.CapitalFlowLineR\020ca"
+    "pitalFlowLines\032G\n\017CapitalFlowLine\022\026\n\006inf"
+    "low\030\001 \001(\tR\006inflow\022\034\n\ttimestamp\030\002 \001(\003R\tti"
+    "mestamp\"\374\002\n\033CapitalDistributionResponse\022"
+    "\026\n\006symbol\030\001 \001(\tR\006symbol\022\034\n\ttimestamp\030\002 \001"
+    "(\003R\ttimestamp\022d\n\ncapital_in\030\003 \001(\0132E.long"
+    "portapp.quote.v1.CapitalDistributionResp"
+    "onse.CapitalDistributionR\tcapitalIn\022f\n\013c"
+    "apital_out\030\004 \001(\0132E.longportapp.quote.v1."
+    "CapitalDistributionResponse.CapitalDistr"
+    "ibutionR\ncapitalOut\032Y\n\023CapitalDistributi"
+    "on\022\024\n\005large\030\001 \001(\tR\005large\022\026\n\006medium\030\002 \001(\t"
+    "R\006medium\022\024\n\005small\030\003 \001(\tR\005small\"t\n\030Securi"
+    "tyCalcQuoteRequest\022\030\n\007symbols\030\001 \003(\tR\007sym"
+    "bols\022>\n\ncalc_index\030\002 \003(\0162\037.longportapp.q"
+    "uote.v1.CalcIndexR\tcalcIndex\"\305\013\n\021Securit"
+    "yCalcIndex\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033\n\tla"
+    "st_done\030\002 \001(\tR\010lastDone\022\035\n\nchange_val\030\003 "
+    "\001(\tR\tchangeVal\022\037\n\013change_rate\030\004 \001(\tR\ncha"
+    "ngeRate\022\026\n\006volume\030\005 \001(\003R\006volume\022\032\n\010turno"
+    "ver\030\006 \001(\tR\010turnover\022&\n\017ytd_change_rate\030\007"
+    " \001(\tR\rytdChangeRate\022#\n\rturnover_rate\030\010 \001"
+    "(\tR\014turnoverRate\022,\n\022total_market_value\030\t"
+    " \001(\tR\020totalMarketValue\022!\n\014capital_flow\030\n"
+    " \001(\tR\013capitalFlow\022\034\n\tamplitude\030\013 \001(\tR\tam"
+    "plitude\022!\n\014volume_ratio\030\014 \001(\tR\013volumeRat"
+    "io\022 \n\014pe_ttm_ratio\030\r \001(\tR\npeTtmRatio\022\031\n\010"
+    "pb_ratio\030\016 \001(\tR\007pbRatio\022,\n\022dividend_rati"
+    "o_ttm\030\017 \001(\tR\020dividendRatioTtm\022/\n\024five_da"
+    "y_change_rate\030\020 \001(\tR\021fiveDayChangeRate\022-"
+    "\n\023ten_day_change_rate\030\021 \001(\tR\020tenDayChang"
+    "eRate\0221\n\025half_year_change_rate\030\022 \001(\tR\022ha"
+    "lfYearChangeRate\0227\n\030five_minutes_change_"
+    "rate\030\023 \001(\tR\025fiveMinutesChangeRate\022\037\n\013exp"
+    "iry_date\030\024 \001(\tR\nexpiryDate\022!\n\014strike_pri"
+    "ce\030\025 \001(\tR\013strikePrice\022,\n\022upper_strike_pr"
+    "ice\030\026 \001(\tR\020upperStrikePrice\022,\n\022lower_str"
+    "ike_price\030\027 \001(\tR\020lowerStrikePrice\022\'\n\017out"
+    "standing_qty\030\030 \001(\003R\016outstandingQty\022+\n\021ou"
+    "tstanding_ratio\030\031 \001(\tR\020outstandingRatio\022"
+    "\030\n\007premium\030\032 \001(\tR\007premium\022\027\n\007itm_otm\030\033 \001"
+    "(\tR\006itmOtm\022-\n\022implied_volatility\030\034 \001(\tR\021"
+    "impliedVolatility\022#\n\rwarrant_delta\030\035 \001(\t"
+    "R\014warrantDelta\022\035\n\ncall_price\030\036 \001(\tR\tcall"
+    "Price\022\"\n\rto_call_price\030\037 \001(\tR\013toCallPric"
+    "e\022-\n\022effective_leverage\030  \001(\tR\021effective"
+    "Leverage\022%\n\016leverage_ratio\030! \001(\tR\rlevera"
+    "geRatio\022)\n\020conversion_ratio\030\" \001(\tR\017conve"
+    "rsionRatio\022#\n\rbalance_point\030# \001(\tR\014balan"
+    "cePoint\022#\n\ropen_interest\030$ \001(\003R\014openInte"
+    "rest\022\024\n\005delta\030% \001(\tR\005delta\022\024\n\005gamma\030& \001("
+    "\tR\005gamma\022\024\n\005theta\030\' \001(\tR\005theta\022\022\n\004vega\030("
+    " \001(\tR\004vega\022\020\n\003rho\030) \001(\tR\003rho\"t\n\031Security"
+    "CalcQuoteResponse\022W\n\023security_calc_index"
+    "\030\001 \003(\0132\'.longportapp.quote.v1.SecurityCa"
+    "lcIndexR\021securityCalcIndex\"\260\005\n!SecurityH"
+    "istoryCandlestickRequest\022\026\n\006symbol\030\001 \001(\t"
+    "R\006symbol\0224\n\006period\030\002 \001(\0162\034.longportapp.q"
+    "uote.v1.PeriodR\006period\022A\n\013adjust_type\030\003 "
+    "\001(\0162 .longportapp.quote.v1.AdjustTypeR\na"
+    "djustType\022P\n\nquery_type\030\004 \001(\01621.longport"
+    "app.quote.v1.HistoryCandlestickQueryType"
+    "R\tqueryType\022j\n\016offset_request\030\005 \001(\0132C.lo"
+    "ngportapp.quote.v1.SecurityHistoryCandle"
+    "stickRequest.OffsetQueryR\roffsetRequest\022"
+    "d\n\014date_request\030\006 \001(\0132A.longportapp.quot"
+    "e.v1.SecurityHistoryCandlestickRequest.D"
+    "ateQueryR\013dateRequest\032\216\001\n\013OffsetQuery\022=\n"
+    "\tdirection\030\001 \001(\0162\037.longportapp.quote.v1."
+    "DirectionR\tdirection\022\022\n\004date\030\002 \001(\tR\004date"
+    "\022\026\n\006minute\030\003 \001(\tR\006minute\022\024\n\005count\030\004 \001(\005R"
+    "\005count\032E\n\tDateQuery\022\035\n\nstart_date\030\001 \001(\tR"
+    "\tstartDate\022\031\n\010end_date\030\002 \001(\tR\007endDate\"\031\n"
+    "\027UserQuoteProfileRequest\"p\n\tRateLimit\0227\n"
+    "\007command\030\001 \001(\0162\035.longportapp.quote.v1.Co"
+    "mmandR\007command\022\024\n\005limit\030\002 \001(\005R\005limit\022\024\n\005"
+    "burst\030\003 \001(\005R\005burst\"\375\001\n\030UserQuoteProfileR"
+    "esponse\022\033\n\tmember_id\030\001 \001(\003R\010memberId\022\037\n\013"
+    "quote_level\030\002 \001(\tR\nquoteLevel\022\'\n\017subscri"
+    "be_limit\030\003 \001(\005R\016subscribeLimit\022:\n\031histor"
+    "y_candlestick_limit\030\004 \001(\005R\027historyCandle"
+    "stickLimit\022>\n\nrate_limit\030\005 \003(\0132\037.longpor"
+    "tapp.quote.v1.RateLimitR\trateLimit*\342\005\n\007C"
+    "ommand\022\023\n\017UNKNOWN_COMMAND\020\000\022\016\n\nHEART_BEA"
+    "T\020\001\022\010\n\004AUTH\020\002\022\r\n\tRECONNECT\020\003\022\031\n\025QueryUse"
+    "rQuoteProfile\020\004\022\020\n\014Subscription\020\005\022\r\n\tSub"
+    "scribe\020\006\022\017\n\013Unsubscribe\020\007\022\032\n\026QueryMarket"
+    "TradePeriod\020\010\022\027\n\023QueryMarketTradeDay\020\t\022\033"
+    "\n\027QuerySecurityStaticInfo\020\n\022\026\n\022QuerySecu"
+    "rityQuote\020\013\022\024\n\020QueryOptionQuote\020\014\022\025\n\021Que"
+    "ryWarrantQuote\020\r\022\016\n\nQueryDepth\020\016\022\020\n\014Quer"
+    "yBrokers\020\017\022\035\n\031QueryParticipantBrokerIds\020"
+    "\020\022\016\n\nQueryTrade\020\021\022\021\n\rQueryIntraday\020\022\022\024\n\020"
+    "QueryCandlestick\020\023\022\030\n\024QueryOptionChainDa"
+    "te\020\024\022\"\n\036QueryOptionChainDateStrikeInfo\020\025"
+    "\022\032\n\026QueryWarrantIssuerInfo\020\026\022\032\n\026QueryWar"
+    "rantFilterList\020\027\022\034\n\030QueryCapitalFlowIntr"
+    "aday\020\030\022 \n\034QueryCapitalFlowDistribution\020\031"
+    "\022\032\n\026QuerySecurityCalcIndex\020\032\022\033\n\027QueryHis"
+    "toryCandlestick\020\033\022\021\n\rPushQuoteData\020e\022\021\n\r"
+    "PushDepthData\020f\022\023\n\017PushBrokersData\020g\022\021\n\r"
+    "PushTradeData\020h*\302\001\n\013TradeStatus\022\n\n\006NORMA"
+    "L\020\000\022\n\n\006HALTED\020\001\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022"
+    "\020\n\014PREPARE_LIST\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_"
+    "BE_OPENED\020\006\022\025\n\021SPLIT_STOCK_HALTS\020\007\022\013\n\007EX"
+    "PIRED\020\010\022\030\n\024WARRANT_PREPARE_LIST\020\t\022\021\n\rSUS"
+    "PEND_TRADE\020\n*\?\n\014TradeSession\022\020\n\014NORMAL_T"
+    "RADE\020\000\022\r\n\tPRE_TRADE\020\001\022\016\n\nPOST_TRADE\020\002*/\n"
+    "\nAdjustType\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORWARD_AD"
+    "JUST\020\001*\242\001\n\006Period\022\022\n\016UNKNOWN_PERIOD\020\000\022\016\n"
+    "\nONE_MINUTE\020\001\022\017\n\013FIVE_MINUTE\020\005\022\022\n\016FIFTEE"
+    "N_MINUTE\020\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014SIXTY_M"
+    "INUTE\020<\022\010\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MONTH\020\270\027"
+    "\022\t\n\004YEAR\020\240\037*I\n\007SubType\022\020\n\014UNKNOWN_TYPE\020\000"
+    "\022\t\n\005QUOTE\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005T"
+    "RADE\020\004*#\n\014PushQuoteTag\022\n\n\006Normal\020\000\022\007\n\003Eo"
+    "d\020\001*\226\t\n\tCalcIndex\022\025\n\021CALCINDEX_UNKNOWN\020\000"
+    "\022\027\n\023CALCINDEX_LAST_DONE\020\001\022\030\n\024CALCINDEX_C"
+    "HANGE_VAL\020\002\022\031\n\025CALCINDEX_CHANGE_RATE\020\003\022\024"
+    "\n\020CALCINDEX_VOLUME\020\004\022\026\n\022CALCINDEX_TURNOV"
+    "ER\020\005\022\035\n\031CALCINDEX_YTD_CHANGE_RATE\020\006\022\033\n\027C"
+    "ALCINDEX_TURNOVER_RATE\020\007\022 \n\034CALCINDEX_TO"
+    "TAL_MARKET_VALUE\020\010\022\032\n\026CALCINDEX_CAPITAL_"
+    "FLOW\020\t\022\027\n\023CALCINDEX_AMPLITUDE\020\n\022\032\n\026CALCI"
+    "NDEX_VOLUME_RATIO\020\013\022\032\n\026CALCINDEX_PE_TTM_"
+    "RATIO\020\014\022\026\n\022CALCINDEX_PB_RATIO\020\r\022 \n\034CALCI"
+    "NDEX_DIVIDEND_RATIO_TTM\020\016\022\"\n\036CALCINDEX_F"
+    "IVE_DAY_CHANGE_RATE\020\017\022!\n\035CALCINDEX_TEN_D"
+    "AY_CHANGE_RATE\020\020\022#\n\037CALCINDEX_HALF_YEAR_"
+    "CHANGE_RATE\020\021\022&\n\"CALCINDEX_FIVE_MINUTES_"
+    "CHANGE_RATE\020\022\022\031\n\025CALCINDEX_EXPIRY_DATE\020\023"
+    "\022\032\n\026CALCINDEX_STRIKE_PRICE\020\024\022 \n\034CALCINDE"
+    "X_UPPER_STRIKE_PRICE\020\025\022 \n\034CALCINDEX_LOWE"
+    "R_STRIKE_PRICE\020\026\022\035\n\031CALCINDEX_OUTSTANDIN"
+    "G_QTY\020\027\022\037\n\033CALCINDEX_OUTSTANDING_RATIO\020\030"
+    "\022\025\n\021CALCINDEX_PREMIUM\020\031\022\025\n\021CALCINDEX_ITM"
+    "_OTM\020\032\022 \n\034CALCINDEX_IMPLIED_VOLATILITY\020\033"
+    "\022\033\n\027CALCINDEX_WARRANT_DELTA\020\034\022\030\n\024CALCIND"
+    "EX_CALL_PRICE\020\035\022\033\n\027CALCINDEX_TO_CALL_PRI"
+    "CE\020\036\022 \n\034CALCINDEX_EFFECTIVE_LEVERAGE\020\037\022\034"
+    "\n\030CALCINDEX_LEVERAGE_RATIO\020 \022\036\n\032CALCINDE"
+    "X_CONVERSION_RATIO\020!\022\033\n\027CALCINDEX_BALANC"
+    "E_POINT\020\"\022\033\n\027CALCINDEX_OPEN_INTEREST\020#\022\023"
+    "\n\017CALCINDEX_DELTA\020$\022\023\n\017CALCINDEX_GAMMA\020%"
+    "\022\023\n\017CALCINDEX_THETA\020&\022\022\n\016CALCINDEX_VEGA\020"
+    "\'\022\021\n\rCALCINDEX_RHO\020(*]\n\033HistoryCandlesti"
+    "ckQueryType\022\026\n\022UNKNOWN_QUERY_TYPE\020\000\022\023\n\017Q"
+    "UERY_BY_OFFSET\020\001\022\021\n\rQUERY_BY_DATE\020\002*&\n\tD"
+    "irection\022\014\n\010BACKWARD\020\000\022\013\n\007FORWARD\020\001B\325\001\n\030"
+    "com.longportapp.quote.v1B\010ApiProtoP\001Z=gi"
+    "thub.com/longportapp/openapi-protobufs/g"
+    "en/go/quote;quotev1\242\002\003LQX\252\002\024Longportapp."
+    "Quote.V1\312\002\024Longportapp\\Quote\\V1\342\002 Longpo"
+    "rtapp\\Quote\\V1\\GPBMetadata\352\002\026Longportapp"
+    "::Quote::V1b\006proto3"
 };
 static ::absl::once_flag descriptor_table_quote_2fapi_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_quote_2fapi_2eproto = {
     false,
     false,
-    15282,
+    15819,
     descriptor_table_protodef_quote_2fapi_2eproto,
     "quote/api.proto",
     &descriptor_table_quote_2fapi_2eproto_once,
     nullptr,
     0,
-    64,
+    67,
     schemas,
     file_default_instances,
     TableStruct_quote_2fapi_2eproto::offsets,
@@ -3261,6 +3366,7 @@ bool Command_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
     case 5:
     case 6:
     case 7:
@@ -3379,9 +3485,22 @@ bool SubType_IsValid(int value) {
       return false;
   }
 }
-const ::google::protobuf::EnumDescriptor* CalcIndex_descriptor() {
+const ::google::protobuf::EnumDescriptor* PushQuoteTag_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[6];
+}
+bool PushQuoteTag_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+const ::google::protobuf::EnumDescriptor* CalcIndex_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
+  return file_level_enum_descriptors_quote_2fapi_2eproto[7];
 }
 bool CalcIndex_IsValid(int value) {
   switch (value) {
@@ -3433,7 +3552,7 @@ bool CalcIndex_IsValid(int value) {
 }
 const ::google::protobuf::EnumDescriptor* HistoryCandlestickQueryType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
-  return file_level_enum_descriptors_quote_2fapi_2eproto[7];
+  return file_level_enum_descriptors_quote_2fapi_2eproto[8];
 }
 bool HistoryCandlestickQueryType_IsValid(int value) {
   switch (value) {
@@ -3447,7 +3566,7 @@ bool HistoryCandlestickQueryType_IsValid(int value) {
 }
 const ::google::protobuf::EnumDescriptor* Direction_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
-  return file_level_enum_descriptors_quote_2fapi_2eproto[8];
+  return file_level_enum_descriptors_quote_2fapi_2eproto[9];
 }
 bool Direction_IsValid(int value) {
   switch (value) {
@@ -14878,8 +14997,9 @@ FilterWarrant::FilterWarrant(const FilterWarrant& from) : ::google::protobuf::Me
       decltype(_impl_.leverage_ratio_){},
       decltype(_impl_.conversion_ratio_){},
       decltype(_impl_.balance_point_){},
-      decltype(_impl_.state_){},
       decltype(_impl_.volume_){},
+      decltype(_impl_.status_){},
+      decltype(_impl_.type_){},
       /*decltype(_impl_._cached_size_)*/ {},
   };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
@@ -15038,14 +15158,9 @@ FilterWarrant::FilterWarrant(const FilterWarrant& from) : ::google::protobuf::Me
   if (!from._internal_balance_point().empty()) {
     _this->_impl_.balance_point_.Set(from._internal_balance_point(), _this->GetArenaForAllocation());
   }
-  _impl_.state_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.state_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_state().empty()) {
-    _this->_impl_.state_.Set(from._internal_state(), _this->GetArenaForAllocation());
-  }
-  _this->_impl_.volume_ = from._impl_.volume_;
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.type_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.type_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.FilterWarrant)
 }
@@ -15074,8 +15189,9 @@ inline void FilterWarrant::SharedCtor(::_pb::Arena* arena) {
       decltype(_impl_.leverage_ratio_){},
       decltype(_impl_.conversion_ratio_){},
       decltype(_impl_.balance_point_){},
-      decltype(_impl_.state_){},
       decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.status_){0},
+      decltype(_impl_.type_){0},
       /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.symbol_.InitDefault();
@@ -15166,10 +15282,6 @@ inline void FilterWarrant::SharedCtor(::_pb::Arena* arena) {
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.balance_point_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  _impl_.state_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.state_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 FilterWarrant::~FilterWarrant() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.FilterWarrant)
@@ -15200,7 +15312,6 @@ inline void FilterWarrant::SharedDtor() {
   _impl_.leverage_ratio_.Destroy();
   _impl_.conversion_ratio_.Destroy();
   _impl_.balance_point_.Destroy();
-  _impl_.state_.Destroy();
 }
 void FilterWarrant::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
@@ -15234,8 +15345,9 @@ PROTOBUF_NOINLINE void FilterWarrant::Clear() {
   _impl_.leverage_ratio_.ClearToEmpty();
   _impl_.conversion_ratio_.ClearToEmpty();
   _impl_.balance_point_.ClearToEmpty();
-  _impl_.state_.ClearToEmpty();
-  _impl_.volume_ = ::int64_t{0};
+  ::memset(&_impl_.volume_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.type_) -
+      reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.type_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -15247,15 +15359,15 @@ const char* FilterWarrant::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
+const ::_pbi::TcParseTable<5, 25, 0, 327, 2> FilterWarrant::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    24, 248,  // max_field_number, fast_idx_mask
+    25, 248,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4278190080,  // skipmap
+    4261412864,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    24,  // num_field_entries
+    25,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_FilterWarrant_default_instance_._instance,
@@ -15331,10 +15443,12 @@ const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
     // string balance_point = 23 [json_name = "balancePoint"];
     {::_pbi::TcParser::FastUS2,
      {442, 63, 0, PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.balance_point_)}},
-    // string state = 24 [json_name = "state"];
-    {::_pbi::TcParser::FastUS2,
-     {450, 63, 0, PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.state_)}},
-    {::_pbi::TcParser::MiniParse, {}},
+    // int32 status = 24 [json_name = "status"];
+    {::_pbi::TcParser::FastV32S2,
+     {448, 63, 0, PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.status_)}},
+    // int32 type = 25 [json_name = "type"];
+    {::_pbi::TcParser::FastV32S2,
+     {456, 63, 0, PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.type_)}},
     {::_pbi::TcParser::MiniParse, {}},
     {::_pbi::TcParser::MiniParse, {}},
     {::_pbi::TcParser::MiniParse, {}},
@@ -15413,13 +15527,16 @@ const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
     // string balance_point = 23 [json_name = "balancePoint"];
     {PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.balance_point_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string state = 24 [json_name = "state"];
-    {PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.state_), 0, 0,
-    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int32 status = 24 [json_name = "status"];
+    {PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.status_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 type = 25 [json_name = "type"];
+    {PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.type_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
   }},
   // no aux_entries
   {{
-    "\42\6\4\11\13\12\0\10\13\14\22\22\17\21\7\7\22\5\12\15\22\16\20\15\5\0\0\0\0\0\0\0"
+    "\42\6\4\11\13\12\0\10\13\14\22\22\17\21\7\7\22\5\12\15\22\16\20\15\0\0\0\0\0\0\0\0"
     "longportapp.quote.v1.FilterWarrant"
     "symbol"
     "name"
@@ -15443,7 +15560,6 @@ const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
     "leverage_ratio"
     "conversion_ratio"
     "balance_point"
-    "state"
   }},
 };
 
@@ -15637,12 +15753,18 @@ const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
     target = stream->WriteStringMaybeAliased(23, _s, target);
   }
 
-  // string state = 24 [json_name = "state"];
-  if (!this->_internal_state().empty()) {
-    const std::string& _s = this->_internal_state();
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.FilterWarrant.state");
-    target = stream->WriteStringMaybeAliased(24, _s, target);
+  // int32 status = 24 [json_name = "status"];
+  if (this->_internal_status() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        24, this->_internal_status(), target);
+  }
+
+  // int32 type = 25 [json_name = "type"];
+  if (this->_internal_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        25, this->_internal_type(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -15794,16 +15916,22 @@ const ::_pbi::TcParseTable<5, 24, 0, 332, 2> FilterWarrant::_table_ = {
                                     this->_internal_balance_point());
   }
 
-  // string state = 24 [json_name = "state"];
-  if (!this->_internal_state().empty()) {
-    total_size += 2 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_state());
-  }
-
   // int64 volume = 6 [json_name = "volume"];
   if (this->_internal_volume() != 0) {
     total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
         this->_internal_volume());
+  }
+
+  // int32 status = 24 [json_name = "status"];
+  if (this->_internal_status() != 0) {
+    total_size += 2 + ::_pbi::WireFormatLite::Int32Size(
+                                    this->_internal_status());
+  }
+
+  // int32 type = 25 [json_name = "type"];
+  if (this->_internal_type() != 0) {
+    total_size += 2 + ::_pbi::WireFormatLite::Int32Size(
+                                    this->_internal_type());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -15890,11 +16018,14 @@ void FilterWarrant::MergeImpl(::google::protobuf::Message& to_msg, const ::googl
   if (!from._internal_balance_point().empty()) {
     _this->_internal_set_balance_point(from._internal_balance_point());
   }
-  if (!from._internal_state().empty()) {
-    _this->_internal_set_state(from._internal_state());
-  }
   if (from._internal_volume() != 0) {
     _this->_internal_set_volume(from._internal_volume());
+  }
+  if (from._internal_status() != 0) {
+    _this->_internal_set_status(from._internal_status());
+  }
+  if (from._internal_type() != 0) {
+    _this->_internal_set_type(from._internal_type());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -15959,9 +16090,12 @@ void FilterWarrant::InternalSwap(FilterWarrant* other) {
                                        &other->_impl_.conversion_ratio_, rhs_arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.balance_point_, lhs_arena,
                                        &other->_impl_.balance_point_, rhs_arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.state_, lhs_arena,
-                                       &other->_impl_.state_, rhs_arena);
-        swap(_impl_.volume_, other->_impl_.volume_);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.type_)
+      + sizeof(FilterWarrant::_impl_.type_)
+      - PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.volume_)>(
+          reinterpret_cast<char*>(&_impl_.volume_),
+          reinterpret_cast<char*>(&other->_impl_.volume_));
 }
 
 ::google::protobuf::Metadata FilterWarrant::GetMetadata() const {
@@ -17571,6 +17705,7 @@ PushQuote::PushQuote(const PushQuote& from) : ::google::protobuf::Message() {
       decltype(_impl_.trade_status_){},
       decltype(_impl_.trade_session_){},
       decltype(_impl_.current_volume_){},
+      decltype(_impl_.tag_){},
       /*decltype(_impl_._cached_size_)*/ {},
   };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
@@ -17625,8 +17760,8 @@ PushQuote::PushQuote(const PushQuote& from) : ::google::protobuf::Message() {
     _this->_impl_.current_turnover_.Set(from._internal_current_turnover(), _this->GetArenaForAllocation());
   }
   ::memcpy(&_impl_.sequence_, &from._impl_.sequence_,
-    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.current_volume_) -
-    reinterpret_cast<char*>(&_impl_.sequence_)) + sizeof(_impl_.current_volume_));
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.tag_) -
+    reinterpret_cast<char*>(&_impl_.sequence_)) + sizeof(_impl_.tag_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PushQuote)
 }
@@ -17646,6 +17781,7 @@ inline void PushQuote::SharedCtor(::_pb::Arena* arena) {
       decltype(_impl_.trade_status_){0},
       decltype(_impl_.trade_session_){0},
       decltype(_impl_.current_volume_){::int64_t{0}},
+      decltype(_impl_.tag_){0},
       /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.symbol_.InitDefault();
@@ -17710,8 +17846,8 @@ PROTOBUF_NOINLINE void PushQuote::Clear() {
   _impl_.turnover_.ClearToEmpty();
   _impl_.current_turnover_.ClearToEmpty();
   ::memset(&_impl_.sequence_, 0, static_cast<::size_t>(
-      reinterpret_cast<char*>(&_impl_.current_volume_) -
-      reinterpret_cast<char*>(&_impl_.sequence_)) + sizeof(_impl_.current_volume_));
+      reinterpret_cast<char*>(&_impl_.tag_) -
+      reinterpret_cast<char*>(&_impl_.sequence_)) + sizeof(_impl_.tag_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -17723,15 +17859,15 @@ const char* PushQuote::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<4, 13, 0, 97, 2> PushQuote::_table_ = {
+const ::_pbi::TcParseTable<4, 14, 0, 97, 2> PushQuote::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    13, 120,  // max_field_number, fast_idx_mask
+    14, 120,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294959104,  // skipmap
+    4294950912,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    13,  // num_field_entries
+    14,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_PushQuote_default_instance_._instance,
@@ -17777,7 +17913,9 @@ const ::_pbi::TcParseTable<4, 13, 0, 97, 2> PushQuote::_table_ = {
     // string current_turnover = 13 [json_name = "currentTurnover"];
     {::_pbi::TcParser::FastUS1,
      {106, 63, 0, PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.current_turnover_)}},
-    {::_pbi::TcParser::MiniParse, {}},
+    // .longportapp.quote.v1.PushQuoteTag tag = 14 [json_name = "tag"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PushQuote, _impl_.tag_), 63>(),
+     {112, 63, 0, PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.tag_)}},
     {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
@@ -17821,6 +17959,9 @@ const ::_pbi::TcParseTable<4, 13, 0, 97, 2> PushQuote::_table_ = {
     // string current_turnover = 13 [json_name = "currentTurnover"];
     {PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.current_turnover_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // .longportapp.quote.v1.PushQuoteTag tag = 14 [json_name = "tag"];
+    {PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.tag_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
   }},
   // no aux_entries
   {{
@@ -17941,6 +18082,13 @@ const ::_pbi::TcParseTable<4, 13, 0, 97, 2> PushQuote::_table_ = {
     target = stream->WriteStringMaybeAliased(13, _s, target);
   }
 
+  // .longportapp.quote.v1.PushQuoteTag tag = 14 [json_name = "tag"];
+  if (this->_internal_tag() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+        14, this->_internal_tag(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target =
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
@@ -18036,6 +18184,12 @@ const ::_pbi::TcParseTable<4, 13, 0, 97, 2> PushQuote::_table_ = {
         this->_internal_current_volume());
   }
 
+  // .longportapp.quote.v1.PushQuoteTag tag = 14 [json_name = "tag"];
+  if (this->_internal_tag() != 0) {
+    total_size += 1 +
+                  ::_pbi::WireFormatLite::EnumSize(this->_internal_tag());
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
@@ -18093,6 +18247,9 @@ void PushQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::p
   if (from._internal_current_volume() != 0) {
     _this->_internal_set_current_volume(from._internal_current_volume());
   }
+  if (from._internal_tag() != 0) {
+    _this->_internal_set_tag(from._internal_tag());
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -18127,8 +18284,8 @@ void PushQuote::InternalSwap(PushQuote* other) {
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.current_turnover_, lhs_arena,
                                        &other->_impl_.current_turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.current_volume_)
-      + sizeof(PushQuote::_impl_.current_volume_)
+      PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.tag_)
+      + sizeof(PushQuote::_impl_.tag_)
       - PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.sequence_)>(
           reinterpret_cast<char*>(&_impl_.sequence_),
           reinterpret_cast<char*>(&other->_impl_.sequence_));
@@ -23677,6 +23834,569 @@ void SecurityHistoryCandlestickRequest::InternalSwap(SecurityHistoryCandlestickR
   return ::_pbi::AssignDescriptors(
       &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
       file_level_metadata_quote_2fapi_2eproto[63]);
+}
+// ===================================================================
+
+class UserQuoteProfileRequest::_Internal {
+ public:
+};
+
+UserQuoteProfileRequest::UserQuoteProfileRequest(::google::protobuf::Arena* arena)
+    : ::google::protobuf::internal::ZeroFieldsBase(arena) {
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
+}
+UserQuoteProfileRequest::UserQuoteProfileRequest(const UserQuoteProfileRequest& from) : ::google::protobuf::internal::ZeroFieldsBase() {
+  UserQuoteProfileRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
+}
+
+
+
+
+const ::google::protobuf::Message::ClassData UserQuoteProfileRequest::_class_data_ = {
+    ::google::protobuf::internal::ZeroFieldsBase::CopyImpl,
+    ::google::protobuf::internal::ZeroFieldsBase::MergeImpl,
+};
+const ::google::protobuf::Message::ClassData*UserQuoteProfileRequest::GetClassData() const { return &_class_data_; }
+
+
+
+
+
+
+
+::google::protobuf::Metadata UserQuoteProfileRequest::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[64]);
+}
+// ===================================================================
+
+class RateLimit::_Internal {
+ public:
+};
+
+RateLimit::RateLimit(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.RateLimit)
+}
+RateLimit::RateLimit(const RateLimit& from)
+    : ::google::protobuf::Message(), _impl_(from._impl_) {
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.RateLimit)
+}
+inline void RateLimit::SharedCtor(::_pb::Arena* arena) {
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.command_){0},
+      decltype(_impl_.limit_){0},
+      decltype(_impl_.burst_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+}
+RateLimit::~RateLimit() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.RateLimit)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void RateLimit::SharedDtor() {
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+}
+void RateLimit::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+PROTOBUF_NOINLINE void RateLimit::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.RateLimit)
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&_impl_.command_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.burst_) -
+      reinterpret_cast<char*>(&_impl_.command_)) + sizeof(_impl_.burst_));
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* RateLimit::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 0, 0, 2> RateLimit::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_RateLimit_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // .longportapp.quote.v1.Command command = 1 [json_name = "command"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(RateLimit, _impl_.command_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.command_)}},
+    // int32 limit = 2 [json_name = "limit"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(RateLimit, _impl_.limit_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.limit_)}},
+    // int32 burst = 3 [json_name = "burst"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(RateLimit, _impl_.burst_), 63>(),
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.burst_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .longportapp.quote.v1.Command command = 1 [json_name = "command"];
+    {PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.command_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // int32 limit = 2 [json_name = "limit"];
+    {PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.limit_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 burst = 3 [json_name = "burst"];
+    {PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.burst_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
+::uint8_t* RateLimit::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.RateLimit)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // .longportapp.quote.v1.Command command = 1 [json_name = "command"];
+  if (this->_internal_command() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+        1, this->_internal_command(), target);
+  }
+
+  // int32 limit = 2 [json_name = "limit"];
+  if (this->_internal_limit() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<2>(
+            stream, this->_internal_limit(), target);
+  }
+
+  // int32 burst = 3 [json_name = "burst"];
+  if (this->_internal_burst() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_burst(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.RateLimit)
+  return target;
+}
+
+::size_t RateLimit::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.RateLimit)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .longportapp.quote.v1.Command command = 1 [json_name = "command"];
+  if (this->_internal_command() != 0) {
+    total_size += 1 +
+                  ::_pbi::WireFormatLite::EnumSize(this->_internal_command());
+  }
+
+  // int32 limit = 2 [json_name = "limit"];
+  if (this->_internal_limit() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_limit());
+  }
+
+  // int32 burst = 3 [json_name = "burst"];
+  if (this->_internal_burst() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_burst());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData RateLimit::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    RateLimit::MergeImpl
+};
+const ::google::protobuf::Message::ClassData*RateLimit::GetClassData() const { return &_class_data_; }
+
+
+void RateLimit::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<RateLimit*>(&to_msg);
+  auto& from = static_cast<const RateLimit&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.RateLimit)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_command() != 0) {
+    _this->_internal_set_command(from._internal_command());
+  }
+  if (from._internal_limit() != 0) {
+    _this->_internal_set_limit(from._internal_limit());
+  }
+  if (from._internal_burst() != 0) {
+    _this->_internal_set_burst(from._internal_burst());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void RateLimit::CopyFrom(const RateLimit& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.RateLimit)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool RateLimit::IsInitialized() const {
+  return true;
+}
+
+void RateLimit::InternalSwap(RateLimit* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.burst_)
+      + sizeof(RateLimit::_impl_.burst_)
+      - PROTOBUF_FIELD_OFFSET(RateLimit, _impl_.command_)>(
+          reinterpret_cast<char*>(&_impl_.command_),
+          reinterpret_cast<char*>(&other->_impl_.command_));
+}
+
+::google::protobuf::Metadata RateLimit::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[65]);
+}
+// ===================================================================
+
+class UserQuoteProfileResponse::_Internal {
+ public:
+};
+
+UserQuoteProfileResponse::UserQuoteProfileResponse(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteProfileResponse)
+}
+UserQuoteProfileResponse::UserQuoteProfileResponse(const UserQuoteProfileResponse& from) : ::google::protobuf::Message() {
+  UserQuoteProfileResponse* const _this = this;
+  (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.rate_limit_){from._impl_.rate_limit_},
+      decltype(_impl_.quote_level_){},
+      decltype(_impl_.member_id_){},
+      decltype(_impl_.subscribe_limit_){},
+      decltype(_impl_.history_candlestick_limit_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  _impl_.quote_level_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.quote_level_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_quote_level().empty()) {
+    _this->_impl_.quote_level_.Set(from._internal_quote_level(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.member_id_, &from._impl_.member_id_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.history_candlestick_limit_) -
+    reinterpret_cast<char*>(&_impl_.member_id_)) + sizeof(_impl_.history_candlestick_limit_));
+
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteProfileResponse)
+}
+inline void UserQuoteProfileResponse::SharedCtor(::_pb::Arena* arena) {
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.rate_limit_){arena},
+      decltype(_impl_.quote_level_){},
+      decltype(_impl_.member_id_){::int64_t{0}},
+      decltype(_impl_.subscribe_limit_){0},
+      decltype(_impl_.history_candlestick_limit_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.quote_level_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.quote_level_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+UserQuoteProfileResponse::~UserQuoteProfileResponse() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteProfileResponse)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void UserQuoteProfileResponse::SharedDtor() {
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.rate_limit_.~RepeatedPtrField();
+  _impl_.quote_level_.Destroy();
+}
+void UserQuoteProfileResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+PROTOBUF_NOINLINE void UserQuoteProfileResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteProfileResponse)
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_mutable_rate_limit()->Clear();
+  _impl_.quote_level_.ClearToEmpty();
+  ::memset(&_impl_.member_id_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.history_candlestick_limit_) -
+      reinterpret_cast<char*>(&_impl_.member_id_)) + sizeof(_impl_.history_candlestick_limit_));
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* UserQuoteProfileResponse::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 5, 1, 65, 2> UserQuoteProfileResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    5, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967264,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    5,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_UserQuoteProfileResponse_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // int64 member_id = 1 [json_name = "memberId"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(UserQuoteProfileResponse, _impl_.member_id_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_)}},
+    // string quote_level = 2 [json_name = "quoteLevel"];
+    {::_pbi::TcParser::FastUS1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_)}},
+    // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(UserQuoteProfileResponse, _impl_.subscribe_limit_), 63>(),
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.subscribe_limit_)}},
+    // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(UserQuoteProfileResponse, _impl_.history_candlestick_limit_), 63>(),
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_)}},
+    // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
+    {::_pbi::TcParser::FastMtR1,
+     {42, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.rate_limit_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int64 member_id = 1 [json_name = "memberId"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // string quote_level = 2 [json_name = "quoteLevel"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.subscribe_limit_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.rate_limit_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::longportapp::quote::v1::RateLimit>()},
+  }}, {{
+    "\55\0\13\0\0\0\0\0"
+    "longportapp.quote.v1.UserQuoteProfileResponse"
+    "quote_level"
+  }},
+};
+
+::uint8_t* UserQuoteProfileResponse::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.UserQuoteProfileResponse)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // int64 member_id = 1 [json_name = "memberId"];
+  if (this->_internal_member_id() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<1>(
+            stream, this->_internal_member_id(), target);
+  }
+
+  // string quote_level = 2 [json_name = "quoteLevel"];
+  if (!this->_internal_quote_level().empty()) {
+    const std::string& _s = this->_internal_quote_level();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteProfileResponse.quote_level");
+    target = stream->WriteStringMaybeAliased(2, _s, target);
+  }
+
+  // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
+  if (this->_internal_subscribe_limit() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_subscribe_limit(), target);
+  }
+
+  // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
+  if (this->_internal_history_candlestick_limit() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_history_candlestick_limit(), target);
+  }
+
+  // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_rate_limit_size()); i < n; i++) {
+    const auto& repfield = this->_internal_rate_limit().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
+        InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.UserQuoteProfileResponse)
+  return target;
+}
+
+::size_t UserQuoteProfileResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.UserQuoteProfileResponse)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
+  total_size += 1UL * this->_internal_rate_limit_size();
+  for (const auto& msg : this->_internal_rate_limit()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
+  }
+  // string quote_level = 2 [json_name = "quoteLevel"];
+  if (!this->_internal_quote_level().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_quote_level());
+  }
+
+  // int64 member_id = 1 [json_name = "memberId"];
+  if (this->_internal_member_id() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_member_id());
+  }
+
+  // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
+  if (this->_internal_subscribe_limit() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_subscribe_limit());
+  }
+
+  // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
+  if (this->_internal_history_candlestick_limit() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_history_candlestick_limit());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData UserQuoteProfileResponse::_class_data_ = {
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteProfileResponse::MergeImpl
+};
+const ::google::protobuf::Message::ClassData*UserQuoteProfileResponse::GetClassData() const { return &_class_data_; }
+
+
+void UserQuoteProfileResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<UserQuoteProfileResponse*>(&to_msg);
+  auto& from = static_cast<const UserQuoteProfileResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.UserQuoteProfileResponse)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_internal_mutable_rate_limit()->MergeFrom(from._internal_rate_limit());
+  if (!from._internal_quote_level().empty()) {
+    _this->_internal_set_quote_level(from._internal_quote_level());
+  }
+  if (from._internal_member_id() != 0) {
+    _this->_internal_set_member_id(from._internal_member_id());
+  }
+  if (from._internal_subscribe_limit() != 0) {
+    _this->_internal_set_subscribe_limit(from._internal_subscribe_limit());
+  }
+  if (from._internal_history_candlestick_limit() != 0) {
+    _this->_internal_set_history_candlestick_limit(from._internal_history_candlestick_limit());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UserQuoteProfileResponse::CopyFrom(const UserQuoteProfileResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.UserQuoteProfileResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool UserQuoteProfileResponse::IsInitialized() const {
+  return true;
+}
+
+void UserQuoteProfileResponse::InternalSwap(UserQuoteProfileResponse* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.rate_limit_.InternalSwap(&other->_impl_.rate_limit_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.quote_level_, lhs_arena,
+                                       &other->_impl_.quote_level_, rhs_arena);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_)
+      + sizeof(UserQuoteProfileResponse::_impl_.history_candlestick_limit_)
+      - PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_)>(
+          reinterpret_cast<char*>(&_impl_.member_id_),
+          reinterpret_cast<char*>(&other->_impl_.member_id_));
+}
+
+::google::protobuf::Metadata UserQuoteProfileResponse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[66]);
 }
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
