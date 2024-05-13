@@ -89,6 +89,7 @@ message SecurityQuote {
   TradeStatus trade_status = 10;
   PrePostQuote pre_market_quote = 11;
   PrePostQuote post_market_quote = 12;
+  PrePostQuote over_night_quote = 13;
 }
 
 enum TradeStatus {
@@ -109,6 +110,7 @@ enum TradeSession {
   NORMAL_TRADE = 0;
   PRE_TRADE = 1;
   POST_TRADE = 2;
+  OVERNIGHT_TRADE = 3;
 }
 
 message PrePostQuote {
