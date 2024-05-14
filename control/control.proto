@@ -31,6 +31,7 @@ message Heartbeat {
 
 message AuthRequest {
   string token = 1;
+  map<string, string> metadata = 2;
 }
 
 message AuthResponse {
@@ -42,6 +43,7 @@ message AuthResponse {
 
 message ReconnectRequest {
   string session_id = 1;
+  map<string, string> metadata = 2;
 }
 
 message ReconnectResponse {
