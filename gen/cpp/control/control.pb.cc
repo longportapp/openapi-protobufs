@@ -23,116 +23,20 @@ namespace _fl = ::google::protobuf::internal::field_layout;
 namespace longportapp {
 namespace control {
 namespace v1 {
-        template <typename>
-PROTOBUF_CONSTEXPR Close::Close(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_.reason_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
-      /*decltype(_impl_.code_)*/ 0,
-      /*decltype(_impl_._cached_size_)*/ {},
-    } {}
-struct CloseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CloseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CloseDefaultTypeInternal() {}
-  union {
-    Close _instance;
-  };
-};
 
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CloseDefaultTypeInternal _Close_default_instance_;
-        template <typename>
-PROTOBUF_CONSTEXPR Heartbeat::Heartbeat(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_._has_bits_)*/ {},
-      /*decltype(_impl_._cached_size_)*/ {},
-      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
-      /*decltype(_impl_.heartbeat_id_)*/ 0,
-    } {}
-struct HeartbeatDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR HeartbeatDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~HeartbeatDefaultTypeInternal() {}
-  union {
-    Heartbeat _instance;
-  };
-};
+inline constexpr ReconnectResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : session_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        expires_{::int64_t{0}},
+        limit_{0u},
+        online_{0u},
+        _cached_size_{0} {}
 
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HeartbeatDefaultTypeInternal _Heartbeat_default_instance_;
-        template <typename>
-PROTOBUF_CONSTEXPR AuthRequest::AuthRequest(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_.token_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
-      /*decltype(_impl_._cached_size_)*/ {},
-    } {}
-struct AuthRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AuthRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~AuthRequestDefaultTypeInternal() {}
-  union {
-    AuthRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AuthRequestDefaultTypeInternal _AuthRequest_default_instance_;
-        template <typename>
-PROTOBUF_CONSTEXPR AuthResponse::AuthResponse(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_.session_id_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
-      /*decltype(_impl_.expires_)*/ ::int64_t{0},
-      /*decltype(_impl_.limit_)*/ 0u,
-      /*decltype(_impl_.online_)*/ 0u,
-      /*decltype(_impl_._cached_size_)*/ {},
-    } {}
-struct AuthResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AuthResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~AuthResponseDefaultTypeInternal() {}
-  union {
-    AuthResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AuthResponseDefaultTypeInternal _AuthResponse_default_instance_;
-        template <typename>
-PROTOBUF_CONSTEXPR ReconnectRequest::ReconnectRequest(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_.session_id_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
-      /*decltype(_impl_._cached_size_)*/ {},
-    } {}
-struct ReconnectRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ReconnectRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ReconnectRequestDefaultTypeInternal() {}
-  union {
-    ReconnectRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ReconnectRequestDefaultTypeInternal _ReconnectRequest_default_instance_;
-        template <typename>
+template <typename>
 PROTOBUF_CONSTEXPR ReconnectResponse::ReconnectResponse(::_pbi::ConstantInitialized)
-    : _impl_{
-      /*decltype(_impl_.session_id_)*/ {
-          &::_pbi::fixed_address_empty_string,
-          ::_pbi::ConstantInitialized{},
-      },
-      /*decltype(_impl_.expires_)*/ ::int64_t{0},
-      /*decltype(_impl_.limit_)*/ 0u,
-      /*decltype(_impl_.online_)*/ 0u,
-      /*decltype(_impl_._cached_size_)*/ {},
-    } {}
+    : _impl_(::_pbi::ConstantInitialized()) {}
 struct ReconnectResponseDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ReconnectResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ReconnectResponseDefaultTypeInternal() {}
@@ -143,10 +47,144 @@ struct ReconnectResponseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ReconnectResponseDefaultTypeInternal _ReconnectResponse_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR ReconnectRequest_MetadataEntry_DoNotUse::ReconnectRequest_MetadataEntry_DoNotUse(::_pbi::ConstantInitialized) {}
+struct ReconnectRequest_MetadataEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ReconnectRequest_MetadataEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ReconnectRequest_MetadataEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    ReconnectRequest_MetadataEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ReconnectRequest_MetadataEntry_DoNotUseDefaultTypeInternal _ReconnectRequest_MetadataEntry_DoNotUse_default_instance_;
+
+inline constexpr Heartbeat::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        timestamp_{::int64_t{0}},
+        heartbeat_id_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR Heartbeat::Heartbeat(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct HeartbeatDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR HeartbeatDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~HeartbeatDefaultTypeInternal() {}
+  union {
+    Heartbeat _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HeartbeatDefaultTypeInternal _Heartbeat_default_instance_;
+
+inline constexpr Close::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : reason_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        code_{static_cast< ::longportapp::control::v1::Close_Code >(0)},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR Close::Close(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct CloseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CloseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CloseDefaultTypeInternal() {}
+  union {
+    Close _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CloseDefaultTypeInternal _Close_default_instance_;
+
+inline constexpr AuthResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : session_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        expires_{::int64_t{0}},
+        limit_{0u},
+        online_{0u},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR AuthResponse::AuthResponse(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct AuthResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR AuthResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~AuthResponseDefaultTypeInternal() {}
+  union {
+    AuthResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AuthResponseDefaultTypeInternal _AuthResponse_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR AuthRequest_MetadataEntry_DoNotUse::AuthRequest_MetadataEntry_DoNotUse(::_pbi::ConstantInitialized) {}
+struct AuthRequest_MetadataEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR AuthRequest_MetadataEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~AuthRequest_MetadataEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    AuthRequest_MetadataEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AuthRequest_MetadataEntry_DoNotUseDefaultTypeInternal _AuthRequest_MetadataEntry_DoNotUse_default_instance_;
+
+inline constexpr ReconnectRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : metadata_{},
+        session_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR ReconnectRequest::ReconnectRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct ReconnectRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ReconnectRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ReconnectRequestDefaultTypeInternal() {}
+  union {
+    ReconnectRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ReconnectRequestDefaultTypeInternal _ReconnectRequest_default_instance_;
+
+inline constexpr AuthRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : metadata_{},
+        token_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR AuthRequest::AuthRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct AuthRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR AuthRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~AuthRequestDefaultTypeInternal() {}
+  union {
+    AuthRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AuthRequestDefaultTypeInternal _AuthRequest_default_instance_;
 }  // namespace v1
 }  // namespace control
 }  // namespace longportapp
-static ::_pb::Metadata file_level_metadata_control_2fcontrol_2eproto[6];
+static ::_pb::Metadata file_level_metadata_control_2fcontrol_2eproto[8];
 static const ::_pb::EnumDescriptor* file_level_enum_descriptors_control_2fcontrol_2eproto[2];
 static constexpr const ::_pb::ServiceDescriptor**
     file_level_service_descriptors_control_2fcontrol_2eproto = nullptr;
@@ -174,6 +212,18 @@ const ::uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTI
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::Heartbeat, _impl_.heartbeat_id_),
     ~0u,
     0,
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest_MetadataEntry_DoNotUse, _has_bits_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest_MetadataEntry_DoNotUse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest_MetadataEntry_DoNotUse, key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest_MetadataEntry_DoNotUse, value_),
+    0,
+    1,
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -183,6 +233,7 @@ const ::uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTI
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest, _impl_.token_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthRequest, _impl_.metadata_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -195,6 +246,18 @@ const ::uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTI
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthResponse, _impl_.expires_),
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthResponse, _impl_.limit_),
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::AuthResponse, _impl_.online_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest_MetadataEntry_DoNotUse, _has_bits_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest_MetadataEntry_DoNotUse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest_MetadataEntry_DoNotUse, key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest_MetadataEntry_DoNotUse, value_),
+    0,
+    1,
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -204,6 +267,7 @@ const ::uint32_t TableStruct_control_2fcontrol_2eproto::offsets[] PROTOBUF_SECTI
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest, _impl_.session_id_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectRequest, _impl_.metadata_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::control::v1::ReconnectResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -222,17 +286,21 @@ static const ::_pbi::MigrationSchema
     schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
         {0, -1, -1, sizeof(::longportapp::control::v1::Close)},
         {10, 20, -1, sizeof(::longportapp::control::v1::Heartbeat)},
-        {22, -1, -1, sizeof(::longportapp::control::v1::AuthRequest)},
-        {31, -1, -1, sizeof(::longportapp::control::v1::AuthResponse)},
-        {43, -1, -1, sizeof(::longportapp::control::v1::ReconnectRequest)},
-        {52, -1, -1, sizeof(::longportapp::control::v1::ReconnectResponse)},
+        {22, 32, -1, sizeof(::longportapp::control::v1::AuthRequest_MetadataEntry_DoNotUse)},
+        {34, -1, -1, sizeof(::longportapp::control::v1::AuthRequest)},
+        {44, -1, -1, sizeof(::longportapp::control::v1::AuthResponse)},
+        {56, 66, -1, sizeof(::longportapp::control::v1::ReconnectRequest_MetadataEntry_DoNotUse)},
+        {68, -1, -1, sizeof(::longportapp::control::v1::ReconnectRequest)},
+        {78, -1, -1, sizeof(::longportapp::control::v1::ReconnectResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
     &::longportapp::control::v1::_Close_default_instance_._instance,
     &::longportapp::control::v1::_Heartbeat_default_instance_._instance,
+    &::longportapp::control::v1::_AuthRequest_MetadataEntry_DoNotUse_default_instance_._instance,
     &::longportapp::control::v1::_AuthRequest_default_instance_._instance,
     &::longportapp::control::v1::_AuthResponse_default_instance_._instance,
+    &::longportapp::control::v1::_ReconnectRequest_MetadataEntry_DoNotUse_default_instance_._instance,
     &::longportapp::control::v1::_ReconnectRequest_default_instance_._instance,
     &::longportapp::control::v1::_ReconnectResponse_default_instance_._instance,
 };
@@ -246,35 +314,42 @@ const char descriptor_table_protodef_control_2fcontrol_2eproto[] PROTOBUF_SECTIO
     "\013SessExpired\020\005\022\024\n\020ConnectDuplicate\020\006\"b\n\t"
     "Heartbeat\022\034\n\ttimestamp\030\001 \001(\003R\ttimestamp\022"
     "&\n\014heartbeat_id\030\002 \001(\005H\000R\013heartbeatId\210\001\001B"
-    "\017\n\r_heartbeat_id\"#\n\013AuthRequest\022\024\n\005token"
-    "\030\001 \001(\tR\005token\"u\n\014AuthResponse\022\035\n\nsession"
-    "_id\030\001 \001(\tR\tsessionId\022\030\n\007expires\030\002 \001(\003R\007e"
-    "xpires\022\024\n\005limit\030\003 \001(\rR\005limit\022\026\n\006online\030\004"
-    " \001(\rR\006online\"1\n\020ReconnectRequest\022\035\n\nsess"
-    "ion_id\030\001 \001(\tR\tsessionId\"z\n\021ReconnectResp"
-    "onse\022\035\n\nsession_id\030\001 \001(\tR\tsessionId\022\030\n\007e"
-    "xpires\030\002 \001(\003R\007expires\022\024\n\005limit\030\003 \001(\rR\005li"
-    "mit\022\026\n\006online\030\004 \001(\rR\006online*L\n\007Command\022\r"
-    "\n\tCMD_CLOSE\020\000\022\021\n\rCMD_HEARTBEAT\020\001\022\014\n\010CMD_"
-    "AUTH\020\002\022\021\n\rCMD_RECONNECT\020\003B\347\001\n\032com.longpo"
-    "rtapp.control.v1B\014ControlProtoP\001ZAgithub"
-    ".com/longportapp/openapi-protobufs/gen/g"
-    "o/control;controlv1\242\002\003LCX\252\002\026Longportapp."
-    "Control.V1\312\002\026Longportapp\\Control\\V1\342\002\"Lo"
-    "ngportapp\\Control\\V1\\GPBMetadata\352\002\030Longp"
-    "ortapp::Control::V1b\006proto3"
+    "\017\n\r_heartbeat_id\"\257\001\n\013AuthRequest\022\024\n\005toke"
+    "n\030\001 \001(\tR\005token\022M\n\010metadata\030\002 \003(\01321.longp"
+    "ortapp.control.v1.AuthRequest.MetadataEn"
+    "tryR\010metadata\032;\n\rMetadataEntry\022\020\n\003key\030\001 "
+    "\001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"u\n\014Au"
+    "thResponse\022\035\n\nsession_id\030\001 \001(\tR\tsessionI"
+    "d\022\030\n\007expires\030\002 \001(\003R\007expires\022\024\n\005limit\030\003 \001"
+    "(\rR\005limit\022\026\n\006online\030\004 \001(\rR\006online\"\302\001\n\020Re"
+    "connectRequest\022\035\n\nsession_id\030\001 \001(\tR\tsess"
+    "ionId\022R\n\010metadata\030\002 \003(\01326.longportapp.co"
+    "ntrol.v1.ReconnectRequest.MetadataEntryR"
+    "\010metadata\032;\n\rMetadataEntry\022\020\n\003key\030\001 \001(\tR"
+    "\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"z\n\021Reconn"
+    "ectResponse\022\035\n\nsession_id\030\001 \001(\tR\tsession"
+    "Id\022\030\n\007expires\030\002 \001(\003R\007expires\022\024\n\005limit\030\003 "
+    "\001(\rR\005limit\022\026\n\006online\030\004 \001(\rR\006online*L\n\007Co"
+    "mmand\022\r\n\tCMD_CLOSE\020\000\022\021\n\rCMD_HEARTBEAT\020\001\022"
+    "\014\n\010CMD_AUTH\020\002\022\021\n\rCMD_RECONNECT\020\003B\347\001\n\032com"
+    ".longportapp.control.v1B\014ControlProtoP\001Z"
+    "Agithub.com/longportapp/openapi-protobuf"
+    "s/gen/go/control;controlv1\242\002\003LCX\252\002\026Longp"
+    "ortapp.Control.V1\312\002\026Longportapp\\Control\\"
+    "V1\342\002\"Longportapp\\Control\\V1\\GPBMetadata\352"
+    "\002\030Longportapp::Control::V1b\006proto3"
 };
 static ::absl::once_flag descriptor_table_control_2fcontrol_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_control_2fcontrol_2eproto = {
     false,
     false,
-    1027,
+    1314,
     descriptor_table_protodef_control_2fcontrol_2eproto,
     "control/control.proto",
     &descriptor_table_control_2fcontrol_2eproto_once,
     nullptr,
     0,
-    6,
+    8,
     schemas,
     file_default_instances,
     TableStruct_control_2fcontrol_2eproto::offsets,
@@ -307,19 +382,10 @@ const ::google::protobuf::EnumDescriptor* Close_Code_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_control_2fcontrol_2eproto);
   return file_level_enum_descriptors_control_2fcontrol_2eproto[0];
 }
+PROTOBUF_CONSTINIT const uint32_t Close_Code_internal_data_[] = {
+    458752u, 0u, };
 bool Close_Code_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      return true;
-    default:
-      return false;
-  }
+  return 0 <= value && value <= 6;
 }
 #if (__cplusplus < 201703) && \
   (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
@@ -341,16 +407,10 @@ const ::google::protobuf::EnumDescriptor* Command_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_control_2fcontrol_2eproto);
   return file_level_enum_descriptors_control_2fcontrol_2eproto[1];
 }
+PROTOBUF_CONSTINIT const uint32_t Command_internal_data_[] = {
+    262144u, 0u, };
 bool Command_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
+  return 0 <= value && value <= 3;
 }
 // ===================================================================
 
@@ -363,38 +423,34 @@ Close::Close(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.Close)
 }
-Close::Close(const Close& from) : ::google::protobuf::Message() {
+inline PROTOBUF_NDEBUG_INLINE Close::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : reason_(arena, from.reason_),
+        _cached_size_{0} {}
+
+Close::Close(
+    ::google::protobuf::Arena* arena,
+    const Close& from)
+    : ::google::protobuf::Message(arena) {
   Close* const _this = this;
   (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.reason_){},
-      decltype(_impl_.code_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  _impl_.reason_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.reason_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_reason().empty()) {
-    _this->_impl_.reason_.Set(from._internal_reason(), _this->GetArenaForAllocation());
-  }
-  _this->_impl_.code_ = from._impl_.code_;
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.code_ = from._impl_.code_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.Close)
 }
+inline PROTOBUF_NDEBUG_INLINE Close::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : reason_(arena),
+        _cached_size_{0} {}
+
 inline void Close::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_.reason_){},
-      decltype(_impl_.code_){0},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
-  _impl_.reason_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.reason_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.code_ = {};
 }
 Close::~Close() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.Close)
@@ -402,15 +458,14 @@ Close::~Close() {
   SharedDtor();
 }
 inline void Close::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArena() == nullptr);
   _impl_.reason_.Destroy();
-}
-void Close::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void Close::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.Close)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -521,11 +576,12 @@ const ::_pbi::TcParseTable<1, 2, 0, 43, 2> Close::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Close::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    Close::MergeImpl
+    Close::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*Close::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* Close::GetClassData() const {
+  return &_class_data_;
+}
 
 void Close::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Close*>(&to_msg);
@@ -555,13 +611,15 @@ PROTOBUF_NOINLINE bool Close::IsInitialized() const {
   return true;
 }
 
-void Close::InternalSwap(Close* other) {
+::_pbi::CachedSize* Close::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void Close::InternalSwap(Close* PROTOBUF_RESTRICT other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.reason_, lhs_arena,
-                                       &other->_impl_.reason_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.reason_, &other->_impl_.reason_, arena);
   swap(_impl_.code_, other->_impl_.code_);
 }
 
@@ -587,20 +645,24 @@ Heartbeat::Heartbeat(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.Heartbeat)
 }
-Heartbeat::Heartbeat(const Heartbeat& from)
-    : ::google::protobuf::Message(), _impl_(from._impl_) {
-  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
-      from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.Heartbeat)
+Heartbeat::Heartbeat(
+    ::google::protobuf::Arena* arena, const Heartbeat& from)
+    : Heartbeat(arena) {
+  MergeFrom(from);
 }
+inline PROTOBUF_NDEBUG_INLINE Heartbeat::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : _cached_size_{0} {}
+
 inline void Heartbeat::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-      decltype(_impl_.timestamp_){::int64_t{0}},
-      decltype(_impl_.heartbeat_id_){0},
-  };
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, timestamp_),
+           0,
+           offsetof(Impl_, heartbeat_id_) -
+               offsetof(Impl_, timestamp_) +
+               sizeof(Impl_::heartbeat_id_));
 }
 Heartbeat::~Heartbeat() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.Heartbeat)
@@ -608,14 +670,13 @@ Heartbeat::~Heartbeat() {
   SharedDtor();
 }
 inline void Heartbeat::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
-}
-void Heartbeat::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void Heartbeat::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.Heartbeat)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -725,11 +786,12 @@ const ::_pbi::TcParseTable<1, 2, 0, 0, 2> Heartbeat::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Heartbeat::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    Heartbeat::MergeImpl
+    Heartbeat::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*Heartbeat::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* Heartbeat::GetClassData() const {
+  return &_class_data_;
+}
 
 void Heartbeat::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Heartbeat*>(&to_msg);
@@ -759,7 +821,10 @@ PROTOBUF_NOINLINE bool Heartbeat::IsInitialized() const {
   return true;
 }
 
-void Heartbeat::InternalSwap(Heartbeat* other) {
+::_pbi::CachedSize* Heartbeat::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void Heartbeat::InternalSwap(Heartbeat* PROTOBUF_RESTRICT other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
@@ -778,6 +843,16 @@ void Heartbeat::InternalSwap(Heartbeat* other) {
 }
 // ===================================================================
 
+AuthRequest_MetadataEntry_DoNotUse::AuthRequest_MetadataEntry_DoNotUse() {}
+AuthRequest_MetadataEntry_DoNotUse::AuthRequest_MetadataEntry_DoNotUse(::google::protobuf::Arena* arena)
+    : SuperType(arena) {}
+::google::protobuf::Metadata AuthRequest_MetadataEntry_DoNotUse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
+      file_level_metadata_control_2fcontrol_2eproto[2]);
+}
+// ===================================================================
+
 class AuthRequest::_Internal {
  public:
 };
@@ -787,35 +862,34 @@ AuthRequest::AuthRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.AuthRequest)
 }
-AuthRequest::AuthRequest(const AuthRequest& from) : ::google::protobuf::Message() {
+inline PROTOBUF_NDEBUG_INLINE AuthRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : metadata_{visibility, arena, from.metadata_},
+        token_(arena, from.token_),
+        _cached_size_{0} {}
+
+AuthRequest::AuthRequest(
+    ::google::protobuf::Arena* arena,
+    const AuthRequest& from)
+    : ::google::protobuf::Message(arena) {
   AuthRequest* const _this = this;
   (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.token_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  _impl_.token_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.token_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_token().empty()) {
-    _this->_impl_.token_.Set(from._internal_token(), _this->GetArenaForAllocation());
-  }
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.AuthRequest)
 }
+inline PROTOBUF_NDEBUG_INLINE AuthRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : metadata_{visibility, arena},
+        token_(arena),
+        _cached_size_{0} {}
+
 inline void AuthRequest::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_.token_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
-  _impl_.token_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.token_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  new (&_impl_) Impl_(internal_visibility(), arena);
 }
 AuthRequest::~AuthRequest() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.AuthRequest)
@@ -823,19 +897,19 @@ AuthRequest::~AuthRequest() {
   SharedDtor();
 }
 inline void AuthRequest::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArena() == nullptr);
   _impl_.token_.Destroy();
-}
-void AuthRequest::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void AuthRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.AuthRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _impl_.metadata_.Clear();
   _impl_.token_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -848,17 +922,17 @@ const char* AuthRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 48, 2> AuthRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 2, 1, 56, 2> AuthRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
-    0,  // num_aux_entries
-    offsetof(decltype(_table_), field_names),  // no aux_entries
+    2,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
     &_AuthRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
@@ -871,12 +945,19 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> AuthRequest::_table_ = {
     // string token = 1 [json_name = "token"];
     {PROTOBUF_FIELD_OFFSET(AuthRequest, _impl_.token_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-  }},
-  // no aux_entries
-  {{
-    "\42\5\0\0\0\0\0\0"
+    // map<string, string> metadata = 2 [json_name = "metadata"];
+    {PROTOBUF_FIELD_OFFSET(AuthRequest, _impl_.metadata_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+  }}, {{
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(AuthRequest()._impl_.metadata_)>(
+        1, 0, 0, 9,
+        9)},
+  }}, {{
+    "\42\5\10\0\0\0\0\0"
     "longportapp.control.v1.AuthRequest"
     "token"
+    "metadata"
   }},
 };
 
@@ -893,6 +974,39 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> AuthRequest::_table_ = {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
         _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.AuthRequest.token");
     target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // map<string, string> metadata = 2 [json_name = "metadata"];
+  if (!_internal_metadata().empty()) {
+    using MapType = ::google::protobuf::Map<std::string, std::string>;
+    using WireHelper = _pbi::MapEntryFuncs<std::string, std::string,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_STRING>;
+    const auto& field = _internal_metadata();
+
+    if (stream->IsSerializationDeterministic() && field.size() > 1) {
+      for (const auto& entry : ::google::protobuf::internal::MapSorterPtr<MapType>(field)) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.AuthRequest.metadata");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.second.data(), static_cast<int>(entry.second.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.AuthRequest.metadata");
+      }
+    } else {
+      for (const auto& entry : field) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.AuthRequest.metadata");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.second.data(), static_cast<int>(entry.second.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.AuthRequest.metadata");
+      }
+    }
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -912,6 +1026,13 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> AuthRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // map<string, string> metadata = 2 [json_name = "metadata"];
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_metadata_size());
+  for (const auto& entry : _internal_metadata()) {
+    total_size += _pbi::MapEntryFuncs<std::string, std::string,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_STRING>::ByteSizeLong(entry.first, entry.second);
+  }
   // string token = 1 [json_name = "token"];
   if (!this->_internal_token().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -922,11 +1043,12 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> AuthRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData AuthRequest::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    AuthRequest::MergeImpl
+    AuthRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*AuthRequest::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* AuthRequest::GetClassData() const {
+  return &_class_data_;
+}
 
 void AuthRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<AuthRequest*>(&to_msg);
@@ -936,6 +1058,7 @@ void AuthRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  _this->_impl_.metadata_.MergeFrom(from._impl_.metadata_);
   if (!from._internal_token().empty()) {
     _this->_internal_set_token(from._internal_token());
   }
@@ -953,19 +1076,22 @@ PROTOBUF_NOINLINE bool AuthRequest::IsInitialized() const {
   return true;
 }
 
-void AuthRequest::InternalSwap(AuthRequest* other) {
+::_pbi::CachedSize* AuthRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void AuthRequest::InternalSwap(AuthRequest* PROTOBUF_RESTRICT other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.token_, lhs_arena,
-                                       &other->_impl_.token_, rhs_arena);
+  _impl_.metadata_.InternalSwap(&other->_impl_.metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.token_, &other->_impl_.token_, arena);
 }
 
 ::google::protobuf::Metadata AuthRequest::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
-      file_level_metadata_control_2fcontrol_2eproto[2]);
+      file_level_metadata_control_2fcontrol_2eproto[3]);
 }
 // ===================================================================
 
@@ -978,44 +1104,45 @@ AuthResponse::AuthResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.AuthResponse)
 }
-AuthResponse::AuthResponse(const AuthResponse& from) : ::google::protobuf::Message() {
+inline PROTOBUF_NDEBUG_INLINE AuthResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : session_id_(arena, from.session_id_),
+        _cached_size_{0} {}
+
+AuthResponse::AuthResponse(
+    ::google::protobuf::Arena* arena,
+    const AuthResponse& from)
+    : ::google::protobuf::Message(arena) {
   AuthResponse* const _this = this;
   (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      decltype(_impl_.expires_){},
-      decltype(_impl_.limit_){},
-      decltype(_impl_.online_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_session_id().empty()) {
-    _this->_impl_.session_id_.Set(from._internal_session_id(), _this->GetArenaForAllocation());
-  }
-  ::memcpy(&_impl_.expires_, &from._impl_.expires_,
-    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.online_) -
-    reinterpret_cast<char*>(&_impl_.expires_)) + sizeof(_impl_.online_));
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, expires_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, expires_),
+           offsetof(Impl_, online_) -
+               offsetof(Impl_, expires_) +
+               sizeof(Impl_::online_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.AuthResponse)
 }
+inline PROTOBUF_NDEBUG_INLINE AuthResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : session_id_(arena),
+        _cached_size_{0} {}
+
 inline void AuthResponse::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      decltype(_impl_.expires_){::int64_t{0}},
-      decltype(_impl_.limit_){0u},
-      decltype(_impl_.online_){0u},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, expires_),
+           0,
+           offsetof(Impl_, online_) -
+               offsetof(Impl_, expires_) +
+               sizeof(Impl_::online_));
 }
 AuthResponse::~AuthResponse() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.AuthResponse)
@@ -1023,15 +1150,14 @@ AuthResponse::~AuthResponse() {
   SharedDtor();
 }
 inline void AuthResponse::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArena() == nullptr);
   _impl_.session_id_.Destroy();
-}
-void AuthResponse::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void AuthResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.AuthResponse)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1182,11 +1308,12 @@ const ::_pbi::TcParseTable<2, 4, 0, 54, 2> AuthResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData AuthResponse::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    AuthResponse::MergeImpl
+    AuthResponse::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*AuthResponse::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* AuthResponse::GetClassData() const {
+  return &_class_data_;
+}
 
 void AuthResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<AuthResponse*>(&to_msg);
@@ -1222,13 +1349,15 @@ PROTOBUF_NOINLINE bool AuthResponse::IsInitialized() const {
   return true;
 }
 
-void AuthResponse::InternalSwap(AuthResponse* other) {
+::_pbi::CachedSize* AuthResponse::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void AuthResponse::InternalSwap(AuthResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, lhs_arena,
-                                       &other->_impl_.session_id_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, &other->_impl_.session_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AuthResponse, _impl_.online_)
       + sizeof(AuthResponse::_impl_.online_)
@@ -1240,7 +1369,17 @@ void AuthResponse::InternalSwap(AuthResponse* other) {
 ::google::protobuf::Metadata AuthResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
-      file_level_metadata_control_2fcontrol_2eproto[3]);
+      file_level_metadata_control_2fcontrol_2eproto[4]);
+}
+// ===================================================================
+
+ReconnectRequest_MetadataEntry_DoNotUse::ReconnectRequest_MetadataEntry_DoNotUse() {}
+ReconnectRequest_MetadataEntry_DoNotUse::ReconnectRequest_MetadataEntry_DoNotUse(::google::protobuf::Arena* arena)
+    : SuperType(arena) {}
+::google::protobuf::Metadata ReconnectRequest_MetadataEntry_DoNotUse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
+      file_level_metadata_control_2fcontrol_2eproto[5]);
 }
 // ===================================================================
 
@@ -1253,35 +1392,34 @@ ReconnectRequest::ReconnectRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.ReconnectRequest)
 }
-ReconnectRequest::ReconnectRequest(const ReconnectRequest& from) : ::google::protobuf::Message() {
+inline PROTOBUF_NDEBUG_INLINE ReconnectRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : metadata_{visibility, arena, from.metadata_},
+        session_id_(arena, from.session_id_),
+        _cached_size_{0} {}
+
+ReconnectRequest::ReconnectRequest(
+    ::google::protobuf::Arena* arena,
+    const ReconnectRequest& from)
+    : ::google::protobuf::Message(arena) {
   ReconnectRequest* const _this = this;
   (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_session_id().empty()) {
-    _this->_impl_.session_id_.Set(from._internal_session_id(), _this->GetArenaForAllocation());
-  }
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.ReconnectRequest)
 }
+inline PROTOBUF_NDEBUG_INLINE ReconnectRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : metadata_{visibility, arena},
+        session_id_(arena),
+        _cached_size_{0} {}
+
 inline void ReconnectRequest::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  new (&_impl_) Impl_(internal_visibility(), arena);
 }
 ReconnectRequest::~ReconnectRequest() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.ReconnectRequest)
@@ -1289,19 +1427,19 @@ ReconnectRequest::~ReconnectRequest() {
   SharedDtor();
 }
 inline void ReconnectRequest::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArena() == nullptr);
   _impl_.session_id_.Destroy();
-}
-void ReconnectRequest::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void ReconnectRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.ReconnectRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _impl_.metadata_.Clear();
   _impl_.session_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -1314,17 +1452,17 @@ const char* ReconnectRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 58, 2> ReconnectRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 2, 1, 66, 2> ReconnectRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
-    0,  // num_aux_entries
-    offsetof(decltype(_table_), field_names),  // no aux_entries
+    2,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
     &_ReconnectRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
@@ -1337,12 +1475,19 @@ const ::_pbi::TcParseTable<0, 1, 0, 58, 2> ReconnectRequest::_table_ = {
     // string session_id = 1 [json_name = "sessionId"];
     {PROTOBUF_FIELD_OFFSET(ReconnectRequest, _impl_.session_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-  }},
-  // no aux_entries
-  {{
-    "\47\12\0\0\0\0\0\0"
+    // map<string, string> metadata = 2 [json_name = "metadata"];
+    {PROTOBUF_FIELD_OFFSET(ReconnectRequest, _impl_.metadata_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+  }}, {{
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(ReconnectRequest()._impl_.metadata_)>(
+        1, 0, 0, 9,
+        9)},
+  }}, {{
+    "\47\12\10\0\0\0\0\0"
     "longportapp.control.v1.ReconnectRequest"
     "session_id"
+    "metadata"
   }},
 };
 
@@ -1359,6 +1504,39 @@ const ::_pbi::TcParseTable<0, 1, 0, 58, 2> ReconnectRequest::_table_ = {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
         _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.ReconnectRequest.session_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // map<string, string> metadata = 2 [json_name = "metadata"];
+  if (!_internal_metadata().empty()) {
+    using MapType = ::google::protobuf::Map<std::string, std::string>;
+    using WireHelper = _pbi::MapEntryFuncs<std::string, std::string,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_STRING>;
+    const auto& field = _internal_metadata();
+
+    if (stream->IsSerializationDeterministic() && field.size() > 1) {
+      for (const auto& entry : ::google::protobuf::internal::MapSorterPtr<MapType>(field)) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.ReconnectRequest.metadata");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.second.data(), static_cast<int>(entry.second.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.ReconnectRequest.metadata");
+      }
+    } else {
+      for (const auto& entry : field) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.ReconnectRequest.metadata");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.second.data(), static_cast<int>(entry.second.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.control.v1.ReconnectRequest.metadata");
+      }
+    }
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1378,6 +1556,13 @@ const ::_pbi::TcParseTable<0, 1, 0, 58, 2> ReconnectRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // map<string, string> metadata = 2 [json_name = "metadata"];
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_metadata_size());
+  for (const auto& entry : _internal_metadata()) {
+    total_size += _pbi::MapEntryFuncs<std::string, std::string,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_STRING>::ByteSizeLong(entry.first, entry.second);
+  }
   // string session_id = 1 [json_name = "sessionId"];
   if (!this->_internal_session_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1388,11 +1573,12 @@ const ::_pbi::TcParseTable<0, 1, 0, 58, 2> ReconnectRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData ReconnectRequest::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    ReconnectRequest::MergeImpl
+    ReconnectRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*ReconnectRequest::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* ReconnectRequest::GetClassData() const {
+  return &_class_data_;
+}
 
 void ReconnectRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<ReconnectRequest*>(&to_msg);
@@ -1402,6 +1588,7 @@ void ReconnectRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::go
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  _this->_impl_.metadata_.MergeFrom(from._impl_.metadata_);
   if (!from._internal_session_id().empty()) {
     _this->_internal_set_session_id(from._internal_session_id());
   }
@@ -1419,19 +1606,22 @@ PROTOBUF_NOINLINE bool ReconnectRequest::IsInitialized() const {
   return true;
 }
 
-void ReconnectRequest::InternalSwap(ReconnectRequest* other) {
+::_pbi::CachedSize* ReconnectRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void ReconnectRequest::InternalSwap(ReconnectRequest* PROTOBUF_RESTRICT other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, lhs_arena,
-                                       &other->_impl_.session_id_, rhs_arena);
+  _impl_.metadata_.InternalSwap(&other->_impl_.metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, &other->_impl_.session_id_, arena);
 }
 
 ::google::protobuf::Metadata ReconnectRequest::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
-      file_level_metadata_control_2fcontrol_2eproto[4]);
+      file_level_metadata_control_2fcontrol_2eproto[6]);
 }
 // ===================================================================
 
@@ -1444,44 +1634,45 @@ ReconnectResponse::ReconnectResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.ReconnectResponse)
 }
-ReconnectResponse::ReconnectResponse(const ReconnectResponse& from) : ::google::protobuf::Message() {
+inline PROTOBUF_NDEBUG_INLINE ReconnectResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : session_id_(arena, from.session_id_),
+        _cached_size_{0} {}
+
+ReconnectResponse::ReconnectResponse(
+    ::google::protobuf::Arena* arena,
+    const ReconnectResponse& from)
+    : ::google::protobuf::Message(arena) {
   ReconnectResponse* const _this = this;
   (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      decltype(_impl_.expires_){},
-      decltype(_impl_.limit_){},
-      decltype(_impl_.online_){},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_session_id().empty()) {
-    _this->_impl_.session_id_.Set(from._internal_session_id(), _this->GetArenaForAllocation());
-  }
-  ::memcpy(&_impl_.expires_, &from._impl_.expires_,
-    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.online_) -
-    reinterpret_cast<char*>(&_impl_.expires_)) + sizeof(_impl_.online_));
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, expires_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, expires_),
+           offsetof(Impl_, online_) -
+               offsetof(Impl_, expires_) +
+               sizeof(Impl_::online_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.ReconnectResponse)
 }
+inline PROTOBUF_NDEBUG_INLINE ReconnectResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : session_id_(arena),
+        _cached_size_{0} {}
+
 inline void ReconnectResponse::SharedCtor(::_pb::Arena* arena) {
-  (void)arena;
-  new (&_impl_) Impl_{
-      decltype(_impl_.session_id_){},
-      decltype(_impl_.expires_){::int64_t{0}},
-      decltype(_impl_.limit_){0u},
-      decltype(_impl_.online_){0u},
-      /*decltype(_impl_._cached_size_)*/ {},
-  };
-  _impl_.session_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        _impl_.session_id_.Set("", GetArenaForAllocation());
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, expires_),
+           0,
+           offsetof(Impl_, online_) -
+               offsetof(Impl_, expires_) +
+               sizeof(Impl_::online_));
 }
 ReconnectResponse::~ReconnectResponse() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.ReconnectResponse)
@@ -1489,15 +1680,14 @@ ReconnectResponse::~ReconnectResponse() {
   SharedDtor();
 }
 inline void ReconnectResponse::SharedDtor() {
-  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArena() == nullptr);
   _impl_.session_id_.Destroy();
-}
-void ReconnectResponse::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _impl_.~Impl_();
 }
 
 PROTOBUF_NOINLINE void ReconnectResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.ReconnectResponse)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1648,11 +1838,12 @@ const ::_pbi::TcParseTable<2, 4, 0, 59, 2> ReconnectResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData ReconnectResponse::_class_data_ = {
-    ::google::protobuf::Message::CopyWithSourceCheck,
-    ReconnectResponse::MergeImpl
+    ReconnectResponse::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
 };
-const ::google::protobuf::Message::ClassData*ReconnectResponse::GetClassData() const { return &_class_data_; }
-
+const ::google::protobuf::Message::ClassData* ReconnectResponse::GetClassData() const {
+  return &_class_data_;
+}
 
 void ReconnectResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<ReconnectResponse*>(&to_msg);
@@ -1688,13 +1879,15 @@ PROTOBUF_NOINLINE bool ReconnectResponse::IsInitialized() const {
   return true;
 }
 
-void ReconnectResponse::InternalSwap(ReconnectResponse* other) {
+::_pbi::CachedSize* ReconnectResponse::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void ReconnectResponse::InternalSwap(ReconnectResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, lhs_arena,
-                                       &other->_impl_.session_id_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.session_id_, &other->_impl_.session_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ReconnectResponse, _impl_.online_)
       + sizeof(ReconnectResponse::_impl_.online_)
@@ -1706,7 +1899,7 @@ void ReconnectResponse::InternalSwap(ReconnectResponse* other) {
 ::google::protobuf::Metadata ReconnectResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_control_2fcontrol_2eproto_getter, &descriptor_table_control_2fcontrol_2eproto_once,
-      file_level_metadata_control_2fcontrol_2eproto[5]);
+      file_level_metadata_control_2fcontrol_2eproto[7]);
 }
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
