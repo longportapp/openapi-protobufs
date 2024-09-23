@@ -638,12 +638,31 @@ message SecurityHistoryCandlestickRequest {
 }
 
 message UserQuoteProfileRequest {
+  string language = 1;
 }
 
 message RateLimit {
   Command command = 1;
   int32 limit = 2;
   int32 burst = 3;
+}
+
+message UserQuoteLevelDetail {
+  message PackageDetail {
+    // 行情包 Key
+    string key = 1;
+    // 行情包名称
+    string name = 2;
+    // 行情包描述, 根据入参 lang 适配多语言
+    string description = 4;
+    // 行情包生效开始时间 Unix 时间戳
+    int64 start = 5;
+    // 行情包生效结束时间 Unix 时间戳
+    int64 end = 6;
+  }
+
+  // 按行情包描述
+  map<string, PackageDetail> by_package_key = 1;
 }
 
 message UserQuoteProfileResponse {
@@ -656,4 +675,6 @@ message UserQuoteProfileResponse {
   int32 history_candlestick_limit = 4;
   // command rate limit
   repeated RateLimit rate_limit = 5;
+  // 用户等级详情
+  UserQuoteLevelDetail quote_level_detail = 6;
 }
