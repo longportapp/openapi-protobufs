@@ -659,6 +659,7 @@ message UserQuoteLevelDetail {
     int64 start = 5;
     // 行情包生效结束时间 Unix 时间戳
     int64 end = 6;
+    
   }
 
   message MarketPackageDetail {
