@@ -34,6 +34,9 @@
 #include "google/protobuf/message.h"
 #include "google/protobuf/repeated_field.h"  // IWYU pragma: export
 #include "google/protobuf/extension_set.h"  // IWYU pragma: export
+#include "google/protobuf/map.h"  // IWYU pragma: export
+#include "google/protobuf/map_entry.h"
+#include "google/protobuf/map_field_inl.h"
 #include "google/protobuf/generated_enum_reflection.h"
 #include "google/protobuf/unknown_field_set.h"
 // @@protoc_insertion_point(includes)
@@ -240,6 +243,21 @@ extern UnsubscribeRequestDefaultTypeInternal _UnsubscribeRequest_default_instanc
 class UnsubscribeResponse;
 struct UnsubscribeResponseDefaultTypeInternal;
 extern UnsubscribeResponseDefaultTypeInternal _UnsubscribeResponse_default_instance_;
+class UserQuoteLevelDetail;
+struct UserQuoteLevelDetailDefaultTypeInternal;
+extern UserQuoteLevelDetailDefaultTypeInternal _UserQuoteLevelDetail_default_instance_;
+class UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse;
+struct UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal;
+extern UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse_default_instance_;
+class UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse;
+struct UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal;
+extern UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse_default_instance_;
+class UserQuoteLevelDetail_MarketPackageDetail;
+struct UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal;
+extern UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal _UserQuoteLevelDetail_MarketPackageDetail_default_instance_;
+class UserQuoteLevelDetail_PackageDetail;
+struct UserQuoteLevelDetail_PackageDetailDefaultTypeInternal;
+extern UserQuoteLevelDetail_PackageDetailDefaultTypeInternal _UserQuoteLevelDetail_PackageDetail_default_instance_;
 class UserQuoteProfileRequest;
 struct UserQuoteProfileRequestDefaultTypeInternal;
 extern UserQuoteProfileRequestDefaultTypeInternal _UserQuoteProfileRequest_default_instance_;
@@ -1062,9 +1080,10 @@ class WarrantExtend final :
 };// -------------------------------------------------------------------
 
 class UserQuoteProfileRequest final :
-    public ::google::protobuf::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteProfileRequest) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteProfileRequest) */ {
  public:
   inline UserQuoteProfileRequest() : UserQuoteProfileRequest(nullptr) {}
+  ~UserQuoteProfileRequest() override;
   template<typename = void>
   explicit PROTOBUF_CONSTEXPR UserQuoteProfileRequest(::google::protobuf::internal::ConstantInitialized);
 
@@ -1148,15 +1167,29 @@ class UserQuoteProfileRequest final :
   UserQuoteProfileRequest* New(::google::protobuf::Arena* arena = nullptr) const final {
     return CreateMaybeMessage<UserQuoteProfileRequest>(arena);
   }
-  using ::google::protobuf::internal::ZeroFieldsBase::CopyFrom;
-  inline void CopyFrom(const UserQuoteProfileRequest& from) {
-    ::google::protobuf::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const UserQuoteProfileRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const UserQuoteProfileRequest& from) {
+    UserQuoteProfileRequest::MergeImpl(*this, from);
   }
-  using ::google::protobuf::internal::ZeroFieldsBase::MergeFrom;
-  void MergeFrom(const UserQuoteProfileRequest& from) {
-    ::google::protobuf::internal::ZeroFieldsBase::MergeImpl(*this, from);
-  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
   public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(UserQuoteProfileRequest* other);
 
   private:
   friend class ::google::protobuf::internal::AnyMetadata;
@@ -1168,16 +1201,43 @@ class UserQuoteProfileRequest final :
   UserQuoteProfileRequest(::google::protobuf::Arena* arena, const UserQuoteProfileRequest& from);
   public:
 
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
   ::google::protobuf::Metadata GetMetadata() const final;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
+  enum : int {
+    kLanguageFieldNumber = 1,
+  };
+  // string language = 1 [json_name = "language"];
+  void clear_language() ;
+  const std::string& language() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_language(Arg_&& arg, Args_... args);
+  std::string* mutable_language();
+  PROTOBUF_NODISCARD std::string* release_language();
+  void set_allocated_language(std::string* value);
+
+  private:
+  const std::string& _internal_language() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_language(
+      const std::string& value);
+  std::string* _internal_mutable_language();
+
+  public:
   // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteProfileRequest)
  private:
   class _Internal;
 
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 0,
+      61, 2>
+      _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
   template <typename T>
@@ -1192,8 +1252,252 @@ class UserQuoteProfileRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr language_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};// -------------------------------------------------------------------
+
+class UserQuoteLevelDetail_PackageDetail final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail) */ {
+ public:
+  inline UserQuoteLevelDetail_PackageDetail() : UserQuoteLevelDetail_PackageDetail(nullptr) {}
+  ~UserQuoteLevelDetail_PackageDetail() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetail(::google::protobuf::internal::ConstantInitialized);
+
+  inline UserQuoteLevelDetail_PackageDetail(const UserQuoteLevelDetail_PackageDetail& from)
+      : UserQuoteLevelDetail_PackageDetail(nullptr, from) {}
+  UserQuoteLevelDetail_PackageDetail(UserQuoteLevelDetail_PackageDetail&& from) noexcept
+    : UserQuoteLevelDetail_PackageDetail() {
+    *this = ::std::move(from);
+  }
+
+  inline UserQuoteLevelDetail_PackageDetail& operator=(const UserQuoteLevelDetail_PackageDetail& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline UserQuoteLevelDetail_PackageDetail& operator=(UserQuoteLevelDetail_PackageDetail&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const UserQuoteLevelDetail_PackageDetail& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const UserQuoteLevelDetail_PackageDetail* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteLevelDetail_PackageDetail*>(
+               &_UserQuoteLevelDetail_PackageDetail_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    66;
+
+  friend void swap(UserQuoteLevelDetail_PackageDetail& a, UserQuoteLevelDetail_PackageDetail& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(UserQuoteLevelDetail_PackageDetail* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(UserQuoteLevelDetail_PackageDetail* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  UserQuoteLevelDetail_PackageDetail* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserQuoteLevelDetail_PackageDetail>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const UserQuoteLevelDetail_PackageDetail& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const UserQuoteLevelDetail_PackageDetail& from) {
+    UserQuoteLevelDetail_PackageDetail::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(UserQuoteLevelDetail_PackageDetail* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail";
+  }
+  protected:
+  explicit UserQuoteLevelDetail_PackageDetail(::google::protobuf::Arena* arena);
+  UserQuoteLevelDetail_PackageDetail(::google::protobuf::Arena* arena, const UserQuoteLevelDetail_PackageDetail& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kKeyFieldNumber = 1,
+    kNameFieldNumber = 2,
+    kDescriptionFieldNumber = 4,
+    kStartFieldNumber = 5,
+    kEndFieldNumber = 6,
+  };
+  // string key = 1 [json_name = "key"];
+  void clear_key() ;
+  const std::string& key() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_key(Arg_&& arg, Args_... args);
+  std::string* mutable_key();
+  PROTOBUF_NODISCARD std::string* release_key();
+  void set_allocated_key(std::string* value);
+
+  private:
+  const std::string& _internal_key() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_key(
+      const std::string& value);
+  std::string* _internal_mutable_key();
+
+  public:
+  // string name = 2 [json_name = "name"];
+  void clear_name() ;
+  const std::string& name() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_name(Arg_&& arg, Args_... args);
+  std::string* mutable_name();
+  PROTOBUF_NODISCARD std::string* release_name();
+  void set_allocated_name(std::string* value);
+
+  private:
+  const std::string& _internal_name() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_name(
+      const std::string& value);
+  std::string* _internal_mutable_name();
+
+  public:
+  // string description = 4 [json_name = "description"];
+  void clear_description() ;
+  const std::string& description() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_description(Arg_&& arg, Args_... args);
+  std::string* mutable_description();
+  PROTOBUF_NODISCARD std::string* release_description();
+  void set_allocated_description(std::string* value);
+
+  private:
+  const std::string& _internal_description() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_description(
+      const std::string& value);
+  std::string* _internal_mutable_description();
+
+  public:
+  // int64 start = 5 [json_name = "start"];
+  void clear_start() ;
+  ::int64_t start() const;
+  void set_start(::int64_t value);
+
+  private:
+  ::int64_t _internal_start() const;
+  void _internal_set_start(::int64_t value);
+
+  public:
+  // int64 end = 6 [json_name = "end"];
+  void clear_end() ;
+  ::int64_t end() const;
+  void set_end(::int64_t value);
+
+  private:
+  ::int64_t _internal_end() const;
+  void _internal_set_end(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      3, 5, 0,
+      82, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr key_;
+    ::google::protobuf::internal::ArenaStringPtr name_;
+    ::google::protobuf::internal::ArenaStringPtr description_;
+    ::int64_t start_;
+    ::int64_t end_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };// -------------------------------------------------------------------
 
@@ -11401,26 +11705,26 @@ class WarrantFilterListRequest final :
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };// -------------------------------------------------------------------
 
-class UserQuoteProfileResponse final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteProfileResponse) */ {
+class UserQuoteLevelDetail_MarketPackageDetail final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail) */ {
  public:
-  inline UserQuoteProfileResponse() : UserQuoteProfileResponse(nullptr) {}
-  ~UserQuoteProfileResponse() override;
+  inline UserQuoteLevelDetail_MarketPackageDetail() : UserQuoteLevelDetail_MarketPackageDetail(nullptr) {}
+  ~UserQuoteLevelDetail_MarketPackageDetail() override;
   template<typename = void>
-  explicit PROTOBUF_CONSTEXPR UserQuoteProfileResponse(::google::protobuf::internal::ConstantInitialized);
+  explicit PROTOBUF_CONSTEXPR UserQuoteLevelDetail_MarketPackageDetail(::google::protobuf::internal::ConstantInitialized);
 
-  inline UserQuoteProfileResponse(const UserQuoteProfileResponse& from)
-      : UserQuoteProfileResponse(nullptr, from) {}
-  UserQuoteProfileResponse(UserQuoteProfileResponse&& from) noexcept
-    : UserQuoteProfileResponse() {
+  inline UserQuoteLevelDetail_MarketPackageDetail(const UserQuoteLevelDetail_MarketPackageDetail& from)
+      : UserQuoteLevelDetail_MarketPackageDetail(nullptr, from) {}
+  UserQuoteLevelDetail_MarketPackageDetail(UserQuoteLevelDetail_MarketPackageDetail&& from) noexcept
+    : UserQuoteLevelDetail_MarketPackageDetail() {
     *this = ::std::move(from);
   }
 
-  inline UserQuoteProfileResponse& operator=(const UserQuoteProfileResponse& from) {
+  inline UserQuoteLevelDetail_MarketPackageDetail& operator=(const UserQuoteLevelDetail_MarketPackageDetail& from) {
     CopyFrom(from);
     return *this;
   }
-  inline UserQuoteProfileResponse& operator=(UserQuoteProfileResponse&& from) noexcept {
+  inline UserQuoteLevelDetail_MarketPackageDetail& operator=(UserQuoteLevelDetail_MarketPackageDetail&& from) noexcept {
     if (this == &from) return *this;
     if (GetArena() == from.GetArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -11452,20 +11756,20 @@ class UserQuoteProfileResponse final :
   static const ::google::protobuf::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const UserQuoteProfileResponse& default_instance() {
+  static const UserQuoteLevelDetail_MarketPackageDetail& default_instance() {
     return *internal_default_instance();
   }
-  static inline const UserQuoteProfileResponse* internal_default_instance() {
-    return reinterpret_cast<const UserQuoteProfileResponse*>(
-               &_UserQuoteProfileResponse_default_instance_);
+  static inline const UserQuoteLevelDetail_MarketPackageDetail* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteLevelDetail_MarketPackageDetail*>(
+               &_UserQuoteLevelDetail_MarketPackageDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    67;
 
-  friend void swap(UserQuoteProfileResponse& a, UserQuoteProfileResponse& b) {
+  friend void swap(UserQuoteLevelDetail_MarketPackageDetail& a, UserQuoteLevelDetail_MarketPackageDetail& b) {
     a.Swap(&b);
   }
-  inline void Swap(UserQuoteProfileResponse* other) {
+  inline void Swap(UserQuoteLevelDetail_MarketPackageDetail* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetArena() != nullptr &&
@@ -11478,7 +11782,7 @@ class UserQuoteProfileResponse final :
       ::google::protobuf::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(UserQuoteProfileResponse* other) {
+  void UnsafeArenaSwap(UserQuoteLevelDetail_MarketPackageDetail* other) {
     if (other == this) return;
     ABSL_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -11486,14 +11790,14 @@ class UserQuoteProfileResponse final :
 
   // implements Message ----------------------------------------------
 
-  UserQuoteProfileResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<UserQuoteProfileResponse>(arena);
+  UserQuoteLevelDetail_MarketPackageDetail* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserQuoteLevelDetail_MarketPackageDetail>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
-  void CopyFrom(const UserQuoteProfileResponse& from);
+  void CopyFrom(const UserQuoteLevelDetail_MarketPackageDetail& from);
   using ::google::protobuf::Message::MergeFrom;
-  void MergeFrom( const UserQuoteProfileResponse& from) {
-    UserQuoteProfileResponse::MergeImpl(*this, from);
+  void MergeFrom( const UserQuoteLevelDetail_MarketPackageDetail& from) {
+    UserQuoteLevelDetail_MarketPackageDetail::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
@@ -11511,16 +11815,16 @@ class UserQuoteProfileResponse final :
   ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
   void SharedCtor(::google::protobuf::Arena* arena);
   void SharedDtor();
-  void InternalSwap(UserQuoteProfileResponse* other);
+  void InternalSwap(UserQuoteLevelDetail_MarketPackageDetail* other);
 
   private:
   friend class ::google::protobuf::internal::AnyMetadata;
   static ::absl::string_view FullMessageName() {
-    return "longportapp.quote.v1.UserQuoteProfileResponse";
+    return "longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail";
   }
   protected:
-  explicit UserQuoteProfileResponse(::google::protobuf::Arena* arena);
-  UserQuoteProfileResponse(::google::protobuf::Arena* arena, const UserQuoteProfileResponse& from);
+  explicit UserQuoteLevelDetail_MarketPackageDetail(::google::protobuf::Arena* arena);
+  UserQuoteLevelDetail_MarketPackageDetail(::google::protobuf::Arena* arena, const UserQuoteLevelDetail_MarketPackageDetail& from);
   public:
 
   static const ClassData _class_data_;
@@ -11533,84 +11837,51 @@ class UserQuoteProfileResponse final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kRateLimitFieldNumber = 5,
-    kQuoteLevelFieldNumber = 2,
-    kMemberIdFieldNumber = 1,
-    kSubscribeLimitFieldNumber = 3,
-    kHistoryCandlestickLimitFieldNumber = 4,
+    kPackagesFieldNumber = 1,
+    kWarningMsgFieldNumber = 4,
   };
-  // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
-  int rate_limit_size() const;
+  // repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+  int packages_size() const;
   private:
-  int _internal_rate_limit_size() const;
+  int _internal_packages_size() const;
 
   public:
-  void clear_rate_limit() ;
-  ::longportapp::quote::v1::RateLimit* mutable_rate_limit(int index);
-  ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit >*
-      mutable_rate_limit();
+  void clear_packages() ;
+  ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail* mutable_packages(int index);
+  ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail >*
+      mutable_packages();
   private:
-  const ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::RateLimit>& _internal_rate_limit() const;
-  ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::RateLimit>* _internal_mutable_rate_limit();
+  const ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& _internal_packages() const;
+  ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* _internal_mutable_packages();
   public:
-  const ::longportapp::quote::v1::RateLimit& rate_limit(int index) const;
-  ::longportapp::quote::v1::RateLimit* add_rate_limit();
-  const ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit >&
-      rate_limit() const;
-  // string quote_level = 2 [json_name = "quoteLevel"];
-  void clear_quote_level() ;
-  const std::string& quote_level() const;
+  const ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail& packages(int index) const;
+  ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail* add_packages();
+  const ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail >&
+      packages() const;
+  // string warning_msg = 4 [json_name = "warningMsg"];
+  void clear_warning_msg() ;
+  const std::string& warning_msg() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_quote_level(Arg_&& arg, Args_... args);
-  std::string* mutable_quote_level();
-  PROTOBUF_NODISCARD std::string* release_quote_level();
-  void set_allocated_quote_level(std::string* value);
+  void set_warning_msg(Arg_&& arg, Args_... args);
+  std::string* mutable_warning_msg();
+  PROTOBUF_NODISCARD std::string* release_warning_msg();
+  void set_allocated_warning_msg(std::string* value);
 
   private:
-  const std::string& _internal_quote_level() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_quote_level(
+  const std::string& _internal_warning_msg() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_warning_msg(
       const std::string& value);
-  std::string* _internal_mutable_quote_level();
+  std::string* _internal_mutable_warning_msg();
 
   public:
-  // int64 member_id = 1 [json_name = "memberId"];
-  void clear_member_id() ;
-  ::int64_t member_id() const;
-  void set_member_id(::int64_t value);
-
-  private:
-  ::int64_t _internal_member_id() const;
-  void _internal_set_member_id(::int64_t value);
-
-  public:
-  // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
-  void clear_subscribe_limit() ;
-  ::int32_t subscribe_limit() const;
-  void set_subscribe_limit(::int32_t value);
-
-  private:
-  ::int32_t _internal_subscribe_limit() const;
-  void _internal_set_subscribe_limit(::int32_t value);
-
-  public:
-  // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
-  void clear_history_candlestick_limit() ;
-  ::int32_t history_candlestick_limit() const;
-  void set_history_candlestick_limit(::int32_t value);
-
-  private:
-  ::int32_t _internal_history_candlestick_limit() const;
-  void _internal_set_history_candlestick_limit(::int32_t value);
-
-  public:
-  // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteProfileResponse)
+  // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
-      3, 5, 1,
-      65, 2>
+      1, 2, 1,
+      81, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -11626,17 +11897,42 @@ class UserQuoteProfileResponse final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit > rate_limit_;
-    ::google::protobuf::internal::ArenaStringPtr quote_level_;
-    ::int64_t member_id_;
-    ::int32_t subscribe_limit_;
-    ::int32_t history_candlestick_limit_;
+    ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail > packages_;
+    ::google::protobuf::internal::ArenaStringPtr warning_msg_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };// -------------------------------------------------------------------
+
+class UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse final
+    : public ::google::protobuf::internal::MapEntry<
+          UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
+          ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+          ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+ public:
+  using SuperType = ::google::protobuf::internal::MapEntry<
+      UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>;
+  UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse(::google::protobuf::Arena* arena);
+  static const UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse*>(
+        &_UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse_default_instance_);
+  }
+  static bool ValidateKey(std::string* s) {
+    return ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::google::protobuf::internal::WireFormatLite::PARSE, "longportapp.quote.v1.UserQuoteLevelDetail.ByPackageKeyEntry.key");
+ }
+  static bool ValidateValue(void*) { return true; }
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
 
 class SubscriptionResponse final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.SubscriptionResponse) */ {
@@ -16252,6 +16548,34 @@ class WarrantQuoteResponse final :
   friend struct ::TableStruct_quote_2fapi_2eproto;
 };// -------------------------------------------------------------------
 
+class UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse final
+    : public ::google::protobuf::internal::MapEntry<
+          UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
+          ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+          ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+ public:
+  using SuperType = ::google::protobuf::internal::MapEntry<
+      UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>;
+  UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(::google::protobuf::Arena* arena);
+  static const UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse*>(
+        &_UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse_default_instance_);
+  }
+  static bool ValidateKey(std::string* s) {
+    return ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::google::protobuf::internal::WireFormatLite::PARSE, "longportapp.quote.v1.UserQuoteLevelDetail.ByMarketCodeEntry.key");
+ }
+  static bool ValidateValue(void*) { return true; }
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SecurityQuoteResponse final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.SecurityQuoteResponse) */ {
  public:
@@ -16795,6 +17119,467 @@ class MarketTradePeriodResponse final :
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::MarketTradePeriod > market_trade_session_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};// -------------------------------------------------------------------
+
+class UserQuoteLevelDetail final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteLevelDetail) */ {
+ public:
+  inline UserQuoteLevelDetail() : UserQuoteLevelDetail(nullptr) {}
+  ~UserQuoteLevelDetail() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR UserQuoteLevelDetail(::google::protobuf::internal::ConstantInitialized);
+
+  inline UserQuoteLevelDetail(const UserQuoteLevelDetail& from)
+      : UserQuoteLevelDetail(nullptr, from) {}
+  UserQuoteLevelDetail(UserQuoteLevelDetail&& from) noexcept
+    : UserQuoteLevelDetail() {
+    *this = ::std::move(from);
+  }
+
+  inline UserQuoteLevelDetail& operator=(const UserQuoteLevelDetail& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline UserQuoteLevelDetail& operator=(UserQuoteLevelDetail&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const UserQuoteLevelDetail& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const UserQuoteLevelDetail* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteLevelDetail*>(
+               &_UserQuoteLevelDetail_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    70;
+
+  friend void swap(UserQuoteLevelDetail& a, UserQuoteLevelDetail& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(UserQuoteLevelDetail* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(UserQuoteLevelDetail* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  UserQuoteLevelDetail* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserQuoteLevelDetail>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const UserQuoteLevelDetail& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const UserQuoteLevelDetail& from) {
+    UserQuoteLevelDetail::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(UserQuoteLevelDetail* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "longportapp.quote.v1.UserQuoteLevelDetail";
+  }
+  protected:
+  explicit UserQuoteLevelDetail(::google::protobuf::Arena* arena);
+  UserQuoteLevelDetail(::google::protobuf::Arena* arena, const UserQuoteLevelDetail& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  using PackageDetail = UserQuoteLevelDetail_PackageDetail;
+  using MarketPackageDetail = UserQuoteLevelDetail_MarketPackageDetail;
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kByPackageKeyFieldNumber = 1,
+    kByMarketCodeFieldNumber = 2,
+  };
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
+  int by_package_key_size() const;
+  private:
+  int _internal_by_package_key_size() const;
+
+  public:
+  void clear_by_package_key() ;
+  const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& by_package_key() const;
+  ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* mutable_by_package_key();
+
+  private:
+  const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& _internal_by_package_key() const;
+  ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* _internal_mutable_by_package_key();
+
+  public:
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
+  int by_market_code_size() const;
+  private:
+  int _internal_by_market_code_size() const;
+
+  public:
+  void clear_by_market_code() ;
+  const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>& by_market_code() const;
+  ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>* mutable_by_market_code();
+
+  private:
+  const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>& _internal_by_market_code() const;
+  ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>* _internal_mutable_by_market_code();
+
+  public:
+  // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteLevelDetail)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 2, 4,
+      78, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::MapField<UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        by_package_key_;
+    ::google::protobuf::internal::MapField<UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        by_market_code_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_quote_2fapi_2eproto;
+};// -------------------------------------------------------------------
+
+class UserQuoteProfileResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:longportapp.quote.v1.UserQuoteProfileResponse) */ {
+ public:
+  inline UserQuoteProfileResponse() : UserQuoteProfileResponse(nullptr) {}
+  ~UserQuoteProfileResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR UserQuoteProfileResponse(::google::protobuf::internal::ConstantInitialized);
+
+  inline UserQuoteProfileResponse(const UserQuoteProfileResponse& from)
+      : UserQuoteProfileResponse(nullptr, from) {}
+  UserQuoteProfileResponse(UserQuoteProfileResponse&& from) noexcept
+    : UserQuoteProfileResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline UserQuoteProfileResponse& operator=(const UserQuoteProfileResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline UserQuoteProfileResponse& operator=(UserQuoteProfileResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const UserQuoteProfileResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const UserQuoteProfileResponse* internal_default_instance() {
+    return reinterpret_cast<const UserQuoteProfileResponse*>(
+               &_UserQuoteProfileResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    71;
+
+  friend void swap(UserQuoteProfileResponse& a, UserQuoteProfileResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(UserQuoteProfileResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(UserQuoteProfileResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  UserQuoteProfileResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserQuoteProfileResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const UserQuoteProfileResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const UserQuoteProfileResponse& from) {
+    UserQuoteProfileResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(UserQuoteProfileResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "longportapp.quote.v1.UserQuoteProfileResponse";
+  }
+  protected:
+  explicit UserQuoteProfileResponse(::google::protobuf::Arena* arena);
+  UserQuoteProfileResponse(::google::protobuf::Arena* arena, const UserQuoteProfileResponse& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRateLimitFieldNumber = 5,
+    kQuoteLevelFieldNumber = 2,
+    kQuoteLevelDetailFieldNumber = 6,
+    kMemberIdFieldNumber = 1,
+    kSubscribeLimitFieldNumber = 3,
+    kHistoryCandlestickLimitFieldNumber = 4,
+  };
+  // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
+  int rate_limit_size() const;
+  private:
+  int _internal_rate_limit_size() const;
+
+  public:
+  void clear_rate_limit() ;
+  ::longportapp::quote::v1::RateLimit* mutable_rate_limit(int index);
+  ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit >*
+      mutable_rate_limit();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::RateLimit>& _internal_rate_limit() const;
+  ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::RateLimit>* _internal_mutable_rate_limit();
+  public:
+  const ::longportapp::quote::v1::RateLimit& rate_limit(int index) const;
+  ::longportapp::quote::v1::RateLimit* add_rate_limit();
+  const ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit >&
+      rate_limit() const;
+  // string quote_level = 2 [json_name = "quoteLevel"];
+  void clear_quote_level() ;
+  const std::string& quote_level() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_quote_level(Arg_&& arg, Args_... args);
+  std::string* mutable_quote_level();
+  PROTOBUF_NODISCARD std::string* release_quote_level();
+  void set_allocated_quote_level(std::string* value);
+
+  private:
+  const std::string& _internal_quote_level() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_quote_level(
+      const std::string& value);
+  std::string* _internal_mutable_quote_level();
+
+  public:
+  // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+  bool has_quote_level_detail() const;
+  void clear_quote_level_detail() ;
+  const ::longportapp::quote::v1::UserQuoteLevelDetail& quote_level_detail() const;
+  PROTOBUF_NODISCARD ::longportapp::quote::v1::UserQuoteLevelDetail* release_quote_level_detail();
+  ::longportapp::quote::v1::UserQuoteLevelDetail* mutable_quote_level_detail();
+  void set_allocated_quote_level_detail(::longportapp::quote::v1::UserQuoteLevelDetail* value);
+  void unsafe_arena_set_allocated_quote_level_detail(::longportapp::quote::v1::UserQuoteLevelDetail* value);
+  ::longportapp::quote::v1::UserQuoteLevelDetail* unsafe_arena_release_quote_level_detail();
+
+  private:
+  const ::longportapp::quote::v1::UserQuoteLevelDetail& _internal_quote_level_detail() const;
+  ::longportapp::quote::v1::UserQuoteLevelDetail* _internal_mutable_quote_level_detail();
+
+  public:
+  // int64 member_id = 1 [json_name = "memberId"];
+  void clear_member_id() ;
+  ::int64_t member_id() const;
+  void set_member_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_member_id() const;
+  void _internal_set_member_id(::int64_t value);
+
+  public:
+  // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
+  void clear_subscribe_limit() ;
+  ::int32_t subscribe_limit() const;
+  void set_subscribe_limit(::int32_t value);
+
+  private:
+  ::int32_t _internal_subscribe_limit() const;
+  void _internal_set_subscribe_limit(::int32_t value);
+
+  public:
+  // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
+  void clear_history_candlestick_limit() ;
+  ::int32_t history_candlestick_limit() const;
+  void set_history_candlestick_limit(::int32_t value);
+
+  private:
+  ::int32_t _internal_history_candlestick_limit() const;
+  void _internal_set_history_candlestick_limit(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:longportapp.quote.v1.UserQuoteProfileResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      3, 6, 2,
+      65, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::google::protobuf::RepeatedPtrField< ::longportapp::quote::v1::RateLimit > rate_limit_;
+    ::google::protobuf::internal::ArenaStringPtr quote_level_;
+    ::longportapp::quote::v1::UserQuoteLevelDetail* quote_level_detail_;
+    ::int64_t member_id_;
+    ::int32_t subscribe_limit_;
+    ::int32_t history_candlestick_limit_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -31469,6 +32254,59 @@ inline void SecurityHistoryCandlestickRequest::set_allocated_date_request(::long
 
 // UserQuoteProfileRequest
 
+// string language = 1 [json_name = "language"];
+inline void UserQuoteProfileRequest::clear_language() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.language_.ClearToEmpty();
+}
+inline const std::string& UserQuoteProfileRequest::language() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteProfileRequest.language)
+  return _internal_language();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void UserQuoteProfileRequest::set_language(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.language_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteProfileRequest.language)
+}
+inline std::string* UserQuoteProfileRequest::mutable_language() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_language();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteProfileRequest.language)
+  return _s;
+}
+inline const std::string& UserQuoteProfileRequest::_internal_language() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.language_.Get();
+}
+inline void UserQuoteProfileRequest::_internal_set_language(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.language_.Set(value, GetArena());
+}
+inline std::string* UserQuoteProfileRequest::_internal_mutable_language() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.language_.Mutable( GetArena());
+}
+inline std::string* UserQuoteProfileRequest::release_language() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteProfileRequest.language)
+  return _impl_.language_.Release();
+}
+inline void UserQuoteProfileRequest::set_allocated_language(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.language_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.language_.IsDefault()) {
+          _impl_.language_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteProfileRequest.language)
+}
+
 // -------------------------------------------------------------------
 
 // RateLimit
@@ -31540,6 +32378,385 @@ inline void RateLimit::_internal_set_burst(::int32_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.burst_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// UserQuoteLevelDetail_PackageDetail
+
+// string key = 1 [json_name = "key"];
+inline void UserQuoteLevelDetail_PackageDetail::clear_key() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.key_.ClearToEmpty();
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::key() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key)
+  return _internal_key();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void UserQuoteLevelDetail_PackageDetail::set_key(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.key_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key)
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::mutable_key() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_key();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key)
+  return _s;
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::_internal_key() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.key_.Get();
+}
+inline void UserQuoteLevelDetail_PackageDetail::_internal_set_key(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.key_.Set(value, GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::_internal_mutable_key() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.key_.Mutable( GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::release_key() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key)
+  return _impl_.key_.Release();
+}
+inline void UserQuoteLevelDetail_PackageDetail::set_allocated_key(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.key_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.key_.IsDefault()) {
+          _impl_.key_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key)
+}
+
+// string name = 2 [json_name = "name"];
+inline void UserQuoteLevelDetail_PackageDetail::clear_name() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.name_.ClearToEmpty();
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::name() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name)
+  return _internal_name();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void UserQuoteLevelDetail_PackageDetail::set_name(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.name_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name)
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::mutable_name() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_name();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name)
+  return _s;
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::_internal_name() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.name_.Get();
+}
+inline void UserQuoteLevelDetail_PackageDetail::_internal_set_name(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.name_.Set(value, GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::_internal_mutable_name() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.name_.Mutable( GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::release_name() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name)
+  return _impl_.name_.Release();
+}
+inline void UserQuoteLevelDetail_PackageDetail::set_allocated_name(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.name_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.name_.IsDefault()) {
+          _impl_.name_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name)
+}
+
+// string description = 4 [json_name = "description"];
+inline void UserQuoteLevelDetail_PackageDetail::clear_description() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.description_.ClearToEmpty();
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::description() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description)
+  return _internal_description();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void UserQuoteLevelDetail_PackageDetail::set_description(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.description_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description)
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::mutable_description() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_description();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description)
+  return _s;
+}
+inline const std::string& UserQuoteLevelDetail_PackageDetail::_internal_description() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.description_.Get();
+}
+inline void UserQuoteLevelDetail_PackageDetail::_internal_set_description(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.description_.Set(value, GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::_internal_mutable_description() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.description_.Mutable( GetArena());
+}
+inline std::string* UserQuoteLevelDetail_PackageDetail::release_description() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description)
+  return _impl_.description_.Release();
+}
+inline void UserQuoteLevelDetail_PackageDetail::set_allocated_description(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.description_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.description_.IsDefault()) {
+          _impl_.description_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description)
+}
+
+// int64 start = 5 [json_name = "start"];
+inline void UserQuoteLevelDetail_PackageDetail::clear_start() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.start_ = ::int64_t{0};
+}
+inline ::int64_t UserQuoteLevelDetail_PackageDetail::start() const {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.start)
+  return _internal_start();
+}
+inline void UserQuoteLevelDetail_PackageDetail::set_start(::int64_t value) {
+  _internal_set_start(value);
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.start)
+}
+inline ::int64_t UserQuoteLevelDetail_PackageDetail::_internal_start() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.start_;
+}
+inline void UserQuoteLevelDetail_PackageDetail::_internal_set_start(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.start_ = value;
+}
+
+// int64 end = 6 [json_name = "end"];
+inline void UserQuoteLevelDetail_PackageDetail::clear_end() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.end_ = ::int64_t{0};
+}
+inline ::int64_t UserQuoteLevelDetail_PackageDetail::end() const {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.end)
+  return _internal_end();
+}
+inline void UserQuoteLevelDetail_PackageDetail::set_end(::int64_t value) {
+  _internal_set_end(value);
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.end)
+}
+inline ::int64_t UserQuoteLevelDetail_PackageDetail::_internal_end() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.end_;
+}
+inline void UserQuoteLevelDetail_PackageDetail::_internal_set_end(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.end_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// UserQuoteLevelDetail_MarketPackageDetail
+
+// repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+inline int UserQuoteLevelDetail_MarketPackageDetail::_internal_packages_size() const {
+  return _internal_packages().size();
+}
+inline int UserQuoteLevelDetail_MarketPackageDetail::packages_size() const {
+  return _internal_packages_size();
+}
+inline void UserQuoteLevelDetail_MarketPackageDetail::clear_packages() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.packages_.Clear();
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail* UserQuoteLevelDetail_MarketPackageDetail::mutable_packages(int index)
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.packages)
+  return _internal_mutable_packages()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* UserQuoteLevelDetail_MarketPackageDetail::mutable_packages()
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_list:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.packages)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_packages();
+}
+inline const ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail& UserQuoteLevelDetail_MarketPackageDetail::packages(int index) const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.packages)
+  return _internal_packages().Get(index);
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail* UserQuoteLevelDetail_MarketPackageDetail::add_packages() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail* _add = _internal_mutable_packages()->Add();
+  // @@protoc_insertion_point(field_add:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.packages)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& UserQuoteLevelDetail_MarketPackageDetail::packages() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_list:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.packages)
+  return _internal_packages();
+}
+inline const ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>&
+UserQuoteLevelDetail_MarketPackageDetail::_internal_packages() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.packages_;
+}
+inline ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>*
+UserQuoteLevelDetail_MarketPackageDetail::_internal_mutable_packages() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.packages_;
+}
+
+// string warning_msg = 4 [json_name = "warningMsg"];
+inline void UserQuoteLevelDetail_MarketPackageDetail::clear_warning_msg() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.warning_msg_.ClearToEmpty();
+}
+inline const std::string& UserQuoteLevelDetail_MarketPackageDetail::warning_msg() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg)
+  return _internal_warning_msg();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void UserQuoteLevelDetail_MarketPackageDetail::set_warning_msg(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.warning_msg_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg)
+}
+inline std::string* UserQuoteLevelDetail_MarketPackageDetail::mutable_warning_msg() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_warning_msg();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg)
+  return _s;
+}
+inline const std::string& UserQuoteLevelDetail_MarketPackageDetail::_internal_warning_msg() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.warning_msg_.Get();
+}
+inline void UserQuoteLevelDetail_MarketPackageDetail::_internal_set_warning_msg(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.warning_msg_.Set(value, GetArena());
+}
+inline std::string* UserQuoteLevelDetail_MarketPackageDetail::_internal_mutable_warning_msg() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.warning_msg_.Mutable( GetArena());
+}
+inline std::string* UserQuoteLevelDetail_MarketPackageDetail::release_warning_msg() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg)
+  return _impl_.warning_msg_.Release();
+}
+inline void UserQuoteLevelDetail_MarketPackageDetail::set_allocated_warning_msg(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.warning_msg_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.warning_msg_.IsDefault()) {
+          _impl_.warning_msg_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg)
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// UserQuoteLevelDetail
+
+// map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
+inline int UserQuoteLevelDetail::_internal_by_package_key_size() const {
+  return _internal_by_package_key().size();
+}
+inline int UserQuoteLevelDetail::by_package_key_size() const {
+  return _internal_by_package_key_size();
+}
+inline void UserQuoteLevelDetail::clear_by_package_key() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.by_package_key_.Clear();
+}
+inline const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& UserQuoteLevelDetail::_internal_by_package_key() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.by_package_key_.GetMap();
+}
+inline const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>& UserQuoteLevelDetail::by_package_key() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_map:longportapp.quote.v1.UserQuoteLevelDetail.by_package_key)
+  return _internal_by_package_key();
+}
+inline ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* UserQuoteLevelDetail::_internal_mutable_by_package_key() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.by_package_key_.MutableMap();
+}
+inline ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>* UserQuoteLevelDetail::mutable_by_package_key() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_map:longportapp.quote.v1.UserQuoteLevelDetail.by_package_key)
+  return _internal_mutable_by_package_key();
+}
+
+// map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
+inline int UserQuoteLevelDetail::_internal_by_market_code_size() const {
+  return _internal_by_market_code().size();
+}
+inline int UserQuoteLevelDetail::by_market_code_size() const {
+  return _internal_by_market_code_size();
+}
+inline void UserQuoteLevelDetail::clear_by_market_code() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.by_market_code_.Clear();
+}
+inline const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>& UserQuoteLevelDetail::_internal_by_market_code() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.by_market_code_.GetMap();
+}
+inline const ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>& UserQuoteLevelDetail::by_market_code() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_map:longportapp.quote.v1.UserQuoteLevelDetail.by_market_code)
+  return _internal_by_market_code();
+}
+inline ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>* UserQuoteLevelDetail::_internal_mutable_by_market_code() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.by_market_code_.MutableMap();
+}
+inline ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>* UserQuoteLevelDetail::mutable_by_market_code() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_map:longportapp.quote.v1.UserQuoteLevelDetail.by_market_code)
+  return _internal_mutable_by_market_code();
 }
 
 // -------------------------------------------------------------------
@@ -31715,6 +32932,102 @@ inline ::google::protobuf::RepeatedPtrField<::longportapp::quote::v1::RateLimit>
 UserQuoteProfileResponse::_internal_mutable_rate_limit() {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
   return &_impl_.rate_limit_;
+}
+
+// .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+inline bool UserQuoteProfileResponse::has_quote_level_detail() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.quote_level_detail_ != nullptr);
+  return value;
+}
+inline void UserQuoteProfileResponse::clear_quote_level_detail() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (_impl_.quote_level_detail_ != nullptr) _impl_.quote_level_detail_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::longportapp::quote::v1::UserQuoteLevelDetail& UserQuoteProfileResponse::_internal_quote_level_detail() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::longportapp::quote::v1::UserQuoteLevelDetail* p = _impl_.quote_level_detail_;
+  return p != nullptr ? *p : reinterpret_cast<const ::longportapp::quote::v1::UserQuoteLevelDetail&>(::longportapp::quote::v1::_UserQuoteLevelDetail_default_instance_);
+}
+inline const ::longportapp::quote::v1::UserQuoteLevelDetail& UserQuoteProfileResponse::quote_level_detail() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:longportapp.quote.v1.UserQuoteProfileResponse.quote_level_detail)
+  return _internal_quote_level_detail();
+}
+inline void UserQuoteProfileResponse::unsafe_arena_set_allocated_quote_level_detail(::longportapp::quote::v1::UserQuoteLevelDetail* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.quote_level_detail_);
+  }
+  _impl_.quote_level_detail_ = reinterpret_cast<::longportapp::quote::v1::UserQuoteLevelDetail*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:longportapp.quote.v1.UserQuoteProfileResponse.quote_level_detail)
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail* UserQuoteProfileResponse::release_quote_level_detail() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::longportapp::quote::v1::UserQuoteLevelDetail* released = _impl_.quote_level_detail_;
+  _impl_.quote_level_detail_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArena() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArena() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail* UserQuoteProfileResponse::unsafe_arena_release_quote_level_detail() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:longportapp.quote.v1.UserQuoteProfileResponse.quote_level_detail)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::longportapp::quote::v1::UserQuoteLevelDetail* temp = _impl_.quote_level_detail_;
+  _impl_.quote_level_detail_ = nullptr;
+  return temp;
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail* UserQuoteProfileResponse::_internal_mutable_quote_level_detail() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.quote_level_detail_ == nullptr) {
+    auto* p = CreateMaybeMessage<::longportapp::quote::v1::UserQuoteLevelDetail>(GetArena());
+    _impl_.quote_level_detail_ = reinterpret_cast<::longportapp::quote::v1::UserQuoteLevelDetail*>(p);
+  }
+  return _impl_.quote_level_detail_;
+}
+inline ::longportapp::quote::v1::UserQuoteLevelDetail* UserQuoteProfileResponse::mutable_quote_level_detail() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  ::longportapp::quote::v1::UserQuoteLevelDetail* _msg = _internal_mutable_quote_level_detail();
+  // @@protoc_insertion_point(field_mutable:longportapp.quote.v1.UserQuoteProfileResponse.quote_level_detail)
+  return _msg;
+}
+inline void UserQuoteProfileResponse::set_allocated_quote_level_detail(::longportapp::quote::v1::UserQuoteLevelDetail* value) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::longportapp::quote::v1::UserQuoteLevelDetail*>(_impl_.quote_level_detail_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::longportapp::quote::v1::UserQuoteLevelDetail*>(value)->GetArena();
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.quote_level_detail_ = reinterpret_cast<::longportapp::quote::v1::UserQuoteLevelDetail*>(value);
+  // @@protoc_insertion_point(field_set_allocated:longportapp.quote.v1.UserQuoteProfileResponse.quote_level_detail)
 }
 
 #ifdef __GNUC__

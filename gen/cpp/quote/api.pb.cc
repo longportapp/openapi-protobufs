@@ -75,8 +75,17 @@ struct WarrantExtendDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantExtendDefaultTypeInternal _WarrantExtend_default_instance_;
-      template <typename>
-PROTOBUF_CONSTEXPR UserQuoteProfileRequest::UserQuoteProfileRequest(::_pbi::ConstantInitialized) {}
+
+inline constexpr UserQuoteProfileRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : language_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR UserQuoteProfileRequest::UserQuoteProfileRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
 struct UserQuoteProfileRequestDefaultTypeInternal {
   PROTOBUF_CONSTEXPR UserQuoteProfileRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UserQuoteProfileRequestDefaultTypeInternal() {}
@@ -87,6 +96,35 @@ struct UserQuoteProfileRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileRequestDefaultTypeInternal _UserQuoteProfileRequest_default_instance_;
+
+inline constexpr UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : key_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        name_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        description_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        start_{::int64_t{0}},
+        end_{::int64_t{0}},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct UserQuoteLevelDetail_PackageDetailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() {}
+  union {
+    UserQuoteLevelDetail_PackageDetail _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_PackageDetailDefaultTypeInternal _UserQuoteLevelDetail_PackageDetail_default_instance_;
       template <typename>
 PROTOBUF_CONSTEXPR UnsubscribeResponse::UnsubscribeResponse(::_pbi::ConstantInitialized) {}
 struct UnsubscribeResponseDefaultTypeInternal {
@@ -1308,30 +1346,39 @@ struct WarrantFilterListRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantFilterListRequestDefaultTypeInternal _WarrantFilterListRequest_default_instance_;
 
-inline constexpr UserQuoteProfileResponse::Impl_::Impl_(
+inline constexpr UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : rate_limit_{},
-        quote_level_(
+      : packages_{},
+        warning_msg_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        member_id_{::int64_t{0}},
-        subscribe_limit_{0},
-        history_candlestick_limit_{0},
         _cached_size_{0} {}
 
 template <typename>
-PROTOBUF_CONSTEXPR UserQuoteProfileResponse::UserQuoteProfileResponse(::_pbi::ConstantInitialized)
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(::_pbi::ConstantInitialized)
     : _impl_(::_pbi::ConstantInitialized()) {}
-struct UserQuoteProfileResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UserQuoteProfileResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UserQuoteProfileResponseDefaultTypeInternal() {}
+struct UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal() {}
   union {
-    UserQuoteProfileResponse _instance;
+    UserQuoteLevelDetail_MarketPackageDetail _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileResponseDefaultTypeInternal _UserQuoteProfileResponse_default_instance_;
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal _UserQuoteLevelDetail_MarketPackageDetail_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse(::_pbi::ConstantInitialized) {}
+struct UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse_default_instance_;
 
 inline constexpr SubscriptionResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -1830,6 +1877,18 @@ struct WarrantQuoteResponseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantQuoteResponseDefaultTypeInternal _WarrantQuoteResponse_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(::_pbi::ConstantInitialized) {}
+struct UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse_default_instance_;
 
 inline constexpr SecurityQuoteResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -1887,10 +1946,56 @@ struct MarketTradePeriodResponseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradePeriodResponseDefaultTypeInternal _MarketTradePeriodResponse_default_instance_;
+
+inline constexpr UserQuoteLevelDetail::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : by_package_key_{},
+        by_market_code_{},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail::UserQuoteLevelDetail(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct UserQuoteLevelDetailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetailDefaultTypeInternal() {}
+  union {
+    UserQuoteLevelDetail _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetailDefaultTypeInternal _UserQuoteLevelDetail_default_instance_;
+
+inline constexpr UserQuoteProfileResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        rate_limit_{},
+        quote_level_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        quote_level_detail_{nullptr},
+        member_id_{::int64_t{0}},
+        subscribe_limit_{0},
+        history_candlestick_limit_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR UserQuoteProfileResponse::UserQuoteProfileResponse(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct UserQuoteProfileResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteProfileResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteProfileResponseDefaultTypeInternal() {}
+  union {
+    UserQuoteProfileResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileResponseDefaultTypeInternal _UserQuoteProfileResponse_default_instance_;
 }  // namespace v1
 }  // namespace quote
 }  // namespace longportapp
-static ::_pb::Metadata file_level_metadata_quote_2fapi_2eproto[67];
+static ::_pb::Metadata file_level_metadata_quote_2fapi_2eproto[72];
 static const ::_pb::EnumDescriptor* file_level_enum_descriptors_quote_2fapi_2eproto[10];
 static constexpr const ::_pb::ServiceDescriptor**
     file_level_service_descriptors_quote_2fapi_2eproto = nullptr;
@@ -2764,6 +2869,7 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileRequest, _impl_.language_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2776,6 +2882,63 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _impl_.limit_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::RateLimit, _impl_.burst_),
     ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _impl_.key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _impl_.name_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _impl_.description_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _impl_.start_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail, _impl_.end_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail, _impl_.packages_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail, _impl_.warning_msg_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, _has_bits_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse, value_),
+    0,
+    1,
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, _has_bits_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse, value_),
+    0,
+    1,
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail, _impl_.by_package_key_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteLevelDetail, _impl_.by_market_code_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_._has_bits_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _internal_metadata_),
     ~0u,  // no _extensions_
     ~0u,  // no _oneof_case_
@@ -2788,6 +2951,13 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.subscribe_limit_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.history_candlestick_limit_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.rate_limit_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileResponse, _impl_.quote_level_detail_),
+    ~0u,
+    ~0u,
+    ~0u,
+    ~0u,
+    ~0u,
+    0,
 };
 
 static const ::_pbi::MigrationSchema
@@ -2857,8 +3027,13 @@ static const ::_pbi::MigrationSchema
         {830, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery)},
         {840, 854, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest)},
         {860, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileRequest)},
-        {868, -1, -1, sizeof(::longportapp::quote::v1::RateLimit)},
-        {879, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileResponse)},
+        {869, -1, -1, sizeof(::longportapp::quote::v1::RateLimit)},
+        {880, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail)},
+        {893, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail)},
+        {903, 913, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse)},
+        {915, 925, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse)},
+        {927, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail)},
+        {937, 951, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -2928,6 +3103,11 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::longportapp::quote::v1::_SecurityHistoryCandlestickRequest_default_instance_._instance,
     &::longportapp::quote::v1::_UserQuoteProfileRequest_default_instance_._instance,
     &::longportapp::quote::v1::_RateLimit_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteLevelDetail_PackageDetail_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteLevelDetail_MarketPackageDetail_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse_default_instance_._instance,
+    &::longportapp::quote::v1::_UserQuoteLevelDetail_default_instance_._instance,
     &::longportapp::quote::v1::_UserQuoteProfileResponse_default_instance_._instance,
 };
 const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -3246,101 +3426,123 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
     "rectionR\tdirection\022\022\n\004date\030\002 \001(\tR\004date\022\026"
     "\n\006minute\030\003 \001(\tR\006minute\022\024\n\005count\030\004 \001(\005R\005c"
     "ount\032E\n\tDateQuery\022\035\n\nstart_date\030\001 \001(\tR\ts"
-    "tartDate\022\031\n\010end_date\030\002 \001(\tR\007endDate\"\031\n\027U"
-    "serQuoteProfileRequest\"p\n\tRateLimit\0227\n\007c"
-    "ommand\030\001 \001(\0162\035.longportapp.quote.v1.Comm"
-    "andR\007command\022\024\n\005limit\030\002 \001(\005R\005limit\022\024\n\005bu"
-    "rst\030\003 \001(\005R\005burst\"\375\001\n\030UserQuoteProfileRes"
-    "ponse\022\033\n\tmember_id\030\001 \001(\003R\010memberId\022\037\n\013qu"
-    "ote_level\030\002 \001(\tR\nquoteLevel\022\'\n\017subscribe"
-    "_limit\030\003 \001(\005R\016subscribeLimit\022:\n\031history_"
-    "candlestick_limit\030\004 \001(\005R\027historyCandlest"
-    "ickLimit\022>\n\nrate_limit\030\005 \003(\0132\037.longporta"
-    "pp.quote.v1.RateLimitR\trateLimit*\342\005\n\007Com"
-    "mand\022\023\n\017UNKNOWN_COMMAND\020\000\022\016\n\nHEART_BEAT\020"
-    "\001\022\010\n\004AUTH\020\002\022\r\n\tRECONNECT\020\003\022\031\n\025QueryUserQ"
-    "uoteProfile\020\004\022\020\n\014Subscription\020\005\022\r\n\tSubsc"
-    "ribe\020\006\022\017\n\013Unsubscribe\020\007\022\032\n\026QueryMarketTr"
-    "adePeriod\020\010\022\027\n\023QueryMarketTradeDay\020\t\022\033\n\027"
-    "QuerySecurityStaticInfo\020\n\022\026\n\022QuerySecuri"
-    "tyQuote\020\013\022\024\n\020QueryOptionQuote\020\014\022\025\n\021Query"
-    "WarrantQuote\020\r\022\016\n\nQueryDepth\020\016\022\020\n\014QueryB"
-    "rokers\020\017\022\035\n\031QueryParticipantBrokerIds\020\020\022"
-    "\016\n\nQueryTrade\020\021\022\021\n\rQueryIntraday\020\022\022\024\n\020Qu"
-    "eryCandlestick\020\023\022\030\n\024QueryOptionChainDate"
-    "\020\024\022\"\n\036QueryOptionChainDateStrikeInfo\020\025\022\032"
-    "\n\026QueryWarrantIssuerInfo\020\026\022\032\n\026QueryWarra"
-    "ntFilterList\020\027\022\034\n\030QueryCapitalFlowIntrad"
-    "ay\020\030\022 \n\034QueryCapitalFlowDistribution\020\031\022\032"
-    "\n\026QuerySecurityCalcIndex\020\032\022\033\n\027QueryHisto"
-    "ryCandlestick\020\033\022\021\n\rPushQuoteData\020e\022\021\n\rPu"
-    "shDepthData\020f\022\023\n\017PushBrokersData\020g\022\021\n\rPu"
-    "shTradeData\020h*\302\001\n\013TradeStatus\022\n\n\006NORMAL\020"
-    "\000\022\n\n\006HALTED\020\001\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n"
-    "\014PREPARE_LIST\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_BE"
-    "_OPENED\020\006\022\025\n\021SPLIT_STOCK_HALTS\020\007\022\013\n\007EXPI"
-    "RED\020\010\022\030\n\024WARRANT_PREPARE_LIST\020\t\022\021\n\rSUSPE"
-    "ND_TRADE\020\n*T\n\014TradeSession\022\020\n\014NORMAL_TRA"
-    "DE\020\000\022\r\n\tPRE_TRADE\020\001\022\016\n\nPOST_TRADE\020\002\022\023\n\017O"
-    "VERNIGHT_TRADE\020\003*/\n\nAdjustType\022\r\n\tNO_ADJ"
-    "UST\020\000\022\022\n\016FORWARD_ADJUST\020\001*\242\001\n\006Period\022\022\n\016"
-    "UNKNOWN_PERIOD\020\000\022\016\n\nONE_MINUTE\020\001\022\017\n\013FIVE"
-    "_MINUTE\020\005\022\022\n\016FIFTEEN_MINUTE\020\017\022\021\n\rTHIRTY_"
-    "MINUTE\020\036\022\020\n\014SIXTY_MINUTE\020<\022\010\n\003DAY\020\350\007\022\t\n\004"
-    "WEEK\020\320\017\022\n\n\005MONTH\020\270\027\022\t\n\004YEAR\020\240\037*I\n\007SubTyp"
-    "e\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOTE\020\001\022\t\n\005DEPTH\020"
-    "\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004*#\n\014PushQuoteTa"
-    "g\022\n\n\006Normal\020\000\022\007\n\003Eod\020\001*\226\t\n\tCalcIndex\022\025\n\021"
-    "CALCINDEX_UNKNOWN\020\000\022\027\n\023CALCINDEX_LAST_DO"
-    "NE\020\001\022\030\n\024CALCINDEX_CHANGE_VAL\020\002\022\031\n\025CALCIN"
-    "DEX_CHANGE_RATE\020\003\022\024\n\020CALCINDEX_VOLUME\020\004\022"
-    "\026\n\022CALCINDEX_TURNOVER\020\005\022\035\n\031CALCINDEX_YTD"
-    "_CHANGE_RATE\020\006\022\033\n\027CALCINDEX_TURNOVER_RAT"
-    "E\020\007\022 \n\034CALCINDEX_TOTAL_MARKET_VALUE\020\010\022\032\n"
-    "\026CALCINDEX_CAPITAL_FLOW\020\t\022\027\n\023CALCINDEX_A"
-    "MPLITUDE\020\n\022\032\n\026CALCINDEX_VOLUME_RATIO\020\013\022\032"
-    "\n\026CALCINDEX_PE_TTM_RATIO\020\014\022\026\n\022CALCINDEX_"
-    "PB_RATIO\020\r\022 \n\034CALCINDEX_DIVIDEND_RATIO_T"
-    "TM\020\016\022\"\n\036CALCINDEX_FIVE_DAY_CHANGE_RATE\020\017"
-    "\022!\n\035CALCINDEX_TEN_DAY_CHANGE_RATE\020\020\022#\n\037C"
-    "ALCINDEX_HALF_YEAR_CHANGE_RATE\020\021\022&\n\"CALC"
-    "INDEX_FIVE_MINUTES_CHANGE_RATE\020\022\022\031\n\025CALC"
-    "INDEX_EXPIRY_DATE\020\023\022\032\n\026CALCINDEX_STRIKE_"
-    "PRICE\020\024\022 \n\034CALCINDEX_UPPER_STRIKE_PRICE\020"
-    "\025\022 \n\034CALCINDEX_LOWER_STRIKE_PRICE\020\026\022\035\n\031C"
-    "ALCINDEX_OUTSTANDING_QTY\020\027\022\037\n\033CALCINDEX_"
-    "OUTSTANDING_RATIO\020\030\022\025\n\021CALCINDEX_PREMIUM"
-    "\020\031\022\025\n\021CALCINDEX_ITM_OTM\020\032\022 \n\034CALCINDEX_I"
-    "MPLIED_VOLATILITY\020\033\022\033\n\027CALCINDEX_WARRANT"
-    "_DELTA\020\034\022\030\n\024CALCINDEX_CALL_PRICE\020\035\022\033\n\027CA"
-    "LCINDEX_TO_CALL_PRICE\020\036\022 \n\034CALCINDEX_EFF"
-    "ECTIVE_LEVERAGE\020\037\022\034\n\030CALCINDEX_LEVERAGE_"
-    "RATIO\020 \022\036\n\032CALCINDEX_CONVERSION_RATIO\020!\022"
-    "\033\n\027CALCINDEX_BALANCE_POINT\020\"\022\033\n\027CALCINDE"
-    "X_OPEN_INTEREST\020#\022\023\n\017CALCINDEX_DELTA\020$\022\023"
-    "\n\017CALCINDEX_GAMMA\020%\022\023\n\017CALCINDEX_THETA\020&"
-    "\022\022\n\016CALCINDEX_VEGA\020\'\022\021\n\rCALCINDEX_RHO\020(*"
-    "]\n\033HistoryCandlestickQueryType\022\026\n\022UNKNOW"
-    "N_QUERY_TYPE\020\000\022\023\n\017QUERY_BY_OFFSET\020\001\022\021\n\rQ"
-    "UERY_BY_DATE\020\002*&\n\tDirection\022\014\n\010BACKWARD\020"
-    "\000\022\013\n\007FORWARD\020\001B\325\001\n\030com.longportapp.quote"
-    ".v1B\010ApiProtoP\001Z=github.com/longportapp/"
-    "openapi-protobufs/gen/go/quote;quotev1\242\002"
-    "\003LQX\252\002\024Longportapp.Quote.V1\312\002\024Longportap"
-    "p\\Quote\\V1\342\002 Longportapp\\Quote\\V1\\GPBMet"
-    "adata\352\002\026Longportapp::Quote::V1b\006proto3"
+    "tartDate\022\031\n\010end_date\030\002 \001(\tR\007endDate\"5\n\027U"
+    "serQuoteProfileRequest\022\032\n\010language\030\001 \001(\t"
+    "R\010language\"p\n\tRateLimit\0227\n\007command\030\001 \001(\016"
+    "2\035.longportapp.quote.v1.CommandR\007command"
+    "\022\024\n\005limit\030\002 \001(\005R\005limit\022\024\n\005burst\030\003 \001(\005R\005b"
+    "urst\"\352\005\n\024UserQuoteLevelDetail\022b\n\016by_pack"
+    "age_key\030\001 \003(\0132<.longportapp.quote.v1.Use"
+    "rQuoteLevelDetail.ByPackageKeyEntryR\014byP"
+    "ackageKey\022b\n\016by_market_code\030\002 \003(\0132<.long"
+    "portapp.quote.v1.UserQuoteLevelDetail.By"
+    "MarketCodeEntryR\014byMarketCode\032\177\n\rPackage"
+    "Detail\022\020\n\003key\030\001 \001(\tR\003key\022\022\n\004name\030\002 \001(\tR\004"
+    "name\022 \n\013description\030\004 \001(\tR\013description\022\024"
+    "\n\005start\030\005 \001(\003R\005start\022\020\n\003end\030\006 \001(\003R\003end\032\214"
+    "\001\n\023MarketPackageDetail\022T\n\010packages\030\001 \003(\013"
+    "28.longportapp.quote.v1.UserQuoteLevelDe"
+    "tail.PackageDetailR\010packages\022\037\n\013warning_"
+    "msg\030\004 \001(\tR\nwarningMsg\032y\n\021ByPackageKeyEnt"
+    "ry\022\020\n\003key\030\001 \001(\tR\003key\022N\n\005value\030\002 \001(\01328.lo"
+    "ngportapp.quote.v1.UserQuoteLevelDetail."
+    "PackageDetailR\005value:\0028\001\032\177\n\021ByMarketCode"
+    "Entry\022\020\n\003key\030\001 \001(\tR\003key\022T\n\005value\030\002 \001(\0132>"
+    ".longportapp.quote.v1.UserQuoteLevelDeta"
+    "il.MarketPackageDetailR\005value:\0028\001\"\327\002\n\030Us"
+    "erQuoteProfileResponse\022\033\n\tmember_id\030\001 \001("
+    "\003R\010memberId\022\037\n\013quote_level\030\002 \001(\tR\nquoteL"
+    "evel\022\'\n\017subscribe_limit\030\003 \001(\005R\016subscribe"
+    "Limit\022:\n\031history_candlestick_limit\030\004 \001(\005"
+    "R\027historyCandlestickLimit\022>\n\nrate_limit\030"
+    "\005 \003(\0132\037.longportapp.quote.v1.RateLimitR\t"
+    "rateLimit\022X\n\022quote_level_detail\030\006 \001(\0132*."
+    "longportapp.quote.v1.UserQuoteLevelDetai"
+    "lR\020quoteLevelDetail*\342\005\n\007Command\022\023\n\017UNKNO"
+    "WN_COMMAND\020\000\022\016\n\nHEART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r"
+    "\n\tRECONNECT\020\003\022\031\n\025QueryUserQuoteProfile\020\004"
+    "\022\020\n\014Subscription\020\005\022\r\n\tSubscribe\020\006\022\017\n\013Uns"
+    "ubscribe\020\007\022\032\n\026QueryMarketTradePeriod\020\010\022\027"
+    "\n\023QueryMarketTradeDay\020\t\022\033\n\027QuerySecurity"
+    "StaticInfo\020\n\022\026\n\022QuerySecurityQuote\020\013\022\024\n\020"
+    "QueryOptionQuote\020\014\022\025\n\021QueryWarrantQuote\020"
+    "\r\022\016\n\nQueryDepth\020\016\022\020\n\014QueryBrokers\020\017\022\035\n\031Q"
+    "ueryParticipantBrokerIds\020\020\022\016\n\nQueryTrade"
+    "\020\021\022\021\n\rQueryIntraday\020\022\022\024\n\020QueryCandlestic"
+    "k\020\023\022\030\n\024QueryOptionChainDate\020\024\022\"\n\036QueryOp"
+    "tionChainDateStrikeInfo\020\025\022\032\n\026QueryWarran"
+    "tIssuerInfo\020\026\022\032\n\026QueryWarrantFilterList\020"
+    "\027\022\034\n\030QueryCapitalFlowIntraday\020\030\022 \n\034Query"
+    "CapitalFlowDistribution\020\031\022\032\n\026QuerySecuri"
+    "tyCalcIndex\020\032\022\033\n\027QueryHistoryCandlestick"
+    "\020\033\022\021\n\rPushQuoteData\020e\022\021\n\rPushDepthData\020f"
+    "\022\023\n\017PushBrokersData\020g\022\021\n\rPushTradeData\020h"
+    "*\302\001\n\013TradeStatus\022\n\n\006NORMAL\020\000\022\n\n\006HALTED\020\001"
+    "\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n\014PREPARE_LIST"
+    "\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_BE_OPENED\020\006\022\025\n\021"
+    "SPLIT_STOCK_HALTS\020\007\022\013\n\007EXPIRED\020\010\022\030\n\024WARR"
+    "ANT_PREPARE_LIST\020\t\022\021\n\rSUSPEND_TRADE\020\n*T\n"
+    "\014TradeSession\022\020\n\014NORMAL_TRADE\020\000\022\r\n\tPRE_T"
+    "RADE\020\001\022\016\n\nPOST_TRADE\020\002\022\023\n\017OVERNIGHT_TRAD"
+    "E\020\003*/\n\nAdjustType\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORW"
+    "ARD_ADJUST\020\001*\242\001\n\006Period\022\022\n\016UNKNOWN_PERIO"
+    "D\020\000\022\016\n\nONE_MINUTE\020\001\022\017\n\013FIVE_MINUTE\020\005\022\022\n\016"
+    "FIFTEEN_MINUTE\020\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014S"
+    "IXTY_MINUTE\020<\022\010\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MO"
+    "NTH\020\270\027\022\t\n\004YEAR\020\240\037*I\n\007SubType\022\020\n\014UNKNOWN_"
+    "TYPE\020\000\022\t\n\005QUOTE\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020"
+    "\003\022\t\n\005TRADE\020\004*#\n\014PushQuoteTag\022\n\n\006Normal\020\000"
+    "\022\007\n\003Eod\020\001*\226\t\n\tCalcIndex\022\025\n\021CALCINDEX_UNK"
+    "NOWN\020\000\022\027\n\023CALCINDEX_LAST_DONE\020\001\022\030\n\024CALCI"
+    "NDEX_CHANGE_VAL\020\002\022\031\n\025CALCINDEX_CHANGE_RA"
+    "TE\020\003\022\024\n\020CALCINDEX_VOLUME\020\004\022\026\n\022CALCINDEX_"
+    "TURNOVER\020\005\022\035\n\031CALCINDEX_YTD_CHANGE_RATE\020"
+    "\006\022\033\n\027CALCINDEX_TURNOVER_RATE\020\007\022 \n\034CALCIN"
+    "DEX_TOTAL_MARKET_VALUE\020\010\022\032\n\026CALCINDEX_CA"
+    "PITAL_FLOW\020\t\022\027\n\023CALCINDEX_AMPLITUDE\020\n\022\032\n"
+    "\026CALCINDEX_VOLUME_RATIO\020\013\022\032\n\026CALCINDEX_P"
+    "E_TTM_RATIO\020\014\022\026\n\022CALCINDEX_PB_RATIO\020\r\022 \n"
+    "\034CALCINDEX_DIVIDEND_RATIO_TTM\020\016\022\"\n\036CALCI"
+    "NDEX_FIVE_DAY_CHANGE_RATE\020\017\022!\n\035CALCINDEX"
+    "_TEN_DAY_CHANGE_RATE\020\020\022#\n\037CALCINDEX_HALF"
+    "_YEAR_CHANGE_RATE\020\021\022&\n\"CALCINDEX_FIVE_MI"
+    "NUTES_CHANGE_RATE\020\022\022\031\n\025CALCINDEX_EXPIRY_"
+    "DATE\020\023\022\032\n\026CALCINDEX_STRIKE_PRICE\020\024\022 \n\034CA"
+    "LCINDEX_UPPER_STRIKE_PRICE\020\025\022 \n\034CALCINDE"
+    "X_LOWER_STRIKE_PRICE\020\026\022\035\n\031CALCINDEX_OUTS"
+    "TANDING_QTY\020\027\022\037\n\033CALCINDEX_OUTSTANDING_R"
+    "ATIO\020\030\022\025\n\021CALCINDEX_PREMIUM\020\031\022\025\n\021CALCIND"
+    "EX_ITM_OTM\020\032\022 \n\034CALCINDEX_IMPLIED_VOLATI"
+    "LITY\020\033\022\033\n\027CALCINDEX_WARRANT_DELTA\020\034\022\030\n\024C"
+    "ALCINDEX_CALL_PRICE\020\035\022\033\n\027CALCINDEX_TO_CA"
+    "LL_PRICE\020\036\022 \n\034CALCINDEX_EFFECTIVE_LEVERA"
+    "GE\020\037\022\034\n\030CALCINDEX_LEVERAGE_RATIO\020 \022\036\n\032CA"
+    "LCINDEX_CONVERSION_RATIO\020!\022\033\n\027CALCINDEX_"
+    "BALANCE_POINT\020\"\022\033\n\027CALCINDEX_OPEN_INTERE"
+    "ST\020#\022\023\n\017CALCINDEX_DELTA\020$\022\023\n\017CALCINDEX_G"
+    "AMMA\020%\022\023\n\017CALCINDEX_THETA\020&\022\022\n\016CALCINDEX"
+    "_VEGA\020\'\022\021\n\rCALCINDEX_RHO\020(*]\n\033HistoryCan"
+    "dlestickQueryType\022\026\n\022UNKNOWN_QUERY_TYPE\020"
+    "\000\022\023\n\017QUERY_BY_OFFSET\020\001\022\021\n\rQUERY_BY_DATE\020"
+    "\002*&\n\tDirection\022\014\n\010BACKWARD\020\000\022\013\n\007FORWARD\020"
+    "\001B\325\001\n\030com.longportapp.quote.v1B\010ApiProto"
+    "P\001Z=github.com/longportapp/openapi-proto"
+    "bufs/gen/go/quote;quotev1\242\002\003LQX\252\002\024Longpo"
+    "rtapp.Quote.V1\312\002\024Longportapp\\Quote\\V1\342\002 "
+    "Longportapp\\Quote\\V1\\GPBMetadata\352\002\026Longp"
+    "ortapp::Quote::V1b\006proto3"
 };
 static ::absl::once_flag descriptor_table_quote_2fapi_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_quote_2fapi_2eproto = {
     false,
     false,
-    15918,
+    16785,
     descriptor_table_protodef_quote_2fapi_2eproto,
     "quote/api.proto",
     &descriptor_table_quote_2fapi_2eproto_once,
     nullptr,
     0,
-    67,
+    72,
     schemas,
     file_default_instances,
     TableStruct_quote_2fapi_2eproto::offsets,
@@ -22315,28 +22517,183 @@ class UserQuoteProfileRequest::_Internal {
 };
 
 UserQuoteProfileRequest::UserQuoteProfileRequest(::google::protobuf::Arena* arena)
-    : ::google::protobuf::internal::ZeroFieldsBase(arena) {
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
 }
+inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : language_(arena, from.language_),
+        _cached_size_{0} {}
+
 UserQuoteProfileRequest::UserQuoteProfileRequest(
     ::google::protobuf::Arena* arena,
     const UserQuoteProfileRequest& from)
-    : ::google::protobuf::internal::ZeroFieldsBase(arena) {
+    : ::google::protobuf::Message(arena) {
   UserQuoteProfileRequest* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
 }
+inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : language_(arena),
+        _cached_size_{0} {}
+
+inline void UserQuoteProfileRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+UserQuoteProfileRequest::~UserQuoteProfileRequest() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteProfileRequest)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void UserQuoteProfileRequest::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.language_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void UserQuoteProfileRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteProfileRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.language_.ClearToEmpty();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* UserQuoteProfileRequest::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
 
 
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 61, 2> UserQuoteProfileRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_UserQuoteProfileRequest_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // string language = 1 [json_name = "language"];
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileRequest, _impl_.language_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string language = 1 [json_name = "language"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileRequest, _impl_.language_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\54\10\0\0\0\0\0\0"
+    "longportapp.quote.v1.UserQuoteProfileRequest"
+    "language"
+  }},
+};
 
+::uint8_t* UserQuoteProfileRequest::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.UserQuoteProfileRequest)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
 
+  // string language = 1 [json_name = "language"];
+  if (!this->_internal_language().empty()) {
+    const std::string& _s = this->_internal_language();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteProfileRequest.language");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.UserQuoteProfileRequest)
+  return target;
+}
 
+::size_t UserQuoteProfileRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.UserQuoteProfileRequest)
+  ::size_t total_size = 0;
 
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
 
+  // string language = 1 [json_name = "language"];
+  if (!this->_internal_language().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_language());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData UserQuoteProfileRequest::_class_data_ = {
+    UserQuoteProfileRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* UserQuoteProfileRequest::GetClassData() const {
+  return &_class_data_;
+}
+
+void UserQuoteProfileRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<UserQuoteProfileRequest*>(&to_msg);
+  auto& from = static_cast<const UserQuoteProfileRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.UserQuoteProfileRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_language().empty()) {
+    _this->_internal_set_language(from._internal_language());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UserQuoteProfileRequest::CopyFrom(const UserQuoteProfileRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.UserQuoteProfileRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool UserQuoteProfileRequest::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* UserQuoteProfileRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void UserQuoteProfileRequest::InternalSwap(UserQuoteProfileRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.language_, &other->_impl_.language_, arena);
+}
 
 ::google::protobuf::Metadata UserQuoteProfileRequest::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
@@ -22572,10 +22929,828 @@ void RateLimit::InternalSwap(RateLimit* PROTOBUF_RESTRICT other) {
 }
 // ===================================================================
 
-class UserQuoteProfileResponse::_Internal {
+class UserQuoteLevelDetail_PackageDetail::_Internal {
  public:
 };
 
+UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : key_(arena, from.key_),
+        name_(arena, from.name_),
+        description_(arena, from.description_),
+        _cached_size_{0} {}
+
+UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(
+    ::google::protobuf::Arena* arena,
+    const UserQuoteLevelDetail_PackageDetail& from)
+    : ::google::protobuf::Message(arena) {
+  UserQuoteLevelDetail_PackageDetail* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, start_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, start_),
+           offsetof(Impl_, end_) -
+               offsetof(Impl_, start_) +
+               sizeof(Impl_::end_));
+
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : key_(arena),
+        name_(arena),
+        description_(arena),
+        _cached_size_{0} {}
+
+inline void UserQuoteLevelDetail_PackageDetail::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, start_),
+           0,
+           offsetof(Impl_, end_) -
+               offsetof(Impl_, start_) +
+               sizeof(Impl_::end_));
+}
+UserQuoteLevelDetail_PackageDetail::~UserQuoteLevelDetail_PackageDetail() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void UserQuoteLevelDetail_PackageDetail::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.key_.Destroy();
+  _impl_.name_.Destroy();
+  _impl_.description_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void UserQuoteLevelDetail_PackageDetail::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.key_.ClearToEmpty();
+  _impl_.name_.ClearToEmpty();
+  _impl_.description_.ClearToEmpty();
+  ::memset(&_impl_.start_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.end_) -
+      reinterpret_cast<char*>(&_impl_.start_)) + sizeof(_impl_.end_));
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* UserQuoteLevelDetail_PackageDetail::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 5, 0, 82, 2> UserQuoteLevelDetail_PackageDetail::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    6, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967236,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    5,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_UserQuoteLevelDetail_PackageDetail_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // string key = 1 [json_name = "key"];
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.key_)}},
+    // string name = 2 [json_name = "name"];
+    {::_pbi::TcParser::FastUS1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.name_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    // string description = 4 [json_name = "description"];
+    {::_pbi::TcParser::FastUS1,
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.description_)}},
+    // int64 start = 5 [json_name = "start"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(UserQuoteLevelDetail_PackageDetail, _impl_.start_), 63>(),
+     {40, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.start_)}},
+    // int64 end = 6 [json_name = "end"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(UserQuoteLevelDetail_PackageDetail, _impl_.end_), 63>(),
+     {48, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.end_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string key = 1 [json_name = "key"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.key_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string name = 2 [json_name = "name"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string description = 4 [json_name = "description"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.description_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 start = 5 [json_name = "start"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.start_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // int64 end = 6 [json_name = "end"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.end_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+  }},
+  // no aux_entries
+  {{
+    "\67\3\4\13\0\0\0\0"
+    "longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail"
+    "key"
+    "name"
+    "description"
+  }},
+};
+
+::uint8_t* UserQuoteLevelDetail_PackageDetail::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // string key = 1 [json_name = "key"];
+  if (!this->_internal_key().empty()) {
+    const std::string& _s = this->_internal_key();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.key");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // string name = 2 [json_name = "name"];
+  if (!this->_internal_name().empty()) {
+    const std::string& _s = this->_internal_name();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.name");
+    target = stream->WriteStringMaybeAliased(2, _s, target);
+  }
+
+  // string description = 4 [json_name = "description"];
+  if (!this->_internal_description().empty()) {
+    const std::string& _s = this->_internal_description();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail.description");
+    target = stream->WriteStringMaybeAliased(4, _s, target);
+  }
+
+  // int64 start = 5 [json_name = "start"];
+  if (this->_internal_start() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<5>(
+            stream, this->_internal_start(), target);
+  }
+
+  // int64 end = 6 [json_name = "end"];
+  if (this->_internal_end() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<6>(
+            stream, this->_internal_end(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  return target;
+}
+
+::size_t UserQuoteLevelDetail_PackageDetail::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string key = 1 [json_name = "key"];
+  if (!this->_internal_key().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_key());
+  }
+
+  // string name = 2 [json_name = "name"];
+  if (!this->_internal_name().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_name());
+  }
+
+  // string description = 4 [json_name = "description"];
+  if (!this->_internal_description().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_description());
+  }
+
+  // int64 start = 5 [json_name = "start"];
+  if (this->_internal_start() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_start());
+  }
+
+  // int64 end = 6 [json_name = "end"];
+  if (this->_internal_end() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_end());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData UserQuoteLevelDetail_PackageDetail::_class_data_ = {
+    UserQuoteLevelDetail_PackageDetail::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail_PackageDetail::GetClassData() const {
+  return &_class_data_;
+}
+
+void UserQuoteLevelDetail_PackageDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<UserQuoteLevelDetail_PackageDetail*>(&to_msg);
+  auto& from = static_cast<const UserQuoteLevelDetail_PackageDetail&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_key().empty()) {
+    _this->_internal_set_key(from._internal_key());
+  }
+  if (!from._internal_name().empty()) {
+    _this->_internal_set_name(from._internal_name());
+  }
+  if (!from._internal_description().empty()) {
+    _this->_internal_set_description(from._internal_description());
+  }
+  if (from._internal_start() != 0) {
+    _this->_internal_set_start(from._internal_start());
+  }
+  if (from._internal_end() != 0) {
+    _this->_internal_set_end(from._internal_end());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UserQuoteLevelDetail_PackageDetail::CopyFrom(const UserQuoteLevelDetail_PackageDetail& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool UserQuoteLevelDetail_PackageDetail::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* UserQuoteLevelDetail_PackageDetail::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void UserQuoteLevelDetail_PackageDetail::InternalSwap(UserQuoteLevelDetail_PackageDetail* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.key_, &other->_impl_.key_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.description_, &other->_impl_.description_, arena);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.end_)
+      + sizeof(UserQuoteLevelDetail_PackageDetail::_impl_.end_)
+      - PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.start_)>(
+          reinterpret_cast<char*>(&_impl_.start_),
+          reinterpret_cast<char*>(&other->_impl_.start_));
+}
+
+::google::protobuf::Metadata UserQuoteLevelDetail_PackageDetail::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[66]);
+}
+// ===================================================================
+
+class UserQuoteLevelDetail_MarketPackageDetail::_Internal {
+ public:
+};
+
+UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : packages_{visibility, arena, from.packages_},
+        warning_msg_(arena, from.warning_msg_),
+        _cached_size_{0} {}
+
+UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(
+    ::google::protobuf::Arena* arena,
+    const UserQuoteLevelDetail_MarketPackageDetail& from)
+    : ::google::protobuf::Message(arena) {
+  UserQuoteLevelDetail_MarketPackageDetail* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : packages_{visibility, arena},
+        warning_msg_(arena),
+        _cached_size_{0} {}
+
+inline void UserQuoteLevelDetail_MarketPackageDetail::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+UserQuoteLevelDetail_MarketPackageDetail::~UserQuoteLevelDetail_MarketPackageDetail() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void UserQuoteLevelDetail_MarketPackageDetail::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.warning_msg_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void UserQuoteLevelDetail_MarketPackageDetail::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.packages_.Clear();
+  _impl_.warning_msg_.ClearToEmpty();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* UserQuoteLevelDetail_MarketPackageDetail::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 1, 81, 2> UserQuoteLevelDetail_MarketPackageDetail::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    4, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967286,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_UserQuoteLevelDetail_MarketPackageDetail_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // string warning_msg = 4 [json_name = "warningMsg"];
+    {::_pbi::TcParser::FastUS1,
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_MarketPackageDetail, _impl_.warning_msg_)}},
+    // repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+    {::_pbi::TcParser::FastMtR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_MarketPackageDetail, _impl_.packages_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_MarketPackageDetail, _impl_.packages_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // string warning_msg = 4 [json_name = "warningMsg"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_MarketPackageDetail, _impl_.warning_msg_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>()},
+  }}, {{
+    "\75\0\13\0\0\0\0\0"
+    "longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail"
+    "warning_msg"
+  }},
+};
+
+::uint8_t* UserQuoteLevelDetail_MarketPackageDetail::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_packages_size()); i < n; i++) {
+    const auto& repfield = this->_internal_packages().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  // string warning_msg = 4 [json_name = "warningMsg"];
+  if (!this->_internal_warning_msg().empty()) {
+    const std::string& _s = this->_internal_warning_msg();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail.warning_msg");
+    target = stream->WriteStringMaybeAliased(4, _s, target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  return target;
+}
+
+::size_t UserQuoteLevelDetail_MarketPackageDetail::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail packages = 1 [json_name = "packages"];
+  total_size += 1UL * this->_internal_packages_size();
+  for (const auto& msg : this->_internal_packages()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
+  }
+  // string warning_msg = 4 [json_name = "warningMsg"];
+  if (!this->_internal_warning_msg().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_warning_msg());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData UserQuoteLevelDetail_MarketPackageDetail::_class_data_ = {
+    UserQuoteLevelDetail_MarketPackageDetail::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail_MarketPackageDetail::GetClassData() const {
+  return &_class_data_;
+}
+
+void UserQuoteLevelDetail_MarketPackageDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<UserQuoteLevelDetail_MarketPackageDetail*>(&to_msg);
+  auto& from = static_cast<const UserQuoteLevelDetail_MarketPackageDetail&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_internal_mutable_packages()->MergeFrom(
+      from._internal_packages());
+  if (!from._internal_warning_msg().empty()) {
+    _this->_internal_set_warning_msg(from._internal_warning_msg());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UserQuoteLevelDetail_MarketPackageDetail::CopyFrom(const UserQuoteLevelDetail_MarketPackageDetail& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool UserQuoteLevelDetail_MarketPackageDetail::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* UserQuoteLevelDetail_MarketPackageDetail::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void UserQuoteLevelDetail_MarketPackageDetail::InternalSwap(UserQuoteLevelDetail_MarketPackageDetail* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.packages_.InternalSwap(&other->_impl_.packages_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.warning_msg_, &other->_impl_.warning_msg_, arena);
+}
+
+::google::protobuf::Metadata UserQuoteLevelDetail_MarketPackageDetail::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[67]);
+}
+// ===================================================================
+
+UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse() {}
+UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse(::google::protobuf::Arena* arena)
+    : SuperType(arena) {}
+::google::protobuf::Metadata UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[68]);
+}
+// ===================================================================
+
+UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse() {}
+UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(::google::protobuf::Arena* arena)
+    : SuperType(arena) {}
+::google::protobuf::Metadata UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[69]);
+}
+// ===================================================================
+
+class UserQuoteLevelDetail::_Internal {
+ public:
+};
+
+UserQuoteLevelDetail::UserQuoteLevelDetail(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : by_package_key_{visibility, arena, from.by_package_key_},
+        by_market_code_{visibility, arena, from.by_market_code_},
+        _cached_size_{0} {}
+
+UserQuoteLevelDetail::UserQuoteLevelDetail(
+    ::google::protobuf::Arena* arena,
+    const UserQuoteLevelDetail& from)
+    : ::google::protobuf::Message(arena) {
+  UserQuoteLevelDetail* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail)
+}
+inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : by_package_key_{visibility, arena},
+        by_market_code_{visibility, arena},
+        _cached_size_{0} {}
+
+inline void UserQuoteLevelDetail::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+UserQuoteLevelDetail::~UserQuoteLevelDetail() {
+  // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void UserQuoteLevelDetail::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void UserQuoteLevelDetail::Clear() {
+// @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.by_package_key_.Clear();
+  _impl_.by_market_code_.Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* UserQuoteLevelDetail::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 2, 4, 78, 2> UserQuoteLevelDetail::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    4,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_UserQuoteLevelDetail_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail, _impl_.by_package_key_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+    // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail, _impl_.by_market_code_), 0, 2,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+  }}, {{
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(UserQuoteLevelDetail()._impl_.by_package_key_)>(
+        1, 0, 0, 9,
+        11)},
+    {::_pbi::TcParser::CreateInArenaStorageCb<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>},
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(UserQuoteLevelDetail()._impl_.by_market_code_)>(
+        1, 0, 0, 9,
+        11)},
+    {::_pbi::TcParser::CreateInArenaStorageCb<::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>},
+  }}, {{
+    "\51\16\16\0\0\0\0\0"
+    "longportapp.quote.v1.UserQuoteLevelDetail"
+    "by_package_key"
+    "by_market_code"
+  }},
+};
+
+::uint8_t* UserQuoteLevelDetail::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:longportapp.quote.v1.UserQuoteLevelDetail)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
+  if (!_internal_by_package_key().empty()) {
+    using MapType = ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>;
+    using WireHelper = _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_MESSAGE>;
+    const auto& field = _internal_by_package_key();
+
+    if (stream->IsSerializationDeterministic() && field.size() > 1) {
+      for (const auto& entry : ::google::protobuf::internal::MapSorterPtr<MapType>(field)) {
+        target = WireHelper::InternalSerialize(
+            1, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.by_package_key");
+      }
+    } else {
+      for (const auto& entry : field) {
+        target = WireHelper::InternalSerialize(
+            1, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.by_package_key");
+      }
+    }
+  }
+
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
+  if (!_internal_by_market_code().empty()) {
+    using MapType = ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>;
+    using WireHelper = _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_MESSAGE>;
+    const auto& field = _internal_by_market_code();
+
+    if (stream->IsSerializationDeterministic() && field.size() > 1) {
+      for (const auto& entry : ::google::protobuf::internal::MapSorterPtr<MapType>(field)) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.by_market_code");
+      }
+    } else {
+      for (const auto& entry : field) {
+        target = WireHelper::InternalSerialize(
+            2, entry.first, entry.second, target, stream);
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            entry.first.data(), static_cast<int>(entry.first.length()),
+ ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.UserQuoteLevelDetail.by_market_code");
+      }
+    }
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:longportapp.quote.v1.UserQuoteLevelDetail)
+  return target;
+}
+
+::size_t UserQuoteLevelDetail::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:longportapp.quote.v1.UserQuoteLevelDetail)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_by_package_key_size());
+  for (const auto& entry : _internal_by_package_key()) {
+    total_size += _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
+  }
+  // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_by_market_code_size());
+  for (const auto& entry : _internal_by_market_code()) {
+    total_size += _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
+                                   _pbi::WireFormatLite::TYPE_STRING,
+                                   _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData UserQuoteLevelDetail::_class_data_ = {
+    UserQuoteLevelDetail::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail::GetClassData() const {
+  return &_class_data_;
+}
+
+void UserQuoteLevelDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<UserQuoteLevelDetail*>(&to_msg);
+  auto& from = static_cast<const UserQuoteLevelDetail&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:longportapp.quote.v1.UserQuoteLevelDetail)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.by_package_key_.MergeFrom(from._impl_.by_package_key_);
+  _this->_impl_.by_market_code_.MergeFrom(from._impl_.by_market_code_);
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UserQuoteLevelDetail::CopyFrom(const UserQuoteLevelDetail& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:longportapp.quote.v1.UserQuoteLevelDetail)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool UserQuoteLevelDetail::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* UserQuoteLevelDetail::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void UserQuoteLevelDetail::InternalSwap(UserQuoteLevelDetail* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.by_package_key_.InternalSwap(&other->_impl_.by_package_key_);
+  _impl_.by_market_code_.InternalSwap(&other->_impl_.by_market_code_);
+}
+
+::google::protobuf::Metadata UserQuoteLevelDetail::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
+      file_level_metadata_quote_2fapi_2eproto[70]);
+}
+// ===================================================================
+
+class UserQuoteProfileResponse::_Internal {
+ public:
+  using HasBits = decltype(std::declval<UserQuoteProfileResponse>()._impl_._has_bits_);
+  static constexpr ::int32_t kHasBitsOffset =
+    8 * PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_._has_bits_);
+  static const ::longportapp::quote::v1::UserQuoteLevelDetail& quote_level_detail(const UserQuoteProfileResponse* msg);
+  static void set_has_quote_level_detail(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+const ::longportapp::quote::v1::UserQuoteLevelDetail& UserQuoteProfileResponse::_Internal::quote_level_detail(const UserQuoteProfileResponse* msg) {
+  return *msg->_impl_.quote_level_detail_;
+}
 UserQuoteProfileResponse::UserQuoteProfileResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
   SharedCtor(arena);
@@ -22584,9 +23759,10 @@ UserQuoteProfileResponse::UserQuoteProfileResponse(::google::protobuf::Arena* ar
 inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : rate_limit_{visibility, arena, from.rate_limit_},
-        quote_level_(arena, from.quote_level_),
-        _cached_size_{0} {}
+      : _has_bits_{from._has_bits_},
+        _cached_size_{0},
+        rate_limit_{visibility, arena, from.rate_limit_},
+        quote_level_(arena, from.quote_level_) {}
 
 UserQuoteProfileResponse::UserQuoteProfileResponse(
     ::google::protobuf::Arena* arena,
@@ -22597,6 +23773,10 @@ UserQuoteProfileResponse::UserQuoteProfileResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
+  _impl_.quote_level_detail_ = (cached_has_bits & 0x00000001u)
+                ? CreateMaybeMessage<::longportapp::quote::v1::UserQuoteLevelDetail>(arena, *from._impl_.quote_level_detail_)
+                : nullptr;
   ::memcpy(reinterpret_cast<char *>(&_impl_) +
                offsetof(Impl_, member_id_),
            reinterpret_cast<const char *>(&from._impl_) +
@@ -22610,17 +23790,17 @@ UserQuoteProfileResponse::UserQuoteProfileResponse(
 inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : rate_limit_{visibility, arena},
-        quote_level_(arena),
-        _cached_size_{0} {}
+      : _cached_size_{0},
+        rate_limit_{visibility, arena},
+        quote_level_(arena) {}
 
 inline void UserQuoteProfileResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
   ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, member_id_),
+               offsetof(Impl_, quote_level_detail_),
            0,
            offsetof(Impl_, history_candlestick_limit_) -
-               offsetof(Impl_, member_id_) +
+               offsetof(Impl_, quote_level_detail_) +
                sizeof(Impl_::history_candlestick_limit_));
 }
 UserQuoteProfileResponse::~UserQuoteProfileResponse() {
@@ -22631,6 +23811,7 @@ UserQuoteProfileResponse::~UserQuoteProfileResponse() {
 inline void UserQuoteProfileResponse::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.quote_level_.Destroy();
+  delete _impl_.quote_level_detail_;
   _impl_.~Impl_();
 }
 
@@ -22643,9 +23824,15 @@ PROTOBUF_NOINLINE void UserQuoteProfileResponse::Clear() {
 
   _impl_.rate_limit_.Clear();
   _impl_.quote_level_.ClearToEmpty();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    ABSL_DCHECK(_impl_.quote_level_detail_ != nullptr);
+    _impl_.quote_level_detail_->Clear();
+  }
   ::memset(&_impl_.member_id_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.history_candlestick_limit_) -
       reinterpret_cast<char*>(&_impl_.member_id_)) + sizeof(_impl_.history_candlestick_limit_));
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -22657,16 +23844,16 @@ const char* UserQuoteProfileResponse::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<3, 5, 1, 65, 2> UserQuoteProfileResponse::_table_ = {
+const ::_pbi::TcParseTable<3, 6, 2, 65, 2> UserQuoteProfileResponse::_table_ = {
   {
-    0,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_._has_bits_),
     0, // no _extensions_
-    5, 56,  // max_field_number, fast_idx_mask
+    6, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967264,  // skipmap
+    4294967232,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    5,  // num_field_entries
-    1,  // num_aux_entries
+    6,  // num_field_entries
+    2,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     &_UserQuoteProfileResponse_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
@@ -22687,28 +23874,34 @@ const ::_pbi::TcParseTable<3, 5, 1, 65, 2> UserQuoteProfileResponse::_table_ = {
     // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
     {::_pbi::TcParser::FastMtR1,
      {42, 63, 0, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.rate_limit_)}},
-    {::_pbi::TcParser::MiniParse, {}},
+    // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+    {::_pbi::TcParser::FastMtS1,
+     {50, 0, 1, PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_detail_)}},
     {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
     // int64 member_id = 1 [json_name = "memberId"];
-    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_), 0, 0,
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
     // string quote_level = 2 [json_name = "quoteLevel"];
-    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_), 0, 0,
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int32 subscribe_limit = 3 [json_name = "subscribeLimit"];
-    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.subscribe_limit_), 0, 0,
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.subscribe_limit_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
     // int32 history_candlestick_limit = 4 [json_name = "historyCandlestickLimit"];
-    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_), 0, 0,
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
     // repeated .longportapp.quote.v1.RateLimit rate_limit = 5 [json_name = "rateLimit"];
-    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.rate_limit_), 0, 0,
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.rate_limit_), -1, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+    {PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_detail_), _Internal::kHasBitsOffset + 0, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
     {::_pbi::TcParser::GetTable<::longportapp::quote::v1::RateLimit>()},
+    {::_pbi::TcParser::GetTable<::longportapp::quote::v1::UserQuoteLevelDetail>()},
   }}, {{
     "\55\0\13\0\0\0\0\0"
     "longportapp.quote.v1.UserQuoteProfileResponse"
@@ -22760,6 +23953,14 @@ const ::_pbi::TcParseTable<3, 5, 1, 65, 2> UserQuoteProfileResponse::_table_ = {
         InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
   }
 
+  cached_has_bits = _impl_._has_bits_[0];
+  // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        6, _Internal::quote_level_detail(this),
+        _Internal::quote_level_detail(this).GetCachedSize(), target, stream);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target =
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
@@ -22787,6 +23988,13 @@ const ::_pbi::TcParseTable<3, 5, 1, 65, 2> UserQuoteProfileResponse::_table_ = {
   if (!this->_internal_quote_level().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_quote_level());
+  }
+
+  // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size +=
+        1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.quote_level_detail_);
   }
 
   // int64 member_id = 1 [json_name = "memberId"];
@@ -22831,6 +24039,10 @@ void UserQuoteProfileResponse::MergeImpl(::google::protobuf::Message& to_msg, co
   if (!from._internal_quote_level().empty()) {
     _this->_internal_set_quote_level(from._internal_quote_level());
   }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_internal_mutable_quote_level_detail()->::longportapp::quote::v1::UserQuoteLevelDetail::MergeFrom(
+        from._internal_quote_level_detail());
+  }
   if (from._internal_member_id() != 0) {
     _this->_internal_set_member_id(from._internal_member_id());
   }
@@ -22862,20 +24074,21 @@ void UserQuoteProfileResponse::InternalSwap(UserQuoteProfileResponse* PROTOBUF_R
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   _impl_.rate_limit_.InternalSwap(&other->_impl_.rate_limit_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.quote_level_, &other->_impl_.quote_level_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_)
       + sizeof(UserQuoteProfileResponse::_impl_.history_candlestick_limit_)
-      - PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.member_id_)>(
-          reinterpret_cast<char*>(&_impl_.member_id_),
-          reinterpret_cast<char*>(&other->_impl_.member_id_));
+      - PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.quote_level_detail_)>(
+          reinterpret_cast<char*>(&_impl_.quote_level_detail_),
+          reinterpret_cast<char*>(&other->_impl_.quote_level_detail_));
 }
 
 ::google::protobuf::Metadata UserQuoteProfileResponse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
-      file_level_metadata_quote_2fapi_2eproto[66]);
+      file_level_metadata_quote_2fapi_2eproto[71]);
 }
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
