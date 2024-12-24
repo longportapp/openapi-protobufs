@@ -284,11 +284,11 @@ enum Period {
   SIXTY_MINUTE = 60;
   TWO_HOUR = 120;
   THREE_HOUR = 180;
-  FORE_HOUR = 240;
+  FOUR_HOUR = 240;
   DAY = 1000;
   WEEK = 2000;
   MONTH = 3000;
-  SEASON = 3500;
+  QUARTER = 3500;
   YEAR = 4000;
 }
 
