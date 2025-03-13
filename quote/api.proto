@@ -263,6 +263,7 @@ message SecurityCandlestickRequest {
   Period period = 2;
   int32 count = 3;
   AdjustType adjust_type = 4;
+  int32 trade_session = 5;
 }
 
 enum AdjustType {
@@ -305,6 +306,7 @@ message Candlestick {
   int64 volume = 5;
   string turnover = 6;
   int64 timestamp = 7;
+  TradeSession trade_session = 8;
 }
 
 message OptionChainDateListResponse {
@@ -644,6 +646,7 @@ message SecurityHistoryCandlestickRequest {
   HistoryCandlestickQueryType query_type = 4;
   OffsetQuery offset_request = 5;
   DateQuery date_request = 6;
+  int32 trade_session = 7;
 }
 
 message UserQuoteProfileRequest {
