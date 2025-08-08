@@ -243,6 +243,7 @@ message Trade {
 
 message SecurityIntradayRequest {
   string symbol = 1;
+  int32 trade_session = 2;
 }
 
 message SecurityIntradayResponse {
