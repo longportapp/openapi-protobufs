@@ -23,18 +23,16 @@ namespace _fl = ::google::protobuf::internal::field_layout;
 namespace longportapp {
 namespace control {
 namespace v1 {
-
-inline constexpr Error::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : msg_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        code_{::uint64_t{0u}},
-        _cached_size_{0} {}
-
-template <typename>
+        template <typename>
 PROTOBUF_CONSTEXPR Error::Error(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.msg_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.code_)*/ ::uint64_t{0u},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct ErrorDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ErrorDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ErrorDefaultTypeInternal() {}
@@ -136,34 +134,38 @@ Error::Error(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.control.v1.Error)
 }
-inline PROTOBUF_NDEBUG_INLINE Error::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : msg_(arena, from.msg_),
-        _cached_size_{0} {}
-
-Error::Error(
-    ::google::protobuf::Arena* arena,
-    const Error& from)
-    : ::google::protobuf::Message(arena) {
+Error::Error(const Error& from) : ::google::protobuf::Message() {
   Error* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.msg_){},
+      decltype(_impl_.code_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.code_ = from._impl_.code_;
+  _impl_.msg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.msg_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_msg().empty()) {
+    _this->_impl_.msg_.Set(from._internal_msg(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.code_ = from._impl_.code_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.control.v1.Error)
 }
-inline PROTOBUF_NDEBUG_INLINE Error::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : msg_(arena),
-        _cached_size_{0} {}
-
 inline void Error::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.code_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.msg_){},
+      decltype(_impl_.code_){::uint64_t{0u}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.msg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.msg_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Error::~Error() {
   // @@protoc_insertion_point(destructor:longportapp.control.v1.Error)
@@ -171,14 +173,15 @@ Error::~Error() {
   SharedDtor();
 }
 inline void Error::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.msg_.Destroy();
-  _impl_.~Impl_();
+}
+void Error::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Error::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.control.v1.Error)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -289,12 +292,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 40, 2> Error::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Error::_class_data_ = {
-    Error::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Error::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Error::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Error::GetClassData() const { return &_class_data_; }
+
 
 void Error::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Error*>(&to_msg);
@@ -324,15 +326,13 @@ PROTOBUF_NOINLINE bool Error::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Error::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Error::InternalSwap(Error* PROTOBUF_RESTRICT other) {
+void Error::InternalSwap(Error* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.msg_, &other->_impl_.msg_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.msg_, lhs_arena,
+                                       &other->_impl_.msg_, rhs_arena);
         swap(_impl_.code_, other->_impl_.code_);
 }
 

@@ -23,48 +23,459 @@ namespace _fl = ::google::protobuf::internal::field_layout;
 namespace longportapp {
 namespace quote {
 namespace v1 {
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityRequest::SecurityRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityRequestDefaultTypeInternal() {}
+  union {
+    SecurityRequest _instance;
+  };
+};
 
-inline constexpr WarrantExtend::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : implied_volatility_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        expiry_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_trade_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        outstanding_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        conversion_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        category_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        upper_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        lower_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        call_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        underlying_symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        outstanding_qty_{::int64_t{0}},
-        _cached_size_{0} {}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityRequestDefaultTypeInternal _SecurityRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR MultiSecurityRequest::MultiSecurityRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct MultiSecurityRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR MultiSecurityRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~MultiSecurityRequestDefaultTypeInternal() {}
+  union {
+    MultiSecurityRequest _instance;
+  };
+};
 
-template <typename>
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MultiSecurityRequestDefaultTypeInternal _MultiSecurityRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityStaticInfoResponse::SecurityStaticInfoResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.secu_static_info_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityStaticInfoResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityStaticInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityStaticInfoResponseDefaultTypeInternal() {}
+  union {
+    SecurityStaticInfoResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityStaticInfoResponseDefaultTypeInternal _SecurityStaticInfoResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR StaticInfo::StaticInfo(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.stock_derivatives_)*/ {},
+      /* _impl_._stock_derivatives_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_cn_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_en_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_hk_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.listing_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.exchange_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.currency_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.eps_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.eps_ttm_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.bps_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.dividend_yield_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.board_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.total_shares_)*/ ::int64_t{0},
+      /*decltype(_impl_.circulating_shares_)*/ ::int64_t{0},
+      /*decltype(_impl_.hk_shares_)*/ ::int64_t{0},
+      /*decltype(_impl_.lot_size_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct StaticInfoDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR StaticInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~StaticInfoDefaultTypeInternal() {}
+  union {
+    StaticInfo _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StaticInfoDefaultTypeInternal _StaticInfo_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityQuoteResponse::SecurityQuoteResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.secu_quote_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityQuoteResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityQuoteResponseDefaultTypeInternal() {}
+  union {
+    SecurityQuoteResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityQuoteResponseDefaultTypeInternal _SecurityQuoteResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityQuote::SecurityQuote(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.prev_close_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.pre_market_quote_)*/ nullptr,
+      /*decltype(_impl_.post_market_quote_)*/ nullptr,
+      /*decltype(_impl_.over_night_quote_)*/ nullptr,
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.trade_status_)*/ 0,
+    } {}
+struct SecurityQuoteDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityQuoteDefaultTypeInternal() {}
+  union {
+    SecurityQuote _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityQuoteDefaultTypeInternal _SecurityQuote_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR PrePostQuote::PrePostQuote(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.prev_close_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct PrePostQuoteDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PrePostQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PrePostQuoteDefaultTypeInternal() {}
+  union {
+    PrePostQuote _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PrePostQuoteDefaultTypeInternal _PrePostQuote_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionQuoteResponse::OptionQuoteResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.secu_quote_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct OptionQuoteResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionQuoteResponseDefaultTypeInternal() {}
+  union {
+    OptionQuoteResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionQuoteResponseDefaultTypeInternal _OptionQuoteResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionQuote::OptionQuote(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.prev_close_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.option_extend_)*/ nullptr,
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.trade_status_)*/ 0,
+    } {}
+struct OptionQuoteDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionQuoteDefaultTypeInternal() {}
+  union {
+    OptionQuote _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionQuoteDefaultTypeInternal _OptionQuote_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionExtend::OptionExtend(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.implied_volatility_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.expiry_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.contract_multiplier_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.contract_type_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.contract_size_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.direction_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.historical_volatility_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.underlying_symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_interest_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct OptionExtendDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionExtendDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionExtendDefaultTypeInternal() {}
+  union {
+    OptionExtend _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionExtendDefaultTypeInternal _OptionExtend_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR WarrantQuoteResponse::WarrantQuoteResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.secu_quote_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct WarrantQuoteResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR WarrantQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~WarrantQuoteResponseDefaultTypeInternal() {}
+  union {
+    WarrantQuoteResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantQuoteResponseDefaultTypeInternal _WarrantQuoteResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR WarrantQuote::WarrantQuote(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.prev_close_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.warrant_extend_)*/ nullptr,
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.trade_status_)*/ 0,
+    } {}
+struct WarrantQuoteDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR WarrantQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~WarrantQuoteDefaultTypeInternal() {}
+  union {
+    WarrantQuote _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantQuoteDefaultTypeInternal _WarrantQuote_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR WarrantExtend::WarrantExtend(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.implied_volatility_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.expiry_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_trade_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.outstanding_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.conversion_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.category_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.upper_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.lower_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.call_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.underlying_symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.outstanding_qty_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct WarrantExtendDefaultTypeInternal {
   PROTOBUF_CONSTEXPR WarrantExtendDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~WarrantExtendDefaultTypeInternal() {}
@@ -75,129 +486,190 @@ struct WarrantExtendDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantExtendDefaultTypeInternal _WarrantExtend_default_instance_;
-
-inline constexpr UserQuoteProfileRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : language_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR UserQuoteProfileRequest::UserQuoteProfileRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct UserQuoteProfileRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UserQuoteProfileRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UserQuoteProfileRequestDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityDepthResponse::SecurityDepthResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.ask_)*/ {},
+      /*decltype(_impl_.bid_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityDepthResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityDepthResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityDepthResponseDefaultTypeInternal() {}
   union {
-    UserQuoteProfileRequest _instance;
+    SecurityDepthResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileRequestDefaultTypeInternal _UserQuoteProfileRequest_default_instance_;
-
-inline constexpr UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : key_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        description_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        start_{::int64_t{0}},
-        end_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct UserQuoteLevelDetail_PackageDetailDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityDepthResponseDefaultTypeInternal _SecurityDepthResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Depth::Depth(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.order_num_)*/ ::int64_t{0},
+      /*decltype(_impl_.position_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct DepthDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR DepthDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~DepthDefaultTypeInternal() {}
   union {
-    UserQuoteLevelDetail_PackageDetail _instance;
+    Depth _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_PackageDetailDefaultTypeInternal _UserQuoteLevelDetail_PackageDetail_default_instance_;
-      template <typename>
-PROTOBUF_CONSTEXPR UnsubscribeResponse::UnsubscribeResponse(::_pbi::ConstantInitialized) {}
-struct UnsubscribeResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubscribeResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UnsubscribeResponseDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DepthDefaultTypeInternal _Depth_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityBrokersResponse::SecurityBrokersResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.ask_brokers_)*/ {},
+      /*decltype(_impl_.bid_brokers_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityBrokersResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityBrokersResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityBrokersResponseDefaultTypeInternal() {}
   union {
-    UnsubscribeResponse _instance;
+    SecurityBrokersResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubscribeResponseDefaultTypeInternal _UnsubscribeResponse_default_instance_;
-
-inline constexpr UnsubscribeRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_{},
-        sub_type_{},
-        _sub_type_cached_byte_size_{0},
-        unsub_all_{false},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR UnsubscribeRequest::UnsubscribeRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct UnsubscribeRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubscribeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UnsubscribeRequestDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityBrokersResponseDefaultTypeInternal _SecurityBrokersResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Brokers::Brokers(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.broker_ids_)*/ {},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.position_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct BrokersDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR BrokersDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~BrokersDefaultTypeInternal() {}
   union {
-    UnsubscribeRequest _instance;
+    Brokers _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubscribeRequestDefaultTypeInternal _UnsubscribeRequest_default_instance_;
-
-inline constexpr TradePeriod::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : beg_time_{0},
-        end_time_{0},
-        trade_session_{static_cast< ::longportapp::quote::v1::TradeSession >(0)},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR TradePeriod::TradePeriod(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct TradePeriodDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TradePeriodDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TradePeriodDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 BrokersDefaultTypeInternal _Brokers_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR ParticipantBrokerIdsResponse::ParticipantBrokerIdsResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.participant_broker_numbers_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct ParticipantBrokerIdsResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ParticipantBrokerIdsResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ParticipantBrokerIdsResponseDefaultTypeInternal() {}
   union {
-    TradePeriod _instance;
+    ParticipantBrokerIdsResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TradePeriodDefaultTypeInternal _TradePeriod_default_instance_;
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ParticipantBrokerIdsResponseDefaultTypeInternal _ParticipantBrokerIdsResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR ParticipantInfo::ParticipantInfo(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.broker_ids_)*/ {},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.participant_name_cn_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.participant_name_en_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.participant_name_hk_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct ParticipantInfoDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ParticipantInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ParticipantInfoDefaultTypeInternal() {}
+  union {
+    ParticipantInfo _instance;
+  };
+};
 
-inline constexpr Trade::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        trade_type_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_{::int64_t{0}},
-        timestamp_{::int64_t{0}},
-        direction_{0},
-        trade_session_{static_cast< ::longportapp::quote::v1::TradeSession >(0)},
-        _cached_size_{0} {}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ParticipantInfoDefaultTypeInternal _ParticipantInfo_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityTradeRequest::SecurityTradeRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.count_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityTradeRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityTradeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityTradeRequestDefaultTypeInternal() {}
+  union {
+    SecurityTradeRequest _instance;
+  };
+};
 
-template <typename>
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityTradeRequestDefaultTypeInternal _SecurityTradeRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityTradeResponse::SecurityTradeResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.trades_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityTradeResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityTradeResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityTradeResponseDefaultTypeInternal() {}
+  union {
+    SecurityTradeResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityTradeResponseDefaultTypeInternal _SecurityTradeResponse_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR Trade::Trade(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.trade_type_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.direction_)*/ 0,
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct TradeDefaultTypeInternal {
   PROTOBUF_CONSTEXPR TradeDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~TradeDefaultTypeInternal() {}
@@ -208,6 +680,511 @@ struct TradeDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TradeDefaultTypeInternal _Trade_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityIntradayRequest::SecurityIntradayRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityIntradayRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityIntradayRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityIntradayRequestDefaultTypeInternal() {}
+  union {
+    SecurityIntradayRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityIntradayRequestDefaultTypeInternal _SecurityIntradayRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityIntradayResponse::SecurityIntradayResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.lines_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityIntradayResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityIntradayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityIntradayResponseDefaultTypeInternal() {}
+  union {
+    SecurityIntradayResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityIntradayResponseDefaultTypeInternal _SecurityIntradayResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Line::Line(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.avg_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct LineDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR LineDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~LineDefaultTypeInternal() {}
+  union {
+    Line _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LineDefaultTypeInternal _Line_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityCandlestickRequest::SecurityCandlestickRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.period_)*/ 0,
+      /*decltype(_impl_.count_)*/ 0,
+      /*decltype(_impl_.adjust_type_)*/ 0,
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityCandlestickRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityCandlestickRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityCandlestickRequestDefaultTypeInternal() {}
+  union {
+    SecurityCandlestickRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCandlestickRequestDefaultTypeInternal _SecurityCandlestickRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityCandlestickResponse::SecurityCandlestickResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.candlesticks_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityCandlestickResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityCandlestickResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityCandlestickResponseDefaultTypeInternal() {}
+  union {
+    SecurityCandlestickResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCandlestickResponseDefaultTypeInternal _SecurityCandlestickResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Candlestick::Candlestick(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.close_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct CandlestickDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CandlestickDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CandlestickDefaultTypeInternal() {}
+  union {
+    Candlestick _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CandlestickDefaultTypeInternal _Candlestick_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionChainDateListResponse::OptionChainDateListResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.expiry_date_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct OptionChainDateListResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionChainDateListResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionChainDateListResponseDefaultTypeInternal() {}
+  union {
+    OptionChainDateListResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateListResponseDefaultTypeInternal _OptionChainDateListResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoRequest::OptionChainDateStrikeInfoRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.expiry_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct OptionChainDateStrikeInfoRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionChainDateStrikeInfoRequestDefaultTypeInternal() {}
+  union {
+    OptionChainDateStrikeInfoRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateStrikeInfoRequestDefaultTypeInternal _OptionChainDateStrikeInfoRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoResponse::OptionChainDateStrikeInfoResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.strike_price_info_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct OptionChainDateStrikeInfoResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionChainDateStrikeInfoResponseDefaultTypeInternal() {}
+  union {
+    OptionChainDateStrikeInfoResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateStrikeInfoResponseDefaultTypeInternal _OptionChainDateStrikeInfoResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR StrikePriceInfo::StrikePriceInfo(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.call_symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.put_symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.standard_)*/ false,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct StrikePriceInfoDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR StrikePriceInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~StrikePriceInfoDefaultTypeInternal() {}
+  union {
+    StrikePriceInfo _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StrikePriceInfoDefaultTypeInternal _StrikePriceInfo_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR IssuerInfoResponse::IssuerInfoResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.issuer_info_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct IssuerInfoResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR IssuerInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~IssuerInfoResponseDefaultTypeInternal() {}
+  union {
+    IssuerInfoResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IssuerInfoResponseDefaultTypeInternal _IssuerInfoResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR IssuerInfo::IssuerInfo(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.name_cn_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_en_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_hk_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.id_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct IssuerInfoDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR IssuerInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~IssuerInfoDefaultTypeInternal() {}
+  union {
+    IssuerInfo _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IssuerInfoDefaultTypeInternal _IssuerInfo_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR WarrantFilterListRequest::WarrantFilterListRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.filter_config_)*/ nullptr,
+      /*decltype(_impl_.language_)*/ 0,
+    } {}
+struct WarrantFilterListRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR WarrantFilterListRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~WarrantFilterListRequestDefaultTypeInternal() {}
+  union {
+    WarrantFilterListRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantFilterListRequestDefaultTypeInternal _WarrantFilterListRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR FilterConfig::FilterConfig(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.type_)*/ {},
+      /* _impl_._type_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.issuer_)*/ {},
+      /* _impl_._issuer_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.expiry_date_)*/ {},
+      /* _impl_._expiry_date_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.price_type_)*/ {},
+      /* _impl_._price_type_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.status_)*/ {},
+      /* _impl_._status_cached_byte_size_ = */ {0},
+      /*decltype(_impl_.sort_by_)*/ 0,
+      /*decltype(_impl_.sort_order_)*/ 0,
+      /*decltype(_impl_.sort_offset_)*/ 0,
+      /*decltype(_impl_.sort_count_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct FilterConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FilterConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~FilterConfigDefaultTypeInternal() {}
+  union {
+    FilterConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FilterConfigDefaultTypeInternal _FilterConfig_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR WarrantFilterListResponse::WarrantFilterListResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.warrant_list_)*/ {},
+      /*decltype(_impl_.total_count_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct WarrantFilterListResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR WarrantFilterListResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~WarrantFilterListResponseDefaultTypeInternal() {}
+  union {
+    WarrantFilterListResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantFilterListResponseDefaultTypeInternal _WarrantFilterListResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR FilterWarrant::FilterWarrant(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.change_val_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.expiry_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.upper_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.lower_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.outstanding_qty_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.outstanding_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.premium_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.itm_otm_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.implied_volatility_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.delta_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.call_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.to_call_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.effective_leverage_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.leverage_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.conversion_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.balance_point_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.status_)*/ 0,
+      /*decltype(_impl_.type_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct FilterWarrantDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FilterWarrantDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~FilterWarrantDefaultTypeInternal() {}
+  union {
+    FilterWarrant _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FilterWarrantDefaultTypeInternal _FilterWarrant_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR MarketTradePeriodResponse::MarketTradePeriodResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.market_trade_session_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct MarketTradePeriodResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR MarketTradePeriodResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~MarketTradePeriodResponseDefaultTypeInternal() {}
+  union {
+    MarketTradePeriodResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradePeriodResponseDefaultTypeInternal _MarketTradePeriodResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR MarketTradePeriod::MarketTradePeriod(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.trade_session_)*/ {},
+      /*decltype(_impl_.market_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct MarketTradePeriodDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR MarketTradePeriodDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~MarketTradePeriodDefaultTypeInternal() {}
+  union {
+    MarketTradePeriod _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradePeriodDefaultTypeInternal _MarketTradePeriod_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR TradePeriod::TradePeriod(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.beg_time_)*/ 0,
+      /*decltype(_impl_.end_time_)*/ 0,
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct TradePeriodDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR TradePeriodDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~TradePeriodDefaultTypeInternal() {}
+  union {
+    TradePeriod _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TradePeriodDefaultTypeInternal _TradePeriod_default_instance_;
       template <typename>
 PROTOBUF_CONSTEXPR SubscriptionRequest::SubscriptionRequest(::_pbi::ConstantInitialized) {}
 struct SubscriptionRequestDefaultTypeInternal {
@@ -220,41 +1197,33 @@ struct SubscriptionRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubscriptionRequestDefaultTypeInternal _SubscriptionRequest_default_instance_;
-
-inline constexpr SubscribeRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_{},
-        sub_type_{},
-        _sub_type_cached_byte_size_{0},
-        is_first_push_{false},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SubscribeRequest::SubscribeRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SubscribeRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubscribeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubscribeRequestDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR SubscriptionResponse::SubscriptionResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.sub_list_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SubscriptionResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SubscriptionResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SubscriptionResponseDefaultTypeInternal() {}
   union {
-    SubscribeRequest _instance;
+    SubscriptionResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubscribeRequestDefaultTypeInternal _SubscribeRequest_default_instance_;
-
-inline constexpr SubTypeList::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : sub_type_{},
-        _sub_type_cached_byte_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubscriptionResponseDefaultTypeInternal _SubscriptionResponse_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR SubTypeList::SubTypeList(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.sub_type_)*/ {},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubTypeListDefaultTypeInternal {
   PROTOBUF_CONSTEXPR SubTypeListDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubTypeListDefaultTypeInternal() {}
@@ -265,445 +1234,96 @@ struct SubTypeListDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubTypeListDefaultTypeInternal _SubTypeList_default_instance_;
-
-inline constexpr StrikePriceInfo::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        call_symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        put_symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        standard_{false},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR StrikePriceInfo::StrikePriceInfo(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct StrikePriceInfoDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StrikePriceInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StrikePriceInfoDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR SubscribeRequest::SubscribeRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {},
+      /*decltype(_impl_.sub_type_)*/ {},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      /*decltype(_impl_.is_first_push_)*/ false,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SubscribeRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SubscribeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SubscribeRequestDefaultTypeInternal() {}
   union {
-    StrikePriceInfo _instance;
+    SubscribeRequest _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StrikePriceInfoDefaultTypeInternal _StrikePriceInfo_default_instance_;
-
-inline constexpr StaticInfo::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : stock_derivatives_{},
-        _stock_derivatives_cached_byte_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_cn_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_en_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_hk_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        listing_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        exchange_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        currency_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        eps_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        eps_ttm_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        bps_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        dividend_yield_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        board_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        total_shares_{::int64_t{0}},
-        circulating_shares_{::int64_t{0}},
-        hk_shares_{::int64_t{0}},
-        lot_size_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR StaticInfo::StaticInfo(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct StaticInfoDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StaticInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StaticInfoDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubscribeRequestDefaultTypeInternal _SubscribeRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UnsubscribeRequest::UnsubscribeRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {},
+      /*decltype(_impl_.sub_type_)*/ {},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      /*decltype(_impl_.unsub_all_)*/ false,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UnsubscribeRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UnsubscribeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UnsubscribeRequestDefaultTypeInternal() {}
   union {
-    StaticInfo _instance;
+    UnsubscribeRequest _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StaticInfoDefaultTypeInternal _StaticInfo_default_instance_;
-
-inline constexpr SecurityTradeRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        count_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityTradeRequest::SecurityTradeRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityTradeRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityTradeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityTradeRequestDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubscribeRequestDefaultTypeInternal _UnsubscribeRequest_default_instance_;
+      template <typename>
+PROTOBUF_CONSTEXPR UnsubscribeResponse::UnsubscribeResponse(::_pbi::ConstantInitialized) {}
+struct UnsubscribeResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UnsubscribeResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UnsubscribeResponseDefaultTypeInternal() {}
   union {
-    SecurityTradeRequest _instance;
+    UnsubscribeResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityTradeRequestDefaultTypeInternal _SecurityTradeRequest_default_instance_;
-
-inline constexpr SecurityRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityRequest::SecurityRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityRequestDefaultTypeInternal() {}
-  union {
-    SecurityRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityRequestDefaultTypeInternal _SecurityRequest_default_instance_;
-
-inline constexpr SecurityIntradayRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityIntradayRequest::SecurityIntradayRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityIntradayRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityIntradayRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityIntradayRequestDefaultTypeInternal() {}
-  union {
-    SecurityIntradayRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityIntradayRequestDefaultTypeInternal _SecurityIntradayRequest_default_instance_;
-
-inline constexpr SecurityHistoryCandlestickRequest_OffsetQuery::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        minute_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        direction_{static_cast< ::longportapp::quote::v1::Direction >(0)},
-        count_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_OffsetQuery::SecurityHistoryCandlestickRequest_OffsetQuery(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal() {}
-  union {
-    SecurityHistoryCandlestickRequest_OffsetQuery _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal _SecurityHistoryCandlestickRequest_OffsetQuery_default_instance_;
-
-inline constexpr SecurityHistoryCandlestickRequest_DateQuery::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : start_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        end_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_DateQuery::SecurityHistoryCandlestickRequest_DateQuery(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal() {}
-  union {
-    SecurityHistoryCandlestickRequest_DateQuery _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal _SecurityHistoryCandlestickRequest_DateQuery_default_instance_;
-
-inline constexpr SecurityCandlestickRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        period_{static_cast< ::longportapp::quote::v1::Period >(0)},
-        count_{0},
-        adjust_type_{static_cast< ::longportapp::quote::v1::AdjustType >(0)},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityCandlestickRequest::SecurityCandlestickRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityCandlestickRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityCandlestickRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityCandlestickRequestDefaultTypeInternal() {}
-  union {
-    SecurityCandlestickRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCandlestickRequestDefaultTypeInternal _SecurityCandlestickRequest_default_instance_;
-
-inline constexpr SecurityCalcQuoteRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbols_{},
-        calc_index_{},
-        _calc_index_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityCalcQuoteRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityCalcQuoteRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityCalcQuoteRequestDefaultTypeInternal() {}
-  union {
-    SecurityCalcQuoteRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcQuoteRequestDefaultTypeInternal _SecurityCalcQuoteRequest_default_instance_;
-
-inline constexpr SecurityCalcIndex::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        change_val_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        ytd_change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        total_market_value_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        capital_flow_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        amplitude_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        pe_ttm_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        pb_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        dividend_ratio_ttm_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        five_day_change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        ten_day_change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        half_year_change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        five_minutes_change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        expiry_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        upper_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        lower_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        outstanding_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        premium_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        itm_otm_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        implied_volatility_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        warrant_delta_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        call_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        to_call_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        effective_leverage_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        leverage_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        conversion_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        balance_point_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        delta_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        gamma_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        theta_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        vega_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        rho_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_{::int64_t{0}},
-        outstanding_qty_{::int64_t{0}},
-        open_interest_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityCalcIndex::SecurityCalcIndex(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityCalcIndexDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityCalcIndexDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityCalcIndexDefaultTypeInternal() {}
-  union {
-    SecurityCalcIndex _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcIndexDefaultTypeInternal _SecurityCalcIndex_default_instance_;
-
-inline constexpr RateLimit::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : command_{static_cast< ::longportapp::quote::v1::Command >(0)},
-        limit_{0},
-        burst_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR RateLimit::RateLimit(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct RateLimitDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RateLimitDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~RateLimitDefaultTypeInternal() {}
-  union {
-    RateLimit _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RateLimitDefaultTypeInternal _RateLimit_default_instance_;
-
-inline constexpr PushQuote::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        current_turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        sequence_{::int64_t{0}},
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        trade_status_{static_cast< ::longportapp::quote::v1::TradeStatus >(0)},
-        trade_session_{static_cast< ::longportapp::quote::v1::TradeSession >(0)},
-        current_volume_{::int64_t{0}},
-        tag_{static_cast< ::longportapp::quote::v1::PushQuoteTag >(0)},
-        _cached_size_{0} {}
-
-template <typename>
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubscribeResponseDefaultTypeInternal _UnsubscribeResponse_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR PushQuote::PushQuote(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.open_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.high_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.low_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.current_turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.sequence_)*/ ::int64_t{0},
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.trade_status_)*/ 0,
+      /*decltype(_impl_.trade_session_)*/ 0,
+      /*decltype(_impl_.current_volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.tag_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct PushQuoteDefaultTypeInternal {
   PROTOBUF_CONSTEXPR PushQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~PushQuoteDefaultTypeInternal() {}
@@ -714,215 +1334,88 @@ struct PushQuoteDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushQuoteDefaultTypeInternal _PushQuote_default_instance_;
-
-inline constexpr PrePostQuote::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        prev_close_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR PrePostQuote::PrePostQuote(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct PrePostQuoteDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PrePostQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PrePostQuoteDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR PushDepth::PushDepth(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.ask_)*/ {},
+      /*decltype(_impl_.bid_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.sequence_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct PushDepthDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PushDepthDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PushDepthDefaultTypeInternal() {}
   union {
-    PrePostQuote _instance;
+    PushDepth _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PrePostQuoteDefaultTypeInternal _PrePostQuote_default_instance_;
-
-inline constexpr ParticipantInfo::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : broker_ids_{},
-        _broker_ids_cached_byte_size_{0},
-        participant_name_cn_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        participant_name_en_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        participant_name_hk_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR ParticipantInfo::ParticipantInfo(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct ParticipantInfoDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ParticipantInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ParticipantInfoDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushDepthDefaultTypeInternal _PushDepth_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR PushBrokers::PushBrokers(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.ask_brokers_)*/ {},
+      /*decltype(_impl_.bid_brokers_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.sequence_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct PushBrokersDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PushBrokersDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PushBrokersDefaultTypeInternal() {}
   union {
-    ParticipantInfo _instance;
+    PushBrokers _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ParticipantInfoDefaultTypeInternal _ParticipantInfo_default_instance_;
-
-inline constexpr OptionExtend::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : implied_volatility_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        expiry_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        contract_multiplier_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        contract_type_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        contract_size_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        direction_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        historical_volatility_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        underlying_symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_interest_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionExtend::OptionExtend(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionExtendDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionExtendDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionExtendDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushBrokersDefaultTypeInternal _PushBrokers_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR PushTrade::PushTrade(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.trade_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.sequence_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct PushTradeDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PushTradeDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PushTradeDefaultTypeInternal() {}
   union {
-    OptionExtend _instance;
+    PushTrade _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionExtendDefaultTypeInternal _OptionExtend_default_instance_;
-
-inline constexpr OptionChainDateStrikeInfoRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        expiry_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoRequest::OptionChainDateStrikeInfoRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionChainDateStrikeInfoRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionChainDateStrikeInfoRequestDefaultTypeInternal() {}
-  union {
-    OptionChainDateStrikeInfoRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateStrikeInfoRequestDefaultTypeInternal _OptionChainDateStrikeInfoRequest_default_instance_;
-
-inline constexpr OptionChainDateListResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : expiry_date_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionChainDateListResponse::OptionChainDateListResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionChainDateListResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionChainDateListResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionChainDateListResponseDefaultTypeInternal() {}
-  union {
-    OptionChainDateListResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateListResponseDefaultTypeInternal _OptionChainDateListResponse_default_instance_;
-
-inline constexpr MultiSecurityRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR MultiSecurityRequest::MultiSecurityRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct MultiSecurityRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR MultiSecurityRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~MultiSecurityRequestDefaultTypeInternal() {}
-  union {
-    MultiSecurityRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MultiSecurityRequestDefaultTypeInternal _MultiSecurityRequest_default_instance_;
-
-inline constexpr MarketTradeDayResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : trade_day_{},
-        half_trade_day_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR MarketTradeDayResponse::MarketTradeDayResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct MarketTradeDayResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR MarketTradeDayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~MarketTradeDayResponseDefaultTypeInternal() {}
-  union {
-    MarketTradeDayResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradeDayResponseDefaultTypeInternal _MarketTradeDayResponse_default_instance_;
-
-inline constexpr MarketTradeDayRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : market_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        beg_day_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        end_day_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushTradeDefaultTypeInternal _PushTrade_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR MarketTradeDayRequest::MarketTradeDayRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.market_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.beg_day_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.end_day_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct MarketTradeDayRequestDefaultTypeInternal {
   PROTOBUF_CONSTEXPR MarketTradeDayRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~MarketTradeDayRequestDefaultTypeInternal() {}
@@ -933,239 +1426,32 @@ struct MarketTradeDayRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradeDayRequestDefaultTypeInternal _MarketTradeDayRequest_default_instance_;
-
-inline constexpr Line::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        avg_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Line::Line(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct LineDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LineDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LineDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR MarketTradeDayResponse::MarketTradeDayResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.trade_day_)*/ {},
+      /*decltype(_impl_.half_trade_day_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct MarketTradeDayResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR MarketTradeDayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~MarketTradeDayResponseDefaultTypeInternal() {}
   union {
-    Line _instance;
+    MarketTradeDayResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LineDefaultTypeInternal _Line_default_instance_;
-
-inline constexpr IssuerInfo::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : name_cn_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_en_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_hk_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        id_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR IssuerInfo::IssuerInfo(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct IssuerInfoDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR IssuerInfoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~IssuerInfoDefaultTypeInternal() {}
-  union {
-    IssuerInfo _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IssuerInfoDefaultTypeInternal _IssuerInfo_default_instance_;
-
-inline constexpr FilterWarrant::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        name_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        change_rate_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        change_val_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        expiry_date_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        upper_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        lower_strike_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        outstanding_qty_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        outstanding_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        premium_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        itm_otm_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        implied_volatility_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        delta_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        call_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        to_call_price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        effective_leverage_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        leverage_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        conversion_ratio_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        balance_point_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_{::int64_t{0}},
-        status_{0},
-        type_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR FilterWarrant::FilterWarrant(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct FilterWarrantDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR FilterWarrantDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~FilterWarrantDefaultTypeInternal() {}
-  union {
-    FilterWarrant _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FilterWarrantDefaultTypeInternal _FilterWarrant_default_instance_;
-
-inline constexpr FilterConfig::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : type_{},
-        _type_cached_byte_size_{0},
-        issuer_{},
-        _issuer_cached_byte_size_{0},
-        expiry_date_{},
-        _expiry_date_cached_byte_size_{0},
-        price_type_{},
-        _price_type_cached_byte_size_{0},
-        status_{},
-        _status_cached_byte_size_{0},
-        sort_by_{0},
-        sort_order_{0},
-        sort_offset_{0},
-        sort_count_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR FilterConfig::FilterConfig(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct FilterConfigDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR FilterConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~FilterConfigDefaultTypeInternal() {}
-  union {
-    FilterConfig _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FilterConfigDefaultTypeInternal _FilterConfig_default_instance_;
-
-inline constexpr Depth::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : price_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_{::int64_t{0}},
-        order_num_{::int64_t{0}},
-        position_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Depth::Depth(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct DepthDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR DepthDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~DepthDefaultTypeInternal() {}
-  union {
-    Depth _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DepthDefaultTypeInternal _Depth_default_instance_;
-
-inline constexpr CapitalFlowIntradayResponse_CapitalFlowLine::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : inflow_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        timestamp_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal() {}
-  union {
-    CapitalFlowIntradayResponse_CapitalFlowLine _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal _CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_;
-
-inline constexpr CapitalFlowIntradayRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradeDayResponseDefaultTypeInternal _MarketTradeDayResponse_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct CapitalFlowIntradayRequestDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CapitalFlowIntradayRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~CapitalFlowIntradayRequestDefaultTypeInternal() {}
@@ -1176,23 +1462,63 @@ struct CapitalFlowIntradayRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalFlowIntradayRequestDefaultTypeInternal _CapitalFlowIntradayRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.inflow_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal() {}
+  union {
+    CapitalFlowIntradayResponse_CapitalFlowLine _instance;
+  };
+};
 
-inline constexpr CapitalDistributionResponse_CapitalDistribution::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : large_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        medium_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        small_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalFlowIntradayResponse_CapitalFlowLineDefaultTypeInternal _CapitalFlowIntradayResponse_CapitalFlowLine_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.capital_flow_lines_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct CapitalFlowIntradayResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CapitalFlowIntradayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CapitalFlowIntradayResponseDefaultTypeInternal() {}
+  union {
+    CapitalFlowIntradayResponse _instance;
+  };
+};
 
-template <typename>
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalFlowIntradayResponseDefaultTypeInternal _CapitalFlowIntradayResponse_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.large_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.medium_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.small_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal() {}
@@ -1203,160 +1529,383 @@ struct CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalDistributionResponse_CapitalDistributionDefaultTypeInternal _CapitalDistributionResponse_CapitalDistribution_default_instance_;
-
-inline constexpr Candlestick::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : close_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        volume_{::int64_t{0}},
-        timestamp_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Candlestick::Candlestick(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct CandlestickDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CandlestickDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CandlestickDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR CapitalDistributionResponse::CapitalDistributionResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.capital_in_)*/ nullptr,
+      /*decltype(_impl_.capital_out_)*/ nullptr,
+      /*decltype(_impl_.timestamp_)*/ ::int64_t{0},
+    } {}
+struct CapitalDistributionResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CapitalDistributionResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CapitalDistributionResponseDefaultTypeInternal() {}
   union {
-    Candlestick _instance;
+    CapitalDistributionResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CandlestickDefaultTypeInternal _Candlestick_default_instance_;
-
-inline constexpr Brokers::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : broker_ids_{},
-        _broker_ids_cached_byte_size_{0},
-        position_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Brokers::Brokers(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct BrokersDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR BrokersDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~BrokersDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalDistributionResponseDefaultTypeInternal _CapitalDistributionResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbols_)*/ {},
+      /*decltype(_impl_.calc_index_)*/ {},
+      /*decltype(_impl_._calc_index_cached_byte_size_)*/ {0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityCalcQuoteRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityCalcQuoteRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityCalcQuoteRequestDefaultTypeInternal() {}
   union {
-    Brokers _instance;
+    SecurityCalcQuoteRequest _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 BrokersDefaultTypeInternal _Brokers_default_instance_;
-
-inline constexpr WarrantQuote::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        prev_close_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        warrant_extend_{nullptr},
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        trade_status_{static_cast< ::longportapp::quote::v1::TradeStatus >(0)} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR WarrantQuote::WarrantQuote(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct WarrantQuoteDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR WarrantQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~WarrantQuoteDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcQuoteRequestDefaultTypeInternal _SecurityCalcQuoteRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityCalcIndex::SecurityCalcIndex(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.last_done_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.change_val_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.ytd_change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.turnover_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.total_market_value_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.capital_flow_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.amplitude_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.pe_ttm_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.pb_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.dividend_ratio_ttm_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.five_day_change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.ten_day_change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.half_year_change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.five_minutes_change_rate_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.expiry_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.upper_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.lower_strike_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.outstanding_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.premium_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.itm_otm_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.implied_volatility_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.warrant_delta_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.call_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.to_call_price_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.effective_leverage_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.leverage_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.conversion_ratio_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.balance_point_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.delta_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.gamma_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.theta_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.vega_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.rho_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.volume_)*/ ::int64_t{0},
+      /*decltype(_impl_.outstanding_qty_)*/ ::int64_t{0},
+      /*decltype(_impl_.open_interest_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityCalcIndexDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityCalcIndexDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityCalcIndexDefaultTypeInternal() {}
   union {
-    WarrantQuote _instance;
+    SecurityCalcIndex _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantQuoteDefaultTypeInternal _WarrantQuote_default_instance_;
-
-inline constexpr WarrantFilterListResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : warrant_list_{},
-        total_count_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR WarrantFilterListResponse::WarrantFilterListResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct WarrantFilterListResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR WarrantFilterListResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~WarrantFilterListResponseDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcIndexDefaultTypeInternal _SecurityCalcIndex_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.security_calc_index_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityCalcQuoteResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityCalcQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityCalcQuoteResponseDefaultTypeInternal() {}
   union {
-    WarrantFilterListResponse _instance;
+    SecurityCalcQuoteResponse _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantFilterListResponseDefaultTypeInternal _WarrantFilterListResponse_default_instance_;
-
-inline constexpr WarrantFilterListRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        filter_config_{nullptr},
-        language_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR WarrantFilterListRequest::WarrantFilterListRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct WarrantFilterListRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR WarrantFilterListRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~WarrantFilterListRequestDefaultTypeInternal() {}
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcQuoteResponseDefaultTypeInternal _SecurityCalcQuoteResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_OffsetQuery::SecurityHistoryCandlestickRequest_OffsetQuery(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.minute_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.direction_)*/ 0,
+      /*decltype(_impl_.count_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal() {}
   union {
-    WarrantFilterListRequest _instance;
+    SecurityHistoryCandlestickRequest_OffsetQuery _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantFilterListRequestDefaultTypeInternal _WarrantFilterListRequest_default_instance_;
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequest_OffsetQueryDefaultTypeInternal _SecurityHistoryCandlestickRequest_OffsetQuery_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_DateQuery::SecurityHistoryCandlestickRequest_DateQuery(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.start_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.end_date_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal() {}
+  union {
+    SecurityHistoryCandlestickRequest_DateQuery _instance;
+  };
+};
 
-inline constexpr UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : packages_{},
-        warning_msg_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequest_DateQueryDefaultTypeInternal _SecurityHistoryCandlestickRequest_DateQuery_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest::SecurityHistoryCandlestickRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.symbol_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.offset_request_)*/ nullptr,
+      /*decltype(_impl_.date_request_)*/ nullptr,
+      /*decltype(_impl_.period_)*/ 0,
+      /*decltype(_impl_.adjust_type_)*/ 0,
+      /*decltype(_impl_.query_type_)*/ 0,
+      /*decltype(_impl_.trade_session_)*/ 0,
+    } {}
+struct SecurityHistoryCandlestickRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SecurityHistoryCandlestickRequestDefaultTypeInternal() {}
+  union {
+    SecurityHistoryCandlestickRequest _instance;
+  };
+};
 
-template <typename>
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequestDefaultTypeInternal _SecurityHistoryCandlestickRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UserQuoteProfileRequest::UserQuoteProfileRequest(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.language_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UserQuoteProfileRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteProfileRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteProfileRequestDefaultTypeInternal() {}
+  union {
+    UserQuoteProfileRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteProfileRequestDefaultTypeInternal _UserQuoteProfileRequest_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR RateLimit::RateLimit(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.command_)*/ 0,
+      /*decltype(_impl_.limit_)*/ 0,
+      /*decltype(_impl_.burst_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct RateLimitDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RateLimitDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RateLimitDefaultTypeInternal() {}
+  union {
+    RateLimit _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RateLimitDefaultTypeInternal _RateLimit_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.key_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.description_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.start_)*/ ::int64_t{0},
+      /*decltype(_impl_.end_)*/ ::int64_t{0},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UserQuoteLevelDetail_PackageDetailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UserQuoteLevelDetail_PackageDetailDefaultTypeInternal() {}
+  union {
+    UserQuoteLevelDetail_PackageDetail _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_PackageDetailDefaultTypeInternal _UserQuoteLevelDetail_PackageDetail_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.packages_)*/ {},
+      /*decltype(_impl_.warning_msg_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal {
   PROTOBUF_CONSTEXPR UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UserQuoteLevelDetail_MarketPackageDetailDefaultTypeInternal() {}
@@ -1379,504 +1928,6 @@ struct UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse_default_instance_;
-
-inline constexpr SubscriptionResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : sub_list_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SubscriptionResponse::SubscriptionResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SubscriptionResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubscriptionResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubscriptionResponseDefaultTypeInternal() {}
-  union {
-    SubscriptionResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubscriptionResponseDefaultTypeInternal _SubscriptionResponse_default_instance_;
-
-inline constexpr SecurityTradeResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : trades_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityTradeResponse::SecurityTradeResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityTradeResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityTradeResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityTradeResponseDefaultTypeInternal() {}
-  union {
-    SecurityTradeResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityTradeResponseDefaultTypeInternal _SecurityTradeResponse_default_instance_;
-
-inline constexpr SecurityStaticInfoResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : secu_static_info_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityStaticInfoResponse::SecurityStaticInfoResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityStaticInfoResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityStaticInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityStaticInfoResponseDefaultTypeInternal() {}
-  union {
-    SecurityStaticInfoResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityStaticInfoResponseDefaultTypeInternal _SecurityStaticInfoResponse_default_instance_;
-
-inline constexpr SecurityQuote::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        prev_close_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        pre_market_quote_{nullptr},
-        post_market_quote_{nullptr},
-        over_night_quote_{nullptr},
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        trade_status_{static_cast< ::longportapp::quote::v1::TradeStatus >(0)} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityQuote::SecurityQuote(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityQuoteDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityQuoteDefaultTypeInternal() {}
-  union {
-    SecurityQuote _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityQuoteDefaultTypeInternal _SecurityQuote_default_instance_;
-
-inline constexpr SecurityIntradayResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : lines_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityIntradayResponse::SecurityIntradayResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityIntradayResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityIntradayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityIntradayResponseDefaultTypeInternal() {}
-  union {
-    SecurityIntradayResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityIntradayResponseDefaultTypeInternal _SecurityIntradayResponse_default_instance_;
-
-inline constexpr SecurityHistoryCandlestickRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        offset_request_{nullptr},
-        date_request_{nullptr},
-        period_{static_cast< ::longportapp::quote::v1::Period >(0)},
-        adjust_type_{static_cast< ::longportapp::quote::v1::AdjustType >(0)},
-        query_type_{static_cast< ::longportapp::quote::v1::HistoryCandlestickQueryType >(0)} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequest::SecurityHistoryCandlestickRequest(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityHistoryCandlestickRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityHistoryCandlestickRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityHistoryCandlestickRequestDefaultTypeInternal() {}
-  union {
-    SecurityHistoryCandlestickRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityHistoryCandlestickRequestDefaultTypeInternal _SecurityHistoryCandlestickRequest_default_instance_;
-
-inline constexpr SecurityDepthResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : ask_{},
-        bid_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityDepthResponse::SecurityDepthResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityDepthResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityDepthResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityDepthResponseDefaultTypeInternal() {}
-  union {
-    SecurityDepthResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityDepthResponseDefaultTypeInternal _SecurityDepthResponse_default_instance_;
-
-inline constexpr SecurityCandlestickResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : candlesticks_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityCandlestickResponse::SecurityCandlestickResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityCandlestickResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityCandlestickResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityCandlestickResponseDefaultTypeInternal() {}
-  union {
-    SecurityCandlestickResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCandlestickResponseDefaultTypeInternal _SecurityCandlestickResponse_default_instance_;
-
-inline constexpr SecurityCalcQuoteResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : security_calc_index_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityCalcQuoteResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityCalcQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityCalcQuoteResponseDefaultTypeInternal() {}
-  union {
-    SecurityCalcQuoteResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityCalcQuoteResponseDefaultTypeInternal _SecurityCalcQuoteResponse_default_instance_;
-
-inline constexpr SecurityBrokersResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : ask_brokers_{},
-        bid_brokers_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityBrokersResponse::SecurityBrokersResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityBrokersResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityBrokersResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityBrokersResponseDefaultTypeInternal() {}
-  union {
-    SecurityBrokersResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityBrokersResponseDefaultTypeInternal _SecurityBrokersResponse_default_instance_;
-
-inline constexpr PushTrade::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : trade_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        sequence_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR PushTrade::PushTrade(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct PushTradeDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PushTradeDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PushTradeDefaultTypeInternal() {}
-  union {
-    PushTrade _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushTradeDefaultTypeInternal _PushTrade_default_instance_;
-
-inline constexpr PushDepth::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : ask_{},
-        bid_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        sequence_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR PushDepth::PushDepth(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct PushDepthDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PushDepthDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PushDepthDefaultTypeInternal() {}
-  union {
-    PushDepth _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushDepthDefaultTypeInternal _PushDepth_default_instance_;
-
-inline constexpr PushBrokers::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : ask_brokers_{},
-        bid_brokers_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        sequence_{::int64_t{0}},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR PushBrokers::PushBrokers(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct PushBrokersDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PushBrokersDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PushBrokersDefaultTypeInternal() {}
-  union {
-    PushBrokers _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PushBrokersDefaultTypeInternal _PushBrokers_default_instance_;
-
-inline constexpr ParticipantBrokerIdsResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : participant_broker_numbers_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR ParticipantBrokerIdsResponse::ParticipantBrokerIdsResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct ParticipantBrokerIdsResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ParticipantBrokerIdsResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ParticipantBrokerIdsResponseDefaultTypeInternal() {}
-  union {
-    ParticipantBrokerIdsResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ParticipantBrokerIdsResponseDefaultTypeInternal _ParticipantBrokerIdsResponse_default_instance_;
-
-inline constexpr OptionQuote::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        last_done_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        prev_close_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        open_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        high_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        low_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        turnover_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        option_extend_{nullptr},
-        timestamp_{::int64_t{0}},
-        volume_{::int64_t{0}},
-        trade_status_{static_cast< ::longportapp::quote::v1::TradeStatus >(0)} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionQuote::OptionQuote(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionQuoteDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionQuoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionQuoteDefaultTypeInternal() {}
-  union {
-    OptionQuote _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionQuoteDefaultTypeInternal _OptionQuote_default_instance_;
-
-inline constexpr OptionChainDateStrikeInfoResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : strike_price_info_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoResponse::OptionChainDateStrikeInfoResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionChainDateStrikeInfoResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionChainDateStrikeInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionChainDateStrikeInfoResponseDefaultTypeInternal() {}
-  union {
-    OptionChainDateStrikeInfoResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionChainDateStrikeInfoResponseDefaultTypeInternal _OptionChainDateStrikeInfoResponse_default_instance_;
-
-inline constexpr MarketTradePeriod::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : trade_session_{},
-        market_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR MarketTradePeriod::MarketTradePeriod(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct MarketTradePeriodDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR MarketTradePeriodDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~MarketTradePeriodDefaultTypeInternal() {}
-  union {
-    MarketTradePeriod _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradePeriodDefaultTypeInternal _MarketTradePeriod_default_instance_;
-
-inline constexpr IssuerInfoResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : issuer_info_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR IssuerInfoResponse::IssuerInfoResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct IssuerInfoResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR IssuerInfoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~IssuerInfoResponseDefaultTypeInternal() {}
-  union {
-    IssuerInfoResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IssuerInfoResponseDefaultTypeInternal _IssuerInfoResponse_default_instance_;
-
-inline constexpr CapitalFlowIntradayResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : capital_flow_lines_{},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct CapitalFlowIntradayResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CapitalFlowIntradayResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CapitalFlowIntradayResponseDefaultTypeInternal() {}
-  union {
-    CapitalFlowIntradayResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalFlowIntradayResponseDefaultTypeInternal _CapitalFlowIntradayResponse_default_instance_;
-
-inline constexpr CapitalDistributionResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        symbol_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        capital_in_{nullptr},
-        capital_out_{nullptr},
-        timestamp_{::int64_t{0}} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR CapitalDistributionResponse::CapitalDistributionResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct CapitalDistributionResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CapitalDistributionResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CapitalDistributionResponseDefaultTypeInternal() {}
-  union {
-    CapitalDistributionResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CapitalDistributionResponseDefaultTypeInternal _CapitalDistributionResponse_default_instance_;
-
-inline constexpr WarrantQuoteResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : secu_quote_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR WarrantQuoteResponse::WarrantQuoteResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct WarrantQuoteResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR WarrantQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~WarrantQuoteResponseDefaultTypeInternal() {}
-  union {
-    WarrantQuoteResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WarrantQuoteResponseDefaultTypeInternal _WarrantQuoteResponse_default_instance_;
       template <typename>
 PROTOBUF_CONSTEXPR UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(::_pbi::ConstantInitialized) {}
 struct UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal {
@@ -1889,73 +1940,13 @@ struct UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUseDefaultTypeInternal _UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse_default_instance_;
-
-inline constexpr SecurityQuoteResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : secu_quote_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SecurityQuoteResponse::SecurityQuoteResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SecurityQuoteResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SecurityQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SecurityQuoteResponseDefaultTypeInternal() {}
-  union {
-    SecurityQuoteResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SecurityQuoteResponseDefaultTypeInternal _SecurityQuoteResponse_default_instance_;
-
-inline constexpr OptionQuoteResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : secu_quote_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR OptionQuoteResponse::OptionQuoteResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct OptionQuoteResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OptionQuoteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OptionQuoteResponseDefaultTypeInternal() {}
-  union {
-    OptionQuoteResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionQuoteResponseDefaultTypeInternal _OptionQuoteResponse_default_instance_;
-
-inline constexpr MarketTradePeriodResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : market_trade_session_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR MarketTradePeriodResponse::MarketTradePeriodResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct MarketTradePeriodResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR MarketTradePeriodResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~MarketTradePeriodResponseDefaultTypeInternal() {}
-  union {
-    MarketTradePeriodResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MarketTradePeriodResponseDefaultTypeInternal _MarketTradePeriodResponse_default_instance_;
-
-inline constexpr UserQuoteLevelDetail::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : by_package_key_{},
-        by_market_code_{},
-        _cached_size_{0} {}
-
-template <typename>
+        template <typename>
 PROTOBUF_CONSTEXPR UserQuoteLevelDetail::UserQuoteLevelDetail(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /* decltype(_impl_.by_package_key_) */ {},
+      /* decltype(_impl_.by_market_code_) */ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct UserQuoteLevelDetailDefaultTypeInternal {
   PROTOBUF_CONSTEXPR UserQuoteLevelDetailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UserQuoteLevelDetailDefaultTypeInternal() {}
@@ -1966,22 +1957,21 @@ struct UserQuoteLevelDetailDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UserQuoteLevelDetailDefaultTypeInternal _UserQuoteLevelDetail_default_instance_;
-
-inline constexpr UserQuoteProfileResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        rate_limit_{},
-        quote_level_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        quote_level_detail_{nullptr},
-        member_id_{::int64_t{0}},
-        subscribe_limit_{0},
-        history_candlestick_limit_{0} {}
-
-template <typename>
+        template <typename>
 PROTOBUF_CONSTEXPR UserQuoteProfileResponse::UserQuoteProfileResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.rate_limit_)*/ {},
+      /*decltype(_impl_.quote_level_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.quote_level_detail_)*/ nullptr,
+      /*decltype(_impl_.member_id_)*/ ::int64_t{0},
+      /*decltype(_impl_.subscribe_limit_)*/ 0,
+      /*decltype(_impl_.history_candlestick_limit_)*/ 0,
+    } {}
 struct UserQuoteProfileResponseDefaultTypeInternal {
   PROTOBUF_CONSTEXPR UserQuoteProfileResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~UserQuoteProfileResponseDefaultTypeInternal() {}
@@ -2335,6 +2325,7 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityIntradayRequest, _impl_.symbol_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityIntradayRequest, _impl_.trade_session_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityIntradayResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2370,6 +2361,7 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityCandlestickRequest, _impl_.period_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityCandlestickRequest, _impl_.count_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityCandlestickRequest, _impl_.adjust_type_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityCandlestickRequest, _impl_.trade_session_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityCandlestickResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2395,6 +2387,7 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::Candlestick, _impl_.volume_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::Candlestick, _impl_.turnover_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::Candlestick, _impl_.timestamp_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::Candlestick, _impl_.trade_session_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::OptionChainDateListResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2855,12 +2848,14 @@ const ::uint32_t TableStruct_quote_2fapi_2eproto::offsets[] PROTOBUF_SECTION_VAR
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityHistoryCandlestickRequest, _impl_.query_type_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityHistoryCandlestickRequest, _impl_.offset_request_),
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityHistoryCandlestickRequest, _impl_.date_request_),
+    PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::SecurityHistoryCandlestickRequest, _impl_.trade_session_),
     ~0u,
     ~0u,
     ~0u,
     ~0u,
     0,
     1,
+    ~0u,
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::longportapp::quote::v1::UserQuoteProfileRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2985,55 +2980,55 @@ static const ::_pbi::MigrationSchema
         {301, -1, -1, sizeof(::longportapp::quote::v1::SecurityTradeResponse)},
         {311, -1, -1, sizeof(::longportapp::quote::v1::Trade)},
         {325, -1, -1, sizeof(::longportapp::quote::v1::SecurityIntradayRequest)},
-        {334, -1, -1, sizeof(::longportapp::quote::v1::SecurityIntradayResponse)},
-        {344, -1, -1, sizeof(::longportapp::quote::v1::Line)},
-        {357, -1, -1, sizeof(::longportapp::quote::v1::SecurityCandlestickRequest)},
-        {369, -1, -1, sizeof(::longportapp::quote::v1::SecurityCandlestickResponse)},
-        {379, -1, -1, sizeof(::longportapp::quote::v1::Candlestick)},
-        {394, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateListResponse)},
-        {403, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateStrikeInfoRequest)},
-        {413, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateStrikeInfoResponse)},
-        {422, -1, -1, sizeof(::longportapp::quote::v1::StrikePriceInfo)},
-        {434, -1, -1, sizeof(::longportapp::quote::v1::IssuerInfoResponse)},
-        {443, -1, -1, sizeof(::longportapp::quote::v1::IssuerInfo)},
-        {455, 466, -1, sizeof(::longportapp::quote::v1::WarrantFilterListRequest)},
-        {469, -1, -1, sizeof(::longportapp::quote::v1::FilterConfig)},
-        {486, -1, -1, sizeof(::longportapp::quote::v1::WarrantFilterListResponse)},
-        {496, -1, -1, sizeof(::longportapp::quote::v1::FilterWarrant)},
-        {529, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriodResponse)},
-        {538, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriod)},
-        {548, -1, -1, sizeof(::longportapp::quote::v1::TradePeriod)},
-        {559, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionRequest)},
-        {567, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionResponse)},
-        {576, -1, -1, sizeof(::longportapp::quote::v1::SubTypeList)},
-        {586, -1, -1, sizeof(::longportapp::quote::v1::SubscribeRequest)},
-        {597, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeRequest)},
-        {608, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeResponse)},
-        {616, -1, -1, sizeof(::longportapp::quote::v1::PushQuote)},
-        {638, -1, -1, sizeof(::longportapp::quote::v1::PushDepth)},
-        {650, -1, -1, sizeof(::longportapp::quote::v1::PushBrokers)},
-        {662, -1, -1, sizeof(::longportapp::quote::v1::PushTrade)},
-        {673, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayRequest)},
-        {684, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayResponse)},
-        {694, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayRequest)},
-        {703, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine)},
-        {713, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse)},
-        {723, -1, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution)},
-        {734, 746, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse)},
-        {750, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteRequest)},
-        {760, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcIndex)},
-        {809, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteResponse)},
-        {818, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery)},
-        {830, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery)},
-        {840, 854, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest)},
-        {860, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileRequest)},
-        {869, -1, -1, sizeof(::longportapp::quote::v1::RateLimit)},
-        {880, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail)},
-        {893, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail)},
-        {903, 913, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse)},
-        {915, 925, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse)},
-        {927, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail)},
-        {937, 951, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileResponse)},
+        {335, -1, -1, sizeof(::longportapp::quote::v1::SecurityIntradayResponse)},
+        {345, -1, -1, sizeof(::longportapp::quote::v1::Line)},
+        {358, -1, -1, sizeof(::longportapp::quote::v1::SecurityCandlestickRequest)},
+        {371, -1, -1, sizeof(::longportapp::quote::v1::SecurityCandlestickResponse)},
+        {381, -1, -1, sizeof(::longportapp::quote::v1::Candlestick)},
+        {397, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateListResponse)},
+        {406, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateStrikeInfoRequest)},
+        {416, -1, -1, sizeof(::longportapp::quote::v1::OptionChainDateStrikeInfoResponse)},
+        {425, -1, -1, sizeof(::longportapp::quote::v1::StrikePriceInfo)},
+        {437, -1, -1, sizeof(::longportapp::quote::v1::IssuerInfoResponse)},
+        {446, -1, -1, sizeof(::longportapp::quote::v1::IssuerInfo)},
+        {458, 469, -1, sizeof(::longportapp::quote::v1::WarrantFilterListRequest)},
+        {472, -1, -1, sizeof(::longportapp::quote::v1::FilterConfig)},
+        {489, -1, -1, sizeof(::longportapp::quote::v1::WarrantFilterListResponse)},
+        {499, -1, -1, sizeof(::longportapp::quote::v1::FilterWarrant)},
+        {532, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriodResponse)},
+        {541, -1, -1, sizeof(::longportapp::quote::v1::MarketTradePeriod)},
+        {551, -1, -1, sizeof(::longportapp::quote::v1::TradePeriod)},
+        {562, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionRequest)},
+        {570, -1, -1, sizeof(::longportapp::quote::v1::SubscriptionResponse)},
+        {579, -1, -1, sizeof(::longportapp::quote::v1::SubTypeList)},
+        {589, -1, -1, sizeof(::longportapp::quote::v1::SubscribeRequest)},
+        {600, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeRequest)},
+        {611, -1, -1, sizeof(::longportapp::quote::v1::UnsubscribeResponse)},
+        {619, -1, -1, sizeof(::longportapp::quote::v1::PushQuote)},
+        {641, -1, -1, sizeof(::longportapp::quote::v1::PushDepth)},
+        {653, -1, -1, sizeof(::longportapp::quote::v1::PushBrokers)},
+        {665, -1, -1, sizeof(::longportapp::quote::v1::PushTrade)},
+        {676, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayRequest)},
+        {687, -1, -1, sizeof(::longportapp::quote::v1::MarketTradeDayResponse)},
+        {697, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayRequest)},
+        {706, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse_CapitalFlowLine)},
+        {716, -1, -1, sizeof(::longportapp::quote::v1::CapitalFlowIntradayResponse)},
+        {726, -1, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution)},
+        {737, 749, -1, sizeof(::longportapp::quote::v1::CapitalDistributionResponse)},
+        {753, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteRequest)},
+        {763, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcIndex)},
+        {812, -1, -1, sizeof(::longportapp::quote::v1::SecurityCalcQuoteResponse)},
+        {821, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery)},
+        {833, -1, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery)},
+        {843, 858, -1, sizeof(::longportapp::quote::v1::SecurityHistoryCandlestickRequest)},
+        {865, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileRequest)},
+        {874, -1, -1, sizeof(::longportapp::quote::v1::RateLimit)},
+        {885, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail)},
+        {898, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail)},
+        {908, 918, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse)},
+        {920, 930, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse)},
+        {932, -1, -1, sizeof(::longportapp::quote::v1::UserQuoteLevelDetail)},
+        {942, 956, -1, sizeof(::longportapp::quote::v1::UserQuoteProfileResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -3228,315 +3223,324 @@ const char descriptor_table_protodef_quote_2fapi_2eproto[] PROTOBUF_SECTION_VARI
     "\004 \001(\tR\ttradeType\022\034\n\tdirection\030\005 \001(\005R\tdir"
     "ection\022G\n\rtrade_session\030\006 \001(\0162\".longport"
     "app.quote.v1.TradeSessionR\014tradeSession\""
-    "1\n\027SecurityIntradayRequest\022\026\n\006symbol\030\001 \001"
-    "(\tR\006symbol\"d\n\030SecurityIntradayResponse\022\026"
-    "\n\006symbol\030\001 \001(\tR\006symbol\0220\n\005lines\030\002 \003(\0132\032."
-    "longportapp.quote.v1.LineR\005lines\"\213\001\n\004Lin"
-    "e\022\024\n\005price\030\001 \001(\tR\005price\022\034\n\ttimestamp\030\002 \001"
-    "(\003R\ttimestamp\022\026\n\006volume\030\003 \001(\003R\006volume\022\032\n"
-    "\010turnover\030\004 \001(\tR\010turnover\022\033\n\tavg_price\030\005"
-    " \001(\tR\010avgPrice\"\303\001\n\032SecurityCandlestickRe"
-    "quest\022\026\n\006symbol\030\001 \001(\tR\006symbol\0224\n\006period\030"
-    "\002 \001(\0162\034.longportapp.quote.v1.PeriodR\006per"
-    "iod\022\024\n\005count\030\003 \001(\005R\005count\022A\n\013adjust_type"
-    "\030\004 \001(\0162 .longportapp.quote.v1.AdjustType"
-    "R\nadjustType\"|\n\033SecurityCandlestickRespo"
-    "nse\022\026\n\006symbol\030\001 \001(\tR\006symbol\022E\n\014candlesti"
-    "cks\030\002 \003(\0132!.longportapp.quote.v1.Candles"
-    "tickR\014candlesticks\"\257\001\n\013Candlestick\022\024\n\005cl"
-    "ose\030\001 \001(\tR\005close\022\022\n\004open\030\002 \001(\tR\004open\022\020\n\003"
-    "low\030\003 \001(\tR\003low\022\022\n\004high\030\004 \001(\tR\004high\022\026\n\006vo"
-    "lume\030\005 \001(\003R\006volume\022\032\n\010turnover\030\006 \001(\tR\010tu"
-    "rnover\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\">\n\033"
-    "OptionChainDateListResponse\022\037\n\013expiry_da"
-    "te\030\001 \003(\tR\nexpiryDate\"[\n OptionChainDateS"
-    "trikeInfoRequest\022\026\n\006symbol\030\001 \001(\tR\006symbol"
-    "\022\037\n\013expiry_date\030\002 \001(\tR\nexpiryDate\"v\n!Opt"
-    "ionChainDateStrikeInfoResponse\022Q\n\021strike"
-    "_price_info\030\001 \003(\0132%.longportapp.quote.v1"
-    ".StrikePriceInfoR\017strikePriceInfo\"\203\001\n\017St"
-    "rikePriceInfo\022\024\n\005price\030\001 \001(\tR\005price\022\037\n\013c"
-    "all_symbol\030\002 \001(\tR\ncallSymbol\022\035\n\nput_symb"
-    "ol\030\003 \001(\tR\tputSymbol\022\032\n\010standard\030\004 \001(\010R\010s"
-    "tandard\"W\n\022IssuerInfoResponse\022A\n\013issuer_"
-    "info\030\001 \003(\0132 .longportapp.quote.v1.Issuer"
-    "InfoR\nissuerInfo\"g\n\nIssuerInfo\022\016\n\002id\030\001 \001"
-    "(\005R\002id\022\027\n\007name_cn\030\002 \001(\tR\006nameCn\022\027\n\007name_"
-    "en\030\003 \001(\tR\006nameEn\022\027\n\007name_hk\030\004 \001(\tR\006nameH"
-    "k\"\227\001\n\030WarrantFilterListRequest\022\026\n\006symbol"
-    "\030\001 \001(\tR\006symbol\022G\n\rfilter_config\030\002 \001(\0132\"."
-    "longportapp.quote.v1.FilterConfigR\014filte"
-    "rConfig\022\032\n\010language\030\003 \001(\005R\010language\"\212\002\n\014"
-    "FilterConfig\022\027\n\007sort_by\030\001 \001(\005R\006sortBy\022\035\n"
-    "\nsort_order\030\002 \001(\005R\tsortOrder\022\037\n\013sort_off"
-    "set\030\003 \001(\005R\nsortOffset\022\035\n\nsort_count\030\004 \001("
-    "\005R\tsortCount\022\022\n\004type\030\005 \003(\005R\004type\022\026\n\006issu"
-    "er\030\006 \003(\005R\006issuer\022\037\n\013expiry_date\030\007 \003(\005R\ne"
-    "xpiryDate\022\035\n\nprice_type\030\010 \003(\005R\tpriceType"
-    "\022\026\n\006status\030\t \003(\005R\006status\"\204\001\n\031WarrantFilt"
-    "erListResponse\022F\n\014warrant_list\030\001 \003(\0132#.l"
-    "ongportapp.quote.v1.FilterWarrantR\013warra"
-    "ntList\022\037\n\013total_count\030\002 \001(\005R\ntotalCount\""
-    "\317\006\n\rFilterWarrant\022\026\n\006symbol\030\001 \001(\tR\006symbo"
-    "l\022\022\n\004name\030\002 \001(\tR\004name\022\033\n\tlast_done\030\003 \001(\t"
-    "R\010lastDone\022\037\n\013change_rate\030\004 \001(\tR\nchangeR"
-    "ate\022\035\n\nchange_val\030\005 \001(\tR\tchangeVal\022\026\n\006vo"
-    "lume\030\006 \001(\003R\006volume\022\032\n\010turnover\030\007 \001(\tR\010tu"
-    "rnover\022\037\n\013expiry_date\030\010 \001(\tR\nexpiryDate\022"
-    "!\n\014strike_price\030\t \001(\tR\013strikePrice\022,\n\022up"
-    "per_strike_price\030\n \001(\tR\020upperStrikePrice"
-    "\022,\n\022lower_strike_price\030\013 \001(\tR\020lowerStrik"
-    "ePrice\022\'\n\017outstanding_qty\030\014 \001(\tR\016outstan"
-    "dingQty\022+\n\021outstanding_ratio\030\r \001(\tR\020outs"
-    "tandingRatio\022\030\n\007premium\030\016 \001(\tR\007premium\022\027"
-    "\n\007itm_otm\030\017 \001(\tR\006itmOtm\022-\n\022implied_volat"
-    "ility\030\020 \001(\tR\021impliedVolatility\022\024\n\005delta\030"
-    "\021 \001(\tR\005delta\022\035\n\ncall_price\030\022 \001(\tR\tcallPr"
-    "ice\022\"\n\rto_call_price\030\023 \001(\tR\013toCallPrice\022"
-    "-\n\022effective_leverage\030\024 \001(\tR\021effectiveLe"
-    "verage\022%\n\016leverage_ratio\030\025 \001(\tR\rleverage"
-    "Ratio\022)\n\020conversion_ratio\030\026 \001(\tR\017convers"
-    "ionRatio\022#\n\rbalance_point\030\027 \001(\tR\014balance"
-    "Point\022\026\n\006status\030\030 \001(\005R\006status\022\022\n\004type\030\031 "
-    "\001(\005R\004type\"v\n\031MarketTradePeriodResponse\022Y"
-    "\n\024market_trade_session\030\001 \003(\0132\'.longporta"
-    "pp.quote.v1.MarketTradePeriodR\022marketTra"
-    "deSession\"s\n\021MarketTradePeriod\022\026\n\006market"
-    "\030\001 \001(\tR\006market\022F\n\rtrade_session\030\002 \003(\0132!."
-    "longportapp.quote.v1.TradePeriodR\014tradeS"
-    "ession\"\214\001\n\013TradePeriod\022\031\n\010beg_time\030\001 \001(\005"
-    "R\007begTime\022\031\n\010end_time\030\002 \001(\005R\007endTime\022G\n\r"
-    "trade_session\030\003 \001(\0162\".longportapp.quote."
-    "v1.TradeSessionR\014tradeSession\"\025\n\023Subscri"
-    "ptionRequest\"T\n\024SubscriptionResponse\022<\n\010"
-    "sub_list\030\001 \003(\0132!.longportapp.quote.v1.Su"
-    "bTypeListR\007subList\"_\n\013SubTypeList\022\026\n\006sym"
-    "bol\030\001 \001(\tR\006symbol\0228\n\010sub_type\030\002 \003(\0162\035.lo"
-    "ngportapp.quote.v1.SubTypeR\007subType\"\210\001\n\020"
-    "SubscribeRequest\022\026\n\006symbol\030\001 \003(\tR\006symbol"
-    "\0228\n\010sub_type\030\002 \003(\0162\035.longportapp.quote.v"
-    "1.SubTypeR\007subType\022\"\n\ris_first_push\030\003 \001("
-    "\010R\013isFirstPush\"\203\001\n\022UnsubscribeRequest\022\026\n"
-    "\006symbol\030\001 \003(\tR\006symbol\0228\n\010sub_type\030\002 \003(\0162"
-    "\035.longportapp.quote.v1.SubTypeR\007subType\022"
-    "\033\n\tunsub_all\030\003 \001(\010R\010unsubAll\"\025\n\023Unsubscr"
-    "ibeResponse\"\377\003\n\tPushQuote\022\026\n\006symbol\030\001 \001("
-    "\tR\006symbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022\033\n"
-    "\tlast_done\030\003 \001(\tR\010lastDone\022\022\n\004open\030\004 \001(\t"
-    "R\004open\022\022\n\004high\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001(\tR"
-    "\003low\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022\026\n\006vo"
-    "lume\030\010 \001(\003R\006volume\022\032\n\010turnover\030\t \001(\tR\010tu"
-    "rnover\022D\n\014trade_status\030\n \001(\0162!.longporta"
-    "pp.quote.v1.TradeStatusR\013tradeStatus\022G\n\r"
-    "trade_session\030\013 \001(\0162\".longportapp.quote."
-    "v1.TradeSessionR\014tradeSession\022%\n\016current"
-    "_volume\030\014 \001(\003R\rcurrentVolume\022)\n\020current_"
-    "turnover\030\r \001(\tR\017currentTurnover\0224\n\003tag\030\016"
-    " \001(\0162\".longportapp.quote.v1.PushQuoteTag"
-    "R\003tag\"\235\001\n\tPushDepth\022\026\n\006symbol\030\001 \001(\tR\006sym"
-    "bol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022-\n\003ask\030\003"
-    " \003(\0132\033.longportapp.quote.v1.DepthR\003ask\022-"
-    "\n\003bid\030\004 \003(\0132\033.longportapp.quote.v1.Depth"
-    "R\003bid\"\301\001\n\013PushBrokers\022\026\n\006symbol\030\001 \001(\tR\006s"
-    "ymbol\022\032\n\010sequence\030\002 \001(\003R\010sequence\022>\n\013ask"
-    "_brokers\030\003 \003(\0132\035.longportapp.quote.v1.Br"
-    "okersR\naskBrokers\022>\n\013bid_brokers\030\004 \003(\0132\035"
-    ".longportapp.quote.v1.BrokersR\nbidBroker"
-    "s\"r\n\tPushTrade\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032"
-    "\n\010sequence\030\002 \001(\003R\010sequence\0221\n\005trade\030\003 \003("
-    "\0132\033.longportapp.quote.v1.TradeR\005trade\"a\n"
-    "\025MarketTradeDayRequest\022\026\n\006market\030\001 \001(\tR\006"
-    "market\022\027\n\007beg_day\030\002 \001(\tR\006begDay\022\027\n\007end_d"
-    "ay\030\003 \001(\tR\006endDay\"[\n\026MarketTradeDayRespon"
-    "se\022\033\n\ttrade_day\030\001 \003(\tR\010tradeDay\022$\n\016half_"
-    "trade_day\030\002 \003(\tR\014halfTradeDay\"4\n\032Capital"
-    "FlowIntradayRequest\022\026\n\006symbol\030\001 \001(\tR\006sym"
-    "bol\"\357\001\n\033CapitalFlowIntradayResponse\022\026\n\006s"
-    "ymbol\030\001 \001(\tR\006symbol\022o\n\022capital_flow_line"
-    "s\030\002 \003(\0132A.longportapp.quote.v1.CapitalFl"
-    "owIntradayResponse.CapitalFlowLineR\020capi"
-    "talFlowLines\032G\n\017CapitalFlowLine\022\026\n\006inflo"
-    "w\030\001 \001(\tR\006inflow\022\034\n\ttimestamp\030\002 \001(\003R\ttime"
-    "stamp\"\374\002\n\033CapitalDistributionResponse\022\026\n"
-    "\006symbol\030\001 \001(\tR\006symbol\022\034\n\ttimestamp\030\002 \001(\003"
-    "R\ttimestamp\022d\n\ncapital_in\030\003 \001(\0132E.longpo"
-    "rtapp.quote.v1.CapitalDistributionRespon"
-    "se.CapitalDistributionR\tcapitalIn\022f\n\013cap"
-    "ital_out\030\004 \001(\0132E.longportapp.quote.v1.Ca"
-    "pitalDistributionResponse.CapitalDistrib"
-    "utionR\ncapitalOut\032Y\n\023CapitalDistribution"
-    "\022\024\n\005large\030\001 \001(\tR\005large\022\026\n\006medium\030\002 \001(\tR\006"
-    "medium\022\024\n\005small\030\003 \001(\tR\005small\"t\n\030Security"
-    "CalcQuoteRequest\022\030\n\007symbols\030\001 \003(\tR\007symbo"
-    "ls\022>\n\ncalc_index\030\002 \003(\0162\037.longportapp.quo"
-    "te.v1.CalcIndexR\tcalcIndex\"\305\013\n\021SecurityC"
-    "alcIndex\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\033\n\tlast"
-    "_done\030\002 \001(\tR\010lastDone\022\035\n\nchange_val\030\003 \001("
-    "\tR\tchangeVal\022\037\n\013change_rate\030\004 \001(\tR\nchang"
-    "eRate\022\026\n\006volume\030\005 \001(\003R\006volume\022\032\n\010turnove"
-    "r\030\006 \001(\tR\010turnover\022&\n\017ytd_change_rate\030\007 \001"
-    "(\tR\rytdChangeRate\022#\n\rturnover_rate\030\010 \001(\t"
-    "R\014turnoverRate\022,\n\022total_market_value\030\t \001"
-    "(\tR\020totalMarketValue\022!\n\014capital_flow\030\n \001"
-    "(\tR\013capitalFlow\022\034\n\tamplitude\030\013 \001(\tR\tampl"
-    "itude\022!\n\014volume_ratio\030\014 \001(\tR\013volumeRatio"
-    "\022 \n\014pe_ttm_ratio\030\r \001(\tR\npeTtmRatio\022\031\n\010pb"
-    "_ratio\030\016 \001(\tR\007pbRatio\022,\n\022dividend_ratio_"
-    "ttm\030\017 \001(\tR\020dividendRatioTtm\022/\n\024five_day_"
-    "change_rate\030\020 \001(\tR\021fiveDayChangeRate\022-\n\023"
-    "ten_day_change_rate\030\021 \001(\tR\020tenDayChangeR"
-    "ate\0221\n\025half_year_change_rate\030\022 \001(\tR\022half"
-    "YearChangeRate\0227\n\030five_minutes_change_ra"
-    "te\030\023 \001(\tR\025fiveMinutesChangeRate\022\037\n\013expir"
-    "y_date\030\024 \001(\tR\nexpiryDate\022!\n\014strike_price"
-    "\030\025 \001(\tR\013strikePrice\022,\n\022upper_strike_pric"
-    "e\030\026 \001(\tR\020upperStrikePrice\022,\n\022lower_strik"
-    "e_price\030\027 \001(\tR\020lowerStrikePrice\022\'\n\017outst"
-    "anding_qty\030\030 \001(\003R\016outstandingQty\022+\n\021outs"
-    "tanding_ratio\030\031 \001(\tR\020outstandingRatio\022\030\n"
-    "\007premium\030\032 \001(\tR\007premium\022\027\n\007itm_otm\030\033 \001(\t"
-    "R\006itmOtm\022-\n\022implied_volatility\030\034 \001(\tR\021im"
-    "pliedVolatility\022#\n\rwarrant_delta\030\035 \001(\tR\014"
-    "warrantDelta\022\035\n\ncall_price\030\036 \001(\tR\tcallPr"
-    "ice\022\"\n\rto_call_price\030\037 \001(\tR\013toCallPrice\022"
-    "-\n\022effective_leverage\030  \001(\tR\021effectiveLe"
-    "verage\022%\n\016leverage_ratio\030! \001(\tR\rleverage"
-    "Ratio\022)\n\020conversion_ratio\030\" \001(\tR\017convers"
-    "ionRatio\022#\n\rbalance_point\030# \001(\tR\014balance"
-    "Point\022#\n\ropen_interest\030$ \001(\003R\014openIntere"
-    "st\022\024\n\005delta\030% \001(\tR\005delta\022\024\n\005gamma\030& \001(\tR"
-    "\005gamma\022\024\n\005theta\030\' \001(\tR\005theta\022\022\n\004vega\030( \001"
-    "(\tR\004vega\022\020\n\003rho\030) \001(\tR\003rho\"t\n\031SecurityCa"
-    "lcQuoteResponse\022W\n\023security_calc_index\030\001"
-    " \003(\0132\'.longportapp.quote.v1.SecurityCalc"
-    "IndexR\021securityCalcIndex\"\260\005\n!SecurityHis"
-    "toryCandlestickRequest\022\026\n\006symbol\030\001 \001(\tR\006"
-    "symbol\0224\n\006period\030\002 \001(\0162\034.longportapp.quo"
-    "te.v1.PeriodR\006period\022A\n\013adjust_type\030\003 \001("
-    "\0162 .longportapp.quote.v1.AdjustTypeR\nadj"
-    "ustType\022P\n\nquery_type\030\004 \001(\01621.longportap"
-    "p.quote.v1.HistoryCandlestickQueryTypeR\t"
-    "queryType\022j\n\016offset_request\030\005 \001(\0132C.long"
-    "portapp.quote.v1.SecurityHistoryCandlest"
-    "ickRequest.OffsetQueryR\roffsetRequest\022d\n"
-    "\014date_request\030\006 \001(\0132A.longportapp.quote."
-    "v1.SecurityHistoryCandlestickRequest.Dat"
-    "eQueryR\013dateRequest\032\216\001\n\013OffsetQuery\022=\n\td"
-    "irection\030\001 \001(\0162\037.longportapp.quote.v1.Di"
-    "rectionR\tdirection\022\022\n\004date\030\002 \001(\tR\004date\022\026"
-    "\n\006minute\030\003 \001(\tR\006minute\022\024\n\005count\030\004 \001(\005R\005c"
-    "ount\032E\n\tDateQuery\022\035\n\nstart_date\030\001 \001(\tR\ts"
-    "tartDate\022\031\n\010end_date\030\002 \001(\tR\007endDate\"5\n\027U"
-    "serQuoteProfileRequest\022\032\n\010language\030\001 \001(\t"
-    "R\010language\"p\n\tRateLimit\0227\n\007command\030\001 \001(\016"
-    "2\035.longportapp.quote.v1.CommandR\007command"
-    "\022\024\n\005limit\030\002 \001(\005R\005limit\022\024\n\005burst\030\003 \001(\005R\005b"
-    "urst\"\352\005\n\024UserQuoteLevelDetail\022b\n\016by_pack"
-    "age_key\030\001 \003(\0132<.longportapp.quote.v1.Use"
-    "rQuoteLevelDetail.ByPackageKeyEntryR\014byP"
-    "ackageKey\022b\n\016by_market_code\030\002 \003(\0132<.long"
-    "portapp.quote.v1.UserQuoteLevelDetail.By"
-    "MarketCodeEntryR\014byMarketCode\032\177\n\rPackage"
-    "Detail\022\020\n\003key\030\001 \001(\tR\003key\022\022\n\004name\030\002 \001(\tR\004"
-    "name\022 \n\013description\030\004 \001(\tR\013description\022\024"
-    "\n\005start\030\005 \001(\003R\005start\022\020\n\003end\030\006 \001(\003R\003end\032\214"
-    "\001\n\023MarketPackageDetail\022T\n\010packages\030\001 \003(\013"
-    "28.longportapp.quote.v1.UserQuoteLevelDe"
-    "tail.PackageDetailR\010packages\022\037\n\013warning_"
-    "msg\030\004 \001(\tR\nwarningMsg\032y\n\021ByPackageKeyEnt"
-    "ry\022\020\n\003key\030\001 \001(\tR\003key\022N\n\005value\030\002 \001(\01328.lo"
-    "ngportapp.quote.v1.UserQuoteLevelDetail."
-    "PackageDetailR\005value:\0028\001\032\177\n\021ByMarketCode"
-    "Entry\022\020\n\003key\030\001 \001(\tR\003key\022T\n\005value\030\002 \001(\0132>"
-    ".longportapp.quote.v1.UserQuoteLevelDeta"
-    "il.MarketPackageDetailR\005value:\0028\001\"\327\002\n\030Us"
-    "erQuoteProfileResponse\022\033\n\tmember_id\030\001 \001("
-    "\003R\010memberId\022\037\n\013quote_level\030\002 \001(\tR\nquoteL"
-    "evel\022\'\n\017subscribe_limit\030\003 \001(\005R\016subscribe"
-    "Limit\022:\n\031history_candlestick_limit\030\004 \001(\005"
-    "R\027historyCandlestickLimit\022>\n\nrate_limit\030"
-    "\005 \003(\0132\037.longportapp.quote.v1.RateLimitR\t"
-    "rateLimit\022X\n\022quote_level_detail\030\006 \001(\0132*."
+    "V\n\027SecurityIntradayRequest\022\026\n\006symbol\030\001 \001"
+    "(\tR\006symbol\022#\n\rtrade_session\030\002 \001(\005R\014trade"
+    "Session\"d\n\030SecurityIntradayResponse\022\026\n\006s"
+    "ymbol\030\001 \001(\tR\006symbol\0220\n\005lines\030\002 \003(\0132\032.lon"
+    "gportapp.quote.v1.LineR\005lines\"\213\001\n\004Line\022\024"
+    "\n\005price\030\001 \001(\tR\005price\022\034\n\ttimestamp\030\002 \001(\003R"
+    "\ttimestamp\022\026\n\006volume\030\003 \001(\003R\006volume\022\032\n\010tu"
+    "rnover\030\004 \001(\tR\010turnover\022\033\n\tavg_price\030\005 \001("
+    "\tR\010avgPrice\"\350\001\n\032SecurityCandlestickReque"
+    "st\022\026\n\006symbol\030\001 \001(\tR\006symbol\0224\n\006period\030\002 \001"
+    "(\0162\034.longportapp.quote.v1.PeriodR\006period"
+    "\022\024\n\005count\030\003 \001(\005R\005count\022A\n\013adjust_type\030\004 "
+    "\001(\0162 .longportapp.quote.v1.AdjustTypeR\na"
+    "djustType\022#\n\rtrade_session\030\005 \001(\005R\014tradeS"
+    "ession\"|\n\033SecurityCandlestickResponse\022\026\n"
+    "\006symbol\030\001 \001(\tR\006symbol\022E\n\014candlesticks\030\002 "
+    "\003(\0132!.longportapp.quote.v1.CandlestickR\014"
+    "candlesticks\"\370\001\n\013Candlestick\022\024\n\005close\030\001 "
+    "\001(\tR\005close\022\022\n\004open\030\002 \001(\tR\004open\022\020\n\003low\030\003 "
+    "\001(\tR\003low\022\022\n\004high\030\004 \001(\tR\004high\022\026\n\006volume\030\005"
+    " \001(\003R\006volume\022\032\n\010turnover\030\006 \001(\tR\010turnover"
+    "\022\034\n\ttimestamp\030\007 \001(\003R\ttimestamp\022G\n\rtrade_"
+    "session\030\010 \001(\0162\".longportapp.quote.v1.Tra"
+    "deSessionR\014tradeSession\">\n\033OptionChainDa"
+    "teListResponse\022\037\n\013expiry_date\030\001 \003(\tR\nexp"
+    "iryDate\"[\n OptionChainDateStrikeInfoRequ"
+    "est\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\037\n\013expiry_da"
+    "te\030\002 \001(\tR\nexpiryDate\"v\n!OptionChainDateS"
+    "trikeInfoResponse\022Q\n\021strike_price_info\030\001"
+    " \003(\0132%.longportapp.quote.v1.StrikePriceI"
+    "nfoR\017strikePriceInfo\"\203\001\n\017StrikePriceInfo"
+    "\022\024\n\005price\030\001 \001(\tR\005price\022\037\n\013call_symbol\030\002 "
+    "\001(\tR\ncallSymbol\022\035\n\nput_symbol\030\003 \001(\tR\tput"
+    "Symbol\022\032\n\010standard\030\004 \001(\010R\010standard\"W\n\022Is"
+    "suerInfoResponse\022A\n\013issuer_info\030\001 \003(\0132 ."
+    "longportapp.quote.v1.IssuerInfoR\nissuerI"
+    "nfo\"g\n\nIssuerInfo\022\016\n\002id\030\001 \001(\005R\002id\022\027\n\007nam"
+    "e_cn\030\002 \001(\tR\006nameCn\022\027\n\007name_en\030\003 \001(\tR\006nam"
+    "eEn\022\027\n\007name_hk\030\004 \001(\tR\006nameHk\"\227\001\n\030Warrant"
+    "FilterListRequest\022\026\n\006symbol\030\001 \001(\tR\006symbo"
+    "l\022G\n\rfilter_config\030\002 \001(\0132\".longportapp.q"
+    "uote.v1.FilterConfigR\014filterConfig\022\032\n\010la"
+    "nguage\030\003 \001(\005R\010language\"\212\002\n\014FilterConfig\022"
+    "\027\n\007sort_by\030\001 \001(\005R\006sortBy\022\035\n\nsort_order\030\002"
+    " \001(\005R\tsortOrder\022\037\n\013sort_offset\030\003 \001(\005R\nso"
+    "rtOffset\022\035\n\nsort_count\030\004 \001(\005R\tsortCount\022"
+    "\022\n\004type\030\005 \003(\005R\004type\022\026\n\006issuer\030\006 \003(\005R\006iss"
+    "uer\022\037\n\013expiry_date\030\007 \003(\005R\nexpiryDate\022\035\n\n"
+    "price_type\030\010 \003(\005R\tpriceType\022\026\n\006status\030\t "
+    "\003(\005R\006status\"\204\001\n\031WarrantFilterListRespons"
+    "e\022F\n\014warrant_list\030\001 \003(\0132#.longportapp.qu"
+    "ote.v1.FilterWarrantR\013warrantList\022\037\n\013tot"
+    "al_count\030\002 \001(\005R\ntotalCount\"\317\006\n\rFilterWar"
+    "rant\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\022\n\004name\030\002 \001"
+    "(\tR\004name\022\033\n\tlast_done\030\003 \001(\tR\010lastDone\022\037\n"
+    "\013change_rate\030\004 \001(\tR\nchangeRate\022\035\n\nchange"
+    "_val\030\005 \001(\tR\tchangeVal\022\026\n\006volume\030\006 \001(\003R\006v"
+    "olume\022\032\n\010turnover\030\007 \001(\tR\010turnover\022\037\n\013exp"
+    "iry_date\030\010 \001(\tR\nexpiryDate\022!\n\014strike_pri"
+    "ce\030\t \001(\tR\013strikePrice\022,\n\022upper_strike_pr"
+    "ice\030\n \001(\tR\020upperStrikePrice\022,\n\022lower_str"
+    "ike_price\030\013 \001(\tR\020lowerStrikePrice\022\'\n\017out"
+    "standing_qty\030\014 \001(\tR\016outstandingQty\022+\n\021ou"
+    "tstanding_ratio\030\r \001(\tR\020outstandingRatio\022"
+    "\030\n\007premium\030\016 \001(\tR\007premium\022\027\n\007itm_otm\030\017 \001"
+    "(\tR\006itmOtm\022-\n\022implied_volatility\030\020 \001(\tR\021"
+    "impliedVolatility\022\024\n\005delta\030\021 \001(\tR\005delta\022"
+    "\035\n\ncall_price\030\022 \001(\tR\tcallPrice\022\"\n\rto_cal"
+    "l_price\030\023 \001(\tR\013toCallPrice\022-\n\022effective_"
+    "leverage\030\024 \001(\tR\021effectiveLeverage\022%\n\016lev"
+    "erage_ratio\030\025 \001(\tR\rleverageRatio\022)\n\020conv"
+    "ersion_ratio\030\026 \001(\tR\017conversionRatio\022#\n\rb"
+    "alance_point\030\027 \001(\tR\014balancePoint\022\026\n\006stat"
+    "us\030\030 \001(\005R\006status\022\022\n\004type\030\031 \001(\005R\004type\"v\n\031"
+    "MarketTradePeriodResponse\022Y\n\024market_trad"
+    "e_session\030\001 \003(\0132\'.longportapp.quote.v1.M"
+    "arketTradePeriodR\022marketTradeSession\"s\n\021"
+    "MarketTradePeriod\022\026\n\006market\030\001 \001(\tR\006marke"
+    "t\022F\n\rtrade_session\030\002 \003(\0132!.longportapp.q"
+    "uote.v1.TradePeriodR\014tradeSession\"\214\001\n\013Tr"
+    "adePeriod\022\031\n\010beg_time\030\001 \001(\005R\007begTime\022\031\n\010"
+    "end_time\030\002 \001(\005R\007endTime\022G\n\rtrade_session"
+    "\030\003 \001(\0162\".longportapp.quote.v1.TradeSessi"
+    "onR\014tradeSession\"\025\n\023SubscriptionRequest\""
+    "T\n\024SubscriptionResponse\022<\n\010sub_list\030\001 \003("
+    "\0132!.longportapp.quote.v1.SubTypeListR\007su"
+    "bList\"_\n\013SubTypeList\022\026\n\006symbol\030\001 \001(\tR\006sy"
+    "mbol\0228\n\010sub_type\030\002 \003(\0162\035.longportapp.quo"
+    "te.v1.SubTypeR\007subType\"\210\001\n\020SubscribeRequ"
+    "est\022\026\n\006symbol\030\001 \003(\tR\006symbol\0228\n\010sub_type\030"
+    "\002 \003(\0162\035.longportapp.quote.v1.SubTypeR\007su"
+    "bType\022\"\n\ris_first_push\030\003 \001(\010R\013isFirstPus"
+    "h\"\203\001\n\022UnsubscribeRequest\022\026\n\006symbol\030\001 \003(\t"
+    "R\006symbol\0228\n\010sub_type\030\002 \003(\0162\035.longportapp"
+    ".quote.v1.SubTypeR\007subType\022\033\n\tunsub_all\030"
+    "\003 \001(\010R\010unsubAll\"\025\n\023UnsubscribeResponse\"\377"
+    "\003\n\tPushQuote\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010"
+    "sequence\030\002 \001(\003R\010sequence\022\033\n\tlast_done\030\003 "
+    "\001(\tR\010lastDone\022\022\n\004open\030\004 \001(\tR\004open\022\022\n\004hig"
+    "h\030\005 \001(\tR\004high\022\020\n\003low\030\006 \001(\tR\003low\022\034\n\ttimes"
+    "tamp\030\007 \001(\003R\ttimestamp\022\026\n\006volume\030\010 \001(\003R\006v"
+    "olume\022\032\n\010turnover\030\t \001(\tR\010turnover\022D\n\014tra"
+    "de_status\030\n \001(\0162!.longportapp.quote.v1.T"
+    "radeStatusR\013tradeStatus\022G\n\rtrade_session"
+    "\030\013 \001(\0162\".longportapp.quote.v1.TradeSessi"
+    "onR\014tradeSession\022%\n\016current_volume\030\014 \001(\003"
+    "R\rcurrentVolume\022)\n\020current_turnover\030\r \001("
+    "\tR\017currentTurnover\0224\n\003tag\030\016 \001(\0162\".longpo"
+    "rtapp.quote.v1.PushQuoteTagR\003tag\"\235\001\n\tPus"
+    "hDepth\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010sequen"
+    "ce\030\002 \001(\003R\010sequence\022-\n\003ask\030\003 \003(\0132\033.longpo"
+    "rtapp.quote.v1.DepthR\003ask\022-\n\003bid\030\004 \003(\0132\033"
+    ".longportapp.quote.v1.DepthR\003bid\"\301\001\n\013Pus"
+    "hBrokers\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010sequ"
+    "ence\030\002 \001(\003R\010sequence\022>\n\013ask_brokers\030\003 \003("
+    "\0132\035.longportapp.quote.v1.BrokersR\naskBro"
+    "kers\022>\n\013bid_brokers\030\004 \003(\0132\035.longportapp."
+    "quote.v1.BrokersR\nbidBrokers\"r\n\tPushTrad"
+    "e\022\026\n\006symbol\030\001 \001(\tR\006symbol\022\032\n\010sequence\030\002 "
+    "\001(\003R\010sequence\0221\n\005trade\030\003 \003(\0132\033.longporta"
+    "pp.quote.v1.TradeR\005trade\"a\n\025MarketTradeD"
+    "ayRequest\022\026\n\006market\030\001 \001(\tR\006market\022\027\n\007beg"
+    "_day\030\002 \001(\tR\006begDay\022\027\n\007end_day\030\003 \001(\tR\006end"
+    "Day\"[\n\026MarketTradeDayResponse\022\033\n\ttrade_d"
+    "ay\030\001 \003(\tR\010tradeDay\022$\n\016half_trade_day\030\002 \003"
+    "(\tR\014halfTradeDay\"4\n\032CapitalFlowIntradayR"
+    "equest\022\026\n\006symbol\030\001 \001(\tR\006symbol\"\357\001\n\033Capit"
+    "alFlowIntradayResponse\022\026\n\006symbol\030\001 \001(\tR\006"
+    "symbol\022o\n\022capital_flow_lines\030\002 \003(\0132A.lon"
+    "gportapp.quote.v1.CapitalFlowIntradayRes"
+    "ponse.CapitalFlowLineR\020capitalFlowLines\032"
+    "G\n\017CapitalFlowLine\022\026\n\006inflow\030\001 \001(\tR\006infl"
+    "ow\022\034\n\ttimestamp\030\002 \001(\003R\ttimestamp\"\374\002\n\033Cap"
+    "italDistributionResponse\022\026\n\006symbol\030\001 \001(\t"
+    "R\006symbol\022\034\n\ttimestamp\030\002 \001(\003R\ttimestamp\022d"
+    "\n\ncapital_in\030\003 \001(\0132E.longportapp.quote.v"
+    "1.CapitalDistributionResponse.CapitalDis"
+    "tributionR\tcapitalIn\022f\n\013capital_out\030\004 \001("
+    "\0132E.longportapp.quote.v1.CapitalDistribu"
+    "tionResponse.CapitalDistributionR\ncapita"
+    "lOut\032Y\n\023CapitalDistribution\022\024\n\005large\030\001 \001"
+    "(\tR\005large\022\026\n\006medium\030\002 \001(\tR\006medium\022\024\n\005sma"
+    "ll\030\003 \001(\tR\005small\"t\n\030SecurityCalcQuoteRequ"
+    "est\022\030\n\007symbols\030\001 \003(\tR\007symbols\022>\n\ncalc_in"
+    "dex\030\002 \003(\0162\037.longportapp.quote.v1.CalcInd"
+    "exR\tcalcIndex\"\305\013\n\021SecurityCalcIndex\022\026\n\006s"
+    "ymbol\030\001 \001(\tR\006symbol\022\033\n\tlast_done\030\002 \001(\tR\010"
+    "lastDone\022\035\n\nchange_val\030\003 \001(\tR\tchangeVal\022"
+    "\037\n\013change_rate\030\004 \001(\tR\nchangeRate\022\026\n\006volu"
+    "me\030\005 \001(\003R\006volume\022\032\n\010turnover\030\006 \001(\tR\010turn"
+    "over\022&\n\017ytd_change_rate\030\007 \001(\tR\rytdChange"
+    "Rate\022#\n\rturnover_rate\030\010 \001(\tR\014turnoverRat"
+    "e\022,\n\022total_market_value\030\t \001(\tR\020totalMark"
+    "etValue\022!\n\014capital_flow\030\n \001(\tR\013capitalFl"
+    "ow\022\034\n\tamplitude\030\013 \001(\tR\tamplitude\022!\n\014volu"
+    "me_ratio\030\014 \001(\tR\013volumeRatio\022 \n\014pe_ttm_ra"
+    "tio\030\r \001(\tR\npeTtmRatio\022\031\n\010pb_ratio\030\016 \001(\tR"
+    "\007pbRatio\022,\n\022dividend_ratio_ttm\030\017 \001(\tR\020di"
+    "videndRatioTtm\022/\n\024five_day_change_rate\030\020"
+    " \001(\tR\021fiveDayChangeRate\022-\n\023ten_day_chang"
+    "e_rate\030\021 \001(\tR\020tenDayChangeRate\0221\n\025half_y"
+    "ear_change_rate\030\022 \001(\tR\022halfYearChangeRat"
+    "e\0227\n\030five_minutes_change_rate\030\023 \001(\tR\025fiv"
+    "eMinutesChangeRate\022\037\n\013expiry_date\030\024 \001(\tR"
+    "\nexpiryDate\022!\n\014strike_price\030\025 \001(\tR\013strik"
+    "ePrice\022,\n\022upper_strike_price\030\026 \001(\tR\020uppe"
+    "rStrikePrice\022,\n\022lower_strike_price\030\027 \001(\t"
+    "R\020lowerStrikePrice\022\'\n\017outstanding_qty\030\030 "
+    "\001(\003R\016outstandingQty\022+\n\021outstanding_ratio"
+    "\030\031 \001(\tR\020outstandingRatio\022\030\n\007premium\030\032 \001("
+    "\tR\007premium\022\027\n\007itm_otm\030\033 \001(\tR\006itmOtm\022-\n\022i"
+    "mplied_volatility\030\034 \001(\tR\021impliedVolatili"
+    "ty\022#\n\rwarrant_delta\030\035 \001(\tR\014warrantDelta\022"
+    "\035\n\ncall_price\030\036 \001(\tR\tcallPrice\022\"\n\rto_cal"
+    "l_price\030\037 \001(\tR\013toCallPrice\022-\n\022effective_"
+    "leverage\030  \001(\tR\021effectiveLeverage\022%\n\016lev"
+    "erage_ratio\030! \001(\tR\rleverageRatio\022)\n\020conv"
+    "ersion_ratio\030\" \001(\tR\017conversionRatio\022#\n\rb"
+    "alance_point\030# \001(\tR\014balancePoint\022#\n\ropen"
+    "_interest\030$ \001(\003R\014openInterest\022\024\n\005delta\030%"
+    " \001(\tR\005delta\022\024\n\005gamma\030& \001(\tR\005gamma\022\024\n\005the"
+    "ta\030\' \001(\tR\005theta\022\022\n\004vega\030( \001(\tR\004vega\022\020\n\003r"
+    "ho\030) \001(\tR\003rho\"t\n\031SecurityCalcQuoteRespon"
+    "se\022W\n\023security_calc_index\030\001 \003(\0132\'.longpo"
+    "rtapp.quote.v1.SecurityCalcIndexR\021securi"
+    "tyCalcIndex\"\325\005\n!SecurityHistoryCandlesti"
+    "ckRequest\022\026\n\006symbol\030\001 \001(\tR\006symbol\0224\n\006per"
+    "iod\030\002 \001(\0162\034.longportapp.quote.v1.PeriodR"
+    "\006period\022A\n\013adjust_type\030\003 \001(\0162 .longporta"
+    "pp.quote.v1.AdjustTypeR\nadjustType\022P\n\nqu"
+    "ery_type\030\004 \001(\01621.longportapp.quote.v1.Hi"
+    "storyCandlestickQueryTypeR\tqueryType\022j\n\016"
+    "offset_request\030\005 \001(\0132C.longportapp.quote"
+    ".v1.SecurityHistoryCandlestickRequest.Of"
+    "fsetQueryR\roffsetRequest\022d\n\014date_request"
+    "\030\006 \001(\0132A.longportapp.quote.v1.SecurityHi"
+    "storyCandlestickRequest.DateQueryR\013dateR"
+    "equest\022#\n\rtrade_session\030\007 \001(\005R\014tradeSess"
+    "ion\032\216\001\n\013OffsetQuery\022=\n\tdirection\030\001 \001(\0162\037"
+    ".longportapp.quote.v1.DirectionR\tdirecti"
+    "on\022\022\n\004date\030\002 \001(\tR\004date\022\026\n\006minute\030\003 \001(\tR\006"
+    "minute\022\024\n\005count\030\004 \001(\005R\005count\032E\n\tDateQuer"
+    "y\022\035\n\nstart_date\030\001 \001(\tR\tstartDate\022\031\n\010end_"
+    "date\030\002 \001(\tR\007endDate\"5\n\027UserQuoteProfileR"
+    "equest\022\032\n\010language\030\001 \001(\tR\010language\"p\n\tRa"
+    "teLimit\0227\n\007command\030\001 \001(\0162\035.longportapp.q"
+    "uote.v1.CommandR\007command\022\024\n\005limit\030\002 \001(\005R"
+    "\005limit\022\024\n\005burst\030\003 \001(\005R\005burst\"\352\005\n\024UserQuo"
+    "teLevelDetail\022b\n\016by_package_key\030\001 \003(\0132<."
     "longportapp.quote.v1.UserQuoteLevelDetai"
-    "lR\020quoteLevelDetail*\342\005\n\007Command\022\023\n\017UNKNO"
-    "WN_COMMAND\020\000\022\016\n\nHEART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r"
-    "\n\tRECONNECT\020\003\022\031\n\025QueryUserQuoteProfile\020\004"
-    "\022\020\n\014Subscription\020\005\022\r\n\tSubscribe\020\006\022\017\n\013Uns"
-    "ubscribe\020\007\022\032\n\026QueryMarketTradePeriod\020\010\022\027"
-    "\n\023QueryMarketTradeDay\020\t\022\033\n\027QuerySecurity"
-    "StaticInfo\020\n\022\026\n\022QuerySecurityQuote\020\013\022\024\n\020"
-    "QueryOptionQuote\020\014\022\025\n\021QueryWarrantQuote\020"
-    "\r\022\016\n\nQueryDepth\020\016\022\020\n\014QueryBrokers\020\017\022\035\n\031Q"
-    "ueryParticipantBrokerIds\020\020\022\016\n\nQueryTrade"
-    "\020\021\022\021\n\rQueryIntraday\020\022\022\024\n\020QueryCandlestic"
-    "k\020\023\022\030\n\024QueryOptionChainDate\020\024\022\"\n\036QueryOp"
-    "tionChainDateStrikeInfo\020\025\022\032\n\026QueryWarran"
-    "tIssuerInfo\020\026\022\032\n\026QueryWarrantFilterList\020"
-    "\027\022\034\n\030QueryCapitalFlowIntraday\020\030\022 \n\034Query"
-    "CapitalFlowDistribution\020\031\022\032\n\026QuerySecuri"
-    "tyCalcIndex\020\032\022\033\n\027QueryHistoryCandlestick"
-    "\020\033\022\021\n\rPushQuoteData\020e\022\021\n\rPushDepthData\020f"
-    "\022\023\n\017PushBrokersData\020g\022\021\n\rPushTradeData\020h"
-    "*\302\001\n\013TradeStatus\022\n\n\006NORMAL\020\000\022\n\n\006HALTED\020\001"
-    "\022\014\n\010DELISTED\020\002\022\010\n\004FUSE\020\003\022\020\n\014PREPARE_LIST"
-    "\020\004\022\016\n\nCODE_MOVED\020\005\022\020\n\014TO_BE_OPENED\020\006\022\025\n\021"
-    "SPLIT_STOCK_HALTS\020\007\022\013\n\007EXPIRED\020\010\022\030\n\024WARR"
-    "ANT_PREPARE_LIST\020\t\022\021\n\rSUSPEND_TRADE\020\n*T\n"
-    "\014TradeSession\022\020\n\014NORMAL_TRADE\020\000\022\r\n\tPRE_T"
-    "RADE\020\001\022\016\n\nPOST_TRADE\020\002\022\023\n\017OVERNIGHT_TRAD"
-    "E\020\003*/\n\nAdjustType\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORW"
-    "ARD_ADJUST\020\001*\242\001\n\006Period\022\022\n\016UNKNOWN_PERIO"
-    "D\020\000\022\016\n\nONE_MINUTE\020\001\022\017\n\013FIVE_MINUTE\020\005\022\022\n\016"
-    "FIFTEEN_MINUTE\020\017\022\021\n\rTHIRTY_MINUTE\020\036\022\020\n\014S"
-    "IXTY_MINUTE\020<\022\010\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n\005MO"
-    "NTH\020\270\027\022\t\n\004YEAR\020\240\037*I\n\007SubType\022\020\n\014UNKNOWN_"
-    "TYPE\020\000\022\t\n\005QUOTE\020\001\022\t\n\005DEPTH\020\002\022\013\n\007BROKERS\020"
-    "\003\022\t\n\005TRADE\020\004*#\n\014PushQuoteTag\022\n\n\006Normal\020\000"
-    "\022\007\n\003Eod\020\001*\226\t\n\tCalcIndex\022\025\n\021CALCINDEX_UNK"
-    "NOWN\020\000\022\027\n\023CALCINDEX_LAST_DONE\020\001\022\030\n\024CALCI"
-    "NDEX_CHANGE_VAL\020\002\022\031\n\025CALCINDEX_CHANGE_RA"
-    "TE\020\003\022\024\n\020CALCINDEX_VOLUME\020\004\022\026\n\022CALCINDEX_"
-    "TURNOVER\020\005\022\035\n\031CALCINDEX_YTD_CHANGE_RATE\020"
-    "\006\022\033\n\027CALCINDEX_TURNOVER_RATE\020\007\022 \n\034CALCIN"
-    "DEX_TOTAL_MARKET_VALUE\020\010\022\032\n\026CALCINDEX_CA"
-    "PITAL_FLOW\020\t\022\027\n\023CALCINDEX_AMPLITUDE\020\n\022\032\n"
-    "\026CALCINDEX_VOLUME_RATIO\020\013\022\032\n\026CALCINDEX_P"
-    "E_TTM_RATIO\020\014\022\026\n\022CALCINDEX_PB_RATIO\020\r\022 \n"
-    "\034CALCINDEX_DIVIDEND_RATIO_TTM\020\016\022\"\n\036CALCI"
-    "NDEX_FIVE_DAY_CHANGE_RATE\020\017\022!\n\035CALCINDEX"
-    "_TEN_DAY_CHANGE_RATE\020\020\022#\n\037CALCINDEX_HALF"
-    "_YEAR_CHANGE_RATE\020\021\022&\n\"CALCINDEX_FIVE_MI"
-    "NUTES_CHANGE_RATE\020\022\022\031\n\025CALCINDEX_EXPIRY_"
-    "DATE\020\023\022\032\n\026CALCINDEX_STRIKE_PRICE\020\024\022 \n\034CA"
-    "LCINDEX_UPPER_STRIKE_PRICE\020\025\022 \n\034CALCINDE"
-    "X_LOWER_STRIKE_PRICE\020\026\022\035\n\031CALCINDEX_OUTS"
-    "TANDING_QTY\020\027\022\037\n\033CALCINDEX_OUTSTANDING_R"
-    "ATIO\020\030\022\025\n\021CALCINDEX_PREMIUM\020\031\022\025\n\021CALCIND"
-    "EX_ITM_OTM\020\032\022 \n\034CALCINDEX_IMPLIED_VOLATI"
-    "LITY\020\033\022\033\n\027CALCINDEX_WARRANT_DELTA\020\034\022\030\n\024C"
-    "ALCINDEX_CALL_PRICE\020\035\022\033\n\027CALCINDEX_TO_CA"
-    "LL_PRICE\020\036\022 \n\034CALCINDEX_EFFECTIVE_LEVERA"
-    "GE\020\037\022\034\n\030CALCINDEX_LEVERAGE_RATIO\020 \022\036\n\032CA"
-    "LCINDEX_CONVERSION_RATIO\020!\022\033\n\027CALCINDEX_"
-    "BALANCE_POINT\020\"\022\033\n\027CALCINDEX_OPEN_INTERE"
-    "ST\020#\022\023\n\017CALCINDEX_DELTA\020$\022\023\n\017CALCINDEX_G"
-    "AMMA\020%\022\023\n\017CALCINDEX_THETA\020&\022\022\n\016CALCINDEX"
-    "_VEGA\020\'\022\021\n\rCALCINDEX_RHO\020(*]\n\033HistoryCan"
-    "dlestickQueryType\022\026\n\022UNKNOWN_QUERY_TYPE\020"
-    "\000\022\023\n\017QUERY_BY_OFFSET\020\001\022\021\n\rQUERY_BY_DATE\020"
-    "\002*&\n\tDirection\022\014\n\010BACKWARD\020\000\022\013\n\007FORWARD\020"
-    "\001B\325\001\n\030com.longportapp.quote.v1B\010ApiProto"
-    "P\001Z=github.com/longportapp/openapi-proto"
-    "bufs/gen/go/quote;quotev1\242\002\003LQX\252\002\024Longpo"
-    "rtapp.Quote.V1\312\002\024Longportapp\\Quote\\V1\342\002 "
-    "Longportapp\\Quote\\V1\\GPBMetadata\352\002\026Longp"
-    "ortapp::Quote::V1b\006proto3"
+    "l.ByPackageKeyEntryR\014byPackageKey\022b\n\016by_"
+    "market_code\030\002 \003(\0132<.longportapp.quote.v1"
+    ".UserQuoteLevelDetail.ByMarketCodeEntryR"
+    "\014byMarketCode\032\177\n\rPackageDetail\022\020\n\003key\030\001 "
+    "\001(\tR\003key\022\022\n\004name\030\002 \001(\tR\004name\022 \n\013descript"
+    "ion\030\004 \001(\tR\013description\022\024\n\005start\030\005 \001(\003R\005s"
+    "tart\022\020\n\003end\030\006 \001(\003R\003end\032\214\001\n\023MarketPackage"
+    "Detail\022T\n\010packages\030\001 \003(\01328.longportapp.q"
+    "uote.v1.UserQuoteLevelDetail.PackageDeta"
+    "ilR\010packages\022\037\n\013warning_msg\030\004 \001(\tR\nwarni"
+    "ngMsg\032y\n\021ByPackageKeyEntry\022\020\n\003key\030\001 \001(\tR"
+    "\003key\022N\n\005value\030\002 \001(\01328.longportapp.quote."
+    "v1.UserQuoteLevelDetail.PackageDetailR\005v"
+    "alue:\0028\001\032\177\n\021ByMarketCodeEntry\022\020\n\003key\030\001 \001"
+    "(\tR\003key\022T\n\005value\030\002 \001(\0132>.longportapp.quo"
+    "te.v1.UserQuoteLevelDetail.MarketPackage"
+    "DetailR\005value:\0028\001\"\327\002\n\030UserQuoteProfileRe"
+    "sponse\022\033\n\tmember_id\030\001 \001(\003R\010memberId\022\037\n\013q"
+    "uote_level\030\002 \001(\tR\nquoteLevel\022\'\n\017subscrib"
+    "e_limit\030\003 \001(\005R\016subscribeLimit\022:\n\031history"
+    "_candlestick_limit\030\004 \001(\005R\027historyCandles"
+    "tickLimit\022>\n\nrate_limit\030\005 \003(\0132\037.longport"
+    "app.quote.v1.RateLimitR\trateLimit\022X\n\022quo"
+    "te_level_detail\030\006 \001(\0132*.longportapp.quot"
+    "e.v1.UserQuoteLevelDetailR\020quoteLevelDet"
+    "ail*\342\005\n\007Command\022\023\n\017UNKNOWN_COMMAND\020\000\022\016\n\n"
+    "HEART_BEAT\020\001\022\010\n\004AUTH\020\002\022\r\n\tRECONNECT\020\003\022\031\n"
+    "\025QueryUserQuoteProfile\020\004\022\020\n\014Subscription"
+    "\020\005\022\r\n\tSubscribe\020\006\022\017\n\013Unsubscribe\020\007\022\032\n\026Qu"
+    "eryMarketTradePeriod\020\010\022\027\n\023QueryMarketTra"
+    "deDay\020\t\022\033\n\027QuerySecurityStaticInfo\020\n\022\026\n\022"
+    "QuerySecurityQuote\020\013\022\024\n\020QueryOptionQuote"
+    "\020\014\022\025\n\021QueryWarrantQuote\020\r\022\016\n\nQueryDepth\020"
+    "\016\022\020\n\014QueryBrokers\020\017\022\035\n\031QueryParticipantB"
+    "rokerIds\020\020\022\016\n\nQueryTrade\020\021\022\021\n\rQueryIntra"
+    "day\020\022\022\024\n\020QueryCandlestick\020\023\022\030\n\024QueryOpti"
+    "onChainDate\020\024\022\"\n\036QueryOptionChainDateStr"
+    "ikeInfo\020\025\022\032\n\026QueryWarrantIssuerInfo\020\026\022\032\n"
+    "\026QueryWarrantFilterList\020\027\022\034\n\030QueryCapita"
+    "lFlowIntraday\020\030\022 \n\034QueryCapitalFlowDistr"
+    "ibution\020\031\022\032\n\026QuerySecurityCalcIndex\020\032\022\033\n"
+    "\027QueryHistoryCandlestick\020\033\022\021\n\rPushQuoteD"
+    "ata\020e\022\021\n\rPushDepthData\020f\022\023\n\017PushBrokersD"
+    "ata\020g\022\021\n\rPushTradeData\020h*\302\001\n\013TradeStatus"
+    "\022\n\n\006NORMAL\020\000\022\n\n\006HALTED\020\001\022\014\n\010DELISTED\020\002\022\010"
+    "\n\004FUSE\020\003\022\020\n\014PREPARE_LIST\020\004\022\016\n\nCODE_MOVED"
+    "\020\005\022\020\n\014TO_BE_OPENED\020\006\022\025\n\021SPLIT_STOCK_HALT"
+    "S\020\007\022\013\n\007EXPIRED\020\010\022\030\n\024WARRANT_PREPARE_LIST"
+    "\020\t\022\021\n\rSUSPEND_TRADE\020\n*T\n\014TradeSession\022\020\n"
+    "\014NORMAL_TRADE\020\000\022\r\n\tPRE_TRADE\020\001\022\016\n\nPOST_T"
+    "RADE\020\002\022\023\n\017OVERNIGHT_TRADE\020\003*/\n\nAdjustTyp"
+    "e\022\r\n\tNO_ADJUST\020\000\022\022\n\016FORWARD_ADJUST\020\001*\273\002\n"
+    "\006Period\022\022\n\016UNKNOWN_PERIOD\020\000\022\016\n\nONE_MINUT"
+    "E\020\001\022\016\n\nTWO_MINUTE\020\002\022\020\n\014THREE_MINUTE\020\003\022\017\n"
+    "\013FIVE_MINUTE\020\005\022\016\n\nTEN_MINUTE\020\n\022\022\n\016FIFTEE"
+    "N_MINUTE\020\017\022\021\n\rTWENTY_MINUTE\020\024\022\021\n\rTHIRTY_"
+    "MINUTE\020\036\022\025\n\021FORTY_FIVE_MINUTE\020-\022\020\n\014SIXTY"
+    "_MINUTE\020<\022\014\n\010TWO_HOUR\020x\022\017\n\nTHREE_HOUR\020\264\001"
+    "\022\016\n\tFOUR_HOUR\020\360\001\022\010\n\003DAY\020\350\007\022\t\n\004WEEK\020\320\017\022\n\n"
+    "\005MONTH\020\270\027\022\014\n\007QUARTER\020\254\033\022\t\n\004YEAR\020\240\037*I\n\007Su"
+    "bType\022\020\n\014UNKNOWN_TYPE\020\000\022\t\n\005QUOTE\020\001\022\t\n\005DE"
+    "PTH\020\002\022\013\n\007BROKERS\020\003\022\t\n\005TRADE\020\004*#\n\014PushQuo"
+    "teTag\022\n\n\006Normal\020\000\022\007\n\003Eod\020\001*\226\t\n\tCalcIndex"
+    "\022\025\n\021CALCINDEX_UNKNOWN\020\000\022\027\n\023CALCINDEX_LAS"
+    "T_DONE\020\001\022\030\n\024CALCINDEX_CHANGE_VAL\020\002\022\031\n\025CA"
+    "LCINDEX_CHANGE_RATE\020\003\022\024\n\020CALCINDEX_VOLUM"
+    "E\020\004\022\026\n\022CALCINDEX_TURNOVER\020\005\022\035\n\031CALCINDEX"
+    "_YTD_CHANGE_RATE\020\006\022\033\n\027CALCINDEX_TURNOVER"
+    "_RATE\020\007\022 \n\034CALCINDEX_TOTAL_MARKET_VALUE\020"
+    "\010\022\032\n\026CALCINDEX_CAPITAL_FLOW\020\t\022\027\n\023CALCIND"
+    "EX_AMPLITUDE\020\n\022\032\n\026CALCINDEX_VOLUME_RATIO"
+    "\020\013\022\032\n\026CALCINDEX_PE_TTM_RATIO\020\014\022\026\n\022CALCIN"
+    "DEX_PB_RATIO\020\r\022 \n\034CALCINDEX_DIVIDEND_RAT"
+    "IO_TTM\020\016\022\"\n\036CALCINDEX_FIVE_DAY_CHANGE_RA"
+    "TE\020\017\022!\n\035CALCINDEX_TEN_DAY_CHANGE_RATE\020\020\022"
+    "#\n\037CALCINDEX_HALF_YEAR_CHANGE_RATE\020\021\022&\n\""
+    "CALCINDEX_FIVE_MINUTES_CHANGE_RATE\020\022\022\031\n\025"
+    "CALCINDEX_EXPIRY_DATE\020\023\022\032\n\026CALCINDEX_STR"
+    "IKE_PRICE\020\024\022 \n\034CALCINDEX_UPPER_STRIKE_PR"
+    "ICE\020\025\022 \n\034CALCINDEX_LOWER_STRIKE_PRICE\020\026\022"
+    "\035\n\031CALCINDEX_OUTSTANDING_QTY\020\027\022\037\n\033CALCIN"
+    "DEX_OUTSTANDING_RATIO\020\030\022\025\n\021CALCINDEX_PRE"
+    "MIUM\020\031\022\025\n\021CALCINDEX_ITM_OTM\020\032\022 \n\034CALCIND"
+    "EX_IMPLIED_VOLATILITY\020\033\022\033\n\027CALCINDEX_WAR"
+    "RANT_DELTA\020\034\022\030\n\024CALCINDEX_CALL_PRICE\020\035\022\033"
+    "\n\027CALCINDEX_TO_CALL_PRICE\020\036\022 \n\034CALCINDEX"
+    "_EFFECTIVE_LEVERAGE\020\037\022\034\n\030CALCINDEX_LEVER"
+    "AGE_RATIO\020 \022\036\n\032CALCINDEX_CONVERSION_RATI"
+    "O\020!\022\033\n\027CALCINDEX_BALANCE_POINT\020\"\022\033\n\027CALC"
+    "INDEX_OPEN_INTEREST\020#\022\023\n\017CALCINDEX_DELTA"
+    "\020$\022\023\n\017CALCINDEX_GAMMA\020%\022\023\n\017CALCINDEX_THE"
+    "TA\020&\022\022\n\016CALCINDEX_VEGA\020\'\022\021\n\rCALCINDEX_RH"
+    "O\020(*]\n\033HistoryCandlestickQueryType\022\026\n\022UN"
+    "KNOWN_QUERY_TYPE\020\000\022\023\n\017QUERY_BY_OFFSET\020\001\022"
+    "\021\n\rQUERY_BY_DATE\020\002*&\n\tDirection\022\014\n\010BACKW"
+    "ARD\020\000\022\013\n\007FORWARD\020\001B\325\001\n\030com.longportapp.q"
+    "uote.v1B\010ApiProtoP\001Z=github.com/longport"
+    "app/openapi-protobufs/gen/go/quote;quote"
+    "v1\242\002\003LQX\252\002\024Longportapp.Quote.V1\312\002\024Longpo"
+    "rtapp\\Quote\\V1\342\002 Longportapp\\Quote\\V1\\GP"
+    "BMetadata\352\002\026Longportapp::Quote::V1b\006prot"
+    "o3"
 };
 static ::absl::once_flag descriptor_table_quote_2fapi_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_quote_2fapi_2eproto = {
     false,
     false,
-    16785,
+    17122,
     descriptor_table_protodef_quote_2fapi_2eproto,
     "quote/api.proto",
     &descriptor_table_quote_2fapi_2eproto_once,
@@ -3575,91 +3579,232 @@ const ::google::protobuf::EnumDescriptor* Command_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[0];
 }
-PROTOBUF_CONSTINIT const uint32_t Command_internal_data_[] = {
-    1835008u, 96u, 0u, 0u, 7680u, };
 bool Command_IsValid(int value) {
-  return ::_pbi::ValidateEnum(value, Command_internal_data_);
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 101:
+    case 102:
+    case 103:
+    case 104:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* TradeStatus_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[1];
 }
-PROTOBUF_CONSTINIT const uint32_t TradeStatus_internal_data_[] = {
-    720896u, 0u, };
 bool TradeStatus_IsValid(int value) {
-  return 0 <= value && value <= 10;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* TradeSession_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[2];
 }
-PROTOBUF_CONSTINIT const uint32_t TradeSession_internal_data_[] = {
-    262144u, 0u, };
 bool TradeSession_IsValid(int value) {
-  return 0 <= value && value <= 3;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* AdjustType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[3];
 }
-PROTOBUF_CONSTINIT const uint32_t AdjustType_internal_data_[] = {
-    131072u, 0u, };
 bool AdjustType_IsValid(int value) {
-  return 0 <= value && value <= 1;
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* Period_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[4];
 }
-PROTOBUF_CONSTINIT const uint32_t Period_internal_data_[] = {
-    131072u, 262208u, 268443656u, 67108864u, 3000u, 2000u, 4000u, 1000u, };
 bool Period_IsValid(int value) {
-  return ::_pbi::ValidateEnum(value, Period_internal_data_);
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 5:
+    case 10:
+    case 15:
+    case 20:
+    case 30:
+    case 45:
+    case 60:
+    case 120:
+    case 180:
+    case 240:
+    case 1000:
+    case 2000:
+    case 3000:
+    case 3500:
+    case 4000:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* SubType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[5];
 }
-PROTOBUF_CONSTINIT const uint32_t SubType_internal_data_[] = {
-    327680u, 0u, };
 bool SubType_IsValid(int value) {
-  return 0 <= value && value <= 4;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* PushQuoteTag_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[6];
 }
-PROTOBUF_CONSTINIT const uint32_t PushQuoteTag_internal_data_[] = {
-    131072u, 0u, };
 bool PushQuoteTag_IsValid(int value) {
-  return 0 <= value && value <= 1;
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* CalcIndex_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[7];
 }
-PROTOBUF_CONSTINIT const uint32_t CalcIndex_internal_data_[] = {
-    2686976u, 0u, };
 bool CalcIndex_IsValid(int value) {
-  return 0 <= value && value <= 40;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 28:
+    case 29:
+    case 30:
+    case 31:
+    case 32:
+    case 33:
+    case 34:
+    case 35:
+    case 36:
+    case 37:
+    case 38:
+    case 39:
+    case 40:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* HistoryCandlestickQueryType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[8];
 }
-PROTOBUF_CONSTINIT const uint32_t HistoryCandlestickQueryType_internal_data_[] = {
-    196608u, 0u, };
 bool HistoryCandlestickQueryType_IsValid(int value) {
-  return 0 <= value && value <= 2;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* Direction_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_quote_2fapi_2eproto);
   return file_level_enum_descriptors_quote_2fapi_2eproto[9];
 }
-PROTOBUF_CONSTINIT const uint32_t Direction_internal_data_[] = {
-    131072u, 0u, };
 bool Direction_IsValid(int value) {
-  return 0 <= value && value <= 1;
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
 }
 // ===================================================================
 
@@ -3672,32 +3817,35 @@ SecurityRequest::SecurityRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityRequest::SecurityRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityRequest::SecurityRequest(const SecurityRequest& from) : ::google::protobuf::Message() {
   SecurityRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityRequest::~SecurityRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityRequest)
@@ -3705,14 +3853,15 @@ SecurityRequest::~SecurityRequest() {
   SharedDtor();
 }
 inline void SecurityRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3803,12 +3952,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 51, 2> SecurityRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityRequest::_class_data_ = {
-    SecurityRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityRequest*>(&to_msg);
@@ -3835,15 +3983,13 @@ PROTOBUF_NOINLINE bool SecurityRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityRequest::InternalSwap(SecurityRequest* PROTOBUF_RESTRICT other) {
+void SecurityRequest::InternalSwap(SecurityRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityRequest::GetMetadata() const {
@@ -3862,32 +4008,24 @@ MultiSecurityRequest::MultiSecurityRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.MultiSecurityRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE MultiSecurityRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_{visibility, arena, from.symbol_},
-        _cached_size_{0} {}
-
-MultiSecurityRequest::MultiSecurityRequest(
-    ::google::protobuf::Arena* arena,
-    const MultiSecurityRequest& from)
-    : ::google::protobuf::Message(arena) {
+MultiSecurityRequest::MultiSecurityRequest(const MultiSecurityRequest& from) : ::google::protobuf::Message() {
   MultiSecurityRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){from._impl_.symbol_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.MultiSecurityRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE MultiSecurityRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void MultiSecurityRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 MultiSecurityRequest::~MultiSecurityRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.MultiSecurityRequest)
@@ -3895,18 +4033,20 @@ MultiSecurityRequest::~MultiSecurityRequest() {
   SharedDtor();
 }
 inline void MultiSecurityRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_symbol()->~RepeatedPtrField();
+}
+void MultiSecurityRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void MultiSecurityRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.MultiSecurityRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.symbol_.Clear();
+  _internal_mutable_symbol()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -3992,12 +4132,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 56, 2> MultiSecurityRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData MultiSecurityRequest::_class_data_ = {
-    MultiSecurityRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    MultiSecurityRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* MultiSecurityRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*MultiSecurityRequest::GetClassData() const { return &_class_data_; }
+
 
 void MultiSecurityRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<MultiSecurityRequest*>(&to_msg);
@@ -4022,10 +4161,7 @@ PROTOBUF_NOINLINE bool MultiSecurityRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* MultiSecurityRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void MultiSecurityRequest::InternalSwap(MultiSecurityRequest* PROTOBUF_RESTRICT other) {
+void MultiSecurityRequest::InternalSwap(MultiSecurityRequest* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.symbol_.InternalSwap(&other->_impl_.symbol_);
@@ -4047,32 +4183,24 @@ SecurityStaticInfoResponse::SecurityStaticInfoResponse(::google::protobuf::Arena
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityStaticInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityStaticInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : secu_static_info_{visibility, arena, from.secu_static_info_},
-        _cached_size_{0} {}
-
-SecurityStaticInfoResponse::SecurityStaticInfoResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityStaticInfoResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityStaticInfoResponse::SecurityStaticInfoResponse(const SecurityStaticInfoResponse& from) : ::google::protobuf::Message() {
   SecurityStaticInfoResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_static_info_){from._impl_.secu_static_info_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityStaticInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityStaticInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : secu_static_info_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void SecurityStaticInfoResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_static_info_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SecurityStaticInfoResponse::~SecurityStaticInfoResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityStaticInfoResponse)
@@ -4080,18 +4208,20 @@ SecurityStaticInfoResponse::~SecurityStaticInfoResponse() {
   SharedDtor();
 }
 inline void SecurityStaticInfoResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.secu_static_info_.~RepeatedPtrField();
+}
+void SecurityStaticInfoResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityStaticInfoResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityStaticInfoResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.secu_static_info_.Clear();
+  _internal_mutable_secu_static_info()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -4174,12 +4304,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> SecurityStaticInfoResponse::_table_ = 
 }
 
 const ::google::protobuf::Message::ClassData SecurityStaticInfoResponse::_class_data_ = {
-    SecurityStaticInfoResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityStaticInfoResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityStaticInfoResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityStaticInfoResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityStaticInfoResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityStaticInfoResponse*>(&to_msg);
@@ -4189,8 +4318,7 @@ void SecurityStaticInfoResponse::MergeImpl(::google::protobuf::Message& to_msg, 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_secu_static_info()->MergeFrom(
-      from._internal_secu_static_info());
+  _this->_internal_mutable_secu_static_info()->MergeFrom(from._internal_secu_static_info());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -4205,10 +4333,7 @@ PROTOBUF_NOINLINE bool SecurityStaticInfoResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityStaticInfoResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityStaticInfoResponse::InternalSwap(SecurityStaticInfoResponse* PROTOBUF_RESTRICT other) {
+void SecurityStaticInfoResponse::InternalSwap(SecurityStaticInfoResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.secu_static_info_.InternalSwap(&other->_impl_.secu_static_info_);
@@ -4230,71 +4355,193 @@ StaticInfo::StaticInfo(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.StaticInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE StaticInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : stock_derivatives_{visibility, arena, from.stock_derivatives_},
-        _stock_derivatives_cached_byte_size_{0},
-        symbol_(arena, from.symbol_),
-        name_cn_(arena, from.name_cn_),
-        name_en_(arena, from.name_en_),
-        name_hk_(arena, from.name_hk_),
-        listing_date_(arena, from.listing_date_),
-        exchange_(arena, from.exchange_),
-        currency_(arena, from.currency_),
-        eps_(arena, from.eps_),
-        eps_ttm_(arena, from.eps_ttm_),
-        bps_(arena, from.bps_),
-        dividend_yield_(arena, from.dividend_yield_),
-        board_(arena, from.board_),
-        _cached_size_{0} {}
-
-StaticInfo::StaticInfo(
-    ::google::protobuf::Arena* arena,
-    const StaticInfo& from)
-    : ::google::protobuf::Message(arena) {
+StaticInfo::StaticInfo(const StaticInfo& from) : ::google::protobuf::Message() {
   StaticInfo* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.stock_derivatives_){from._impl_.stock_derivatives_},
+      /* _impl_._stock_derivatives_cached_byte_size_ = */ {0},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.name_cn_){},
+      decltype(_impl_.name_en_){},
+      decltype(_impl_.name_hk_){},
+      decltype(_impl_.listing_date_){},
+      decltype(_impl_.exchange_){},
+      decltype(_impl_.currency_){},
+      decltype(_impl_.eps_){},
+      decltype(_impl_.eps_ttm_){},
+      decltype(_impl_.bps_){},
+      decltype(_impl_.dividend_yield_){},
+      decltype(_impl_.board_){},
+      decltype(_impl_.total_shares_){},
+      decltype(_impl_.circulating_shares_){},
+      decltype(_impl_.hk_shares_){},
+      decltype(_impl_.lot_size_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, total_shares_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, total_shares_),
-           offsetof(Impl_, lot_size_) -
-               offsetof(Impl_, total_shares_) +
-               sizeof(Impl_::lot_size_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_cn().empty()) {
+    _this->_impl_.name_cn_.Set(from._internal_name_cn(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_en().empty()) {
+    _this->_impl_.name_en_.Set(from._internal_name_en(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_hk().empty()) {
+    _this->_impl_.name_hk_.Set(from._internal_name_hk(), _this->GetArenaForAllocation());
+  }
+  _impl_.listing_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.listing_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_listing_date().empty()) {
+    _this->_impl_.listing_date_.Set(from._internal_listing_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.exchange_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.exchange_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_exchange().empty()) {
+    _this->_impl_.exchange_.Set(from._internal_exchange(), _this->GetArenaForAllocation());
+  }
+  _impl_.currency_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.currency_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_currency().empty()) {
+    _this->_impl_.currency_.Set(from._internal_currency(), _this->GetArenaForAllocation());
+  }
+  _impl_.eps_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.eps_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_eps().empty()) {
+    _this->_impl_.eps_.Set(from._internal_eps(), _this->GetArenaForAllocation());
+  }
+  _impl_.eps_ttm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.eps_ttm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_eps_ttm().empty()) {
+    _this->_impl_.eps_ttm_.Set(from._internal_eps_ttm(), _this->GetArenaForAllocation());
+  }
+  _impl_.bps_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.bps_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_bps().empty()) {
+    _this->_impl_.bps_.Set(from._internal_bps(), _this->GetArenaForAllocation());
+  }
+  _impl_.dividend_yield_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.dividend_yield_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_dividend_yield().empty()) {
+    _this->_impl_.dividend_yield_.Set(from._internal_dividend_yield(), _this->GetArenaForAllocation());
+  }
+  _impl_.board_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.board_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_board().empty()) {
+    _this->_impl_.board_.Set(from._internal_board(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.total_shares_, &from._impl_.total_shares_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.lot_size_) -
+    reinterpret_cast<char*>(&_impl_.total_shares_)) + sizeof(_impl_.lot_size_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.StaticInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE StaticInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : stock_derivatives_{visibility, arena},
-        _stock_derivatives_cached_byte_size_{0},
-        symbol_(arena),
-        name_cn_(arena),
-        name_en_(arena),
-        name_hk_(arena),
-        listing_date_(arena),
-        exchange_(arena),
-        currency_(arena),
-        eps_(arena),
-        eps_ttm_(arena),
-        bps_(arena),
-        dividend_yield_(arena),
-        board_(arena),
-        _cached_size_{0} {}
-
 inline void StaticInfo::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, total_shares_),
-           0,
-           offsetof(Impl_, lot_size_) -
-               offsetof(Impl_, total_shares_) +
-               sizeof(Impl_::lot_size_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.stock_derivatives_){arena},
+      /* _impl_._stock_derivatives_cached_byte_size_ = */ {0},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.name_cn_){},
+      decltype(_impl_.name_en_){},
+      decltype(_impl_.name_hk_){},
+      decltype(_impl_.listing_date_){},
+      decltype(_impl_.exchange_){},
+      decltype(_impl_.currency_){},
+      decltype(_impl_.eps_){},
+      decltype(_impl_.eps_ttm_){},
+      decltype(_impl_.bps_){},
+      decltype(_impl_.dividend_yield_){},
+      decltype(_impl_.board_){},
+      decltype(_impl_.total_shares_){::int64_t{0}},
+      decltype(_impl_.circulating_shares_){::int64_t{0}},
+      decltype(_impl_.hk_shares_){::int64_t{0}},
+      decltype(_impl_.lot_size_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.listing_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.listing_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.exchange_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.exchange_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.currency_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.currency_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.eps_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.eps_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.eps_ttm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.eps_ttm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.bps_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.bps_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.dividend_yield_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.dividend_yield_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.board_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.board_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 StaticInfo::~StaticInfo() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.StaticInfo)
@@ -4302,7 +4549,8 @@ StaticInfo::~StaticInfo() {
   SharedDtor();
 }
 inline void StaticInfo::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.stock_derivatives_.~RepeatedField();
   _impl_.symbol_.Destroy();
   _impl_.name_cn_.Destroy();
   _impl_.name_en_.Destroy();
@@ -4315,17 +4563,18 @@ inline void StaticInfo::SharedDtor() {
   _impl_.bps_.Destroy();
   _impl_.dividend_yield_.Destroy();
   _impl_.board_.Destroy();
-  _impl_.~Impl_();
+}
+void StaticInfo::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void StaticInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.StaticInfo)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.stock_derivatives_.Clear();
+  _internal_mutable_stock_derivatives()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _impl_.name_cn_.ClearToEmpty();
   _impl_.name_en_.ClearToEmpty();
@@ -4633,8 +4882,8 @@ const ::_pbi::TcParseTable<5, 17, 0, 143, 2> StaticInfo::_table_ = {
   {
     int byte_size = _impl_._stock_derivatives_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          16, _internal_stock_derivatives(), byte_size, target);
+      target = stream->WriteInt32Packed(16, _internal_stock_derivatives(),
+                                                 byte_size, target);
     }
   }
 
@@ -4776,12 +5025,11 @@ const ::_pbi::TcParseTable<5, 17, 0, 143, 2> StaticInfo::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData StaticInfo::_class_data_ = {
-    StaticInfo::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    StaticInfo::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* StaticInfo::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*StaticInfo::GetClassData() const { return &_class_data_; }
+
 
 void StaticInfo::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<StaticInfo*>(&to_msg);
@@ -4854,27 +5102,36 @@ PROTOBUF_NOINLINE bool StaticInfo::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* StaticInfo::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void StaticInfo::InternalSwap(StaticInfo* PROTOBUF_RESTRICT other) {
+void StaticInfo::InternalSwap(StaticInfo* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.stock_derivatives_.InternalSwap(&other->_impl_.stock_derivatives_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_cn_, &other->_impl_.name_cn_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_en_, &other->_impl_.name_en_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_hk_, &other->_impl_.name_hk_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.listing_date_, &other->_impl_.listing_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.exchange_, &other->_impl_.exchange_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.currency_, &other->_impl_.currency_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.eps_, &other->_impl_.eps_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.eps_ttm_, &other->_impl_.eps_ttm_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.bps_, &other->_impl_.bps_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.dividend_yield_, &other->_impl_.dividend_yield_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.board_, &other->_impl_.board_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_cn_, lhs_arena,
+                                       &other->_impl_.name_cn_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_en_, lhs_arena,
+                                       &other->_impl_.name_en_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_hk_, lhs_arena,
+                                       &other->_impl_.name_hk_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.listing_date_, lhs_arena,
+                                       &other->_impl_.listing_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.exchange_, lhs_arena,
+                                       &other->_impl_.exchange_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.currency_, lhs_arena,
+                                       &other->_impl_.currency_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.eps_, lhs_arena,
+                                       &other->_impl_.eps_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.eps_ttm_, lhs_arena,
+                                       &other->_impl_.eps_ttm_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.bps_, lhs_arena,
+                                       &other->_impl_.bps_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.dividend_yield_, lhs_arena,
+                                       &other->_impl_.dividend_yield_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.board_, lhs_arena,
+                                       &other->_impl_.board_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(StaticInfo, _impl_.lot_size_)
       + sizeof(StaticInfo::_impl_.lot_size_)
@@ -4899,32 +5156,24 @@ SecurityQuoteResponse::SecurityQuoteResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : secu_quote_{visibility, arena, from.secu_quote_},
-        _cached_size_{0} {}
-
-SecurityQuoteResponse::SecurityQuoteResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityQuoteResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityQuoteResponse::SecurityQuoteResponse(const SecurityQuoteResponse& from) : ::google::protobuf::Message() {
   SecurityQuoteResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){from._impl_.secu_quote_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : secu_quote_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void SecurityQuoteResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SecurityQuoteResponse::~SecurityQuoteResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityQuoteResponse)
@@ -4932,18 +5181,20 @@ SecurityQuoteResponse::~SecurityQuoteResponse() {
   SharedDtor();
 }
 inline void SecurityQuoteResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.secu_quote_.~RepeatedPtrField();
+}
+void SecurityQuoteResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityQuoteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityQuoteResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.secu_quote_.Clear();
+  _internal_mutable_secu_quote()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -5026,12 +5277,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> SecurityQuoteResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityQuoteResponse::_class_data_ = {
-    SecurityQuoteResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityQuoteResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityQuoteResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityQuoteResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityQuoteResponse*>(&to_msg);
@@ -5041,8 +5291,7 @@ void SecurityQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_secu_quote()->MergeFrom(
-      from._internal_secu_quote());
+  _this->_internal_mutable_secu_quote()->MergeFrom(from._internal_secu_quote());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -5057,10 +5306,7 @@ PROTOBUF_NOINLINE bool SecurityQuoteResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityQuoteResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityQuoteResponse::InternalSwap(SecurityQuoteResponse* PROTOBUF_RESTRICT other) {
+void SecurityQuoteResponse::InternalSwap(SecurityQuoteResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.secu_quote_.InternalSwap(&other->_impl_.secu_quote_);
@@ -5106,68 +5352,139 @@ SecurityQuote::SecurityQuote(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_),
-        last_done_(arena, from.last_done_),
-        prev_close_(arena, from.prev_close_),
-        open_(arena, from.open_),
-        high_(arena, from.high_),
-        low_(arena, from.low_),
-        turnover_(arena, from.turnover_) {}
-
-SecurityQuote::SecurityQuote(
-    ::google::protobuf::Arena* arena,
-    const SecurityQuote& from)
-    : ::google::protobuf::Message(arena) {
+SecurityQuote::SecurityQuote(const SecurityQuote& from) : ::google::protobuf::Message() {
   SecurityQuote* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.pre_market_quote_){nullptr},
+      decltype(_impl_.post_market_quote_){nullptr},
+      decltype(_impl_.over_night_quote_){nullptr},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.trade_status_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.pre_market_quote_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::PrePostQuote>(arena, *from._impl_.pre_market_quote_)
-                : nullptr;
-  _impl_.post_market_quote_ = (cached_has_bits & 0x00000002u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::PrePostQuote>(arena, *from._impl_.post_market_quote_)
-                : nullptr;
-  _impl_.over_night_quote_ = (cached_has_bits & 0x00000004u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::PrePostQuote>(arena, *from._impl_.over_night_quote_)
-                : nullptr;
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, timestamp_),
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::trade_status_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_prev_close().empty()) {
+    _this->_impl_.prev_close_.Set(from._internal_prev_close(), _this->GetArenaForAllocation());
+  }
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_open().empty()) {
+    _this->_impl_.open_.Set(from._internal_open(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.pre_market_quote_ = new ::longportapp::quote::v1::PrePostQuote(*from._impl_.pre_market_quote_);
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000002u) != 0) {
+    _this->_impl_.post_market_quote_ = new ::longportapp::quote::v1::PrePostQuote(*from._impl_.post_market_quote_);
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000004u) != 0) {
+    _this->_impl_.over_night_quote_ = new ::longportapp::quote::v1::PrePostQuote(*from._impl_.over_night_quote_);
+  }
+  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_status_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.trade_status_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena),
-        last_done_(arena),
-        prev_close_(arena),
-        open_(arena),
-        high_(arena),
-        low_(arena),
-        turnover_(arena) {}
-
 inline void SecurityQuote::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, pre_market_quote_),
-           0,
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, pre_market_quote_) +
-               sizeof(Impl_::trade_status_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.pre_market_quote_){nullptr},
+      decltype(_impl_.post_market_quote_){nullptr},
+      decltype(_impl_.over_night_quote_){nullptr},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.trade_status_){0},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityQuote::~SecurityQuote() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityQuote)
@@ -5175,7 +5492,7 @@ SecurityQuote::~SecurityQuote() {
   SharedDtor();
 }
 inline void SecurityQuote::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.last_done_.Destroy();
   _impl_.prev_close_.Destroy();
@@ -5183,15 +5500,16 @@ inline void SecurityQuote::SharedDtor() {
   _impl_.high_.Destroy();
   _impl_.low_.Destroy();
   _impl_.turnover_.Destroy();
-  delete _impl_.pre_market_quote_;
-  delete _impl_.post_market_quote_;
-  delete _impl_.over_night_quote_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.pre_market_quote_;
+  if (this != internal_default_instance()) delete _impl_.post_market_quote_;
+  if (this != internal_default_instance()) delete _impl_.over_night_quote_;
+}
+void SecurityQuote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityQuote::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityQuote)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5435,22 +5753,22 @@ const ::_pbi::TcParseTable<4, 13, 3, 95, 2> SecurityQuote::_table_ = {
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.PrePostQuote pre_market_quote = 11 [json_name = "preMarketQuote"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        11, _Internal::pre_market_quote(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(11, _Internal::pre_market_quote(this),
         _Internal::pre_market_quote(this).GetCachedSize(), target, stream);
   }
 
   // .longportapp.quote.v1.PrePostQuote post_market_quote = 12 [json_name = "postMarketQuote"];
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        12, _Internal::post_market_quote(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(12, _Internal::post_market_quote(this),
         _Internal::post_market_quote(this).GetCachedSize(), target, stream);
   }
 
   // .longportapp.quote.v1.PrePostQuote over_night_quote = 13 [json_name = "overNightQuote"];
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        13, _Internal::over_night_quote(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(13, _Internal::over_night_quote(this),
         _Internal::over_night_quote(this).GetCachedSize(), target, stream);
   }
 
@@ -5517,20 +5835,23 @@ const ::_pbi::TcParseTable<4, 13, 3, 95, 2> SecurityQuote::_table_ = {
   if (cached_has_bits & 0x00000007u) {
     // .longportapp.quote.v1.PrePostQuote pre_market_quote = 11 [json_name = "preMarketQuote"];
     if (cached_has_bits & 0x00000001u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.pre_market_quote_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.pre_market_quote_);
     }
 
     // .longportapp.quote.v1.PrePostQuote post_market_quote = 12 [json_name = "postMarketQuote"];
     if (cached_has_bits & 0x00000002u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.post_market_quote_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.post_market_quote_);
     }
 
     // .longportapp.quote.v1.PrePostQuote over_night_quote = 13 [json_name = "overNightQuote"];
     if (cached_has_bits & 0x00000004u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.over_night_quote_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.over_night_quote_);
     }
 
   }
@@ -5556,12 +5877,11 @@ const ::_pbi::TcParseTable<4, 13, 3, 95, 2> SecurityQuote::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityQuote::_class_data_ = {
-    SecurityQuote::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityQuote::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityQuote::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityQuote::GetClassData() const { return &_class_data_; }
+
 
 void SecurityQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityQuote*>(&to_msg);
@@ -5630,22 +5950,26 @@ PROTOBUF_NOINLINE bool SecurityQuote::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityQuote::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityQuote::InternalSwap(SecurityQuote* PROTOBUF_RESTRICT other) {
+void SecurityQuote::InternalSwap(SecurityQuote* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, &other->_impl_.prev_close_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, &other->_impl_.open_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, lhs_arena,
+                                       &other->_impl_.prev_close_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, lhs_arena,
+                                       &other->_impl_.open_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SecurityQuote, _impl_.trade_status_)
       + sizeof(SecurityQuote::_impl_.trade_status_)
@@ -5670,53 +5994,94 @@ PrePostQuote::PrePostQuote(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.PrePostQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE PrePostQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : last_done_(arena, from.last_done_),
-        turnover_(arena, from.turnover_),
-        high_(arena, from.high_),
-        low_(arena, from.low_),
-        prev_close_(arena, from.prev_close_),
-        _cached_size_{0} {}
-
-PrePostQuote::PrePostQuote(
-    ::google::protobuf::Arena* arena,
-    const PrePostQuote& from)
-    : ::google::protobuf::Message(arena) {
+PrePostQuote::PrePostQuote(const PrePostQuote& from) : ::google::protobuf::Message() {
   PrePostQuote* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, timestamp_),
-           offsetof(Impl_, volume_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::volume_));
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_prev_close().empty()) {
+    _this->_impl_.prev_close_.Set(from._internal_prev_close(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.volume_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.volume_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PrePostQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE PrePostQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : last_done_(arena),
-        turnover_(arena),
-        high_(arena),
-        low_(arena),
-        prev_close_(arena),
-        _cached_size_{0} {}
-
 inline void PrePostQuote::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           0,
-           offsetof(Impl_, volume_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::volume_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 PrePostQuote::~PrePostQuote() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.PrePostQuote)
@@ -5724,18 +6089,19 @@ PrePostQuote::~PrePostQuote() {
   SharedDtor();
 }
 inline void PrePostQuote::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.last_done_.Destroy();
   _impl_.turnover_.Destroy();
   _impl_.high_.Destroy();
   _impl_.low_.Destroy();
   _impl_.prev_close_.Destroy();
-  _impl_.~Impl_();
+}
+void PrePostQuote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void PrePostQuote::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.PrePostQuote)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5956,12 +6322,11 @@ const ::_pbi::TcParseTable<3, 7, 0, 76, 2> PrePostQuote::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData PrePostQuote::_class_data_ = {
-    PrePostQuote::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    PrePostQuote::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* PrePostQuote::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*PrePostQuote::GetClassData() const { return &_class_data_; }
+
 
 void PrePostQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<PrePostQuote*>(&to_msg);
@@ -6006,19 +6371,21 @@ PROTOBUF_NOINLINE bool PrePostQuote::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* PrePostQuote::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void PrePostQuote::InternalSwap(PrePostQuote* PROTOBUF_RESTRICT other) {
+void PrePostQuote::InternalSwap(PrePostQuote* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, &other->_impl_.prev_close_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, lhs_arena,
+                                       &other->_impl_.prev_close_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PrePostQuote, _impl_.volume_)
       + sizeof(PrePostQuote::_impl_.volume_)
@@ -6043,32 +6410,24 @@ OptionQuoteResponse::OptionQuoteResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : secu_quote_{visibility, arena, from.secu_quote_},
-        _cached_size_{0} {}
-
-OptionQuoteResponse::OptionQuoteResponse(
-    ::google::protobuf::Arena* arena,
-    const OptionQuoteResponse& from)
-    : ::google::protobuf::Message(arena) {
+OptionQuoteResponse::OptionQuoteResponse(const OptionQuoteResponse& from) : ::google::protobuf::Message() {
   OptionQuoteResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){from._impl_.secu_quote_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : secu_quote_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void OptionQuoteResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 OptionQuoteResponse::~OptionQuoteResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionQuoteResponse)
@@ -6076,18 +6435,20 @@ OptionQuoteResponse::~OptionQuoteResponse() {
   SharedDtor();
 }
 inline void OptionQuoteResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.secu_quote_.~RepeatedPtrField();
+}
+void OptionQuoteResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionQuoteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionQuoteResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.secu_quote_.Clear();
+  _internal_mutable_secu_quote()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -6170,12 +6531,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> OptionQuoteResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData OptionQuoteResponse::_class_data_ = {
-    OptionQuoteResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionQuoteResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionQuoteResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionQuoteResponse::GetClassData() const { return &_class_data_; }
+
 
 void OptionQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionQuoteResponse*>(&to_msg);
@@ -6185,8 +6545,7 @@ void OptionQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const :
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_secu_quote()->MergeFrom(
-      from._internal_secu_quote());
+  _this->_internal_mutable_secu_quote()->MergeFrom(from._internal_secu_quote());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -6201,10 +6560,7 @@ PROTOBUF_NOINLINE bool OptionQuoteResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* OptionQuoteResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionQuoteResponse::InternalSwap(OptionQuoteResponse* PROTOBUF_RESTRICT other) {
+void OptionQuoteResponse::InternalSwap(OptionQuoteResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.secu_quote_.InternalSwap(&other->_impl_.secu_quote_);
@@ -6236,62 +6592,129 @@ OptionQuote::OptionQuote(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_),
-        last_done_(arena, from.last_done_),
-        prev_close_(arena, from.prev_close_),
-        open_(arena, from.open_),
-        high_(arena, from.high_),
-        low_(arena, from.low_),
-        turnover_(arena, from.turnover_) {}
-
-OptionQuote::OptionQuote(
-    ::google::protobuf::Arena* arena,
-    const OptionQuote& from)
-    : ::google::protobuf::Message(arena) {
+OptionQuote::OptionQuote(const OptionQuote& from) : ::google::protobuf::Message() {
   OptionQuote* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.option_extend_){nullptr},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.trade_status_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.option_extend_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::OptionExtend>(arena, *from._impl_.option_extend_)
-                : nullptr;
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, timestamp_),
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::trade_status_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_prev_close().empty()) {
+    _this->_impl_.prev_close_.Set(from._internal_prev_close(), _this->GetArenaForAllocation());
+  }
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_open().empty()) {
+    _this->_impl_.open_.Set(from._internal_open(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.option_extend_ = new ::longportapp::quote::v1::OptionExtend(*from._impl_.option_extend_);
+  }
+  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_status_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.trade_status_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena),
-        last_done_(arena),
-        prev_close_(arena),
-        open_(arena),
-        high_(arena),
-        low_(arena),
-        turnover_(arena) {}
-
 inline void OptionQuote::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, option_extend_),
-           0,
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, option_extend_) +
-               sizeof(Impl_::trade_status_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.option_extend_){nullptr},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.trade_status_){0},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 OptionQuote::~OptionQuote() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionQuote)
@@ -6299,7 +6722,7 @@ OptionQuote::~OptionQuote() {
   SharedDtor();
 }
 inline void OptionQuote::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.last_done_.Destroy();
   _impl_.prev_close_.Destroy();
@@ -6307,13 +6730,14 @@ inline void OptionQuote::SharedDtor() {
   _impl_.high_.Destroy();
   _impl_.low_.Destroy();
   _impl_.turnover_.Destroy();
-  delete _impl_.option_extend_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.option_extend_;
+}
+void OptionQuote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionQuote::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionQuote)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6535,8 +6959,8 @@ const ::_pbi::TcParseTable<4, 11, 1, 93, 2> OptionQuote::_table_ = {
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.OptionExtend option_extend = 11 [json_name = "optionExtend"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        11, _Internal::option_extend(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(11, _Internal::option_extend(this),
         _Internal::option_extend(this).GetCachedSize(), target, stream);
   }
 
@@ -6602,8 +7026,9 @@ const ::_pbi::TcParseTable<4, 11, 1, 93, 2> OptionQuote::_table_ = {
   // .longportapp.quote.v1.OptionExtend option_extend = 11 [json_name = "optionExtend"];
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size +=
-        1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.option_extend_);
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *_impl_.option_extend_);
   }
 
   // int64 timestamp = 7 [json_name = "timestamp"];
@@ -6628,12 +7053,11 @@ const ::_pbi::TcParseTable<4, 11, 1, 93, 2> OptionQuote::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData OptionQuote::_class_data_ = {
-    OptionQuote::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionQuote::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionQuote::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionQuote::GetClassData() const { return &_class_data_; }
+
 
 void OptionQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionQuote*>(&to_msg);
@@ -6691,22 +7115,26 @@ PROTOBUF_NOINLINE bool OptionQuote::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* OptionQuote::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionQuote::InternalSwap(OptionQuote* PROTOBUF_RESTRICT other) {
+void OptionQuote::InternalSwap(OptionQuote* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, &other->_impl_.prev_close_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, &other->_impl_.open_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, lhs_arena,
+                                       &other->_impl_.prev_close_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, lhs_arena,
+                                       &other->_impl_.open_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(OptionQuote, _impl_.trade_status_)
       + sizeof(OptionQuote::_impl_.trade_status_)
@@ -6731,50 +7159,142 @@ OptionExtend::OptionExtend(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionExtend)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionExtend::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : implied_volatility_(arena, from.implied_volatility_),
-        expiry_date_(arena, from.expiry_date_),
-        strike_price_(arena, from.strike_price_),
-        contract_multiplier_(arena, from.contract_multiplier_),
-        contract_type_(arena, from.contract_type_),
-        contract_size_(arena, from.contract_size_),
-        direction_(arena, from.direction_),
-        historical_volatility_(arena, from.historical_volatility_),
-        underlying_symbol_(arena, from.underlying_symbol_),
-        _cached_size_{0} {}
-
-OptionExtend::OptionExtend(
-    ::google::protobuf::Arena* arena,
-    const OptionExtend& from)
-    : ::google::protobuf::Message(arena) {
+OptionExtend::OptionExtend(const OptionExtend& from) : ::google::protobuf::Message() {
   OptionExtend* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.contract_multiplier_){},
+      decltype(_impl_.contract_type_){},
+      decltype(_impl_.contract_size_){},
+      decltype(_impl_.direction_){},
+      decltype(_impl_.historical_volatility_){},
+      decltype(_impl_.underlying_symbol_){},
+      decltype(_impl_.open_interest_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.open_interest_ = from._impl_.open_interest_;
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_implied_volatility().empty()) {
+    _this->_impl_.implied_volatility_.Set(from._internal_implied_volatility(), _this->GetArenaForAllocation());
+  }
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    _this->_impl_.expiry_date_.Set(from._internal_expiry_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_strike_price().empty()) {
+    _this->_impl_.strike_price_.Set(from._internal_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.contract_multiplier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_multiplier_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_contract_multiplier().empty()) {
+    _this->_impl_.contract_multiplier_.Set(from._internal_contract_multiplier(), _this->GetArenaForAllocation());
+  }
+  _impl_.contract_type_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_type_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_contract_type().empty()) {
+    _this->_impl_.contract_type_.Set(from._internal_contract_type(), _this->GetArenaForAllocation());
+  }
+  _impl_.contract_size_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_size_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_contract_size().empty()) {
+    _this->_impl_.contract_size_.Set(from._internal_contract_size(), _this->GetArenaForAllocation());
+  }
+  _impl_.direction_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.direction_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_direction().empty()) {
+    _this->_impl_.direction_.Set(from._internal_direction(), _this->GetArenaForAllocation());
+  }
+  _impl_.historical_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.historical_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_historical_volatility().empty()) {
+    _this->_impl_.historical_volatility_.Set(from._internal_historical_volatility(), _this->GetArenaForAllocation());
+  }
+  _impl_.underlying_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.underlying_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_underlying_symbol().empty()) {
+    _this->_impl_.underlying_symbol_.Set(from._internal_underlying_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.open_interest_ = from._impl_.open_interest_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionExtend)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionExtend::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : implied_volatility_(arena),
-        expiry_date_(arena),
-        strike_price_(arena),
-        contract_multiplier_(arena),
-        contract_type_(arena),
-        contract_size_(arena),
-        direction_(arena),
-        historical_volatility_(arena),
-        underlying_symbol_(arena),
-        _cached_size_{0} {}
-
 inline void OptionExtend::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.open_interest_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.contract_multiplier_){},
+      decltype(_impl_.contract_type_){},
+      decltype(_impl_.contract_size_){},
+      decltype(_impl_.direction_){},
+      decltype(_impl_.historical_volatility_){},
+      decltype(_impl_.underlying_symbol_){},
+      decltype(_impl_.open_interest_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.contract_multiplier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_multiplier_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.contract_type_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_type_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.contract_size_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.contract_size_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.direction_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.direction_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.historical_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.historical_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.underlying_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.underlying_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 OptionExtend::~OptionExtend() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionExtend)
@@ -6782,7 +7302,7 @@ OptionExtend::~OptionExtend() {
   SharedDtor();
 }
 inline void OptionExtend::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.implied_volatility_.Destroy();
   _impl_.expiry_date_.Destroy();
   _impl_.strike_price_.Destroy();
@@ -6792,12 +7312,13 @@ inline void OptionExtend::SharedDtor() {
   _impl_.direction_.Destroy();
   _impl_.historical_volatility_.Destroy();
   _impl_.underlying_symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void OptionExtend::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionExtend::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionExtend)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7090,12 +7611,11 @@ const ::_pbi::TcParseTable<4, 10, 0, 183, 2> OptionExtend::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData OptionExtend::_class_data_ = {
-    OptionExtend::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionExtend::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionExtend::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionExtend::GetClassData() const { return &_class_data_; }
+
 
 void OptionExtend::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionExtend*>(&to_msg);
@@ -7149,23 +7669,29 @@ PROTOBUF_NOINLINE bool OptionExtend::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* OptionExtend::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionExtend::InternalSwap(OptionExtend* PROTOBUF_RESTRICT other) {
+void OptionExtend::InternalSwap(OptionExtend* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, &other->_impl_.implied_volatility_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, &other->_impl_.expiry_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, &other->_impl_.strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_multiplier_, &other->_impl_.contract_multiplier_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_type_, &other->_impl_.contract_type_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_size_, &other->_impl_.contract_size_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.direction_, &other->_impl_.direction_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.historical_volatility_, &other->_impl_.historical_volatility_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.underlying_symbol_, &other->_impl_.underlying_symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, lhs_arena,
+                                       &other->_impl_.implied_volatility_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, lhs_arena,
+                                       &other->_impl_.expiry_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, lhs_arena,
+                                       &other->_impl_.strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_multiplier_, lhs_arena,
+                                       &other->_impl_.contract_multiplier_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_type_, lhs_arena,
+                                       &other->_impl_.contract_type_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contract_size_, lhs_arena,
+                                       &other->_impl_.contract_size_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.direction_, lhs_arena,
+                                       &other->_impl_.direction_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.historical_volatility_, lhs_arena,
+                                       &other->_impl_.historical_volatility_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.underlying_symbol_, lhs_arena,
+                                       &other->_impl_.underlying_symbol_, rhs_arena);
         swap(_impl_.open_interest_, other->_impl_.open_interest_);
 }
 
@@ -7185,32 +7711,24 @@ WarrantQuoteResponse::WarrantQuoteResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.WarrantQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : secu_quote_{visibility, arena, from.secu_quote_},
-        _cached_size_{0} {}
-
-WarrantQuoteResponse::WarrantQuoteResponse(
-    ::google::protobuf::Arena* arena,
-    const WarrantQuoteResponse& from)
-    : ::google::protobuf::Message(arena) {
+WarrantQuoteResponse::WarrantQuoteResponse(const WarrantQuoteResponse& from) : ::google::protobuf::Message() {
   WarrantQuoteResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){from._impl_.secu_quote_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.WarrantQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : secu_quote_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void WarrantQuoteResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.secu_quote_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 WarrantQuoteResponse::~WarrantQuoteResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.WarrantQuoteResponse)
@@ -7218,18 +7736,20 @@ WarrantQuoteResponse::~WarrantQuoteResponse() {
   SharedDtor();
 }
 inline void WarrantQuoteResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.secu_quote_.~RepeatedPtrField();
+}
+void WarrantQuoteResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void WarrantQuoteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.WarrantQuoteResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.secu_quote_.Clear();
+  _internal_mutable_secu_quote()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -7312,12 +7832,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> WarrantQuoteResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData WarrantQuoteResponse::_class_data_ = {
-    WarrantQuoteResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    WarrantQuoteResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* WarrantQuoteResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*WarrantQuoteResponse::GetClassData() const { return &_class_data_; }
+
 
 void WarrantQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<WarrantQuoteResponse*>(&to_msg);
@@ -7327,8 +7846,7 @@ void WarrantQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_secu_quote()->MergeFrom(
-      from._internal_secu_quote());
+  _this->_internal_mutable_secu_quote()->MergeFrom(from._internal_secu_quote());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -7343,10 +7861,7 @@ PROTOBUF_NOINLINE bool WarrantQuoteResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* WarrantQuoteResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void WarrantQuoteResponse::InternalSwap(WarrantQuoteResponse* PROTOBUF_RESTRICT other) {
+void WarrantQuoteResponse::InternalSwap(WarrantQuoteResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.secu_quote_.InternalSwap(&other->_impl_.secu_quote_);
@@ -7378,62 +7893,129 @@ WarrantQuote::WarrantQuote(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.WarrantQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_),
-        last_done_(arena, from.last_done_),
-        prev_close_(arena, from.prev_close_),
-        open_(arena, from.open_),
-        high_(arena, from.high_),
-        low_(arena, from.low_),
-        turnover_(arena, from.turnover_) {}
-
-WarrantQuote::WarrantQuote(
-    ::google::protobuf::Arena* arena,
-    const WarrantQuote& from)
-    : ::google::protobuf::Message(arena) {
+WarrantQuote::WarrantQuote(const WarrantQuote& from) : ::google::protobuf::Message() {
   WarrantQuote* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.warrant_extend_){nullptr},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.trade_status_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.warrant_extend_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::WarrantExtend>(arena, *from._impl_.warrant_extend_)
-                : nullptr;
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, timestamp_),
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::trade_status_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_prev_close().empty()) {
+    _this->_impl_.prev_close_.Set(from._internal_prev_close(), _this->GetArenaForAllocation());
+  }
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_open().empty()) {
+    _this->_impl_.open_.Set(from._internal_open(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.warrant_extend_ = new ::longportapp::quote::v1::WarrantExtend(*from._impl_.warrant_extend_);
+  }
+  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_status_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.trade_status_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.WarrantQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena),
-        last_done_(arena),
-        prev_close_(arena),
-        open_(arena),
-        high_(arena),
-        low_(arena),
-        turnover_(arena) {}
-
 inline void WarrantQuote::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, warrant_extend_),
-           0,
-           offsetof(Impl_, trade_status_) -
-               offsetof(Impl_, warrant_extend_) +
-               sizeof(Impl_::trade_status_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.prev_close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.warrant_extend_){nullptr},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.trade_status_){0},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.prev_close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.prev_close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 WarrantQuote::~WarrantQuote() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.WarrantQuote)
@@ -7441,7 +8023,7 @@ WarrantQuote::~WarrantQuote() {
   SharedDtor();
 }
 inline void WarrantQuote::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.last_done_.Destroy();
   _impl_.prev_close_.Destroy();
@@ -7449,13 +8031,14 @@ inline void WarrantQuote::SharedDtor() {
   _impl_.high_.Destroy();
   _impl_.low_.Destroy();
   _impl_.turnover_.Destroy();
-  delete _impl_.warrant_extend_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.warrant_extend_;
+}
+void WarrantQuote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void WarrantQuote::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.WarrantQuote)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7677,8 +8260,8 @@ const ::_pbi::TcParseTable<4, 11, 1, 94, 2> WarrantQuote::_table_ = {
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.WarrantExtend warrant_extend = 11 [json_name = "warrantExtend"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        11, _Internal::warrant_extend(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(11, _Internal::warrant_extend(this),
         _Internal::warrant_extend(this).GetCachedSize(), target, stream);
   }
 
@@ -7744,8 +8327,9 @@ const ::_pbi::TcParseTable<4, 11, 1, 94, 2> WarrantQuote::_table_ = {
   // .longportapp.quote.v1.WarrantExtend warrant_extend = 11 [json_name = "warrantExtend"];
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size +=
-        1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.warrant_extend_);
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *_impl_.warrant_extend_);
   }
 
   // int64 timestamp = 7 [json_name = "timestamp"];
@@ -7770,12 +8354,11 @@ const ::_pbi::TcParseTable<4, 11, 1, 94, 2> WarrantQuote::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData WarrantQuote::_class_data_ = {
-    WarrantQuote::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    WarrantQuote::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* WarrantQuote::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*WarrantQuote::GetClassData() const { return &_class_data_; }
+
 
 void WarrantQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<WarrantQuote*>(&to_msg);
@@ -7833,22 +8416,26 @@ PROTOBUF_NOINLINE bool WarrantQuote::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* WarrantQuote::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void WarrantQuote::InternalSwap(WarrantQuote* PROTOBUF_RESTRICT other) {
+void WarrantQuote::InternalSwap(WarrantQuote* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, &other->_impl_.prev_close_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, &other->_impl_.open_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.prev_close_, lhs_arena,
+                                       &other->_impl_.prev_close_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, lhs_arena,
+                                       &other->_impl_.open_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(WarrantQuote, _impl_.trade_status_)
       + sizeof(WarrantQuote::_impl_.trade_status_)
@@ -7873,54 +8460,168 @@ WarrantExtend::WarrantExtend(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.WarrantExtend)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantExtend::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : implied_volatility_(arena, from.implied_volatility_),
-        expiry_date_(arena, from.expiry_date_),
-        last_trade_date_(arena, from.last_trade_date_),
-        outstanding_ratio_(arena, from.outstanding_ratio_),
-        conversion_ratio_(arena, from.conversion_ratio_),
-        category_(arena, from.category_),
-        strike_price_(arena, from.strike_price_),
-        upper_strike_price_(arena, from.upper_strike_price_),
-        lower_strike_price_(arena, from.lower_strike_price_),
-        call_price_(arena, from.call_price_),
-        underlying_symbol_(arena, from.underlying_symbol_),
-        _cached_size_{0} {}
-
-WarrantExtend::WarrantExtend(
-    ::google::protobuf::Arena* arena,
-    const WarrantExtend& from)
-    : ::google::protobuf::Message(arena) {
+WarrantExtend::WarrantExtend(const WarrantExtend& from) : ::google::protobuf::Message() {
   WarrantExtend* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.last_trade_date_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.category_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.underlying_symbol_){},
+      decltype(_impl_.outstanding_qty_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.outstanding_qty_ = from._impl_.outstanding_qty_;
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_implied_volatility().empty()) {
+    _this->_impl_.implied_volatility_.Set(from._internal_implied_volatility(), _this->GetArenaForAllocation());
+  }
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    _this->_impl_.expiry_date_.Set(from._internal_expiry_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_trade_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_trade_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_trade_date().empty()) {
+    _this->_impl_.last_trade_date_.Set(from._internal_last_trade_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_outstanding_ratio().empty()) {
+    _this->_impl_.outstanding_ratio_.Set(from._internal_outstanding_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_conversion_ratio().empty()) {
+    _this->_impl_.conversion_ratio_.Set(from._internal_conversion_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.category_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.category_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_category().empty()) {
+    _this->_impl_.category_.Set(from._internal_category(), _this->GetArenaForAllocation());
+  }
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_strike_price().empty()) {
+    _this->_impl_.strike_price_.Set(from._internal_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_upper_strike_price().empty()) {
+    _this->_impl_.upper_strike_price_.Set(from._internal_upper_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_lower_strike_price().empty()) {
+    _this->_impl_.lower_strike_price_.Set(from._internal_lower_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_call_price().empty()) {
+    _this->_impl_.call_price_.Set(from._internal_call_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.underlying_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.underlying_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_underlying_symbol().empty()) {
+    _this->_impl_.underlying_symbol_.Set(from._internal_underlying_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.outstanding_qty_ = from._impl_.outstanding_qty_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.WarrantExtend)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantExtend::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : implied_volatility_(arena),
-        expiry_date_(arena),
-        last_trade_date_(arena),
-        outstanding_ratio_(arena),
-        conversion_ratio_(arena),
-        category_(arena),
-        strike_price_(arena),
-        upper_strike_price_(arena),
-        lower_strike_price_(arena),
-        call_price_(arena),
-        underlying_symbol_(arena),
-        _cached_size_{0} {}
-
 inline void WarrantExtend::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.outstanding_qty_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.last_trade_date_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.category_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.underlying_symbol_){},
+      decltype(_impl_.outstanding_qty_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_trade_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_trade_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.category_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.category_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.underlying_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.underlying_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 WarrantExtend::~WarrantExtend() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.WarrantExtend)
@@ -7928,7 +8629,7 @@ WarrantExtend::~WarrantExtend() {
   SharedDtor();
 }
 inline void WarrantExtend::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.implied_volatility_.Destroy();
   _impl_.expiry_date_.Destroy();
   _impl_.last_trade_date_.Destroy();
@@ -7940,12 +8641,13 @@ inline void WarrantExtend::SharedDtor() {
   _impl_.lower_strike_price_.Destroy();
   _impl_.call_price_.Destroy();
   _impl_.underlying_symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void WarrantExtend::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void WarrantExtend::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.WarrantExtend)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8280,12 +8982,11 @@ const ::_pbi::TcParseTable<4, 12, 0, 211, 2> WarrantExtend::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData WarrantExtend::_class_data_ = {
-    WarrantExtend::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    WarrantExtend::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* WarrantExtend::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*WarrantExtend::GetClassData() const { return &_class_data_; }
+
 
 void WarrantExtend::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<WarrantExtend*>(&to_msg);
@@ -8345,25 +9046,33 @@ PROTOBUF_NOINLINE bool WarrantExtend::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* WarrantExtend::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void WarrantExtend::InternalSwap(WarrantExtend* PROTOBUF_RESTRICT other) {
+void WarrantExtend::InternalSwap(WarrantExtend* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, &other->_impl_.implied_volatility_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, &other->_impl_.expiry_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_trade_date_, &other->_impl_.last_trade_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, &other->_impl_.outstanding_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, &other->_impl_.conversion_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.category_, &other->_impl_.category_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, &other->_impl_.strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, &other->_impl_.upper_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, &other->_impl_.lower_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, &other->_impl_.call_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.underlying_symbol_, &other->_impl_.underlying_symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, lhs_arena,
+                                       &other->_impl_.implied_volatility_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, lhs_arena,
+                                       &other->_impl_.expiry_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_trade_date_, lhs_arena,
+                                       &other->_impl_.last_trade_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, lhs_arena,
+                                       &other->_impl_.outstanding_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, lhs_arena,
+                                       &other->_impl_.conversion_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.category_, lhs_arena,
+                                       &other->_impl_.category_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, lhs_arena,
+                                       &other->_impl_.strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, lhs_arena,
+                                       &other->_impl_.upper_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, lhs_arena,
+                                       &other->_impl_.lower_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, lhs_arena,
+                                       &other->_impl_.call_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.underlying_symbol_, lhs_arena,
+                                       &other->_impl_.underlying_symbol_, rhs_arena);
         swap(_impl_.outstanding_qty_, other->_impl_.outstanding_qty_);
 }
 
@@ -8383,36 +9092,39 @@ SecurityDepthResponse::SecurityDepthResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityDepthResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityDepthResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : ask_{visibility, arena, from.ask_},
-        bid_{visibility, arena, from.bid_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityDepthResponse::SecurityDepthResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityDepthResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityDepthResponse::SecurityDepthResponse(const SecurityDepthResponse& from) : ::google::protobuf::Message() {
   SecurityDepthResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_){from._impl_.ask_},
+      decltype(_impl_.bid_){from._impl_.bid_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityDepthResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityDepthResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : ask_{visibility, arena},
-        bid_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityDepthResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_){arena},
+      decltype(_impl_.bid_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityDepthResponse::~SecurityDepthResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityDepthResponse)
@@ -8420,20 +9132,23 @@ SecurityDepthResponse::~SecurityDepthResponse() {
   SharedDtor();
 }
 inline void SecurityDepthResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.ask_.~RepeatedPtrField();
+  _impl_.bid_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityDepthResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityDepthResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityDepthResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.ask_.Clear();
-  _impl_.bid_.Clear();
+  _internal_mutable_ask()->Clear();
+  _internal_mutable_bid()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -8562,12 +9277,11 @@ const ::_pbi::TcParseTable<2, 3, 2, 57, 2> SecurityDepthResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityDepthResponse::_class_data_ = {
-    SecurityDepthResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityDepthResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityDepthResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityDepthResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityDepthResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityDepthResponse*>(&to_msg);
@@ -8577,10 +9291,8 @@ void SecurityDepthResponse::MergeImpl(::google::protobuf::Message& to_msg, const
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_ask()->MergeFrom(
-      from._internal_ask());
-  _this->_internal_mutable_bid()->MergeFrom(
-      from._internal_bid());
+  _this->_internal_mutable_ask()->MergeFrom(from._internal_ask());
+  _this->_internal_mutable_bid()->MergeFrom(from._internal_bid());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -8598,17 +9310,15 @@ PROTOBUF_NOINLINE bool SecurityDepthResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityDepthResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityDepthResponse::InternalSwap(SecurityDepthResponse* PROTOBUF_RESTRICT other) {
+void SecurityDepthResponse::InternalSwap(SecurityDepthResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.ask_.InternalSwap(&other->_impl_.ask_);
   _impl_.bid_.InternalSwap(&other->_impl_.bid_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityDepthResponse::GetMetadata() const {
@@ -8627,45 +9337,44 @@ Depth::Depth(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.Depth)
 }
-inline PROTOBUF_NDEBUG_INLINE Depth::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : price_(arena, from.price_),
-        _cached_size_{0} {}
-
-Depth::Depth(
-    ::google::protobuf::Arena* arena,
-    const Depth& from)
-    : ::google::protobuf::Message(arena) {
+Depth::Depth(const Depth& from) : ::google::protobuf::Message() {
   Depth* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.order_num_){},
+      decltype(_impl_.position_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, volume_),
-           offsetof(Impl_, position_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::position_));
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_price().empty()) {
+    _this->_impl_.price_.Set(from._internal_price(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.position_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.position_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.Depth)
 }
-inline PROTOBUF_NDEBUG_INLINE Depth::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : price_(arena),
-        _cached_size_{0} {}
-
 inline void Depth::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           0,
-           offsetof(Impl_, position_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::position_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.order_num_){::int64_t{0}},
+      decltype(_impl_.position_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Depth::~Depth() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.Depth)
@@ -8673,14 +9382,15 @@ Depth::~Depth() {
   SharedDtor();
 }
 inline void Depth::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.price_.Destroy();
-  _impl_.~Impl_();
+}
+void Depth::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Depth::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.Depth)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8831,12 +9541,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 40, 2> Depth::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Depth::_class_data_ = {
-    Depth::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Depth::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Depth::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Depth::GetClassData() const { return &_class_data_; }
+
 
 void Depth::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Depth*>(&to_msg);
@@ -8872,15 +9581,13 @@ PROTOBUF_NOINLINE bool Depth::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Depth::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Depth::InternalSwap(Depth* PROTOBUF_RESTRICT other) {
+void Depth::InternalSwap(Depth* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, &other->_impl_.price_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, lhs_arena,
+                                       &other->_impl_.price_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Depth, _impl_.position_)
       + sizeof(Depth::_impl_.position_)
@@ -8905,36 +9612,39 @@ SecurityBrokersResponse::SecurityBrokersResponse(::google::protobuf::Arena* aren
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityBrokersResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityBrokersResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : ask_brokers_{visibility, arena, from.ask_brokers_},
-        bid_brokers_{visibility, arena, from.bid_brokers_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityBrokersResponse::SecurityBrokersResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityBrokersResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityBrokersResponse::SecurityBrokersResponse(const SecurityBrokersResponse& from) : ::google::protobuf::Message() {
   SecurityBrokersResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_brokers_){from._impl_.ask_brokers_},
+      decltype(_impl_.bid_brokers_){from._impl_.bid_brokers_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityBrokersResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityBrokersResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : ask_brokers_{visibility, arena},
-        bid_brokers_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityBrokersResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_brokers_){arena},
+      decltype(_impl_.bid_brokers_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityBrokersResponse::~SecurityBrokersResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityBrokersResponse)
@@ -8942,20 +9652,23 @@ SecurityBrokersResponse::~SecurityBrokersResponse() {
   SharedDtor();
 }
 inline void SecurityBrokersResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.ask_brokers_.~RepeatedPtrField();
+  _impl_.bid_brokers_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityBrokersResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityBrokersResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityBrokersResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.ask_brokers_.Clear();
-  _impl_.bid_brokers_.Clear();
+  _internal_mutable_ask_brokers()->Clear();
+  _internal_mutable_bid_brokers()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -9084,12 +9797,11 @@ const ::_pbi::TcParseTable<2, 3, 2, 59, 2> SecurityBrokersResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityBrokersResponse::_class_data_ = {
-    SecurityBrokersResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityBrokersResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityBrokersResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityBrokersResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityBrokersResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityBrokersResponse*>(&to_msg);
@@ -9099,10 +9811,8 @@ void SecurityBrokersResponse::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_ask_brokers()->MergeFrom(
-      from._internal_ask_brokers());
-  _this->_internal_mutable_bid_brokers()->MergeFrom(
-      from._internal_bid_brokers());
+  _this->_internal_mutable_ask_brokers()->MergeFrom(from._internal_ask_brokers());
+  _this->_internal_mutable_bid_brokers()->MergeFrom(from._internal_bid_brokers());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -9120,17 +9830,15 @@ PROTOBUF_NOINLINE bool SecurityBrokersResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityBrokersResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityBrokersResponse::InternalSwap(SecurityBrokersResponse* PROTOBUF_RESTRICT other) {
+void SecurityBrokersResponse::InternalSwap(SecurityBrokersResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.ask_brokers_.InternalSwap(&other->_impl_.ask_brokers_);
   _impl_.bid_brokers_.InternalSwap(&other->_impl_.bid_brokers_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityBrokersResponse::GetMetadata() const {
@@ -9149,36 +9857,29 @@ Brokers::Brokers(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.Brokers)
 }
-inline PROTOBUF_NDEBUG_INLINE Brokers::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : broker_ids_{visibility, arena, from.broker_ids_},
-        _broker_ids_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-Brokers::Brokers(
-    ::google::protobuf::Arena* arena,
-    const Brokers& from)
-    : ::google::protobuf::Message(arena) {
+Brokers::Brokers(const Brokers& from) : ::google::protobuf::Message() {
   Brokers* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.broker_ids_){from._impl_.broker_ids_},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      decltype(_impl_.position_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.position_ = from._impl_.position_;
+  _this->_impl_.position_ = from._impl_.position_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.Brokers)
 }
-inline PROTOBUF_NDEBUG_INLINE Brokers::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : broker_ids_{visibility, arena},
-        _broker_ids_cached_byte_size_{0},
-        _cached_size_{0} {}
-
 inline void Brokers::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.position_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.broker_ids_){arena},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      decltype(_impl_.position_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 Brokers::~Brokers() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.Brokers)
@@ -9186,18 +9887,20 @@ Brokers::~Brokers() {
   SharedDtor();
 }
 inline void Brokers::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.broker_ids_.~RepeatedField();
+}
+void Brokers::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Brokers::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.Brokers)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.broker_ids_.Clear();
+  _internal_mutable_broker_ids()->Clear();
   _impl_.position_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -9263,8 +9966,8 @@ const ::_pbi::TcParseTable<1, 2, 0, 0, 2> Brokers::_table_ = {
   {
     int byte_size = _impl_._broker_ids_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          2, _internal_broker_ids(), byte_size, target);
+      target = stream->WriteInt32Packed(2, _internal_broker_ids(),
+                                                 byte_size, target);
     }
   }
 
@@ -9308,12 +10011,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 0, 2> Brokers::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Brokers::_class_data_ = {
-    Brokers::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Brokers::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Brokers::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Brokers::GetClassData() const { return &_class_data_; }
+
 
 void Brokers::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Brokers*>(&to_msg);
@@ -9341,10 +10043,7 @@ PROTOBUF_NOINLINE bool Brokers::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Brokers::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Brokers::InternalSwap(Brokers* PROTOBUF_RESTRICT other) {
+void Brokers::InternalSwap(Brokers* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.broker_ids_.InternalSwap(&other->_impl_.broker_ids_);
@@ -9367,32 +10066,24 @@ ParticipantBrokerIdsResponse::ParticipantBrokerIdsResponse(::google::protobuf::A
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.ParticipantBrokerIdsResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE ParticipantBrokerIdsResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : participant_broker_numbers_{visibility, arena, from.participant_broker_numbers_},
-        _cached_size_{0} {}
-
-ParticipantBrokerIdsResponse::ParticipantBrokerIdsResponse(
-    ::google::protobuf::Arena* arena,
-    const ParticipantBrokerIdsResponse& from)
-    : ::google::protobuf::Message(arena) {
+ParticipantBrokerIdsResponse::ParticipantBrokerIdsResponse(const ParticipantBrokerIdsResponse& from) : ::google::protobuf::Message() {
   ParticipantBrokerIdsResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.participant_broker_numbers_){from._impl_.participant_broker_numbers_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.ParticipantBrokerIdsResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE ParticipantBrokerIdsResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : participant_broker_numbers_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void ParticipantBrokerIdsResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.participant_broker_numbers_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 ParticipantBrokerIdsResponse::~ParticipantBrokerIdsResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.ParticipantBrokerIdsResponse)
@@ -9400,18 +10091,20 @@ ParticipantBrokerIdsResponse::~ParticipantBrokerIdsResponse() {
   SharedDtor();
 }
 inline void ParticipantBrokerIdsResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.participant_broker_numbers_.~RepeatedPtrField();
+}
+void ParticipantBrokerIdsResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void ParticipantBrokerIdsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.ParticipantBrokerIdsResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.participant_broker_numbers_.Clear();
+  _internal_mutable_participant_broker_numbers()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -9494,12 +10187,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ParticipantBrokerIdsResponse::_table_ 
 }
 
 const ::google::protobuf::Message::ClassData ParticipantBrokerIdsResponse::_class_data_ = {
-    ParticipantBrokerIdsResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    ParticipantBrokerIdsResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* ParticipantBrokerIdsResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*ParticipantBrokerIdsResponse::GetClassData() const { return &_class_data_; }
+
 
 void ParticipantBrokerIdsResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<ParticipantBrokerIdsResponse*>(&to_msg);
@@ -9509,8 +10201,7 @@ void ParticipantBrokerIdsResponse::MergeImpl(::google::protobuf::Message& to_msg
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_participant_broker_numbers()->MergeFrom(
-      from._internal_participant_broker_numbers());
+  _this->_internal_mutable_participant_broker_numbers()->MergeFrom(from._internal_participant_broker_numbers());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -9525,10 +10216,7 @@ PROTOBUF_NOINLINE bool ParticipantBrokerIdsResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* ParticipantBrokerIdsResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void ParticipantBrokerIdsResponse::InternalSwap(ParticipantBrokerIdsResponse* PROTOBUF_RESTRICT other) {
+void ParticipantBrokerIdsResponse::InternalSwap(ParticipantBrokerIdsResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.participant_broker_numbers_.InternalSwap(&other->_impl_.participant_broker_numbers_);
@@ -9550,40 +10238,65 @@ ParticipantInfo::ParticipantInfo(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.ParticipantInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE ParticipantInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : broker_ids_{visibility, arena, from.broker_ids_},
-        _broker_ids_cached_byte_size_{0},
-        participant_name_cn_(arena, from.participant_name_cn_),
-        participant_name_en_(arena, from.participant_name_en_),
-        participant_name_hk_(arena, from.participant_name_hk_),
-        _cached_size_{0} {}
-
-ParticipantInfo::ParticipantInfo(
-    ::google::protobuf::Arena* arena,
-    const ParticipantInfo& from)
-    : ::google::protobuf::Message(arena) {
+ParticipantInfo::ParticipantInfo(const ParticipantInfo& from) : ::google::protobuf::Message() {
   ParticipantInfo* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.broker_ids_){from._impl_.broker_ids_},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      decltype(_impl_.participant_name_cn_){},
+      decltype(_impl_.participant_name_en_){},
+      decltype(_impl_.participant_name_hk_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.participant_name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_participant_name_cn().empty()) {
+    _this->_impl_.participant_name_cn_.Set(from._internal_participant_name_cn(), _this->GetArenaForAllocation());
+  }
+  _impl_.participant_name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_participant_name_en().empty()) {
+    _this->_impl_.participant_name_en_.Set(from._internal_participant_name_en(), _this->GetArenaForAllocation());
+  }
+  _impl_.participant_name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_participant_name_hk().empty()) {
+    _this->_impl_.participant_name_hk_.Set(from._internal_participant_name_hk(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.ParticipantInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE ParticipantInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : broker_ids_{visibility, arena},
-        _broker_ids_cached_byte_size_{0},
-        participant_name_cn_(arena),
-        participant_name_en_(arena),
-        participant_name_hk_(arena),
-        _cached_size_{0} {}
-
 inline void ParticipantInfo::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.broker_ids_){arena},
+      /* _impl_._broker_ids_cached_byte_size_ = */ {0},
+      decltype(_impl_.participant_name_cn_){},
+      decltype(_impl_.participant_name_en_){},
+      decltype(_impl_.participant_name_hk_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.participant_name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.participant_name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.participant_name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.participant_name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 ParticipantInfo::~ParticipantInfo() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.ParticipantInfo)
@@ -9591,21 +10304,23 @@ ParticipantInfo::~ParticipantInfo() {
   SharedDtor();
 }
 inline void ParticipantInfo::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.broker_ids_.~RepeatedField();
   _impl_.participant_name_cn_.Destroy();
   _impl_.participant_name_en_.Destroy();
   _impl_.participant_name_hk_.Destroy();
-  _impl_.~Impl_();
+}
+void ParticipantInfo::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void ParticipantInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.ParticipantInfo)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.broker_ids_.Clear();
+  _internal_mutable_broker_ids()->Clear();
   _impl_.participant_name_cn_.ClearToEmpty();
   _impl_.participant_name_en_.ClearToEmpty();
   _impl_.participant_name_hk_.ClearToEmpty();
@@ -9683,8 +10398,8 @@ const ::_pbi::TcParseTable<2, 4, 0, 102, 2> ParticipantInfo::_table_ = {
   {
     int byte_size = _impl_._broker_ids_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          1, _internal_broker_ids(), byte_size, target);
+      target = stream->WriteInt32Packed(1, _internal_broker_ids(),
+                                                 byte_size, target);
     }
   }
 
@@ -9764,12 +10479,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 102, 2> ParticipantInfo::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData ParticipantInfo::_class_data_ = {
-    ParticipantInfo::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    ParticipantInfo::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* ParticipantInfo::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*ParticipantInfo::GetClassData() const { return &_class_data_; }
+
 
 void ParticipantInfo::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<ParticipantInfo*>(&to_msg);
@@ -9803,18 +10517,18 @@ PROTOBUF_NOINLINE bool ParticipantInfo::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* ParticipantInfo::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void ParticipantInfo::InternalSwap(ParticipantInfo* PROTOBUF_RESTRICT other) {
+void ParticipantInfo::InternalSwap(ParticipantInfo* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.broker_ids_.InternalSwap(&other->_impl_.broker_ids_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_cn_, &other->_impl_.participant_name_cn_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_en_, &other->_impl_.participant_name_en_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_hk_, &other->_impl_.participant_name_hk_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_cn_, lhs_arena,
+                                       &other->_impl_.participant_name_cn_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_en_, lhs_arena,
+                                       &other->_impl_.participant_name_en_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.participant_name_hk_, lhs_arena,
+                                       &other->_impl_.participant_name_hk_, rhs_arena);
 }
 
 ::google::protobuf::Metadata ParticipantInfo::GetMetadata() const {
@@ -9833,34 +10547,38 @@ SecurityTradeRequest::SecurityTradeRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityTradeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityTradeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityTradeRequest::SecurityTradeRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityTradeRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityTradeRequest::SecurityTradeRequest(const SecurityTradeRequest& from) : ::google::protobuf::Message() {
   SecurityTradeRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.count_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.count_ = from._impl_.count_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.count_ = from._impl_.count_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityTradeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityTradeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityTradeRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.count_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.count_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityTradeRequest::~SecurityTradeRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityTradeRequest)
@@ -9868,14 +10586,15 @@ SecurityTradeRequest::~SecurityTradeRequest() {
   SharedDtor();
 }
 inline void SecurityTradeRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityTradeRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityTradeRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityTradeRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9986,12 +10705,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 56, 2> SecurityTradeRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityTradeRequest::_class_data_ = {
-    SecurityTradeRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityTradeRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityTradeRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityTradeRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityTradeRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityTradeRequest*>(&to_msg);
@@ -10021,15 +10739,13 @@ PROTOBUF_NOINLINE bool SecurityTradeRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityTradeRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityTradeRequest::InternalSwap(SecurityTradeRequest* PROTOBUF_RESTRICT other) {
+void SecurityTradeRequest::InternalSwap(SecurityTradeRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
         swap(_impl_.count_, other->_impl_.count_);
 }
 
@@ -10049,34 +10765,37 @@ SecurityTradeResponse::SecurityTradeResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityTradeResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityTradeResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : trades_{visibility, arena, from.trades_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityTradeResponse::SecurityTradeResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityTradeResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityTradeResponse::SecurityTradeResponse(const SecurityTradeResponse& from) : ::google::protobuf::Message() {
   SecurityTradeResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trades_){from._impl_.trades_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityTradeResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityTradeResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : trades_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityTradeResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trades_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityTradeResponse::~SecurityTradeResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityTradeResponse)
@@ -10084,19 +10803,21 @@ SecurityTradeResponse::~SecurityTradeResponse() {
   SharedDtor();
 }
 inline void SecurityTradeResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.trades_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityTradeResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityTradeResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityTradeResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.trades_.Clear();
+  _internal_mutable_trades()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -10203,12 +10924,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 57, 2> SecurityTradeResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityTradeResponse::_class_data_ = {
-    SecurityTradeResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityTradeResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityTradeResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityTradeResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityTradeResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityTradeResponse*>(&to_msg);
@@ -10218,8 +10938,7 @@ void SecurityTradeResponse::MergeImpl(::google::protobuf::Message& to_msg, const
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_trades()->MergeFrom(
-      from._internal_trades());
+  _this->_internal_mutable_trades()->MergeFrom(from._internal_trades());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -10237,16 +10956,14 @@ PROTOBUF_NOINLINE bool SecurityTradeResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityTradeResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityTradeResponse::InternalSwap(SecurityTradeResponse* PROTOBUF_RESTRICT other) {
+void SecurityTradeResponse::InternalSwap(SecurityTradeResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.trades_.InternalSwap(&other->_impl_.trades_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityTradeResponse::GetMetadata() const {
@@ -10265,47 +10982,59 @@ Trade::Trade(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.Trade)
 }
-inline PROTOBUF_NDEBUG_INLINE Trade::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : price_(arena, from.price_),
-        trade_type_(arena, from.trade_type_),
-        _cached_size_{0} {}
-
-Trade::Trade(
-    ::google::protobuf::Arena* arena,
-    const Trade& from)
-    : ::google::protobuf::Message(arena) {
+Trade::Trade(const Trade& from) : ::google::protobuf::Message() {
   Trade* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.trade_type_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.direction_){},
+      decltype(_impl_.trade_session_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, volume_),
-           offsetof(Impl_, trade_session_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::trade_session_));
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_price().empty()) {
+    _this->_impl_.price_.Set(from._internal_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.trade_type_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.trade_type_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_trade_type().empty()) {
+    _this->_impl_.trade_type_.Set(from._internal_trade_type(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_session_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.trade_session_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.Trade)
 }
-inline PROTOBUF_NDEBUG_INLINE Trade::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : price_(arena),
-        trade_type_(arena),
-        _cached_size_{0} {}
-
 inline void Trade::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           0,
-           offsetof(Impl_, trade_session_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::trade_session_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.trade_type_){},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.direction_){0},
+      decltype(_impl_.trade_session_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.trade_type_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.trade_type_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Trade::~Trade() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.Trade)
@@ -10313,15 +11042,16 @@ Trade::~Trade() {
   SharedDtor();
 }
 inline void Trade::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.price_.Destroy();
   _impl_.trade_type_.Destroy();
-  _impl_.~Impl_();
+}
+void Trade::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Trade::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.Trade)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -10515,12 +11245,11 @@ const ::_pbi::TcParseTable<3, 6, 0, 50, 2> Trade::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Trade::_class_data_ = {
-    Trade::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Trade::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Trade::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Trade::GetClassData() const { return &_class_data_; }
+
 
 void Trade::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Trade*>(&to_msg);
@@ -10562,16 +11291,15 @@ PROTOBUF_NOINLINE bool Trade::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Trade::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Trade::InternalSwap(Trade* PROTOBUF_RESTRICT other) {
+void Trade::InternalSwap(Trade* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, &other->_impl_.price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.trade_type_, &other->_impl_.trade_type_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, lhs_arena,
+                                       &other->_impl_.price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.trade_type_, lhs_arena,
+                                       &other->_impl_.trade_type_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Trade, _impl_.trade_session_)
       + sizeof(Trade::_impl_.trade_session_)
@@ -10596,32 +11324,38 @@ SecurityIntradayRequest::SecurityIntradayRequest(::google::protobuf::Arena* aren
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityIntradayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityIntradayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityIntradayRequest::SecurityIntradayRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityIntradayRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityIntradayRequest::SecurityIntradayRequest(const SecurityIntradayRequest& from) : ::google::protobuf::Message() {
   SecurityIntradayRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.trade_session_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.trade_session_ = from._impl_.trade_session_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityIntradayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityIntradayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityIntradayRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.trade_session_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityIntradayRequest::~SecurityIntradayRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityIntradayRequest)
@@ -10629,19 +11363,21 @@ SecurityIntradayRequest::~SecurityIntradayRequest() {
   SharedDtor();
 }
 inline void SecurityIntradayRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityIntradayRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityIntradayRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityIntradayRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.symbol_.ClearToEmpty();
+  _impl_.trade_session_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -10653,20 +11389,23 @@ const char* SecurityIntradayRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 59, 2> SecurityIntradayRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 59, 2> SecurityIntradayRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_SecurityIntradayRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
+    // int32 trade_session = 2 [json_name = "tradeSession"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityIntradayRequest, _impl_.trade_session_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityIntradayRequest, _impl_.trade_session_)}},
     // string symbol = 1 [json_name = "symbol"];
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityIntradayRequest, _impl_.symbol_)}},
@@ -10676,6 +11415,9 @@ const ::_pbi::TcParseTable<0, 1, 0, 59, 2> SecurityIntradayRequest::_table_ = {
     // string symbol = 1 [json_name = "symbol"];
     {PROTOBUF_FIELD_OFFSET(SecurityIntradayRequest, _impl_.symbol_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int32 trade_session = 2 [json_name = "tradeSession"];
+    {PROTOBUF_FIELD_OFFSET(SecurityIntradayRequest, _impl_.trade_session_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
   }},
   // no aux_entries
   {{
@@ -10698,6 +11440,13 @@ const ::_pbi::TcParseTable<0, 1, 0, 59, 2> SecurityIntradayRequest::_table_ = {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
         _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "longportapp.quote.v1.SecurityIntradayRequest.symbol");
     target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // int32 trade_session = 2 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<2>(
+            stream, this->_internal_trade_session(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -10723,16 +11472,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 59, 2> SecurityIntradayRequest::_table_ = {
                                     this->_internal_symbol());
   }
 
+  // int32 trade_session = 2 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_trade_session());
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::google::protobuf::Message::ClassData SecurityIntradayRequest::_class_data_ = {
-    SecurityIntradayRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityIntradayRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityIntradayRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityIntradayRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityIntradayRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityIntradayRequest*>(&to_msg);
@@ -10744,6 +11498,9 @@ void SecurityIntradayRequest::MergeImpl(::google::protobuf::Message& to_msg, con
 
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
+  }
+  if (from._internal_trade_session() != 0) {
+    _this->_internal_set_trade_session(from._internal_trade_session());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -10759,15 +11516,14 @@ PROTOBUF_NOINLINE bool SecurityIntradayRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityIntradayRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityIntradayRequest::InternalSwap(SecurityIntradayRequest* PROTOBUF_RESTRICT other) {
+void SecurityIntradayRequest::InternalSwap(SecurityIntradayRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+        swap(_impl_.trade_session_, other->_impl_.trade_session_);
 }
 
 ::google::protobuf::Metadata SecurityIntradayRequest::GetMetadata() const {
@@ -10786,34 +11542,37 @@ SecurityIntradayResponse::SecurityIntradayResponse(::google::protobuf::Arena* ar
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityIntradayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityIntradayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : lines_{visibility, arena, from.lines_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityIntradayResponse::SecurityIntradayResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityIntradayResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityIntradayResponse::SecurityIntradayResponse(const SecurityIntradayResponse& from) : ::google::protobuf::Message() {
   SecurityIntradayResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lines_){from._impl_.lines_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityIntradayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityIntradayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : lines_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityIntradayResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lines_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityIntradayResponse::~SecurityIntradayResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityIntradayResponse)
@@ -10821,19 +11580,21 @@ SecurityIntradayResponse::~SecurityIntradayResponse() {
   SharedDtor();
 }
 inline void SecurityIntradayResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.lines_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityIntradayResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityIntradayResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityIntradayResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.lines_.Clear();
+  _internal_mutable_lines()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -10940,12 +11701,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 60, 2> SecurityIntradayResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityIntradayResponse::_class_data_ = {
-    SecurityIntradayResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityIntradayResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityIntradayResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityIntradayResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityIntradayResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityIntradayResponse*>(&to_msg);
@@ -10955,8 +11715,7 @@ void SecurityIntradayResponse::MergeImpl(::google::protobuf::Message& to_msg, co
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_lines()->MergeFrom(
-      from._internal_lines());
+  _this->_internal_mutable_lines()->MergeFrom(from._internal_lines());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -10974,16 +11733,14 @@ PROTOBUF_NOINLINE bool SecurityIntradayResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityIntradayResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityIntradayResponse::InternalSwap(SecurityIntradayResponse* PROTOBUF_RESTRICT other) {
+void SecurityIntradayResponse::InternalSwap(SecurityIntradayResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.lines_.InternalSwap(&other->_impl_.lines_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityIntradayResponse::GetMetadata() const {
@@ -11002,49 +11759,68 @@ Line::Line(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.Line)
 }
-inline PROTOBUF_NDEBUG_INLINE Line::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : price_(arena, from.price_),
-        turnover_(arena, from.turnover_),
-        avg_price_(arena, from.avg_price_),
-        _cached_size_{0} {}
-
-Line::Line(
-    ::google::protobuf::Arena* arena,
-    const Line& from)
-    : ::google::protobuf::Message(arena) {
+Line::Line(const Line& from) : ::google::protobuf::Message() {
   Line* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.avg_price_){},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, timestamp_),
-           offsetof(Impl_, volume_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::volume_));
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_price().empty()) {
+    _this->_impl_.price_.Set(from._internal_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  _impl_.avg_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.avg_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_avg_price().empty()) {
+    _this->_impl_.avg_price_.Set(from._internal_avg_price(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.volume_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.volume_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.Line)
 }
-inline PROTOBUF_NDEBUG_INLINE Line::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : price_(arena),
-        turnover_(arena),
-        avg_price_(arena),
-        _cached_size_{0} {}
-
 inline void Line::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, timestamp_),
-           0,
-           offsetof(Impl_, volume_) -
-               offsetof(Impl_, timestamp_) +
-               sizeof(Impl_::volume_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.avg_price_){},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.avg_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.avg_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Line::~Line() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.Line)
@@ -11052,16 +11828,17 @@ Line::~Line() {
   SharedDtor();
 }
 inline void Line::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.price_.Destroy();
   _impl_.turnover_.Destroy();
   _impl_.avg_price_.Destroy();
-  _impl_.~Impl_();
+}
+void Line::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Line::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.Line)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -11240,12 +12017,11 @@ const ::_pbi::TcParseTable<3, 5, 0, 56, 2> Line::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Line::_class_data_ = {
-    Line::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Line::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Line::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Line::GetClassData() const { return &_class_data_; }
+
 
 void Line::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Line*>(&to_msg);
@@ -11284,17 +12060,17 @@ PROTOBUF_NOINLINE bool Line::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Line::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Line::InternalSwap(Line* PROTOBUF_RESTRICT other) {
+void Line::InternalSwap(Line* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, &other->_impl_.price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.avg_price_, &other->_impl_.avg_price_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, lhs_arena,
+                                       &other->_impl_.price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.avg_price_, lhs_arena,
+                                       &other->_impl_.avg_price_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Line, _impl_.volume_)
       + sizeof(Line::_impl_.volume_)
@@ -11319,45 +12095,46 @@ SecurityCandlestickRequest::SecurityCandlestickRequest(::google::protobuf::Arena
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityCandlestickRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCandlestickRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityCandlestickRequest::SecurityCandlestickRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityCandlestickRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityCandlestickRequest::SecurityCandlestickRequest(const SecurityCandlestickRequest& from) : ::google::protobuf::Message() {
   SecurityCandlestickRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.period_){},
+      decltype(_impl_.count_){},
+      decltype(_impl_.adjust_type_){},
+      decltype(_impl_.trade_session_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, period_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, period_),
-           offsetof(Impl_, adjust_type_) -
-               offsetof(Impl_, period_) +
-               sizeof(Impl_::adjust_type_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.period_, &from._impl_.period_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_session_) -
+    reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.trade_session_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityCandlestickRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCandlestickRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityCandlestickRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, period_),
-           0,
-           offsetof(Impl_, adjust_type_) -
-               offsetof(Impl_, period_) +
-               sizeof(Impl_::adjust_type_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.period_){0},
+      decltype(_impl_.count_){0},
+      decltype(_impl_.adjust_type_){0},
+      decltype(_impl_.trade_session_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityCandlestickRequest::~SecurityCandlestickRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityCandlestickRequest)
@@ -11365,22 +12142,23 @@ SecurityCandlestickRequest::~SecurityCandlestickRequest() {
   SharedDtor();
 }
 inline void SecurityCandlestickRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityCandlestickRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityCandlestickRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityCandlestickRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.symbol_.ClearToEmpty();
   ::memset(&_impl_.period_, 0, static_cast<::size_t>(
-      reinterpret_cast<char*>(&_impl_.adjust_type_) -
-      reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.adjust_type_));
+      reinterpret_cast<char*>(&_impl_.trade_session_) -
+      reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.trade_session_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -11392,23 +12170,21 @@ const char* SecurityCandlestickRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 0, 62, 2> SecurityCandlestickRequest::_table_ = {
+const ::_pbi::TcParseTable<3, 5, 0, 62, 2> SecurityCandlestickRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    4, 24,  // max_field_number, fast_idx_mask
+    5, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967280,  // skipmap
+    4294967264,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    4,  // num_field_entries
+    5,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_SecurityCandlestickRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // .longportapp.quote.v1.AdjustType adjust_type = 4 [json_name = "adjustType"];
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityCandlestickRequest, _impl_.adjust_type_), 63>(),
-     {32, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.adjust_type_)}},
+    {::_pbi::TcParser::MiniParse, {}},
     // string symbol = 1 [json_name = "symbol"];
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.symbol_)}},
@@ -11418,6 +12194,14 @@ const ::_pbi::TcParseTable<2, 4, 0, 62, 2> SecurityCandlestickRequest::_table_ =
     // int32 count = 3 [json_name = "count"];
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityCandlestickRequest, _impl_.count_), 63>(),
      {24, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.count_)}},
+    // .longportapp.quote.v1.AdjustType adjust_type = 4 [json_name = "adjustType"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityCandlestickRequest, _impl_.adjust_type_), 63>(),
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.adjust_type_)}},
+    // int32 trade_session = 5 [json_name = "tradeSession"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityCandlestickRequest, _impl_.trade_session_), 63>(),
+     {40, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.trade_session_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
@@ -11433,6 +12217,9 @@ const ::_pbi::TcParseTable<2, 4, 0, 62, 2> SecurityCandlestickRequest::_table_ =
     // .longportapp.quote.v1.AdjustType adjust_type = 4 [json_name = "adjustType"];
     {PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.adjust_type_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // int32 trade_session = 5 [json_name = "tradeSession"];
+    {PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.trade_session_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
   }},
   // no aux_entries
   {{
@@ -11478,6 +12265,13 @@ const ::_pbi::TcParseTable<2, 4, 0, 62, 2> SecurityCandlestickRequest::_table_ =
         4, this->_internal_adjust_type(), target);
   }
 
+  // int32 trade_session = 5 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<5>(
+            stream, this->_internal_trade_session(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target =
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
@@ -11519,16 +12313,21 @@ const ::_pbi::TcParseTable<2, 4, 0, 62, 2> SecurityCandlestickRequest::_table_ =
                   ::_pbi::WireFormatLite::EnumSize(this->_internal_adjust_type());
   }
 
+  // int32 trade_session = 5 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_trade_session());
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::google::protobuf::Message::ClassData SecurityCandlestickRequest::_class_data_ = {
-    SecurityCandlestickRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityCandlestickRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityCandlestickRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityCandlestickRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityCandlestickRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityCandlestickRequest*>(&to_msg);
@@ -11550,6 +12349,9 @@ void SecurityCandlestickRequest::MergeImpl(::google::protobuf::Message& to_msg, 
   if (from._internal_adjust_type() != 0) {
     _this->_internal_set_adjust_type(from._internal_adjust_type());
   }
+  if (from._internal_trade_session() != 0) {
+    _this->_internal_set_trade_session(from._internal_trade_session());
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -11564,18 +12366,16 @@ PROTOBUF_NOINLINE bool SecurityCandlestickRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityCandlestickRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityCandlestickRequest::InternalSwap(SecurityCandlestickRequest* PROTOBUF_RESTRICT other) {
+void SecurityCandlestickRequest::InternalSwap(SecurityCandlestickRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.adjust_type_)
-      + sizeof(SecurityCandlestickRequest::_impl_.adjust_type_)
+      PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.trade_session_)
+      + sizeof(SecurityCandlestickRequest::_impl_.trade_session_)
       - PROTOBUF_FIELD_OFFSET(SecurityCandlestickRequest, _impl_.period_)>(
           reinterpret_cast<char*>(&_impl_.period_),
           reinterpret_cast<char*>(&other->_impl_.period_));
@@ -11597,34 +12397,37 @@ SecurityCandlestickResponse::SecurityCandlestickResponse(::google::protobuf::Are
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityCandlestickResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCandlestickResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : candlesticks_{visibility, arena, from.candlesticks_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SecurityCandlestickResponse::SecurityCandlestickResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityCandlestickResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityCandlestickResponse::SecurityCandlestickResponse(const SecurityCandlestickResponse& from) : ::google::protobuf::Message() {
   SecurityCandlestickResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.candlesticks_){from._impl_.candlesticks_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityCandlestickResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCandlestickResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : candlesticks_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityCandlestickResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.candlesticks_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityCandlestickResponse::~SecurityCandlestickResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityCandlestickResponse)
@@ -11632,19 +12435,21 @@ SecurityCandlestickResponse::~SecurityCandlestickResponse() {
   SharedDtor();
 }
 inline void SecurityCandlestickResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.candlesticks_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityCandlestickResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityCandlestickResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityCandlestickResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.candlesticks_.Clear();
+  _internal_mutable_candlesticks()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -11751,12 +12556,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 63, 2> SecurityCandlestickResponse::_table_ 
 }
 
 const ::google::protobuf::Message::ClassData SecurityCandlestickResponse::_class_data_ = {
-    SecurityCandlestickResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityCandlestickResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityCandlestickResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityCandlestickResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityCandlestickResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityCandlestickResponse*>(&to_msg);
@@ -11766,8 +12570,7 @@ void SecurityCandlestickResponse::MergeImpl(::google::protobuf::Message& to_msg,
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_candlesticks()->MergeFrom(
-      from._internal_candlesticks());
+  _this->_internal_mutable_candlesticks()->MergeFrom(from._internal_candlesticks());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -11785,16 +12588,14 @@ PROTOBUF_NOINLINE bool SecurityCandlestickResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityCandlestickResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityCandlestickResponse::InternalSwap(SecurityCandlestickResponse* PROTOBUF_RESTRICT other) {
+void SecurityCandlestickResponse::InternalSwap(SecurityCandlestickResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.candlesticks_.InternalSwap(&other->_impl_.candlesticks_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityCandlestickResponse::GetMetadata() const {
@@ -11813,53 +12614,96 @@ Candlestick::Candlestick(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.Candlestick)
 }
-inline PROTOBUF_NDEBUG_INLINE Candlestick::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : close_(arena, from.close_),
-        open_(arena, from.open_),
-        low_(arena, from.low_),
-        high_(arena, from.high_),
-        turnover_(arena, from.turnover_),
-        _cached_size_{0} {}
-
-Candlestick::Candlestick(
-    ::google::protobuf::Arena* arena,
-    const Candlestick& from)
-    : ::google::protobuf::Message(arena) {
+Candlestick::Candlestick(const Candlestick& from) : ::google::protobuf::Message() {
   Candlestick* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.trade_session_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, volume_),
-           offsetof(Impl_, timestamp_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::timestamp_));
+  _impl_.close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_close().empty()) {
+    _this->_impl_.close_.Set(from._internal_close(), _this->GetArenaForAllocation());
+  }
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_open().empty()) {
+    _this->_impl_.open_.Set(from._internal_open(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_session_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.trade_session_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.Candlestick)
 }
-inline PROTOBUF_NDEBUG_INLINE Candlestick::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : close_(arena),
-        open_(arena),
-        low_(arena),
-        high_(arena),
-        turnover_(arena),
-        _cached_size_{0} {}
-
 inline void Candlestick::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           0,
-           offsetof(Impl_, timestamp_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::timestamp_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.close_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.trade_session_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.close_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.close_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Candlestick::~Candlestick() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.Candlestick)
@@ -11867,18 +12711,19 @@ Candlestick::~Candlestick() {
   SharedDtor();
 }
 inline void Candlestick::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.close_.Destroy();
   _impl_.open_.Destroy();
   _impl_.low_.Destroy();
   _impl_.high_.Destroy();
   _impl_.turnover_.Destroy();
-  _impl_.~Impl_();
+}
+void Candlestick::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Candlestick::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.Candlestick)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -11889,8 +12734,8 @@ PROTOBUF_NOINLINE void Candlestick::Clear() {
   _impl_.high_.ClearToEmpty();
   _impl_.turnover_.ClearToEmpty();
   ::memset(&_impl_.volume_, 0, static_cast<::size_t>(
-      reinterpret_cast<char*>(&_impl_.timestamp_) -
-      reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.timestamp_));
+      reinterpret_cast<char*>(&_impl_.trade_session_) -
+      reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.trade_session_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -11902,21 +12747,23 @@ const char* Candlestick::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<3, 7, 0, 65, 2> Candlestick::_table_ = {
+const ::_pbi::TcParseTable<3, 8, 0, 73, 2> Candlestick::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    7, 56,  // max_field_number, fast_idx_mask
+    8, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967168,  // skipmap
+    4294967040,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    7,  // num_field_entries
+    8,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_Candlestick_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
+    // .longportapp.quote.v1.TradeSession trade_session = 8 [json_name = "tradeSession"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(Candlestick, _impl_.trade_session_), 63>(),
+     {64, 63, 0, PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.trade_session_)}},
     // string close = 1 [json_name = "close"];
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.close_)}},
@@ -11962,10 +12809,13 @@ const ::_pbi::TcParseTable<3, 7, 0, 65, 2> Candlestick::_table_ = {
     // int64 timestamp = 7 [json_name = "timestamp"];
     {PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.timestamp_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // .longportapp.quote.v1.TradeSession trade_session = 8 [json_name = "tradeSession"];
+    {PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.trade_session_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
   }},
   // no aux_entries
   {{
-    "\40\5\4\3\4\0\10\0"
+    "\40\5\4\3\4\0\10\0\0\0\0\0\0\0\0\0"
     "longportapp.quote.v1.Candlestick"
     "close"
     "open"
@@ -12036,6 +12886,13 @@ const ::_pbi::TcParseTable<3, 7, 0, 65, 2> Candlestick::_table_ = {
             stream, this->_internal_timestamp(), target);
   }
 
+  // .longportapp.quote.v1.TradeSession trade_session = 8 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+        8, this->_internal_trade_session(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target =
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
@@ -12095,16 +12952,21 @@ const ::_pbi::TcParseTable<3, 7, 0, 65, 2> Candlestick::_table_ = {
         this->_internal_timestamp());
   }
 
+  // .longportapp.quote.v1.TradeSession trade_session = 8 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    total_size += 1 +
+                  ::_pbi::WireFormatLite::EnumSize(this->_internal_trade_session());
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::google::protobuf::Message::ClassData Candlestick::_class_data_ = {
-    Candlestick::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Candlestick::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Candlestick::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Candlestick::GetClassData() const { return &_class_data_; }
+
 
 void Candlestick::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Candlestick*>(&to_msg);
@@ -12135,6 +12997,9 @@ void Candlestick::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   if (from._internal_timestamp() != 0) {
     _this->_internal_set_timestamp(from._internal_timestamp());
   }
+  if (from._internal_trade_session() != 0) {
+    _this->_internal_set_trade_session(from._internal_trade_session());
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -12149,22 +13014,24 @@ PROTOBUF_NOINLINE bool Candlestick::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Candlestick::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Candlestick::InternalSwap(Candlestick* PROTOBUF_RESTRICT other) {
+void Candlestick::InternalSwap(Candlestick* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.close_, &other->_impl_.close_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, &other->_impl_.open_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.close_, lhs_arena,
+                                       &other->_impl_.close_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, lhs_arena,
+                                       &other->_impl_.open_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.timestamp_)
-      + sizeof(Candlestick::_impl_.timestamp_)
+      PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.trade_session_)
+      + sizeof(Candlestick::_impl_.trade_session_)
       - PROTOBUF_FIELD_OFFSET(Candlestick, _impl_.volume_)>(
           reinterpret_cast<char*>(&_impl_.volume_),
           reinterpret_cast<char*>(&other->_impl_.volume_));
@@ -12186,32 +13053,24 @@ OptionChainDateListResponse::OptionChainDateListResponse(::google::protobuf::Are
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionChainDateListResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateListResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : expiry_date_{visibility, arena, from.expiry_date_},
-        _cached_size_{0} {}
-
-OptionChainDateListResponse::OptionChainDateListResponse(
-    ::google::protobuf::Arena* arena,
-    const OptionChainDateListResponse& from)
-    : ::google::protobuf::Message(arena) {
+OptionChainDateListResponse::OptionChainDateListResponse(const OptionChainDateListResponse& from) : ::google::protobuf::Message() {
   OptionChainDateListResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.expiry_date_){from._impl_.expiry_date_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionChainDateListResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateListResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : expiry_date_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void OptionChainDateListResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.expiry_date_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 OptionChainDateListResponse::~OptionChainDateListResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionChainDateListResponse)
@@ -12219,18 +13078,20 @@ OptionChainDateListResponse::~OptionChainDateListResponse() {
   SharedDtor();
 }
 inline void OptionChainDateListResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_expiry_date()->~RepeatedPtrField();
+}
+void OptionChainDateListResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionChainDateListResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionChainDateListResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.expiry_date_.Clear();
+  _internal_mutable_expiry_date()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -12316,12 +13177,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 68, 2> OptionChainDateListResponse::_table_ 
 }
 
 const ::google::protobuf::Message::ClassData OptionChainDateListResponse::_class_data_ = {
-    OptionChainDateListResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionChainDateListResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionChainDateListResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionChainDateListResponse::GetClassData() const { return &_class_data_; }
+
 
 void OptionChainDateListResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionChainDateListResponse*>(&to_msg);
@@ -12346,10 +13206,7 @@ PROTOBUF_NOINLINE bool OptionChainDateListResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* OptionChainDateListResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionChainDateListResponse::InternalSwap(OptionChainDateListResponse* PROTOBUF_RESTRICT other) {
+void OptionChainDateListResponse::InternalSwap(OptionChainDateListResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.expiry_date_.InternalSwap(&other->_impl_.expiry_date_);
@@ -12371,34 +13228,48 @@ OptionChainDateStrikeInfoRequest::OptionChainDateStrikeInfoRequest(::google::pro
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionChainDateStrikeInfoRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateStrikeInfoRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        expiry_date_(arena, from.expiry_date_),
-        _cached_size_{0} {}
-
-OptionChainDateStrikeInfoRequest::OptionChainDateStrikeInfoRequest(
-    ::google::protobuf::Arena* arena,
-    const OptionChainDateStrikeInfoRequest& from)
-    : ::google::protobuf::Message(arena) {
+OptionChainDateStrikeInfoRequest::OptionChainDateStrikeInfoRequest(const OptionChainDateStrikeInfoRequest& from) : ::google::protobuf::Message() {
   OptionChainDateStrikeInfoRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.expiry_date_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    _this->_impl_.expiry_date_.Set(from._internal_expiry_date(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionChainDateStrikeInfoRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateStrikeInfoRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        expiry_date_(arena),
-        _cached_size_{0} {}
-
 inline void OptionChainDateStrikeInfoRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.expiry_date_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 OptionChainDateStrikeInfoRequest::~OptionChainDateStrikeInfoRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionChainDateStrikeInfoRequest)
@@ -12406,15 +13277,16 @@ OptionChainDateStrikeInfoRequest::~OptionChainDateStrikeInfoRequest() {
   SharedDtor();
 }
 inline void OptionChainDateStrikeInfoRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.expiry_date_.Destroy();
-  _impl_.~Impl_();
+}
+void OptionChainDateStrikeInfoRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionChainDateStrikeInfoRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionChainDateStrikeInfoRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12527,12 +13399,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 79, 2> OptionChainDateStrikeInfoRequest::_ta
 }
 
 const ::google::protobuf::Message::ClassData OptionChainDateStrikeInfoRequest::_class_data_ = {
-    OptionChainDateStrikeInfoRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionChainDateStrikeInfoRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionChainDateStrikeInfoRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionChainDateStrikeInfoRequest::GetClassData() const { return &_class_data_; }
+
 
 void OptionChainDateStrikeInfoRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionChainDateStrikeInfoRequest*>(&to_msg);
@@ -12562,16 +13433,15 @@ PROTOBUF_NOINLINE bool OptionChainDateStrikeInfoRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* OptionChainDateStrikeInfoRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionChainDateStrikeInfoRequest::InternalSwap(OptionChainDateStrikeInfoRequest* PROTOBUF_RESTRICT other) {
+void OptionChainDateStrikeInfoRequest::InternalSwap(OptionChainDateStrikeInfoRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, &other->_impl_.expiry_date_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, lhs_arena,
+                                       &other->_impl_.expiry_date_, rhs_arena);
 }
 
 ::google::protobuf::Metadata OptionChainDateStrikeInfoRequest::GetMetadata() const {
@@ -12590,32 +13460,24 @@ OptionChainDateStrikeInfoResponse::OptionChainDateStrikeInfoResponse(::google::p
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.OptionChainDateStrikeInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateStrikeInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : strike_price_info_{visibility, arena, from.strike_price_info_},
-        _cached_size_{0} {}
-
-OptionChainDateStrikeInfoResponse::OptionChainDateStrikeInfoResponse(
-    ::google::protobuf::Arena* arena,
-    const OptionChainDateStrikeInfoResponse& from)
-    : ::google::protobuf::Message(arena) {
+OptionChainDateStrikeInfoResponse::OptionChainDateStrikeInfoResponse(const OptionChainDateStrikeInfoResponse& from) : ::google::protobuf::Message() {
   OptionChainDateStrikeInfoResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.strike_price_info_){from._impl_.strike_price_info_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.OptionChainDateStrikeInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE OptionChainDateStrikeInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : strike_price_info_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void OptionChainDateStrikeInfoResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.strike_price_info_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 OptionChainDateStrikeInfoResponse::~OptionChainDateStrikeInfoResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.OptionChainDateStrikeInfoResponse)
@@ -12623,18 +13485,20 @@ OptionChainDateStrikeInfoResponse::~OptionChainDateStrikeInfoResponse() {
   SharedDtor();
 }
 inline void OptionChainDateStrikeInfoResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.strike_price_info_.~RepeatedPtrField();
+}
+void OptionChainDateStrikeInfoResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void OptionChainDateStrikeInfoResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.OptionChainDateStrikeInfoResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.strike_price_info_.Clear();
+  _internal_mutable_strike_price_info()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -12717,12 +13581,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> OptionChainDateStrikeInfoResponse::_ta
 }
 
 const ::google::protobuf::Message::ClassData OptionChainDateStrikeInfoResponse::_class_data_ = {
-    OptionChainDateStrikeInfoResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    OptionChainDateStrikeInfoResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* OptionChainDateStrikeInfoResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*OptionChainDateStrikeInfoResponse::GetClassData() const { return &_class_data_; }
+
 
 void OptionChainDateStrikeInfoResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<OptionChainDateStrikeInfoResponse*>(&to_msg);
@@ -12732,8 +13595,7 @@ void OptionChainDateStrikeInfoResponse::MergeImpl(::google::protobuf::Message& t
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_strike_price_info()->MergeFrom(
-      from._internal_strike_price_info());
+  _this->_internal_mutable_strike_price_info()->MergeFrom(from._internal_strike_price_info());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -12748,10 +13610,7 @@ PROTOBUF_NOINLINE bool OptionChainDateStrikeInfoResponse::IsInitialized() const 
   return true;
 }
 
-::_pbi::CachedSize* OptionChainDateStrikeInfoResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void OptionChainDateStrikeInfoResponse::InternalSwap(OptionChainDateStrikeInfoResponse* PROTOBUF_RESTRICT other) {
+void OptionChainDateStrikeInfoResponse::InternalSwap(OptionChainDateStrikeInfoResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.strike_price_info_.InternalSwap(&other->_impl_.strike_price_info_);
@@ -12773,38 +13632,64 @@ StrikePriceInfo::StrikePriceInfo(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.StrikePriceInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE StrikePriceInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : price_(arena, from.price_),
-        call_symbol_(arena, from.call_symbol_),
-        put_symbol_(arena, from.put_symbol_),
-        _cached_size_{0} {}
-
-StrikePriceInfo::StrikePriceInfo(
-    ::google::protobuf::Arena* arena,
-    const StrikePriceInfo& from)
-    : ::google::protobuf::Message(arena) {
+StrikePriceInfo::StrikePriceInfo(const StrikePriceInfo& from) : ::google::protobuf::Message() {
   StrikePriceInfo* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.call_symbol_){},
+      decltype(_impl_.put_symbol_){},
+      decltype(_impl_.standard_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.standard_ = from._impl_.standard_;
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_price().empty()) {
+    _this->_impl_.price_.Set(from._internal_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.call_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_call_symbol().empty()) {
+    _this->_impl_.call_symbol_.Set(from._internal_call_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.put_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.put_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_put_symbol().empty()) {
+    _this->_impl_.put_symbol_.Set(from._internal_put_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.standard_ = from._impl_.standard_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.StrikePriceInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE StrikePriceInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : price_(arena),
-        call_symbol_(arena),
-        put_symbol_(arena),
-        _cached_size_{0} {}
-
 inline void StrikePriceInfo::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.standard_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.price_){},
+      decltype(_impl_.call_symbol_){},
+      decltype(_impl_.put_symbol_){},
+      decltype(_impl_.standard_){false},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.call_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.put_symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.put_symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 StrikePriceInfo::~StrikePriceInfo() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.StrikePriceInfo)
@@ -12812,16 +13697,17 @@ StrikePriceInfo::~StrikePriceInfo() {
   SharedDtor();
 }
 inline void StrikePriceInfo::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.price_.Destroy();
   _impl_.call_symbol_.Destroy();
   _impl_.put_symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void StrikePriceInfo::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void StrikePriceInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.StrikePriceInfo)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12975,12 +13861,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 71, 2> StrikePriceInfo::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData StrikePriceInfo::_class_data_ = {
-    StrikePriceInfo::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    StrikePriceInfo::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* StrikePriceInfo::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*StrikePriceInfo::GetClassData() const { return &_class_data_; }
+
 
 void StrikePriceInfo::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<StrikePriceInfo*>(&to_msg);
@@ -13016,17 +13901,17 @@ PROTOBUF_NOINLINE bool StrikePriceInfo::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* StrikePriceInfo::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void StrikePriceInfo::InternalSwap(StrikePriceInfo* PROTOBUF_RESTRICT other) {
+void StrikePriceInfo::InternalSwap(StrikePriceInfo* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, &other->_impl_.price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_symbol_, &other->_impl_.call_symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.put_symbol_, &other->_impl_.put_symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.price_, lhs_arena,
+                                       &other->_impl_.price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_symbol_, lhs_arena,
+                                       &other->_impl_.call_symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.put_symbol_, lhs_arena,
+                                       &other->_impl_.put_symbol_, rhs_arena);
         swap(_impl_.standard_, other->_impl_.standard_);
 }
 
@@ -13046,32 +13931,24 @@ IssuerInfoResponse::IssuerInfoResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.IssuerInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE IssuerInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : issuer_info_{visibility, arena, from.issuer_info_},
-        _cached_size_{0} {}
-
-IssuerInfoResponse::IssuerInfoResponse(
-    ::google::protobuf::Arena* arena,
-    const IssuerInfoResponse& from)
-    : ::google::protobuf::Message(arena) {
+IssuerInfoResponse::IssuerInfoResponse(const IssuerInfoResponse& from) : ::google::protobuf::Message() {
   IssuerInfoResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.issuer_info_){from._impl_.issuer_info_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.IssuerInfoResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE IssuerInfoResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : issuer_info_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void IssuerInfoResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.issuer_info_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 IssuerInfoResponse::~IssuerInfoResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.IssuerInfoResponse)
@@ -13079,18 +13956,20 @@ IssuerInfoResponse::~IssuerInfoResponse() {
   SharedDtor();
 }
 inline void IssuerInfoResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.issuer_info_.~RepeatedPtrField();
+}
+void IssuerInfoResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void IssuerInfoResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.IssuerInfoResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.issuer_info_.Clear();
+  _internal_mutable_issuer_info()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -13173,12 +14052,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> IssuerInfoResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData IssuerInfoResponse::_class_data_ = {
-    IssuerInfoResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    IssuerInfoResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* IssuerInfoResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*IssuerInfoResponse::GetClassData() const { return &_class_data_; }
+
 
 void IssuerInfoResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<IssuerInfoResponse*>(&to_msg);
@@ -13188,8 +14066,7 @@ void IssuerInfoResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_issuer_info()->MergeFrom(
-      from._internal_issuer_info());
+  _this->_internal_mutable_issuer_info()->MergeFrom(from._internal_issuer_info());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -13204,10 +14081,7 @@ PROTOBUF_NOINLINE bool IssuerInfoResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* IssuerInfoResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void IssuerInfoResponse::InternalSwap(IssuerInfoResponse* PROTOBUF_RESTRICT other) {
+void IssuerInfoResponse::InternalSwap(IssuerInfoResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.issuer_info_.InternalSwap(&other->_impl_.issuer_info_);
@@ -13229,38 +14103,64 @@ IssuerInfo::IssuerInfo(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.IssuerInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE IssuerInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : name_cn_(arena, from.name_cn_),
-        name_en_(arena, from.name_en_),
-        name_hk_(arena, from.name_hk_),
-        _cached_size_{0} {}
-
-IssuerInfo::IssuerInfo(
-    ::google::protobuf::Arena* arena,
-    const IssuerInfo& from)
-    : ::google::protobuf::Message(arena) {
+IssuerInfo::IssuerInfo(const IssuerInfo& from) : ::google::protobuf::Message() {
   IssuerInfo* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.name_cn_){},
+      decltype(_impl_.name_en_){},
+      decltype(_impl_.name_hk_){},
+      decltype(_impl_.id_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.id_ = from._impl_.id_;
+  _impl_.name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_cn().empty()) {
+    _this->_impl_.name_cn_.Set(from._internal_name_cn(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_en().empty()) {
+    _this->_impl_.name_en_.Set(from._internal_name_en(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name_hk().empty()) {
+    _this->_impl_.name_hk_.Set(from._internal_name_hk(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.id_ = from._impl_.id_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.IssuerInfo)
 }
-inline PROTOBUF_NDEBUG_INLINE IssuerInfo::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : name_cn_(arena),
-        name_en_(arena),
-        name_hk_(arena),
-        _cached_size_{0} {}
-
 inline void IssuerInfo::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.id_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.name_cn_){},
+      decltype(_impl_.name_en_){},
+      decltype(_impl_.name_hk_){},
+      decltype(_impl_.id_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.name_cn_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_cn_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_en_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_en_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_hk_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_hk_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 IssuerInfo::~IssuerInfo() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.IssuerInfo)
@@ -13268,16 +14168,17 @@ IssuerInfo::~IssuerInfo() {
   SharedDtor();
 }
 inline void IssuerInfo::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_cn_.Destroy();
   _impl_.name_en_.Destroy();
   _impl_.name_hk_.Destroy();
-  _impl_.~Impl_();
+}
+void IssuerInfo::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void IssuerInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.IssuerInfo)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -13432,12 +14333,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 61, 2> IssuerInfo::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData IssuerInfo::_class_data_ = {
-    IssuerInfo::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    IssuerInfo::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* IssuerInfo::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*IssuerInfo::GetClassData() const { return &_class_data_; }
+
 
 void IssuerInfo::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<IssuerInfo*>(&to_msg);
@@ -13473,17 +14373,17 @@ PROTOBUF_NOINLINE bool IssuerInfo::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* IssuerInfo::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void IssuerInfo::InternalSwap(IssuerInfo* PROTOBUF_RESTRICT other) {
+void IssuerInfo::InternalSwap(IssuerInfo* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_cn_, &other->_impl_.name_cn_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_en_, &other->_impl_.name_en_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_hk_, &other->_impl_.name_hk_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_cn_, lhs_arena,
+                                       &other->_impl_.name_cn_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_en_, lhs_arena,
+                                       &other->_impl_.name_en_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_hk_, lhs_arena,
+                                       &other->_impl_.name_hk_, rhs_arena);
         swap(_impl_.id_, other->_impl_.id_);
 }
 
@@ -13513,44 +14413,45 @@ WarrantFilterListRequest::WarrantFilterListRequest(::google::protobuf::Arena* ar
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.WarrantFilterListRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantFilterListRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_) {}
-
-WarrantFilterListRequest::WarrantFilterListRequest(
-    ::google::protobuf::Arena* arena,
-    const WarrantFilterListRequest& from)
-    : ::google::protobuf::Message(arena) {
+WarrantFilterListRequest::WarrantFilterListRequest(const WarrantFilterListRequest& from) : ::google::protobuf::Message() {
   WarrantFilterListRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.filter_config_){nullptr},
+      decltype(_impl_.language_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.filter_config_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::FilterConfig>(arena, *from._impl_.filter_config_)
-                : nullptr;
-  _impl_.language_ = from._impl_.language_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.filter_config_ = new ::longportapp::quote::v1::FilterConfig(*from._impl_.filter_config_);
+  }
+  _this->_impl_.language_ = from._impl_.language_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.WarrantFilterListRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantFilterListRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena) {}
-
 inline void WarrantFilterListRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, filter_config_),
-           0,
-           offsetof(Impl_, language_) -
-               offsetof(Impl_, filter_config_) +
-               sizeof(Impl_::language_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.filter_config_){nullptr},
+      decltype(_impl_.language_){0},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 WarrantFilterListRequest::~WarrantFilterListRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.WarrantFilterListRequest)
@@ -13558,15 +14459,16 @@ WarrantFilterListRequest::~WarrantFilterListRequest() {
   SharedDtor();
 }
 inline void WarrantFilterListRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  delete _impl_.filter_config_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.filter_config_;
+}
+void WarrantFilterListRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void WarrantFilterListRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.WarrantFilterListRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -13653,8 +14555,8 @@ const ::_pbi::TcParseTable<2, 3, 1, 60, 2> WarrantFilterListRequest::_table_ = {
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.FilterConfig filter_config = 2 [json_name = "filterConfig"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        2, _Internal::filter_config(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(2, _Internal::filter_config(this),
         _Internal::filter_config(this).GetCachedSize(), target, stream);
   }
 
@@ -13691,8 +14593,9 @@ const ::_pbi::TcParseTable<2, 3, 1, 60, 2> WarrantFilterListRequest::_table_ = {
   // .longportapp.quote.v1.FilterConfig filter_config = 2 [json_name = "filterConfig"];
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size +=
-        1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.filter_config_);
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *_impl_.filter_config_);
   }
 
   // int32 language = 3 [json_name = "language"];
@@ -13705,12 +14608,11 @@ const ::_pbi::TcParseTable<2, 3, 1, 60, 2> WarrantFilterListRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData WarrantFilterListRequest::_class_data_ = {
-    WarrantFilterListRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    WarrantFilterListRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* WarrantFilterListRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*WarrantFilterListRequest::GetClassData() const { return &_class_data_; }
+
 
 void WarrantFilterListRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<WarrantFilterListRequest*>(&to_msg);
@@ -13744,16 +14646,14 @@ PROTOBUF_NOINLINE bool WarrantFilterListRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* WarrantFilterListRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void WarrantFilterListRequest::InternalSwap(WarrantFilterListRequest* PROTOBUF_RESTRICT other) {
+void WarrantFilterListRequest::InternalSwap(WarrantFilterListRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(WarrantFilterListRequest, _impl_.language_)
       + sizeof(WarrantFilterListRequest::_impl_.language_)
@@ -13778,63 +14678,53 @@ FilterConfig::FilterConfig(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.FilterConfig)
 }
-inline PROTOBUF_NDEBUG_INLINE FilterConfig::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : type_{visibility, arena, from.type_},
-        _type_cached_byte_size_{0},
-        issuer_{visibility, arena, from.issuer_},
-        _issuer_cached_byte_size_{0},
-        expiry_date_{visibility, arena, from.expiry_date_},
-        _expiry_date_cached_byte_size_{0},
-        price_type_{visibility, arena, from.price_type_},
-        _price_type_cached_byte_size_{0},
-        status_{visibility, arena, from.status_},
-        _status_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-FilterConfig::FilterConfig(
-    ::google::protobuf::Arena* arena,
-    const FilterConfig& from)
-    : ::google::protobuf::Message(arena) {
+FilterConfig::FilterConfig(const FilterConfig& from) : ::google::protobuf::Message() {
   FilterConfig* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.type_){from._impl_.type_},
+      /* _impl_._type_cached_byte_size_ = */ {0},
+      decltype(_impl_.issuer_){from._impl_.issuer_},
+      /* _impl_._issuer_cached_byte_size_ = */ {0},
+      decltype(_impl_.expiry_date_){from._impl_.expiry_date_},
+      /* _impl_._expiry_date_cached_byte_size_ = */ {0},
+      decltype(_impl_.price_type_){from._impl_.price_type_},
+      /* _impl_._price_type_cached_byte_size_ = */ {0},
+      decltype(_impl_.status_){from._impl_.status_},
+      /* _impl_._status_cached_byte_size_ = */ {0},
+      decltype(_impl_.sort_by_){},
+      decltype(_impl_.sort_order_){},
+      decltype(_impl_.sort_offset_){},
+      decltype(_impl_.sort_count_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, sort_by_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, sort_by_),
-           offsetof(Impl_, sort_count_) -
-               offsetof(Impl_, sort_by_) +
-               sizeof(Impl_::sort_count_));
+  ::memcpy(&_impl_.sort_by_, &from._impl_.sort_by_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.sort_count_) -
+    reinterpret_cast<char*>(&_impl_.sort_by_)) + sizeof(_impl_.sort_count_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.FilterConfig)
 }
-inline PROTOBUF_NDEBUG_INLINE FilterConfig::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : type_{visibility, arena},
-        _type_cached_byte_size_{0},
-        issuer_{visibility, arena},
-        _issuer_cached_byte_size_{0},
-        expiry_date_{visibility, arena},
-        _expiry_date_cached_byte_size_{0},
-        price_type_{visibility, arena},
-        _price_type_cached_byte_size_{0},
-        status_{visibility, arena},
-        _status_cached_byte_size_{0},
-        _cached_size_{0} {}
-
 inline void FilterConfig::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, sort_by_),
-           0,
-           offsetof(Impl_, sort_count_) -
-               offsetof(Impl_, sort_by_) +
-               sizeof(Impl_::sort_count_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.type_){arena},
+      /* _impl_._type_cached_byte_size_ = */ {0},
+      decltype(_impl_.issuer_){arena},
+      /* _impl_._issuer_cached_byte_size_ = */ {0},
+      decltype(_impl_.expiry_date_){arena},
+      /* _impl_._expiry_date_cached_byte_size_ = */ {0},
+      decltype(_impl_.price_type_){arena},
+      /* _impl_._price_type_cached_byte_size_ = */ {0},
+      decltype(_impl_.status_){arena},
+      /* _impl_._status_cached_byte_size_ = */ {0},
+      decltype(_impl_.sort_by_){0},
+      decltype(_impl_.sort_order_){0},
+      decltype(_impl_.sort_offset_){0},
+      decltype(_impl_.sort_count_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 FilterConfig::~FilterConfig() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.FilterConfig)
@@ -13842,22 +14732,28 @@ FilterConfig::~FilterConfig() {
   SharedDtor();
 }
 inline void FilterConfig::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.type_.~RepeatedField();
+  _impl_.issuer_.~RepeatedField();
+  _impl_.expiry_date_.~RepeatedField();
+  _impl_.price_type_.~RepeatedField();
+  _impl_.status_.~RepeatedField();
+}
+void FilterConfig::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void FilterConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.FilterConfig)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.type_.Clear();
-  _impl_.issuer_.Clear();
-  _impl_.expiry_date_.Clear();
-  _impl_.price_type_.Clear();
-  _impl_.status_.Clear();
+  _internal_mutable_type()->Clear();
+  _internal_mutable_issuer()->Clear();
+  _internal_mutable_expiry_date()->Clear();
+  _internal_mutable_price_type()->Clear();
+  _internal_mutable_status()->Clear();
   ::memset(&_impl_.sort_by_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.sort_count_) -
       reinterpret_cast<char*>(&_impl_.sort_by_)) + sizeof(_impl_.sort_count_));
@@ -13995,8 +14891,8 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
   {
     int byte_size = _impl_._type_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          5, _internal_type(), byte_size, target);
+      target = stream->WriteInt32Packed(5, _internal_type(),
+                                                 byte_size, target);
     }
   }
 
@@ -14004,8 +14900,8 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
   {
     int byte_size = _impl_._issuer_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          6, _internal_issuer(), byte_size, target);
+      target = stream->WriteInt32Packed(6, _internal_issuer(),
+                                                 byte_size, target);
     }
   }
 
@@ -14013,8 +14909,8 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
   {
     int byte_size = _impl_._expiry_date_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          7, _internal_expiry_date(), byte_size, target);
+      target = stream->WriteInt32Packed(7, _internal_expiry_date(),
+                                                 byte_size, target);
     }
   }
 
@@ -14022,8 +14918,8 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
   {
     int byte_size = _impl_._price_type_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          8, _internal_price_type(), byte_size, target);
+      target = stream->WriteInt32Packed(8, _internal_price_type(),
+                                                 byte_size, target);
     }
   }
 
@@ -14031,8 +14927,8 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
   {
     int byte_size = _impl_._status_cached_byte_size_.Get();
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          9, _internal_status(), byte_size, target);
+      target = stream->WriteInt32Packed(9, _internal_status(),
+                                                 byte_size, target);
     }
   }
 
@@ -14146,12 +15042,11 @@ const ::_pbi::TcParseTable<4, 9, 0, 0, 2> FilterConfig::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData FilterConfig::_class_data_ = {
-    FilterConfig::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    FilterConfig::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* FilterConfig::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*FilterConfig::GetClassData() const { return &_class_data_; }
+
 
 void FilterConfig::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<FilterConfig*>(&to_msg);
@@ -14192,10 +15087,7 @@ PROTOBUF_NOINLINE bool FilterConfig::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* FilterConfig::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void FilterConfig::InternalSwap(FilterConfig* PROTOBUF_RESTRICT other) {
+void FilterConfig::InternalSwap(FilterConfig* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.type_.InternalSwap(&other->_impl_.type_);
@@ -14227,34 +15119,27 @@ WarrantFilterListResponse::WarrantFilterListResponse(::google::protobuf::Arena* 
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.WarrantFilterListResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantFilterListResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : warrant_list_{visibility, arena, from.warrant_list_},
-        _cached_size_{0} {}
-
-WarrantFilterListResponse::WarrantFilterListResponse(
-    ::google::protobuf::Arena* arena,
-    const WarrantFilterListResponse& from)
-    : ::google::protobuf::Message(arena) {
+WarrantFilterListResponse::WarrantFilterListResponse(const WarrantFilterListResponse& from) : ::google::protobuf::Message() {
   WarrantFilterListResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.warrant_list_){from._impl_.warrant_list_},
+      decltype(_impl_.total_count_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.total_count_ = from._impl_.total_count_;
+  _this->_impl_.total_count_ = from._impl_.total_count_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.WarrantFilterListResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE WarrantFilterListResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : warrant_list_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void WarrantFilterListResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.total_count_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.warrant_list_){arena},
+      decltype(_impl_.total_count_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 WarrantFilterListResponse::~WarrantFilterListResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.WarrantFilterListResponse)
@@ -14262,18 +15147,20 @@ WarrantFilterListResponse::~WarrantFilterListResponse() {
   SharedDtor();
 }
 inline void WarrantFilterListResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.warrant_list_.~RepeatedPtrField();
+}
+void WarrantFilterListResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void WarrantFilterListResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.WarrantFilterListResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.warrant_list_.Clear();
+  _internal_mutable_warrant_list()->Clear();
   _impl_.total_count_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -14376,12 +15263,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> WarrantFilterListResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData WarrantFilterListResponse::_class_data_ = {
-    WarrantFilterListResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    WarrantFilterListResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* WarrantFilterListResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*WarrantFilterListResponse::GetClassData() const { return &_class_data_; }
+
 
 void WarrantFilterListResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<WarrantFilterListResponse*>(&to_msg);
@@ -14391,8 +15277,7 @@ void WarrantFilterListResponse::MergeImpl(::google::protobuf::Message& to_msg, c
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_warrant_list()->MergeFrom(
-      from._internal_warrant_list());
+  _this->_internal_mutable_warrant_list()->MergeFrom(from._internal_warrant_list());
   if (from._internal_total_count() != 0) {
     _this->_internal_set_total_count(from._internal_total_count());
   }
@@ -14410,10 +15295,7 @@ PROTOBUF_NOINLINE bool WarrantFilterListResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* WarrantFilterListResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void WarrantFilterListResponse::InternalSwap(WarrantFilterListResponse* PROTOBUF_RESTRICT other) {
+void WarrantFilterListResponse::InternalSwap(WarrantFilterListResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.warrant_list_.InternalSwap(&other->_impl_.warrant_list_);
@@ -14436,87 +15318,317 @@ FilterWarrant::FilterWarrant(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.FilterWarrant)
 }
-inline PROTOBUF_NDEBUG_INLINE FilterWarrant::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        name_(arena, from.name_),
-        last_done_(arena, from.last_done_),
-        change_rate_(arena, from.change_rate_),
-        change_val_(arena, from.change_val_),
-        turnover_(arena, from.turnover_),
-        expiry_date_(arena, from.expiry_date_),
-        strike_price_(arena, from.strike_price_),
-        upper_strike_price_(arena, from.upper_strike_price_),
-        lower_strike_price_(arena, from.lower_strike_price_),
-        outstanding_qty_(arena, from.outstanding_qty_),
-        outstanding_ratio_(arena, from.outstanding_ratio_),
-        premium_(arena, from.premium_),
-        itm_otm_(arena, from.itm_otm_),
-        implied_volatility_(arena, from.implied_volatility_),
-        delta_(arena, from.delta_),
-        call_price_(arena, from.call_price_),
-        to_call_price_(arena, from.to_call_price_),
-        effective_leverage_(arena, from.effective_leverage_),
-        leverage_ratio_(arena, from.leverage_ratio_),
-        conversion_ratio_(arena, from.conversion_ratio_),
-        balance_point_(arena, from.balance_point_),
-        _cached_size_{0} {}
-
-FilterWarrant::FilterWarrant(
-    ::google::protobuf::Arena* arena,
-    const FilterWarrant& from)
-    : ::google::protobuf::Message(arena) {
+FilterWarrant::FilterWarrant(const FilterWarrant& from) : ::google::protobuf::Message() {
   FilterWarrant* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.name_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.change_rate_){},
+      decltype(_impl_.change_val_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.outstanding_qty_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.premium_){},
+      decltype(_impl_.itm_otm_){},
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.delta_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.to_call_price_){},
+      decltype(_impl_.effective_leverage_){},
+      decltype(_impl_.leverage_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.balance_point_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.status_){},
+      decltype(_impl_.type_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, volume_),
-           offsetof(Impl_, type_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::type_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name().empty()) {
+    _this->_impl_.name_.Set(from._internal_name(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_rate().empty()) {
+    _this->_impl_.change_rate_.Set(from._internal_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.change_val_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_val_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_val().empty()) {
+    _this->_impl_.change_val_.Set(from._internal_change_val(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    _this->_impl_.expiry_date_.Set(from._internal_expiry_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_strike_price().empty()) {
+    _this->_impl_.strike_price_.Set(from._internal_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_upper_strike_price().empty()) {
+    _this->_impl_.upper_strike_price_.Set(from._internal_upper_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_lower_strike_price().empty()) {
+    _this->_impl_.lower_strike_price_.Set(from._internal_lower_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.outstanding_qty_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_qty_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_outstanding_qty().empty()) {
+    _this->_impl_.outstanding_qty_.Set(from._internal_outstanding_qty(), _this->GetArenaForAllocation());
+  }
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_outstanding_ratio().empty()) {
+    _this->_impl_.outstanding_ratio_.Set(from._internal_outstanding_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.premium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.premium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_premium().empty()) {
+    _this->_impl_.premium_.Set(from._internal_premium(), _this->GetArenaForAllocation());
+  }
+  _impl_.itm_otm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.itm_otm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_itm_otm().empty()) {
+    _this->_impl_.itm_otm_.Set(from._internal_itm_otm(), _this->GetArenaForAllocation());
+  }
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_implied_volatility().empty()) {
+    _this->_impl_.implied_volatility_.Set(from._internal_implied_volatility(), _this->GetArenaForAllocation());
+  }
+  _impl_.delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_delta().empty()) {
+    _this->_impl_.delta_.Set(from._internal_delta(), _this->GetArenaForAllocation());
+  }
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_call_price().empty()) {
+    _this->_impl_.call_price_.Set(from._internal_call_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.to_call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.to_call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_to_call_price().empty()) {
+    _this->_impl_.to_call_price_.Set(from._internal_to_call_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.effective_leverage_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.effective_leverage_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_effective_leverage().empty()) {
+    _this->_impl_.effective_leverage_.Set(from._internal_effective_leverage(), _this->GetArenaForAllocation());
+  }
+  _impl_.leverage_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.leverage_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_leverage_ratio().empty()) {
+    _this->_impl_.leverage_ratio_.Set(from._internal_leverage_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_conversion_ratio().empty()) {
+    _this->_impl_.conversion_ratio_.Set(from._internal_conversion_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.balance_point_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.balance_point_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_balance_point().empty()) {
+    _this->_impl_.balance_point_.Set(from._internal_balance_point(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.type_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.type_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.FilterWarrant)
 }
-inline PROTOBUF_NDEBUG_INLINE FilterWarrant::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        name_(arena),
-        last_done_(arena),
-        change_rate_(arena),
-        change_val_(arena),
-        turnover_(arena),
-        expiry_date_(arena),
-        strike_price_(arena),
-        upper_strike_price_(arena),
-        lower_strike_price_(arena),
-        outstanding_qty_(arena),
-        outstanding_ratio_(arena),
-        premium_(arena),
-        itm_otm_(arena),
-        implied_volatility_(arena),
-        delta_(arena),
-        call_price_(arena),
-        to_call_price_(arena),
-        effective_leverage_(arena),
-        leverage_ratio_(arena),
-        conversion_ratio_(arena),
-        balance_point_(arena),
-        _cached_size_{0} {}
-
 inline void FilterWarrant::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           0,
-           offsetof(Impl_, type_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::type_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.name_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.change_rate_){},
+      decltype(_impl_.change_val_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.outstanding_qty_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.premium_){},
+      decltype(_impl_.itm_otm_){},
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.delta_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.to_call_price_){},
+      decltype(_impl_.effective_leverage_){},
+      decltype(_impl_.leverage_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.balance_point_){},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.status_){0},
+      decltype(_impl_.type_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.change_val_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_val_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.outstanding_qty_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_qty_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.premium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.premium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.itm_otm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.itm_otm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.to_call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.to_call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.effective_leverage_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.effective_leverage_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.leverage_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.leverage_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.balance_point_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.balance_point_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 FilterWarrant::~FilterWarrant() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.FilterWarrant)
@@ -14524,7 +15636,7 @@ FilterWarrant::~FilterWarrant() {
   SharedDtor();
 }
 inline void FilterWarrant::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.name_.Destroy();
   _impl_.last_done_.Destroy();
@@ -14547,12 +15659,13 @@ inline void FilterWarrant::SharedDtor() {
   _impl_.leverage_ratio_.Destroy();
   _impl_.conversion_ratio_.Destroy();
   _impl_.balance_point_.Destroy();
-  _impl_.~Impl_();
+}
+void FilterWarrant::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void FilterWarrant::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.FilterWarrant)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15172,12 +16285,11 @@ const ::_pbi::TcParseTable<5, 25, 0, 327, 2> FilterWarrant::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData FilterWarrant::_class_data_ = {
-    FilterWarrant::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    FilterWarrant::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* FilterWarrant::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*FilterWarrant::GetClassData() const { return &_class_data_; }
+
 
 void FilterWarrant::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<FilterWarrant*>(&to_msg);
@@ -15276,36 +16388,55 @@ PROTOBUF_NOINLINE bool FilterWarrant::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* FilterWarrant::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void FilterWarrant::InternalSwap(FilterWarrant* PROTOBUF_RESTRICT other) {
+void FilterWarrant::InternalSwap(FilterWarrant* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_rate_, &other->_impl_.change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_val_, &other->_impl_.change_val_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, &other->_impl_.expiry_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, &other->_impl_.strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, &other->_impl_.upper_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, &other->_impl_.lower_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_qty_, &other->_impl_.outstanding_qty_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, &other->_impl_.outstanding_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.premium_, &other->_impl_.premium_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.itm_otm_, &other->_impl_.itm_otm_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, &other->_impl_.implied_volatility_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.delta_, &other->_impl_.delta_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, &other->_impl_.call_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.to_call_price_, &other->_impl_.to_call_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.effective_leverage_, &other->_impl_.effective_leverage_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.leverage_ratio_, &other->_impl_.leverage_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, &other->_impl_.conversion_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.balance_point_, &other->_impl_.balance_point_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
+                                       &other->_impl_.name_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_rate_, lhs_arena,
+                                       &other->_impl_.change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_val_, lhs_arena,
+                                       &other->_impl_.change_val_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, lhs_arena,
+                                       &other->_impl_.expiry_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, lhs_arena,
+                                       &other->_impl_.strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, lhs_arena,
+                                       &other->_impl_.upper_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, lhs_arena,
+                                       &other->_impl_.lower_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_qty_, lhs_arena,
+                                       &other->_impl_.outstanding_qty_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, lhs_arena,
+                                       &other->_impl_.outstanding_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.premium_, lhs_arena,
+                                       &other->_impl_.premium_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.itm_otm_, lhs_arena,
+                                       &other->_impl_.itm_otm_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, lhs_arena,
+                                       &other->_impl_.implied_volatility_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.delta_, lhs_arena,
+                                       &other->_impl_.delta_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, lhs_arena,
+                                       &other->_impl_.call_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.to_call_price_, lhs_arena,
+                                       &other->_impl_.to_call_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.effective_leverage_, lhs_arena,
+                                       &other->_impl_.effective_leverage_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.leverage_ratio_, lhs_arena,
+                                       &other->_impl_.leverage_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, lhs_arena,
+                                       &other->_impl_.conversion_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.balance_point_, lhs_arena,
+                                       &other->_impl_.balance_point_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(FilterWarrant, _impl_.type_)
       + sizeof(FilterWarrant::_impl_.type_)
@@ -15330,32 +16461,24 @@ MarketTradePeriodResponse::MarketTradePeriodResponse(::google::protobuf::Arena* 
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.MarketTradePeriodResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradePeriodResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : market_trade_session_{visibility, arena, from.market_trade_session_},
-        _cached_size_{0} {}
-
-MarketTradePeriodResponse::MarketTradePeriodResponse(
-    ::google::protobuf::Arena* arena,
-    const MarketTradePeriodResponse& from)
-    : ::google::protobuf::Message(arena) {
+MarketTradePeriodResponse::MarketTradePeriodResponse(const MarketTradePeriodResponse& from) : ::google::protobuf::Message() {
   MarketTradePeriodResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.market_trade_session_){from._impl_.market_trade_session_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.MarketTradePeriodResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradePeriodResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : market_trade_session_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void MarketTradePeriodResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.market_trade_session_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 MarketTradePeriodResponse::~MarketTradePeriodResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.MarketTradePeriodResponse)
@@ -15363,18 +16486,20 @@ MarketTradePeriodResponse::~MarketTradePeriodResponse() {
   SharedDtor();
 }
 inline void MarketTradePeriodResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.market_trade_session_.~RepeatedPtrField();
+}
+void MarketTradePeriodResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void MarketTradePeriodResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.MarketTradePeriodResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.market_trade_session_.Clear();
+  _internal_mutable_market_trade_session()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -15457,12 +16582,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> MarketTradePeriodResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData MarketTradePeriodResponse::_class_data_ = {
-    MarketTradePeriodResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    MarketTradePeriodResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* MarketTradePeriodResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*MarketTradePeriodResponse::GetClassData() const { return &_class_data_; }
+
 
 void MarketTradePeriodResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<MarketTradePeriodResponse*>(&to_msg);
@@ -15472,8 +16596,7 @@ void MarketTradePeriodResponse::MergeImpl(::google::protobuf::Message& to_msg, c
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_market_trade_session()->MergeFrom(
-      from._internal_market_trade_session());
+  _this->_internal_mutable_market_trade_session()->MergeFrom(from._internal_market_trade_session());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -15488,10 +16611,7 @@ PROTOBUF_NOINLINE bool MarketTradePeriodResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* MarketTradePeriodResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void MarketTradePeriodResponse::InternalSwap(MarketTradePeriodResponse* PROTOBUF_RESTRICT other) {
+void MarketTradePeriodResponse::InternalSwap(MarketTradePeriodResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.market_trade_session_.InternalSwap(&other->_impl_.market_trade_session_);
@@ -15513,34 +16633,37 @@ MarketTradePeriod::MarketTradePeriod(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.MarketTradePeriod)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradePeriod::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : trade_session_{visibility, arena, from.trade_session_},
-        market_(arena, from.market_),
-        _cached_size_{0} {}
-
-MarketTradePeriod::MarketTradePeriod(
-    ::google::protobuf::Arena* arena,
-    const MarketTradePeriod& from)
-    : ::google::protobuf::Message(arena) {
+MarketTradePeriod::MarketTradePeriod(const MarketTradePeriod& from) : ::google::protobuf::Message() {
   MarketTradePeriod* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_session_){from._impl_.trade_session_},
+      decltype(_impl_.market_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.market_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.market_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_market().empty()) {
+    _this->_impl_.market_.Set(from._internal_market(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.MarketTradePeriod)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradePeriod::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : trade_session_{visibility, arena},
-        market_(arena),
-        _cached_size_{0} {}
-
 inline void MarketTradePeriod::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_session_){arena},
+      decltype(_impl_.market_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.market_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.market_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 MarketTradePeriod::~MarketTradePeriod() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.MarketTradePeriod)
@@ -15548,19 +16671,21 @@ MarketTradePeriod::~MarketTradePeriod() {
   SharedDtor();
 }
 inline void MarketTradePeriod::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.trade_session_.~RepeatedPtrField();
   _impl_.market_.Destroy();
-  _impl_.~Impl_();
+}
+void MarketTradePeriod::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void MarketTradePeriod::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.MarketTradePeriod)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.trade_session_.Clear();
+  _internal_mutable_trade_session()->Clear();
   _impl_.market_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -15667,12 +16792,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 53, 2> MarketTradePeriod::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData MarketTradePeriod::_class_data_ = {
-    MarketTradePeriod::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    MarketTradePeriod::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* MarketTradePeriod::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*MarketTradePeriod::GetClassData() const { return &_class_data_; }
+
 
 void MarketTradePeriod::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<MarketTradePeriod*>(&to_msg);
@@ -15682,8 +16806,7 @@ void MarketTradePeriod::MergeImpl(::google::protobuf::Message& to_msg, const ::g
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_trade_session()->MergeFrom(
-      from._internal_trade_session());
+  _this->_internal_mutable_trade_session()->MergeFrom(from._internal_trade_session());
   if (!from._internal_market().empty()) {
     _this->_internal_set_market(from._internal_market());
   }
@@ -15701,16 +16824,14 @@ PROTOBUF_NOINLINE bool MarketTradePeriod::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* MarketTradePeriod::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void MarketTradePeriod::InternalSwap(MarketTradePeriod* PROTOBUF_RESTRICT other) {
+void MarketTradePeriod::InternalSwap(MarketTradePeriod* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.trade_session_.InternalSwap(&other->_impl_.trade_session_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.market_, &other->_impl_.market_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.market_, lhs_arena,
+                                       &other->_impl_.market_, rhs_arena);
 }
 
 ::google::protobuf::Metadata MarketTradePeriod::GetMetadata() const {
@@ -15729,24 +16850,20 @@ TradePeriod::TradePeriod(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.TradePeriod)
 }
-TradePeriod::TradePeriod(
-    ::google::protobuf::Arena* arena, const TradePeriod& from)
-    : TradePeriod(arena) {
-  MergeFrom(from);
+TradePeriod::TradePeriod(const TradePeriod& from)
+    : ::google::protobuf::Message(), _impl_(from._impl_) {
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.TradePeriod)
 }
-inline PROTOBUF_NDEBUG_INLINE TradePeriod::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0} {}
-
 inline void TradePeriod::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, beg_time_),
-           0,
-           offsetof(Impl_, trade_session_) -
-               offsetof(Impl_, beg_time_) +
-               sizeof(Impl_::trade_session_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.beg_time_){0},
+      decltype(_impl_.end_time_){0},
+      decltype(_impl_.trade_session_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 TradePeriod::~TradePeriod() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.TradePeriod)
@@ -15754,13 +16871,14 @@ TradePeriod::~TradePeriod() {
   SharedDtor();
 }
 inline void TradePeriod::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+}
+void TradePeriod::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void TradePeriod::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.TradePeriod)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15888,12 +17006,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 0, 2> TradePeriod::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData TradePeriod::_class_data_ = {
-    TradePeriod::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    TradePeriod::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* TradePeriod::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*TradePeriod::GetClassData() const { return &_class_data_; }
+
 
 void TradePeriod::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<TradePeriod*>(&to_msg);
@@ -15926,10 +17043,7 @@ PROTOBUF_NOINLINE bool TradePeriod::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* TradePeriod::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void TradePeriod::InternalSwap(TradePeriod* PROTOBUF_RESTRICT other) {
+void TradePeriod::InternalSwap(TradePeriod* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::google::protobuf::internal::memswap<
@@ -15955,10 +17069,7 @@ SubscriptionRequest::SubscriptionRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::internal::ZeroFieldsBase(arena) {
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SubscriptionRequest)
 }
-SubscriptionRequest::SubscriptionRequest(
-    ::google::protobuf::Arena* arena,
-    const SubscriptionRequest& from)
-    : ::google::protobuf::internal::ZeroFieldsBase(arena) {
+SubscriptionRequest::SubscriptionRequest(const SubscriptionRequest& from) : ::google::protobuf::internal::ZeroFieldsBase() {
   SubscriptionRequest* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
@@ -15968,6 +17079,13 @@ SubscriptionRequest::SubscriptionRequest(
 }
 
 
+
+
+const ::google::protobuf::Message::ClassData SubscriptionRequest::_class_data_ = {
+    ::google::protobuf::internal::ZeroFieldsBase::CopyImpl,
+    ::google::protobuf::internal::ZeroFieldsBase::MergeImpl,
+};
+const ::google::protobuf::Message::ClassData*SubscriptionRequest::GetClassData() const { return &_class_data_; }
 
 
 
@@ -15991,32 +17109,24 @@ SubscriptionResponse::SubscriptionResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SubscriptionResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SubscriptionResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : sub_list_{visibility, arena, from.sub_list_},
-        _cached_size_{0} {}
-
-SubscriptionResponse::SubscriptionResponse(
-    ::google::protobuf::Arena* arena,
-    const SubscriptionResponse& from)
-    : ::google::protobuf::Message(arena) {
+SubscriptionResponse::SubscriptionResponse(const SubscriptionResponse& from) : ::google::protobuf::Message() {
   SubscriptionResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.sub_list_){from._impl_.sub_list_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SubscriptionResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SubscriptionResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : sub_list_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void SubscriptionResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.sub_list_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SubscriptionResponse::~SubscriptionResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SubscriptionResponse)
@@ -16024,18 +17134,20 @@ SubscriptionResponse::~SubscriptionResponse() {
   SharedDtor();
 }
 inline void SubscriptionResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.sub_list_.~RepeatedPtrField();
+}
+void SubscriptionResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SubscriptionResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SubscriptionResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.sub_list_.Clear();
+  _internal_mutable_sub_list()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -16118,12 +17230,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> SubscriptionResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SubscriptionResponse::_class_data_ = {
-    SubscriptionResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SubscriptionResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SubscriptionResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SubscriptionResponse::GetClassData() const { return &_class_data_; }
+
 
 void SubscriptionResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubscriptionResponse*>(&to_msg);
@@ -16133,8 +17244,7 @@ void SubscriptionResponse::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_sub_list()->MergeFrom(
-      from._internal_sub_list());
+  _this->_internal_mutable_sub_list()->MergeFrom(from._internal_sub_list());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -16149,10 +17259,7 @@ PROTOBUF_NOINLINE bool SubscriptionResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SubscriptionResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SubscriptionResponse::InternalSwap(SubscriptionResponse* PROTOBUF_RESTRICT other) {
+void SubscriptionResponse::InternalSwap(SubscriptionResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.sub_list_.InternalSwap(&other->_impl_.sub_list_);
@@ -16174,36 +17281,39 @@ SubTypeList::SubTypeList(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SubTypeList)
 }
-inline PROTOBUF_NDEBUG_INLINE SubTypeList::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : sub_type_{visibility, arena, from.sub_type_},
-        _sub_type_cached_byte_size_{0},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-SubTypeList::SubTypeList(
-    ::google::protobuf::Arena* arena,
-    const SubTypeList& from)
-    : ::google::protobuf::Message(arena) {
+SubTypeList::SubTypeList(const SubTypeList& from) : ::google::protobuf::Message() {
   SubTypeList* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.sub_type_){from._internal_sub_type()},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SubTypeList)
 }
-inline PROTOBUF_NDEBUG_INLINE SubTypeList::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : sub_type_{visibility, arena},
-        _sub_type_cached_byte_size_{0},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void SubTypeList::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.sub_type_){arena},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SubTypeList::~SubTypeList() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SubTypeList)
@@ -16211,19 +17321,21 @@ SubTypeList::~SubTypeList() {
   SharedDtor();
 }
 inline void SubTypeList::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_sub_type()->~RepeatedField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void SubTypeList::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SubTypeList::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SubTypeList)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.sub_type_.Clear();
+  _internal_mutable_sub_type()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -16291,7 +17403,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> SubTypeList::_table_ = {
 
   // repeated .longportapp.quote.v1.SubType sub_type = 2 [json_name = "subType"];
   {
-    std::size_t byte_size = _impl_._sub_type_cached_byte_size_.Get();
+    int byte_size = _impl_._sub_type_cached_byte_size_.Get();
     if (byte_size > 0) {
       target = stream->WriteEnumPacked(2, _internal_sub_type(),
                                        byte_size, target);
@@ -16342,12 +17454,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> SubTypeList::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SubTypeList::_class_data_ = {
-    SubTypeList::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SubTypeList::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SubTypeList::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SubTypeList::GetClassData() const { return &_class_data_; }
+
 
 void SubTypeList::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubTypeList*>(&to_msg);
@@ -16375,16 +17486,14 @@ PROTOBUF_NOINLINE bool SubTypeList::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SubTypeList::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SubTypeList::InternalSwap(SubTypeList* PROTOBUF_RESTRICT other) {
+void SubTypeList::InternalSwap(SubTypeList* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.sub_type_.InternalSwap(&other->_impl_.sub_type_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SubTypeList::GetMetadata() const {
@@ -16403,38 +17512,31 @@ SubscribeRequest::SubscribeRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SubscribeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SubscribeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_{visibility, arena, from.symbol_},
-        sub_type_{visibility, arena, from.sub_type_},
-        _sub_type_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-SubscribeRequest::SubscribeRequest(
-    ::google::protobuf::Arena* arena,
-    const SubscribeRequest& from)
-    : ::google::protobuf::Message(arena) {
+SubscribeRequest::SubscribeRequest(const SubscribeRequest& from) : ::google::protobuf::Message() {
   SubscribeRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){from._impl_.symbol_},
+      decltype(_impl_.sub_type_){from._internal_sub_type()},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.is_first_push_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.is_first_push_ = from._impl_.is_first_push_;
+  _this->_impl_.is_first_push_ = from._impl_.is_first_push_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SubscribeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SubscribeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_{visibility, arena},
-        sub_type_{visibility, arena},
-        _sub_type_cached_byte_size_{0},
-        _cached_size_{0} {}
-
 inline void SubscribeRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.is_first_push_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){arena},
+      decltype(_impl_.sub_type_){arena},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.is_first_push_){false},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SubscribeRequest::~SubscribeRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SubscribeRequest)
@@ -16442,19 +17544,22 @@ SubscribeRequest::~SubscribeRequest() {
   SharedDtor();
 }
 inline void SubscribeRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_symbol()->~RepeatedPtrField();
+  _internal_mutable_sub_type()->~RepeatedField();
+}
+void SubscribeRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SubscribeRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SubscribeRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.symbol_.Clear();
-  _impl_.sub_type_.Clear();
+  _internal_mutable_symbol()->Clear();
+  _internal_mutable_sub_type()->Clear();
   _impl_.is_first_push_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -16529,7 +17634,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 52, 2> SubscribeRequest::_table_ = {
 
   // repeated .longportapp.quote.v1.SubType sub_type = 2 [json_name = "subType"];
   {
-    std::size_t byte_size = _impl_._sub_type_cached_byte_size_.Get();
+    int byte_size = _impl_._sub_type_cached_byte_size_.Get();
     if (byte_size > 0) {
       target = stream->WriteEnumPacked(2, _internal_sub_type(),
                                        byte_size, target);
@@ -16592,12 +17697,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 52, 2> SubscribeRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SubscribeRequest::_class_data_ = {
-    SubscribeRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SubscribeRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SubscribeRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SubscribeRequest::GetClassData() const { return &_class_data_; }
+
 
 void SubscribeRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubscribeRequest*>(&to_msg);
@@ -16626,10 +17730,7 @@ PROTOBUF_NOINLINE bool SubscribeRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SubscribeRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SubscribeRequest::InternalSwap(SubscribeRequest* PROTOBUF_RESTRICT other) {
+void SubscribeRequest::InternalSwap(SubscribeRequest* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.symbol_.InternalSwap(&other->_impl_.symbol_);
@@ -16653,38 +17754,31 @@ UnsubscribeRequest::UnsubscribeRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UnsubscribeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE UnsubscribeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_{visibility, arena, from.symbol_},
-        sub_type_{visibility, arena, from.sub_type_},
-        _sub_type_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-UnsubscribeRequest::UnsubscribeRequest(
-    ::google::protobuf::Arena* arena,
-    const UnsubscribeRequest& from)
-    : ::google::protobuf::Message(arena) {
+UnsubscribeRequest::UnsubscribeRequest(const UnsubscribeRequest& from) : ::google::protobuf::Message() {
   UnsubscribeRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){from._impl_.symbol_},
+      decltype(_impl_.sub_type_){from._internal_sub_type()},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.unsub_all_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.unsub_all_ = from._impl_.unsub_all_;
+  _this->_impl_.unsub_all_ = from._impl_.unsub_all_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UnsubscribeRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE UnsubscribeRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_{visibility, arena},
-        sub_type_{visibility, arena},
-        _sub_type_cached_byte_size_{0},
-        _cached_size_{0} {}
-
 inline void UnsubscribeRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.unsub_all_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){arena},
+      decltype(_impl_.sub_type_){arena},
+      /*decltype(_impl_._sub_type_cached_byte_size_)*/ {0},
+      decltype(_impl_.unsub_all_){false},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 UnsubscribeRequest::~UnsubscribeRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UnsubscribeRequest)
@@ -16692,19 +17786,22 @@ UnsubscribeRequest::~UnsubscribeRequest() {
   SharedDtor();
 }
 inline void UnsubscribeRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_symbol()->~RepeatedPtrField();
+  _internal_mutable_sub_type()->~RepeatedField();
+}
+void UnsubscribeRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UnsubscribeRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UnsubscribeRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.symbol_.Clear();
-  _impl_.sub_type_.Clear();
+  _internal_mutable_symbol()->Clear();
+  _internal_mutable_sub_type()->Clear();
   _impl_.unsub_all_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -16779,7 +17876,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 54, 2> UnsubscribeRequest::_table_ = {
 
   // repeated .longportapp.quote.v1.SubType sub_type = 2 [json_name = "subType"];
   {
-    std::size_t byte_size = _impl_._sub_type_cached_byte_size_.Get();
+    int byte_size = _impl_._sub_type_cached_byte_size_.Get();
     if (byte_size > 0) {
       target = stream->WriteEnumPacked(2, _internal_sub_type(),
                                        byte_size, target);
@@ -16842,12 +17939,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 54, 2> UnsubscribeRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData UnsubscribeRequest::_class_data_ = {
-    UnsubscribeRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UnsubscribeRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UnsubscribeRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UnsubscribeRequest::GetClassData() const { return &_class_data_; }
+
 
 void UnsubscribeRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UnsubscribeRequest*>(&to_msg);
@@ -16876,10 +17972,7 @@ PROTOBUF_NOINLINE bool UnsubscribeRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* UnsubscribeRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UnsubscribeRequest::InternalSwap(UnsubscribeRequest* PROTOBUF_RESTRICT other) {
+void UnsubscribeRequest::InternalSwap(UnsubscribeRequest* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.symbol_.InternalSwap(&other->_impl_.symbol_);
@@ -16902,10 +17995,7 @@ UnsubscribeResponse::UnsubscribeResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::internal::ZeroFieldsBase(arena) {
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UnsubscribeResponse)
 }
-UnsubscribeResponse::UnsubscribeResponse(
-    ::google::protobuf::Arena* arena,
-    const UnsubscribeResponse& from)
-    : ::google::protobuf::internal::ZeroFieldsBase(arena) {
+UnsubscribeResponse::UnsubscribeResponse(const UnsubscribeResponse& from) : ::google::protobuf::internal::ZeroFieldsBase() {
   UnsubscribeResponse* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
@@ -16915,6 +18005,13 @@ UnsubscribeResponse::UnsubscribeResponse(
 }
 
 
+
+
+const ::google::protobuf::Message::ClassData UnsubscribeResponse::_class_data_ = {
+    ::google::protobuf::internal::ZeroFieldsBase::CopyImpl,
+    ::google::protobuf::internal::ZeroFieldsBase::MergeImpl,
+};
+const ::google::protobuf::Message::ClassData*UnsubscribeResponse::GetClassData() const { return &_class_data_; }
 
 
 
@@ -16938,57 +18035,130 @@ PushQuote::PushQuote(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.PushQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE PushQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        last_done_(arena, from.last_done_),
-        open_(arena, from.open_),
-        high_(arena, from.high_),
-        low_(arena, from.low_),
-        turnover_(arena, from.turnover_),
-        current_turnover_(arena, from.current_turnover_),
-        _cached_size_{0} {}
-
-PushQuote::PushQuote(
-    ::google::protobuf::Arena* arena,
-    const PushQuote& from)
-    : ::google::protobuf::Message(arena) {
+PushQuote::PushQuote(const PushQuote& from) : ::google::protobuf::Message() {
   PushQuote* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.current_turnover_){},
+      decltype(_impl_.sequence_){},
+      decltype(_impl_.timestamp_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.trade_status_){},
+      decltype(_impl_.trade_session_){},
+      decltype(_impl_.current_volume_){},
+      decltype(_impl_.tag_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, sequence_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, sequence_),
-           offsetof(Impl_, tag_) -
-               offsetof(Impl_, sequence_) +
-               sizeof(Impl_::tag_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_open().empty()) {
+    _this->_impl_.open_.Set(from._internal_open(), _this->GetArenaForAllocation());
+  }
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_high().empty()) {
+    _this->_impl_.high_.Set(from._internal_high(), _this->GetArenaForAllocation());
+  }
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_low().empty()) {
+    _this->_impl_.low_.Set(from._internal_low(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  _impl_.current_turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.current_turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_current_turnover().empty()) {
+    _this->_impl_.current_turnover_.Set(from._internal_current_turnover(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.sequence_, &from._impl_.sequence_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.tag_) -
+    reinterpret_cast<char*>(&_impl_.sequence_)) + sizeof(_impl_.tag_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PushQuote)
 }
-inline PROTOBUF_NDEBUG_INLINE PushQuote::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        last_done_(arena),
-        open_(arena),
-        high_(arena),
-        low_(arena),
-        turnover_(arena),
-        current_turnover_(arena),
-        _cached_size_{0} {}
-
 inline void PushQuote::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, sequence_),
-           0,
-           offsetof(Impl_, tag_) -
-               offsetof(Impl_, sequence_) +
-               sizeof(Impl_::tag_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.open_){},
+      decltype(_impl_.high_){},
+      decltype(_impl_.low_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.current_turnover_){},
+      decltype(_impl_.sequence_){::int64_t{0}},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.trade_status_){0},
+      decltype(_impl_.trade_session_){0},
+      decltype(_impl_.current_volume_){::int64_t{0}},
+      decltype(_impl_.tag_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.open_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.open_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.high_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.high_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.low_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.low_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.current_turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.current_turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 PushQuote::~PushQuote() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.PushQuote)
@@ -16996,7 +18166,7 @@ PushQuote::~PushQuote() {
   SharedDtor();
 }
 inline void PushQuote::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.last_done_.Destroy();
   _impl_.open_.Destroy();
@@ -17004,12 +18174,13 @@ inline void PushQuote::SharedDtor() {
   _impl_.low_.Destroy();
   _impl_.turnover_.Destroy();
   _impl_.current_turnover_.Destroy();
-  _impl_.~Impl_();
+}
+void PushQuote::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void PushQuote::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.PushQuote)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -17370,12 +18541,11 @@ const ::_pbi::TcParseTable<4, 14, 0, 97, 2> PushQuote::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData PushQuote::_class_data_ = {
-    PushQuote::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    PushQuote::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* PushQuote::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*PushQuote::GetClassData() const { return &_class_data_; }
+
 
 void PushQuote::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<PushQuote*>(&to_msg);
@@ -17441,21 +18611,25 @@ PROTOBUF_NOINLINE bool PushQuote::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* PushQuote::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void PushQuote::InternalSwap(PushQuote* PROTOBUF_RESTRICT other) {
+void PushQuote::InternalSwap(PushQuote* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, &other->_impl_.open_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, &other->_impl_.high_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, &other->_impl_.low_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.current_turnover_, &other->_impl_.current_turnover_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.open_, lhs_arena,
+                                       &other->_impl_.open_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.high_, lhs_arena,
+                                       &other->_impl_.high_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.low_, lhs_arena,
+                                       &other->_impl_.low_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.current_turnover_, lhs_arena,
+                                       &other->_impl_.current_turnover_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PushQuote, _impl_.tag_)
       + sizeof(PushQuote::_impl_.tag_)
@@ -17480,38 +18654,42 @@ PushDepth::PushDepth(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.PushDepth)
 }
-inline PROTOBUF_NDEBUG_INLINE PushDepth::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : ask_{visibility, arena, from.ask_},
-        bid_{visibility, arena, from.bid_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-PushDepth::PushDepth(
-    ::google::protobuf::Arena* arena,
-    const PushDepth& from)
-    : ::google::protobuf::Message(arena) {
+PushDepth::PushDepth(const PushDepth& from) : ::google::protobuf::Message() {
   PushDepth* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_){from._impl_.ask_},
+      decltype(_impl_.bid_){from._impl_.bid_},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.sequence_ = from._impl_.sequence_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.sequence_ = from._impl_.sequence_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PushDepth)
 }
-inline PROTOBUF_NDEBUG_INLINE PushDepth::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : ask_{visibility, arena},
-        bid_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void PushDepth::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.sequence_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_){arena},
+      decltype(_impl_.bid_){arena},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 PushDepth::~PushDepth() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.PushDepth)
@@ -17519,20 +18697,23 @@ PushDepth::~PushDepth() {
   SharedDtor();
 }
 inline void PushDepth::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.ask_.~RepeatedPtrField();
+  _impl_.bid_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void PushDepth::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void PushDepth::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.PushDepth)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.ask_.Clear();
-  _impl_.bid_.Clear();
+  _internal_mutable_ask()->Clear();
+  _internal_mutable_bid()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _impl_.sequence_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -17680,12 +18861,11 @@ const ::_pbi::TcParseTable<2, 4, 2, 45, 2> PushDepth::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData PushDepth::_class_data_ = {
-    PushDepth::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    PushDepth::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* PushDepth::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*PushDepth::GetClassData() const { return &_class_data_; }
+
 
 void PushDepth::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<PushDepth*>(&to_msg);
@@ -17695,10 +18875,8 @@ void PushDepth::MergeImpl(::google::protobuf::Message& to_msg, const ::google::p
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_ask()->MergeFrom(
-      from._internal_ask());
-  _this->_internal_mutable_bid()->MergeFrom(
-      from._internal_bid());
+  _this->_internal_mutable_ask()->MergeFrom(from._internal_ask());
+  _this->_internal_mutable_bid()->MergeFrom(from._internal_bid());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -17719,17 +18897,15 @@ PROTOBUF_NOINLINE bool PushDepth::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* PushDepth::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void PushDepth::InternalSwap(PushDepth* PROTOBUF_RESTRICT other) {
+void PushDepth::InternalSwap(PushDepth* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.ask_.InternalSwap(&other->_impl_.ask_);
   _impl_.bid_.InternalSwap(&other->_impl_.bid_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
         swap(_impl_.sequence_, other->_impl_.sequence_);
 }
 
@@ -17749,38 +18925,42 @@ PushBrokers::PushBrokers(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.PushBrokers)
 }
-inline PROTOBUF_NDEBUG_INLINE PushBrokers::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : ask_brokers_{visibility, arena, from.ask_brokers_},
-        bid_brokers_{visibility, arena, from.bid_brokers_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-PushBrokers::PushBrokers(
-    ::google::protobuf::Arena* arena,
-    const PushBrokers& from)
-    : ::google::protobuf::Message(arena) {
+PushBrokers::PushBrokers(const PushBrokers& from) : ::google::protobuf::Message() {
   PushBrokers* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_brokers_){from._impl_.ask_brokers_},
+      decltype(_impl_.bid_brokers_){from._impl_.bid_brokers_},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.sequence_ = from._impl_.sequence_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.sequence_ = from._impl_.sequence_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PushBrokers)
 }
-inline PROTOBUF_NDEBUG_INLINE PushBrokers::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : ask_brokers_{visibility, arena},
-        bid_brokers_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void PushBrokers::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.sequence_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ask_brokers_){arena},
+      decltype(_impl_.bid_brokers_){arena},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 PushBrokers::~PushBrokers() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.PushBrokers)
@@ -17788,20 +18968,23 @@ PushBrokers::~PushBrokers() {
   SharedDtor();
 }
 inline void PushBrokers::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.ask_brokers_.~RepeatedPtrField();
+  _impl_.bid_brokers_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void PushBrokers::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void PushBrokers::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.PushBrokers)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.ask_brokers_.Clear();
-  _impl_.bid_brokers_.Clear();
+  _internal_mutable_ask_brokers()->Clear();
+  _internal_mutable_bid_brokers()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _impl_.sequence_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -17949,12 +19132,11 @@ const ::_pbi::TcParseTable<2, 4, 2, 47, 2> PushBrokers::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData PushBrokers::_class_data_ = {
-    PushBrokers::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    PushBrokers::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* PushBrokers::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*PushBrokers::GetClassData() const { return &_class_data_; }
+
 
 void PushBrokers::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<PushBrokers*>(&to_msg);
@@ -17964,10 +19146,8 @@ void PushBrokers::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_ask_brokers()->MergeFrom(
-      from._internal_ask_brokers());
-  _this->_internal_mutable_bid_brokers()->MergeFrom(
-      from._internal_bid_brokers());
+  _this->_internal_mutable_ask_brokers()->MergeFrom(from._internal_ask_brokers());
+  _this->_internal_mutable_bid_brokers()->MergeFrom(from._internal_bid_brokers());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -17988,17 +19168,15 @@ PROTOBUF_NOINLINE bool PushBrokers::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* PushBrokers::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void PushBrokers::InternalSwap(PushBrokers* PROTOBUF_RESTRICT other) {
+void PushBrokers::InternalSwap(PushBrokers* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.ask_brokers_.InternalSwap(&other->_impl_.ask_brokers_);
   _impl_.bid_brokers_.InternalSwap(&other->_impl_.bid_brokers_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
         swap(_impl_.sequence_, other->_impl_.sequence_);
 }
 
@@ -18018,36 +19196,40 @@ PushTrade::PushTrade(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.PushTrade)
 }
-inline PROTOBUF_NDEBUG_INLINE PushTrade::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : trade_{visibility, arena, from.trade_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-PushTrade::PushTrade(
-    ::google::protobuf::Arena* arena,
-    const PushTrade& from)
-    : ::google::protobuf::Message(arena) {
+PushTrade::PushTrade(const PushTrade& from) : ::google::protobuf::Message() {
   PushTrade* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_){from._impl_.trade_},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.sequence_ = from._impl_.sequence_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.sequence_ = from._impl_.sequence_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.PushTrade)
 }
-inline PROTOBUF_NDEBUG_INLINE PushTrade::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : trade_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void PushTrade::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.sequence_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_){arena},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.sequence_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 PushTrade::~PushTrade() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.PushTrade)
@@ -18055,19 +19237,21 @@ PushTrade::~PushTrade() {
   SharedDtor();
 }
 inline void PushTrade::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.trade_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void PushTrade::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void PushTrade::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.PushTrade)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.trade_.Clear();
+  _internal_mutable_trade()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _impl_.sequence_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -18195,12 +19379,11 @@ const ::_pbi::TcParseTable<2, 3, 1, 45, 2> PushTrade::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData PushTrade::_class_data_ = {
-    PushTrade::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    PushTrade::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* PushTrade::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*PushTrade::GetClassData() const { return &_class_data_; }
+
 
 void PushTrade::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<PushTrade*>(&to_msg);
@@ -18210,8 +19393,7 @@ void PushTrade::MergeImpl(::google::protobuf::Message& to_msg, const ::google::p
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_trade()->MergeFrom(
-      from._internal_trade());
+  _this->_internal_mutable_trade()->MergeFrom(from._internal_trade());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -18232,16 +19414,14 @@ PROTOBUF_NOINLINE bool PushTrade::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* PushTrade::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void PushTrade::InternalSwap(PushTrade* PROTOBUF_RESTRICT other) {
+void PushTrade::InternalSwap(PushTrade* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.trade_.InternalSwap(&other->_impl_.trade_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
         swap(_impl_.sequence_, other->_impl_.sequence_);
 }
 
@@ -18261,36 +19441,61 @@ MarketTradeDayRequest::MarketTradeDayRequest(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.MarketTradeDayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradeDayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : market_(arena, from.market_),
-        beg_day_(arena, from.beg_day_),
-        end_day_(arena, from.end_day_),
-        _cached_size_{0} {}
-
-MarketTradeDayRequest::MarketTradeDayRequest(
-    ::google::protobuf::Arena* arena,
-    const MarketTradeDayRequest& from)
-    : ::google::protobuf::Message(arena) {
+MarketTradeDayRequest::MarketTradeDayRequest(const MarketTradeDayRequest& from) : ::google::protobuf::Message() {
   MarketTradeDayRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.market_){},
+      decltype(_impl_.beg_day_){},
+      decltype(_impl_.end_day_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.market_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.market_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_market().empty()) {
+    _this->_impl_.market_.Set(from._internal_market(), _this->GetArenaForAllocation());
+  }
+  _impl_.beg_day_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.beg_day_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_beg_day().empty()) {
+    _this->_impl_.beg_day_.Set(from._internal_beg_day(), _this->GetArenaForAllocation());
+  }
+  _impl_.end_day_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.end_day_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_end_day().empty()) {
+    _this->_impl_.end_day_.Set(from._internal_end_day(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.MarketTradeDayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradeDayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : market_(arena),
-        beg_day_(arena),
-        end_day_(arena),
-        _cached_size_{0} {}
-
 inline void MarketTradeDayRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.market_){},
+      decltype(_impl_.beg_day_){},
+      decltype(_impl_.end_day_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.market_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.market_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.beg_day_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.beg_day_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.end_day_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.end_day_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 MarketTradeDayRequest::~MarketTradeDayRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.MarketTradeDayRequest)
@@ -18298,16 +19503,17 @@ MarketTradeDayRequest::~MarketTradeDayRequest() {
   SharedDtor();
 }
 inline void MarketTradeDayRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.market_.Destroy();
   _impl_.beg_day_.Destroy();
   _impl_.end_day_.Destroy();
-  _impl_.~Impl_();
+}
+void MarketTradeDayRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void MarketTradeDayRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.MarketTradeDayRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -18443,12 +19649,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 71, 2> MarketTradeDayRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData MarketTradeDayRequest::_class_data_ = {
-    MarketTradeDayRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    MarketTradeDayRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* MarketTradeDayRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*MarketTradeDayRequest::GetClassData() const { return &_class_data_; }
+
 
 void MarketTradeDayRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<MarketTradeDayRequest*>(&to_msg);
@@ -18481,17 +19686,17 @@ PROTOBUF_NOINLINE bool MarketTradeDayRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* MarketTradeDayRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void MarketTradeDayRequest::InternalSwap(MarketTradeDayRequest* PROTOBUF_RESTRICT other) {
+void MarketTradeDayRequest::InternalSwap(MarketTradeDayRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.market_, &other->_impl_.market_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.beg_day_, &other->_impl_.beg_day_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.end_day_, &other->_impl_.end_day_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.market_, lhs_arena,
+                                       &other->_impl_.market_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.beg_day_, lhs_arena,
+                                       &other->_impl_.beg_day_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.end_day_, lhs_arena,
+                                       &other->_impl_.end_day_, rhs_arena);
 }
 
 ::google::protobuf::Metadata MarketTradeDayRequest::GetMetadata() const {
@@ -18510,34 +19715,26 @@ MarketTradeDayResponse::MarketTradeDayResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.MarketTradeDayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradeDayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : trade_day_{visibility, arena, from.trade_day_},
-        half_trade_day_{visibility, arena, from.half_trade_day_},
-        _cached_size_{0} {}
-
-MarketTradeDayResponse::MarketTradeDayResponse(
-    ::google::protobuf::Arena* arena,
-    const MarketTradeDayResponse& from)
-    : ::google::protobuf::Message(arena) {
+MarketTradeDayResponse::MarketTradeDayResponse(const MarketTradeDayResponse& from) : ::google::protobuf::Message() {
   MarketTradeDayResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_day_){from._impl_.trade_day_},
+      decltype(_impl_.half_trade_day_){from._impl_.half_trade_day_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.MarketTradeDayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE MarketTradeDayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : trade_day_{visibility, arena},
-        half_trade_day_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void MarketTradeDayResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.trade_day_){arena},
+      decltype(_impl_.half_trade_day_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 MarketTradeDayResponse::~MarketTradeDayResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.MarketTradeDayResponse)
@@ -18545,19 +19742,22 @@ MarketTradeDayResponse::~MarketTradeDayResponse() {
   SharedDtor();
 }
 inline void MarketTradeDayResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_trade_day()->~RepeatedPtrField();
+  _internal_mutable_half_trade_day()->~RepeatedPtrField();
+}
+void MarketTradeDayResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void MarketTradeDayResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.MarketTradeDayResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.trade_day_.Clear();
-  _impl_.half_trade_day_.Clear();
+  _internal_mutable_trade_day()->Clear();
+  _internal_mutable_half_trade_day()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -18664,12 +19864,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 75, 2> MarketTradeDayResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData MarketTradeDayResponse::_class_data_ = {
-    MarketTradeDayResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    MarketTradeDayResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* MarketTradeDayResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*MarketTradeDayResponse::GetClassData() const { return &_class_data_; }
+
 
 void MarketTradeDayResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<MarketTradeDayResponse*>(&to_msg);
@@ -18695,10 +19894,7 @@ PROTOBUF_NOINLINE bool MarketTradeDayResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* MarketTradeDayResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void MarketTradeDayResponse::InternalSwap(MarketTradeDayResponse* PROTOBUF_RESTRICT other) {
+void MarketTradeDayResponse::InternalSwap(MarketTradeDayResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.trade_day_.InternalSwap(&other->_impl_.trade_day_);
@@ -18721,32 +19917,35 @@ CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(::google::protobuf::Arena
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.CapitalFlowIntradayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(
-    ::google::protobuf::Arena* arena,
-    const CapitalFlowIntradayRequest& from)
-    : ::google::protobuf::Message(arena) {
+CapitalFlowIntradayRequest::CapitalFlowIntradayRequest(const CapitalFlowIntradayRequest& from) : ::google::protobuf::Message() {
   CapitalFlowIntradayRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.CapitalFlowIntradayRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        _cached_size_{0} {}
-
 inline void CapitalFlowIntradayRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 CapitalFlowIntradayRequest::~CapitalFlowIntradayRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.CapitalFlowIntradayRequest)
@@ -18754,14 +19953,15 @@ CapitalFlowIntradayRequest::~CapitalFlowIntradayRequest() {
   SharedDtor();
 }
 inline void CapitalFlowIntradayRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void CapitalFlowIntradayRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void CapitalFlowIntradayRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.CapitalFlowIntradayRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -18852,12 +20052,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 62, 2> CapitalFlowIntradayRequest::_table_ =
 }
 
 const ::google::protobuf::Message::ClassData CapitalFlowIntradayRequest::_class_data_ = {
-    CapitalFlowIntradayRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    CapitalFlowIntradayRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* CapitalFlowIntradayRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*CapitalFlowIntradayRequest::GetClassData() const { return &_class_data_; }
+
 
 void CapitalFlowIntradayRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<CapitalFlowIntradayRequest*>(&to_msg);
@@ -18884,15 +20083,13 @@ PROTOBUF_NOINLINE bool CapitalFlowIntradayRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* CapitalFlowIntradayRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void CapitalFlowIntradayRequest::InternalSwap(CapitalFlowIntradayRequest* PROTOBUF_RESTRICT other) {
+void CapitalFlowIntradayRequest::InternalSwap(CapitalFlowIntradayRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata CapitalFlowIntradayRequest::GetMetadata() const {
@@ -18911,34 +20108,38 @@ CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_Capital
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayResponse_CapitalFlowLine::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : inflow_(arena, from.inflow_),
-        _cached_size_{0} {}
-
-CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(
-    ::google::protobuf::Arena* arena,
-    const CapitalFlowIntradayResponse_CapitalFlowLine& from)
-    : ::google::protobuf::Message(arena) {
+CapitalFlowIntradayResponse_CapitalFlowLine::CapitalFlowIntradayResponse_CapitalFlowLine(const CapitalFlowIntradayResponse_CapitalFlowLine& from) : ::google::protobuf::Message() {
   CapitalFlowIntradayResponse_CapitalFlowLine* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.inflow_){},
+      decltype(_impl_.timestamp_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  _impl_.timestamp_ = from._impl_.timestamp_;
+  _impl_.inflow_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.inflow_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_inflow().empty()) {
+    _this->_impl_.inflow_.Set(from._internal_inflow(), _this->GetArenaForAllocation());
+  }
+  _this->_impl_.timestamp_ = from._impl_.timestamp_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayResponse_CapitalFlowLine::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : inflow_(arena),
-        _cached_size_{0} {}
-
 inline void CapitalFlowIntradayResponse_CapitalFlowLine::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.timestamp_ = {};
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.inflow_){},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.inflow_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.inflow_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 CapitalFlowIntradayResponse_CapitalFlowLine::~CapitalFlowIntradayResponse_CapitalFlowLine() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
@@ -18946,14 +20147,15 @@ CapitalFlowIntradayResponse_CapitalFlowLine::~CapitalFlowIntradayResponse_Capita
   SharedDtor();
 }
 inline void CapitalFlowIntradayResponse_CapitalFlowLine::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.inflow_.Destroy();
-  _impl_.~Impl_();
+}
+void CapitalFlowIntradayResponse_CapitalFlowLine::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void CapitalFlowIntradayResponse_CapitalFlowLine::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.CapitalFlowIntradayResponse.CapitalFlowLine)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -19064,12 +20266,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 79, 2> CapitalFlowIntradayResponse_CapitalFl
 }
 
 const ::google::protobuf::Message::ClassData CapitalFlowIntradayResponse_CapitalFlowLine::_class_data_ = {
-    CapitalFlowIntradayResponse_CapitalFlowLine::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    CapitalFlowIntradayResponse_CapitalFlowLine::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* CapitalFlowIntradayResponse_CapitalFlowLine::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*CapitalFlowIntradayResponse_CapitalFlowLine::GetClassData() const { return &_class_data_; }
+
 
 void CapitalFlowIntradayResponse_CapitalFlowLine::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<CapitalFlowIntradayResponse_CapitalFlowLine*>(&to_msg);
@@ -19099,15 +20300,13 @@ PROTOBUF_NOINLINE bool CapitalFlowIntradayResponse_CapitalFlowLine::IsInitialize
   return true;
 }
 
-::_pbi::CachedSize* CapitalFlowIntradayResponse_CapitalFlowLine::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void CapitalFlowIntradayResponse_CapitalFlowLine::InternalSwap(CapitalFlowIntradayResponse_CapitalFlowLine* PROTOBUF_RESTRICT other) {
+void CapitalFlowIntradayResponse_CapitalFlowLine::InternalSwap(CapitalFlowIntradayResponse_CapitalFlowLine* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.inflow_, &other->_impl_.inflow_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.inflow_, lhs_arena,
+                                       &other->_impl_.inflow_, rhs_arena);
         swap(_impl_.timestamp_, other->_impl_.timestamp_);
 }
 
@@ -19127,34 +20326,37 @@ CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(::google::protobuf::Are
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.CapitalFlowIntradayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : capital_flow_lines_{visibility, arena, from.capital_flow_lines_},
-        symbol_(arena, from.symbol_),
-        _cached_size_{0} {}
-
-CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(
-    ::google::protobuf::Arena* arena,
-    const CapitalFlowIntradayResponse& from)
-    : ::google::protobuf::Message(arena) {
+CapitalFlowIntradayResponse::CapitalFlowIntradayResponse(const CapitalFlowIntradayResponse& from) : ::google::protobuf::Message() {
   CapitalFlowIntradayResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.capital_flow_lines_){from._impl_.capital_flow_lines_},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.CapitalFlowIntradayResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalFlowIntradayResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : capital_flow_lines_{visibility, arena},
-        symbol_(arena),
-        _cached_size_{0} {}
-
 inline void CapitalFlowIntradayResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.capital_flow_lines_){arena},
+      decltype(_impl_.symbol_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 CapitalFlowIntradayResponse::~CapitalFlowIntradayResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.CapitalFlowIntradayResponse)
@@ -19162,19 +20364,21 @@ CapitalFlowIntradayResponse::~CapitalFlowIntradayResponse() {
   SharedDtor();
 }
 inline void CapitalFlowIntradayResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.capital_flow_lines_.~RepeatedPtrField();
   _impl_.symbol_.Destroy();
-  _impl_.~Impl_();
+}
+void CapitalFlowIntradayResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void CapitalFlowIntradayResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.CapitalFlowIntradayResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.capital_flow_lines_.Clear();
+  _internal_mutable_capital_flow_lines()->Clear();
   _impl_.symbol_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -19281,12 +20485,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 63, 2> CapitalFlowIntradayResponse::_table_ 
 }
 
 const ::google::protobuf::Message::ClassData CapitalFlowIntradayResponse::_class_data_ = {
-    CapitalFlowIntradayResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    CapitalFlowIntradayResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* CapitalFlowIntradayResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*CapitalFlowIntradayResponse::GetClassData() const { return &_class_data_; }
+
 
 void CapitalFlowIntradayResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<CapitalFlowIntradayResponse*>(&to_msg);
@@ -19296,8 +20499,7 @@ void CapitalFlowIntradayResponse::MergeImpl(::google::protobuf::Message& to_msg,
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_capital_flow_lines()->MergeFrom(
-      from._internal_capital_flow_lines());
+  _this->_internal_mutable_capital_flow_lines()->MergeFrom(from._internal_capital_flow_lines());
   if (!from._internal_symbol().empty()) {
     _this->_internal_set_symbol(from._internal_symbol());
   }
@@ -19315,16 +20517,14 @@ PROTOBUF_NOINLINE bool CapitalFlowIntradayResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* CapitalFlowIntradayResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void CapitalFlowIntradayResponse::InternalSwap(CapitalFlowIntradayResponse* PROTOBUF_RESTRICT other) {
+void CapitalFlowIntradayResponse::InternalSwap(CapitalFlowIntradayResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.capital_flow_lines_.InternalSwap(&other->_impl_.capital_flow_lines_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
 }
 
 ::google::protobuf::Metadata CapitalFlowIntradayResponse::GetMetadata() const {
@@ -19343,36 +20543,61 @@ CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_Cap
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalDistributionResponse_CapitalDistribution::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : large_(arena, from.large_),
-        medium_(arena, from.medium_),
-        small_(arena, from.small_),
-        _cached_size_{0} {}
-
-CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(
-    ::google::protobuf::Arena* arena,
-    const CapitalDistributionResponse_CapitalDistribution& from)
-    : ::google::protobuf::Message(arena) {
+CapitalDistributionResponse_CapitalDistribution::CapitalDistributionResponse_CapitalDistribution(const CapitalDistributionResponse_CapitalDistribution& from) : ::google::protobuf::Message() {
   CapitalDistributionResponse_CapitalDistribution* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.large_){},
+      decltype(_impl_.medium_){},
+      decltype(_impl_.small_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.large_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.large_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_large().empty()) {
+    _this->_impl_.large_.Set(from._internal_large(), _this->GetArenaForAllocation());
+  }
+  _impl_.medium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.medium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_medium().empty()) {
+    _this->_impl_.medium_.Set(from._internal_medium(), _this->GetArenaForAllocation());
+  }
+  _impl_.small_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.small_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_small().empty()) {
+    _this->_impl_.small_.Set(from._internal_small(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalDistributionResponse_CapitalDistribution::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : large_(arena),
-        medium_(arena),
-        small_(arena),
-        _cached_size_{0} {}
-
 inline void CapitalDistributionResponse_CapitalDistribution::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.large_){},
+      decltype(_impl_.medium_){},
+      decltype(_impl_.small_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.large_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.large_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.medium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.medium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.small_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.small_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 CapitalDistributionResponse_CapitalDistribution::~CapitalDistributionResponse_CapitalDistribution() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
@@ -19380,16 +20605,17 @@ CapitalDistributionResponse_CapitalDistribution::~CapitalDistributionResponse_Ca
   SharedDtor();
 }
 inline void CapitalDistributionResponse_CapitalDistribution::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.large_.Destroy();
   _impl_.medium_.Destroy();
   _impl_.small_.Destroy();
-  _impl_.~Impl_();
+}
+void CapitalDistributionResponse_CapitalDistribution::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void CapitalDistributionResponse_CapitalDistribution::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -19525,12 +20751,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 93, 2> CapitalDistributionResponse_CapitalDi
 }
 
 const ::google::protobuf::Message::ClassData CapitalDistributionResponse_CapitalDistribution::_class_data_ = {
-    CapitalDistributionResponse_CapitalDistribution::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    CapitalDistributionResponse_CapitalDistribution::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* CapitalDistributionResponse_CapitalDistribution::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*CapitalDistributionResponse_CapitalDistribution::GetClassData() const { return &_class_data_; }
+
 
 void CapitalDistributionResponse_CapitalDistribution::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<CapitalDistributionResponse_CapitalDistribution*>(&to_msg);
@@ -19563,17 +20788,17 @@ PROTOBUF_NOINLINE bool CapitalDistributionResponse_CapitalDistribution::IsInitia
   return true;
 }
 
-::_pbi::CachedSize* CapitalDistributionResponse_CapitalDistribution::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void CapitalDistributionResponse_CapitalDistribution::InternalSwap(CapitalDistributionResponse_CapitalDistribution* PROTOBUF_RESTRICT other) {
+void CapitalDistributionResponse_CapitalDistribution::InternalSwap(CapitalDistributionResponse_CapitalDistribution* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.large_, &other->_impl_.large_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.medium_, &other->_impl_.medium_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.small_, &other->_impl_.small_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.large_, lhs_arena,
+                                       &other->_impl_.large_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.medium_, lhs_arena,
+                                       &other->_impl_.medium_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.small_, lhs_arena,
+                                       &other->_impl_.small_, rhs_arena);
 }
 
 ::google::protobuf::Metadata CapitalDistributionResponse_CapitalDistribution::GetMetadata() const {
@@ -19609,47 +20834,50 @@ CapitalDistributionResponse::CapitalDistributionResponse(::google::protobuf::Are
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.CapitalDistributionResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalDistributionResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_) {}
-
-CapitalDistributionResponse::CapitalDistributionResponse(
-    ::google::protobuf::Arena* arena,
-    const CapitalDistributionResponse& from)
-    : ::google::protobuf::Message(arena) {
+CapitalDistributionResponse::CapitalDistributionResponse(const CapitalDistributionResponse& from) : ::google::protobuf::Message() {
   CapitalDistributionResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.capital_in_){nullptr},
+      decltype(_impl_.capital_out_){nullptr},
+      decltype(_impl_.timestamp_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.capital_in_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>(arena, *from._impl_.capital_in_)
-                : nullptr;
-  _impl_.capital_out_ = (cached_has_bits & 0x00000002u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution>(arena, *from._impl_.capital_out_)
-                : nullptr;
-  _impl_.timestamp_ = from._impl_.timestamp_;
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.capital_in_ = new ::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution(*from._impl_.capital_in_);
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000002u) != 0) {
+    _this->_impl_.capital_out_ = new ::longportapp::quote::v1::CapitalDistributionResponse_CapitalDistribution(*from._impl_.capital_out_);
+  }
+  _this->_impl_.timestamp_ = from._impl_.timestamp_;
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.CapitalDistributionResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE CapitalDistributionResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena) {}
-
 inline void CapitalDistributionResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, capital_in_),
-           0,
-           offsetof(Impl_, timestamp_) -
-               offsetof(Impl_, capital_in_) +
-               sizeof(Impl_::timestamp_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.capital_in_){nullptr},
+      decltype(_impl_.capital_out_){nullptr},
+      decltype(_impl_.timestamp_){::int64_t{0}},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 CapitalDistributionResponse::~CapitalDistributionResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.CapitalDistributionResponse)
@@ -19657,16 +20885,17 @@ CapitalDistributionResponse::~CapitalDistributionResponse() {
   SharedDtor();
 }
 inline void CapitalDistributionResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  delete _impl_.capital_in_;
-  delete _impl_.capital_out_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.capital_in_;
+  if (this != internal_default_instance()) delete _impl_.capital_out_;
+}
+void CapitalDistributionResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void CapitalDistributionResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.CapitalDistributionResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -19772,15 +21001,15 @@ const ::_pbi::TcParseTable<2, 4, 2, 63, 2> CapitalDistributionResponse::_table_ 
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        3, _Internal::capital_in(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(3, _Internal::capital_in(this),
         _Internal::capital_in(this).GetCachedSize(), target, stream);
   }
 
   // .longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        4, _Internal::capital_out(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(4, _Internal::capital_out(this),
         _Internal::capital_out(this).GetCachedSize(), target, stream);
   }
 
@@ -19811,14 +21040,16 @@ const ::_pbi::TcParseTable<2, 4, 2, 63, 2> CapitalDistributionResponse::_table_ 
   if (cached_has_bits & 0x00000003u) {
     // .longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_in = 3 [json_name = "capitalIn"];
     if (cached_has_bits & 0x00000001u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.capital_in_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.capital_in_);
     }
 
     // .longportapp.quote.v1.CapitalDistributionResponse.CapitalDistribution capital_out = 4 [json_name = "capitalOut"];
     if (cached_has_bits & 0x00000002u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.capital_out_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.capital_out_);
     }
 
   }
@@ -19832,12 +21063,11 @@ const ::_pbi::TcParseTable<2, 4, 2, 63, 2> CapitalDistributionResponse::_table_ 
 }
 
 const ::google::protobuf::Message::ClassData CapitalDistributionResponse::_class_data_ = {
-    CapitalDistributionResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    CapitalDistributionResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* CapitalDistributionResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*CapitalDistributionResponse::GetClassData() const { return &_class_data_; }
+
 
 void CapitalDistributionResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<CapitalDistributionResponse*>(&to_msg);
@@ -19878,16 +21108,14 @@ PROTOBUF_NOINLINE bool CapitalDistributionResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* CapitalDistributionResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void CapitalDistributionResponse::InternalSwap(CapitalDistributionResponse* PROTOBUF_RESTRICT other) {
+void CapitalDistributionResponse::InternalSwap(CapitalDistributionResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CapitalDistributionResponse, _impl_.timestamp_)
       + sizeof(CapitalDistributionResponse::_impl_.timestamp_)
@@ -19912,36 +21140,28 @@ SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(::google::protobuf::Arena* ar
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityCalcQuoteRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcQuoteRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbols_{visibility, arena, from.symbols_},
-        calc_index_{visibility, arena, from.calc_index_},
-        _calc_index_cached_byte_size_{0},
-        _cached_size_{0} {}
-
-SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityCalcQuoteRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityCalcQuoteRequest::SecurityCalcQuoteRequest(const SecurityCalcQuoteRequest& from) : ::google::protobuf::Message() {
   SecurityCalcQuoteRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbols_){from._impl_.symbols_},
+      decltype(_impl_.calc_index_){from._internal_calc_index()},
+      /*decltype(_impl_._calc_index_cached_byte_size_)*/ {0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityCalcQuoteRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcQuoteRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbols_{visibility, arena},
-        calc_index_{visibility, arena},
-        _calc_index_cached_byte_size_{0},
-        _cached_size_{0} {}
-
 inline void SecurityCalcQuoteRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbols_){arena},
+      decltype(_impl_.calc_index_){arena},
+      /*decltype(_impl_._calc_index_cached_byte_size_)*/ {0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SecurityCalcQuoteRequest::~SecurityCalcQuoteRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityCalcQuoteRequest)
@@ -19949,19 +21169,22 @@ SecurityCalcQuoteRequest::~SecurityCalcQuoteRequest() {
   SharedDtor();
 }
 inline void SecurityCalcQuoteRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_symbols()->~RepeatedPtrField();
+  _internal_mutable_calc_index()->~RepeatedField();
+}
+void SecurityCalcQuoteRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityCalcQuoteRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityCalcQuoteRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.symbols_.Clear();
-  _impl_.calc_index_.Clear();
+  _internal_mutable_symbols()->Clear();
+  _internal_mutable_calc_index()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -20028,7 +21251,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 61, 2> SecurityCalcQuoteRequest::_table_ = {
 
   // repeated .longportapp.quote.v1.CalcIndex calc_index = 2 [json_name = "calcIndex"];
   {
-    std::size_t byte_size = _impl_._calc_index_cached_byte_size_.Get();
+    int byte_size = _impl_._calc_index_cached_byte_size_.Get();
     if (byte_size > 0) {
       target = stream->WriteEnumPacked(2, _internal_calc_index(),
                                        byte_size, target);
@@ -20079,12 +21302,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 61, 2> SecurityCalcQuoteRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityCalcQuoteRequest::_class_data_ = {
-    SecurityCalcQuoteRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityCalcQuoteRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityCalcQuoteRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityCalcQuoteRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityCalcQuoteRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityCalcQuoteRequest*>(&to_msg);
@@ -20110,10 +21332,7 @@ PROTOBUF_NOINLINE bool SecurityCalcQuoteRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityCalcQuoteRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityCalcQuoteRequest::InternalSwap(SecurityCalcQuoteRequest* PROTOBUF_RESTRICT other) {
+void SecurityCalcQuoteRequest::InternalSwap(SecurityCalcQuoteRequest* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.symbols_.InternalSwap(&other->_impl_.symbols_);
@@ -20136,119 +21355,525 @@ SecurityCalcIndex::SecurityCalcIndex(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityCalcIndex)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcIndex::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : symbol_(arena, from.symbol_),
-        last_done_(arena, from.last_done_),
-        change_val_(arena, from.change_val_),
-        change_rate_(arena, from.change_rate_),
-        turnover_(arena, from.turnover_),
-        ytd_change_rate_(arena, from.ytd_change_rate_),
-        turnover_rate_(arena, from.turnover_rate_),
-        total_market_value_(arena, from.total_market_value_),
-        capital_flow_(arena, from.capital_flow_),
-        amplitude_(arena, from.amplitude_),
-        volume_ratio_(arena, from.volume_ratio_),
-        pe_ttm_ratio_(arena, from.pe_ttm_ratio_),
-        pb_ratio_(arena, from.pb_ratio_),
-        dividend_ratio_ttm_(arena, from.dividend_ratio_ttm_),
-        five_day_change_rate_(arena, from.five_day_change_rate_),
-        ten_day_change_rate_(arena, from.ten_day_change_rate_),
-        half_year_change_rate_(arena, from.half_year_change_rate_),
-        five_minutes_change_rate_(arena, from.five_minutes_change_rate_),
-        expiry_date_(arena, from.expiry_date_),
-        strike_price_(arena, from.strike_price_),
-        upper_strike_price_(arena, from.upper_strike_price_),
-        lower_strike_price_(arena, from.lower_strike_price_),
-        outstanding_ratio_(arena, from.outstanding_ratio_),
-        premium_(arena, from.premium_),
-        itm_otm_(arena, from.itm_otm_),
-        implied_volatility_(arena, from.implied_volatility_),
-        warrant_delta_(arena, from.warrant_delta_),
-        call_price_(arena, from.call_price_),
-        to_call_price_(arena, from.to_call_price_),
-        effective_leverage_(arena, from.effective_leverage_),
-        leverage_ratio_(arena, from.leverage_ratio_),
-        conversion_ratio_(arena, from.conversion_ratio_),
-        balance_point_(arena, from.balance_point_),
-        delta_(arena, from.delta_),
-        gamma_(arena, from.gamma_),
-        theta_(arena, from.theta_),
-        vega_(arena, from.vega_),
-        rho_(arena, from.rho_),
-        _cached_size_{0} {}
-
-SecurityCalcIndex::SecurityCalcIndex(
-    ::google::protobuf::Arena* arena,
-    const SecurityCalcIndex& from)
-    : ::google::protobuf::Message(arena) {
+SecurityCalcIndex::SecurityCalcIndex(const SecurityCalcIndex& from) : ::google::protobuf::Message() {
   SecurityCalcIndex* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.change_val_){},
+      decltype(_impl_.change_rate_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.ytd_change_rate_){},
+      decltype(_impl_.turnover_rate_){},
+      decltype(_impl_.total_market_value_){},
+      decltype(_impl_.capital_flow_){},
+      decltype(_impl_.amplitude_){},
+      decltype(_impl_.volume_ratio_){},
+      decltype(_impl_.pe_ttm_ratio_){},
+      decltype(_impl_.pb_ratio_){},
+      decltype(_impl_.dividend_ratio_ttm_){},
+      decltype(_impl_.five_day_change_rate_){},
+      decltype(_impl_.ten_day_change_rate_){},
+      decltype(_impl_.half_year_change_rate_){},
+      decltype(_impl_.five_minutes_change_rate_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.premium_){},
+      decltype(_impl_.itm_otm_){},
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.warrant_delta_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.to_call_price_){},
+      decltype(_impl_.effective_leverage_){},
+      decltype(_impl_.leverage_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.balance_point_){},
+      decltype(_impl_.delta_){},
+      decltype(_impl_.gamma_){},
+      decltype(_impl_.theta_){},
+      decltype(_impl_.vega_){},
+      decltype(_impl_.rho_){},
+      decltype(_impl_.volume_){},
+      decltype(_impl_.outstanding_qty_){},
+      decltype(_impl_.open_interest_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, volume_),
-           offsetof(Impl_, open_interest_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::open_interest_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_last_done().empty()) {
+    _this->_impl_.last_done_.Set(from._internal_last_done(), _this->GetArenaForAllocation());
+  }
+  _impl_.change_val_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_val_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_val().empty()) {
+    _this->_impl_.change_val_.Set(from._internal_change_val(), _this->GetArenaForAllocation());
+  }
+  _impl_.change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_change_rate().empty()) {
+    _this->_impl_.change_rate_.Set(from._internal_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover().empty()) {
+    _this->_impl_.turnover_.Set(from._internal_turnover(), _this->GetArenaForAllocation());
+  }
+  _impl_.ytd_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.ytd_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_ytd_change_rate().empty()) {
+    _this->_impl_.ytd_change_rate_.Set(from._internal_ytd_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.turnover_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_turnover_rate().empty()) {
+    _this->_impl_.turnover_rate_.Set(from._internal_turnover_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.total_market_value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.total_market_value_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_total_market_value().empty()) {
+    _this->_impl_.total_market_value_.Set(from._internal_total_market_value(), _this->GetArenaForAllocation());
+  }
+  _impl_.capital_flow_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.capital_flow_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_capital_flow().empty()) {
+    _this->_impl_.capital_flow_.Set(from._internal_capital_flow(), _this->GetArenaForAllocation());
+  }
+  _impl_.amplitude_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.amplitude_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_amplitude().empty()) {
+    _this->_impl_.amplitude_.Set(from._internal_amplitude(), _this->GetArenaForAllocation());
+  }
+  _impl_.volume_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.volume_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_volume_ratio().empty()) {
+    _this->_impl_.volume_ratio_.Set(from._internal_volume_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.pe_ttm_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.pe_ttm_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_pe_ttm_ratio().empty()) {
+    _this->_impl_.pe_ttm_ratio_.Set(from._internal_pe_ttm_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.pb_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.pb_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_pb_ratio().empty()) {
+    _this->_impl_.pb_ratio_.Set(from._internal_pb_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.dividend_ratio_ttm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.dividend_ratio_ttm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_dividend_ratio_ttm().empty()) {
+    _this->_impl_.dividend_ratio_ttm_.Set(from._internal_dividend_ratio_ttm(), _this->GetArenaForAllocation());
+  }
+  _impl_.five_day_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.five_day_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_five_day_change_rate().empty()) {
+    _this->_impl_.five_day_change_rate_.Set(from._internal_five_day_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.ten_day_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.ten_day_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_ten_day_change_rate().empty()) {
+    _this->_impl_.ten_day_change_rate_.Set(from._internal_ten_day_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.half_year_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.half_year_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_half_year_change_rate().empty()) {
+    _this->_impl_.half_year_change_rate_.Set(from._internal_half_year_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.five_minutes_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.five_minutes_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_five_minutes_change_rate().empty()) {
+    _this->_impl_.five_minutes_change_rate_.Set(from._internal_five_minutes_change_rate(), _this->GetArenaForAllocation());
+  }
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_expiry_date().empty()) {
+    _this->_impl_.expiry_date_.Set(from._internal_expiry_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_strike_price().empty()) {
+    _this->_impl_.strike_price_.Set(from._internal_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_upper_strike_price().empty()) {
+    _this->_impl_.upper_strike_price_.Set(from._internal_upper_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_lower_strike_price().empty()) {
+    _this->_impl_.lower_strike_price_.Set(from._internal_lower_strike_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_outstanding_ratio().empty()) {
+    _this->_impl_.outstanding_ratio_.Set(from._internal_outstanding_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.premium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.premium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_premium().empty()) {
+    _this->_impl_.premium_.Set(from._internal_premium(), _this->GetArenaForAllocation());
+  }
+  _impl_.itm_otm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.itm_otm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_itm_otm().empty()) {
+    _this->_impl_.itm_otm_.Set(from._internal_itm_otm(), _this->GetArenaForAllocation());
+  }
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_implied_volatility().empty()) {
+    _this->_impl_.implied_volatility_.Set(from._internal_implied_volatility(), _this->GetArenaForAllocation());
+  }
+  _impl_.warrant_delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.warrant_delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_warrant_delta().empty()) {
+    _this->_impl_.warrant_delta_.Set(from._internal_warrant_delta(), _this->GetArenaForAllocation());
+  }
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_call_price().empty()) {
+    _this->_impl_.call_price_.Set(from._internal_call_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.to_call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.to_call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_to_call_price().empty()) {
+    _this->_impl_.to_call_price_.Set(from._internal_to_call_price(), _this->GetArenaForAllocation());
+  }
+  _impl_.effective_leverage_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.effective_leverage_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_effective_leverage().empty()) {
+    _this->_impl_.effective_leverage_.Set(from._internal_effective_leverage(), _this->GetArenaForAllocation());
+  }
+  _impl_.leverage_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.leverage_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_leverage_ratio().empty()) {
+    _this->_impl_.leverage_ratio_.Set(from._internal_leverage_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_conversion_ratio().empty()) {
+    _this->_impl_.conversion_ratio_.Set(from._internal_conversion_ratio(), _this->GetArenaForAllocation());
+  }
+  _impl_.balance_point_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.balance_point_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_balance_point().empty()) {
+    _this->_impl_.balance_point_.Set(from._internal_balance_point(), _this->GetArenaForAllocation());
+  }
+  _impl_.delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_delta().empty()) {
+    _this->_impl_.delta_.Set(from._internal_delta(), _this->GetArenaForAllocation());
+  }
+  _impl_.gamma_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.gamma_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_gamma().empty()) {
+    _this->_impl_.gamma_.Set(from._internal_gamma(), _this->GetArenaForAllocation());
+  }
+  _impl_.theta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.theta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_theta().empty()) {
+    _this->_impl_.theta_.Set(from._internal_theta(), _this->GetArenaForAllocation());
+  }
+  _impl_.vega_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.vega_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_vega().empty()) {
+    _this->_impl_.vega_.Set(from._internal_vega(), _this->GetArenaForAllocation());
+  }
+  _impl_.rho_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.rho_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_rho().empty()) {
+    _this->_impl_.rho_.Set(from._internal_rho(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.volume_, &from._impl_.volume_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.open_interest_) -
+    reinterpret_cast<char*>(&_impl_.volume_)) + sizeof(_impl_.open_interest_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityCalcIndex)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcIndex::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : symbol_(arena),
-        last_done_(arena),
-        change_val_(arena),
-        change_rate_(arena),
-        turnover_(arena),
-        ytd_change_rate_(arena),
-        turnover_rate_(arena),
-        total_market_value_(arena),
-        capital_flow_(arena),
-        amplitude_(arena),
-        volume_ratio_(arena),
-        pe_ttm_ratio_(arena),
-        pb_ratio_(arena),
-        dividend_ratio_ttm_(arena),
-        five_day_change_rate_(arena),
-        ten_day_change_rate_(arena),
-        half_year_change_rate_(arena),
-        five_minutes_change_rate_(arena),
-        expiry_date_(arena),
-        strike_price_(arena),
-        upper_strike_price_(arena),
-        lower_strike_price_(arena),
-        outstanding_ratio_(arena),
-        premium_(arena),
-        itm_otm_(arena),
-        implied_volatility_(arena),
-        warrant_delta_(arena),
-        call_price_(arena),
-        to_call_price_(arena),
-        effective_leverage_(arena),
-        leverage_ratio_(arena),
-        conversion_ratio_(arena),
-        balance_point_(arena),
-        delta_(arena),
-        gamma_(arena),
-        theta_(arena),
-        vega_(arena),
-        rho_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityCalcIndex::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, volume_),
-           0,
-           offsetof(Impl_, open_interest_) -
-               offsetof(Impl_, volume_) +
-               sizeof(Impl_::open_interest_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.last_done_){},
+      decltype(_impl_.change_val_){},
+      decltype(_impl_.change_rate_){},
+      decltype(_impl_.turnover_){},
+      decltype(_impl_.ytd_change_rate_){},
+      decltype(_impl_.turnover_rate_){},
+      decltype(_impl_.total_market_value_){},
+      decltype(_impl_.capital_flow_){},
+      decltype(_impl_.amplitude_){},
+      decltype(_impl_.volume_ratio_){},
+      decltype(_impl_.pe_ttm_ratio_){},
+      decltype(_impl_.pb_ratio_){},
+      decltype(_impl_.dividend_ratio_ttm_){},
+      decltype(_impl_.five_day_change_rate_){},
+      decltype(_impl_.ten_day_change_rate_){},
+      decltype(_impl_.half_year_change_rate_){},
+      decltype(_impl_.five_minutes_change_rate_){},
+      decltype(_impl_.expiry_date_){},
+      decltype(_impl_.strike_price_){},
+      decltype(_impl_.upper_strike_price_){},
+      decltype(_impl_.lower_strike_price_){},
+      decltype(_impl_.outstanding_ratio_){},
+      decltype(_impl_.premium_){},
+      decltype(_impl_.itm_otm_){},
+      decltype(_impl_.implied_volatility_){},
+      decltype(_impl_.warrant_delta_){},
+      decltype(_impl_.call_price_){},
+      decltype(_impl_.to_call_price_){},
+      decltype(_impl_.effective_leverage_){},
+      decltype(_impl_.leverage_ratio_){},
+      decltype(_impl_.conversion_ratio_){},
+      decltype(_impl_.balance_point_){},
+      decltype(_impl_.delta_){},
+      decltype(_impl_.gamma_){},
+      decltype(_impl_.theta_){},
+      decltype(_impl_.vega_){},
+      decltype(_impl_.rho_){},
+      decltype(_impl_.volume_){::int64_t{0}},
+      decltype(_impl_.outstanding_qty_){::int64_t{0}},
+      decltype(_impl_.open_interest_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.last_done_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.last_done_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.change_val_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_val_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.ytd_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.ytd_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.turnover_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.turnover_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.total_market_value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.total_market_value_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.capital_flow_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.capital_flow_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.amplitude_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.amplitude_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.volume_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.volume_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.pe_ttm_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.pe_ttm_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.pb_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.pb_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.dividend_ratio_ttm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.dividend_ratio_ttm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.five_day_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.five_day_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.ten_day_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.ten_day_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.half_year_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.half_year_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.five_minutes_change_rate_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.five_minutes_change_rate_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.expiry_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.expiry_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.upper_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.upper_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.lower_strike_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.lower_strike_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.outstanding_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.outstanding_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.premium_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.premium_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.itm_otm_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.itm_otm_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.implied_volatility_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.implied_volatility_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.warrant_delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.warrant_delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.to_call_price_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.to_call_price_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.effective_leverage_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.effective_leverage_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.leverage_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.leverage_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.conversion_ratio_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.conversion_ratio_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.balance_point_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.balance_point_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.delta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.delta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.gamma_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.gamma_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.theta_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.theta_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.vega_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.vega_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.rho_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.rho_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityCalcIndex::~SecurityCalcIndex() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityCalcIndex)
@@ -20256,7 +21881,7 @@ SecurityCalcIndex::~SecurityCalcIndex() {
   SharedDtor();
 }
 inline void SecurityCalcIndex::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
   _impl_.last_done_.Destroy();
   _impl_.change_val_.Destroy();
@@ -20295,12 +21920,13 @@ inline void SecurityCalcIndex::SharedDtor() {
   _impl_.theta_.Destroy();
   _impl_.vega_.Destroy();
   _impl_.rho_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityCalcIndex::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityCalcIndex::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityCalcIndex)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -21238,12 +22864,11 @@ const ::_pbi::TcParseTable<5, 41, 0, 559, 7> SecurityCalcIndex::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityCalcIndex::_class_data_ = {
-    SecurityCalcIndex::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityCalcIndex::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityCalcIndex::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityCalcIndex::GetClassData() const { return &_class_data_; }
+
 
 void SecurityCalcIndex::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityCalcIndex*>(&to_msg);
@@ -21390,52 +23015,87 @@ PROTOBUF_NOINLINE bool SecurityCalcIndex::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityCalcIndex::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityCalcIndex::InternalSwap(SecurityCalcIndex* PROTOBUF_RESTRICT other) {
+void SecurityCalcIndex::InternalSwap(SecurityCalcIndex* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, &other->_impl_.last_done_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_val_, &other->_impl_.change_val_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_rate_, &other->_impl_.change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, &other->_impl_.turnover_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.ytd_change_rate_, &other->_impl_.ytd_change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_rate_, &other->_impl_.turnover_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.total_market_value_, &other->_impl_.total_market_value_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.capital_flow_, &other->_impl_.capital_flow_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.amplitude_, &other->_impl_.amplitude_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.volume_ratio_, &other->_impl_.volume_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.pe_ttm_ratio_, &other->_impl_.pe_ttm_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.pb_ratio_, &other->_impl_.pb_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.dividend_ratio_ttm_, &other->_impl_.dividend_ratio_ttm_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.five_day_change_rate_, &other->_impl_.five_day_change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.ten_day_change_rate_, &other->_impl_.ten_day_change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.half_year_change_rate_, &other->_impl_.half_year_change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.five_minutes_change_rate_, &other->_impl_.five_minutes_change_rate_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, &other->_impl_.expiry_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, &other->_impl_.strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, &other->_impl_.upper_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, &other->_impl_.lower_strike_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, &other->_impl_.outstanding_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.premium_, &other->_impl_.premium_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.itm_otm_, &other->_impl_.itm_otm_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, &other->_impl_.implied_volatility_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.warrant_delta_, &other->_impl_.warrant_delta_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, &other->_impl_.call_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.to_call_price_, &other->_impl_.to_call_price_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.effective_leverage_, &other->_impl_.effective_leverage_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.leverage_ratio_, &other->_impl_.leverage_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, &other->_impl_.conversion_ratio_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.balance_point_, &other->_impl_.balance_point_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.delta_, &other->_impl_.delta_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.gamma_, &other->_impl_.gamma_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.theta_, &other->_impl_.theta_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.vega_, &other->_impl_.vega_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.rho_, &other->_impl_.rho_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.last_done_, lhs_arena,
+                                       &other->_impl_.last_done_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_val_, lhs_arena,
+                                       &other->_impl_.change_val_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.change_rate_, lhs_arena,
+                                       &other->_impl_.change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_, lhs_arena,
+                                       &other->_impl_.turnover_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.ytd_change_rate_, lhs_arena,
+                                       &other->_impl_.ytd_change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.turnover_rate_, lhs_arena,
+                                       &other->_impl_.turnover_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.total_market_value_, lhs_arena,
+                                       &other->_impl_.total_market_value_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.capital_flow_, lhs_arena,
+                                       &other->_impl_.capital_flow_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.amplitude_, lhs_arena,
+                                       &other->_impl_.amplitude_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.volume_ratio_, lhs_arena,
+                                       &other->_impl_.volume_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.pe_ttm_ratio_, lhs_arena,
+                                       &other->_impl_.pe_ttm_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.pb_ratio_, lhs_arena,
+                                       &other->_impl_.pb_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.dividend_ratio_ttm_, lhs_arena,
+                                       &other->_impl_.dividend_ratio_ttm_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.five_day_change_rate_, lhs_arena,
+                                       &other->_impl_.five_day_change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.ten_day_change_rate_, lhs_arena,
+                                       &other->_impl_.ten_day_change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.half_year_change_rate_, lhs_arena,
+                                       &other->_impl_.half_year_change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.five_minutes_change_rate_, lhs_arena,
+                                       &other->_impl_.five_minutes_change_rate_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.expiry_date_, lhs_arena,
+                                       &other->_impl_.expiry_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.strike_price_, lhs_arena,
+                                       &other->_impl_.strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.upper_strike_price_, lhs_arena,
+                                       &other->_impl_.upper_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.lower_strike_price_, lhs_arena,
+                                       &other->_impl_.lower_strike_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.outstanding_ratio_, lhs_arena,
+                                       &other->_impl_.outstanding_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.premium_, lhs_arena,
+                                       &other->_impl_.premium_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.itm_otm_, lhs_arena,
+                                       &other->_impl_.itm_otm_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.implied_volatility_, lhs_arena,
+                                       &other->_impl_.implied_volatility_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.warrant_delta_, lhs_arena,
+                                       &other->_impl_.warrant_delta_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.call_price_, lhs_arena,
+                                       &other->_impl_.call_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.to_call_price_, lhs_arena,
+                                       &other->_impl_.to_call_price_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.effective_leverage_, lhs_arena,
+                                       &other->_impl_.effective_leverage_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.leverage_ratio_, lhs_arena,
+                                       &other->_impl_.leverage_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.conversion_ratio_, lhs_arena,
+                                       &other->_impl_.conversion_ratio_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.balance_point_, lhs_arena,
+                                       &other->_impl_.balance_point_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.delta_, lhs_arena,
+                                       &other->_impl_.delta_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.gamma_, lhs_arena,
+                                       &other->_impl_.gamma_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.theta_, lhs_arena,
+                                       &other->_impl_.theta_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.vega_, lhs_arena,
+                                       &other->_impl_.vega_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.rho_, lhs_arena,
+                                       &other->_impl_.rho_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SecurityCalcIndex, _impl_.open_interest_)
       + sizeof(SecurityCalcIndex::_impl_.open_interest_)
@@ -21460,32 +23120,24 @@ SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(::google::protobuf::Arena* 
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityCalcQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : security_calc_index_{visibility, arena, from.security_calc_index_},
-        _cached_size_{0} {}
-
-SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(
-    ::google::protobuf::Arena* arena,
-    const SecurityCalcQuoteResponse& from)
-    : ::google::protobuf::Message(arena) {
+SecurityCalcQuoteResponse::SecurityCalcQuoteResponse(const SecurityCalcQuoteResponse& from) : ::google::protobuf::Message() {
   SecurityCalcQuoteResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.security_calc_index_){from._impl_.security_calc_index_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityCalcQuoteResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityCalcQuoteResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : security_calc_index_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void SecurityCalcQuoteResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.security_calc_index_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SecurityCalcQuoteResponse::~SecurityCalcQuoteResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityCalcQuoteResponse)
@@ -21493,18 +23145,20 @@ SecurityCalcQuoteResponse::~SecurityCalcQuoteResponse() {
   SharedDtor();
 }
 inline void SecurityCalcQuoteResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.security_calc_index_.~RepeatedPtrField();
+}
+void SecurityCalcQuoteResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityCalcQuoteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityCalcQuoteResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.security_calc_index_.Clear();
+  _internal_mutable_security_calc_index()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -21587,12 +23241,11 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> SecurityCalcQuoteResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SecurityCalcQuoteResponse::_class_data_ = {
-    SecurityCalcQuoteResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityCalcQuoteResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityCalcQuoteResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityCalcQuoteResponse::GetClassData() const { return &_class_data_; }
+
 
 void SecurityCalcQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityCalcQuoteResponse*>(&to_msg);
@@ -21602,8 +23255,7 @@ void SecurityCalcQuoteResponse::MergeImpl(::google::protobuf::Message& to_msg, c
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_security_calc_index()->MergeFrom(
-      from._internal_security_calc_index());
+  _this->_internal_mutable_security_calc_index()->MergeFrom(from._internal_security_calc_index());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -21618,10 +23270,7 @@ PROTOBUF_NOINLINE bool SecurityCalcQuoteResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SecurityCalcQuoteResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityCalcQuoteResponse::InternalSwap(SecurityCalcQuoteResponse* PROTOBUF_RESTRICT other) {
+void SecurityCalcQuoteResponse::InternalSwap(SecurityCalcQuoteResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.security_calc_index_.InternalSwap(&other->_impl_.security_calc_index_);
@@ -21643,47 +23292,55 @@ SecurityHistoryCandlestickRequest_OffsetQuery::SecurityHistoryCandlestickRequest
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest_OffsetQuery::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : date_(arena, from.date_),
-        minute_(arena, from.minute_),
-        _cached_size_{0} {}
-
-SecurityHistoryCandlestickRequest_OffsetQuery::SecurityHistoryCandlestickRequest_OffsetQuery(
-    ::google::protobuf::Arena* arena,
-    const SecurityHistoryCandlestickRequest_OffsetQuery& from)
-    : ::google::protobuf::Message(arena) {
+SecurityHistoryCandlestickRequest_OffsetQuery::SecurityHistoryCandlestickRequest_OffsetQuery(const SecurityHistoryCandlestickRequest_OffsetQuery& from) : ::google::protobuf::Message() {
   SecurityHistoryCandlestickRequest_OffsetQuery* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.date_){},
+      decltype(_impl_.minute_){},
+      decltype(_impl_.direction_){},
+      decltype(_impl_.count_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, direction_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, direction_),
-           offsetof(Impl_, count_) -
-               offsetof(Impl_, direction_) +
-               sizeof(Impl_::count_));
+  _impl_.date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_date().empty()) {
+    _this->_impl_.date_.Set(from._internal_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.minute_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.minute_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_minute().empty()) {
+    _this->_impl_.minute_.Set(from._internal_minute(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.direction_, &from._impl_.direction_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.count_) -
+    reinterpret_cast<char*>(&_impl_.direction_)) + sizeof(_impl_.count_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest_OffsetQuery::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : date_(arena),
-        minute_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityHistoryCandlestickRequest_OffsetQuery::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, direction_),
-           0,
-           offsetof(Impl_, count_) -
-               offsetof(Impl_, direction_) +
-               sizeof(Impl_::count_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.date_){},
+      decltype(_impl_.minute_){},
+      decltype(_impl_.direction_){0},
+      decltype(_impl_.count_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.minute_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.minute_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityHistoryCandlestickRequest_OffsetQuery::~SecurityHistoryCandlestickRequest_OffsetQuery() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery)
@@ -21691,15 +23348,16 @@ SecurityHistoryCandlestickRequest_OffsetQuery::~SecurityHistoryCandlestickReques
   SharedDtor();
 }
 inline void SecurityHistoryCandlestickRequest_OffsetQuery::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.date_.Destroy();
   _impl_.minute_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityHistoryCandlestickRequest_OffsetQuery::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityHistoryCandlestickRequest_OffsetQuery::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -21853,12 +23511,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 85, 2> SecurityHistoryCandlestickRequest_Off
 }
 
 const ::google::protobuf::Message::ClassData SecurityHistoryCandlestickRequest_OffsetQuery::_class_data_ = {
-    SecurityHistoryCandlestickRequest_OffsetQuery::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityHistoryCandlestickRequest_OffsetQuery::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityHistoryCandlestickRequest_OffsetQuery::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityHistoryCandlestickRequest_OffsetQuery::GetClassData() const { return &_class_data_; }
+
 
 void SecurityHistoryCandlestickRequest_OffsetQuery::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityHistoryCandlestickRequest_OffsetQuery*>(&to_msg);
@@ -21894,16 +23551,15 @@ PROTOBUF_NOINLINE bool SecurityHistoryCandlestickRequest_OffsetQuery::IsInitiali
   return true;
 }
 
-::_pbi::CachedSize* SecurityHistoryCandlestickRequest_OffsetQuery::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityHistoryCandlestickRequest_OffsetQuery::InternalSwap(SecurityHistoryCandlestickRequest_OffsetQuery* PROTOBUF_RESTRICT other) {
+void SecurityHistoryCandlestickRequest_OffsetQuery::InternalSwap(SecurityHistoryCandlestickRequest_OffsetQuery* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.date_, &other->_impl_.date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.minute_, &other->_impl_.minute_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.date_, lhs_arena,
+                                       &other->_impl_.date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.minute_, lhs_arena,
+                                       &other->_impl_.minute_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest_OffsetQuery, _impl_.count_)
       + sizeof(SecurityHistoryCandlestickRequest_OffsetQuery::_impl_.count_)
@@ -21928,34 +23584,48 @@ SecurityHistoryCandlestickRequest_DateQuery::SecurityHistoryCandlestickRequest_D
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest_DateQuery::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : start_date_(arena, from.start_date_),
-        end_date_(arena, from.end_date_),
-        _cached_size_{0} {}
-
-SecurityHistoryCandlestickRequest_DateQuery::SecurityHistoryCandlestickRequest_DateQuery(
-    ::google::protobuf::Arena* arena,
-    const SecurityHistoryCandlestickRequest_DateQuery& from)
-    : ::google::protobuf::Message(arena) {
+SecurityHistoryCandlestickRequest_DateQuery::SecurityHistoryCandlestickRequest_DateQuery(const SecurityHistoryCandlestickRequest_DateQuery& from) : ::google::protobuf::Message() {
   SecurityHistoryCandlestickRequest_DateQuery* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.start_date_){},
+      decltype(_impl_.end_date_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.start_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.start_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_start_date().empty()) {
+    _this->_impl_.start_date_.Set(from._internal_start_date(), _this->GetArenaForAllocation());
+  }
+  _impl_.end_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.end_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_end_date().empty()) {
+    _this->_impl_.end_date_.Set(from._internal_end_date(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest_DateQuery::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : start_date_(arena),
-        end_date_(arena),
-        _cached_size_{0} {}
-
 inline void SecurityHistoryCandlestickRequest_DateQuery::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.start_date_){},
+      decltype(_impl_.end_date_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.start_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.start_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.end_date_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.end_date_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityHistoryCandlestickRequest_DateQuery::~SecurityHistoryCandlestickRequest_DateQuery() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery)
@@ -21963,15 +23633,16 @@ SecurityHistoryCandlestickRequest_DateQuery::~SecurityHistoryCandlestickRequest_
   SharedDtor();
 }
 inline void SecurityHistoryCandlestickRequest_DateQuery::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.start_date_.Destroy();
   _impl_.end_date_.Destroy();
-  _impl_.~Impl_();
+}
+void SecurityHistoryCandlestickRequest_DateQuery::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityHistoryCandlestickRequest_DateQuery::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -22084,12 +23755,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 91, 2> SecurityHistoryCandlestickRequest_Dat
 }
 
 const ::google::protobuf::Message::ClassData SecurityHistoryCandlestickRequest_DateQuery::_class_data_ = {
-    SecurityHistoryCandlestickRequest_DateQuery::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityHistoryCandlestickRequest_DateQuery::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityHistoryCandlestickRequest_DateQuery::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityHistoryCandlestickRequest_DateQuery::GetClassData() const { return &_class_data_; }
+
 
 void SecurityHistoryCandlestickRequest_DateQuery::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityHistoryCandlestickRequest_DateQuery*>(&to_msg);
@@ -22119,16 +23789,15 @@ PROTOBUF_NOINLINE bool SecurityHistoryCandlestickRequest_DateQuery::IsInitialize
   return true;
 }
 
-::_pbi::CachedSize* SecurityHistoryCandlestickRequest_DateQuery::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityHistoryCandlestickRequest_DateQuery::InternalSwap(SecurityHistoryCandlestickRequest_DateQuery* PROTOBUF_RESTRICT other) {
+void SecurityHistoryCandlestickRequest_DateQuery::InternalSwap(SecurityHistoryCandlestickRequest_DateQuery* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.start_date_, &other->_impl_.start_date_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.end_date_, &other->_impl_.end_date_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.start_date_, lhs_arena,
+                                       &other->_impl_.start_date_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.end_date_, lhs_arena,
+                                       &other->_impl_.end_date_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SecurityHistoryCandlestickRequest_DateQuery::GetMetadata() const {
@@ -22164,53 +23833,58 @@ SecurityHistoryCandlestickRequest::SecurityHistoryCandlestickRequest(::google::p
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        symbol_(arena, from.symbol_) {}
-
-SecurityHistoryCandlestickRequest::SecurityHistoryCandlestickRequest(
-    ::google::protobuf::Arena* arena,
-    const SecurityHistoryCandlestickRequest& from)
-    : ::google::protobuf::Message(arena) {
+SecurityHistoryCandlestickRequest::SecurityHistoryCandlestickRequest(const SecurityHistoryCandlestickRequest& from) : ::google::protobuf::Message() {
   SecurityHistoryCandlestickRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.offset_request_){nullptr},
+      decltype(_impl_.date_request_){nullptr},
+      decltype(_impl_.period_){},
+      decltype(_impl_.adjust_type_){},
+      decltype(_impl_.query_type_){},
+      decltype(_impl_.trade_session_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.offset_request_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery>(arena, *from._impl_.offset_request_)
-                : nullptr;
-  _impl_.date_request_ = (cached_has_bits & 0x00000002u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery>(arena, *from._impl_.date_request_)
-                : nullptr;
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, period_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, period_),
-           offsetof(Impl_, query_type_) -
-               offsetof(Impl_, period_) +
-               sizeof(Impl_::query_type_));
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_symbol().empty()) {
+    _this->_impl_.symbol_.Set(from._internal_symbol(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.offset_request_ = new ::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery(*from._impl_.offset_request_);
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000002u) != 0) {
+    _this->_impl_.date_request_ = new ::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery(*from._impl_.date_request_);
+  }
+  ::memcpy(&_impl_.period_, &from._impl_.period_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.trade_session_) -
+    reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.trade_session_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE SecurityHistoryCandlestickRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        symbol_(arena) {}
-
 inline void SecurityHistoryCandlestickRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, offset_request_),
-           0,
-           offsetof(Impl_, query_type_) -
-               offsetof(Impl_, offset_request_) +
-               sizeof(Impl_::query_type_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.symbol_){},
+      decltype(_impl_.offset_request_){nullptr},
+      decltype(_impl_.date_request_){nullptr},
+      decltype(_impl_.period_){0},
+      decltype(_impl_.adjust_type_){0},
+      decltype(_impl_.query_type_){0},
+      decltype(_impl_.trade_session_){0},
+  };
+  _impl_.symbol_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.symbol_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SecurityHistoryCandlestickRequest::~SecurityHistoryCandlestickRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.SecurityHistoryCandlestickRequest)
@@ -22218,16 +23892,17 @@ SecurityHistoryCandlestickRequest::~SecurityHistoryCandlestickRequest() {
   SharedDtor();
 }
 inline void SecurityHistoryCandlestickRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.symbol_.Destroy();
-  delete _impl_.offset_request_;
-  delete _impl_.date_request_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.offset_request_;
+  if (this != internal_default_instance()) delete _impl_.date_request_;
+}
+void SecurityHistoryCandlestickRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SecurityHistoryCandlestickRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.SecurityHistoryCandlestickRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -22245,8 +23920,8 @@ PROTOBUF_NOINLINE void SecurityHistoryCandlestickRequest::Clear() {
     }
   }
   ::memset(&_impl_.period_, 0, static_cast<::size_t>(
-      reinterpret_cast<char*>(&_impl_.query_type_) -
-      reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.query_type_));
+      reinterpret_cast<char*>(&_impl_.trade_session_) -
+      reinterpret_cast<char*>(&_impl_.period_)) + sizeof(_impl_.trade_session_));
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -22259,15 +23934,15 @@ const char* SecurityHistoryCandlestickRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_table_ = {
+const ::_pbi::TcParseTable<3, 7, 2, 69, 2> SecurityHistoryCandlestickRequest::_table_ = {
   {
     PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_._has_bits_),
     0, // no _extensions_
-    6, 56,  // max_field_number, fast_idx_mask
+    7, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967232,  // skipmap
+    4294967168,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    6,  // num_field_entries
+    7,  // num_field_entries
     2,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     &_SecurityHistoryCandlestickRequest_default_instance_._instance,
@@ -22292,7 +23967,9 @@ const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_t
     // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery date_request = 6 [json_name = "dateRequest"];
     {::_pbi::TcParser::FastMtS1,
      {50, 1, 1, PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.date_request_)}},
-    {::_pbi::TcParser::MiniParse, {}},
+    // int32 trade_session = 7 [json_name = "tradeSession"];
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SecurityHistoryCandlestickRequest, _impl_.trade_session_), 63>(),
+     {56, 63, 0, PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.trade_session_)}},
   }}, {{
     65535, 65535
   }}, {{
@@ -22314,6 +23991,9 @@ const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_t
     // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery date_request = 6 [json_name = "dateRequest"];
     {PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.date_request_), _Internal::kHasBitsOffset + 1, 1,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 trade_session = 7 [json_name = "tradeSession"];
+    {PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.trade_session_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
   }}, {{
     {::_pbi::TcParser::GetTable<::longportapp::quote::v1::SecurityHistoryCandlestickRequest_OffsetQuery>()},
     {::_pbi::TcParser::GetTable<::longportapp::quote::v1::SecurityHistoryCandlestickRequest_DateQuery>()},
@@ -22363,16 +24043,23 @@ const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_t
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery offset_request = 5 [json_name = "offsetRequest"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        5, _Internal::offset_request(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(5, _Internal::offset_request(this),
         _Internal::offset_request(this).GetCachedSize(), target, stream);
   }
 
   // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery date_request = 6 [json_name = "dateRequest"];
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        6, _Internal::date_request(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(6, _Internal::date_request(this),
         _Internal::date_request(this).GetCachedSize(), target, stream);
+  }
+
+  // int32 trade_session = 7 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<7>(
+            stream, this->_internal_trade_session(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -22402,14 +24089,16 @@ const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_t
   if (cached_has_bits & 0x00000003u) {
     // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.OffsetQuery offset_request = 5 [json_name = "offsetRequest"];
     if (cached_has_bits & 0x00000001u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.offset_request_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.offset_request_);
     }
 
     // .longportapp.quote.v1.SecurityHistoryCandlestickRequest.DateQuery date_request = 6 [json_name = "dateRequest"];
     if (cached_has_bits & 0x00000002u) {
-      total_size +=
-          1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.date_request_);
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *_impl_.date_request_);
     }
 
   }
@@ -22431,16 +24120,21 @@ const ::_pbi::TcParseTable<3, 6, 2, 69, 2> SecurityHistoryCandlestickRequest::_t
                   ::_pbi::WireFormatLite::EnumSize(this->_internal_query_type());
   }
 
+  // int32 trade_session = 7 [json_name = "tradeSession"];
+  if (this->_internal_trade_session() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_trade_session());
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::google::protobuf::Message::ClassData SecurityHistoryCandlestickRequest::_class_data_ = {
-    SecurityHistoryCandlestickRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SecurityHistoryCandlestickRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SecurityHistoryCandlestickRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SecurityHistoryCandlestickRequest::GetClassData() const { return &_class_data_; }
+
 
 void SecurityHistoryCandlestickRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SecurityHistoryCandlestickRequest*>(&to_msg);
@@ -22473,6 +24167,9 @@ void SecurityHistoryCandlestickRequest::MergeImpl(::google::protobuf::Message& t
   if (from._internal_query_type() != 0) {
     _this->_internal_set_query_type(from._internal_query_type());
   }
+  if (from._internal_trade_session() != 0) {
+    _this->_internal_set_trade_session(from._internal_trade_session());
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -22487,19 +24184,17 @@ PROTOBUF_NOINLINE bool SecurityHistoryCandlestickRequest::IsInitialized() const 
   return true;
 }
 
-::_pbi::CachedSize* SecurityHistoryCandlestickRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SecurityHistoryCandlestickRequest::InternalSwap(SecurityHistoryCandlestickRequest* PROTOBUF_RESTRICT other) {
+void SecurityHistoryCandlestickRequest::InternalSwap(SecurityHistoryCandlestickRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, &other->_impl_.symbol_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.symbol_, lhs_arena,
+                                       &other->_impl_.symbol_, rhs_arena);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.query_type_)
-      + sizeof(SecurityHistoryCandlestickRequest::_impl_.query_type_)
+      PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.trade_session_)
+      + sizeof(SecurityHistoryCandlestickRequest::_impl_.trade_session_)
       - PROTOBUF_FIELD_OFFSET(SecurityHistoryCandlestickRequest, _impl_.offset_request_)>(
           reinterpret_cast<char*>(&_impl_.offset_request_),
           reinterpret_cast<char*>(&other->_impl_.offset_request_));
@@ -22521,32 +24216,35 @@ UserQuoteProfileRequest::UserQuoteProfileRequest(::google::protobuf::Arena* aren
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : language_(arena, from.language_),
-        _cached_size_{0} {}
-
-UserQuoteProfileRequest::UserQuoteProfileRequest(
-    ::google::protobuf::Arena* arena,
-    const UserQuoteProfileRequest& from)
-    : ::google::protobuf::Message(arena) {
+UserQuoteProfileRequest::UserQuoteProfileRequest(const UserQuoteProfileRequest& from) : ::google::protobuf::Message() {
   UserQuoteProfileRequest* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.language_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.language_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.language_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_language().empty()) {
+    _this->_impl_.language_.Set(from._internal_language(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteProfileRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : language_(arena),
-        _cached_size_{0} {}
-
 inline void UserQuoteProfileRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.language_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.language_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.language_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 UserQuoteProfileRequest::~UserQuoteProfileRequest() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteProfileRequest)
@@ -22554,14 +24252,15 @@ UserQuoteProfileRequest::~UserQuoteProfileRequest() {
   SharedDtor();
 }
 inline void UserQuoteProfileRequest::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.language_.Destroy();
-  _impl_.~Impl_();
+}
+void UserQuoteProfileRequest::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UserQuoteProfileRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteProfileRequest)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -22652,12 +24351,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 61, 2> UserQuoteProfileRequest::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData UserQuoteProfileRequest::_class_data_ = {
-    UserQuoteProfileRequest::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteProfileRequest::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UserQuoteProfileRequest::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UserQuoteProfileRequest::GetClassData() const { return &_class_data_; }
+
 
 void UserQuoteProfileRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UserQuoteProfileRequest*>(&to_msg);
@@ -22684,15 +24382,13 @@ PROTOBUF_NOINLINE bool UserQuoteProfileRequest::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* UserQuoteProfileRequest::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UserQuoteProfileRequest::InternalSwap(UserQuoteProfileRequest* PROTOBUF_RESTRICT other) {
+void UserQuoteProfileRequest::InternalSwap(UserQuoteProfileRequest* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.language_, &other->_impl_.language_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.language_, lhs_arena,
+                                       &other->_impl_.language_, rhs_arena);
 }
 
 ::google::protobuf::Metadata UserQuoteProfileRequest::GetMetadata() const {
@@ -22711,24 +24407,20 @@ RateLimit::RateLimit(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.RateLimit)
 }
-RateLimit::RateLimit(
-    ::google::protobuf::Arena* arena, const RateLimit& from)
-    : RateLimit(arena) {
-  MergeFrom(from);
+RateLimit::RateLimit(const RateLimit& from)
+    : ::google::protobuf::Message(), _impl_(from._impl_) {
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.RateLimit)
 }
-inline PROTOBUF_NDEBUG_INLINE RateLimit::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0} {}
-
 inline void RateLimit::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, command_),
-           0,
-           offsetof(Impl_, burst_) -
-               offsetof(Impl_, command_) +
-               sizeof(Impl_::burst_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.command_){0},
+      decltype(_impl_.limit_){0},
+      decltype(_impl_.burst_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 RateLimit::~RateLimit() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.RateLimit)
@@ -22736,13 +24428,14 @@ RateLimit::~RateLimit() {
   SharedDtor();
 }
 inline void RateLimit::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+}
+void RateLimit::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void RateLimit::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.RateLimit)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -22870,12 +24563,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 0, 2> RateLimit::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData RateLimit::_class_data_ = {
-    RateLimit::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    RateLimit::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* RateLimit::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*RateLimit::GetClassData() const { return &_class_data_; }
+
 
 void RateLimit::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<RateLimit*>(&to_msg);
@@ -22908,10 +24600,7 @@ PROTOBUF_NOINLINE bool RateLimit::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* RateLimit::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void RateLimit::InternalSwap(RateLimit* PROTOBUF_RESTRICT other) {
+void RateLimit::InternalSwap(RateLimit* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::google::protobuf::internal::memswap<
@@ -22938,49 +24627,68 @@ UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(::google:
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : key_(arena, from.key_),
-        name_(arena, from.name_),
-        description_(arena, from.description_),
-        _cached_size_{0} {}
-
-UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(
-    ::google::protobuf::Arena* arena,
-    const UserQuoteLevelDetail_PackageDetail& from)
-    : ::google::protobuf::Message(arena) {
+UserQuoteLevelDetail_PackageDetail::UserQuoteLevelDetail_PackageDetail(const UserQuoteLevelDetail_PackageDetail& from) : ::google::protobuf::Message() {
   UserQuoteLevelDetail_PackageDetail* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.key_){},
+      decltype(_impl_.name_){},
+      decltype(_impl_.description_){},
+      decltype(_impl_.start_){},
+      decltype(_impl_.end_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, start_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, start_),
-           offsetof(Impl_, end_) -
-               offsetof(Impl_, start_) +
-               sizeof(Impl_::end_));
+  _impl_.key_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.key_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_key().empty()) {
+    _this->_impl_.key_.Set(from._internal_key(), _this->GetArenaForAllocation());
+  }
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name().empty()) {
+    _this->_impl_.name_.Set(from._internal_name(), _this->GetArenaForAllocation());
+  }
+  _impl_.description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.description_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_description().empty()) {
+    _this->_impl_.description_.Set(from._internal_description(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.start_, &from._impl_.start_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.end_) -
+    reinterpret_cast<char*>(&_impl_.start_)) + sizeof(_impl_.end_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_PackageDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : key_(arena),
-        name_(arena),
-        description_(arena),
-        _cached_size_{0} {}
-
 inline void UserQuoteLevelDetail_PackageDetail::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, start_),
-           0,
-           offsetof(Impl_, end_) -
-               offsetof(Impl_, start_) +
-               sizeof(Impl_::end_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.key_){},
+      decltype(_impl_.name_){},
+      decltype(_impl_.description_){},
+      decltype(_impl_.start_){::int64_t{0}},
+      decltype(_impl_.end_){::int64_t{0}},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.key_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.key_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.description_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 UserQuoteLevelDetail_PackageDetail::~UserQuoteLevelDetail_PackageDetail() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
@@ -22988,16 +24696,17 @@ UserQuoteLevelDetail_PackageDetail::~UserQuoteLevelDetail_PackageDetail() {
   SharedDtor();
 }
 inline void UserQuoteLevelDetail_PackageDetail::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.key_.Destroy();
   _impl_.name_.Destroy();
   _impl_.description_.Destroy();
-  _impl_.~Impl_();
+}
+void UserQuoteLevelDetail_PackageDetail::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UserQuoteLevelDetail_PackageDetail::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -23176,12 +24885,11 @@ const ::_pbi::TcParseTable<3, 5, 0, 82, 2> UserQuoteLevelDetail_PackageDetail::_
 }
 
 const ::google::protobuf::Message::ClassData UserQuoteLevelDetail_PackageDetail::_class_data_ = {
-    UserQuoteLevelDetail_PackageDetail::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteLevelDetail_PackageDetail::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail_PackageDetail::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UserQuoteLevelDetail_PackageDetail::GetClassData() const { return &_class_data_; }
+
 
 void UserQuoteLevelDetail_PackageDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UserQuoteLevelDetail_PackageDetail*>(&to_msg);
@@ -23220,17 +24928,17 @@ PROTOBUF_NOINLINE bool UserQuoteLevelDetail_PackageDetail::IsInitialized() const
   return true;
 }
 
-::_pbi::CachedSize* UserQuoteLevelDetail_PackageDetail::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UserQuoteLevelDetail_PackageDetail::InternalSwap(UserQuoteLevelDetail_PackageDetail* PROTOBUF_RESTRICT other) {
+void UserQuoteLevelDetail_PackageDetail::InternalSwap(UserQuoteLevelDetail_PackageDetail* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.key_, &other->_impl_.key_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.description_, &other->_impl_.description_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.key_, lhs_arena,
+                                       &other->_impl_.key_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
+                                       &other->_impl_.name_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.description_, lhs_arena,
+                                       &other->_impl_.description_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail_PackageDetail, _impl_.end_)
       + sizeof(UserQuoteLevelDetail_PackageDetail::_impl_.end_)
@@ -23255,34 +24963,37 @@ UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDeta
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : packages_{visibility, arena, from.packages_},
-        warning_msg_(arena, from.warning_msg_),
-        _cached_size_{0} {}
-
-UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(
-    ::google::protobuf::Arena* arena,
-    const UserQuoteLevelDetail_MarketPackageDetail& from)
-    : ::google::protobuf::Message(arena) {
+UserQuoteLevelDetail_MarketPackageDetail::UserQuoteLevelDetail_MarketPackageDetail(const UserQuoteLevelDetail_MarketPackageDetail& from) : ::google::protobuf::Message() {
   UserQuoteLevelDetail_MarketPackageDetail* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.packages_){from._impl_.packages_},
+      decltype(_impl_.warning_msg_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.warning_msg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.warning_msg_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_warning_msg().empty()) {
+    _this->_impl_.warning_msg_.Set(from._internal_warning_msg(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail_MarketPackageDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : packages_{visibility, arena},
-        warning_msg_(arena),
-        _cached_size_{0} {}
-
 inline void UserQuoteLevelDetail_MarketPackageDetail::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.packages_){arena},
+      decltype(_impl_.warning_msg_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.warning_msg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.warning_msg_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 UserQuoteLevelDetail_MarketPackageDetail::~UserQuoteLevelDetail_MarketPackageDetail() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
@@ -23290,19 +25001,21 @@ UserQuoteLevelDetail_MarketPackageDetail::~UserQuoteLevelDetail_MarketPackageDet
   SharedDtor();
 }
 inline void UserQuoteLevelDetail_MarketPackageDetail::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.packages_.~RepeatedPtrField();
   _impl_.warning_msg_.Destroy();
-  _impl_.~Impl_();
+}
+void UserQuoteLevelDetail_MarketPackageDetail::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UserQuoteLevelDetail_MarketPackageDetail::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.packages_.Clear();
+  _internal_mutable_packages()->Clear();
   _impl_.warning_msg_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -23409,12 +25122,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 81, 2> UserQuoteLevelDetail_MarketPackageDet
 }
 
 const ::google::protobuf::Message::ClassData UserQuoteLevelDetail_MarketPackageDetail::_class_data_ = {
-    UserQuoteLevelDetail_MarketPackageDetail::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteLevelDetail_MarketPackageDetail::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail_MarketPackageDetail::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UserQuoteLevelDetail_MarketPackageDetail::GetClassData() const { return &_class_data_; }
+
 
 void UserQuoteLevelDetail_MarketPackageDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UserQuoteLevelDetail_MarketPackageDetail*>(&to_msg);
@@ -23424,8 +25136,7 @@ void UserQuoteLevelDetail_MarketPackageDetail::MergeImpl(::google::protobuf::Mes
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_packages()->MergeFrom(
-      from._internal_packages());
+  _this->_internal_mutable_packages()->MergeFrom(from._internal_packages());
   if (!from._internal_warning_msg().empty()) {
     _this->_internal_set_warning_msg(from._internal_warning_msg());
   }
@@ -23443,16 +25154,14 @@ PROTOBUF_NOINLINE bool UserQuoteLevelDetail_MarketPackageDetail::IsInitialized()
   return true;
 }
 
-::_pbi::CachedSize* UserQuoteLevelDetail_MarketPackageDetail::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UserQuoteLevelDetail_MarketPackageDetail::InternalSwap(UserQuoteLevelDetail_MarketPackageDetail* PROTOBUF_RESTRICT other) {
+void UserQuoteLevelDetail_MarketPackageDetail::InternalSwap(UserQuoteLevelDetail_MarketPackageDetail* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.packages_.InternalSwap(&other->_impl_.packages_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.warning_msg_, &other->_impl_.warning_msg_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.warning_msg_, lhs_arena,
+                                       &other->_impl_.warning_msg_, rhs_arena);
 }
 
 ::google::protobuf::Metadata UserQuoteLevelDetail_MarketPackageDetail::GetMetadata() const {
@@ -23465,6 +25174,9 @@ void UserQuoteLevelDetail_MarketPackageDetail::InternalSwap(UserQuoteLevelDetail
 UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse() {}
 UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse(::google::protobuf::Arena* arena)
     : SuperType(arena) {}
+void UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::MergeFrom(const UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse& other) {
+  MergeFromInternal(other);
+}
 ::google::protobuf::Metadata UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
@@ -23475,6 +25187,9 @@ UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::UserQuoteLevelDetail_ByPackageK
 UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse() {}
 UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse(::google::protobuf::Arena* arena)
     : SuperType(arena) {}
+void UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::MergeFrom(const UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse& other) {
+  MergeFromInternal(other);
+}
 ::google::protobuf::Metadata UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_quote_2fapi_2eproto_getter, &descriptor_table_quote_2fapi_2eproto_once,
@@ -23491,34 +25206,28 @@ UserQuoteLevelDetail::UserQuoteLevelDetail(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteLevelDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : by_package_key_{visibility, arena, from.by_package_key_},
-        by_market_code_{visibility, arena, from.by_market_code_},
-        _cached_size_{0} {}
-
-UserQuoteLevelDetail::UserQuoteLevelDetail(
-    ::google::protobuf::Arena* arena,
-    const UserQuoteLevelDetail& from)
-    : ::google::protobuf::Message(arena) {
+UserQuoteLevelDetail::UserQuoteLevelDetail(const UserQuoteLevelDetail& from) : ::google::protobuf::Message() {
   UserQuoteLevelDetail* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      /* decltype(_impl_.by_package_key_) */ {},
+      /* decltype(_impl_.by_market_code_) */ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _this->_impl_.by_package_key_.MergeFrom(from._impl_.by_package_key_);
+  _this->_impl_.by_market_code_.MergeFrom(from._impl_.by_market_code_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteLevelDetail)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteLevelDetail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : by_package_key_{visibility, arena},
-        by_market_code_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void UserQuoteLevelDetail::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      /* decltype(_impl_.by_package_key_) */ {::google::protobuf::internal::ArenaInitialized(), arena},
+      /* decltype(_impl_.by_market_code_) */ {::google::protobuf::internal::ArenaInitialized(), arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 UserQuoteLevelDetail::~UserQuoteLevelDetail() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteLevelDetail)
@@ -23526,13 +25235,16 @@ UserQuoteLevelDetail::~UserQuoteLevelDetail() {
   SharedDtor();
 }
 inline void UserQuoteLevelDetail::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.by_package_key_.~MapField();
+  _impl_.by_market_code_.~MapField();
+}
+void UserQuoteLevelDetail::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UserQuoteLevelDetail::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteLevelDetail)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -23575,15 +25287,9 @@ const ::_pbi::TcParseTable<0, 2, 4, 78, 2> UserQuoteLevelDetail::_table_ = {
     {PROTOBUF_FIELD_OFFSET(UserQuoteLevelDetail, _impl_.by_market_code_), 0, 2,
     (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
   }}, {{
-    {::_pbi::TcParser::GetMapAuxInfo<
-        decltype(UserQuoteLevelDetail()._impl_.by_package_key_)>(
-        1, 0, 0, 9,
-        11)},
+    {::_pbi::TcParser::GetMapAuxInfo<decltype(UserQuoteLevelDetail()._impl_.by_package_key_)>(1, 0, 0)},
     {::_pbi::TcParser::CreateInArenaStorageCb<::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>},
-    {::_pbi::TcParser::GetMapAuxInfo<
-        decltype(UserQuoteLevelDetail()._impl_.by_market_code_)>(
-        1, 0, 0, 9,
-        11)},
+    {::_pbi::TcParser::GetMapAuxInfo<decltype(UserQuoteLevelDetail()._impl_.by_market_code_)>(1, 0, 0)},
     {::_pbi::TcParser::CreateInArenaStorageCb<::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>},
   }}, {{
     "\51\16\16\0\0\0\0\0"
@@ -23603,9 +25309,7 @@ const ::_pbi::TcParseTable<0, 2, 4, 78, 2> UserQuoteLevelDetail::_table_ = {
   // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
   if (!_internal_by_package_key().empty()) {
     using MapType = ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail>;
-    using WireHelper = _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
-                                   _pbi::WireFormatLite::TYPE_STRING,
-                                   _pbi::WireFormatLite::TYPE_MESSAGE>;
+    using WireHelper = UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::Funcs;
     const auto& field = _internal_by_package_key();
 
     if (stream->IsSerializationDeterministic() && field.size() > 1) {
@@ -23630,9 +25334,7 @@ const ::_pbi::TcParseTable<0, 2, 4, 78, 2> UserQuoteLevelDetail::_table_ = {
   // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
   if (!_internal_by_market_code().empty()) {
     using MapType = ::google::protobuf::Map<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail>;
-    using WireHelper = _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
-                                   _pbi::WireFormatLite::TYPE_STRING,
-                                   _pbi::WireFormatLite::TYPE_MESSAGE>;
+    using WireHelper = UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::Funcs;
     const auto& field = _internal_by_market_code();
 
     if (stream->IsSerializationDeterministic() && field.size() > 1) {
@@ -23674,27 +25376,22 @@ const ::_pbi::TcParseTable<0, 2, 4, 78, 2> UserQuoteLevelDetail::_table_ = {
   // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.PackageDetail> by_package_key = 1 [json_name = "byPackageKey"];
   total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_by_package_key_size());
   for (const auto& entry : _internal_by_package_key()) {
-    total_size += _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_PackageDetail,
-                                   _pbi::WireFormatLite::TYPE_STRING,
-                                   _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
+    total_size += UserQuoteLevelDetail_ByPackageKeyEntry_DoNotUse::Funcs::ByteSizeLong(entry.first, entry.second);
   }
   // map<string, .longportapp.quote.v1.UserQuoteLevelDetail.MarketPackageDetail> by_market_code = 2 [json_name = "byMarketCode"];
   total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_by_market_code_size());
   for (const auto& entry : _internal_by_market_code()) {
-    total_size += _pbi::MapEntryFuncs<std::string, ::longportapp::quote::v1::UserQuoteLevelDetail_MarketPackageDetail,
-                                   _pbi::WireFormatLite::TYPE_STRING,
-                                   _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
+    total_size += UserQuoteLevelDetail_ByMarketCodeEntry_DoNotUse::Funcs::ByteSizeLong(entry.first, entry.second);
   }
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::google::protobuf::Message::ClassData UserQuoteLevelDetail::_class_data_ = {
-    UserQuoteLevelDetail::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteLevelDetail::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UserQuoteLevelDetail::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UserQuoteLevelDetail::GetClassData() const { return &_class_data_; }
+
 
 void UserQuoteLevelDetail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UserQuoteLevelDetail*>(&to_msg);
@@ -23720,10 +25417,7 @@ PROTOBUF_NOINLINE bool UserQuoteLevelDetail::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* UserQuoteLevelDetail::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UserQuoteLevelDetail::InternalSwap(UserQuoteLevelDetail* PROTOBUF_RESTRICT other) {
+void UserQuoteLevelDetail::InternalSwap(UserQuoteLevelDetail* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.by_package_key_.InternalSwap(&other->_impl_.by_package_key_);
@@ -23756,52 +25450,53 @@ UserQuoteProfileResponse::UserQuoteProfileResponse(::google::protobuf::Arena* ar
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.quote.v1.UserQuoteProfileResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0},
-        rate_limit_{visibility, arena, from.rate_limit_},
-        quote_level_(arena, from.quote_level_) {}
-
-UserQuoteProfileResponse::UserQuoteProfileResponse(
-    ::google::protobuf::Arena* arena,
-    const UserQuoteProfileResponse& from)
-    : ::google::protobuf::Message(arena) {
+UserQuoteProfileResponse::UserQuoteProfileResponse(const UserQuoteProfileResponse& from) : ::google::protobuf::Message() {
   UserQuoteProfileResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.rate_limit_){from._impl_.rate_limit_},
+      decltype(_impl_.quote_level_){},
+      decltype(_impl_.quote_level_detail_){nullptr},
+      decltype(_impl_.member_id_){},
+      decltype(_impl_.subscribe_limit_){},
+      decltype(_impl_.history_candlestick_limit_){},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.quote_level_detail_ = (cached_has_bits & 0x00000001u)
-                ? CreateMaybeMessage<::longportapp::quote::v1::UserQuoteLevelDetail>(arena, *from._impl_.quote_level_detail_)
-                : nullptr;
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, member_id_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, member_id_),
-           offsetof(Impl_, history_candlestick_limit_) -
-               offsetof(Impl_, member_id_) +
-               sizeof(Impl_::history_candlestick_limit_));
+  _impl_.quote_level_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.quote_level_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_quote_level().empty()) {
+    _this->_impl_.quote_level_.Set(from._internal_quote_level(), _this->GetArenaForAllocation());
+  }
+  if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
+    _this->_impl_.quote_level_detail_ = new ::longportapp::quote::v1::UserQuoteLevelDetail(*from._impl_.quote_level_detail_);
+  }
+  ::memcpy(&_impl_.member_id_, &from._impl_.member_id_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.history_candlestick_limit_) -
+    reinterpret_cast<char*>(&_impl_.member_id_)) + sizeof(_impl_.history_candlestick_limit_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.quote.v1.UserQuoteProfileResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE UserQuoteProfileResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0},
-        rate_limit_{visibility, arena},
-        quote_level_(arena) {}
-
 inline void UserQuoteProfileResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, quote_level_detail_),
-           0,
-           offsetof(Impl_, history_candlestick_limit_) -
-               offsetof(Impl_, quote_level_detail_) +
-               sizeof(Impl_::history_candlestick_limit_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.rate_limit_){arena},
+      decltype(_impl_.quote_level_){},
+      decltype(_impl_.quote_level_detail_){nullptr},
+      decltype(_impl_.member_id_){::int64_t{0}},
+      decltype(_impl_.subscribe_limit_){0},
+      decltype(_impl_.history_candlestick_limit_){0},
+  };
+  _impl_.quote_level_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.quote_level_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 UserQuoteProfileResponse::~UserQuoteProfileResponse() {
   // @@protoc_insertion_point(destructor:longportapp.quote.v1.UserQuoteProfileResponse)
@@ -23809,20 +25504,22 @@ UserQuoteProfileResponse::~UserQuoteProfileResponse() {
   SharedDtor();
 }
 inline void UserQuoteProfileResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.rate_limit_.~RepeatedPtrField();
   _impl_.quote_level_.Destroy();
-  delete _impl_.quote_level_detail_;
-  _impl_.~Impl_();
+  if (this != internal_default_instance()) delete _impl_.quote_level_detail_;
+}
+void UserQuoteProfileResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UserQuoteProfileResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.quote.v1.UserQuoteProfileResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.rate_limit_.Clear();
+  _internal_mutable_rate_limit()->Clear();
   _impl_.quote_level_.ClearToEmpty();
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
@@ -23956,8 +25653,8 @@ const ::_pbi::TcParseTable<3, 6, 2, 65, 2> UserQuoteProfileResponse::_table_ = {
   cached_has_bits = _impl_._has_bits_[0];
   // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        6, _Internal::quote_level_detail(this),
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessage(6, _Internal::quote_level_detail(this),
         _Internal::quote_level_detail(this).GetCachedSize(), target, stream);
   }
 
@@ -23993,8 +25690,9 @@ const ::_pbi::TcParseTable<3, 6, 2, 65, 2> UserQuoteProfileResponse::_table_ = {
   // .longportapp.quote.v1.UserQuoteLevelDetail quote_level_detail = 6 [json_name = "quoteLevelDetail"];
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size +=
-        1 + ::google::protobuf::internal::WireFormatLite::MessageSize(*_impl_.quote_level_detail_);
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *_impl_.quote_level_detail_);
   }
 
   // int64 member_id = 1 [json_name = "memberId"];
@@ -24019,12 +25717,11 @@ const ::_pbi::TcParseTable<3, 6, 2, 65, 2> UserQuoteProfileResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData UserQuoteProfileResponse::_class_data_ = {
-    UserQuoteProfileResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UserQuoteProfileResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UserQuoteProfileResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UserQuoteProfileResponse::GetClassData() const { return &_class_data_; }
+
 
 void UserQuoteProfileResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UserQuoteProfileResponse*>(&to_msg);
@@ -24034,8 +25731,7 @@ void UserQuoteProfileResponse::MergeImpl(::google::protobuf::Message& to_msg, co
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_rate_limit()->MergeFrom(
-      from._internal_rate_limit());
+  _this->_internal_mutable_rate_limit()->MergeFrom(from._internal_rate_limit());
   if (!from._internal_quote_level().empty()) {
     _this->_internal_set_quote_level(from._internal_quote_level());
   }
@@ -24066,17 +25762,15 @@ PROTOBUF_NOINLINE bool UserQuoteProfileResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* UserQuoteProfileResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UserQuoteProfileResponse::InternalSwap(UserQuoteProfileResponse* PROTOBUF_RESTRICT other) {
+void UserQuoteProfileResponse::InternalSwap(UserQuoteProfileResponse* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   _impl_.rate_limit_.InternalSwap(&other->_impl_.rate_limit_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.quote_level_, &other->_impl_.quote_level_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.quote_level_, lhs_arena,
+                                       &other->_impl_.quote_level_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(UserQuoteProfileResponse, _impl_.history_candlestick_limit_)
       + sizeof(UserQuoteProfileResponse::_impl_.history_candlestick_limit_)

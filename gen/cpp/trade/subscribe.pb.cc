@@ -23,77 +23,12 @@ namespace _fl = ::google::protobuf::internal::field_layout;
 namespace longportapp {
 namespace trade {
 namespace v1 {
-
-inline constexpr UnsubResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : current_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR UnsubResponse::UnsubResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct UnsubResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UnsubResponseDefaultTypeInternal() {}
-  union {
-    UnsubResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
-
-inline constexpr Unsub::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : topics_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Unsub::Unsub(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct UnsubDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR UnsubDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~UnsubDefaultTypeInternal() {}
-  union {
-    Unsub _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubDefaultTypeInternal _Unsub_default_instance_;
-
-inline constexpr SubResponse_Fail::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : topic_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        reason_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR SubResponse_Fail::SubResponse_Fail(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct SubResponse_FailDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubResponse_FailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubResponse_FailDefaultTypeInternal() {}
-  union {
-    SubResponse_Fail _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
-
-inline constexpr Sub::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : topics_{},
-        _cached_size_{0} {}
-
-template <typename>
+        template <typename>
 PROTOBUF_CONSTEXPR Sub::Sub(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.topics_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubDefaultTypeInternal {
   PROTOBUF_CONSTEXPR SubDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubDefaultTypeInternal() {}
@@ -104,43 +39,37 @@ struct SubDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubDefaultTypeInternal _Sub_default_instance_;
-
-inline constexpr Notification::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : topic_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        data_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        content_type_{static_cast< ::longportapp::trade::v1::ContentType >(0)},
-        dispatch_type_{static_cast< ::longportapp::trade::v1::DispatchType >(0)},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR Notification::Notification(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
-struct NotificationDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR NotificationDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~NotificationDefaultTypeInternal() {}
+        template <typename>
+PROTOBUF_CONSTEXPR SubResponse_Fail::SubResponse_Fail(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topic_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.reason_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct SubResponse_FailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SubResponse_FailDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SubResponse_FailDefaultTypeInternal() {}
   union {
-    Notification _instance;
+    SubResponse_Fail _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NotificationDefaultTypeInternal _Notification_default_instance_;
-
-inline constexpr SubResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : success_{},
-        fail_{},
-        current_{},
-        _cached_size_{0} {}
-
-template <typename>
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponse_FailDefaultTypeInternal _SubResponse_Fail_default_instance_;
+        template <typename>
 PROTOBUF_CONSTEXPR SubResponse::SubResponse(::_pbi::ConstantInitialized)
-    : _impl_(::_pbi::ConstantInitialized()) {}
+    : _impl_{
+      /*decltype(_impl_.success_)*/ {},
+      /*decltype(_impl_.fail_)*/ {},
+      /*decltype(_impl_.current_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SubResponseDefaultTypeInternal {
   PROTOBUF_CONSTEXPR SubResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SubResponseDefaultTypeInternal() {}
@@ -151,6 +80,63 @@ struct SubResponseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubResponseDefaultTypeInternal _SubResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Unsub::Unsub(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topics_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UnsubDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UnsubDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UnsubDefaultTypeInternal() {}
+  union {
+    Unsub _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubDefaultTypeInternal _Unsub_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR UnsubResponse::UnsubResponse(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.current_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct UnsubResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR UnsubResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~UnsubResponseDefaultTypeInternal() {}
+  union {
+    UnsubResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UnsubResponseDefaultTypeInternal _UnsubResponse_default_instance_;
+        template <typename>
+PROTOBUF_CONSTEXPR Notification::Notification(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.topic_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.data_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.content_type_)*/ 0,
+      /*decltype(_impl_.dispatch_type_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
+struct NotificationDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR NotificationDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~NotificationDefaultTypeInternal() {}
+  union {
+    Notification _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NotificationDefaultTypeInternal _Notification_default_instance_;
 }  // namespace v1
 }  // namespace trade
 }  // namespace longportapp
@@ -310,28 +296,44 @@ const ::google::protobuf::EnumDescriptor* Command_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[0];
 }
-PROTOBUF_CONSTINIT const uint32_t Command_internal_data_[] = {
-    65536u, 32u, 229376u, };
 bool Command_IsValid(int value) {
-  return 0 <= value && value <= 18 && ((458753u >> value) & 1) != 0;
+  switch (value) {
+    case 0:
+    case 16:
+    case 17:
+    case 18:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* DispatchType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[1];
 }
-PROTOBUF_CONSTINIT const uint32_t DispatchType_internal_data_[] = {
-    196608u, 0u, };
 bool DispatchType_IsValid(int value) {
-  return 0 <= value && value <= 2;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
 }
 const ::google::protobuf::EnumDescriptor* ContentType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&descriptor_table_trade_2fsubscribe_2eproto);
   return file_level_enum_descriptors_trade_2fsubscribe_2eproto[2];
 }
-PROTOBUF_CONSTINIT const uint32_t ContentType_internal_data_[] = {
-    196608u, 0u, };
 bool ContentType_IsValid(int value) {
-  return 0 <= value && value <= 2;
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
 }
 // ===================================================================
 
@@ -344,32 +346,24 @@ Sub::Sub(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Sub)
 }
-inline PROTOBUF_NDEBUG_INLINE Sub::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : topics_{visibility, arena, from.topics_},
-        _cached_size_{0} {}
-
-Sub::Sub(
-    ::google::protobuf::Arena* arena,
-    const Sub& from)
-    : ::google::protobuf::Message(arena) {
+Sub::Sub(const Sub& from) : ::google::protobuf::Message() {
   Sub* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){from._impl_.topics_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Sub)
 }
-inline PROTOBUF_NDEBUG_INLINE Sub::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : topics_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void Sub::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 Sub::~Sub() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.Sub)
@@ -377,18 +371,20 @@ Sub::~Sub() {
   SharedDtor();
 }
 inline void Sub::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_topics()->~RepeatedPtrField();
+}
+void Sub::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Sub::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Sub)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.topics_.Clear();
+  _internal_mutable_topics()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -474,12 +470,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 39, 2> Sub::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Sub::_class_data_ = {
-    Sub::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Sub::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Sub::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Sub::GetClassData() const { return &_class_data_; }
+
 
 void Sub::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Sub*>(&to_msg);
@@ -504,10 +499,7 @@ PROTOBUF_NOINLINE bool Sub::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Sub::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Sub::InternalSwap(Sub* PROTOBUF_RESTRICT other) {
+void Sub::InternalSwap(Sub* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.topics_.InternalSwap(&other->_impl_.topics_);
@@ -529,34 +521,48 @@ SubResponse_Fail::SubResponse_Fail(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.SubResponse.Fail)
 }
-inline PROTOBUF_NDEBUG_INLINE SubResponse_Fail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : topic_(arena, from.topic_),
-        reason_(arena, from.reason_),
-        _cached_size_{0} {}
-
-SubResponse_Fail::SubResponse_Fail(
-    ::google::protobuf::Arena* arena,
-    const SubResponse_Fail& from)
-    : ::google::protobuf::Message(arena) {
+SubResponse_Fail::SubResponse_Fail(const SubResponse_Fail& from) : ::google::protobuf::Message() {
   SubResponse_Fail* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){},
+      decltype(_impl_.reason_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_topic().empty()) {
+    _this->_impl_.topic_.Set(from._internal_topic(), _this->GetArenaForAllocation());
+  }
+  _impl_.reason_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.reason_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_reason().empty()) {
+    _this->_impl_.reason_.Set(from._internal_reason(), _this->GetArenaForAllocation());
+  }
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.SubResponse.Fail)
 }
-inline PROTOBUF_NDEBUG_INLINE SubResponse_Fail::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : topic_(arena),
-        reason_(arena),
-        _cached_size_{0} {}
-
 inline void SubResponse_Fail::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){},
+      decltype(_impl_.reason_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.reason_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.reason_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 SubResponse_Fail::~SubResponse_Fail() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.SubResponse.Fail)
@@ -564,15 +570,16 @@ SubResponse_Fail::~SubResponse_Fail() {
   SharedDtor();
 }
 inline void SubResponse_Fail::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.topic_.Destroy();
   _impl_.reason_.Destroy();
-  _impl_.~Impl_();
+}
+void SubResponse_Fail::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SubResponse_Fail::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.SubResponse.Fail)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -685,12 +692,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 57, 2> SubResponse_Fail::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SubResponse_Fail::_class_data_ = {
-    SubResponse_Fail::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SubResponse_Fail::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SubResponse_Fail::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SubResponse_Fail::GetClassData() const { return &_class_data_; }
+
 
 void SubResponse_Fail::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubResponse_Fail*>(&to_msg);
@@ -720,16 +726,15 @@ PROTOBUF_NOINLINE bool SubResponse_Fail::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SubResponse_Fail::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SubResponse_Fail::InternalSwap(SubResponse_Fail* PROTOBUF_RESTRICT other) {
+void SubResponse_Fail::InternalSwap(SubResponse_Fail* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, &other->_impl_.topic_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.reason_, &other->_impl_.reason_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, lhs_arena,
+                                       &other->_impl_.topic_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.reason_, lhs_arena,
+                                       &other->_impl_.reason_, rhs_arena);
 }
 
 ::google::protobuf::Metadata SubResponse_Fail::GetMetadata() const {
@@ -748,36 +753,28 @@ SubResponse::SubResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.SubResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SubResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : success_{visibility, arena, from.success_},
-        fail_{visibility, arena, from.fail_},
-        current_{visibility, arena, from.current_},
-        _cached_size_{0} {}
-
-SubResponse::SubResponse(
-    ::google::protobuf::Arena* arena,
-    const SubResponse& from)
-    : ::google::protobuf::Message(arena) {
+SubResponse::SubResponse(const SubResponse& from) : ::google::protobuf::Message() {
   SubResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.success_){from._impl_.success_},
+      decltype(_impl_.fail_){from._impl_.fail_},
+      decltype(_impl_.current_){from._impl_.current_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.SubResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE SubResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : success_{visibility, arena},
-        fail_{visibility, arena},
-        current_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void SubResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.success_){arena},
+      decltype(_impl_.fail_){arena},
+      decltype(_impl_.current_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 SubResponse::~SubResponse() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.SubResponse)
@@ -785,20 +782,24 @@ SubResponse::~SubResponse() {
   SharedDtor();
 }
 inline void SubResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_success()->~RepeatedPtrField();
+  _impl_.fail_.~RepeatedPtrField();
+  _internal_mutable_current()->~RepeatedPtrField();
+}
+void SubResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void SubResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.SubResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.success_.Clear();
-  _impl_.fail_.Clear();
-  _impl_.current_.Clear();
+  _internal_mutable_success()->Clear();
+  _internal_mutable_fail()->Clear();
+  _internal_mutable_current()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -926,12 +927,11 @@ const ::_pbi::TcParseTable<2, 3, 1, 55, 2> SubResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData SubResponse::_class_data_ = {
-    SubResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    SubResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* SubResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*SubResponse::GetClassData() const { return &_class_data_; }
+
 
 void SubResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<SubResponse*>(&to_msg);
@@ -942,8 +942,7 @@ void SubResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   (void) cached_has_bits;
 
   _this->_internal_mutable_success()->MergeFrom(from._internal_success());
-  _this->_internal_mutable_fail()->MergeFrom(
-      from._internal_fail());
+  _this->_internal_mutable_fail()->MergeFrom(from._internal_fail());
   _this->_internal_mutable_current()->MergeFrom(from._internal_current());
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -959,10 +958,7 @@ PROTOBUF_NOINLINE bool SubResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* SubResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void SubResponse::InternalSwap(SubResponse* PROTOBUF_RESTRICT other) {
+void SubResponse::InternalSwap(SubResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.success_.InternalSwap(&other->_impl_.success_);
@@ -986,32 +982,24 @@ Unsub::Unsub(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Unsub)
 }
-inline PROTOBUF_NDEBUG_INLINE Unsub::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : topics_{visibility, arena, from.topics_},
-        _cached_size_{0} {}
-
-Unsub::Unsub(
-    ::google::protobuf::Arena* arena,
-    const Unsub& from)
-    : ::google::protobuf::Message(arena) {
+Unsub::Unsub(const Unsub& from) : ::google::protobuf::Message() {
   Unsub* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){from._impl_.topics_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Unsub)
 }
-inline PROTOBUF_NDEBUG_INLINE Unsub::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : topics_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void Unsub::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topics_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 Unsub::~Unsub() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.Unsub)
@@ -1019,18 +1007,20 @@ Unsub::~Unsub() {
   SharedDtor();
 }
 inline void Unsub::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_topics()->~RepeatedPtrField();
+}
+void Unsub::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Unsub::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Unsub)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.topics_.Clear();
+  _internal_mutable_topics()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -1116,12 +1106,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 41, 2> Unsub::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Unsub::_class_data_ = {
-    Unsub::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Unsub::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Unsub::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Unsub::GetClassData() const { return &_class_data_; }
+
 
 void Unsub::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Unsub*>(&to_msg);
@@ -1146,10 +1135,7 @@ PROTOBUF_NOINLINE bool Unsub::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Unsub::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Unsub::InternalSwap(Unsub* PROTOBUF_RESTRICT other) {
+void Unsub::InternalSwap(Unsub* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.topics_.InternalSwap(&other->_impl_.topics_);
@@ -1171,32 +1157,24 @@ UnsubResponse::UnsubResponse(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.UnsubResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE UnsubResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : current_{visibility, arena, from.current_},
-        _cached_size_{0} {}
-
-UnsubResponse::UnsubResponse(
-    ::google::protobuf::Arena* arena,
-    const UnsubResponse& from)
-    : ::google::protobuf::Message(arena) {
+UnsubResponse::UnsubResponse(const UnsubResponse& from) : ::google::protobuf::Message() {
   UnsubResponse* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.current_){from._impl_.current_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.UnsubResponse)
 }
-inline PROTOBUF_NDEBUG_INLINE UnsubResponse::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : current_{visibility, arena},
-        _cached_size_{0} {}
-
 inline void UnsubResponse::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.current_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
 }
 UnsubResponse::~UnsubResponse() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.UnsubResponse)
@@ -1204,18 +1182,20 @@ UnsubResponse::~UnsubResponse() {
   SharedDtor();
 }
 inline void UnsubResponse::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.~Impl_();
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
+  _internal_mutable_current()->~RepeatedPtrField();
+}
+void UnsubResponse::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void UnsubResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.UnsubResponse)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.current_.Clear();
+  _internal_mutable_current()->Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -1301,12 +1281,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> UnsubResponse::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData UnsubResponse::_class_data_ = {
-    UnsubResponse::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    UnsubResponse::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* UnsubResponse::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*UnsubResponse::GetClassData() const { return &_class_data_; }
+
 
 void UnsubResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<UnsubResponse*>(&to_msg);
@@ -1331,10 +1310,7 @@ PROTOBUF_NOINLINE bool UnsubResponse::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* UnsubResponse::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void UnsubResponse::InternalSwap(UnsubResponse* PROTOBUF_RESTRICT other) {
+void UnsubResponse::InternalSwap(UnsubResponse* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.current_.InternalSwap(&other->_impl_.current_);
@@ -1356,47 +1332,55 @@ Notification::Notification(::google::protobuf::Arena* arena)
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:longportapp.trade.v1.Notification)
 }
-inline PROTOBUF_NDEBUG_INLINE Notification::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from)
-      : topic_(arena, from.topic_),
-        data_(arena, from.data_),
-        _cached_size_{0} {}
-
-Notification::Notification(
-    ::google::protobuf::Arena* arena,
-    const Notification& from)
-    : ::google::protobuf::Message(arena) {
+Notification::Notification(const Notification& from) : ::google::protobuf::Message() {
   Notification* const _this = this;
   (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){},
+      decltype(_impl_.data_){},
+      decltype(_impl_.content_type_){},
+      decltype(_impl_.dispatch_type_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
-  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
-  ::memcpy(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, content_type_),
-           reinterpret_cast<const char *>(&from._impl_) +
-               offsetof(Impl_, content_type_),
-           offsetof(Impl_, dispatch_type_) -
-               offsetof(Impl_, content_type_) +
-               sizeof(Impl_::dispatch_type_));
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_topic().empty()) {
+    _this->_impl_.topic_.Set(from._internal_topic(), _this->GetArenaForAllocation());
+  }
+  _impl_.data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.data_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_data().empty()) {
+    _this->_impl_.data_.Set(from._internal_data(), _this->GetArenaForAllocation());
+  }
+  ::memcpy(&_impl_.content_type_, &from._impl_.content_type_,
+    static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.dispatch_type_) -
+    reinterpret_cast<char*>(&_impl_.content_type_)) + sizeof(_impl_.dispatch_type_));
 
   // @@protoc_insertion_point(copy_constructor:longportapp.trade.v1.Notification)
 }
-inline PROTOBUF_NDEBUG_INLINE Notification::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : topic_(arena),
-        data_(arena),
-        _cached_size_{0} {}
-
 inline void Notification::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, content_type_),
-           0,
-           offsetof(Impl_, dispatch_type_) -
-               offsetof(Impl_, content_type_) +
-               sizeof(Impl_::dispatch_type_));
+  (void)arena;
+  new (&_impl_) Impl_{
+      decltype(_impl_.topic_){},
+      decltype(_impl_.data_){},
+      decltype(_impl_.content_type_){0},
+      decltype(_impl_.dispatch_type_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _impl_.topic_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.topic_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.data_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 Notification::~Notification() {
   // @@protoc_insertion_point(destructor:longportapp.trade.v1.Notification)
@@ -1404,15 +1388,16 @@ Notification::~Notification() {
   SharedDtor();
 }
 inline void Notification::SharedDtor() {
-  ABSL_DCHECK(GetArena() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.topic_.Destroy();
   _impl_.data_.Destroy();
-  _impl_.~Impl_();
+}
+void Notification::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
 }
 
 PROTOBUF_NOINLINE void Notification::Clear() {
 // @@protoc_insertion_point(message_clear_start:longportapp.trade.v1.Notification)
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1563,12 +1548,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 47, 2> Notification::_table_ = {
 }
 
 const ::google::protobuf::Message::ClassData Notification::_class_data_ = {
-    Notification::MergeImpl,
-    nullptr,  // OnDemandRegisterArenaDtor
+    ::google::protobuf::Message::CopyWithSourceCheck,
+    Notification::MergeImpl
 };
-const ::google::protobuf::Message::ClassData* Notification::GetClassData() const {
-  return &_class_data_;
-}
+const ::google::protobuf::Message::ClassData*Notification::GetClassData() const { return &_class_data_; }
+
 
 void Notification::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
   auto* const _this = static_cast<Notification*>(&to_msg);
@@ -1604,16 +1588,15 @@ PROTOBUF_NOINLINE bool Notification::IsInitialized() const {
   return true;
 }
 
-::_pbi::CachedSize* Notification::AccessCachedSize() const {
-  return &_impl_._cached_size_;
-}
-void Notification::InternalSwap(Notification* PROTOBUF_RESTRICT other) {
+void Notification::InternalSwap(Notification* other) {
   using std::swap;
-  auto* arena = GetArena();
-  ABSL_DCHECK_EQ(arena, other->GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, &other->_impl_.topic_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.data_, &other->_impl_.data_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.topic_, lhs_arena,
+                                       &other->_impl_.topic_, rhs_arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.data_, lhs_arena,
+                                       &other->_impl_.data_, rhs_arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Notification, _impl_.dispatch_type_)
       + sizeof(Notification::_impl_.dispatch_type_)
